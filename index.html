@@ -58,12 +58,16 @@ ul.tips li{margin-bottom:4px}
     </label>
     <button class="btn" onclick="searchPlace()">Search</button>
   </div>
+  <p class="muted" id="placeMsg"></p>
   <ul id="results" class="results"></ul>
-  <div class="row" style="margin-top:8px">
-    <label>Latitude<input id="lat" type="number" step="any"></label>
-    <label>Longitude<input id="lon" type="number" step="any"></label>
-    <label>Name<input id="pname" placeholder="My spot"></label>
-  </div>
+  <details style="margin-top:8px">
+    <summary class="muted">Enter coordinates instead</summary>
+    <div class="row" style="margin-top:8px">
+      <label>Latitude<input id="lat" type="number" step="any"></label>
+      <label>Longitude<input id="lon" type="number" step="any"></label>
+      <label>Name<input id="pname" placeholder="My spot"></label>
+    </div>
+  </details>
   <div class="row" style="margin-top:4px">
     <label>Water type
       <select id="habitat">
@@ -75,8 +79,7 @@ ul.tips li{margin-bottom:4px}
       <input id="manualTemp" type="number" step="0.1" placeholder="from a thermometer or lake reading">
     </label>
   </div>
-  <p class="muted" id="placeMsg"></p>
-  <div class="row"><button class="btn" onclick="usePlace()">Plan this place</button></div>
+  <div class="row" style="margin-top:8px"><button class="btn" onclick="usePlace()">Plan this place</button></div>
   <div id="saved" style="margin-top:10px"></div>
 </section>
 
