@@ -134,12 +134,19 @@ async function searchPlace(){
   $('placeMsg').textContent = 'Searching…';
   $('results').innerHTML = '';
   try {
-    const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(q)}&count=6&language=en&format=json`);
+    const r = await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&addressdetails=1&countrycodes=us&q=${encodeURIComponent(q)}`);
     if (!r.ok) throw new Error('HTTP ' + r.status);
-    const d = await r.json();
-    const hits = d.results || [];
-    $('placeMsg').textContent = hits.length ? 'Pick a result, or enter coordinates by hand.' : 'No matches. Try a different name or enter coordinates.';
-    $('results').innerHTML = hits.map((h,i) => `<li onclick="pickResult(${i})"><b>${esc(h.name)}</b> <span class="muted">${esc([h.admin1,h.country].filter(Boolean).join(', '))} · ${h.latitude.toFixed(3)}, ${h.longitude.toFixed(3)}</span></li>`).join('');
+    const raw = await r.json();
+    const hits = raw.map(x => ({
+      name: x.name || (x.display_name || '').split(',')[0],
+      admin1: x.address?.state,
+      country: x.address?.country,
+      latitude: parseFloat(x.lat),
+      longitude: parseFloat(x.lon),
+      kind: (x.type || x.class || '').toLowerCase()
+    })).filter(h => !isNaN(h.latitude) && !isNaN(h.longitude));
+    $('placeMsg').textContent = hits.length ? 'Pick a result, or enter coordinates by hand.' : 'No matches. Try adding the town, like "Rose Canyon Lake, Tucson" or "Oak Creek, Sedona."';
+    $('results').innerHTML = hits.map((h,i) => `<li onclick="pickResult(${i})"><b>${esc(h.name)}</b> <span class="pill">${esc(h.kind || 'place')}</span><br><span class="muted">${esc([h.admin1,h.country].filter(Boolean).join(', '))} · ${h.latitude.toFixed(3)}, ${h.longitude.toFixed(3)}</span></li>`).join('');
     window._hits = hits;
   } catch(e) {
     $('placeMsg').innerHTML = `<span class="warn">Search unavailable (${esc(e.message)}). Enter coordinates below.</span>`;
@@ -150,6 +157,10 @@ function pickResult(i){
   $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name;
   $('results').innerHTML = '';
   $('placeMsg').textContent = `Set to ${h.name}. Check the water type, then press "Plan this place".`;
+  // set water type from what the search says it is
+  const k = h.kind || '';
+  if (['lake','reservoir','pond'].includes(k)) $('habitat').value = 'stillwater';
+  else if (['river','stream','creek','canal','ditch'].includes(k)) $('habitat').value = 'stream';
   // match a known lake by name
   const match = DB.lakes.find(l => h.name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase().split(' lake')[0]));
   if (match) { $('habitat').value = 'stillwater'; $('placeMsg').textContent += ` Matched known lake: ${match.name.split(' (')[0]}.`; }
