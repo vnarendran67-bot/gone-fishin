@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gone Fishin' — Plan any trip</title>
+<style>
+:root{--bg:#f3f7f5;--card:#fff;--ink:#1d2a24;--muted:#66786f;--accent:#1f7a5a;--gold:#e0a93b;--line:#d9e4df;--warn:#b5473a;--ok:#2f8f5b}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1714;--card:#17221e;--ink:#e6efea;--muted:#8ea399;--accent:#4fbf93;--gold:#e8b04a;--line:#2a3b34;--warn:#e27a6c;--ok:#4fbf93}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.45}
+header{background:var(--accent);color:#fff;padding:14px 16px}
+header h1{margin:0;font-size:20px}
+header p{margin:2px 0 0;opacity:.9;font-size:13px}
+main{max-width:960px;margin:0 auto;padding:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;margin-bottom:12px}
+.card h2{margin:0 0 8px;font-size:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:620px){.grid2{grid-template-columns:1fr}}
+label{display:block;font-size:12px;color:var(--muted);margin-bottom:8px}
+input,select{width:100%;margin-top:3px;padding:9px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end}
+.row>*{flex:1 1 180px}
+button.btn{background:var(--accent);color:#fff;border:0;padding:10px 14px;border-radius:8px;cursor:pointer;font:inherit;font-weight:600}
+button.ghost{background:none;color:var(--accent);border:1px solid var(--line);padding:7px 10px;border-radius:8px;cursor:pointer;font:inherit;font-size:13px}
+a.link{color:var(--accent);font-weight:600;font-size:13px}
+.muted{color:var(--muted);font-size:13px}
+.warn{color:var(--warn);font-size:13px}
+.big{font-size:22px;font-weight:700}
+.score{font-size:46px;font-weight:800;color:var(--accent);line-height:1}
+.pill{display:inline-block;background:var(--line);border-radius:99px;padding:2px 9px;font-size:12px;margin:2px 4px 2px 0}
+.pill.peak{background:var(--gold);color:#222;font-weight:600}
+.hatch{border-top:1px solid var(--line);padding:10px 0}
+.hatch:first-child{border-top:0}
+.results{margin:6px 0 0;padding:0;list-style:none}
+.results li{padding:8px;border:1px solid var(--line);border-radius:8px;margin-bottom:6px;cursor:pointer}
+.results li:hover{border-color:var(--accent)}
+ul.tips{padding-left:18px;margin:6px 0}
+ul.tips li{margin-bottom:4px}
+.hidden{display:none}
+.src{font-size:12px;color:var(--muted)}
+.src a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>🎣 Gone Fishin'</h1>
+  <p>Pick a place and a date. See the weather, water, and what should be hatching.</p>
+</header>
+<main>
+
+<section class="card">
+  <h2>1. Where</h2>
+  <div class="row">
+    <label style="flex:2 1 260px">Search a place (lake, creek, town, trailhead)
+      <input id="q" placeholder="e.g. Rose Canyon Lake, Oak Creek, Chevelon Creek" autocomplete="off">
+    </label>
+    <button class="btn" onclick="searchPlace()">Search</button>
+  </div>
+  <ul id="results" class="results"></ul>
+  <div class="row" style="margin-top:8px">
+    <label>Latitude<input id="lat" type="number" step="any"></label>
+    <label>Longitude<input id="lon" type="number" step="any"></label>
+    <label>Name<input id="pname" placeholder="My spot"></label>
+  </div>
+  <div class="row" style="margin-top:4px">
+    <label>Water type
+      <select id="habitat">
+        <option value="stream">Stream / river</option>
+        <option value="stillwater">Lake / pond / reservoir</option>
+      </select>
+    </label>
+    <label>Water temp (°F), if you know it
+      <input id="manualTemp" type="number" step="0.1" placeholder="from a thermometer or lake reading">
+    </label>
+  </div>
+  <p class="muted" id="placeMsg"></p>
+  <div class="row"><button class="btn" onclick="usePlace()">Plan this place</button></div>
+  <div id="saved" style="margin-top:10px"></div>
+</section>
+
+<section class="card">
+  <h2>2. When</h2>
+  <div class="row">
+    <label>Date
+      <input id="date" type="date">
+    </label>
+    <label>Time of day
+      <select id="when">
+        <option value="day">Whole day</option>
+        <option value="am">Morning (dawn to noon)</option>
+        <option value="pm">Afternoon (noon to dusk)</option>
+      </select>
+    </label>
+    <button class="btn" onclick="runPlan()">Get the plan</button>
+  </div>
+  <p class="muted">Forecasts cover the next 16 days. Dates further out use typical conditions from last year.</p>
+</section>
+
+<div id="output" class="hidden">
+  <div class="grid2">
+    <section class="card" id="conditions"></section>
+    <section class="card" id="water"></section>
+  </div>
+  <section class="card" id="verdict"></section>
+  <section class="card" id="hatches"></section>
+  <section class="card" id="tips"></section>
+  <section class="card src" id="sources"></section>
+</div>
+
+</main>
+
+<script src="data/hatches.js"></script>
+<script>
+const DB = window.HATCH_DB;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const iso = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const SAVE_KEY = 'gone-fishin-places-v2';
+let place = null;   // {name, lat, lon, habitat, lakeId}
+
+function loadSaved(){ try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || []; } catch(e){ return []; } }
+function saveAll(list){ try { localStorage.setItem(SAVE_KEY, JSON.stringify(list)); } catch(e){} }
+
+/* ---------- place lookup ---------- */
+async function searchPlace(){
+  const q = $('q').value.trim();
+  if (!q) return;
+  $('placeMsg').textContent = 'Searching…';
+  $('results').innerHTML = '';
+  try {
+    const r = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(q)}&count=6&language=en&format=json`);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    const hits = d.results || [];
+    $('placeMsg').textContent = hits.length ? 'Pick a result, or enter coordinates by hand.' : 'No matches. Try a different name or enter coordinates.';
+    $('results').innerHTML = hits.map((h,i) => `<li onclick="pickResult(${i})"><b>${esc(h.name)}</b> <span class="muted">${esc([h.admin1,h.country].filter(Boolean).join(', '))} · ${h.latitude.toFixed(3)}, ${h.longitude.toFixed(3)}</span></li>`).join('');
+    window._hits = hits;
+  } catch(e) {
+    $('placeMsg').innerHTML = `<span class="warn">Search unavailable (${esc(e.message)}). Enter coordinates below.</span>`;
+  }
+}
+function pickResult(i){
+  const h = window._hits[i];
+  $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name;
+  $('results').innerHTML = '';
+  $('placeMsg').textContent = `Set to ${h.name}. Check the water type, then press "Plan this place".`;
+  // match a known lake by name
+  const match = DB.lakes.find(l => h.name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase().split(' lake')[0]));
+  if (match) { $('habitat').value = 'stillwater'; $('placeMsg').textContent += ` Matched known lake: ${match.name.split(' (')[0]}.`; }
+}
+function usePlace(){
+  const lat = parseFloat($('lat').value), lon = parseFloat($('lon').value);
+  if (isNaN(lat) || isNaN(lon)) { $('placeMsg').innerHTML = '<span class="warn">Enter a latitude and longitude, or search for a place.</span>'; return; }
+  const name = $('pname').value.trim() || `${lat.toFixed(3)}, ${lon.toFixed(3)}`;
+  const lake = DB.lakes.find(l => l.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase()));
+  place = { name, lat, lon, habitat: $('habitat').value, lakeId: lake ? lake.id : null };
+  const list = loadSaved().filter(p => p.name !== place.name);
+  list.unshift({ name, lat, lon, habitat: place.habitat, lakeId: place.lakeId });
+  saveAll(list.slice(0, 12));
+  renderSaved();
+  runPlan();
+}
+function loadPlace(p){
+  $('lat').value = p.lat; $('lon').value = p.lon; $('pname').value = p.name; $('habitat').value = p.habitat;
+  place = p; runPlan();
+}
+function renderSaved(){
+  const list = loadSaved();
+  $('saved').innerHTML = list.length ? '<div class="muted" style="margin-bottom:4px">Saved places</div>' + list.map((p,i) =>
+    `<span class="pill" style="cursor:pointer" onclick="loadPlace(loadSaved()[${i}])">${esc(p.name)}</span>`).join('') : '';
+}
+
+/* ---------- weather & water data ---------- */
+function daysFromToday(dateStr){
+  const [y,m,d] = dateStr.split('-').map(Number);
+  const t = new Date(); t.setHours(0,0,0,0);
+  return Math.round((new Date(y, m-1, d) - t) / 86400000);
+}
+function lastYear(dateStr){ return (parseInt(dateStr.slice(0,4)) - 1) + dateStr.slice(4); }
+
+async function getForecast(lat, lon, dateStr){
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
+    `&hourly=temperature_2m,wind_speed_10m,precipitation_probability,cloud_cover,pressure_msl` +
+    `&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min,precipitation_probability_max` +
+    `&timezone=auto&start_date=${dateStr}&end_date=${dateStr}`;
+  const r = await fetch(url); if (!r.ok) throw new Error('forecast HTTP ' + r.status);
+  return r.json();
+}
+async function getArchive(lat, lon, dateStr){
+  const d = lastYear(dateStr);
+  const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${lat}&longitude=${lon}` +
+    `&start_date=${d}&end_date=${d}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,sunrise,sunset&timezone=auto`;
+  const r = await fetch(url); if (!r.ok) throw new Error('archive HTTP ' + r.status);
+  return { data: await r.json(), date: d };
+}
+async function getUSGS(lat, lon){
+  const pad = 0.2;
+  const bbox = [lon-pad, lat-pad, lon+pad, lat+pad].map(x => x.toFixed(4)).join(',');
+  const url = `https://waterservices.usgs.gov/nwis/iv/?format=json&bBox=${bbox}&parameterCd=00010,00060&siteStatus=active`;
+  const r = await fetch(url); if (!r.ok) throw new Error('USGS HTTP ' + r.status);
+  const d = await r.json();
+  const sites = {};
+  for (const ts of (d.value?.timeSeries || [])) {
+    const code = ts.variable.variableCode[0].value;
+    const name = ts.sourceInfo.siteName;
+    const vals = ts.values[0].value; const last = vals[vals.length-1];
+    if (!last) continue;
+    const key = ts.sourceInfo.siteCode[0].value;
+    sites[key] = sites[key] || { name, temp: null, flow: null, time: last.dateTime };
+    if (code === '00010') sites[key].temp = { c: parseFloat(last.value), f: parseFloat(last.value)*9/5+32 };
+    if (code === '00060') sites[key].flow = parseFloat(last.value);
+  }
+  return Object.values(sites);
+}
+
+/* ---------- scoring ---------- */
+function hourlyDayAverages(f, dateStr){
+  const h = f.hourly, idx = [];
+  h.time.forEach((t,i) => { if (t.startsWith(dateStr)) idx.push(i); });
+  const pick = (k, arr) => arr.reduce((s,i) => s + h[k][i], 0) / arr.length;
+  const sr = parseInt(f.daily.sunrise[0].slice(11,13)), ss = parseInt(f.daily.sunset[0].slice(11,13));
+  const fishing = idx.filter(i => { const hr = parseInt(h.time[i].slice(11,13)); return hr >= sr-1 && hr <= ss; });
+  const use = fishing.length ? fishing : idx;
+  return {
+    temp: pick('temperature_2m', use),
+    wind: pick('wind_speed_10m', use),
+    cloud: pick('cloud_cover', use),
+    rainChance: Math.max(...use.map(i => h.precipitation_probability[i])),
+    pressure: pick('pressure_msl', use),
+    sunrise: f.daily.sunrise[0].slice(11,16), sunset: f.daily.sunset[0].slice(11,16),
+    hours: use.map(i => h.time[i].slice(11,16))
+  };
+}
+function scoreDay(a){
+  let s = 60; const why = [];
+  if (a.wind > 20) { s -= 25; why.push(`Wind averaging ${a.wind.toFixed(0)} km/h. Casting is hard; fish sheltered banks.`); }
+  else if (a.wind > 12) { s -= 10; why.push(`Breezy (${a.wind.toFixed(0)} km/h). Look for sheltered water.`); }
+  else if (a.wind <= 6) { s += 5; why.push('Calm; rises are easier to see.'); }
+  if (a.rainChance > 60) { s -= 15; why.push(`Rain chance up to ${a.rainChance}%. Watch for rising water.`); }
+  else if (a.rainChance > 30) { s -= 5; why.push(`Some rain possible (${a.rainChance}%).`); }
+  if (a.cloud >= 30 && a.cloud <= 80) { s += 10; why.push('Partly cloudy skies often keep fish active.'); }
+  else if (a.cloud < 10) { s -= 5; why.push('Bright sun; fish may move to shade or deeper water.'); }
+  const tF = a.temp * 9/5 + 32; // Open-Meteo returns °C here
+  if (tF >= 45 && tF <= 75) { s += 10; why.push('Air temperature is comfortable for fishing.'); }
+  else if (tF < 32 || tF > 95) { s -= 15; why.push('Extreme air temperature; fish may be sluggish.'); }
+  s = Math.max(0, Math.min(100, Math.round(s)));
+  return { s, label: s>=75 ? 'Excellent' : s>=55 ? 'Good' : s>=35 ? 'Fair' : 'Tough', why };
+}
+
+/* ---------- hatches for a date ---------- */
+function activeHatches(month, habitat, waterF, insectIds){
+  const list = DB.insects.filter(i => i.habitat.includes(habitat) && i.months.includes(month));
+  return list.map(ins => {
+    let tempNote = null, gate = true;
+    if (ins.water_temp_f) {
+      if (waterF == null) tempNote = `Needs water temp (usually ${ins.water_temp_f.min}–${ins.water_temp_f.max} °F)`;
+      else if (waterF < ins.water_temp_f.min || waterF > ins.water_temp_f.max) { gate = false; tempNote = `Water ${waterF.toFixed(0)} °F is outside the usual ${ins.water_temp_f.min}–${ins.water_temp_f.max} °F`; }
+    }
+    const lakeBoost = insectIds && insectIds.includes(ins.id);
+    return { ins, gate, tempNote, peak: ins.peak_months.includes(month), lakeBoost };
+  }).filter(h => h.gate).sort((a,b) => (b.peak - a.peak) || (b.lakeBoost - a.lakeBoost));
+}
+function fmtFly(flies){ return flies.map(f => `${esc(f.pattern)} <span class="muted">(size ${esc(f.sizes)})</span>`).join('<br>'); }
+
+/* ---------- main ---------- */
+async function runPlan(){
+  if (!place) {
+    const lat = parseFloat($('lat').value), lon = parseFloat($('lon').value);
+    if (isNaN(lat) || isNaN(lon)) { $('placeMsg').innerHTML = '<span class="warn">Pick a place first.</span>'; return; }
+    place = { name: $('pname').value.trim() || 'My spot', lat, lon, habitat: $('habitat').value, lakeId: null };
+  }
+  const dateStr = $('date').value || iso(new Date());
+  $('date').value = dateStr;
+  $('output').classList.remove('hidden');
+  const days = daysFromToday(dateStr);
+  $('conditions').innerHTML = '<p class="muted">Loading weather…</p>';
+  $('water').innerHTML = '<p class="muted">Loading water data…</p>';
+  $('verdict').innerHTML = ''; $('hatches').innerHTML = ''; $('tips').innerHTML = ''; $('sources').innerHTML = '';
+
+  const [mm, dd] = [parseInt(dateStr.slice(5,7)), parseInt(dateStr.slice(8,10))];
+  const month = parseInt(dateStr.slice(5,7));
+  const lake = place.lakeId ? DB.lakes.find(l => l.id === place.lakeId) : null;
+  const habitat = place.habitat;
+
+  // weather
+  let wx = null, wxNote = '', wxSource = '';
+  try {
+    if (days >= 0 && days <= 15) {
+      const f = await getForecast(place.lat, place.lon, dateStr);
+      wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr), d: f.daily };
+      wxSource = 'Open-Meteo forecast';
+    } else {
+      const { data, date } = await getArchive(place.lat, place.lon, dateStr);
+      const dl = data.daily;
+      wx = { kind: 'typical', date, tmax: dl.temperature_2m_max[0], tmin: dl.temperature_2m_min[0], precip: dl.precipitation_sum[0], sunrise: dl.sunrise[0].slice(11,16), sunset: dl.sunset[0].slice(11,16) };
+      wxSource = 'Open-Meteo historical archive';
+      wxNote = `No forecast this far out. Showing ${date}, the same day last year.`;
+    }
+  } catch(e) {
+    wxNote = `Weather unavailable (${e.message}). Check the forecast in your weather app.`;
+  }
+
+  // water
+  let usgs = [], usgsNote = '';
+  try {
+    usgs = await getUSGS(place.lat, place.lon);
+    if (!usgs.length) usgsNote = 'No active USGS gauge within about 15 miles. Use a manual water temperature if you have one.';
+  } catch(e) {
+    usgsNote = `USGS data unavailable (${e.message}).`;
+  }
+  const manual = parseFloat($('manualTemp').value);
+  const waterF = !isNaN(manual) ? manual : (usgs.find(s => s.temp)?.temp?.f ?? null);
+  const waterSrc = !isNaN(manual) ? 'your reading' : (usgs.find(s => s.temp) ? 'USGS gauge' : 'none');
+
+  // conditions card
+  if (wx && wx.kind === 'forecast') {
+    const a = wx.a, sc = scoreDay(a);
+    $('conditions').innerHTML = `<h2>Conditions</h2>
+      <div class="big">${a.temp.toFixed(0)} °C air · ${(a.temp*9/5+32).toFixed(0)} °F</div>
+      <div class="muted">Wind ${a.wind.toFixed(0)} km/h · Cloud ${a.cloud.toFixed(0)}% · Rain chance ${a.rainChance}%</div>
+      <div class="muted">Sunrise ${a.sunrise} · Sunset ${a.sunset}</div>
+      <div style="margin-top:10px"><span class="score">${sc.s}</span> <b>${sc.label}</b></div>
+      <ul class="tips">${sc.why.map(w => `<li>${esc(w)}</li>`).join('')}</ul>
+      <div class="muted">Daytime averages shown.</div>`;
+    window._score = sc;
+  } else if (wx) {
+    $('conditions').innerHTML = `<h2>Typical conditions</h2>
+      <div class="big">${wx.tmin.toFixed(0)}–${wx.tmax.toFixed(0)} °C</div>
+      <div class="muted">Rain last year on this day: ${wx.precip} mm</div>
+      <div class="muted">Sunrise ${wx.sunrise} · Sunset ${wx.sunset}</div>
+      <p class="muted">${esc(wxNote)}</p>`;
+    window._score = null;
+  } else {
+    $('conditions').innerHTML = `<h2>Conditions</h2><p class="warn">${esc(wxNote)}</p>`;
+    window._score = null;
+  }
+
+  // water card
+  const gauge = usgs.find(s => s.temp) || usgs[0];
+  $('water').innerHTML = `<h2>Water</h2>
+    ${waterF != null ? `<div class="big">${waterF.toFixed(0)} °F</div><div class="muted">Source: ${esc(waterSrc)}</div>` : '<div class="muted">No water temperature yet.</div>'}
+    ${gauge ? `<div style="margin-top:8px"><b>${esc(gauge.name)}</b><div class="muted">${gauge.flow != null ? `Flow ${gauge.flow} cfs` : 'No flow reading'} · last ${esc(gauge.time?.slice(0,16).replace('T',' '))}</div></div>` : ''}
+    <p class="muted">${esc(usgsNote)}</p>
+    ${habitat === 'stillwater' ? '<p class="muted">Lakes usually have no USGS gauge. Type in a water temperature above for better hatch matching.</p>' : ''}`;
+
+  // hatches
+  const hatches = activeHatches(month, habitat, waterF, lake ? lake.insect_ids : null);
+  const peakCount = hatches.filter(h => h.peak).length;
+  $('hatches').innerHTML = `<h2>Hatches expected in ${MONTHS[month-1]}</h2>
+    <p class="muted">${hatches.length} possible. ${peakCount} typically peak this month. Based on regional guide data, not local counts.</p>
+    ${hatches.length ? hatches.map(h => `
+      <div class="hatch">
+        <b>${esc(h.ins.name)}</b>
+        ${h.peak ? '<span class="pill peak">peak month</span>' : '<span class="pill">active</span>'}
+        ${h.lakeBoost ? '<span class="pill">known at this lake</span>' : ''}
+        ${h.tempNote ? `<span class="pill">${esc(h.tempNote)}</span>` : ''}
+        <div class="muted" style="margin-top:4px">${esc(h.ins.time_of_day)}</div>
+        <div style="margin-top:4px">${fmtFly(h.ins.flies)}</div>
+        <div class="muted" style="margin-top:4px">${esc(h.ins.notes)}</div>
+        <div class="src">${h.ins.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(' · ')}</div>
+      </div>`).join('') : '<p class="muted">Nothing in the database for this month and water type.</p>'}`;
+
+  // verdict + tips
+  const tips = [];
+  if (lake) tips.push(`${esc(lake.name.split(' (')[0])}: ${lake.species.map(s => esc(s.name)).join(', ')}. ${esc(lake.fishing_season_note)}`);
+  if (wx && wx.kind === 'forecast' && wx.a.rainChance > 30 && month >= 7 && month <= 9) tips.push('Monsoon season (July to September): storms can raise streams fast. Stay out of washes and creek beds.');
+  if (usgs.some(s => s.flow != null) && wx && wx.kind === 'forecast' && wx.a.rainChance > 30) tips.push('Rain forecast and a flowing gauge: check the flow reading again the morning of your trip.');
+  if (habitat === 'stream') tips.push('Stream tip: fish the early and late hours when cloud cover is up.');
+  if (habitat === 'stillwater') tips.push('Lake tip: check the shallow weedy edges for midge and Callibaetis activity.');
+  $('tips').innerHTML = `<h2>Notes for ${esc(place.name)}</h2><ul class="tips">${tips.map(t => `<li>${t}</li>`).join('')}</ul>`;
+
+  // verdict
+  const bits = [];
+  if (window._score) bits.push(`Conditions: <b>${window._score.label}</b> (${window._score.s}/100)`);
+  if (waterF != null) bits.push(`Water ${waterF.toFixed(0)} °F`);
+  bits.push(`${hatches.length} possible hatches`);
+  $('verdict').innerHTML = `<h2>Summary</h2><div>${bits.join(' · ')}</div>`;
+
+  // sources
+  $('sources').innerHTML = `Weather: ${esc(wxSource || 'unavailable')}. Water: USGS Water Services. Hatch data: regional guide pages and a 1986 Sonoran Desert study; see each entry. <b>Verify locally before a trip.</b>`;
+}
+
+/* ---------- init ---------- */
+$('date').value = iso(new Date());
+renderSaved();
+</script>
+</body>
+</html>
