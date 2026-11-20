@@ -106,6 +106,7 @@ table.cmp td.win{color:var(--accent);font-weight:700}
 .jentry{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
 .jentry button{float:right}
 textarea{font:inherit}
+.link-btn{background:none;border:none;color:var(--accent,#2a6f97);cursor:pointer;font:inherit;text-decoration:underline;padding:0}
 </style>
 </head>
 <body>
@@ -330,9 +331,14 @@ async function loadPlace(p){
 }
 function renderSaved(){
   const list = loadSaved();
-  $('saved').innerHTML = list.length ? '<div class="muted" style="margin-bottom:4px">Saved places</div>' + list.map((p,i) =>
+  $('saved').innerHTML = list.length ? '<div class="muted" style="margin-bottom:4px">Saved places <button class="link-btn" style="margin-left:8px" onclick="clearSaved()">Clear all saved places</button></div>' + list.map((p,i) =>
     `<span class="pill" style="cursor:pointer" onclick="loadPlace(loadSaved()[${i}])">${esc(p.name)}</span>`).join('') : '';
 }
+window.clearSaved = function(){
+  if (!confirm('Remove all saved places? This cannot be undone.')) return;
+  try { localStorage.removeItem(SAVE_KEY); } catch(e) {}
+  renderSaved();
+};
 
 /* ---------- weather & water data ---------- */
 function daysFromToday(dateStr){
