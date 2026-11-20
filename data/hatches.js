@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 18,
+ "version": 19,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -9818,6 +9818,1282 @@ window.HATCH_DB = {
     7,
     8,
     9
+   ]
+  },
+  {
+   "id": "bear-canyon-lake-az",
+   "name": "Bear Canyon Lake (Payson, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7500,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Sportfishing Report. Coordinates not set.",
+   "area_acres": 60,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Regularly stocked spring through fall"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Regularly stocked rainbows spring through fall.",
+    "schedule": "Regular spring through fall, with a June 2024 update noted.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Bear Canyon Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/1528/bear-canyon-lake.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Regularly stocked spring through fall. Cooler months fish best, per Sportfishing Report.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Bear Canyon Lake is a remote, 60-acre trout lake at 7,500 feet on the Mogollon Rim northeast of Payson, per Sportfishing Report.",
+    "AZGFD stocks rainbows regularly from spring through fall, and Sportfishing Report says fishing is most productive in the cooler months.",
+    "In September 2016 AZGFD reported the lake was stocked heavily with rainbows, and rooster tails worked well. Float-tube fly anglers were catching lots of trout.",
+    "A June 2024 AZGFD update said rainbows were due to be stocked that month.",
+    "AZGFD's 2019 report describes Bear Canyon as steep, with a rating of good.",
+    "Recent sources list no wild trout population and little other detail. Treat the lake as a put-and-take fishery."
+   ],
+   "sources": [
+    {
+     "title": "Bear Canyon Lake (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/1528/bear-canyon-lake.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Rooster tail and spinner lures",
+     "category": "other",
+     "detail": "Lures worked well in 2016, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "Bear Canyon Lake Fish Report (AZGFD, 2016)",
+      "url": "https://www.sportfishingreport.com/fish_reports/119297/bear-canyon-lake-fishing-report.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Bear Canyon.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "becker-lake-az",
+   "name": "Becker Lake (Springerville, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6900,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Sportfishing Report. Coordinates not set.",
+   "area_acres": 107,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, trophy rainbows over 18 inches"
+    },
+    {
+     "name": "Apache trout",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Tiger trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Illegally introduced warmwater fish",
+     "stocking": "Present. Unlimited harvest allowed since 2025"
+    }
+   ],
+   "stocking": {
+    "status": "special regulation",
+    "summary": "Trophy catch-and-release fly water. Stocked each year in limited numbers. Recovering from 2025 fish kill.",
+    "schedule": "Stocked 3-23-2026 with rainbows, per Sportfishing Report.",
+    "recent_plants": [
+     {
+      "date": "3-23-2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Trophy rainbows and Apache trout. Tiger trout and brown trout present.",
+    "sources": [
+     {
+      "title": "Becker Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/807/becker-lake.php"
+     },
+     {
+      "title": "Trout stockings return to desert CFP waters in December (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round. Special regulations: catch and release, barbless artificial flies and lures only. Keep the first four fish caught when water is above 67 F, per AZGFD.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Becker Lake is Arizona's top catch-and-release fly-fishing trout lake, covering 107 acres at 6,900 feet, per Sportfishing Report.",
+    "Anglers may use barbless artificial flies and lures only, and every trout must be released unharmed, per Sportfishing Report.",
+    "Sportfishing Report says the lake supports trophy rainbows and Apache trout, with many fish over 18 inches.",
+    "Becker Lake is part of the 622-acre Becker Lake Wildlife Area near Springerville, per Wikipedia.",
+    "Becker and Luna lakes both had large fish kills in summer 2025 tied to low lake levels and poor water quality. AZGFD restocked Becker with about 3,000 trout, including rainbows averaging 4.75 pounds and Apache trout averaging 1.75 pounds.",
+    "AZGFD asks anglers to keep the first four fish caught when water is warmer than 67 F, to limit mortality at this special-regulation water.",
+    "A 2025-26 regulation change created unlimited daily and possession limits for illegally introduced warmwater fish at Becker. Trout remain catch and release.",
+    "A 20-inch tiger trout was recorded there on 10-19-2019, per AZGFD's record anglers list."
+   ],
+   "sources": [
+    {
+     "title": "Becker Lake (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/807/becker-lake.php"
+    },
+    {
+     "title": "Trout stockings return to desert CFP waters in December (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Illegally introduced warmwater fish",
+     "category": "other",
+     "detail": "Unlimited harvest allowed since the 2025-26 regulation change. Trout remain catch and release.",
+     "basis": "sourced",
+     "source": {
+      "title": "Arizona fishing regulations (eRegulations)",
+      "url": "https://www.eregulations.com/arizona/fishing"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Becker Lake.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Brown and black woolly buggers",
+     "category": "baitfish",
+     "detail": "Recommended for fly anglers. This is a general fly pattern, not a Becker-specific record.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "big-lake-az",
+   "name": "Big Lake (Springerville, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 9000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Sportfishing Report. Coordinates not set.",
+   "area_acres": 450,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked regularly"
+    },
+    {
+     "name": "Brook trout",
+     "stocking": "Present, holdovers good"
+    },
+    {
+     "name": "Apache trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Cutthroat trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Regularly stocked rainbows and holdover fish. Access roads close in winter.",
+    "schedule": "Stocked in April 2026, per Sportfishing Report.",
+    "recent_plants": [
+     {
+      "date": "4-13-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "4-20-2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Brook trout, cutthroat and Apache trout present.",
+    "sources": [
+     {
+      "title": "Big Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/803/big-lake.php"
+     },
+     {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     }
+    ]
+   },
+   "fishing_season_note": "May through October is the best fishing. Access roads close in winter, per AA-Fishing. The boat ramp may be hard to launch by late June or early July 2026, per AZGFD.",
+   "insect_ids": [
+    "caddis",
+    "chironomid"
+   ],
+   "notes": [
+    "Big Lake is a 450-acre trout fishery at 9,000 feet in Arizona's White Mountains, supporting rainbow, brook, Apache and cutthroat trout, per Sportfishing Report.",
+    "Sportfishing Report says fishing is best from May through October, and rainbows are stocked regularly and readily caught on PowerBait and spinners.",
+    "Orvis says most anglers fish Big Lake in two ways: nymphs under an indicator, or stripping leeches on an intermediate or full sinking line.",
+    "AZGFD recommended Big Lake in 2026 as one of the high-country waters likely to provide good fishing that year.",
+    "Sportfishing Report lists a 9-pound-8-ounce rainbow caught there in October 2022.",
+    "AA-Fishing says wind-blown shorelines with bait activity were productive in its current report, and access roads close once winter sets in."
+   ],
+   "sources": [
+    {
+     "title": "Big Lake (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/803/big-lake.php"
+    },
+    {
+     "title": "Fishing tips and upcoming events (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Leeches",
+     "category": "baitfish",
+     "detail": "Stripping leeches on an intermediate or full sinking line is one of the two main methods, per Orvis.",
+     "basis": "sourced",
+     "source": {
+      "title": "Big Lake (Orvis)",
+      "url": "https://fishingreports.orvis.com/southwest/arizona/big-lake"
+     }
+    },
+    {
+     "item": "Nymphs",
+     "category": "insect",
+     "detail": "Fished under an indicator, per Orvis.",
+     "basis": "sourced",
+     "source": {
+      "title": "Big Lake (Orvis)",
+      "url": "https://fishingreports.orvis.com/southwest/arizona/big-lake"
+     },
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Big Lake.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "fool-hollow-lake-az",
+   "name": "Fool Hollow Lake (Show Low, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6500,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Acreage from Sportfishing Report and Arizona State Parks.",
+   "area_acres": 150,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked regularly"
+    },
+    {
+     "name": "Largemouth and smallmouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Northern pike",
+     "stocking": "Present"
+    },
+    {
+     "name": "Walleye",
+     "stocking": "Present. State-record walleye taken here in 2004"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with rainbows. Water low in 2026.",
+    "schedule": "2026: March through July stocking per AZGFD news release.",
+    "recent_plants": [],
+    "wild_fish": "Pike, walleye and bass present.",
+    "sources": [
+     {
+      "title": "Fool Hollow Lake (Arizona State Parks)",
+      "url": "https://azstateparks.com/fool-hollow/on-the-water"
+     },
+     {
+      "title": "AZGFD news release: Show Low and Pinetop-Lakeside stocking changes",
+      "url": "https://www.azgfd.com/?p=12838"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round, per Arizona State Parks. Boat ramp may be unusable when water is low, per AZGFD (2026).",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Fool Hollow Lake sits in Show Low at roughly 150 acres, with an average depth of 23 feet, per Arizona State Parks.",
+    "Show Low Creek flows into Fool Hollow, which Arizona State Parks says provides a natural feeding ground and a diverse fishery.",
+    "Arizona State Parks calls Fool Hollow one of those hidden gems for bass, and says it has good trout fishing year round.",
+    "Northern pike fishing can be excellent at Fool Hollow, per Arizona State Parks.",
+    "Water was low in March 2026, and AZGFD said the boat ramp would not be usable until levels rose.",
+    "AZGFD recommended Fool Hollow in 2026 as one of the waters likely to provide good fishing. In 2026 Fool Hollow was among the Show Low-area lakes whose trout stocking moved to March through July."
+   ],
+   "sources": [
+    {
+     "title": "Fool Hollow Lake (Arizona State Parks)",
+     "url": "https://azstateparks.com/fool-hollow/on-the-water"
+    },
+    {
+     "title": "AZGFD news release: Show Low and Pinetop-Lakeside stocking changes",
+     "url": "https://www.azgfd.com/?p=12838"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Northern pike",
+     "category": "baitfish",
+     "detail": "Pike are voracious feeders at Fool Hollow, per Arizona State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fool Hollow Lake (Arizona State Parks)",
+      "url": "https://azstateparks.com/fool-hollow/on-the-water"
+     }
+    },
+    {
+     "item": "Walleye",
+     "category": "baitfish",
+     "detail": "Fool Hollow holds the state record walleye, 33 inches, from 2004.",
+     "basis": "sourced",
+     "source": {
+      "title": "Arizona State Fish Records (AZGFD)",
+      "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+     }
+    },
+    {
+     "item": "Garlic PowerBait and worms",
+     "category": "other",
+     "detail": "Angler baits that worked in March 2026 reports, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fool Hollow (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/woodland/28067/"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Fool Hollow.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "lyman-lake-az",
+   "name": "Lyman Lake (Apache County, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6200,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Acreage is approximate and not from a source.",
+   "area_acres": 1200,
+   "species": [
+    {
+     "name": "Walleye",
+     "stocking": "Self-sustaining. Population growing"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Carp",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "Walleye are the main species. No trout stocking documented for Lyman in the sources.",
+    "schedule": "No stocking documented.",
+    "recent_plants": [],
+    "wild_fish": "Walleye population growing.",
+    "sources": [
+     {
+      "title": "Lyman Lake fishing (Arizona State Parks)",
+      "url": "https://azstateparks.com/lyman-lake/on-the-water/fishing"
+     },
+     {
+      "title": "Lyman Lake (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/OM3Jp3f-/lyman-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round. Walleye fishing is best with crankbaits and worms. Winter fishing has produced walleye and channel catfish, per Arizona State Parks.",
+   "insect_ids": [],
+   "notes": [
+    "Lyman Lake State Park holds largemouth bass, channel catfish, carp and walleye, per Arizona State Parks.",
+    "Arizona State Parks says walleye are growing fast at Lyman. AZGFD surveys found a surplus of three-year-old walleye, ready to take a crankbait or worm.",
+    "Arizona State Parks recommends crankbaits in varied depths and speeds for walleye, and notes walleye favor a crankbait that imitates a small bass or carp.",
+    "A fish consumption advisory is in place for Lyman walleye because of mercury. The Department of Environmental Quality and AZGFD recommend not eating walleye from Lyman.",
+    "In January 2024 anglers caught channel catfish on nightcrawlers or anchovies on a slip-sinker rig, even through frigid weather and ice.",
+    "Fishbrain lists a walleye bag limit of six for Lyman, with no special gear rule in its April 2026 regulation summary."
+   ],
+   "sources": [
+    {
+     "title": "Lyman Lake fishing (Arizona State Parks)",
+     "url": "https://azstateparks.com/lyman-lake/on-the-water/fishing"
+    },
+    {
+     "title": "Lyman Lake (Fishbrain)",
+     "url": "https://fishbrain.com/fishing-waters/OM3Jp3f-/lyman-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Carp and smaller bass",
+     "category": "baitfish",
+     "detail": "Lyman walleye respond to crankbaits that imitate small bass or carp, per Arizona State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lyman Lake fishing (Arizona State Parks)",
+      "url": "https://azstateparks.com/lyman-lake/on-the-water/fishing"
+     }
+    },
+    {
+     "item": "Nightcrawlers and anchovies",
+     "category": "other",
+     "detail": "Channel catfish take nightcrawlers or anchovies on a slip-sinker rig, per Arizona State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Arizona Fishing Report (Arizona State Parks)",
+      "url": "https://azstateparks.com/arizona-fishing-report"
+     }
+    },
+    {
+     "item": "Crankbait",
+     "category": "other",
+     "detail": "Walleye bait, per Arizona State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lyman Lake fishing (Arizona State Parks)",
+      "url": "https://azstateparks.com/lyman-lake/on-the-water/fishing"
+     }
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "luna-lake-az",
+   "name": "Luna Lake (White Mountains, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Gila trout",
+     "stocking": "Native. About 5,500 catchable fish stocked in fall 2025"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "About 850 catchable fish stocked in fall 2025"
+    },
+    {
+     "name": "Cutthroat trout",
+     "stocking": "Being restored with Colorado partners"
+    },
+    {
+     "name": "Other size classes",
+     "stocking": "About 45,000 trout total in 2025 restart"
+    }
+   ],
+   "stocking": {
+    "status": "restocked",
+    "summary": "Restocked after 2025 fish kill with Gila, rainbow and mixed size trout.",
+    "schedule": "Fall 2025 restock. AZGFD expects good fishing in 2026.",
+    "recent_plants": [
+     {
+      "date": "Late fall 2025",
+      "species": "Gila trout, rainbow trout"
+     }
+    ],
+    "wild_fish": "Gila and cutthroat trout are native. Cutthroat record came from Luna in 1976.",
+    "sources": [
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     },
+     {
+      "title": "Arizona State Fish Records (AZGFD)",
+      "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round. Boat ramps may be hard to launch by late June or early July 2026.",
+   "insect_ids": [],
+   "notes": [
+    "Luna Lake is a White Mountains lake that AZGFD and partners restocked after a summer 2025 fish kill tied to low lake levels and poor water quality.",
+    "AZGFD stocked about 45,000 trout of several size classes in the restart, including about 5,500 catchable Gila trout and 850 catchable rainbows.",
+    "AZGFD calls Luna excellent for Gila trout fishing, and recommends it for the Arizona Trout Challenge.",
+    "AZGFD partnered with Colorado to bring cutthroat trout to Luna Lake and Big Lake, per a 2022 Sportfishing Report bulletin.",
+    "AZGFD is piloting SonicPure devices to reduce algae at Luna Lake, aimed at improving conditions for fish and anglers.",
+    "The Arizona state record cutthroat trout, 6 pounds 5 ounces at 22.3 inches, came from Luna Lake in 1976."
+   ],
+   "sources": [
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    },
+    {
+     "title": "Arizona State Fish Records (AZGFD)",
+     "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Trout feed and invertebrates",
+     "category": "other",
+     "detail": "Not documented for Luna Lake in the sources reviewed.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "knoll-lake-az",
+   "name": "Knoll Lake (Payson, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in March 2026 after restock"
+    },
+    {
+     "name": "Holdover trout",
+     "stocking": "Present from earlier stockings"
+    }
+   ],
+   "stocking": {
+    "status": "restocked",
+    "summary": "Restocked in 2026 after green sunfish removal.",
+    "schedule": "Stocked March 2026. Further stocking to follow.",
+    "recent_plants": [
+     {
+      "date": "Week before 3-19-2026 report",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Holdover trout from earlier stockings.",
+    "sources": [
+     {
+      "title": "Knoll Lake Fish Report (AZGFD, 3-19-2026)",
+      "url": "https://www.utahfishreports.com/fish_reports/236521/rainbow-trout-were-stocked-last-week.php"
+     },
+     {
+      "title": "Knoll (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/knoll/51/"
+     }
+    ]
+   },
+   "fishing_season_note": "Access roads reopened April 2026. Only electric motors allowed in past seasons.",
+   "insect_ids": [],
+   "notes": [
+    "Knoll Lake near Payson was fishless in early 2026 after AZGFD removed illegally stocked green sunfish, per AZGFD.",
+    "AZGFD planned to restock Knoll in spring 2026, and rainbows were stocked in mid-March 2026.",
+    "Access roads FR 300 and FR 295E reopened for Knoll by late April 2026, per AZGFD.",
+    "Sportsman's Warehouse rated Knoll fair for holdover trout in August 2025, and says PowerBait, worms and salmon eggs produced.",
+    "Only boats with a single electric motor are permitted on Knoll, per AZGFD via Sportsman's Warehouse.",
+    "AZGFD recommended Knoll in 2026 as one of the high-country waters likely to provide good fishing, while noting its low lake level in late 2025."
+   ],
+   "sources": [
+    {
+     "title": "Knoll Lake Fish Report (AZGFD, 3-19-2026)",
+     "url": "https://www.utahfishreports.com/fish_reports/236521/rainbow-trout-were-stocked-last-week.php"
+    },
+    {
+     "title": "Knoll (Sportsman's Warehouse)",
+     "url": "https://fishingreports.sportsmans.com/fishing-report/knoll/51/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Green sunfish (removed)",
+     "category": "other",
+     "detail": "AZGFD removed illegally stocked green sunfish before the 2026 restock.",
+     "basis": "sourced",
+     "source": {
+      "title": "Knoll Lake Fish Report (AZGFD, 12-15-2025)",
+      "url": "https://utahfishreports.com/fish_reports/234021/knoll-lake-fishing-report.php"
+     }
+    },
+    {
+     "item": "PowerBait, worms and salmon eggs",
+     "category": "other",
+     "detail": "Angler baits that worked on holdover trout in August 2025, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Knoll (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/knoll/51/"
+     }
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "cc-cragin-reservoir-az",
+   "name": "C.C. Cragin Reservoir / Blue Ridge Reservoir (Payson, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by AZGFD"
+    },
+    {
+     "name": "Green sunfish",
+     "stocking": "Illegally introduced at some points"
+    },
+    {
+     "name": "Bullhead, white bass, wiper, tilapia",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Rainbows stocked by AZGFD. Water level has varied widely.",
+    "schedule": "Stocking schedule not in sources.",
+    "recent_plants": [],
+    "wild_fish": "Warmwater species present.",
+    "sources": [
+     {
+      "title": "C.C. Cragin (Blue Ridge) Reservoir (USFS)",
+      "url": "https://www.fs.usda.gov/r03/coconino/recreation/cc-cragin-blue-ridge-reservoir"
+     },
+     {
+      "title": "Blue Ridge Reservoir Fish Report, 3-19-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/236520/c.c.-cragin-reservoir-is-74-percent-full.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Rock Crossing campground closed in winter. Only boats with 10 horsepower or less or electric motors are allowed.",
+   "insect_ids": [],
+   "notes": [
+    "C.C. Cragin Reservoir, also called Blue Ridge Reservoir, is a narrow, winding lake fed by three watersheds. It looks more like a canyon-bound river than a lake, per the USFS.",
+    "The reservoir is an important water source for the town of Payson, per the USFS.",
+    "Rainbow trout are stocked by AZGFD here, per the USFS.",
+    "Green sunfish were illegally introduced at some points in the reservoir, per the USFS.",
+    "The reservoir was 74 percent full in March 2026, per AZGFD. It was only 19 percent full and dropping in July 2025.",
+    "Only boats with a single 10-horsepower or electric motor are allowed, and swimming within 50 feet of the ramp is prohibited, per the USFS and AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "C.C. Cragin (Blue Ridge) Reservoir (USFS)",
+     "url": "https://www.fs.usda.gov/r03/coconino/recreation/cc-cragin-blue-ridge-reservoir"
+    },
+    {
+     "title": "Blue Ridge Reservoir Fish Report, 3-19-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/236520/c.c.-cragin-reservoir-is-74-percent-full.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Green sunfish",
+     "category": "baitfish",
+     "detail": "Illegally introduced at some points, per the USFS.",
+     "basis": "sourced",
+     "source": {
+      "title": "C.C. Cragin (Blue Ridge) Reservoir (USFS)",
+      "url": "https://www.fs.usda.gov/r03/coconino/recreation/cc-cragin-blue-ridge-reservoir"
+     }
+    },
+    {
+     "item": "Bullhead and white bass",
+     "category": "baitfish",
+     "detail": "Listed as species in the reservoir, per Sportfishing Report.",
+     "basis": "sourced",
+     "source": {
+      "title": "C. C. Cragin Reservoir (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/995/c.-c.-cragin-reservoir.php"
+     }
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "woodland-lake-az",
+   "name": "Woodland Lake (Show Low area, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Not stocked spring or summer 2026"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "No trout stocking spring or summer 2026. Low water. Conflicting AZGFD notices on future stocking.",
+    "schedule": "Not stocked spring or summer 2026.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     },
+     {
+      "title": "Woodland (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/woodland/28067/"
+     }
+    ]
+   },
+   "fishing_season_note": "Low water in 2025 made fishing hard. Not stocked with trout in spring or summer 2026, per AZGFD.",
+   "insect_ids": [],
+   "notes": [
+    "AZGFD listed Woodland Lake among waters that will not be stocked with trout in spring and summer 2026.",
+    "In July 2025 Sportsman's Warehouse rated Woodland fair because of low water, and recommended worms under a bobber or garlic PowerBait in open water.",
+    "Low water levels also made Woodland's boat ramp unusable until water rose, per AZGFD in 2026.",
+    "AZGFD's 2026 news release lists Woodland among Show Low-area waters that may be stocked March through July.",
+    "The lake's status depends on water levels, so check current conditions before going."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    },
+    {
+     "title": "Woodland (Sportsman's Warehouse)",
+     "url": "https://fishingreports.sportsmans.com/fishing-report/woodland/28067/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Worms under a bobber and garlic PowerBait",
+     "category": "other",
+     "detail": "Angler baits recommended for low-water conditions, per Sportsman's Warehouse (2025).",
+     "basis": "sourced",
+     "source": {
+      "title": "Woodland (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/woodland/28067/"
+     }
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "scott-reservoir-az",
+   "name": "Scott Reservoir (Show Low area, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Not stocked spring or summer 2026"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "Not stocked spring or summer 2026. Ramp unusable at low water.",
+    "schedule": "Not stocked spring or summer 2026.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     },
+     {
+      "title": "AZGFD news release: Show Low and Pinetop-Lakeside stocking changes",
+      "url": "https://www.azgfd.com/?p=12838"
+     }
+    ]
+   },
+   "fishing_season_note": "Not stocked with trout in spring or summer 2026. Boat ramp unusable until water rises, per AZGFD.",
+   "insect_ids": [],
+   "notes": [
+    "AZGFD listed Scott Reservoir among waters that will not be stocked with trout in spring and summer 2026.",
+    "AZGFD said low water levels made the Scott boat ramp unusable until water rose.",
+    "An AZGFD news release says Scott was among Show Low-area waters that could be stocked March through July.",
+    "Sources do not describe the reservoir's fish or hatches. Check current conditions before going."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    },
+    {
+     "title": "AZGFD news release: Show Low and Pinetop-Lakeside stocking changes",
+     "url": "https://www.azgfd.com/?p=12838"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "black-canyon-lake-az",
+   "name": "Black Canyon Lake (Mogollon Rim, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6700,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Not stocked spring or summer 2026"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "Not stocked 2026. Ramp unusable at low water.",
+    "schedule": "Not stocked spring or summer 2026.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     }
+    ]
+   },
+   "fishing_season_note": "Not stocked with trout in spring or summer 2026. Boat ramp unusable at low water, per AZGFD.",
+   "insect_ids": [],
+   "notes": [
+    "AZGFD listed Black Canyon Lake among waters that will not be stocked with trout in spring and summer 2026.",
+    "AZGFD said low water levels meant the Black Canyon boat ramp would not be usable until levels rose.",
+    "AZGFD also listed Black Canyon among canceled stockings in a 2026 report.",
+    "Sources give no detail on fish or hatches. Check current conditions before going."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "carnero-lake-az",
+   "name": "Carnero Lake (Mogollon Rim, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Not stocked spring or summer 2026"
+    },
+    {
+     "name": "Tiger trout",
+     "stocking": "Stocked in past years"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "Not stocked 2026. Older reports describe larger trout.",
+    "schedule": "Not stocked spring or summer 2026.",
+    "recent_plants": [],
+    "wild_fish": "Tiger trout and rainbows from earlier stockings.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     },
+     {
+      "title": "Fishing report (Arizona Republic, 2017)",
+      "url": "https://www.pressreader.com/usa/the-arizona-republic/20170629/282016147342055"
+     }
+    ]
+   },
+   "fishing_season_note": "Not stocked with trout in spring or summer 2026, per AZGFD.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD listed Carnero Lake among waters that will not be stocked with trout in spring and summer 2026.",
+    "A 2017 Arizona Republic fishing report said Carnero was worth trying for 20-inch rainbows and 15-inch-plus tiger trout. That report is old, so treat it with caution.",
+    "AZGFD stocked tiger trout in Carnero in May some years, per a 2019 Western Bass report."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    },
+    {
+     "title": "Fishing report (Arizona Republic, 2017)",
+     "url": "https://www.pressreader.com/usa/the-arizona-republic/20170629/282016147342055"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Regional stillwater insect. Not documented for Carnero.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "lee-valley-lake-az",
+   "name": "Lee Valley Reservoir (White Mountains, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Not stocked spring or summer 2026"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "Not stocked 2026. Special regulations proposed for removal.",
+    "schedule": "Not stocked spring or summer 2026.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     },
+     {
+      "title": "AZGFD seeks public input on proposed 2027-28 regulations",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/41c1d0a"
+     }
+    ]
+   },
+   "fishing_season_note": "Not stocked with trout in spring or summer 2026. Special regulations proposed for removal in the 2027-28 season.",
+   "insect_ids": [],
+   "notes": [
+    "AZGFD listed Lee Valley Reservoir among waters that will not be stocked with trout in spring and summer 2026.",
+    "AZGFD proposed removing the current special regulations at Lee Valley and returning it to statewide rules, to improve fishing for the public.",
+    "Sources give no detail on fish or hatches. Check current conditions before going."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    },
+    {
+     "title": "AZGFD seeks public input on proposed 2027-28 regulations",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/41c1d0a"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
    ]
   }
  ]
