@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 31,
+ "version": 32,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -18476,6 +18476,649 @@ window.HATCH_DB = {
     2,
     3,
     10
+   ]
+  },
+  {
+   "id": "water-ranch-lake-gilbert-az",
+   "name": "Water Ranch Lake (Riparian Preserve at Water Ranch, Gilbert, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.3633,
+   "lon": -111.7361,
+   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33\u00b021'47.75\"N 111\u00b044'09.80\"W).",
+   "area_acres": 5,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked (Gilbert and AZGFD)"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Farm-raised, stocked"
+    },
+    {
+     "name": "Largemouth bass, sunfish",
+     "stocking": "Stocked; catch-and-release only"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Gilbert runs Water Ranch Lake as a Community Fishing lake with AZGFD. Gilbert lists rainbow trout, largemouth bass, sunfish and farm-raised channel catfish as stocked species.",
+    "schedule": "Rainbow trout and catfish are stocked through the Community Fishing schedule. Gilbert posts current stocking dates on site and on the AZGFD site.",
+    "recent_plants": [],
+    "wild_fish": "Not sourced beyond the species listed above.",
+    "sources": [
+     {
+      "title": "Gilbert Water Ranch fishing",
+      "url": "https://gilbertaz.gov/departments/parks-and-recreation/riparian-preserve-at-water-ranch/fish"
+     },
+     {
+      "title": "Gilbert rules for public use",
+      "url": "https://gilbertaz.gov/departments/parks-and-recreation/riparian-preserve-at-water-ranch/about-us/rules-for-public-use"
+     },
+     {
+      "title": "Gilbert Community Fishing (AZGFD)",
+      "url": "https://azgfd.com/?p=3347"
+     },
+     {
+      "title": "Arizona urban lakes (AZBigMedia)",
+      "url": "https://azbigmedia.com/lifestyle/adventures/arizona-urban-lakes"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing lake at Riparian Preserve at Water Ranch, 2757 E. Guadalupe Rd, Gilbert. Open 6 a.m. to 10 p.m. Fishing is allowed from the bank; no boats, and float tubes are allowed.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Gilbert says fishing is only permitted in Water Ranch Lake, near the library, until 10 PM.",
+    "Gilbert says bass and sunfish at Water Ranch must be released immediately, and anglers may keep trout and catfish.",
+    "Gilbert says the fishing basins in the Riparian Preserve are off-limits, because the fish there are natural and protected.",
+    "Gilbert says anglers must use single barbless hooks, though bait is allowed.",
+    "AZBigMedia's urban lake list gives Water Ranch a 4-trout and 4-catfish daily limit, which differs from Gilbert's 2-and-2 rule. Check the current posted rules before you fish.",
+    "The Riparian Preserve has a 5-acre lake, a maximum depth of 15 feet, and is open 6 a.m. to 10 p.m., per AZBigMedia.",
+    "Fishbrain logs largemouth bass, channel catfish and bluegill as the top species here.",
+    "Gilbert rules: two catfish and two trout may be kept. Bass and sunfish must be released immediately. Single barbless hooks are required."
+   ],
+   "sources": [
+    {
+     "title": "Gilbert Water Ranch fishing",
+     "url": "https://gilbertaz.gov/departments/parks-and-recreation/riparian-preserve-at-water-ranch/fish"
+    },
+    {
+     "title": "Gilbert rules for public use",
+     "url": "https://gilbertaz.gov/departments/parks-and-recreation/riparian-preserve-at-water-ranch/about-us/rules-for-public-use"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "General urban-lake forage; not sourced for Water Ranch.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "General pond forage.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "veterans-oasis-lake-chandler-az",
+   "name": "Veterans Oasis Lake (Veterans Oasis Park, Chandler, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set; the park is at 4050 E. Chandler Heights Rd, Chandler.",
+   "area_acres": 5,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked every two weeks, mid-Sept to late May"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Bluegill, largemouth bass",
+     "stocking": "Stocked"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Chandler runs Veterans Oasis Lake as a Community Fishing water with AZGFD. The city says it is stocked every two weeks from mid-September through the last week of May.",
+    "schedule": "Every two weeks, mid-September through the last week of May (Chandler). AZGFD publishes stocking weeks only.",
+    "recent_plants": [],
+    "wild_fish": "Not sourced beyond the species listed above.",
+    "sources": [
+     {
+      "title": "Veterans Oasis Park (Chandler)",
+      "url": "https://www.chandleraz.gov/explore/chandler-parks/guide/veterans-oasis-park"
+     },
+     {
+      "title": "Chandler Community Fishing Program",
+      "url": "https://www.chandleraz.gov/index%2Ephp/explore/chandler-parks/programs/community-fishing-program"
+     },
+     {
+      "title": "National Go Fishing Day (Chandler)",
+      "url": "https://www.chandleraz.gov/blog/national-go-fishing-day-cast-line-chandler-city-parks"
+     }
+    ]
+   },
+   "fishing_season_note": "Chandler park, 113 acres overall, with a 5-acre fishing lake. Stocked every two weeks, mid-September through June. Fishing from the bank only; boating needs a permit.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Chandler says Veterans Oasis is a 5-acre community fishing lake that is good for feisty catfish, and that anglers can expect rainbow trout, bluegill, channel catfish and largemouth bass.",
+    "Chandler says the lake is stocked with fish every two weeks from mid-September through June.",
+    "Chandler says anglers can fish from the bank, and that canoes and kayaks need a boating permit.",
+    "Chandler says the General Fishing or Combination license is required but not sold on site.",
+    "Veterans Oasis is one of the best birding spots in Chandler, with recharge basins and riparian habitat.",
+    "The lake was built to recharge reclaimed water into the ground, per Chandler.",
+    "AZGFD's Chandler page lists Veterans Oasis among the Phoenix-metro lakes stocked with rainbow trout in fall and winter, per the city's stocking notices.",
+    "Chandler: daily bag and possession limits are on pages 8 and 22 of the city's packet, and on the lake signs."
+   ],
+   "sources": [
+    {
+     "title": "Veterans Oasis Park (Chandler)",
+     "url": "https://www.chandleraz.gov/explore/chandler-parks/guide/veterans-oasis-park"
+    },
+    {
+     "title": "Chandler Community Fishing Program",
+     "url": "https://www.chandleraz.gov/index%2Ephp/explore/chandler-parks/programs/community-fishing-program"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "General lake forage; not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "evelyn-hallman-pond-tempe-az",
+   "name": "Evelyn Hallman Pond (Evelyn Hallman Park, Tempe, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.4494,
+   "lon": -111.9381,
+   "coords_note": "Elevation not sourced (Wikipedia gives 1,100 ft surface elevation). Coordinates from Wikipedia.",
+   "area_acres": 3,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Largemouth bass, bluegill",
+     "stocking": "Present"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in winter"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Evelyn Hallman Pond is a Tempe Community Fishing water with AZGFD. The city says ages 10 and older need an Arizona fishing license.",
+    "schedule": "Stocked in the Community Fishing schedule; AZGFD lists it among Tempe's stocked waters.",
+    "recent_plants": [],
+    "wild_fish": "Not sourced beyond the species listed above.",
+    "sources": [
+     {
+      "title": "Tempe Community Fishing (AZGFD)",
+      "url": "https://azgfd.com/?p=3420"
+     },
+     {
+      "title": "Tempe fishing rules",
+      "url": "https://tempe.gov/government/community-services/parks/fishing"
+     },
+     {
+      "title": "Arizona urban lakes (AZBigMedia)",
+      "url": "https://azbigmedia.com/lifestyle/adventures/arizona-urban-lakes/4/"
+     },
+     {
+      "title": "Evelyn Hallman Pond (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Evelyn_Hallman_Pond"
+     }
+    ]
+   },
+   "fishing_season_note": "Tempe urban pond at Evelyn Hallman Park, 1900 N College Ave. Open 6 a.m. to 10 p.m. Small and stocked, so the fishing is good for kids.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZBigMedia lists Evelyn Hallman Park at 1900 N College Ave, Tempe, open 6 a.m. to 10 p.m., with a 3-acre pond and a 7-foot maximum depth.",
+    "Tempe says anglers 10 and older need a valid Arizona fishing license for Tempe Town Lake, Kiwanis Lake and Evelyn Hallman Pond.",
+    "AZGFD's 2021 Phoenix-area stocking notice listed Evelyn Hallman Lake among the catfish-stocked community lakes that week.",
+    "Hookedaz says swimming, wading, glass containers and littering are prohibited, and a permit is needed to drink beer in the park.",
+    "Fishbrain logs channel catfish, largemouth bass and bluegill as the most popular species here.",
+    "Wikipedia gives the surface area as 3 acres and says the pond sits east of the Cross Cut Canal, which supplies its water.",
+    "FishAngler reports a grandson's first catfish caught here in December 2023, per its catch log.",
+    "Evelyn Hallman daily limits: 2 catfish, 2 trout, 1 bass (13-inch minimum), 5 sunfish, 1 white amur (30-inch minimum)."
+   ],
+   "sources": [
+    {
+     "title": "Tempe Community Fishing (AZGFD)",
+     "url": "https://azgfd.com/?p=3420"
+    },
+    {
+     "title": "Tempe fishing rules",
+     "url": "https://tempe.gov/government/community-services/parks/fishing"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "General small-pond forage.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "encanto-lake-phoenix-az",
+   "name": "Encanto Lake (Encanto Park, Phoenix, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.4746,
+   "lon": -112.0889,
+   "coords_note": "Elevation not sourced. Coordinates from Wikipedia's Encanto Park entry.",
+   "area_acres": 7.5,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked November and December"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked June, September, October"
+    },
+    {
+     "name": "White amur (large)",
+     "stocking": "Present; a 47-inch state record was caught here in 2006"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Encanto Lake is a Community Fishing lagoon at Encanto Park in Phoenix. The Phoenix parks department says the city's lakes are stocked with catfish in June, September and October, and with trout in November and December.",
+    "schedule": "Phoenix parks: catfish in June, September and October; trout in November and December. AZGFD posts specific dates.",
+    "recent_plants": [],
+    "wild_fish": "Not sourced beyond the species listed above.",
+    "sources": [
+     {
+      "title": "Phoenix parks fishing",
+      "url": "https://phoenix.gov/parks/trails/things-to-do/fishing-in-phoenix-parks"
+     },
+     {
+      "title": "Creatures from the Encanto Lagoon (Phoenix New Times)",
+      "url": "https://www.phoenixnewtimes.com/news/creatures-from-the-encanto-lagoon-6412934/"
+     },
+     {
+      "title": "Arizona State Fish Records (AZGFD)",
+      "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+     }
+    ]
+   },
+   "fishing_season_note": "Urban lagoon at Encanto Park, 2605 N 15th Ave, Phoenix. Open 5:30 a.m. to 11 p.m. Boating not allowed.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Phoenix Parks says it partners with AZGFD to stock lakes in seven city parks, Encanto among them.",
+    "Phoenix New Times says the Encanto lagoon has become known for large fish after the park renovation.",
+    "The daily limit at Encanto, set by Game and Fish, is four trout and four catfish, per Phoenix New Times.",
+    "AZGFD's state record list includes a 47-inch white amur caught at Encanto Park Lake in 2006.",
+    "AZBigMedia lists Encanto Lake at 2605 N 15th Ave, open 5:30 a.m. to 11 p.m.",
+    "Hookedaz says swimming, wading, glass containers and littering are prohibited, and boating is not allowed.",
+    "The 7.5-acre lagoon is described as having many canals and hidden casting spots, per Phoenix Magazine.",
+    "Encanto daily limit set by AZGFD: four trout and four catfish."
+   ],
+   "sources": [
+    {
+     "title": "Phoenix parks fishing",
+     "url": "https://phoenix.gov/parks/trails/things-to-do/fishing-in-phoenix-parks"
+    },
+    {
+     "title": "Creatures from the Encanto Lagoon (Phoenix New Times)",
+     "url": "https://www.phoenixnewtimes.com/news/creatures-from-the-encanto-lagoon-6412934/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "General lagoon forage.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "desert-west-lake-phoenix-az",
+   "name": "Desert West Lake (Desert West Park, Phoenix, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.4751,
+   "lon": -112.1966,
+   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33\u00b028'30.19\"N 112\u00b011'47.71\"W).",
+   "area_acres": 5,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Sunfish, largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Desert West Lake is a Phoenix Community Fishing lake. The city stocks its lakes with catfish in June, September and October, and trout in November and December.",
+    "schedule": "Phoenix parks: catfish June, September, October; trout November and December.",
+    "recent_plants": [],
+    "wild_fish": "Not sourced beyond the species listed above.",
+    "sources": [
+     {
+      "title": "Phoenix Community Fishing - Desert West (AZGFD)",
+      "url": "https://azgfd.com/?p=3379"
+     },
+     {
+      "title": "Phoenix parks fishing",
+      "url": "https://phoenix.gov/parks/trails/things-to-do/fishing-in-phoenix-parks"
+     },
+     {
+      "title": "Arizona urban lakes (AZBigMedia)",
+      "url": "https://azbigmedia.com/lifestyle/adventures/arizona-urban-lakes/2/"
+     },
+     {
+      "title": "Desert West Lake (Wikipedia)",
+      "url": "https://en.wikipedia.com/wiki/Desert_West_Lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Phoenix urban lake at Desert West Park and Sports Complex, 6602 W Encanto Blvd. Open 5:30 a.m. to 11 p.m.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZBigMedia gives Desert West Lake's address as 6602 W Encanto Blvd, Phoenix, open 5:30 a.m. to 11 p.m., with a 5-acre lake and 15-foot maximum depth.",
+    "AZGFD's Phoenix community fishing page lists Desert West Lake among its urban waters.",
+    "Arizona Vacation describes Desert West as being in Desert West Park in southwest Phoenix, at 63rd Avenue between Virginia Avenue and Encanto Boulevard.",
+    "Phoenix Parks says its stocked lakes get catfish in June, September and October, and trout in November and December.",
+    "The Desert West Community Center hosted a November 2025 intro-to-fishing class nearby, per Active.com.",
+    "Fishbrain and the community-fishing lists treat Desert West as a catfish and trout water.",
+    "The pond sits near the Desert West Community Center, per AZGFD's park notice.",
+    "Desert West daily limits: 4 catfish, 4 trout, 2 bass (13-inch minimum), 10 sunfish, 1 white amur (30-inch minimum)."
+   ],
+   "sources": [
+    {
+     "title": "Phoenix Community Fishing - Desert West (AZGFD)",
+     "url": "https://azgfd.com/?p=3379"
+    },
+    {
+     "title": "Phoenix parks fishing",
+     "url": "https://phoenix.gov/parks/trails/things-to-do/fishing-in-phoenix-parks"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "General lake forage.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "kiwanis-lake-tempe-az",
+   "name": "Kiwanis Lake (Kiwanis Park, Tempe, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.3739,
+   "lon": -111.939,
+   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33\u00b022'26.06\"N 111\u00b056'20.44\"W).",
+   "area_acres": 13,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in winter"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked spring and fall"
+    },
+    {
+     "name": "Largemouth bass, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Kiwanis Lake is a Tempe Community Fishing water. Tempe says ages 10 and older need an AZGFD fishing license for Kiwanis Lake. Kiwanis has been stocked with trout, bass and catfish, and it was not stocked in 2014 because of water quality.",
+    "schedule": "Stocked in the Community Fishing schedule (catfish spring and fall; trout in winter).",
+    "recent_plants": [],
+    "wild_fish": "Not sourced beyond the species listed above.",
+    "sources": [
+     {
+      "title": "Tempe Community Fishing: Kiwanis (AZGFD)",
+      "url": "https://azgfd.com/?p=3431"
+     },
+     {
+      "title": "Kiwanis Lake (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kiwanis_Lake"
+     },
+     {
+      "title": "Komoot: Kiwanis Lake",
+      "url": "https://www.komoot.com/highlight/7591167"
+     },
+     {
+      "title": "Arizona urban lakes (AZBigMedia)",
+      "url": "https://azbigmedia.com/lifestyle/adventures/arizona-urban-lakes/4/"
+     }
+    ]
+   },
+   "fishing_season_note": "Tempe urban lake at Kiwanis Park, 5500 S Mill Ave. Open 6 a.m. to midnight. Boating allowed on the lake, swimming not allowed.",
+   "insect_ids": [
+    "chironomid",
+    "callibaetis"
+   ],
+   "notes": [
+    "Wikipedia gives Kiwanis Lake a surface area of 13 acres and an average depth of 5 feet.",
+    "Komoot says the 12-acre lake is a favorite fishing spot, stocked with trout, bass and catfish, and that boating is allowed but swimming is not.",
+    "AZBigMedia lists Kiwanis Park at 5500 S Mill Ave, open 6 a.m. to midnight, with a maximum depth of 8 feet.",
+    "AZGFD says Kiwanis Park is at 1900 N 5500 S Mill Avenue.",
+    "Western Outdoor Times reported in 2014 that Kiwanis Lake was not stocked because of poor water quality, and that stocking would resume later.",
+    "Tempe says the Kiwanis lake edge and fishing ramadas were renovated after a 2017 public meeting.",
+    "Tempe says the city finished major improvements at Kiwanis Park and lake, per a Western Bass notice.",
+    "Kiwanis daily limits: 4 catfish, 4 trout, 2 bass (13-inch minimum), 10 sunfish."
+   ],
+   "sources": [
+    {
+     "title": "Tempe Community Fishing: Kiwanis (AZGFD)",
+     "url": "https://azgfd.com/?p=3431"
+    },
+    {
+     "title": "Kiwanis Lake (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Kiwanis_Lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Callibaetis mayflies",
+     "category": "insect",
+     "detail": "General lake mayfly; not sourced for Kiwanis.",
+     "basis": "general",
+     "insect_id": "callibaetis"
+    }
+   ],
+   "fish_months": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
    ]
   }
  ]
