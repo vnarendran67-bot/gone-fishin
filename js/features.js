@@ -54,6 +54,9 @@ function fillMonths(){
   names.forEach((n, i) => sel.add(new Option(n, i + 1)));
   sel.value = parseInt(($('date').value || iso(new Date())).slice(5, 7));
 }
+// On window so the month picker's onchange="renderMap()" can reach it (functions inside this
+// wrapper aren't global, so changing the month threw "renderMap is not defined").
+window.renderMap = renderMap;
 function renderMap(){
   fillMonths();
   const month = parseInt($('mapMonth').value);
@@ -85,7 +88,7 @@ window.showState = function(name, quiet){
   if (!quiet) renderMap();
 };
 function hatchPeaks(lake, habitat, month, state){
-  const list = activeHatches(month, habitat, null, lake ? lake.insect_ids : null, state);
+  const list = activeHatches(month, habitat, null, lake ? lake.insect_ids : null, state).filter(h => !h.unlikely);
   return { total: list.length, peaks: list.filter(h => h.peak).length };
 }
 
@@ -109,17 +112,19 @@ function nwsDayFrom(periods, dateStr, win){
   if (!day.length) return null;
   const mean = arr => arr.reduce((s,v) => s + v, 0) / arr.length;
   const tC = day.map(x => (x.temperature - 32) * 5 / 9);
-  const kmh = day.map(x => (parseFloat(x.windSpeed) || 0) / 0.621371);
+  const kmh = day.map(x => nwsWindMph(x.windSpeed) / 0.621371);
   const pops = day.map(x => x.probabilityOfPrecipitation?.value).filter(v => v != null);
   return { temp: mean(tC), wind: mean(kmh), rainChance: pops.length ? Math.max(...pops) : null };
 }
-async function findBestDay(){
+// On window so the button's onclick="findBestDay()" can reach it (it used to throw
+// "findBestDay is not defined").
+window.findBestDay = async function(){
   const btn = $('bdBtn'); const out = $('bdOut');
   if (!place) return;
   btn.disabled = true; out.innerHTML = '<p class="muted">Checking the next 10 days (National Weather Service first)…</p>';
   const lake = findLake(place);
   const saved = ELEV_M;
-  ELEV_M = lake ? Math.round(lake.elevation_ft * 0.3048) : null;
+  ELEV_M = elevMetersFor(place, lake, true);   // waters with no listed elevation used to be sent as 0 m
   const today = iso(new Date());
   const dates = [...Array(10).keys()].map(i => shiftDay(today, i));
   const win = $('when').value;
@@ -149,11 +154,11 @@ async function findBestDay(){
         <td>${r.a.rainChance != null ? Math.round(r.a.rainChance) + '%' : '—'}</td><td>${r.hp.peaks}</td><td class="muted">${r.src}</td></tr>`).join('') +
       `</table><p class="muted">NWS covers about the next 7 days. Later days use Open-Meteo. ${rows.length - good.length ? (rows.length - good.length) + ' day(s) had no forecast.' : ''}</p>`;
   } finally { ELEV_M = saved; btn.disabled = false; }
-}
+};
 
 /* ---------- wind alert banner ---------- */
 function windBanner(wx){
-  if (!wx || !wx.a || wx.a.wind == null) return '';
+  if (!wx || !wx.a || wx.a.wind == null || wx.past) return '';   // no "expected" warnings for days already gone
   const w = wx.a.wind;
   if (w >= 24) return `<div class="alert strong"><b>Strong wind expected</b> (about ${fmtWind(w)}). Casting and drifting will be hard. Fish sheltered banks, or pick another day.</div>`;
   if (w >= 16) return `<div class="alert breezy"><b>Breezy</b> (about ${fmtWind(w)}). Look for sheltered water and heavier flies or sinking lines.</div>`;
@@ -170,7 +175,10 @@ function reminderLink(dateStr){
 
 /* ---------- hook from runPlan ---------- */
 window.afterPlan = function({ wx, lake, dateStr, win, habitat }){
-  lastPlan = { name: place.name, date: dateStr, state: place.state, score: wx ? scoreDay(wx.a) : null, wind: wx ? wx.a.wind : null, temp: wx ? wx.a.temp : null, habitat };
+  // wx.a only exists for days with hourly data; dates beyond the forecast or long past have daily
+  // figures only, and scoreDay(undefined) threw here.
+  const a = wx && wx.a ? wx.a : null;
+  lastPlan = { name: place.name, date: dateStr, state: place.state, score: a && !wx.past ? scoreDay(a) : null, wind: a ? a.wind : null, temp: a ? a.temp : null, habitat };
   $('windAlert').innerHTML = windBanner(wx);
   $('extras').innerHTML = `<h2>Plan ahead</h2>
     <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
@@ -187,7 +195,8 @@ function saveChecks(o){ try { localStorage.setItem(CKEY, JSON.stringify(o)); } c
 function buildChecklist(lake, dateStr, wx){
   const items = [];
   const add = (g, t) => items.push({ g, t });
-  add('Before you leave', 'Arizona fishing license, or the license for the state you are fishing in');
+  // The state's license (this always said Arizona, wherever the trip was).
+  add('Before you leave', place.state ? `${place.state} fishing license` : 'A fishing license for the state you are fishing in');
   add('Before you leave', 'Water, sun protection, and a charged phone');
   add('Before you leave', 'Tell someone where you are going and when you expect to be back');
   if (!lake) {
@@ -197,9 +206,13 @@ function buildChecklist(lake, dateStr, wx){
     if (/stream|river/.test(type)) add('Gear', 'Wading boots or sandals with good grip, and check the flow before you wade');
     if (/lake|reservoir|pond|marsh/.test(type)) add('Gear', 'Float tube or boat only where the water rules allow it');
     if (lake.stocking) {
-      const st = lake.stocking.status || '';
-      if (st === 'stocked') add('Fishing plan', 'Fish within a few days of the latest stocking. ' + (lake.stocking.schedule || ''));
-      else add('Fishing plan', 'Wild fish only. ' + (lake.stocking.summary || ''));
+      // Statuses are free text ("stocked, with wild browns", "mixed", "warmwater", "unknown"...).
+      // Anything not exactly "stocked" used to be labelled "Wild fish only".
+      const status = lake.stocking.status || '';
+      const st = status.toLowerCase();
+      if (/^(wild|wild only|not stocked)\b/.test(st) || st === 'native cutthroat, wild') add('Fishing plan', 'Wild fish only. ' + (lake.stocking.summary || ''));
+      else if (/^(re)?stocked\b/.test(st)) add('Fishing plan', 'Fish within a few days of the latest stocking. ' + (lake.stocking.schedule || ''));
+      else add('Fishing plan', `Stocking: ${status}. ` + (lake.stocking.summary || ''));
     }
     (lake.species || []).slice(0, 4).forEach(s => add('Target species', s.name + (s.stocking ? ' (' + s.stocking + ')' : '')));
     const bugs = (lake.insect_ids || []).map(id => DB.insects.find(i => i.id === id)).filter(Boolean);
@@ -209,9 +222,13 @@ function buildChecklist(lake, dateStr, wx){
     if (/verify|not set|not sourced/i.test(lake.coords_note || '')) add('Access', 'Check the access point on a map first. ' + lake.coords_note);
     (lake.notes || []).filter(n => /limit|bag|release|hook|closed|closure|permit|rule|regulation|boat|motor|license/i.test(n)).slice(0, 3).forEach(n => add('Rules', n));
   }
-  if (wx) {
+  // Only for upcoming days with hourly data: wx.a doesn't exist for dates beyond the forecast or long
+  // past (this threw and blanked the Plan ahead card), and a past day has no forecast to recheck.
+  if (wx && wx.a && !wx.past) {
     add('Weather', 'Forecast for ' + dateStr + ': wind ' + fmtWind(wx.a.wind) + ', air ' + fmtTemp(wx.a.temp) + ', rain chance ' + Math.round(wx.a.rainChance) + '%');
     add('Weather', 'Recheck the forecast the morning of the trip');
+  } else if (wx && wx.kind === 'typical' && !wx.past) {
+    add('Weather', 'No forecast this far out yet. Check it in the week before the trip');
   }
   return items;
 }

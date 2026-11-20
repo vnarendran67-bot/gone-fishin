@@ -107,6 +107,11 @@ table.cmp td.win{color:var(--accent);font-weight:700}
 .jentry button{float:right}
 textarea{font:inherit}
 .link-btn{background:none;border:none;color:var(--accent,#2a6f97);cursor:pointer;font:inherit;text-decoration:underline;padding:0}
+.pill.saved{padding:0;display:inline-flex;align-items:center}
+.pillbtn,.pillx{background:none;border:0;color:inherit;font:inherit;cursor:pointer;padding:3px 4px 3px 10px}
+.pillx{padding:3px 9px 3px 4px;font-size:15px;line-height:1;opacity:.65}
+.pillx:hover{opacity:1;color:var(--warn)}
+.results li:focus-visible,.pillbtn:focus-visible,.pillx:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
 </style>
 </head>
 <body>
@@ -158,7 +163,7 @@ textarea{font:inherit}
     </label>
     <button class="btn" onclick="usePlace()">Get the plan</button>
   </div>
-  <p class="muted">Forecasts cover the next 16 days. Dates further out use typical conditions from last year.</p>
+  <p class="muted">Forecasts cover the next 16 days. Dates further out use typical conditions from last year; past dates show the weather that was recorded.</p>
   <div id="saved" style="margin-top:10px"></div>
 </section>
 
@@ -203,15 +208,21 @@ let place = null;   // {name, lat, lon, habitat, lakeId}
 let ELEV_M = null;  // elevation in metres sent to Open-Meteo, if known
 const cF = c => (c * 9 / 5 + 32).toFixed(0);
 const LOCALE_REGION = (() => { try { return new Intl.Locale(navigator.language).region || ''; } catch(e) { return ''; } })();
-let UNITS = localStorage.getItem('gone-fishin-units') || (['US','LR','MM'].includes(LOCALE_REGION) ? 'imperial' : 'metric');
+// Reading storage can throw (blocked site data, some private modes); that used to stop the whole page.
+let UNITS = (() => { try { return localStorage.getItem('gone-fishin-units'); } catch(e) { return null; } })() || (['US','LR','MM'].includes(LOCALE_REGION) ? 'imperial' : 'metric');
 const isImperial = () => UNITS === 'imperial';
-const fmtTemp = c => isImperial() ? `${(c*9/5+32).toFixed(0)} °F` : `${c.toFixed(0)} °C`;      // input °C
-const fmtTempF = f => isImperial() ? `${f.toFixed(0)} °F` : `${((f-32)*5/9).toFixed(0)} °C`;     // input °F
-const fmtWind = kmh => isImperial() ? `${(kmh*0.621371).toFixed(0)} mph` : `${kmh.toFixed(0)} km/h`;
-const fmtRain = mm => isImperial() ? `${(mm/25.4).toFixed(2)} in` : `${mm.toFixed(1)} mm`;
+// Missing values (null, NaN) show as "–" instead of throwing on .toFixed.
+const ok = x => x != null && Number.isFinite(x);
+const fmtTemp = c => !ok(c) ? '–' : isImperial() ? `${(c*9/5+32).toFixed(0)} °F` : `${c.toFixed(0)} °C`;      // input °C
+const fmtTempF = f => !ok(f) ? '–' : isImperial() ? `${f.toFixed(0)} °F` : `${((f-32)*5/9).toFixed(0)} °C`;     // input °F
+const fmtWind = kmh => !ok(kmh) ? '–' : isImperial() ? `${(kmh*0.621371).toFixed(0)} mph` : `${kmh.toFixed(0)} km/h`;
+const fmtRain = mm => !ok(mm) ? '–' : isImperial() ? `${(mm/25.4).toFixed(2)} in` : `${mm.toFixed(1)} mm`;
 const fmtElev = m => isImperial() ? `${Math.round(m*3.28084)} ft` : `${Math.round(m)} m`;   // input m
 const fmtFlow = cfs => isImperial() ? `${cfs} cfs` : `${(cfs*0.0283168).toFixed(2)} m³/s`;
 function toggleUnits(){
+  // Convert a typed elevation too: 7000 ft used to become 7000 m after switching.
+  const e = parseFloat($('elev').value);
+  if (!isNaN(e)) $('elev').value = Math.round(isImperial() ? e * 0.3048 : e / 0.3048);
   UNITS = isImperial() ? 'metric' : 'imperial';
   try { localStorage.setItem('gone-fishin-units', UNITS); } catch(e) {}
   updateUnitUI();
@@ -222,20 +233,38 @@ function updateUnitUI(){
   $('elevLabel').textContent = isImperial() ? 'Elevation (ft, optional)' : 'Elevation (m, optional)';
 }
 const shiftDay = (s, n) => { const [y,m,d] = s.split('-').map(Number); return iso(new Date(y, m-1, d+n)); };
+// Elevation in metres to send to the forecast, or null. The typed elevation field only applies
+// to the place being planned; otherwise the water's listed elevation is used when it has one.
+// (Many waters have no listed elevation; that used to become 0 m, a sea-level forecast.)
+function elevMetersFor(p, lake, useTyped){
+  const typed = parseFloat($('elev').value);
+  if (useTyped && !isNaN(typed) && typed > 0) return Math.round(isImperial() ? typed * 0.3048 : typed);
+  return (lake && Number.isFinite(lake.elevation_ft)) ? Math.round(lake.elevation_ft * 0.3048) : null;
+}
+// NWS gives wind as text: "5 mph" or "10 to 20 mph". parseFloat read only the first number.
+function nwsWindMph(s, how = 'avg'){
+  const n = (String(s ?? '').match(/\d+(\.\d+)?/g) || []).map(Number);
+  if (!n.length) return 0;
+  return how === 'max' ? Math.max(...n) : n.reduce((a, b) => a + b, 0) / n.length;
+}
+const hhmm = t => (typeof t === 'string' && t.length >= 16) ? t.slice(11, 16) : '–';
 
 function loadSaved(){ try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || []; } catch(e){ return []; } }
 function saveAll(list){ try { localStorage.setItem(SAVE_KEY, JSON.stringify(list)); } catch(e){} }
 
 /* ---------- place lookup ---------- */
+let searchSeq = 0;   // a slow, older search can't replace newer results
 async function searchPlace(){
   const q = $('q').value.trim();
-  if (!q) return;
+  if (!q) { $('placeMsg').textContent = 'Type a place name to search.'; $('q').focus(); return; }
+  const seq = ++searchSeq;
   $('placeMsg').textContent = 'Searching…';
   $('results').innerHTML = '';
   try {
     const r = await fetch(`https://nominatim.openstreetmap.org/search?format=jsonv2&limit=8&addressdetails=1&countrycodes=us&q=${encodeURIComponent(q)}`);
     if (!r.ok) throw new Error('HTTP ' + r.status);
     const raw = await r.json();
+    if (seq !== searchSeq) return;
     const hits = raw.map(x => ({
       name: x.name || (x.display_name || '').split(',')[0],
       admin1: x.address?.state,
@@ -253,9 +282,10 @@ async function searchPlace(){
     });
     hits.length = 0; hits.push(...uniq);
     $('placeMsg').textContent = hits.length ? 'Pick a result, or enter coordinates by hand.' : 'No matches. Try adding the town, like "Rose Canyon Lake, Tucson" or "Oak Creek, Sedona."';
-    $('results').innerHTML = hits.map((h,i) => `<li onclick="pickResult(${i})"><b>${esc(h.name)}</b> <span class="pill">${esc(h.kind || 'place')}</span><br><span class="muted">${esc([h.admin1,h.country].filter(Boolean).join(', '))} · ${h.latitude.toFixed(3)}, ${h.longitude.toFixed(3)}</span></li>`).join('');
+    $('results').innerHTML = hits.map((h,i) => `<li tabindex="0" role="button" onclick="pickResult(${i})"><b>${esc(h.name)}</b> <span class="pill">${esc(h.kind || 'place')}</span><br><span class="muted">${esc([h.admin1,h.country].filter(Boolean).join(', '))} · ${h.latitude.toFixed(3)}, ${h.longitude.toFixed(3)}</span></li>`).join('');
     window._hits = hits;
   } catch(e) {
+    if (seq !== searchSeq) return;
     $('placeMsg').innerHTML = `<span class="warn">Search unavailable (${esc(e.message)}). Enter coordinates below.</span>`;
   }
 }
@@ -266,12 +296,14 @@ function pickResult(i){
   $('placeMsg').textContent = `Set to ${h.name}. Check the water type, then press "Get the plan".`;
   // set water type from what the search says it is
   const k = h.kind || '';
-  if (['lake','reservoir','pond'].includes(k)) $('habitat').value = 'stillwater';
+  // OpenStreetMap often tags lakes as natural=water, which comes back as type "water".
+  if (['lake','reservoir','pond','water','basin'].includes(k)) $('habitat').value = 'stillwater';
   else if (['river','stream','creek','canal','ditch'].includes(k)) $('habitat').value = 'stream';
-  // match a known lake by name
-  const match = DB.lakes.find(l => h.name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase().split(' lake')[0]));
-  if (match) { $('habitat').value = 'stillwater'; $('placeMsg').textContent += ` Matched known lake: ${match.name.split(' (')[0]}.`; }
-  fillSections(findLake({ name: h.name }));
+  // match a known water by name, in the same state
+  const match = findLake({ name: h.name, state: h.admin1 || '' });
+  if (match) { $('habitat').value = match.type === 'stream' ? 'stream' : 'stillwater'; $('placeMsg').textContent += ` Matched known water: ${match.name.split(' (')[0]}.`; }
+  // Sections come from the same state-checked match, so another state's water can't supply them.
+  fillSections(match);
 }
 // Find the US state for a lat/lon (saved places and hand-typed coordinates have none)
 const STATE_CACHE = {};
@@ -293,11 +325,14 @@ async function stateFor(lat, lon){
 async function usePlace(){
   const lat = parseFloat($('lat').value), lon = parseFloat($('lon').value);
   if (isNaN(lat) || isNaN(lon)) { $('placeMsg').innerHTML = '<span class="warn">Enter a latitude and longitude, or search for a place.</span>'; return; }
+  // Out-of-range values used to fail later with a bare "HTTP 400" from the weather services.
+  if (lat < -90 || lat > 90 || lon < -180 || lon > 180) { $('placeMsg').innerHTML = '<span class="warn">Latitude must be between -90 and 90, and longitude between -180 and 180.</span>'; return; }
   const name = $('pname').value.trim() || `${lat.toFixed(3)}, ${lon.toFixed(3)}`;
-  const lake = DB.lakes.find(l => l.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase()));
   const state = await stateFor(lat, lon);
+  const lake = findLake({ name, state });
   place = { name, lat, lon, habitat: $('habitat').value, lakeId: lake ? lake.id : null, state };
-  const list = loadSaved().filter(p => p.name !== place.name);
+  // Same name *and* same spot (to ~100 m) is a duplicate; two different "Oak Creek"s both stay.
+  const list = loadSaved().filter(p => !(p.name === name && Math.abs(p.lat - lat) < 0.001 && Math.abs(p.lon - lon) < 0.001));
   list.unshift({ name, lat, lon, habitat: place.habitat, lakeId: place.lakeId, state: place.state });
   saveAll(list.slice(0, 12));
   renderSaved();
@@ -311,13 +346,20 @@ async function loadPlace(p){
     const list = loadSaved().map(x => (x.name === p.name && x.lat === p.lat && x.lon === p.lon) ? { ...x, state: p.state } : x);
     saveAll(list);
   }
+  // Refill the section picker for this water; it used to keep the previous water's sections.
+  fillSections(findLake(p));
   place = p; runPlan();
 }
 function renderSaved(){
   const list = loadSaved();
+  // Each saved place is a real button (reachable by keyboard) with its own remove button.
   $('saved').innerHTML = list.length ? '<div class="muted" style="margin-bottom:4px">Saved places <button class="link-btn" style="margin-left:8px" onclick="clearSaved()">Clear all saved places</button></div>' + list.map((p,i) =>
-    `<span class="pill" style="cursor:pointer" onclick="loadPlace(loadSaved()[${i}])">${esc(p.name)}</span>`).join('') : '';
+    `<span class="pill saved"><button class="pillbtn" onclick="loadPlace(loadSaved()[${i}])">${esc(p.name)}${p.state ? ` <span class="muted">${esc(p.state)}</span>` : ''}</button>` +
+    `<button class="pillx" onclick="removeSaved(${i})" aria-label="Remove ${esc(p.name)}" title="Remove">×</button></span>`).join('') : '';
 }
+window.removeSaved = function(i){
+  const list = loadSaved(); list.splice(i, 1); saveAll(list); renderSaved();
+};
 window.clearSaved = function(){
   if (!confirm('Remove all saved places? This cannot be undone.')) return;
   try { localStorage.removeItem(SAVE_KEY); } catch(e) {}
@@ -330,7 +372,11 @@ function daysFromToday(dateStr){
   const t = new Date(); t.setHours(0,0,0,0);
   return Math.round((new Date(y, m-1, d) - t) / 86400000);
 }
-function lastYear(dateStr){ return (parseInt(dateStr.slice(0,4)) - 1) + dateStr.slice(4); }
+// Same day last year; Feb 29 falls back to Feb 28, since last year has no Feb 29.
+function lastYear(dateStr){
+  const md = dateStr.slice(5) === '02-29' ? '02-28' : dateStr.slice(5);
+  return `${parseInt(dateStr.slice(0,4)) - 1}-${md}`;
+}
 
 // National Weather Service (US only): 2.5 km grid forecast + nearest station observation
 async function nwsForecast(lat, lon, dateStr, win = 'day'){
@@ -345,7 +391,7 @@ async function nwsForecast(lat, lon, dateStr, win = 'day'){
   const day = periods.filter(x => x.startTime.slice(0,10) === dateStr && inWin(parseInt(x.startTime.slice(11,13))));
   if (!day.length) throw new Error('no NWS hours for this date');
   const tC = day.map(x => (x.temperature - 32) * 5 / 9);
-  const kmh = day.map(x => (parseFloat(x.windSpeed) || 0) / 0.621371);
+  const kmh = day.map(x => nwsWindMph(x.windSpeed) / 0.621371);
   const pops = day.map(x => x.probabilityOfPrecipitation?.value).filter(v => v != null);
   let obs = null;
   try {
@@ -367,22 +413,25 @@ async function nwsForecast(lat, lon, dateStr, win = 'day'){
 }
 async function getForecast(lat, lon, dateStr){
   const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
-    `&hourly=temperature_2m,wind_speed_10m,precipitation_probability,cloud_cover,pressure_msl` +
+    `&hourly=temperature_2m,wind_speed_10m,precipitation_probability,precipitation,cloud_cover,pressure_msl` +
     `&current=temperature_2m,wind_speed_10m,cloud_cover` +
     `&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min,precipitation_probability_max` +
     `&timezone=auto&start_date=${dateStr}&end_date=${dateStr}` + (ELEV_M != null ? `&elevation=${ELEV_M}` : '');
   const r = await fetch(url); if (!r.ok) throw new Error('forecast HTTP ' + r.status);
   return r.json();
 }
-async function getArchive(lat, lon, dateStr){
-  const d = lastYear(dateStr);
+// One day of daily weather from the archive. `d` is the exact date to fetch.
+async function getArchive(lat, lon, d){
   const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${lat}&longitude=${lon}` +
     `&start_date=${d}&end_date=${d}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,sunrise,sunset&timezone=auto` + (ELEV_M != null ? `&elevation=${ELEV_M}` : '');
   const r = await fetch(url); if (!r.ok) throw new Error('archive HTTP ' + r.status);
   return { data: await r.json(), date: d };
 }
 async function getHistory(lat, lon, startStr, endStr){
-  const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
+  // The forecast service only keeps about the last 3 months; older ranges (like last year's, for
+  // dates beyond the forecast) come from the archive. That request used to fail with HTTP 400.
+  const host = daysFromToday(endStr) < -85 ? 'https://archive-api.open-meteo.com/v1/archive' : 'https://api.open-meteo.com/v1/forecast';
+  const url = `${host}?latitude=${lat}&longitude=${lon}` +
     `&daily=temperature_2m_mean&timezone=auto&start_date=${startStr}&end_date=${endStr}` +
     (ELEV_M != null ? `&elevation=${ELEV_M}` : '');
   const r = await fetch(url); if (!r.ok) throw new Error('history HTTP ' + r.status);
@@ -396,26 +445,67 @@ function estimateWaterF(meansC, habitat){
   const a = habitat === 'stillwater' ? 0.12 : 0.35;
   let e = vals[0];
   for (const t of vals.slice(1)) e = a * t + (1 - a) * e;
-  return e * 9 / 5 + 32;
+  // Liquid water can't be colder than freezing; with sub-freezing air the raw figure went as low as
+  // 22 °F. Cap it at 32 °F (the caller notes that ice is possible).
+  return Math.max(32, e * 9 / 5 + 32);
 }
-async function getUSGS(lat, lon){
-  const pad = 0.2;
-  const bbox = [lon-pad, lat-pad, lon+pad, lat+pad].map(x => x.toFixed(4)).join(',');
-  const url = `https://waterservices.usgs.gov/nwis/iv/?format=json&bBox=${bbox}&parameterCd=00010,00060&siteStatus=active`;
-  const r = await fetch(url); if (!r.ok) throw new Error('USGS HTTP ' + r.status);
-  const d = await r.json();
+/* USGS gauges within ~15 miles: latest water temperature (00010) and flow (00060).
+   Uses USGS's newer Water Data API and falls back to the older WaterServices API (which USGS
+   is retiring) if it fails. Returns [{ name, lat, lon, temp:{c,f}|null, flow|null, tempTime,
+   flowTime }], nearest gauge first. */
+const USGS_PAD = 0.2;   // degrees each way, about 15 miles
+const usgsBbox = (lat, lon) => [lon-USGS_PAD, lat-USGS_PAD, lon+USGS_PAD, lat+USGS_PAD].map(x => x.toFixed(4)).join(',');
+// Readings come back as text; USGS marks missing data (ice, broken equipment) with a sentinel
+// such as -999999 instead of leaving it out.
+const usgsNum = (v, noData = -999999) => { const x = parseFloat(v); return Number.isFinite(x) && x !== noData && x > -9999 ? x : null; };
+// Temperature and flow keep their own timestamps; one can be fresh while the other is weeks old.
+function usgsAdd(sites, key, base, code, value, time, unit){
+  const s = sites[key] = sites[key] || { ...base, temp: null, flow: null, tempTime: null, flowTime: null };
+  if (code === '00010') { const c = unit === 'degF' ? (value - 32) * 5/9 : value; s.temp = { c, f: c*9/5+32 }; s.tempTime = time; }
+  if (code === '00060') { s.flow = value; s.flowTime = time; }
+}
+async function getUSGSNew(lat, lon){
+  const api = 'https://api.waterdata.usgs.gov/ogcapi/v1/collections';
+  const r = await fetch(`${api}/latest-continuous/items?f=json&bbox=${usgsBbox(lat, lon)}&parameter_code=00010,00060&limit=200`);
+  if (!r.ok) throw new Error('USGS HTTP ' + r.status);
   const sites = {};
-  for (const ts of (d.value?.timeSeries || [])) {
-    const code = ts.variable.variableCode[0].value;
-    const name = ts.sourceInfo.siteName;
-    const vals = ts.values[0].value; const last = vals[vals.length-1];
-    if (!last) continue;
-    const key = ts.sourceInfo.siteCode[0].value;
-    sites[key] = sites[key] || { name, temp: null, flow: null, time: last.dateTime };
-    if (code === '00010') sites[key].temp = { c: parseFloat(last.value), f: parseFloat(last.value)*9/5+32 };
-    if (code === '00060') sites[key].flow = parseFloat(last.value);
+  for (const f of (await r.json()).features || []) {
+    const p = f.properties || {}, value = usgsNum(p.value), [glon, glat] = f.geometry?.coordinates || [];
+    if (value == null || !p.monitoring_location_id) continue;
+    usgsAdd(sites, p.monitoring_location_id, { name: p.monitoring_location_id, lat: glat, lon: glon }, p.parameter_code, value, p.time, p.unit_of_measure);
+  }
+  // Readings don't carry gauge names; look them up by ID in one request (a failure just keeps the IDs).
+  const ids = Object.keys(sites);
+  if (ids.length) {
+    try {
+      const n = await fetch(`${api}/monitoring-locations/items?f=json&properties=monitoring_location_name&id=${ids.map(encodeURIComponent).join(',')}`);
+      if (n.ok) for (const f of (await n.json()).features || []) if (sites[f.id] && f.properties?.monitoring_location_name) sites[f.id].name = f.properties.monitoring_location_name;
+    } catch(e) {}
   }
   return Object.values(sites);
+}
+async function getUSGSLegacy(lat, lon){
+  const r = await fetch(`https://waterservices.usgs.gov/nwis/iv/?format=json&bBox=${usgsBbox(lat, lon)}&parameterCd=00010,00060&siteStatus=active`);
+  if (!r.ok) throw new Error('USGS HTTP ' + r.status);
+  const sites = {};
+  for (const ts of ((await r.json()).value?.timeSeries || [])) {
+    const noData = ts.variable.noDataValue ?? -999999;
+    const vals = (ts.values[0]?.value || []).filter(v => usgsNum(v.value, noData) != null);
+    const last = vals[vals.length-1];
+    if (!last) continue;
+    const geo = ts.sourceInfo.geoLocation?.geogLocation || {};
+    usgsAdd(sites, ts.sourceInfo.siteCode[0].value, { name: ts.sourceInfo.siteName, lat: geo.latitude, lon: geo.longitude },
+      ts.variable.variableCode[0].value, usgsNum(last.value, noData), last.dateTime, ts.variable.unit?.unitCode);
+  }
+  return Object.values(sites);
+}
+async function getUSGS(lat, lon){
+  let sites;
+  try { sites = await getUSGSNew(lat, lon); }
+  catch(e) { sites = await getUSGSLegacy(lat, lon); }
+  // Nearest first, so the gauge shown is the one closest to the spot, not whichever came back first.
+  const d2 = s => (Number.isFinite(s.lat) && Number.isFinite(s.lon)) ? (s.lat-lat)**2 + ((s.lon-lon) * Math.cos(lat*Math.PI/180))**2 : Infinity;
+  return sites.sort((a, b) => d2(a) - d2(b));
 }
 
 /* ---------- scoring ---------- */
@@ -423,7 +513,9 @@ function hourlyDayAverages(f, dateStr, win = 'day'){
   const h = f.hourly, idx = [];
   h.time.forEach((t,i) => { if (t.startsWith(dateStr)) idx.push(i); });
   const pick = (k, arr) => arr.reduce((s,i) => s + h[k][i], 0) / arr.length;
-  const sr = parseInt(f.daily.sunrise[0].slice(11,13)), ss = parseInt(f.daily.sunset[0].slice(11,13));
+  // Sun times can be missing (polar day or night); fall back to 6:00 and 18:00 for the hour window.
+  const hourOf = (t, dflt) => { const n = parseInt(String(t ?? '').slice(11,13)); return Number.isFinite(n) ? n : dflt; };
+  const sr = hourOf(f.daily.sunrise?.[0], 6), ss = hourOf(f.daily.sunset?.[0], 18);
   const inWin = hr => win === 'am' ? (hr >= sr-1 && hr <= 12) : win === 'pm' ? (hr >= 12 && hr <= ss) : (hr >= sr-1 && hr <= ss);
   const fishing = idx.filter(i => inWin(parseInt(h.time[i].slice(11,13))));
   const use = fishing.length ? fishing : idx;
@@ -431,9 +523,10 @@ function hourlyDayAverages(f, dateStr, win = 'day'){
     temp: pick('temperature_2m', use),
     wind: pick('wind_speed_10m', use),
     cloud: pick('cloud_cover', use),
-    rainChance: Math.max(...use.map(i => h.precipitation_probability[i])),
+    rainChance: Math.max(0, ...use.map(i => h.precipitation_probability[i] ?? 0)),
+    rainMm: use.reduce((s,i) => s + (h.precipitation?.[i] || 0), 0),   // rain that actually fell, for past days
     pressure: pick('pressure_msl', use),
-    sunrise: f.daily.sunrise[0].slice(11,16), sunset: f.daily.sunset[0].slice(11,16),
+    sunrise: hhmm(f.daily.sunrise?.[0]), sunset: hhmm(f.daily.sunset?.[0]),
     hours: use.map(i => h.time[i].slice(11,16))
   };
 }
@@ -456,26 +549,38 @@ function scoreDay(a){
 /* ---------- hatches for a date ---------- */
 function activeHatches(month, habitat, waterF, insectIds, state){
   const list = DB.insects.filter(i => i.habitat.includes(habitat) && i.months.includes(month) && (!state || !i.states || i.states.includes(state)));
+  // An out-of-range water temperature marks a hatch "less likely" instead of hiding it: the
+  // temperature is often a rough estimate (±5 °F) or from a gauge some distance away.
   return list.map(ins => {
-    let tempNote = null, gate = true;
+    let tempNote = null, unlikely = false;
     if (ins.water_temp_f) {
       if (waterF == null) tempNote = `Needs water temp (usually ${fmtTempF(ins.water_temp_f.min)} to ${fmtTempF(ins.water_temp_f.max)})`;
-      else if (waterF < ins.water_temp_f.min || waterF > ins.water_temp_f.max) { gate = false; tempNote = `Water ${fmtTempF(waterF)} is outside the usual ${fmtTempF(ins.water_temp_f.min)} to ${fmtTempF(ins.water_temp_f.max)}`; }
+      else if (waterF < ins.water_temp_f.min || waterF > ins.water_temp_f.max) { unlikely = true; tempNote = `Less likely: water ${fmtTempF(waterF)} is outside the usual ${fmtTempF(ins.water_temp_f.min)} to ${fmtTempF(ins.water_temp_f.max)}`; }
     }
-    const lakeBoost = insectIds && insectIds.includes(ins.id);
-    return { ins, gate, tempNote, peak: ins.peak_months.includes(month), lakeBoost };
-  }).filter(h => h.gate).sort((a,b) => (b.peak - a.peak) || (b.lakeBoost - a.lakeBoost));
+    const lakeBoost = !!(insectIds && insectIds.includes(ins.id));
+    return { ins, unlikely, tempNote, peak: ins.peak_months.includes(month), lakeBoost };
+  }).sort((a,b) => (a.unlikely - b.unlikely) || (b.peak - a.peak) || (b.lakeBoost - a.lakeBoost));
 }
+const fmtTime = t => t ? String(t).slice(0,16).replace('T',' ') : 'unknown date';
 function fmtFly(flies){ return flies.map(f => `${esc(f.pattern)} <span class="muted">(size ${esc(f.sizes)})</span>`).join('<br>'); }
 
 /* ---------- main ---------- */
 // Find the known water for a place. Uses the saved lake ID when there is one,
 // otherwise matches the place name, so older saved places still get their notes.
+// A water must also be in the place's state when the state is known: names repeat across states
+// (Black River in Wisconsin used to get Arizona's Black River notes and stocking).
+// A short typed name only matches a longer water name when it has two or more words, so "creek" or
+// "lake" alone don't grab the first water that contains them.
 function findLake(p){
-  if (p.lakeId) { const byId = DB.lakes.find(l => l.id === p.lakeId); if (byId) return byId; }
+  const sameState = l => !p.state || !(l.states || []).length || l.states.includes(p.state);
+  if (p.lakeId) { const byId = DB.lakes.find(l => l.id === p.lakeId); if (byId && sameState(byId)) return byId; }
   const n = (p.name || '').toLowerCase().trim();
   if (n.length < 4) return null;
-  return DB.lakes.find(l => { const k = l.name.split(' (')[0].toLowerCase(); return n.includes(k) || k.includes(n); }) || null;
+  return DB.lakes.find(l => {
+    if (!sameState(l)) return false;
+    const k = l.name.split(' (')[0].toLowerCase();
+    return n.includes(k) || (k.includes(n) && n.split(/\s+/).length >= 2);
+  }) || null;
 }
 // Sectioned waters (big rivers, multi-part lakes) list their parts in the section picker.
 // applySection merges the chosen part's own notes, coordinates and species over the parent water.
@@ -492,16 +597,16 @@ function applySection(l, sid){
   if (!s) return l;
   return { ...l, ...s, id: l.id, name: l.name.split(' (')[0] + ' · ' + s.name, sections: l.sections, sectionId: s.id };
 }
+let planSeq = 0;   // bumps on every plan; a plan that finishes after a newer one started is dropped
 async function runPlan(){
+  const seq = ++planSeq;
   if (!place) {
     const lat = parseFloat($('lat').value), lon = parseFloat($('lon').value);
     if (isNaN(lat) || isNaN(lon)) { $('placeMsg').innerHTML = '<span class="warn">Pick a place first.</span>'; return; }
     place = { name: $('pname').value.trim() || 'My spot', lat, lon, habitat: $('habitat').value, lakeId: null };
   }
-  const lakeE = place.lakeId ? DB.lakes.find(l => l.id === place.lakeId) : null;
-  const elevIn = parseFloat($('elev').value);
-  const elevFt = (!isNaN(elevIn) && elevIn > 0) ? (isImperial() ? elevIn : elevIn / 0.3048) : (lakeE ? lakeE.elevation_ft : null);
-  ELEV_M = elevFt ? Math.round(elevFt * 0.3048) : null;
+  // Use the chosen section's own elevation when it lists one.
+  ELEV_M = elevMetersFor(place, applySection(findLake(place), $('section') ? $('section').value : ''), true);
   const dateStr = $('date').value || iso(new Date());
   const win = $('when').value;
   const winName = {day:'Fishing-hours', am:'Morning', pm:'Afternoon'}[win];
@@ -512,19 +617,44 @@ async function runPlan(){
   $('water').innerHTML = '<p class="muted">Loading water data…</p>';
   $('verdict').innerHTML = ''; $('hatches').innerHTML = ''; $('tips').innerHTML = ''; $('sources').innerHTML = '';
 
-  const [mm, dd] = [parseInt(dateStr.slice(5,7)), parseInt(dateStr.slice(8,10))];
   const month = parseInt(dateStr.slice(5,7));
   const lake = applySection(findLake(place), $('section') ? $('section').value : '');
   const habitat = place.habitat;
 
   // weather
   let wx = null, wxNote = '', wxSource = '';
+  // Daily figures from the archive: the actual day for older past dates, or the same day last
+  // year for dates beyond the forecast.
+  const typicalFor = async (past, why) => {
+    const date = past ? dateStr : lastYear(dateStr);
+    const { data } = await getArchive(place.lat, place.lon, date);
+    const dl = data.daily;
+    wx = { kind: 'typical', past, date, tmax: dl.temperature_2m_max?.[0], tmin: dl.temperature_2m_min?.[0], precip: dl.precipitation_sum?.[0], sunrise: hhmm(dl.sunrise?.[0]), sunset: hhmm(dl.sunset?.[0]) };
+    wxSource = 'Open-Meteo historical archive';
+    wxNote = past ? `Recorded weather for ${date}.` : `${why}, so this shows ${date}, the same day last year.`;
+  };
   try {
-    if (days >= 0 && days <= 15) {
-      const f = await getForecast(place.lat, place.lon, dateStr);
-      wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr, win), d: f.daily, elev: f.elevation, cur: f.current };
-      wxSource = 'Open-Meteo forecast (global model, about 11 km grid)';
-      try {
+    if (parseInt(dateStr.slice(0,4)) < 1940) {
+      wxNote = 'Weather records start in 1940, so there is nothing to show for this date.';
+    } else if (days < -90) {
+      await typicalFor(true);
+    } else if (days > 15) {
+      await typicalFor(false, 'No forecast this far out');
+    } else {
+    // The forecast service also serves the last ~3 months of recorded weather, hour by hour.
+    // Past days used to show last year's weather with "No forecast this far out".
+    let f;
+    try { f = await getForecast(place.lat, place.lon, dateStr); }
+    catch(e) {
+      // Near the 16-day edge the place's calendar can be a day ahead of yours and the date is rejected.
+      if (days < 10) throw e;
+      await typicalFor(false, 'The forecast doesn\'t reach this date yet');
+    }
+    if (f) {
+      const past = days < 0;
+      wx = { kind: 'forecast', past, a: hourlyDayAverages(f, dateStr, win), d: f.daily, elev: f.elevation, cur: f.current };
+      wxSource = past ? 'Open-Meteo recorded weather' : 'Open-Meteo forecast (global model, about 11 km grid)';
+      if (!past) try {
         const n = await nwsForecast(place.lat, place.lon, dateStr, win);
         wx.a.temp = n.tempC; wx.a.wind = n.windKmh;
         if (n.popMax != null) wx.a.rainChance = n.popMax;
@@ -535,12 +665,7 @@ async function runPlan(){
       } catch(e) {
         wxSource += ' - NWS not available: ' + e.message;
       }
-    } else {
-      const { data, date } = await getArchive(place.lat, place.lon, dateStr);
-      const dl = data.daily;
-      wx = { kind: 'typical', date, tmax: dl.temperature_2m_max[0], tmin: dl.temperature_2m_min[0], precip: dl.precipitation_sum[0], sunrise: dl.sunrise[0].slice(11,16), sunset: dl.sunset[0].slice(11,16) };
-      wxSource = 'Open-Meteo historical archive';
-      wxNote = `No forecast this far out. Showing ${date}, the same day last year.`;
+    }
     }
   } catch(e) {
     wxNote = `Weather unavailable (${e.message}). Check the forecast in your weather app.`;
@@ -561,29 +686,41 @@ async function runPlan(){
     const hist = await getHistory(place.lat, place.lon, shiftDay(anchor, -21), shiftDay(anchor, -1));
     estF = estimateWaterF(hist, place.habitat);
   } catch(e) { estF = null; }
-  const measuredF = usgs.find(s => s.temp)?.temp?.f ?? null;
+  if (seq !== planSeq) return;   // a newer plan started while this one was waiting
+  // A gauge reading only describes the trip if the trip is today or tomorrow and the reading is
+  // fresh: some gauges' "latest" temperature is weeks old, and a reading taken today says little
+  // about a date months away. Otherwise the air-temperature estimate is used.
+  const tempGauge = usgs.find(s => s.temp);
+  const gaugeAgeDays = tempGauge ? (Date.now() - new Date(tempGauge.tempTime)) / 86400000 : null;
+  const gaugeFresh = gaugeAgeDays != null && gaugeAgeDays <= 2;
+  const measuredF = (tempGauge && gaugeFresh && days >= -1 && days <= 1) ? tempGauge.temp.f : null;
   const waterF = measuredF ?? estF;
   const waterSrc = (measuredF != null ? 'USGS gauge'
-    : (estF != null ? 'ESTIMATE from the last 3 weeks of air temperature (rough, about ' + (isImperial() ? '±5 °F' : '±3 °C') + ')' : 'none'));
+    : (estF != null ? 'ESTIMATE from the last 3 weeks of air temperature (rough, about ' + (isImperial() ? '±5 °F' : '±3 °C') + ')' +
+        (estF <= 33 ? '. Air has been below freezing, so expect ice or near-freezing water' : '') : 'none'));
+  const gaugeNote = (!tempGauge || measuredF != null) ? ''
+    : `${tempGauge.name} last read ${fmtTempF(tempGauge.temp.f)} on ${fmtTime(tempGauge.tempTime)}. ` +
+      (gaugeFresh ? `That's a current reading, not one for ${dateStr}, so it isn't used here.` : `That reading is ${Math.round(gaugeAgeDays)} days old, so it isn't used.`);
 
   // conditions card
   if (wx && wx.kind === 'forecast') {
-    const a = wx.a, sc = scoreDay(a);
-    $('conditions').innerHTML = `<h2>Conditions</h2>
-      <div class="big">High ${fmtTemp(wx.d.temperature_2m_max[0])} · Low ${fmtTemp(wx.d.temperature_2m_min[0])}</div>
+    // The fishing score judges a forecast, so past days show recorded weather and no score.
+    const a = wx.a, sc = wx.past ? null : scoreDay(a);
+    $('conditions').innerHTML = `<h2>${wx.past ? 'Conditions that day (recorded)' : 'Conditions'}</h2>
+      <div class="big">High ${fmtTemp(wx.d.temperature_2m_max?.[0])} · Low ${fmtTemp(wx.d.temperature_2m_min?.[0])}</div>
       <div class="muted">${winName} average ${fmtTemp(a.temp)}</div>
       ${days === 0 && wx.cur ? `<div class="muted">Right now (${wx.src ? 'nearest station' : 'model'}): ${fmtTemp(wx.cur.temperature_2m)}, wind ${fmtWind(wx.cur.wind_speed_10m)}</div>` : ''}
-      <div class="muted">Wind ${fmtWind(a.wind)} · Cloud ${a.cloud.toFixed(0)}% · Rain chance ${a.rainChance}%</div>
+      <div class="muted">Wind ${fmtWind(a.wind)} · Cloud ${Number.isFinite(a.cloud) ? a.cloud.toFixed(0) : '–'}% · ${wx.past ? `Rain ${fmtRain(a.rainMm)}` : `Rain chance ${Math.round(a.rainChance)}%`}</div>
       <div class="muted">Sunrise ${a.sunrise} · Sunset ${a.sunset}</div>
       <div class="muted">Forecast grid elevation ${wx.elev != null ? fmtElev(wx.elev) : '?'}${ELEV_M != null ? ` · adjusted to ${fmtElev(ELEV_M)}` : ' · set an elevation above to correct mountain sites'}</div>
-      <div style="margin-top:10px"><span class="score">${sc.s}</span> <b>${sc.label}</b></div>
-      <ul class="tips">${sc.why.map(w => `<li>${esc(w)}</li>`).join('')}</ul>
-      <div class="muted">Daytime averages shown.</div>`;
+      ${sc ? `<div style="margin-top:10px"><span class="score">${sc.s}</span> <b>${sc.label}</b></div>
+      <ul class="tips">${sc.why.map(w => `<li>${esc(w)}</li>`).join('')}</ul>` : ''}
+      <div class="muted">${winName} averages shown${wx.past ? '. Past days get no fishing score.' : '.'}</div>`;
     window._score = sc;
   } else if (wx) {
-    $('conditions').innerHTML = `<h2>Typical conditions</h2>
+    $('conditions').innerHTML = `<h2>${wx.past ? 'Conditions that day (recorded)' : 'Typical conditions'}</h2>
       <div class="big">${fmtTemp(wx.tmin)} to ${fmtTemp(wx.tmax)}</div>
-      <div class="muted">Rain last year on this day: ${fmtRain(wx.precip)}</div>
+      <div class="muted">${wx.past ? 'Rain that day' : 'Rain last year on this day'}: ${fmtRain(wx.precip)}</div>
       <div class="muted">Sunrise ${wx.sunrise} · Sunset ${wx.sunset}</div>
       <p class="muted">${esc(wxNote)}</p>`;
     window._score = null;
@@ -596,18 +733,23 @@ async function runPlan(){
   const gauge = usgs.find(s => s.temp) || usgs[0];
   $('water').innerHTML = `<h2>Water</h2>
     ${waterF != null ? `<div class="big">${fmtTempF(waterF)}</div><div class="muted">Source: ${esc(waterSrc)}</div>` : '<div class="muted">No water temperature yet.</div>'}
-    ${gauge ? `<div style="margin-top:8px"><b>${esc(gauge.name)}</b><div class="muted">${gauge.flow != null ? `Flow ${fmtFlow(gauge.flow)}` : 'No flow reading'} · last ${esc(gauge.time?.slice(0,16).replace('T',' '))}</div></div>` : ''}
+    ${gauge ? `<div style="margin-top:8px"><b>${esc(gauge.name)}</b> <span class="muted">(nearest USGS gauge)</span>
+      ${gauge.temp ? `<div class="muted">Temperature ${fmtTempF(gauge.temp.f)}, read ${esc(fmtTime(gauge.tempTime))}</div>` : ''}
+      <div class="muted">${gauge.flow != null ? `Flow ${fmtFlow(gauge.flow)}, read ${esc(fmtTime(gauge.flowTime))}` : 'No flow reading'}</div></div>` : ''}
+    ${gaugeNote ? `<p class="muted">${esc(gaugeNote)}</p>` : ''}
     <p class="muted">${esc(usgsNote)}</p>
     ${habitat === 'stillwater' ? '<p class="muted">Lakes usually have no USGS gauge, so the water temperature is estimated from recent air temperatures.</p>' : ''}`;
 
   // hatches
   const hatches = activeHatches(month, habitat, waterF, lake ? lake.insect_ids : null, place.state);
-  const peakCount = hatches.filter(h => h.peak).length;
+  const likely = hatches.filter(h => !h.unlikely);
+  const peakCount = likely.filter(h => h.peak).length;
+  const unlikelyCount = hatches.length - likely.length;
   $('hatches').innerHTML = `<h2>Hatches expected in ${MONTHS[month-1]}${place.state ? ' · ' + esc(place.state) : ''}</h2>
     ${place.state ? '' : '<p class="warn">Search for the place by name so we can match its state. Showing all states.</p>'}
-    <p class="muted">${hatches.length} possible. ${peakCount} typically peak this month. Based on regional guide data, not local counts.</p>
+    <p class="muted">${likely.length} possible${unlikelyCount ? `, ${unlikelyCount} less likely at this water temperature` : ''}. ${peakCount} typically peak this month. Based on regional guide data, not local counts.</p>
     ${hatches.length ? hatches.map(h => `
-      <div class="hatch">
+      <div class="hatch"${h.unlikely ? ' style="opacity:.7"' : ''}>
         <b>${esc(h.ins.name)}</b>
         ${h.peak ? '<span class="pill peak">peak month</span>' : '<span class="pill">active</span>'}
         ${h.lakeBoost ? '<span class="pill">known at this lake</span>' : ''}
@@ -623,7 +765,8 @@ async function runPlan(){
   // Notes specific to the body of water searched
   const specific = [];
   if (lake) {
-    specific.push(`<b>${esc(lake.name.split(' (')[0])}</b>${lake.area_acres ? `, about ${lake.area_acres} acres` : ''}, ${fmtElev(lake.elevation_ft * 0.3048)} elevation.`);
+    // Many waters have no listed elevation; that used to print as "0 ft elevation".
+    specific.push(`<b>${esc(lake.name.split(' (')[0])}</b>${lake.area_acres ? `, about ${lake.area_acres} acres` : ''}${Number.isFinite(lake.elevation_ft) ? `, ${fmtElev(lake.elevation_ft * 0.3048)} elevation` : ''}.`);
     specific.push(`Species: ${lake.species.map(s => `${esc(s.name)} (${esc(s.stocking)})`).join('; ')}.`);
     specific.push(`Season: ${esc(lake.fishing_season_note)}`);
     lake.notes.forEach(n => specific.push(esc(n)));
@@ -631,8 +774,10 @@ async function runPlan(){
     specific.push(`No body-of-water notes yet for <b>${esc(place.name)}</b>. The hatch list above uses regional data for ${place.state ? esc(place.state) : 'all states'}, not this water.`);
   }
   const regional = [];
-  if (wx && wx.kind === 'forecast' && wx.a.rainChance > 30 && month >= 7 && month <= 9) regional.push('Monsoon season (July to September): storms can raise streams fast. Stay out of washes and creek beds.');
-  if (usgs.some(s => s.flow != null) && wx && wx.kind === 'forecast' && wx.a.rainChance > 30) regional.push('Rain forecast and a flowing gauge: check the flow reading again the morning of your trip.');
+  const rainAhead = wx && wx.kind === 'forecast' && !wx.past && wx.a.rainChance > 30;
+  // The summer monsoon is a Southwest pattern; this tip used to show in every state.
+  if (rainAhead && month >= 7 && month <= 9 && ['Arizona', 'New Mexico'].includes(place.state)) regional.push('Monsoon season (July to September): storms can raise streams fast. Stay out of washes and creek beds.');
+  if (usgs.some(s => s.flow != null) && rainAhead) regional.push('Rain forecast and a flowing gauge: check the flow reading again the morning of your trip.');
   if (habitat === 'stream') regional.push('Stream tip: fish the early and late hours when cloud cover is up.');
   if (habitat === 'stillwater') regional.push('Lake tip: check the shallow weedy edges for midge and Callibaetis activity.');
   // Stocked or wild fish, and what has been stocked recently
@@ -658,20 +803,23 @@ async function runPlan(){
   // verdict
   const bits = [];
   if (window._score) bits.push(`Conditions: <b>${window._score.label}</b> (${window._score.s}/100)`);
-  if (waterF != null) bits.push(`Water ${fmtTempF(waterF)}`);
-  bits.push(`${hatches.length} possible hatches`);
+  if (waterF != null) bits.push(`Water ${fmtTempF(waterF)}${measuredF == null ? ' (estimate)' : ''}`);
+  bits.push(`${likely.length} possible hatch${likely.length === 1 ? '' : 'es'}`);
   $('verdict').innerHTML = `<h2>Summary</h2><div>${bits.join(' · ')}</div>
     <div style="margin-top:10px;display:flex;gap:14px;flex-wrap:wrap;align-items:center"><a class="link" target="_blank" rel="noopener" href="${calLink()}">Add to Google Calendar →</a><button class="ghost" onclick="copyShare()">Copy share link</button><span id="shareMsg" class="muted"></span><a class="link" target="_blank" rel="noopener" href="${regsLink()}">License &amp; regulations →</a></div>`;
 
   // sources
-  renderOutlook(place.lat, place.lon);
-  $('sources').innerHTML = `Weather: ${esc(wxSource || 'unavailable')}. Water: USGS Water Services. Hatch data: regional guide pages and a 1986 Sonoran Desert study; see each entry. <b>Verify locally before a trip.</b>`;
+  renderOutlook(place.lat, place.lon, seq);
+  // (This used to credit "a 1986 Sonoran Desert study" that no entry in the data cites.)
+  $('sources').innerHTML = `Weather: ${esc(wxSource || 'unavailable')}. Water: USGS Water Data (nearest gauge) or an estimate from air temperature. Hatch data: regional guide and agency pages; see each entry. <b>Verify locally before a trip.</b>`;
   if (window.afterPlan) window.afterPlan({ wx, lake, dateStr, win, habitat });
 }
 
 /* ---------- extras ---------- */
-async function renderOutlook(lat, lon){
+async function renderOutlook(lat, lon, seq){
   const H = { 'Accept': 'application/geo+json' };
+  const stale = () => seq != null && seq !== planSeq;   // a newer plan owns the card now
+  $('outlook').innerHTML = '<h2>7-day outlook</h2><p class="muted">Loading…</p>';
   try {
     const p = (await (await fetch(`https://api.weather.gov/points/${lat.toFixed(4)},${lon.toFixed(4)}`, { headers: H })).json()).properties;
     const periods = (await (await fetch(p.forecastHourly, { headers: H })).json()).properties.periods;
@@ -681,10 +829,11 @@ async function renderOutlook(lat, lon){
       const hs = byDay[d];
       const t = hs.map(x => x.temperature);
       const pops = hs.map(x => x.probabilityOfPrecipitation?.value).filter(v => v != null);
-      const wind = hs.map(x => parseFloat(x.windSpeed) || 0);
+      const wind = hs.map(x => nwsWindMph(x.windSpeed, 'max'));
       const mid = hs[Math.floor(hs.length / 2)];
       return { d, hi: Math.max(...t), lo: Math.min(...t), pop: pops.length ? Math.max(...pops) : null, wind: Math.max(...wind), desc: mid.shortForecast };
     });
+    if (stale()) return;
     $('outlook').innerHTML = `<h2>7-day outlook (National Weather Service)</h2>
       <table><tr><th>Day</th><th>High / low</th><th>Rain chance</th><th>Max wind</th><th>Sky</th></tr>` +
       rows.map(r => `<tr><td>${new Date(r.d + 'T12:00:00').toLocaleDateString(undefined, {weekday:'short', month:'short', day:'numeric'})}</td>
@@ -692,6 +841,7 @@ async function renderOutlook(lat, lon){
         <td>${fmtWind(r.wind / 0.621371)}</td><td>${esc(r.desc)}</td></tr>`).join('') +
       `</table>`;
   } catch(e) {
+    if (stale()) return;
     $('outlook').innerHTML = `<h2>7-day outlook</h2><p class="muted">Not available here (${esc(e.message)}). The National Weather Service covers the US only.</p>`;
   }
 }
@@ -720,7 +870,9 @@ const WILDLIFE_AGENCY = {
   'Utah': 'https://wildlife.utah.gov'
 };
 function regsLink(){
-  const state = window._state || '';
+  // The planned place's state. (This used the last search result's state, so a saved Colorado
+  // place loaded after an Arizona search linked to Arizona's agency.)
+  const state = place.state || '';
   if (WILDLIFE_AGENCY[state]) return WILDLIFE_AGENCY[state];
   const q = [place.name, state, window._country || '', 'fishing license and regulations'].filter(Boolean).join(' ');
   return 'https://www.google.com/search?q=' + encodeURIComponent(q);
@@ -730,10 +882,15 @@ function regsLink(){
 $('date').value = iso(new Date());
 updateUnitUI();
 renderSaved();
+// Enter searches; search results are list items, so Enter or Space picks one like a click.
+$('q').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); searchPlace(); } });
+$('results').addEventListener('keydown', e => {
+  if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('li[role=button]')) { e.preventDefault(); e.target.click(); }
+});
 const sp = new URLSearchParams(location.search);
 if (sp.get('lat') && sp.get('lon')) {
   const nm = sp.get('name') || 'Shared place';
-  const lk = DB.lakes.find(l => nm.toLowerCase().includes(l.name.split(' (')[0].toLowerCase().split(' lake')[0]));
+  const lk = findLake({ name: nm, state: sp.get('state') || '' });
   $('lat').value = sp.get('lat'); $('lon').value = sp.get('lon'); $('pname').value = nm;
   $('habitat').value = sp.get('habitat') || 'stream';
   if (sp.get('date')) $('date').value = sp.get('date');
