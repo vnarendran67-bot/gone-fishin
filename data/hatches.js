@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 21,
+ "version": 22,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -13367,6 +13367,1088 @@ window.HATCH_DB = {
     2,
     3,
     4
+   ]
+  },
+  {
+   "id": "canyon-lake-az",
+   "name": "Canyon Lake (Apache Trail, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 1800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": 950,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present; state record 16 lb 7.68 oz from 1997"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Yellow bass",
+     "stocking": "Present; state record 2 lb 2.56 oz (2020)"
+    },
+    {
+     "name": "Walleye",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel and flathead catfish, black crappie, sunfish, carp, tilapia, buffalo",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Bass, yellow bass, catfish and crappie fishery. No trout stocking documented.",
+    "schedule": "No schedule in sources.",
+    "recent_plants": [],
+    "wild_fish": "Largemouth, smallmouth, yellow bass, walleye.",
+    "sources": [
+     {
+      "title": "5 best lakes for fishing near metro Phoenix (Yahoo News)",
+      "url": "https://www.yahoo.com/news/5-best-lakes-fishing-near-120125870.html"
+     },
+     {
+      "title": "Arizona State Fish Records (AZGFD)",
+      "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+     }
+    ]
+   },
+   "fishing_season_note": "About 45 miles east of Phoenix, up the Apache Trail. Drawdowns and golden algae have affected it. Check conditions before going.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Canyon Lake is about 45 miles east of Phoenix and 15 miles up the Apache Trail from Apache Junction, per Yahoo News.",
+    "The state record largemouth, 16 lb 7.68 oz, was caught at Canyon Lake in 1997, per the AZGFD state records list.",
+    "Yahoo News lists largemouth, smallmouth and yellow bass, catfish, black crappie, walleye and buffalo in the lake.",
+    "Anglers caught catfish and sunfish on nightcrawlers under a bobber or on the bottom, per Yahoo News. Castmasters or small spoons work for yellow bass.",
+    "AZGFD has tracked golden algae in Saguaro, Canyon and Apache lakes, which has caused fish kills since 2003.",
+    "AZGFD announced a Canyon Lake drawdown beginning Sept. 16 in a fishing bulletin.",
+    "Sportsman's Warehouse says Canyon Lake fishing is good for largemouth, smallmouth, yellow bass, rainbows, black crappie and channel catfish."
+   ],
+   "sources": [
+    {
+     "title": "5 best lakes for fishing near metro Phoenix (Yahoo News)",
+     "url": "https://www.yahoo.com/news/5-best-lakes-fishing-near-120125870.html"
+    },
+    {
+     "title": "Arizona State Fish Records (AZGFD)",
+     "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Nightcrawlers",
+     "category": "other",
+     "detail": "Catfish and sunfish, under a bobber or on the bottom, per Yahoo News.",
+     "basis": "sourced",
+     "source": {
+      "title": "5 best lakes for fishing near metro Phoenix (Yahoo News)",
+      "url": "https://www.yahoo.com/news/5-best-lakes-fishing-near-120125870.html"
+     }
+    },
+    {
+     "item": "Castmasters and small spoons",
+     "category": "other",
+     "detail": "Work for yellow bass, per Yahoo News.",
+     "basis": "sourced",
+     "source": {
+      "title": "5 best lakes for fishing near metro Phoenix (Yahoo News)",
+      "url": "https://www.yahoo.com/news/5-best-lakes-fishing-near-120125870.html"
+     }
+    },
+    {
+     "item": "Shad",
+     "category": "baitfish",
+     "detail": "Typical bass forage. Not documented for Canyon.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Canyon.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "saguaro-lake-az",
+   "name": "Saguaro Lake (Mesa, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 1600,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Yellow bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Bass and yellow bass fishery. Golden algae confirmed.",
+    "schedule": "No trout schedule.",
+    "recent_plants": [],
+    "wild_fish": "Largemouth, yellow bass.",
+    "sources": [
+     {
+      "title": "Saguaro Lake (AZGFD bulletin)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d57a31"
+     },
+     {
+      "title": "Saguaro (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/saguaro/30150/"
+     }
+    ]
+   },
+   "fishing_season_note": "Early mornings and mid-day fish deeper structure. Yellow bass on jigs or nightcrawlers. Golden algae has been confirmed here.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD confirmed golden algae in Saguaro Lake. Golden algae has caused fish kills in Saguaro, Canyon and Apache lakes since 2003.",
+    "Sportsman's Warehouse suggests square-bill crankbaits, spinnerbaits and Texas-rigged soft plastics for bass around shallow structure in early mornings, and 15 to 20 feet deep at mid-day as temperatures rise.",
+    "Bass were moving to depths of 15 to 20 feet and favoring structure and trees, per an AZGFD report.",
+    "Yellow bass bit jigging spoons and nightcrawlers in the Salt River lakes, especially Saguaro, per an AZGFD report.",
+    "Largemouth bass fished well at night, and morning bass chased bait top-water in an older AZGFD report.",
+    "Saguaro is one of the Salt River lakes listed as a yellow bass waterbody in AZGFD's bass challenge notes."
+   ],
+   "sources": [
+    {
+     "title": "Saguaro Lake (AZGFD bulletin)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d57a31"
+    },
+    {
+     "title": "Saguaro (Sportsman's Warehouse)",
+     "url": "https://fishingreports.sportsmans.com/fishing-report/saguaro/30150/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Square-bill crankbaits, spinnerbaits, Texas-rigged soft plastics",
+     "category": "other",
+     "detail": "For bass on shallow structure, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Saguaro (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/saguaro/30150/"
+     }
+    },
+    {
+     "item": "Jigging spoons and nightcrawlers",
+     "category": "other",
+     "detail": "Yellow bass, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing report (AZGFD, Salt River lakes)",
+      "url": "https://www.pressreader.com/usa/the-arizona-republic/20191121/282132113284893"
+     }
+    },
+    {
+     "item": "Shad",
+     "category": "baitfish",
+     "detail": "Typical bass forage. Not documented for Saguaro.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Saguaro.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "apache-lake-az",
+   "name": "Apache Lake (Apache Trail, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 2000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": 2500,
+   "species": [
+    {
+     "name": "Smallmouth bass",
+     "stocking": "55,000 stocked in July after a haul from Nebraska"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present; bigger fish typically largemouth"
+    },
+    {
+     "name": "Yellow bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Smallmouth buffalo, channel catfish, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Smallmouth and largemouth fishery. Smallmouth stocked in 2025-26 era.",
+    "schedule": "Smallmouth stocked July 2.",
+    "recent_plants": [
+     {
+      "date": "7-2 (year not stated)",
+      "species": "Smallmouth bass"
+     }
+    ],
+    "wild_fish": "Largemouth, smallmouth, yellow bass.",
+    "sources": [
+     {
+      "title": "Apache Lake Fishing Report (May 2026)",
+      "url": "https://azfishing.substack.com/p/apache-lake-fishing-report-consistent"
+     },
+     {
+      "title": "Apache Lake (AA-Fishing)",
+      "url": "https://www.aa-fishing.com/az/apache-lake-fishing-report.html"
+     }
+    ]
+   },
+   "fishing_season_note": "Smallmouth bass are the active target in spring. Largemouth bigger in the lower lake. Golden algae and fish-habitat work have affected it.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD stocked 55,000 smallmouth bass into Apache Lake on July 2, after its Mesa region aquatics crew hauled them from Nebraska, per an AZGFD bulletin.",
+    "In a May 2026 report, smallmouth were active around steeper rock structure and points, especially chunk rock and strong depth changes.",
+    "AA-Fishing describes largemouth in the lower lake around Horse Mesa Dam and along bluff walls near deep water.",
+    "Smallmouth lures named in AA-Fishing's report include a jerkbait, lipless crankbait, swimbait, Texas-rigged worms, tube baits and a Ned rig.",
+    "Volunteers placed donated Christmas trees in the lake as fish habitat in January, per AZGFD.",
+    "The state record smallmouth buffalo, 42 lb 13.76 oz, came from Apache Lake in 2015, per the AZGFD records list."
+   ],
+   "sources": [
+    {
+     "title": "Apache Lake Fishing Report (May 2026)",
+     "url": "https://azfishing.substack.com/p/apache-lake-fishing-report-consistent"
+    },
+    {
+     "title": "Apache Lake (AA-Fishing)",
+     "url": "https://www.aa-fishing.com/az/apache-lake-fishing-report.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Crayfish and chunk rock structure",
+     "category": "other",
+     "detail": "Smallmouth hold on rock points. Crayfish not named in the sources.",
+     "basis": "general"
+    },
+    {
+     "item": "Jerkbaits, lipless crankbaits, swimbaits and tubes",
+     "category": "other",
+     "detail": "Smallmouth lures, per AA-Fishing.",
+     "basis": "sourced",
+     "source": {
+      "title": "Apache Lake Fishing Report (AA-Fishing)",
+      "url": "https://www.aa-fishing.com/az/apache-lake-fishing-report.html"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Apache.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "roper-lake-az",
+   "name": "Roper Lake State Park (Safford, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 3000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present; 10-plus lb fish in recent years"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked from late fall through early spring"
+    },
+    {
+     "name": "Black crappie, bluegill, sunfish, channel catfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Trout stocked late fall to early spring. Strong largemouth fishery.",
+    "schedule": "Stocked week of 12-1-2025 and winter months, per AZGFD.",
+    "recent_plants": [
+     {
+      "date": "Week of 12-1-2025",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Largemouth, crappie, bluegill.",
+    "sources": [
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     },
+     {
+      "title": "Spring Bass Fishing Heats Up (State Parks)",
+      "url": "https://azstateparks.com/press/spring-bass-fishing-heats-up-in-arizonas-state-parks"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout stocked late fall through early spring. Largemouth bass to 5 to 7 lb typical, 10 lb recent. Crappie and bluegill in spring.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Roper Lake State Park has produced largemouth bass over 10 pounds in recent years, and is home to many large bass that feed on stocked rainbows, per Arizona State Parks in March 2026.",
+    "State Parks says largemouth at Roper can reach five to seven pounds, and that anglers catch bass in that range.",
+    "AZGFD stocked rainbows at Roper in December 2025 and in early December in an earlier year.",
+    "Inline spinners trolled slowly produce the most repeatable trout results at Roper, per State Parks.",
+    "Roper holds schools of crappie, bluegill and channel catfish along with the largemouth.",
+    "Trout fishing at Roper is best in winter and early spring, when most stockings occur."
+   ],
+   "sources": [
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    },
+    {
+     "title": "Spring Bass Fishing Heats Up (State Parks)",
+     "url": "https://azstateparks.com/press/spring-bass-fishing-heats-up-in-arizonas-state-parks"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Rainbow trout stocked from winter stockings",
+     "category": "baitfish",
+     "detail": "Largemouth feed on stocked rainbows through winter and early spring, per State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Spring Bass Fishing Heats Up in Arizona's State Parks (March 2026)",
+      "url": "https://azstateparks.com/press/spring-bass-fishing-heats-up-in-arizonas-state-parks"
+     }
+    },
+    {
+     "item": "Slow-trolled inline spinners",
+     "category": "other",
+     "detail": "Most repeatable trout method at Roper, per State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing in Arizona (State Parks)",
+      "url": "https://azstateparks.com/fishing-in-arizona"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Roper.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "dankworth-ponds-az",
+   "name": "Dankworth Ponds (Roper Lake area, AZ)",
+   "type": "pond",
+   "elevation_ft": 3000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": 15,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked late October through March"
+    },
+    {
+     "name": "Largemouth bass, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Winter trout pond. Albino rainbow trout stocked.",
+    "schedule": "Stocked late October through March.",
+    "recent_plants": [
+     {
+      "date": "Week of 12-1-2025",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Largemouth bass.",
+    "sources": [
+     {
+      "title": "Dankworth Pond (State Parks)",
+      "url": "https://azstateparks.com/dankworth-pond/on-the-water"
+     },
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     }
+    ]
+   },
+   "fishing_season_note": "Stocked late October through March. Same tactics as Roper for trout.",
+   "insect_ids": [],
+   "notes": [
+    "Dankworth Pond State Park is a 150-acre park around a 15-acre pond, three miles south of Roper Lake, per Arizona State Parks.",
+    "The pond was originally used for commercial catfish farming by the Dankworth family before it opened as part of Roper Lake State Park in 1982.",
+    "AZGFD stocks Dankworth with rainbows from late October through March, per State Parks.",
+    "Albino rainbow trout are stocked there as well, per State Parks.",
+    "State Parks says the tactics that work for stocked trout elsewhere also work at Dankworth."
+   ],
+   "sources": [
+    {
+     "title": "Dankworth Pond (State Parks)",
+     "url": "https://azstateparks.com/dankworth-pond/on-the-water"
+    },
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Stocked rainbow trout",
+     "category": "baitfish",
+     "detail": "Largemouth and trout feed on stocked rainbows, per State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Dankworth Pond (State Parks)",
+      "url": "https://azstateparks.com/dankworth-pond/on-the-water"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Dankworth.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "cluff-ranch-ponds-az",
+   "name": "Cluff Ranch Ponds (Pima, AZ)",
+   "type": "pond",
+   "elevation_ft": 3000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Wikipedia. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in late 2025"
+    },
+    {
+     "name": "Largemouth bass, sunfish, catfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Pond 3 is catch and release for most species through May 2026. Low water in 2025.",
+    "schedule": "Stocked week of 12-1-2025. Other stockings not in sources.",
+    "recent_plants": [
+     {
+      "date": "Week of 12-1-2025",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Largemouth bass and sunfish.",
+    "sources": [
+     {
+      "title": "Cluff Ranch Pond Fish Report, 10-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/232518/cluff-ranch-pond-.php"
+     },
+     {
+      "title": "AZGFD public input on 2027-28 regulations",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/41c1d0a"
+     }
+    ]
+   },
+   "fishing_season_note": "Pond 3 open in fall 2025 but very low. Catch and release for all species except rainbow trout through May 31, 2026. A 2027-28 proposal would make largemouth catch-and-release at Pond 3.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "The Cluff Ranch Ponds sit in the Cluff Ranch Wildlife Area at the base of a mountain at about 3,000 feet, per Wikipedia.",
+    "AZGFD opened Pond 3 to the public in October 2025, though water levels were still very low.",
+    "Pond 3 was catch and release for all species, except rainbow trout, through May 31, 2026, per AZGFD.",
+    "AZGFD proposed making Pond 3 catch and release only for largemouth bass in its 2027-28 regulation changes.",
+    "Cluff Reservoir 3 was stocked the week of Dec. 1 to 5, 2025, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Cluff Ranch Pond Fish Report, 10-30-2025 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/232518/cluff-ranch-pond-.php"
+    },
+    {
+     "title": "AZGFD public input on 2027-28 regulations",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/41c1d0a"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Rainbow trout feed",
+     "category": "baitfish",
+     "detail": "Not documented for Cluff.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Cluff.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "lake-havasu-az",
+   "name": "Lake Havasu (Lake Havasu City, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 450,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": 19300,
+   "species": [
+    {
+     "name": "Striped bass",
+     "stocking": "Present; schools of smaller stripers in summer"
+    },
+    {
+     "name": "Largemouth and smallmouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel and flathead catfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Sunfish, carp",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Striped bass, bass and catfish fishery. No trout stocking documented.",
+    "schedule": "No trout schedule.",
+    "recent_plants": [],
+    "wild_fish": "Striped bass, largemouth, smallmouth, channel and flathead catfish.",
+    "sources": [
+     {
+      "title": "Lake Havasu Fishing Report, Feb 6 2026 (Capt. Kenne Charters)",
+      "url": "https://fishingbooker.com/reports/view/113447"
+     },
+     {
+      "title": "Lake Havasu Fishing Report, Aug 25 2026 (Capt. Kenne Charters)",
+      "url": "https://fishingbooker.com/reports/view/127202"
+     }
+    ]
+   },
+   "fishing_season_note": "Striped bass year-round, best in winter and spring on live shad. Summer and fall grass mats and channel cat schools. Largemouth and smallmouth post-spawn in spring.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Lake Havasu is on the Colorado River at Lake Havasu City. AZGFD lists striped bass, largemouth, smallmouth and channel catfish there.",
+    "A February 2026 charter report had water temperatures in the high 50s, rising to the low 60s in the afternoons in shallow back coves.",
+    "The same February 2026 report found good striper action on the south end of the lake, mostly on live shad.",
+    "Post-spawn largemouth and smallmouth set up around secondary points, rock transitions, submerged brush and offshore structure, per a February 2026 charter.",
+    "In June 2026 the post-spawn striper bite was patchy, though some days were excellent. A dropshot rig with nightcrawler worked well, per a June 2026 charter report.",
+    "A late-summer 2026 charter report found grass mats along the shore had grown to the surface, and largemouth, sunfish and channel cats were caught beneath them.",
+    "In August 2026 smaller striped bass schooled over the lake, especially just before and after daybreak, per the same charter.",
+    "A late 2025 report said channel cats school up in fall and bite along with stripers."
+   ],
+   "sources": [
+    {
+     "title": "Lake Havasu Fishing Report, Feb 6 2026 (Capt. Kenne Charters)",
+     "url": "https://fishingbooker.com/reports/view/113447"
+    },
+    {
+     "title": "Lake Havasu Fishing Report, Aug 25 2026 (Capt. Kenne Charters)",
+     "url": "https://fishingbooker.com/reports/view/127202"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Live shad",
+     "category": "baitfish",
+     "detail": "Best striper bait in winter and early spring, per a February 2026 charter.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Havasu Fishing Report, Feb 6 2026 (Capt. Kenne Charters)",
+      "url": "https://fishingbooker.com/reports/view/113447"
+     }
+    },
+    {
+     "item": "Anchovies",
+     "category": "baitfish",
+     "detail": "Chummed and fished on braid in July 2025, per a charter report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Havasu Fishing Report, July 28 2025 (Capt. Kenne Charters)",
+      "url": "https://fishingbooker.com/reports/view/103679"
+     }
+    },
+    {
+     "item": "Nightcrawlers on a dropshot rig",
+     "category": "other",
+     "detail": "Worked well in June 2026, per a charter report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Havasu Fishing Report, June 19 2026 (Capt. Kenne Charters)",
+      "url": "https://fishingbooker.com/reports/view/121020"
+     }
+    },
+    {
+     "item": "Shad-pattern crankbaits and jerkbaits",
+     "category": "other",
+     "detail": "Worked for stripers in July 2025, per a charter report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Havasu Fishing Report, July 28 2025 (Capt. Kenne Charters)",
+      "url": "https://fishingbooker.com/reports/view/103679"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Havasu.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "alamo-lake-az",
+   "name": "Alamo Lake State Park (Wenden, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 1100,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": 3000,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present; state park says possibly best in Arizona"
+    },
+    {
+     "name": "Black crappie",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Bluegill and sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Largemouth and crappie fishery. No trout stocking documented.",
+    "schedule": "No trout schedule.",
+    "recent_plants": [],
+    "wild_fish": "Largemouth, black crappie, channel catfish, bluegill.",
+    "sources": [
+     {
+      "title": "Fishing in Arizona (State Parks)",
+      "url": "https://azstateparks.com/fishing-in-arizona"
+     },
+     {
+      "title": "Alamo Lake (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/0JNsMdnA/alamo-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Park says it may offer the best largemouth fishing in Arizona. Crappie can be excellent. Catfish after dark. Bass limit is two.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Alamo Lake State Park may offer the best largemouth bass fishing in Arizona, possibly the western United States. Crappie fishing can also be fantastic, per Arizona State Parks.",
+    "Fishbrain lists largemouth bass, channel catfish and black crappie as the most popular species at Alamo.",
+    "AZGFD's December 2025 report says catfishing can be very good after dark with stink bait or live worms.",
+    "Alamo sits in La Paz County and intersects Mohave County, per Fishbrain.",
+    "AZGFD said bead fishing should pick up at Alamo in a May 2024 report.",
+    "Alamo's state-park regulations give a two-bass limit with a minimum size, per Fishbrain.",
+    "Alamo is one of Arizona's main bass waters, and State Parks says large bass there likely feed on stocked trout."
+   ],
+   "sources": [
+    {
+     "title": "Fishing in Arizona (State Parks)",
+     "url": "https://azstateparks.com/fishing-in-arizona"
+    },
+    {
+     "title": "Alamo Lake (Fishbrain)",
+     "url": "https://fishbrain.com/fishing-waters/0JNsMdnA/alamo-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Stink bait and live worms",
+     "category": "other",
+     "detail": "Catfish after dark, per AZGFD, December 2025.",
+     "basis": "sourced",
+     "source": {
+      "title": "Alamo Lake Fishing Report, 12-15-2025 (AZGFD)",
+      "url": "https://www.utahfishreports.com/fish_reports/234022/alamo-lake-fishing-report.php"
+     }
+    },
+    {
+     "item": "Shad and bluegill",
+     "category": "baitfish",
+     "detail": "Typical bass forage. Not documented specifically for Alamo.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Alamo.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "dead-horse-ranch-az",
+   "name": "Dead Horse Ranch State Park (Cottonwood, AZ)",
+   "type": "park",
+   "elevation_ft": 3300,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in winter and early spring"
+    },
+    {
+     "name": "Largemouth bass, sunfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked over 2,000 lb in April 2023"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Winter and spring trout stockings. Catfish stocked by AZGFD.",
+    "schedule": "Trout stocked in winter and early spring. Catfish stocked April 2023 and later.",
+    "recent_plants": [
+     {
+      "date": "Week of 4-1-2026 (report)",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Largemouth bass, sunfish.",
+    "sources": [
+     {
+      "title": "Dead Horse Ranch State Park Fish Report, 4-23-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/237436/dead-horse-ranch-state-park-report.php"
+     },
+     {
+      "title": "Fishing in Arizona (State Parks)",
+      "url": "https://azstateparks.com/fishing-in-arizona"
+     }
+    ]
+   },
+   "fishing_season_note": "Year-round fishing in three lagoons and on the Verde River. Trout stocked in winter and early spring. Catfish stocked by AZGFD.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Dead Horse Ranch State Park has three lagoons and fishable stretches of the Verde River, per Arizona State Parks.",
+    "The lagoons and river are both stocked with rainbows in winter and early spring, per State Parks.",
+    "AZGFD stocked over 2,000 pounds of channel catfish in the park lagoons in April 2023, per State Parks.",
+    "Sportsman's Warehouse-style reports list rainbow, largemouth, channel catfish and sunfish as the main species, per Sportfishing Report.",
+    "A June 6, 2026 Free Fishing Fun Day was held at the park ponds, hosted by AZGFD, the park and Prescott National Forest.",
+    "AZGFD reported in April 2026 that the trout fishery was still going strong.",
+    "The lagoons' growth rates for bass were attributed to a diet of stocked rainbows, per State Parks."
+   ],
+   "sources": [
+    {
+     "title": "Dead Horse Ranch State Park Fish Report, 4-23-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/237436/dead-horse-ranch-state-park-report.php"
+    },
+    {
+     "title": "Fishing in Arizona (State Parks)",
+     "url": "https://azstateparks.com/fishing-in-arizona"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Stocked rainbow trout",
+     "category": "baitfish",
+     "detail": "Largemouth feed on stocked rainbows, per State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing in Arizona (State Parks)",
+      "url": "https://azstateparks.com/fishing-in-arizona"
+     }
+    },
+    {
+     "item": "Channel catfish feed",
+     "category": "other",
+     "detail": "Not documented for Dead Horse.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Dead Horse.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
    ]
   }
  ]
