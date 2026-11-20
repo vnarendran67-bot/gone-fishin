@@ -1,7 +1,7 @@
 window.HATCH_DB = {
- "version": 1,
+ "version": 2,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
- "status_note": "Compiled from published guide pages, agency pages and a 1986 ecology study. Many sources are old or anecdotal. Every entry needs checking against local observation before you rely on it. Months are approximate.",
+ "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
   "stillwater",
   "stream"
@@ -62,7 +62,10 @@ window.HATCH_DB = {
      "url": "https://fishingreportstoday.com/us/reports-us/rose-canyon-lake/"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   },
   {
    "id": "callibaetis",
@@ -113,7 +116,10 @@ window.HATCH_DB = {
      "url": "https://elp.tamu.edu/ipm/bugs/order-ephemeroptera-mayflies/ephemeroptera-baetidae-callibaetis-mayflies-naiad-e"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   },
   {
    "id": "damselfly",
@@ -155,7 +161,10 @@ window.HATCH_DB = {
      "url": "https://theflyfisher.com.au/a/blog/post/lake-insect-refresher"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   },
   {
    "id": "caddis",
@@ -213,13 +222,18 @@ window.HATCH_DB = {
      "url": "https://fishingreportstoday.com/us/reports-us/rose-canyon-lake/"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   },
   {
    "id": "bwo",
    "name": "Blue-winged olives (Baetis)",
    "order": "Ephemeroptera",
-   "habitat": ["stream"],
+   "habitat": [
+    "stream"
+   ],
    "months": [
     9,
     10,
@@ -264,7 +278,10 @@ window.HATCH_DB = {
      "url": "https://perfectflystore.com/your-streams/fly-fishing-on-the-salt-river-arizona/"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   },
   {
    "id": "march_brown",
@@ -301,7 +318,10 @@ window.HATCH_DB = {
      "url": "https://perfectflystore.com/your-streams/fly-fishing-on-the-salt-river-arizona/"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   },
   {
    "id": "trico",
@@ -339,7 +359,10 @@ window.HATCH_DB = {
      "url": "https://fishingreports.orvis.com/southwest/arizona/canyon-creek"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   },
   {
    "id": "pmd",
@@ -380,7 +403,10 @@ window.HATCH_DB = {
      "url": "https://perfectflystore.com/your-streams/fly-fishing-on-the-salt-river-arizona/"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   },
   {
    "id": "terrestrial",
@@ -432,7 +458,410 @@ window.HATCH_DB = {
      "url": "https://fishingreports.orvis.com/southwest/arizona/canyon-creek"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
+  },
+  {
+   "id": "co-bwo",
+   "name": "Blue-winged olives (Baetis)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4,
+    9,
+    10
+   ],
+   "peak_months": [
+    3,
+    4,
+    10
+   ],
+   "time_of_day": "Mid-morning to mid-afternoon on tailwaters; overcast days are best",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun, spinner",
+   "flies": [
+    {
+     "pattern": "Parachute BWO or sparkle dun",
+     "sizes": "16-22; fall flies about 20-22"
+    }
+   ],
+   "notes": "Two main windows on most charts: spring and fall. Tailwaters can hatch them through winter, so check the dates on your river.",
+   "date_note": "Some sources give spring and fall only; others say tailwaters hatch them all winter.",
+   "sources": [
+    {
+     "title": "Colorado fly hatch chart (Norrik)",
+     "url": "https://norrik.com/fly-hatches/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado fly hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado's best tailwaters (Pat Dorsey)",
+     "url": "https://www.patdorseyflyfishing.com/colorados-best-tailwaters/"
+    },
+    {
+     "title": "Blue River hatches (Pat Dorsey)",
+     "url": "https://www.patdorseyflyfishing.com/the-new-blue/"
+    },
+    {
+     "title": "A.K.'s favorite Colorado flies (Fly Tyer)",
+     "url": "https://www.flytyer.com/fly-tyer-exclusive-k-s-favorite-flies/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Colorado"
+   ]
+  },
+  {
+   "id": "co-pmd",
+   "name": "Pale morning duns",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    6,
+    7,
+    8
+   ],
+   "time_of_day": "Morning on tailwaters; through midday on freestones",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun, spinner",
+   "flies": [
+    {
+     "pattern": "PMD dun or emerger",
+     "sizes": "16-20"
+    }
+   ],
+   "notes": "Often hatches alongside green drakes in July and August.",
+   "date_note": "Mid-June to mid-September on some charts, June to August on others.",
+   "sources": [
+    {
+     "title": "Colorado fly hatch chart (Norrik)",
+     "url": "https://norrik.com/fly-hatches/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado fly hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado fly hatch chart 2026 (Fly Fish Finder)",
+     "url": "https://flyfishfinder.com/pages/fly-hatches-colorado/"
+    },
+    {
+     "title": "Colorado summer hatches by month (Rise Beyond)",
+     "url": "https://risebeyondflyfishing.com/blog/colorado-fly-fishing-summer-hatches-month-by-month-breakdown-near-denver"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Colorado"
+   ]
+  },
+  {
+   "id": "co-green-drake",
+   "name": "Green drakes",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    7,
+    8
+   ],
+   "peak_months": [
+    7
+   ],
+   "time_of_day": "Afternoon into evening",
+   "water_temp_f": null,
+   "stages": "Nymph, dun, spinner",
+   "flies": [
+    {
+     "pattern": "Green drake dun or spinner",
+     "sizes": "10-12"
+    }
+   ],
+   "notes": "Hatches are later at higher elevations, often by two to four weeks. Roaring Fork and Eagle River are known for them.",
+   "sources": [
+    {
+     "title": "Colorado fly hatch chart (Norrik)",
+     "url": "https://norrik.com/fly-hatches/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado fly hatch chart 2026 (Fly Fish Finder)",
+     "url": "https://flyfishfinder.com/pages/fly-hatches-colorado/"
+    },
+    {
+     "title": "Colorado fly hatch chart 2026 (Aquamarine)",
+     "url": "https://www.aquamarinepower.com/colorado-fly-hatch-chart/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Colorado"
+   ]
+  },
+  {
+   "id": "co-salmonfly",
+   "name": "Salmonflies",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6,
+    7
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, adult",
+   "flies": [
+    {
+     "pattern": "Salmonfly nymph or adult pattern",
+     "sizes": "4-6"
+    }
+   ],
+   "notes": "One of the largest hatches in the state, on fast freestones and the Colorado River.",
+   "sources": [
+    {
+     "title": "Colorado fly hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado fly hatch chart (Norrik)",
+     "url": "https://norrik.com/fly-hatches/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado fly hatch chart 2026 (Aquamarine)",
+     "url": "https://www.aquamarinepower.com/colorado-fly-hatch-chart/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Colorado"
+   ]
+  },
+  {
+   "id": "co-golden-stone",
+   "name": "Golden stoneflies",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7,
+    8
+   ],
+   "peak_months": [
+    6,
+    7
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, adult",
+   "flies": [
+    {
+     "pattern": "Golden stone adult or nymph",
+     "sizes": "6-10"
+    }
+   ],
+   "notes": "Often more abundant than salmonflies on many Colorado streams.",
+   "sources": [
+    {
+     "title": "Colorado fly hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado fly hatch chart (Norrik)",
+     "url": "https://norrik.com/fly-hatches/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado hatch chart (The Flyfisher Guide Service)",
+     "url": "https://legacy.theflyfisher.com/reports/hatch-chart.cfm"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Colorado"
+   ]
+  },
+  {
+   "id": "co-caddis",
+   "name": "Caddisflies (sedges, grannoms)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    5,
+    6,
+    7
+   ],
+   "time_of_day": "Evening, and afternoon on some streams",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults",
+   "flies": [
+    {
+     "pattern": "Elk Hair Caddis or Stimulator",
+     "sizes": "14-18"
+    },
+    {
+     "pattern": "Spotted sedge",
+     "sizes": "16-22"
+    },
+    {
+     "pattern": "American grannom",
+     "sizes": "10-16"
+    }
+   ],
+   "notes": "Several sedge species overlap from spring through summer. Grannoms come early (March to May); spotted sedges and green sedges in late spring and summer.",
+   "date_note": "Start and end dates differ between charts, from April to September to June to September.",
+   "sources": [
+    {
+     "title": "Colorado fly hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/colorado-fly-hatch-chart/"
+    },
+    {
+     "title": "Colorado River fly fishing, Rocky Mountain NP (TotalFlyFishing)",
+     "url": "https://www.totalflyfishing.com/colorado/colorado-river-fly-fishing-rocky-mountain-national-park/"
+    },
+    {
+     "title": "Colorado hatch chart (Guide Recommended)",
+     "url": "https://guiderecommended.com/colorado-hatch-chart-flies/"
+    },
+    {
+     "title": "Colorado hatch chart (The Flyfisher Guide Service)",
+     "url": "https://legacy.theflyfisher.com/reports/hatch-chart.cfm"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Colorado"
+   ]
+  },
+  {
+   "id": "co-midge",
+   "name": "Midges",
+   "order": "Diptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "peak_months": [
+    12,
+    1,
+    2,
+    3
+   ],
+   "time_of_day": "Any; strongest on tailwaters in winter",
+   "water_temp_f": null,
+   "stages": "Larvae and pupae year-round; emerging adults",
+   "flies": [
+    {
+     "pattern": "Midge pupa or dun",
+     "sizes": "18-22"
+    }
+   ],
+   "notes": "Year-round food. One guide calls December and January the best months for dry flies on midges.",
+   "sources": [
+    {
+     "title": "Colorado hatch chart (Guide Recommended)",
+     "url": "https://guiderecommended.com/colorado-hatch-chart-flies/"
+    },
+    {
+     "title": "Colorado River fly fishing, Rocky Mountain NP (TotalFlyFishing)",
+     "url": "https://www.totalflyfishing.com/colorado/colorado-river-fly-fishing-rocky-mountain-national-park/"
+    },
+    {
+     "title": "Colorado's best tailwaters (Pat Dorsey)",
+     "url": "https://www.patdorseyflyfishing.com/colorados-best-tailwaters/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Colorado"
+   ]
+  },
+  {
+   "id": "co-terrestrial",
+   "name": "Terrestrials (hoppers, ants, beetles)",
+   "order": "Various",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    8
+   ],
+   "time_of_day": "Any",
+   "water_temp_f": null,
+   "stages": "Adults falling into water",
+   "flies": [
+    {
+     "pattern": "Hopper or ant pattern",
+     "sizes": "10"
+    }
+   ],
+   "notes": "Late summer and early fall, especially on hot afternoons.",
+   "sources": [
+    {
+     "title": "Colorado hatch chart (Guide Recommended)",
+     "url": "https://guiderecommended.com/colorado-hatch-chart-flies/"
+    },
+    {
+     "title": "Colorado summer hatches by month (Rise Beyond)",
+     "url": "https://risebeyondflyfishing.com/blog/colorado-fly-fishing-summer-hatches-month-by-month-breakdown-near-denver"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Colorado"
+   ]
   }
  ],
  "lakes": [
@@ -486,7 +915,10 @@ window.HATCH_DB = {
      "url": "https://fishingreportstoday.com/us/reports-us/rose-canyon-lake/"
     }
    ],
-   "verified": false
+   "verified": false,
+   "states": [
+    "Arizona"
+   ]
   }
  ]
 };

@@ -187,9 +187,9 @@ function usePlace(){
   if (isNaN(lat) || isNaN(lon)) { $('placeMsg').innerHTML = '<span class="warn">Enter a latitude and longitude, or search for a place.</span>'; return; }
   const name = $('pname').value.trim() || `${lat.toFixed(3)}, ${lon.toFixed(3)}`;
   const lake = DB.lakes.find(l => l.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase()));
-  place = { name, lat, lon, habitat: $('habitat').value, lakeId: lake ? lake.id : null };
+  place = { name, lat, lon, habitat: $('habitat').value, lakeId: lake ? lake.id : null, state: window._state || '' };
   const list = loadSaved().filter(p => p.name !== place.name);
-  list.unshift({ name, lat, lon, habitat: place.habitat, lakeId: place.lakeId });
+  list.unshift({ name, lat, lon, habitat: place.habitat, lakeId: place.lakeId, state: place.state });
   saveAll(list.slice(0, 12));
   renderSaved();
   runPlan();
@@ -334,8 +334,8 @@ function scoreDay(a){
 }
 
 /* ---------- hatches for a date ---------- */
-function activeHatches(month, habitat, waterF, insectIds){
-  const list = DB.insects.filter(i => i.habitat.includes(habitat) && i.months.includes(month));
+function activeHatches(month, habitat, waterF, insectIds, state){
+  const list = DB.insects.filter(i => i.habitat.includes(habitat) && i.months.includes(month) && (!state || !i.states || i.states.includes(state)));
   return list.map(ins => {
     let tempNote = null, gate = true;
     if (ins.water_temp_f) {
@@ -458,9 +458,10 @@ async function runPlan(){
     ${habitat === 'stillwater' ? '<p class="muted">Lakes usually have no USGS gauge, so the water temperature is estimated from recent air temperatures.</p>' : ''}`;
 
   // hatches
-  const hatches = activeHatches(month, habitat, waterF, lake ? lake.insect_ids : null);
+  const hatches = activeHatches(month, habitat, waterF, lake ? lake.insect_ids : null, place.state);
   const peakCount = hatches.filter(h => h.peak).length;
-  $('hatches').innerHTML = `<h2>Hatches expected in ${MONTHS[month-1]}</h2>
+  $('hatches').innerHTML = `<h2>Hatches expected in ${MONTHS[month-1]}${place.state ? ' · ' + esc(place.state) : ''}</h2>
+    ${place.state ? '' : '<p class="warn">Search for the place by name so we can match its state. Showing all states.</p>'}
     <p class="muted">${hatches.length} possible. ${peakCount} typically peak this month. Based on regional guide data, not local counts.</p>
     ${hatches.length ? hatches.map(h => `
       <div class="hatch">
@@ -469,6 +470,7 @@ async function runPlan(){
         ${h.lakeBoost ? '<span class="pill">known at this lake</span>' : ''}
         ${h.tempNote ? `<span class="pill">${esc(h.tempNote)}</span>` : ''}
         <div class="muted" style="margin-top:4px">${esc(h.ins.time_of_day)}</div>
+        ${h.ins.date_note ? `<div class="warn" style="margin-top:4px">Sources differ: ${esc(h.ins.date_note)}</div>` : ''}
         <div style="margin-top:4px">${fmtFly(h.ins.flies)}</div>
         <div class="muted" style="margin-top:4px">${esc(h.ins.notes)}</div>
         <div class="src">${h.ins.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(' · ')}</div>
@@ -524,7 +526,7 @@ async function renderOutlook(lat, lon){
 }
 function shareLink(){
   const q = new URLSearchParams({ name: place.name, lat: place.lat, lon: place.lon, habitat: place.habitat,
-    date: $('date').value, when: $('when').value, elev: $('elev').value || '' });
+    date: $('date').value, when: $('when').value, elev: $('elev').value || '', state: place.state || '' });
   return location.origin + location.pathname + '?' + q.toString();
 }
 function calLink(){
@@ -566,7 +568,7 @@ if (sp.get('lat') && sp.get('lon')) {
   if (sp.get('date')) $('date').value = sp.get('date');
   if (sp.get('when')) $('when').value = sp.get('when');
   if (sp.get('elev')) $('elev').value = sp.get('elev');
-  place = { name: nm, lat: parseFloat(sp.get('lat')), lon: parseFloat(sp.get('lon')), habitat: sp.get('habitat') || 'stream', lakeId: lk ? lk.id : null };
+  place = { name: nm, lat: parseFloat(sp.get('lat')), lon: parseFloat(sp.get('lon')), habitat: sp.get('habitat') || 'stream', lakeId: lk ? lk.id : null, state: sp.get('state') || '' };
   runPlan();
 }
 </script>
