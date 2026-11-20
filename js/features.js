@@ -36,6 +36,9 @@ function stateScores(month){
   });
   return out;
 }
+function hasAnyData(name){
+  return DB.insects.some(i => (i.states || []).includes(name)) || DB.lakes.some(l => (l.states || []).includes(name));
+}
 function levelFor(score, name){
   if (!hasAnyData(name)) return 'nodata';
   if (!score) return 'lv0';
