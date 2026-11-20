@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 10,
+ "version": 11,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -4466,11 +4466,11 @@ window.HATCH_DB = {
    "species": [
     {
      "name": "Rainbow trout",
-     "stocking": "Catchable rainbows stocked monthly, March through October"
+     "stocking": "Stocked by Arizona Game and Fish. Recent plant dates listed below. The statewide schedule has exact dates."
     },
     {
      "name": "Brown trout",
-     "stocking": "Fingerlings stocked once a year in late fall"
+     "stocking": "Fingerlings stocked once a year in late fall (regional source, not confirmed on the 2026 AZGFD plant list)"
     }
    ],
    "fishing_season_note": "Usually April through October, with the best fishing from late spring to early fall. Snow often closes the road in winter.",
@@ -4483,10 +4483,10 @@ window.HATCH_DB = {
    ],
    "notes": [
     "Seven acres at about 7,000 ft in ponderosa pine on the Coronado National Forest, roughly an hour from Tucson. The lake is small and stocked, so most of the food is what the lake itself produces.",
-    "Arizona Game and Fish stocks Rose Canyon with rainbow trout, and the 2024 plant dates on Sport Fishing Report fell in May, August, September and October. Brown trout are stocked as fingerlings once a year in late fall.",
+    "Arizona Game and Fish stocks Rose Canyon with rainbow trout. The 2026 plant dates run from June through October, and 2024 plants ran from May through October.",
     "Crayfish live in the lake. Arizona Game and Fish biologists and AZPM both list them as part of the lake's population, so a crayfish-colored fly or a bead-head crawfish pattern fished near rocky banks is a reasonable bet.",
     "The lake has a history of silting: a July 1999 storm washed sediment in, and officials at the time proposed draining the lake to restart it. Depth can differ a lot from older maps, so check for shallow bars and weed before a trip.",
-    "Mercury contamination has been a concern at Rose Canyon in past reporting. Check current Arizona fish consumption guidance before you eat what you catch.",
+    "Arizona Game and Fish says its stocked trout test significantly below the EPA mercury standard, with no limit on meals. Past mercury concerns were about the wider area, not the trout.",
     "Lake insects here have not been surveyed in a published study. The hatch list is based on regional lake patterns, not Rose Canyon sampling."
    ],
    "sources": [
@@ -4573,7 +4573,69 @@ window.HATCH_DB = {
       "url": "https://azpm.org/s/97503-rose-canyon-lake/"
      }
     }
-   ]
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Put-and-take stocked lake. No wild trout population is documented here. Trout come from Arizona Game and Fish hatchery stockings.",
+    "schedule": "Plants listed in the Sport Fishing Report table through October 2026. The AZGFD statewide trout stocking schedule has exact dates and is updated as fish are stocked. Stockings are dated to the Monday of the stocking week.",
+    "recent_plants": [
+     {
+      "date": "6-22-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "7-17-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "8-10-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "9-14-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "10-12-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "5-20-2024",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "8-12-2024",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "9-09-2024",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "10-07-2024",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "8-14-2023",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "No wild trout population is documented. Crayfish and non-native bullfrogs also live in the lake. Goldfish were illegally introduced, and anglers are asked to remove any they catch.",
+    "sources": [
+     {
+      "title": "Rose Canyon Lake (Sport Fishing Report plant table)",
+      "url": "https://sportfishingreport.com/lakes/1517/rose-canyon-lake.php"
+     },
+     {
+      "title": "AZGFD Fish Stocking Schedule",
+      "url": "https://www.azgfd.com/fishing-2/where-to-fish/fish-stocking-schedule/"
+     },
+     {
+      "title": "Rose Canyon Lake goldfish report (Utah Fish Report)",
+      "url": "https://utahfishreports.com/fish_reports/232516/rose-canyon-lake-report.php"
+     }
+    ]
+   }
   },
   {
    "id": "strawberry-reservoir",
@@ -4587,7 +4649,15 @@ window.HATCH_DB = {
    "species": [
     {
      "name": "Cutthroat trout",
-     "stocking": "Stocking schedule not checked; see Utah DWR"
+     "stocking": "Stocked by Utah DWR. Schedule not confirmed for 2026. Sources name two cutthroat strains (Colorado River and Bear Lake), so the strain is not settled."
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by Utah DWR in spring, along with kokanee"
+    },
+    {
+     "name": "Kokanee salmon",
+     "stocking": "Stocked by Utah DWR in spring. Kokanee were first introduced in 1937 and have been restocked since."
     }
    ],
    "fishing_season_note": "Ice-off in late April and early May is a known season. Fall fishing runs mid-August through late September.",
@@ -4608,7 +4678,8 @@ window.HATCH_DB = {
     "Ice-off in late April and early May. As ice clears, fish spread throughout the reservoir following bug hatches and blooming zooplankton.",
     "Fall is a strong season: the Strawberry is known for fishing from mid-August through late September with few crowds. Gill-net survey results suggest fish feed heavily before winter.",
     "Walleye were illegally introduced. The Utah DWR asks anglers to report any walleye they catch.",
-    "Fly anglers can wade the shoreline in spring and fall. Most people fish from a boat."
+    "Fly anglers can wade the shoreline in spring and fall. Most people fish from a boat.",
+    "Kokanee fishing picks up right after ice-off, which is generally mid-April to mid-May, depending on the weather (Utah DWR)."
    ],
    "sources": [
     {
@@ -4728,7 +4799,41 @@ window.HATCH_DB = {
      "basis": "regional",
      "insect_id": "ut-terrestrial"
     }
-   ]
+   ],
+   "stocking": {
+    "status": "stocked, with native fish",
+    "summary": "Mostly stocked. Cutthroat, rainbow and kokanee are all stocked by Utah DWR. Native Utah chub and Utah sucker are wild, and walleye were illegally introduced. Natural reproduction of the stocked trout is not documented for this reservoir.",
+    "schedule": "Stocking is in spring. In 2025, about 400,000 kokanee and rainbow trout went in between March 4 and June 4. Earlier, in 2013, DWR planted 400,000 eight-inch rainbow, 600,000 eight-inch cutthroat and 400,000 kokanee. No month-by-month 2026 schedule was found.",
+    "recent_plants": [
+     {
+      "date": "March 4 to June 4, 2025",
+      "species": "Kokanee and rainbow trout (about 400,000)"
+     },
+     {
+      "date": "Spring 2013",
+      "species": "Rainbow trout (400,000), cutthroat (600,000), kokanee (400,000)"
+     }
+    ],
+    "wild_fish": "Utah chub and Utah sucker are native and present in the reservoir. Walleye were illegally introduced, and DWR asks anglers to report any walleye they catch.",
+    "sources": [
+     {
+      "title": "Utah County lakes and rivers stocked with fish for the summer (Herald Extra)",
+      "url": "https://www.heraldextra.com/news/local/2025/jun/19/utah-county-lakes-rivers-stocked-with-fish-for-the-summer-by-dwr/"
+     },
+     {
+      "title": "Experts, anglers say fishing conditions are prime at Strawberry (KSL)",
+      "url": "https://www.ksl.com/article/news/utah/experts-anglers-say-fishing-conditions-are-prime-at-strawberry-reservoir/27511863"
+     },
+     {
+      "title": "Half a million trout get new home at Strawberry (KSL)",
+      "url": "https://www.ksl.com/article/20618047/half-a-million-trout-get-new-home-spark-contest-at-strawberry-reservoir"
+     },
+     {
+      "title": "Want to catch a big fish? 3 Utah lakes (Utah DWR)",
+      "url": "https://wildlife.utah.gov/wildlife-news/118-big-game/658-deer-unit-boundaries.html"
+     }
+    ]
+   }
   }
  ]
 };

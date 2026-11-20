@@ -171,7 +171,7 @@ async function searchPlace(){
 }
 function pickResult(i){
   const h = window._hits[i];
-  $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name; window._state = h.admin1 || ''; window._country = h.country || '';
+  $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name; window._state = h.admin1 || ''; window._country = h.country || ''; window._stateKey = `${h.latitude},${h.longitude}`;
   $('results').innerHTML = '';
   $('placeMsg').textContent = `Set to ${h.name}. Check the water type, then press "Get the plan".`;
   // set water type from what the search says it is
@@ -182,20 +182,44 @@ function pickResult(i){
   const match = DB.lakes.find(l => h.name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase().split(' lake')[0]));
   if (match) { $('habitat').value = 'stillwater'; $('placeMsg').textContent += ` Matched known lake: ${match.name.split(' (')[0]}.`; }
 }
-function usePlace(){
+// Find the US state for a lat/lon (saved places and hand-typed coordinates have none)
+const STATE_CACHE = {};
+async function resolveState(lat, lon){
+  const key = `${lat.toFixed(4)},${lon.toFixed(4)}`;
+  if (STATE_CACHE[key] !== undefined) return STATE_CACHE[key];
+  try {
+    const r = await fetch(`https://nominatim.openstreetmap.org/reverse?format=jsonv2&zoom=5&addressdetails=1&lat=${lat}&lon=${lon}`);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const j = await r.json();
+    STATE_CACHE[key] = j.address?.state || '';
+  } catch(e) { return ''; }  // don't cache failures, so a later try can succeed
+  return STATE_CACHE[key];
+}
+async function stateFor(lat, lon){
+  if (window._stateKey === `${lat},${lon}` && window._state) return window._state;
+  return await resolveState(lat, lon);
+}
+async function usePlace(){
   const lat = parseFloat($('lat').value), lon = parseFloat($('lon').value);
   if (isNaN(lat) || isNaN(lon)) { $('placeMsg').innerHTML = '<span class="warn">Enter a latitude and longitude, or search for a place.</span>'; return; }
   const name = $('pname').value.trim() || `${lat.toFixed(3)}, ${lon.toFixed(3)}`;
   const lake = DB.lakes.find(l => l.name.toLowerCase().includes(name.toLowerCase()) || name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase()));
-  place = { name, lat, lon, habitat: $('habitat').value, lakeId: lake ? lake.id : null, state: window._state || '' };
+  const state = await stateFor(lat, lon);
+  place = { name, lat, lon, habitat: $('habitat').value, lakeId: lake ? lake.id : null, state };
   const list = loadSaved().filter(p => p.name !== place.name);
   list.unshift({ name, lat, lon, habitat: place.habitat, lakeId: place.lakeId, state: place.state });
   saveAll(list.slice(0, 12));
   renderSaved();
   runPlan();
 }
-function loadPlace(p){
+async function loadPlace(p){
   $('lat').value = p.lat; $('lon').value = p.lon; $('pname').value = p.name; $('habitat').value = p.habitat;
+  if (!p.state) {
+    p.state = await resolveState(p.lat, p.lon);
+    // save the state back so the next load doesn't need a lookup
+    const list = loadSaved().map(x => (x.name === p.name && x.lat === p.lat && x.lon === p.lon) ? { ...x, state: p.state } : x);
+    saveAll(list);
+  }
   place = p; runPlan();
 }
 function renderSaved(){
@@ -492,12 +516,23 @@ async function runPlan(){
   if (usgs.some(s => s.flow != null) && wx && wx.kind === 'forecast' && wx.a.rainChance > 30) regional.push('Rain forecast and a flowing gauge: check the flow reading again the morning of your trip.');
   if (habitat === 'stream') regional.push('Stream tip: fish the early and late hours when cloud cover is up.');
   if (habitat === 'stillwater') regional.push('Lake tip: check the shallow weedy edges for midge and Callibaetis activity.');
+  // Stocked or wild fish, and what has been stocked recently
+  const stk = lake && lake.stocking ? lake.stocking : null;
+  const stockHtml = stk ? `<h3>Stocked or wild</h3>
+    <ul class="tips">
+      <li><b>${esc(stk.status)}</b>. ${esc(stk.summary)}</li>
+      <li><b>Schedule:</b> ${esc(stk.schedule)}</li>
+      ${stk.recent_plants && stk.recent_plants.length ? `<li><b>Recent plantings:</b> ${stk.recent_plants.map(p => `${esc(p.date)} ${esc(p.species)}`).join('; ')}.</li>` : ''}
+      <li><b>Wild fish:</b> ${esc(stk.wild_fish)}</li>
+      <li class="muted">${stk.sources.map(x => `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`).join(' · ')}</li>
+    </ul>` : '';
   // What the fish eat here (insects, crayfish, baitfish, zooplankton, stocked feed)
   const forage = lake && lake.forage ? lake.forage : [];
   const forageHtml = forage.length ? `<h3>What the fish eat here</h3>
     <ul class="tips">${forage.map(f => `<li><b>${esc(f.item)}</b> <span class="pill">${esc(f.category)}</span> <span class="pill">${f.basis === 'sourced' ? 'sourced' : (f.basis === 'regional' ? 'regional guide' : 'general')}</span><br>${esc(f.detail)}${f.source ? ` <a href="${esc(f.source.url)}" target="_blank" rel="noopener">${esc(f.source.title)}</a>` : ''}</li>`).join('')}</ul>` : '';
   $('tips').innerHTML = `<h2>Notes for ${esc(place.name)}</h2>
     <h3>About this water</h3><ul class="tips">${specific.map(t => `<li>${t}</li>`).join('')}</ul>
+    ${stockHtml}
     ${forageHtml}
     ${regional.length ? `<h3>Conditions and general tips</h3><ul class="tips">${regional.map(t => `<li>${t}</li>`).join('')}</ul>` : ''}`;
 
@@ -585,6 +620,7 @@ if (sp.get('lat') && sp.get('lon')) {
   if (sp.get('when')) $('when').value = sp.get('when');
   if (sp.get('elev')) $('elev').value = sp.get('elev');
   place = { name: nm, lat: parseFloat(sp.get('lat')), lon: parseFloat(sp.get('lon')), habitat: sp.get('habitat') || 'stream', lakeId: lk ? lk.id : null, state: sp.get('state') || '' };
+  if (!place.state) resolveState(place.lat, place.lon).then(st => { if (st) { place.state = st; runPlan(); } });
   runPlan();
 }
 </script>
