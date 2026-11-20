@@ -17055,8 +17055,8 @@ window.HATCH_DB = {
    "name": "Sycamore Creek (Verde River tributary, AZ)",
    "type": "stream",
    "elevation_ft": null,
-   "lat": 34.3148,
-   "lon": -111.3667,
+   "lat": 34.3011,
+   "lon": -111.358,
    "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Payson-area listing; there are several Sycamore Creeks in Arizona, so verify the reach.",
    "area_acres": null,
    "species": [
