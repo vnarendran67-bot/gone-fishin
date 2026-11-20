@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 28,
+ "version": 29,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -17048,6 +17048,643 @@ window.HATCH_DB = {
     1,
     2,
     3
+   ]
+  },
+  {
+   "id": "sycamore-creek-az",
+   "name": "Sycamore Creek (Verde River tributary, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": 34.3148,
+   "lon": -111.3667,
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Payson-area listing; there are several Sycamore Creeks in Arizona, so verify the reach.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Reported by Fishbrain users; no AZGFD stocking record found"
+    },
+    {
+     "name": "Roundtail chub",
+     "stocking": "Native; managed by AZGFD"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Reported by Fishbrain users"
+    }
+   ],
+   "stocking": {
+    "status": "unknown",
+    "summary": "No AZGFD stocking record found for the Sycamore Creek reach. AZGFD lists the Verde-tributary Sycamore as a medium-priority native-fish unit.",
+    "schedule": "None published.",
+    "recent_plants": [],
+    "wild_fish": "Roundtail chub, rainbows and smallmouth bass per Fishbrain listings. AZGFD surveys call for more inventory before management decisions.",
+    "sources": [
+     {
+      "title": "Sycamore Creek-Verde River Tributary COA (AZGFD)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/sycamore-creek-verde-river-tributary"
+     },
+     {
+      "title": "Sycamore Creek (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/5tB2-huF/sycamore-creek"
+     }
+    ]
+   },
+   "fishing_season_note": "Very limited access, and the sources list no campgrounds on the run. Check access and land status before going. Native-fish management is the priority here.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ],
+   "notes": [
+    "AWCS rates the Verde-tributary Sycamore Creek a medium-priority unit, with medium conservation potential.",
+    "AWCS says the Bureau of Reclamation has suggested a barrier site on Sycamore Creek to restore loach minnow, spikedace and Gila topminnow.",
+    "AWCS says more survey and inventory is needed before any substantial management decisions.",
+    "Fishbrain describes the Sycamore Creek in Coconino and Yavapai counties as most popular for roundtail chub and smallmouth bass.",
+    "American Whitewater says Sycamore Creek has very limited access and no campgrounds along its run.",
+    "A separate Sycamore Creek below Double T Ranch Falls is managed for native fish, including roundtail chub, longfin dace, desert sucker and Sonora sucker, per AWCS.",
+    "Fox Gulch on Sycamore Creek near Gold Canyon has largemouth bass reports, per Fishbrain. That is a different Sycamore reach."
+   ],
+   "sources": [
+    {
+     "title": "Sycamore Creek-Verde River Tributary COA (AZGFD)",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/sycamore-creek-verde-river-tributary"
+    },
+    {
+     "title": "American Whitewater: Sycamore Creek",
+     "url": "https://www.americanwhitewater.org/content/River/detail/id/4540"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Native minnows and suckers",
+     "category": "other",
+     "detail": "Native fish populations are the management focus, and roundtail chub are the main native prey.",
+     "basis": "sourced",
+     "source": "AWCS Sycamore Creek COA"
+    },
+    {
+     "item": "Caddisflies and terrestrials",
+     "category": "insect",
+     "detail": "Hatch data is not sourced for this reach. Treat as general Rim-type stream food.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "fossil-creek-az",
+   "name": "Fossil Creek (Strawberry, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation and coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Native fish (fishing for natives in native habitat)",
+     "stocking": "Not stocked; natural populations"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "The Fish and Wildlife Service describes Fossil Creek as a native-fish stream, not a stocked trout water. No AZGFD stocking record was found.",
+    "schedule": "None.",
+    "recent_plants": [],
+    "wild_fish": "Native fishes in natural habitat. Species list not sourced.",
+    "sources": [
+     {
+      "title": "Fossil Creek, Wild and Scenic River (FWS)",
+      "url": "https://www.fws.gov/rivers/river/fossil"
+     },
+     {
+      "title": "Fossil Creek (rivers.gov)",
+      "url": "https://rivers.gov/river/fossil"
+     }
+    ]
+   },
+   "fishing_season_note": "Constant year-round flow of about 43 cubic feet per second from artesian springs. The 70-degree warm springs are a draw for visitors. Check current access rules.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ],
+   "notes": [
+    "FWS says Fossil Creek is a rare place in Arizona to fish for native species in their native habitat, because most native fisheries have been depleted.",
+    "rivers.gov says the creek comes from artesian springs with a steady year-round flow of about 43 cubic feet per second.",
+    "FWS calls Fossil Creek the most diverse riparian area in Arizona, with over 30 tree and shrub species and over a hundred bird species.",
+    "FWS lists 70-degree warm springs, camping, hiking and fishing among the visitor draws.",
+    "No stocking record and no current species list were found for Fossil Creek in these sources, so those details are left out."
+   ],
+   "sources": [
+    {
+     "title": "Fossil Creek (FWS)",
+     "url": "https://www.fws.gov/rivers/river/fossil"
+    },
+    {
+     "title": "Fossil Creek (rivers.gov)",
+     "url": "https://rivers.gov/river/fossil"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Native fish and invertebrates",
+     "category": "other",
+     "detail": "Native fish are the main attraction, and invertebrate detail is not sourced. Treat as general.",
+     "basis": "general"
+    },
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "General stream forage. Hatch timing not sourced for Fossil.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "san-francisco-river-clifton-az",
+   "name": "San Francisco River (Clifton, AZ)",
+   "type": "river",
+   "elevation_ft": null,
+   "lat": 32.8,
+   "lon": -109.05,
+   "coords_note": "Elevation not sourced. Coordinates are approximate Clifton-area values; verify before driving.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Fish species",
+     "stocking": "See AZGFD and Wikipedia notes; no current stocking schedule found"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "AZGFD plans seasonal Gila trout stocking on the Upper Gila watershed reach"
+    }
+   ],
+   "stocking": {
+    "status": "partially stocked",
+    "summary": "AZGFD's Wildlife Conservation Strategy says Gila trout will be stocked seasonally on the San Francisco and tributaries reach from Luna Lake to the NM border.",
+    "schedule": "Seasonal, per AZGFD plan. No public dates found.",
+    "recent_plants": [],
+    "wild_fish": "Not sourced for this reach.",
+    "sources": [
+     {
+      "title": "San Francisco River, Luna Lake to NM Border COA (AZGFD)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/san-francisco-river-and-tributaries-luna-lake-to-nm-border-centerfire-creek-san-francisco-river"
+     },
+     {
+      "title": "San Francisco River (Gila River tributary, Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/San_Francisco_River_(Gila_River_tributary)"
+     }
+    ]
+   },
+   "fishing_season_note": "Runs from New Mexico past Clifton to the Gila River. AZGFD says the stretch from the NM border to the Gila confluence serves Safford, Clifton and Morenci anglers.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ],
+   "notes": [
+    "AZGFD says the San Francisco River between the New Mexico border and the Gila confluence provides angling for Safford, Clifton and Morenci.",
+    "Wikipedia says the river starts near Alpine, flows into New Mexico, then re-enters Arizona and joins the Gila downstream from Clifton.",
+    "American Whitewater lists a 52-mile reach from Pleasanton, NM to Clifton, AZ, rated Class II (III).",
+    "A recent American Whitewater user report notes barbed-wire fences across the river a couple of miles outside Clifton.",
+    "The Dyrt says anglers and kayakers can access the river at a dispersed camping area near Clifton.",
+    "AZGFD's Wildlife Conservation Strategy says Gila trout will be stocked seasonally to build a recreational fishery in the Upper Gila watershed.",
+    "The reach's fish community and catch data are not sourced beyond these notes, so those details are left out."
+   ],
+   "sources": [
+    {
+     "title": "San Francisco River COA (AZGFD)",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/san-francisco-river-az-nm-border-to-gila-confluence-mule-creek-and-chase-creek-san-francisco-river"
+    },
+    {
+     "title": "American Whitewater: San Francisco",
+     "url": "https://www.americanwhitewater.org/content/River/detail/id/1232"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Native fish and invertebrates",
+     "category": "other",
+     "detail": "Not sourced for this reach. Treat as general.",
+     "basis": "general"
+    },
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "General warm-season stream forage.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "pioneer-lake-peoria-az",
+   "name": "Pioneer Lake (Pioneer Community Park, Peoria, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.5637,
+   "lon": -112.2361,
+   "coords_note": "Elevation not sourced. Coordinates from FishAngler's Pioneer Lake listing.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Community Fishing Program stocking"
+    },
+    {
+     "name": "Channel catfish, largemouth bass, bluegill",
+     "stocking": "Present"
+    },
+    {
+     "name": "Redear sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD's Peoria Community Fishing page lists Pioneer Lake among its stocked community waters, and says the department brings fish to people who can't reach the fish.",
+    "schedule": "CFP stockings happen randomly Monday through Saturday during the scheduled week, per AZGFD.",
+    "recent_plants": [],
+    "wild_fish": "Not sourced. Fishbrain logs list bluegill and channel catfish.",
+    "sources": [
+     {
+      "title": "Peoria Community Fishing (AZGFD)",
+      "url": "https://azgfd.com/?p=3374"
+     },
+     {
+      "title": "Pioneer Lake catch report (FishAngler)",
+      "url": "https://prod-web-eus-webapp-002.azurewebsites.net/fishing-waters/us/arizona/pioneer-lake/34200074"
+     },
+     {
+      "title": "Your Guide to AZGFD Fish Stocking",
+      "url": "https://azgfd.com/?p=3483"
+     }
+    ]
+   },
+   "fishing_season_note": "Urban community pond at Pioneer Community Park in Peoria, Maricopa County. Stocked in the Community Fishing Program. Check the AZGFD schedule.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD lists Pioneer Lake in its Peoria Community Fishing program.",
+    "AZGFD says more than 4 million Arizona residents live within a 20-minute drive of a stocked Community Fishing water.",
+    "AZGFD says CFP stockings happen randomly Monday through Saturday during the week listed on the schedule.",
+    "A FishAngler report from about 8 weeks before the page snapshot logged a rainbow trout, and another logged channel catfish.",
+    "Fishbrain lists channel catfish, largemouth bass and bluegill as the most popular species for Pioneer Community Park Lake, per its listing.",
+    "Community Fishing signs identify these waters and post the license and bag-limit rules.",
+    "Access and facility details are limited to the AZGFD park notice, so specific amenities are left out."
+   ],
+   "sources": [
+    {
+     "title": "Peoria Community Fishing (AZGFD)",
+     "url": "https://azgfd.com/?p=3374"
+    },
+    {
+     "title": "Your Guide to AZGFD Fish Stocking",
+     "url": "https://azgfd.com/?p=3483"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Chironomids (midges)",
+     "category": "insect",
+     "detail": "Midge forage in urban ponds is general, not sourced here.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Damselfly nymphs are general pond forage, not sourced for Pioneer.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "chaparral-lake-scottsdale-az",
+   "name": "Chaparral Lake (Chaparral Park, Scottsdale, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.5083,
+   "lon": -111.9071,
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Chapparal Lake listing (33\u00b030'47.5\"N 111\u00b054'25.2\"W).",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by AZGFD about every two weeks, December through February"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked by AZGFD about every two weeks in April\u2013May and mid-September\u2013October"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD stocks Chaparral Lake year-round as a Community Fishing water. Scottsdale says trout are stocked twice a month from October to March, and catfish in the spring and fall windows.",
+    "schedule": "Rainbow trout about every two weeks December through February (Scottsdale). Trout twice a month October\u2013March (Scottsdale). Channel catfish about every two weeks April\u2013May and mid-September\u2013October. Stocking stops in summer heat.",
+    "recent_plants": [
+     {
+      "date": "October through March",
+      "species": "Rainbow trout (twice monthly)"
+     },
+     {
+      "date": "April\u2013May and mid-September\u2013October",
+      "species": "Channel catfish (about every two weeks)"
+     }
+    ],
+    "wild_fish": "Largemouth bass present, per Fishbrain.",
+    "sources": [
+     {
+      "title": "Scottsdale fishing and boating",
+      "url": "https://www.scottsdaleaz.gov/outdoor-activities/fishing-boating"
+     },
+     {
+      "title": "Scottsdale fishing (scottsdaleaz.gov)",
+      "url": "https://ScottsdaleAZ.gov/page20866.aspx"
+     },
+     {
+      "title": "Scottsdale Community Fishing (AZGFD)",
+      "url": "https://azgfd.com/?p=3282"
+     }
+    ]
+   },
+   "fishing_season_note": "Stocked urban lake at Chaparral Park, 5401 N Hayden Rd. Boating allowed only for canoes, row boats, kayaks, electric motors and sailboats. Stocking stops in summer.",
+   "insect_ids": [
+    "chironomid",
+    "callibaetis"
+   ],
+   "notes": [
+    "Scottsdale says Chaparral Lake is stocked by AZGFD throughout the year, approximately every two weeks December through February with catchable rainbow trout.",
+    "Scottsdale says the lake is stocked about every two weeks in April and May, and mid-September through October, with channel catfish.",
+    "Scottsdale says stocking stops in summer because of excessive temperatures.",
+    "Scottsdale's 4-fish daily trout limit applies, with trout 11 to 14 inches.",
+    "AZGFD lists Chaparral Park at 5401 N Hayden Rd as a Community Fishing location.",
+    "Boating on Chaparral Lake is limited to canoes, rowboats, kayaks, electric-motor boats and sailboats, with no inflatables or gas motors, per Scottsdale.",
+    "Fishbrain lists largemouth bass, channel catfish and rainbow trout as the most popular species here."
+   ],
+   "sources": [
+    {
+     "title": "Scottsdale fishing and boating",
+     "url": "https://www.scottsdaleaz.gov/outdoor-activities/fishing-boating"
+    },
+    {
+     "title": "Scottsdale Community Fishing (AZGFD)",
+     "url": "https://azgfd.com/?p=3282"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Chironomids (midges)",
+     "category": "insect",
+     "detail": "Midges are common lake forage; Chaparral-specific hatch data is not sourced.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Callibaetis mayflies",
+     "category": "insect",
+     "detail": "General lake mayfly; not sourced for Chaparral.",
+     "basis": "general",
+     "insect_id": "callibaetis"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    12,
+    1,
+    2,
+    3,
+    4,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "cibola-lake-az",
+   "name": "Cibola Lake and Colorado River backwaters (Cibola NWR, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.2366,
+   "lon": -114.6733,
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Cibola Lake listing; check the refuge map.",
+   "area_acres": 6500,
+   "species": [
+    {
+     "name": "Largemouth bass, smallmouth bass",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Channel and flathead catfish",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Bluegill",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Occasional, reported in Colorado River catch logs"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "The refuge's fishing rules describe a natural fishery and do not list a stocking program for Cibola Lake. Trout catches in Fishbrain logs appear on the river.",
+    "schedule": "None.",
+    "recent_plants": [],
+    "wild_fish": "Largemouth and smallmouth bass, channel and flathead catfish, bluegill, per Fishbrain and refuge notes.",
+    "sources": [
+     {
+      "title": "Boating and fishing on Cibola NWR (FWS, 2025)",
+      "url": "https://www.fws.gov/sites/default/files/documents/2025-01/boating-and-fishing-on-cibola-nwr.pdf"
+     },
+     {
+      "title": "Cibola NWR fishing (FWS)",
+      "url": "https://www.fws.gov/refuge/cibola/visit-us/activities/fishing"
+     },
+     {
+      "title": "Cibola Lake (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/WtagqPL9/cibola-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Cibola Lake is open to fishing March 15 through September 30 and closed to entry October 1 through March 14. Only electric trolling motors or hand-powered boats are allowed on the lake. The Colorado River channel is open year-round.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "FWS says Cibola Lake is open to fishing March 15 through September 30 and closed to entry October 1 through March 14.",
+    "FWS says Cibola Lake is a no-wake zone, and only electric trolling motors or manually powered boats are allowed there.",
+    "FWS says fishing and boating are allowed year-round on the main Colorado River channel, except that fishing from the east shore south of the tie-back levee is restricted.",
+    "FWS lists Pretty Water (limited hours during waterfowl season, October\u2013February), Cibola Lake (6,500 acres), and 1,080 acres of the Colorado River and Old River channel as available fishing water.",
+    "The Old River Channel is a no-wake zone, and fishing and boating are allowed there year-round, per FWS.",
+    "Fishbrain logs largemouth and smallmouth bass, channel and flathead catfish, bluegill, and a few rainbow trout caught on the Colorado River.",
+    "The refuge was established in 1964 as mitigation for Colorado River channelization and dam construction, per FWS."
+   ],
+   "sources": [
+    {
+     "title": "Boating and fishing on Cibola NWR (FWS)",
+     "url": "https://www.fws.gov/sites/default/files/documents/2025-01/boating-and-fishing-on-cibola-nwr.pdf"
+    },
+    {
+     "title": "Cibola NWR fishing (FWS)",
+     "url": "https://www.fws.gov/refuge/cibola/visit-us/activities/fishing"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Baitfish and native forage",
+     "category": "fish",
+     "detail": "Forage detail not sourced for Cibola. Treat as general lower-Colorado forage.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "General backwater forage.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    11
    ]
   }
  ]
