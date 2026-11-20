@@ -188,32 +188,6 @@ textarea{font:inherit}
   <section class="card src" id="sources"></section>
 </div>
 
-<section class="card" id="compareCard">
-  <h2>Compare two places</h2>
-  <p class="muted">Compares the forecast for the date above. Works up to 15 days ahead.</p>
-  <div class="row">
-    <label>Place A<select id="cmpA"></select></label>
-    <label>Place B<select id="cmpB"></select></label>
-    <button class="btn" onclick="runCompare()">Compare</button>
-  </div>
-  <div id="cmpOut" style="margin-top:10px"></div>
-</section>
-
-<section class="card" id="journalCard">
-  <h2>Fishing journal</h2>
-  <div class="grid2">
-    <label>Date<input id="jDate" type="date"></label>
-    <label>Water<input id="jWater" placeholder="e.g. Rose Canyon Lake"></label>
-    <label>Fish caught<input id="jCount" type="number" min="0" value="0"></label>
-    <label>Species<input id="jSpecies" placeholder="e.g. rainbow, brown"></label>
-    <label>Flies or lures<input id="jFlies" placeholder="e.g. size 16 Elk Hair Caddis"></label>
-    <label>Conditions<input id="jCond" placeholder="weather, water, hatch seen"></label>
-  </div>
-  <label style="margin-top:8px">Notes<textarea id="jNotes" rows="2" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit"></textarea></label>
-  <div class="row" style="margin-top:8px"><button class="btn" onclick="addJournal()">Save entry</button><button class="ghost" onclick="exportJournal()">Export CSV</button><span id="jMsg" class="muted"></span></div>
-  <div id="jList" style="margin-top:12px"></div>
-</section>
-
 </main>
 
 <script src="data/hatches.js"></script>

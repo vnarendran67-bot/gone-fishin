@@ -1,5 +1,5 @@
 /* Gone Fishin' extra features: state map, best day, wind alerts, reminders,
-   compare, and fishing journal. Loaded after the main script, so it can use
+   and trip checklist. Loaded after the main script, so it can use
    its globals (DB, $, place, ELEV_M, getForecast, scoreDay, ...). */
 (() => {
 
@@ -164,136 +164,71 @@ window.afterPlan = function({ wx, lake, dateStr, win, habitat }){
     <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
       <button class="btn" id="bdBtn" onclick="findBestDay()">Find the best day (next 10 days)</button>
       <a class="link" target="_blank" rel="noopener" href="${reminderLink(dateStr)}">Remind me the day before →</a>
-      <button class="ghost" onclick="jPrefill()">Log this trip in the journal</button>
     </div>
-    <div id="bdOut" style="margin-top:12px"></div>`;
-  fillJournalDate(dateStr);
-  fillCompare();
+    <div id="bdOut" style="margin-top:12px"></div>` + renderChecklist(lake, dateStr, wx);
 };
 
-/* ---------- compare ---------- */
-function placeOptions(){
-  const opts = [];
-  if (place) opts.push({ label: `Current: ${place.name}`, value: 'current' });
-  loadSaved().forEach((p, i) => opts.push({ label: p.name, value: String(i) }));
-  return opts;
+/* ---------- trip checklist (built from the chosen water's notes) ---------- */
+const CKEY = 'gone-fishin-checklist';
+function loadChecks(){ try { return JSON.parse(localStorage.getItem(CKEY)) || {}; } catch(e) { return {}; } }
+function saveChecks(o){ try { localStorage.setItem(CKEY, JSON.stringify(o)); } catch(e) {} }
+function buildChecklist(lake, dateStr, wx){
+  const items = [];
+  const add = (g, t) => items.push({ g, t });
+  add('Before you leave', 'Arizona fishing license, or the license for the state you are fishing in');
+  add('Before you leave', 'Water, sun protection, and a charged phone');
+  add('Before you leave', 'Tell someone where you are going and when you expect to be back');
+  if (!lake) {
+    add('Fishing plan', 'This place is not in the notes yet. Look up its rules and stocking schedule before you go.');
+  } else {
+    const type = lake.type || '';
+    if (/stream|river/.test(type)) add('Gear', 'Wading boots or sandals with good grip, and check the flow before you wade');
+    if (/lake|reservoir|pond|marsh/.test(type)) add('Gear', 'Float tube or boat only where the water rules allow it');
+    if (lake.stocking) {
+      const st = lake.stocking.status || '';
+      if (st === 'stocked') add('Fishing plan', 'Fish within a few days of the latest stocking. ' + (lake.stocking.schedule || ''));
+      else add('Fishing plan', 'Wild fish only. ' + (lake.stocking.summary || ''));
+    }
+    (lake.species || []).slice(0, 4).forEach(s => add('Target species', s.name + (s.stocking ? ' (' + s.stocking + ')' : '')));
+    const bugs = (lake.insect_ids || []).map(id => DB.insects.find(i => i.id === id)).filter(Boolean);
+    if (bugs.length) add('Flies to bring', 'Patterns for: ' + bugs.map(i => i.name).join(', '));
+    (lake.forage || []).filter(x => x.basis === 'sourced').slice(0, 3).forEach(x => add('Flies to bring', x.item + ': ' + x.detail));
+    if (lake.fishing_season_note) add('Access', lake.fishing_season_note);
+    if (/verify|not set|not sourced/i.test(lake.coords_note || '')) add('Access', 'Check the access point on a map first. ' + lake.coords_note);
+    (lake.notes || []).filter(n => /limit|bag|release|hook|closed|closure|permit|rule|regulation|boat|motor|license/i.test(n)).slice(0, 3).forEach(n => add('Rules', n));
+  }
+  if (wx) {
+    add('Weather', 'Forecast for ' + dateStr + ': wind ' + fmtWind(wx.a.wind) + ', air ' + fmtTemp(wx.a.temp) + ', rain chance ' + Math.round(wx.a.rainChance) + '%');
+    add('Weather', 'Recheck the forecast the morning of the trip');
+  }
+  return items;
 }
-function fillCompare(){
-  const opts = placeOptions();
-  ['cmpA', 'cmpB'].forEach((id, k) => {
-    const sel = $(id); if (!sel) return;
-    sel.innerHTML = opts.map(o => `<option value="${o.value}">${esc(o.label)}</option>`).join('');
-    if (opts[k]) sel.value = opts[k].value;
+function renderChecklist(lake, dateStr, wx){
+  const items = buildChecklist(lake, dateStr, wx);
+  const label = lake ? lake.name : place.name;
+  const key = (lake ? lake.id : place.name) + '|' + dateStr;
+  const saved = loadChecks()[key] || {};
+  const groups = [];
+  items.forEach((it, i) => {
+    let g = groups.find(x => x.g === it.g);
+    if (!g) { g = { g: it.g, list: [] }; groups.push(g); }
+    g.list.push({ t: it.t, i });
   });
+  return `<div id="checklist" data-key="${esc(key)}" style="margin-top:14px"><h2>Trip checklist</h2>
+    <p class="muted">Built from the notes for ${esc(label)}. Checks are saved on this device.</p>` +
+    groups.map(g => `<h3>${esc(g.g)}</h3>` + g.list.map(x => `<label style="display:block;margin:4px 0"><input type="checkbox" data-i="${x.i}" ${saved[x.i] ? 'checked' : ''}> ${esc(x.t)}</label>`).join('')).join('') +
+    `</div>`;
 }
-function resolvePlace(v){
-  if (v === 'current') return place;
-  return loadSaved()[parseInt(v)] || null;
-}
-async function evalPlace(p, dateStr, win){
-  const lake = findLake(p);
-  const saved = ELEV_M;
-  ELEV_M = lake ? Math.round(lake.elevation_ft * 0.3048) : null;
-  try {
-    const f = await getForecast(p.lat, p.lon, dateStr);
-    const a = hourlyDayAverages(f, dateStr, win);
-    const sc = scoreDay(a);
-    const hp = hatchPeaks(lake, p.habitat, parseInt(dateStr.slice(5, 7)), p.state || '');
-    return { ok: true, a, sc, hp };
-  } catch(e) { return { ok: false, err: e.message }; }
-  finally { ELEV_M = saved; }
-}
-window.runCompare = async function(){
-  const pa = resolvePlace($('cmpA').value), pb = resolvePlace($('cmpB').value);
-  if (!pa || !pb) { $('cmpOut').innerHTML = '<p class="warn">Pick two places. Save a place by searching for it first.</p>'; return; }
-  const dateStr = $('date').value || iso(new Date());
-  if (daysFromToday(dateStr) < 0 || daysFromToday(dateStr) > 15) { $('cmpOut').innerHTML = '<p class="warn">Choose a date within the next 15 days.</p>'; return; }
-  $('cmpOut').innerHTML = '<p class="muted">Comparing…</p>';
-  const win = $('when').value;
-  const [A, B] = await Promise.all([evalPlace(pa, dateStr, win), evalPlace(pb, dateStr, win)]);
-  const rowsDef = [
-    ['Score', r => r.sc.s, r => `${r.sc.s} ${esc(r.sc.label)}`, true],
-    ['Wind', r => r.a.wind, r => fmtWind(r.a.wind), false],
-    ['Air temperature', r => r.a.temp, r => fmtTemp(r.a.temp), null],
-    ['Rain chance', r => r.a.rainChance, r => Math.round(r.a.rainChance) + '%', false],
-    ['Peak hatches', r => r.hp.peaks, r => `${r.hp.peaks} of ${r.hp.total}`, true],
-  ];
-  const head = `<tr><th></th><th>${esc(pa.name)}</th><th>${esc(pb.name)}</th></tr>`;
-  const body = rowsDef.map(([label, get, fmt, hi]) => {
-    let winA = false, winB = false;
-    if (A.ok && B.ok && hi !== null) { const x = get(A), y = get(B); if (x !== y) { winA = hi ? x > y : x < y; winB = !winA; } }
-    return `<tr><th>${label}</th>
-      <td class="${winA ? 'win' : ''}">${A.ok ? fmt(A) : 'no forecast'}</td>
-      <td class="${winB ? 'win' : ''}">${B.ok ? fmt(B) : 'no forecast'}</td></tr>`;
-  }).join('');
-  $('cmpOut').innerHTML = `<table class="cmp">${head}${body}</table>
-    <p class="muted">Highlighted values are the better ones for that row. Uses the Open-Meteo forecast for both places.</p>`;
-};
-
-/* ---------- journal ---------- */
-const JKEY = 'gone-fishin-journal';
-function loadJournal(){ try { return JSON.parse(localStorage.getItem(JKEY)) || []; } catch(e) { return []; } }
-function saveJournal(list){ try { localStorage.setItem(JKEY, JSON.stringify(list)); } catch(e) {} }
-function fillJournalDate(d){ if ($('jDate') && !$('jDate').value) $('jDate').value = d; }
-window.jPrefill = function(){
-  if (!lastPlan) return;
-  $('jDate').value = lastPlan.date;
-  $('jWater').value = lastPlan.name;
-  const bits = [];
-  if (lastPlan.score) bits.push(`${lastPlan.score.s} ${lastPlan.score.label}`);
-  if (lastPlan.temp != null) bits.push(`air ${fmtTemp(lastPlan.temp)}`);
-  if (lastPlan.wind != null) bits.push(`wind ${fmtWind(lastPlan.wind)}`);
-  $('jCond').value = bits.join(', ');
-  $('jMsg').textContent = 'Filled in from the plan. Add your catch and save.';
-  $('journalCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
-};
-window.addJournal = function(){
-  const entry = {
-    id: Date.now(),
-    date: $('jDate').value || iso(new Date()),
-    water: $('jWater').value.trim(),
-    count: parseInt($('jCount').value) || 0,
-    species: $('jSpecies').value.trim(),
-    flies: $('jFlies').value.trim(),
-    conditions: $('jCond').value.trim(),
-    notes: $('jNotes').value.trim()
-  };
-  if (!entry.water) { $('jMsg').textContent = 'Add the water name first.'; return; }
-  const list = loadJournal(); list.unshift(entry); saveJournal(list);
-  ['jWater','jSpecies','jFlies','jCond','jNotes'].forEach(id => $(id).value = '');
-  $('jCount').value = 0;
-  $('jMsg').textContent = 'Saved.';
-  renderJournal();
-};
-window.delJournal = function(id){
-  saveJournal(loadJournal().filter(e => e.id !== id)); renderJournal();
-};
-function renderJournal(){
-  const list = loadJournal();
-  if (!list.length) { $('jList').innerHTML = '<p class="muted">No entries yet.</p>'; return; }
-  const total = list.reduce((s, e) => s + (e.count || 0), 0);
-  $('jList').innerHTML = `<p class="muted">${list.length} trip${list.length === 1 ? '' : 's'} logged, ${total} fish in total.</p>` +
-    list.map(e => `<div class="jentry">
-      <button class="ghost" onclick="delJournal(${e.id})">Delete</button>
-      <b>${esc(e.water)}</b> <span class="muted">${esc(e.date)}</span><br>
-      <span>${e.count} fish${e.species ? ' · ' + esc(e.species) : ''}${e.flies ? ' · ' + esc(e.flies) : ''}</span>
-      ${e.conditions ? `<div class="muted">${esc(e.conditions)}</div>` : ''}
-      ${e.notes ? `<div>${esc(e.notes)}</div>` : ''}
-    </div>`).join('');
-}
-window.exportJournal = function(){
-  const list = loadJournal();
-  if (!list.length) { $('jMsg').textContent = 'Nothing to export yet.'; return; }
-  const cols = ['date','water','count','species','flies','conditions','notes'];
-  const q = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
-  const csv = [cols.join(',')].concat(list.map(e => cols.map(c => q(e[c])).join(','))).join('\n');
-  const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
-  const a = document.createElement('a'); a.href = url; a.download = 'gone-fishin-journal.csv';
-  document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-};
+document.addEventListener('change', e => {
+  const box = e.target;
+  const root = box && box.closest && box.closest('#checklist');
+  if (!root || box.type !== 'checkbox') return;
+  const all = loadChecks();
+  all[root.dataset.key] = all[root.dataset.key] || {};
+  all[root.dataset.key][box.dataset.i] = box.checked;
+  saveChecks(all);
+});
 
 /* ---------- init ---------- */
 renderMap();
-fillCompare();
-renderJournal();
 })();
