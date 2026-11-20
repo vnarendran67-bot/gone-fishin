@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 23,
+ "version": 24,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -14442,6 +14442,994 @@ window.HATCH_DB = {
     12,
     1,
     2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "greer-lakes-az",
+   "name": "Greer Lakes (Bunch, Tunnel and River Reservoirs, Greer, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 8000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Above 8,000 feet, per Sportfishing Report. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked on the AZGFD White Mountains program"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Brook trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Apache trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Common carp, yellow perch (River)",
+     "stocking": "Present in River Reservoir"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked on the White Mountains program. Light tackle and fly water.",
+    "schedule": "Early May stocking, per older AZGFD feature. 2026 stockings may be shortened.",
+    "recent_plants": [
+     {
+      "date": "Early May (older feature)",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Brown, brook and Apache trout.",
+    "sources": [
+     {
+      "title": "Greer Lakes (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/1843/greer-lakes.php"
+     },
+     {
+      "title": "Fishing Guide Mt Lakes (AZGFD 2022)",
+      "url": "https://www.greerlodgeaz.com/wp-content/uploads/2023/04/Fishing-Guide-Mt-Lakes-AZGFD-2022.pdf"
+     }
+    ]
+   },
+   "fishing_season_note": "Motorized boats are not allowed on Bunch and Tunnel. River allows single electric or 10 hp motors only. Trout fishing best when the lakes are cool, summer through fall.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "The Greer Lakes are River, Bunch and Tunnel reservoirs near Greer, in the White Mountains at over 8,000 feet, per Sportfishing Report.",
+    "Motorized boats are not allowed on any of the three lakes, per Sportfishing Report. River allows single electric or 10 hp motors only.",
+    "Sportfishing Report says the Greer Lakes suit light tackle and fly anglers, with cool temperatures and reliable stocking.",
+    "AZGFD's 2022 guide lists a four-trout daily limit on Bunch and Tunnel, and says River Reservoir is catch and release for trout.",
+    "AZGFD staff said early May, when the lakes are stocked, is a good time to fish Tunnel, Bunch and River, per an older AZGFD magazine feature.",
+    "Trolling wooly buggers, brown or black, or spinners worked well on River Reservoir in September 2019, per AZGFD.",
+    "Fly fishers do well at the upper end of River Reservoir, where the river enters and the lake is shallower, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Greer Lakes (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/1843/greer-lakes.php"
+    },
+    {
+     "title": "Fishing Guide Mt Lakes (AZGFD 2022)",
+     "url": "https://www.greerlodgeaz.com/wp-content/uploads/2023/04/Fishing-Guide-Mt-Lakes-AZGFD-2022.pdf"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Brown and black woolly buggers",
+     "category": "other",
+     "detail": "Trolled on River Reservoir, September 2019 AZGFD advice.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fall Fishing Forecast: White Mountains & Mogollon Rim (AZGFD, 9-16-2019)",
+      "url": "https://www.socalfishreports.com/fish_reports/153408/fall-fishing-forecast:-white-mountains-and-mogollon-rim.php"
+     }
+    },
+    {
+     "item": "Nightcrawlers and PowerBait",
+     "category": "other",
+     "detail": "Fished off the bottom at Greer, per the AZGFD guide.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing Guide Mt Lakes (AZGFD 2022)",
+      "url": "https://www.greerlodgeaz.com/wp-content/uploads/2023/04/Fishing-Guide-Mt-Lakes-AZGFD-2022.pdf"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "High-elevation lake insects. Not documented for Greer.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "nelson-reservoir-az",
+   "name": "Nelson Reservoir (Alpine, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 7400,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Sportfishing Report. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked; shortened 2026 season with fewer fish"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Largemouth bass, black crappie, bluegill, channel catfish, green and redear sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Trout stocking reduced in 2026. Low water limits boat launch.",
+    "schedule": "Shortened 2026 season.",
+    "recent_plants": [
+     {
+      "date": "Week of 11-10-2025",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Largemouth, crappie, bluegill, catfish.",
+    "sources": [
+     {
+      "title": "Nelson Reservoir (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/1543/nelson-reservoir.php"
+     },
+     {
+      "title": "Fishing tips and upcoming events (AZGFD, 2026)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     }
+    ]
+   },
+   "fishing_season_note": "Stockings are shortened and reduced in 2026, and the boat ramp is closed until water rises. Check before going.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Nelson Reservoir is near Alpine in the White Mountains at 7,400 feet, per Sportfishing Report.",
+    "AZGFD said Nelson would have a shortened stocking season and fewer stockings in 2026.",
+    "Low water in 2026 meant the Nelson boat ramp could not be used until levels rose, per AZGFD.",
+    "In 2025 AZGFD stocked Nelson but planted fewer fish than planned, per AZGFD.",
+    "Sportfishing Report calls Nelson one of the most dependable alpine trout fisheries in Arizona, though its latest report is from 2019.",
+    "Anglers should check Apache trout rules before fishing Nelson, per Sportfishing Report."
+   ],
+   "sources": [
+    {
+     "title": "Nelson Reservoir (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/1543/nelson-reservoir.php"
+    },
+    {
+     "title": "Fishing tips and upcoming events (AZGFD, 2026)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "High-elevation lake insects. Not documented for Nelson.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Crayfish and small fish",
+     "category": "baitfish",
+     "detail": "Not documented for Nelson.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "mormon-lake-az",
+   "name": "Mormon Lake (Mormon Lake Village, AZ)",
+   "type": "lake",
+   "elevation_ft": 7100,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Sportfishing Report. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Northern pike",
+     "stocking": "Present when wet"
+    },
+    {
+     "name": "Walleye",
+     "stocking": "Present"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked when water allows"
+    },
+    {
+     "name": "Largemouth and smallmouth bass, channel catfish, brown bullhead",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Trout stocking only when water allows. Northern pike when wet.",
+    "schedule": "No schedule in sources.",
+    "recent_plants": [],
+    "wild_fish": "Northern pike, walleye, bass, catfish.",
+    "sources": [
+     {
+      "title": "Mormon Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/1552/mormon-lake.php"
+     },
+     {
+      "title": "Mormon Lake Fish Report, 4-23-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/237432/mormon-lodge-is-still-closed,-but-access-to-the-pond-is-open.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Water level depends on rain and snowmelt, so some years it is dry. Check AZGFD for water and access before going.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Mormon Lake sits southeast of Flagstaff at 7,100 feet and is Arizona's largest natural lake when full, per Sportfishing Report.",
+    "Its water level varies dramatically from year to year and depends entirely on rainfall and snowmelt, per Sportfishing Report.",
+    "When it holds water, Mormon Lake has a northern pike fishery, per Sportfishing Report.",
+    "AZGFD's April 2026 report says Mormon Lodge was still closed, but the pond was open.",
+    "The April 9, 2026 surface temperature was 51.66 F, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Mormon Lake (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/1552/mormon-lake.php"
+    },
+    {
+     "title": "Mormon Lake Fish Report, 4-23-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/237432/mormon-lodge-is-still-closed,-but-access-to-the-pond-is-open.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Northern pike feed",
+     "category": "baitfish",
+     "detail": "Not documented for Mormon.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Shallow high-country lake insects. Not documented for Mormon.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "lynx-lake-az",
+   "name": "Lynx Lake (Prescott National Forest, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": 55,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Periodically stocked by AZGFD"
+    },
+    {
+     "name": "Largemouth bass, bluegill, catfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Periodically stocked with trout. Busy day-use lake.",
+    "schedule": "No set schedule.",
+    "recent_plants": [],
+    "wild_fish": "Bluegill, bass, catfish.",
+    "sources": [
+     {
+      "title": "Fishing on the Prescott National Forest (USFS)",
+      "url": "https://fs.usda.gov/r03/prescott/recreation/opportunities/fishing"
+     },
+     {
+      "title": "Angling to catch a catfish? (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d75d7a"
+     }
+    ]
+   },
+   "fishing_season_note": "The busiest lake on the Prescott National Forest. Day-use area with picnic tables and grills. Stocked periodically with trout.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Lynx Lake is 55 acres and the largest and busiest lake on the Prescott National Forest, per the Forest Service.",
+    "The Forest Service says AZGFD periodically stocks Lynx and Mingus lakes with trout.",
+    "The North Shore day-use area has lakeside picnic tables and grills.",
+    "AZGFD listed Lynx among waters it planned to stock, with no schedule set, per an AZGFD catfish bulletin.",
+    "Granite Basin and Horsethief Lakes are not stocked, but anglers may catch bluegill, bass and catfish there, per the Forest Service."
+   ],
+   "sources": [
+    {
+     "title": "Fishing on the Prescott National Forest (USFS)",
+     "url": "https://fs.usda.gov/r03/prescott/recreation/opportunities/fishing"
+    },
+    {
+     "title": "Angling to catch a catfish? (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d75d7a"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Lynx.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "fain-lake-az",
+   "name": "Fain Lake (Prescott Valley, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked week of 5-11-2026"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked week of 5-18-2026"
+    },
+    {
+     "name": "Bass, bluegill, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Community Fishing Program water with spring trout and catfish stockings.",
+    "schedule": "Rainbows week of 5-11-2026. Catfish week of 5-18-2026.",
+    "recent_plants": [
+     {
+      "date": "Week of 5-11-2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Bass, bluegill, sunfish.",
+    "sources": [
+     {
+      "title": "Fain Lake Fish Report, 5-27-2026 (AZGFD)",
+      "url": "https://www.utahfishreports.com/fish_reports/238327/fishing-opportunity-is-great-here!.php"
+     },
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing Program water. Stocked with rainbows in spring and catfish in late spring 2026.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Fain Lake is in Prescott Valley and is a Community Fishing Program water, per AZGFD.",
+    "AZGFD stocked catfish the week of May 18, 2026, and rainbows the week of May 11, 2026, per AZGFD.",
+    "AZGFD called the fishing opportunity great at Fain in late May 2026.",
+    "Fain Lake received rainbows in November 2025 along with the Yavapai Lakes, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Fain Lake Fish Report, 5-27-2026 (AZGFD)",
+     "url": "https://www.utahfishreports.com/fish_reports/238327/fishing-opportunity-is-great-here!.php"
+    },
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "PowerBait and worms",
+     "category": "other",
+     "detail": "Common for stocked trout and catfish. Not documented for Fain.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Fain.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "riggs-flat-lake-az",
+   "name": "Riggs Flat Lake (Pinaleño Mountains, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": 11,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked several times a year, 2023-2024"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked rainbows through summer. Ice in winter.",
+    "schedule": "Plants June through September 2023 and 2024.",
+    "recent_plants": [
+     {
+      "date": "9-16-2024",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "8-26-2024",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "6-04-2024",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Brown trout.",
+    "sources": [
+     {
+      "title": "Riggs Flat Lake (Sportfishing Report)",
+      "url": "https://sportfishingreport.com/lakes/1516/riggs-flat-lake.php"
+     },
+     {
+      "title": "Fishing (Coronado National Forest)",
+      "url": "https://fs.usda.gov/r03/coronado/recreation/opportunities/fishing"
+     }
+    ]
+   },
+   "fishing_season_note": "At the end of the Swift Trail. Can be snowed in and iced over in winter, when Frye Mesa is the alternative. Stocked with rainbows several times a year.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "The Coronado National Forest says Riggs Flat Lake is about 11 acres, at the end of the Swift Trail on the Pinaleños, per the Forest Service.",
+    "The Forest Service says Riggs Flat, Frye Mesa, Rose Canyon, Peña Blanca and Parker Canyon lakes are all stocked by AZGFD.",
+    "When Riggs Flat is snowed in and iced over, anglers can fish Frye Mesa Reservoir instead, per the Forest Service.",
+    "Recent AZGFD plants at Riggs Flat included rainbows in June, July, August and September 2023 and 2024, per Sportfishing Report.",
+    "AZGFD reports from 2016 described the lake as open for summer and winding down by November."
+   ],
+   "sources": [
+    {
+     "title": "Riggs Flat Lake (Sportfishing Report)",
+     "url": "https://sportfishingreport.com/lakes/1516/riggs-flat-lake.php"
+    },
+    {
+     "title": "Fishing (Coronado National Forest)",
+     "url": "https://fs.usda.gov/r03/coronado/recreation/opportunities/fishing"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Small high-elevation pond insects. Not documented for Riggs.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "horseshoe-lake-az",
+   "name": "Horseshoe Lake (Verde River, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Present in the Verde above Horseshoe"
+    },
+    {
+     "name": "Largemouth bass, catfish, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "catch and release",
+    "summary": "Catch and release, artificial flies and lures only.",
+    "schedule": "No stocking documented.",
+    "recent_plants": [],
+    "wild_fish": "Smallmouth and largemouth bass.",
+    "sources": [
+     {
+      "title": "Fishing (AZGFD bass challenge)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3f86b3b"
+     },
+     {
+      "title": "Catch and release regulations (Fishbrain)",
+      "url": "https://fishbrain.com/cities/us/az/alamo-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Catch and release for artificial flies and lures only, per the state regulation summary. Smallmouth bass are present upstream in the Verde.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Horseshoe Lake is on the Verde River, per AZGFD's bass challenge notes listing smallmouth bass in the Verde above Horseshoe Reservoir.",
+    "The Fishbrain regulation summary lists Horseshoe as catch and release, artificial flies and lures only.",
+    "AZGFD's 2016 report on Horseshoe is the newest lake-specific source. Check current rules before going."
+   ],
+   "sources": [
+    {
+     "title": "Fishing (AZGFD bass challenge)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3f86b3b"
+    },
+    {
+     "title": "Catch and release regulations (Fishbrain)",
+     "url": "https://fishbrain.com/cities/us/az/alamo-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Crayfish and small fish",
+     "category": "baitfish",
+     "detail": "Not documented for Horseshoe.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Horseshoe.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "lake-mohave-az",
+   "name": "Lake Mohave (Cottonwood Cove, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Striped bass",
+     "stocking": "Present; largest 20 lb 4 oz (2024)"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present; largest 21 lb 5 oz (2018)"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Black crappie, bluegill, sunfish, carp",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Striped bass and bass fishery. Rainbows stocked for trout anglers.",
+    "schedule": "Trout stocking not documented here.",
+    "recent_plants": [],
+    "wild_fish": "Striped, largemouth and smallmouth bass.",
+    "sources": [
+     {
+      "title": "Lake Mohave (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/225/lake-mohave.php"
+     },
+     {
+      "title": "Nice bass being caught (AZGFD, 5-27-2026)",
+      "url": "https://utahfishreports.com/fish_reports/238339/nice-bass-being-caught!.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Trolling was most productive in June 2026. The fishing slowed in July 2026. Striper action outside Katherine Landing and below Davis Dam. Striped bass no longer have a limit above 20 inches.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Lake Mohave is a linear reservoir on the Colorado River between Davis and Hoover dams, per Sportfishing Report.",
+    "AZGFD said the Lake Mohave striped bass limit above 20 inches was removed in 2026, and the trout limit is five, per the May 2026 AZGFD report.",
+    "Striped bass can be taken by spear or spear gun between Hoover Dam and Cottonwood Landing, per AZGFD.",
+    "In late April 2026 anglers were catching striped bass near Davis Dam and up Lake Mohave on lures and anchovies, per a Riviera Marina report.",
+    "Trolling was the most productive method in June 2026, per an AZGFD report.",
+    "A July 2026 AZGFD report said fishing had slowed.",
+    "Anglers were catching largemouth, smallmouth and striped bass in late May 2026, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Lake Mohave (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/225/lake-mohave.php"
+    },
+    {
+     "title": "Nice bass being caught (AZGFD, 5-27-2026)",
+     "url": "https://utahfishreports.com/fish_reports/238339/nice-bass-being-caught!.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona",
+    "Nevada"
+   ],
+   "forage": [
+    {
+     "item": "Anchovies",
+     "category": "baitfish",
+     "detail": "Caught stripers near Davis Dam and up Lake Mohave in spring 2026, per Riviera Marina.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Mohave Fish Report, 4-30-2026 (Riviera Marina)",
+      "url": "https://utahfishreports.com/fish_reports/237404/up-on-lake-mohave,-striper-fishing-is-doing-very-well.php"
+     }
+    },
+    {
+     "item": "Swimbaits and lures",
+     "category": "other",
+     "detail": "Fooled stripers outside Katherine Landing, per a Nevada report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Nevada Fishing Report (Pahrump Valley Times)",
+      "url": "https://pvtimes.com/sports/nevada-fishing-report/"
+     }
+    },
+    {
+     "item": "Shad",
+     "category": "baitfish",
+     "detail": "Typical striper forage. Not documented specifically for Mohave.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional reservoir insects. Not documented for Mohave.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "lake-mead-az",
+   "name": "Lake Mead (Boulder City, AZ side)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Striped bass",
+     "stocking": "Present; occasional fish over 40 lb per NPS"
+    },
+    {
+     "name": "Largemouth and smallmouth bass, crappie",
+     "stocking": "Present"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Striped bass and bass fishery. Trout present.",
+    "schedule": "No trout schedule.",
+    "recent_plants": [],
+    "wild_fish": "Striped bass, largemouth, smallmouth, crappie.",
+    "sources": [
+     {
+      "title": "Lake Mead Fishing (National Park Service)",
+      "url": "https://nps.gov/lake/planyourvisit/fishing.htm"
+     },
+     {
+      "title": "Lake Mead Fish Report, 5-27-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/238338/unlimited-striped-bass.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Night fishing for striped bass is productive. Striped bass limits are unlimited under 2026 rules. Anchovies, shad and jigging spoons work well.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Lake Mead has become famous for its striped bass, with an occasional catch over 40 pounds, per the National Park Service.",
+    "The Arizona Game and Fish Commission approved unlimited striped bass on Lake Mead in January 2026, to match Nevada rules.",
+    "A Nevada fishing report said anglers fishing at night were finding fast action for striped bass and catfish, using anchovies, live shad or jigging spoons under a submersible light.",
+    "Boulder Basin near the dam is a striper hotspot, launching from Lake Mead Marina, per a January 2026 report.",
+    "The Narrows is a good area for bass, with access from the Valley of Fire side, per the same January 2026 report.",
+    "Threadfin shad have been hard to find, so anchovies or sardines are a good substitute, per a Nevada report. Striped bass were found in about 60 feet of water and fed best after dark."
+   ],
+   "sources": [
+    {
+     "title": "Lake Mead Fishing (National Park Service)",
+     "url": "https://nps.gov/lake/planyourvisit/fishing.htm"
+    },
+    {
+     "title": "Lake Mead Fish Report, 5-27-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/238338/unlimited-striped-bass.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona",
+    "Nevada"
+   ],
+   "forage": [
+    {
+     "item": "Anchovies and sardines",
+     "category": "baitfish",
+     "detail": "Substitute when threadfin shad are scarce, per a Nevada report.",
+     "basis": "sourced",
+     "source": {
+      "title": "List: Multiple fishing opportunities in Southern Nevada (Pahrump Valley Times)",
+      "url": "https://pvtimes.com/sports/list-multiple-fishing-opportunities-in-southern-nevada-2/"
+     }
+    },
+    {
+     "item": "Live shad and jigging spoons under a light",
+     "category": "baitfish",
+     "detail": "Night fishing for stripers, per a Nevada report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Nevada Fishing Report (Pahrump Valley Times)",
+      "url": "https://pvtimes.com/sports/nevada-fishing-report/"
+     }
+    },
+    {
+     "item": "Threadfin shad",
+     "category": "baitfish",
+     "detail": "The forage stripers chase in the basins, per the January 2026 Las Vegas report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Colorado River Fishing Report (Jan 3, 2026)",
+      "url": "https://zeno.fm/podcast/colorado-river-las-vegas-daily-fishing-report/episodes/colorado-river-fishing-report-stripers-bass-and-more-in-the-desert-jan-3-2026"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional reservoir insects. Not documented for Mead.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
     3,
     4,
     5,
