@@ -52,7 +52,7 @@ ul.tips li{margin-bottom:4px}
 <main>
 
 <section class="card">
-  <h2>1. Where</h2>
+  <h2>Where and when</h2>
   <div class="row">
     <label style="flex:2 1 260px">Search a place (lake, creek, town, trailhead)
       <input id="q" placeholder="e.g. Rose Canyon Lake, Oak Creek, Chevelon Creek" autocomplete="off">
@@ -78,13 +78,7 @@ ul.tips li{margin-bottom:4px}
       </select>
     </label>
   </div>
-  <div class="row" style="margin-top:8px"><button class="btn" onclick="usePlace()">Plan this place</button></div>
-  <div id="saved" style="margin-top:10px"></div>
-</section>
-
-<section class="card">
-  <h2>2. When</h2>
-  <div class="row">
+  <div class="row" style="margin-top:8px">
     <label>Date
       <input id="date" type="date">
     </label>
@@ -95,9 +89,10 @@ ul.tips li{margin-bottom:4px}
         <option value="pm">Afternoon (noon to dusk)</option>
       </select>
     </label>
-    <button class="btn" onclick="runPlan()">Get the plan</button>
+    <button class="btn" onclick="usePlace()">Get the plan</button>
   </div>
   <p class="muted">Forecasts cover the next 16 days. Dates further out use typical conditions from last year.</p>
+  <div id="saved" style="margin-top:10px"></div>
 </section>
 
 <div id="output" class="hidden">
@@ -177,7 +172,7 @@ function pickResult(i){
   const h = window._hits[i];
   $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name;
   $('results').innerHTML = '';
-  $('placeMsg').textContent = `Set to ${h.name}. Check the water type, then press "Plan this place".`;
+  $('placeMsg').textContent = `Set to ${h.name}. Check the water type, then press "Get the plan".`;
   // set water type from what the search says it is
   const k = h.kind || '';
   if (['lake','reservoir','pond'].includes(k)) $('habitat').value = 'stillwater';
