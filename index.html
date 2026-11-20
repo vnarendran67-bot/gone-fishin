@@ -66,6 +66,7 @@ ul.tips li{margin-bottom:4px}
       <label>Latitude<input id="lat" type="number" step="any"></label>
       <label>Longitude<input id="lon" type="number" step="any"></label>
       <label>Name<input id="pname" placeholder="My spot"></label>
+      <label>Elevation (ft, optional)<input id="elev" type="number" placeholder="e.g. 7000 for Rose Canyon"></label>
     </div>
   </details>
   <div class="row" style="margin-top:4px">
@@ -123,6 +124,9 @@ const iso = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-$
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const SAVE_KEY = 'gone-fishin-places-v2';
 let place = null;   // {name, lat, lon, habitat, lakeId}
+let ELEV_M = null;  // elevation in metres sent to Open-Meteo, if known
+const cF = c => (c * 9 / 5 + 32).toFixed(0);
+const shiftDay = (s, n) => { const [y,m,d] = s.split('-').map(Number); return iso(new Date(y, m-1, d+n)); };
 
 function loadSaved(){ try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || []; } catch(e){ return []; } }
 function saveAll(list){ try { localStorage.setItem(SAVE_KEY, JSON.stringify(list)); } catch(e){} }
@@ -199,16 +203,33 @@ async function getForecast(lat, lon, dateStr){
   const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
     `&hourly=temperature_2m,wind_speed_10m,precipitation_probability,cloud_cover,pressure_msl` +
     `&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min,precipitation_probability_max` +
-    `&timezone=auto&start_date=${dateStr}&end_date=${dateStr}`;
+    `&timezone=auto&start_date=${dateStr}&end_date=${dateStr}` + (ELEV_M != null ? `&elevation=${ELEV_M}` : '');
   const r = await fetch(url); if (!r.ok) throw new Error('forecast HTTP ' + r.status);
   return r.json();
 }
 async function getArchive(lat, lon, dateStr){
   const d = lastYear(dateStr);
   const url = `https://archive-api.open-meteo.com/v1/archive?latitude=${lat}&longitude=${lon}` +
-    `&start_date=${d}&end_date=${d}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,sunrise,sunset&timezone=auto`;
+    `&start_date=${d}&end_date=${d}&daily=temperature_2m_max,temperature_2m_min,precipitation_sum,sunrise,sunset&timezone=auto` + (ELEV_M != null ? `&elevation=${ELEV_M}` : '');
   const r = await fetch(url); if (!r.ok) throw new Error('archive HTTP ' + r.status);
   return { data: await r.json(), date: d };
+}
+async function getHistory(lat, lon, startStr, endStr){
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
+    `&daily=temperature_2m_mean&timezone=auto&start_date=${startStr}&end_date=${endStr}` +
+    (ELEV_M != null ? `&elevation=${ELEV_M}` : '');
+  const r = await fetch(url); if (!r.ok) throw new Error('history HTTP ' + r.status);
+  const d = await r.json();
+  return d.daily.temperature_2m_mean; // °C, oldest first
+}
+// Rough estimate: water follows air with a lag. Lakes respond slowly, streams faster.
+function estimateWaterF(meansC, habitat){
+  const vals = meansC.filter(v => v != null);
+  if (!vals.length) return null;
+  const a = habitat === 'stillwater' ? 0.12 : 0.35;
+  let e = vals[0];
+  for (const t of vals.slice(1)) e = a * t + (1 - a) * e;
+  return e * 9 / 5 + 32;
 }
 async function getUSGS(lat, lon){
   const pad = 0.2;
@@ -286,6 +307,9 @@ async function runPlan(){
     if (isNaN(lat) || isNaN(lon)) { $('placeMsg').innerHTML = '<span class="warn">Pick a place first.</span>'; return; }
     place = { name: $('pname').value.trim() || 'My spot', lat, lon, habitat: $('habitat').value, lakeId: null };
   }
+  const lakeE = place.lakeId ? DB.lakes.find(l => l.id === place.lakeId) : null;
+  const elevFt = parseFloat($('elev').value) || (lakeE ? lakeE.elevation_ft : null);
+  ELEV_M = elevFt ? Math.round(elevFt * 0.3048) : null;
   const dateStr = $('date').value || iso(new Date());
   $('date').value = dateStr;
   $('output').classList.remove('hidden');
@@ -304,7 +328,7 @@ async function runPlan(){
   try {
     if (days >= 0 && days <= 15) {
       const f = await getForecast(place.lat, place.lon, dateStr);
-      wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr), d: f.daily };
+      wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr), d: f.daily, elev: f.elevation };
       wxSource = 'Open-Meteo forecast';
     } else {
       const { data, date } = await getArchive(place.lat, place.lon, dateStr);
@@ -326,16 +350,28 @@ async function runPlan(){
     usgsNote = `USGS data unavailable (${e.message}).`;
   }
   const manual = parseFloat($('manualTemp').value);
-  const waterF = !isNaN(manual) ? manual : (usgs.find(s => s.temp)?.temp?.f ?? null);
-  const waterSrc = !isNaN(manual) ? 'your reading' : (usgs.find(s => s.temp) ? 'USGS gauge' : 'none');
+  // no measurement? estimate from the three weeks of air temperature before the date
+  const anchor = days > 15 ? lastYear(dateStr) : dateStr;
+  let estF = null;
+  try {
+    const hist = await getHistory(place.lat, place.lon, shiftDay(anchor, -21), shiftDay(anchor, -1));
+    estF = estimateWaterF(hist, place.habitat);
+  } catch(e) { estF = null; }
+  const measuredF = usgs.find(s => s.temp)?.temp?.f ?? null;
+  const waterF = !isNaN(manual) ? manual : (measuredF ?? estF);
+  const waterSrc = !isNaN(manual) ? 'your reading'
+    : (measuredF != null ? 'USGS gauge'
+    : (estF != null ? 'ESTIMATE from the last 3 weeks of air temperature (rough, about ±5 °F)' : 'none'));
 
   // conditions card
   if (wx && wx.kind === 'forecast') {
     const a = wx.a, sc = scoreDay(a);
     $('conditions').innerHTML = `<h2>Conditions</h2>
-      <div class="big">${a.temp.toFixed(0)} °C air · ${(a.temp*9/5+32).toFixed(0)} °F</div>
+      <div class="big">High ${cF(wx.d.temperature_2m_max[0])} °F · Low ${cF(wx.d.temperature_2m_min[0])} °F</div>
+      <div class="muted">Fishing-hours average ${cF(a.temp)} °F</div>
       <div class="muted">Wind ${a.wind.toFixed(0)} km/h · Cloud ${a.cloud.toFixed(0)}% · Rain chance ${a.rainChance}%</div>
       <div class="muted">Sunrise ${a.sunrise} · Sunset ${a.sunset}</div>
+      <div class="muted">Forecast grid elevation ${wx.elev != null ? Math.round(wx.elev * 3.281) : '?'} ft${ELEV_M != null ? ` · adjusted to ${Math.round(ELEV_M / 0.3048)} ft` : ' · set an elevation above to correct mountain sites'}</div>
       <div style="margin-top:10px"><span class="score">${sc.s}</span> <b>${sc.label}</b></div>
       <ul class="tips">${sc.why.map(w => `<li>${esc(w)}</li>`).join('')}</ul>
       <div class="muted">Daytime averages shown.</div>`;
