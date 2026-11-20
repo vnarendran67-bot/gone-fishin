@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 6,
+ "version": 7,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -3374,6 +3374,450 @@ window.HATCH_DB = {
    "states": [
     "Pennsylvania"
    ]
+  },
+  {
+   "id": "ny-march-brown",
+   "name": "March browns (Catskills)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "March Brown, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "March browns, green drakes, and green caddis typically fire up in May and last well into June on New York rivers.",
+   "sources": [
+    {
+     "title": "Summer trout fishing in New York (Game & Fish, 2018)",
+     "url": "https://www.gameandfishmag.com/editorial/summer-trout-fishing-in-new-york/191333"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "New York"
+   ],
+   "date_note": "The source is from 2018. Verify locally."
+  },
+  {
+   "id": "ny-green-drake",
+   "name": "Green drakes (New York)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Dun, spinner",
+   "flies": [
+    {
+     "pattern": "Green drake, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Green drakes fire up in May and last well into June. The source ties them to the same window as the March browns and green caddis.",
+   "sources": [
+    {
+     "title": "Summer trout fishing in New York (Game & Fish, 2018)",
+     "url": "https://www.gameandfishmag.com/editorial/summer-trout-fishing-in-new-york/191333"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "New York"
+   ]
+  },
+  {
+   "id": "ny-green-caddis",
+   "name": "Green caddis (New York)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Adult",
+   "flies": [
+    {
+     "pattern": "Green caddis, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Green caddis hatch in May and last well into June.",
+   "sources": [
+    {
+     "title": "Summer trout fishing in New York (Game & Fish, 2018)",
+     "url": "https://www.gameandfishmag.com/editorial/summer-trout-fishing-in-new-york/191333"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "New York"
+   ]
+  },
+  {
+   "id": "ny-light-cahill",
+   "name": "Light Cahills (New York)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Afternoon and evening",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Light Cahill, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Light Cahills also hatch in June.",
+   "sources": [
+    {
+     "title": "Summer trout fishing in New York (Game & Fish, 2018)",
+     "url": "https://www.gameandfishmag.com/editorial/summer-trout-fishing-in-new-york/191333"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "New York"
+   ]
+  },
+  {
+   "id": "ny-golden-drake",
+   "name": "Golden drakes (New York)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7
+   ],
+   "peak_months": [
+    7
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Golden drake, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Golden drakes hatch solidly in June and last into July.",
+   "sources": [
+    {
+     "title": "Summer trout fishing in New York (Game & Fish, 2018)",
+     "url": "https://www.gameandfishmag.com/editorial/summer-trout-fishing-in-new-york/191333"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "New York"
+   ]
+  },
+  {
+   "id": "ny-trico",
+   "name": "Tricos (New York)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Early morning spinner falls",
+   "water_temp_f": null,
+   "stages": "Spinner",
+   "flies": [
+    {
+     "pattern": "Trico spinner, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "An early trico hatch comes at the end of May, and solid trico hatches come in June.",
+   "sources": [
+    {
+     "title": "Summer trout fishing in New York (Game & Fish, 2018)",
+     "url": "https://www.gameandfishmag.com/editorial/summer-trout-fishing-in-new-york/191333"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "New York"
+   ]
+  },
+  {
+   "id": "me-hendrickson",
+   "name": "Hendricksons (Maine)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Dun, nymph",
+   "flies": [
+    {
+     "pattern": "Hendrickson or Red Quill, 12-14",
+     "sizes": "12-14"
+    }
+   ],
+   "notes": "A predictable mayfly hatch explodes across Maine's bottom third each May. It emerges on May afternoons in southern and central Maine. In the colder north it may not start until early June.",
+   "sources": [
+    {
+     "title": "Maine mayfly hatches (Press Herald)",
+     "url": "https://www.pressherald.com/?p=278756"
+    },
+    {
+     "title": "Hendrickson timing in Maine (Central Maine)",
+     "url": "https://www.centralmaine.com/?p=216574"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Maine"
+   ]
+  },
+  {
+   "id": "me-hex",
+   "name": "Hex mayflies (Maine lakes and ponds)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stillwater"
+   ],
+   "months": [
+    6,
+    7
+   ],
+   "peak_months": [
+    7
+   ],
+   "time_of_day": "Dusk and after dark",
+   "water_temp_f": null,
+   "stages": "Nymph, dun, spinner",
+   "flies": [
+    {
+     "pattern": "Hex, large dark dun, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The hex hatch occurs on Maine's lakes and ponds, not usually on rivers. It brings squaretail trout to the surface. Most of the mayflies come off near dark, so the rising window is short.",
+   "sources": [
+    {
+     "title": "Fishing the hex hatch (Bangor Daily News)",
+     "url": "https://www.bangordailynews.com/2022/07/06/outdoors/fishing-fly-hatch-joam40zk0w/"
+    },
+    {
+     "title": "Maine mayflies in ponds and lakes (Press Herald)",
+     "url": "https://www.pressherald.com/?p=278756"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Maine"
+   ],
+   "date_note": "The hatch falls around the Fourth of July in Maine. Verify with local guides."
+  },
+  {
+   "id": "me-little-black-stonefly",
+   "name": "Little black stoneflies (Kennebec)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4
+   ],
+   "peak_months": [
+    3,
+    4
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph",
+   "flies": [
+    {
+     "pattern": "Little Black Stonefly, 8-14",
+     "sizes": "8-14"
+    }
+   ],
+   "notes": "The Kennebec chart lists Little Black Stones from March 1 to April 30.",
+   "sources": [
+    {
+     "title": "Kennebec River hatch chart (Big Y Fly Co.)",
+     "url": "https://www.bigyflyco.com/pages/kennebec-river-maine"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Maine"
+   ]
+  },
+  {
+   "id": "me-quill-gordon",
+   "name": "Quill Gordons (Kennebec)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5
+   ],
+   "time_of_day": "Mid-afternoon",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Quill Gordon, 12-16",
+     "sizes": "12-16"
+    }
+   ],
+   "notes": "The Kennebec chart lists Quill Gordons from May 1 to June 15.",
+   "sources": [
+    {
+     "title": "Kennebec River hatch chart (Big Y Fly Co.)",
+     "url": "https://www.bigyflyco.com/pages/kennebec-river-maine"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Maine"
+   ]
+  },
+  {
+   "id": "me-bwo",
+   "name": "Blue-winged olives (Maine)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak_months": [
+    4,
+    10
+   ],
+   "time_of_day": "Afternoon on cold, overcast days",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "BWO, 16-22",
+     "sizes": "16-22"
+    }
+   ],
+   "notes": "Blue-winged olives are best on cold, overcast afternoons from September through April. Fall micro hatches of BWO are also common.",
+   "sources": [
+    {
+     "title": "Blue wing olives in Maine (Big Y Fly Co.)",
+     "url": "https://bigyflyco.com/collections/maine"
+    },
+    {
+     "title": "Kennebec River hatch chart (Big Y Fly Co.)",
+     "url": "https://www.bigyflyco.com/pages/kennebec-river-maine"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Maine"
+   ],
+   "date_note": "Sources differ on the range. Big Y says September to April, and the Kennebec chart lists January to December."
+  },
+  {
+   "id": "nh-hex",
+   "name": "Hex mayflies (New England, New Hampshire)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stillwater",
+    "stream"
+   ],
+   "months": [
+    6,
+    7
+   ],
+   "peak_months": [],
+   "time_of_day": "Dusk",
+   "water_temp_f": null,
+   "stages": "Nymph, dun, spinner",
+   "flies": [
+    {
+     "pattern": "Hex, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Mayflies usually hatch from mid-June to mid-July in New England. A New Hampshire angler notes the hex hatch near Pittsburg in June.",
+   "sources": [
+    {
+     "title": "Writing on the fly: the hex hatch (Patch)",
+     "url": "https://patch.com/new-hampshire/exeter/writing-fly-fly-fishing-hex-hatch"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "New Hampshire"
+   ],
+   "date_note": "Only one local source. Peak month is not stated."
   }
  ],
  "lakes": [
