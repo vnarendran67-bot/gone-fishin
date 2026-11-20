@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 4,
+ "version": 5,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -1993,6 +1993,830 @@ window.HATCH_DB = {
     "New Mexico"
    ],
    "date_note": "The source does not name the insect in this excerpt, and the article is from 2010. Verify with local shops."
+  },
+  {
+   "id": "ca-bwo",
+   "name": "Blue-winged olives (Eastern Sierra)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak_months": [
+    2,
+    3
+   ],
+   "time_of_day": "Mid-morning on overcast days",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "Parachute BWO, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Blue-winged olives are the first hatch of the season in the Eastern Sierra, starting in early February. They return strongly in fall as temperatures cool.",
+   "sources": [
+    {
+     "title": "Matching the Hatch (Bishop Visitor Center)",
+     "url": "https://bishopvisitor.com/matching-the-hatch"
+    },
+    {
+     "title": "Timing the Hatch (Cal Fly Fisher)",
+     "url": "https://calflyfisher.com/tips-and-techniques/timing-the-hatch/"
+    },
+    {
+     "title": "Hot Creek hatch chart",
+     "url": "https://theflyfishingplace.com/pages/hot-creek-california-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "California"
+   ]
+  },
+  {
+   "id": "ca-midge",
+   "name": "Midges (California)",
+   "order": "Diptera",
+   "habitat": [
+    "stillwater",
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "peak_months": [],
+   "time_of_day": "Mid-day",
+   "water_temp_f": null,
+   "stages": "Larvae and pupae; adults in winter",
+   "flies": [
+    {
+     "pattern": "Midge, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Midges are the main winter food. Eastern Sierra anglers fish them through the cold months.",
+   "sources": [
+    {
+     "title": "Timing the Hatch (Cal Fly Fisher)",
+     "url": "https://calflyfisher.com/tips-and-techniques/timing-the-hatch/"
+    },
+    {
+     "title": "Cast Off Those Winter Doldrums (Cal Fly Fisher)",
+     "url": "https://calflyfisher.com/?p=11562"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "California"
+   ],
+   "date_note": "Peak months are not stated in the source."
+  },
+  {
+   "id": "ca-march-brown",
+   "name": "March browns (California)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3
+   ],
+   "peak_months": [
+    3
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "March Brown, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "March browns hatch during March. They produce fine early-season action on some streams.",
+   "sources": [
+    {
+     "title": "Timing the Hatch (Cal Fly Fisher)",
+     "url": "https://calflyfisher.com/tips-and-techniques/timing-the-hatch/"
+    },
+    {
+     "title": "California's Golden 15 Hatches (Cal Fly Fisher)",
+     "url": "https://calflyfisher.com/tips-and-techniques/californias-golden-15-hatches/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "California"
+   ]
+  },
+  {
+   "id": "ca-pmd",
+   "name": "Pale morning duns (Eastern Sierra)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5,
+    6
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Mid-morning to afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun, spinner",
+   "flies": [
+    {
+     "pattern": "PMD dun or emerger, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "PMDs begin on the warmer afternoons of the Upper Owens by late April. On Hot Creek they build through May and June.",
+   "sources": [
+    {
+     "title": "Upper Owens River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/upper-owens-river-california-hatch-chart"
+    },
+    {
+     "title": "Hot Creek hatch chart",
+     "url": "https://theflyfishingplace.com/pages/hot-creek-california-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "California"
+   ],
+   "date_note": "A Sierra chart lists PMD activity from February. The Owens sources start in late April. Verify locally."
+  },
+  {
+   "id": "ca-caddis",
+   "name": "Caddisflies (Eastern Sierra)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "peak_months": [
+    10
+   ],
+   "time_of_day": "Evenings",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults",
+   "flies": [
+    {
+     "pattern": "Elk Hair Caddis, verify; October caddis is the largest in the Sierra",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Caddis begin in April on the Upper Owens. The October caddis is the biggest caddis in the Sierra.",
+   "sources": [
+    {
+     "title": "Upper Owens River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/upper-owens-river-california-hatch-chart"
+    },
+    {
+     "title": "Matching the Hatch (Bishop Visitor Center)",
+     "url": "https://bishopvisitor.com/matching-the-hatch"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "California"
+   ]
+  },
+  {
+   "id": "ca-trico",
+   "name": "Tricos (Hot Creek)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    8
+   ],
+   "time_of_day": "Early morning spinner falls",
+   "water_temp_f": null,
+   "stages": "Dun and spinner",
+   "flies": [
+    {
+     "pattern": "Trico spinner, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The trico hatch is the defining event of Hot Creek's summer. It draws serious dry-fly anglers to Mammoth Lakes in late summer and fall.",
+   "sources": [
+    {
+     "title": "Hot Creek hatch chart",
+     "url": "https://theflyfishingplace.com/pages/hot-creek-california-hatch-chart"
+    },
+    {
+     "title": "Matching the Hatch (Bishop Visitor Center)",
+     "url": "https://bishopvisitor.com/matching-the-hatch"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "California"
+   ]
+  },
+  {
+   "id": "ca-hopper",
+   "name": "Hoppers and terrestrials (Eastern Sierra)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    8
+   ],
+   "time_of_day": "Midday along cut banks and meadow edges",
+   "water_temp_f": null,
+   "stages": "Adult grasshoppers",
+   "flies": [
+    {
+     "pattern": "Foam hopper, 10-14 (Upper Owens)",
+     "sizes": "10-14"
+    }
+   ],
+   "notes": "Adult hoppers show up on Eastern Sierra waters in July. On the Upper Owens they stay through mid-September, along the cut banks and meadow margins.",
+   "sources": [
+    {
+     "title": "Upper Owens River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/upper-owens-river-california-hatch-chart"
+    },
+    {
+     "title": "Bishop fishing report, July 2024",
+     "url": "https://bishopvisitor.com/blog/bishop-fishing-report/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "California"
+   ]
+  },
+  {
+   "id": "or-bwo",
+   "name": "Blue-winged olives (Oregon Deschutes)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3,
+    4
+   ],
+   "peak_months": [
+    3
+   ],
+   "time_of_day": "Mid-morning",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun, spinner",
+   "flies": [
+    {
+     "pattern": "BWO, 16-22 (Deschutes)",
+     "sizes": "16-22"
+    }
+   ],
+   "notes": "On the upper Deschutes, BWO hatches strengthen through March, and it is one of the best months for dry-fly fishing on the spring creek water.",
+   "sources": [
+    {
+     "title": "Deschutes River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/deschutes-river-oregon-hatch-chart"
+    },
+    {
+     "title": "Deschutes River below Lake Billy Chinook (Orvis)",
+     "url": "https://fishingreports.orvis.com/west/oregon/deschutes-river-below-lake-billy-chinook-and-pelton-dam"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Oregon"
+   ]
+  },
+  {
+   "id": "or-midge",
+   "name": "Midges (Oregon Deschutes and Crooked River)",
+   "order": "Diptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "peak_months": [],
+   "time_of_day": "Mid-day",
+   "water_temp_f": null,
+   "stages": "Larvae and pupae; adults on the surface",
+   "flies": [
+    {
+     "pattern": "Midge, 18-22",
+     "sizes": "18-22"
+    }
+   ],
+   "notes": "The lower Deschutes has midges in January. The Crooked River, a high-desert tailwater, has midge fishing all year.",
+   "sources": [
+    {
+     "title": "Deschutes River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/deschutes-river-oregon-hatch-chart"
+    },
+    {
+     "title": "Fly Fishing Hatch Charts by State (The Fly Fishing Place)",
+     "url": "https://theflyfishingplace.com/pages/fly-fishing-hatch-calendars-by-state"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Oregon"
+   ],
+   "date_note": "Peak months are not stated in the source."
+  },
+  {
+   "id": "or-skwala",
+   "name": "Skwala stoneflies (Oregon)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4,
+    5
+   ],
+   "peak_months": [
+    3,
+    4
+   ],
+   "time_of_day": "Warm afternoons",
+   "water_temp_f": null,
+   "stages": "Nymph and dry",
+   "flies": [
+    {
+     "pattern": "Olive-brown stonefly dry, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Skwala stoneflies start on the lower Deschutes canyon in March, often earlier than other Oregon rivers. The Rogue's timing runs March to early May.",
+   "sources": [
+    {
+     "title": "Deschutes River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/deschutes-river-oregon-hatch-chart"
+    },
+    {
+     "title": "Oregon Skwala hatch timing (The Fly Fishing Place)",
+     "url": "https://theflyfishingplace.substack.com/p/oregons-skwala-hatch-rivers-timing"
+    },
+    {
+     "title": "Chewaucan River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/chewaucan-river-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Oregon"
+   ]
+  },
+  {
+   "id": "or-salmonfly",
+   "name": "Salmonflies (Lower Deschutes)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph and adult",
+   "flies": [
+    {
+     "pattern": "Large foam salmonfly, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The Lower Deschutes salmonfly hatch is called one of the best-known events in fly fishing. Trout and steelhead feed on the hatch.",
+   "sources": [
+    {
+     "title": "Salmon-fly hatch on the Deschutes (NPR)",
+     "url": "https://www.npr.org/2007/06/09/10905950/salmon-fly-hatch-draws-fish-anglers-to-oregon"
+    },
+    {
+     "title": "Salmonfly hatch on the Deschutes (Bend Magazine)",
+     "url": "https://bendmagazine.com/deschutes-river-salmonfly-hatch-guide/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Oregon"
+   ],
+   "date_note": "Sources give May to June. Bestfishinginamerica notes that early May may not have an active hatch yet."
+  },
+  {
+   "id": "or-caddis",
+   "name": "Caddisflies (Oregon Deschutes)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "peak_months": [
+    6,
+    7
+   ],
+   "time_of_day": "Evenings",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults",
+   "flies": [
+    {
+     "pattern": "Caddis, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Early caddis begin by late March on the warmer upper sections. Evening caddis in summer can move both trout and steelhead.",
+   "sources": [
+    {
+     "title": "Deschutes River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/deschutes-river-oregon-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Oregon"
+   ]
+  },
+  {
+   "id": "or-pale-evening-dun",
+   "name": "Pale evening duns (Fall River)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5,
+    6
+   ],
+   "peak_months": [
+    4,
+    5
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Pale evening dun, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Pale evening duns start in mid-April on the flatter upper sections of the Fall River. It is one of the earlier PED rivers in Oregon.",
+   "sources": [
+    {
+     "title": "Fall River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/fall-river-oregon-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Oregon"
+   ]
+  },
+  {
+   "id": "or-october-caddis",
+   "name": "October caddis (Grande Ronde)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    10
+   ],
+   "peak_months": [
+    10
+   ],
+   "time_of_day": "Afternoon and evening",
+   "water_temp_f": null,
+   "stages": "Adult",
+   "flies": [
+    {
+     "pattern": "October caddis, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "October caddis and BWO are the fall trout hatches on the upper and middle canyon. October is also the peak month for the steelhead fishery.",
+   "sources": [
+    {
+     "title": "Grande Ronde River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/grande-ronde-river-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Oregon"
+   ]
+  },
+  {
+   "id": "wa-skwala",
+   "name": "Skwala stoneflies (Spokane and Yakima)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4
+   ],
+   "peak_months": [
+    3
+   ],
+   "time_of_day": "Warm afternoons",
+   "water_temp_f": null,
+   "stages": "Nymph and dry",
+   "flies": [
+    {
+     "pattern": "Skwala dry fly, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "March brings the Skwala stonefly, the first significant dry-fly hatch of the year on the Spokane. On the Yakima, the March Skwala hatch is one of the earliest dry-fly opportunities in the region.",
+   "sources": [
+    {
+     "title": "Spokane River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/spokane-river-washington-hatch-chart"
+    },
+    {
+     "title": "Yakima River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/yakima-river-washington-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Washington"
+   ]
+  },
+  {
+   "id": "wa-midge",
+   "name": "Midges (Yakima and Spokane)",
+   "order": "Diptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "peak_months": [],
+   "time_of_day": "Calm afternoons; dimpling fish",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults",
+   "flies": [
+    {
+     "pattern": "Midge, 18-22 (Yakima); 20-26 (Spokane)",
+     "sizes": "18-22"
+    }
+   ],
+   "notes": "The Yakima's midge hatch runs from January through May. On the Spokane, a midge cluster dry works when fish dimple on calm afternoons.",
+   "sources": [
+    {
+     "title": "Yakima River hatch chart (Big Y Fly Co.)",
+     "url": "https://www.bigyflyco.com/pages/yakima-river-washington-hatch-chart"
+    },
+    {
+     "title": "Spokane River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/spokane-river-washington-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Washington"
+   ],
+   "date_note": "Peak months are not stated in the source."
+  },
+  {
+   "id": "wa-bwo",
+   "name": "Blue-winged olives (Washington)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    9,
+    10,
+    11
+   ],
+   "peak_months": [
+    9,
+    10
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun, spinner",
+   "flies": [
+    {
+     "pattern": "BWO, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "September is the finest month on the Spokane, with BWO returning strongly as temperatures cool. The fall BWO hatch on the upper Tucannon produces excellent afternoon dry-fly fishing.",
+   "sources": [
+    {
+     "title": "Spokane River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/spokane-river-washington-hatch-chart"
+    },
+    {
+     "title": "Tucannon River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/tucannon-river-washington-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Washington"
+   ]
+  },
+  {
+   "id": "wa-mahogany-dun",
+   "name": "Mahogany duns (Tucannon)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    9,
+    10
+   ],
+   "peak_months": [
+    9
+   ],
+   "time_of_day": "Overcast days",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Mahogany dun, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Mahogany duns add variety on overcast days on the Tucannon's fall water.",
+   "sources": [
+    {
+     "title": "Tucannon River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/tucannon-river-washington-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Washington"
+   ]
+  },
+  {
+   "id": "wa-caddis",
+   "name": "Caddisflies (Spokane and Grande Ronde)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    9,
+    10
+   ],
+   "peak_months": [
+    9
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Adult",
+   "flies": [
+    {
+     "pattern": "Caddis, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The evening caddis hatch on the Spokane overlaps the fall olive hatch in September. October caddis are part of the Grande Ronde fall fishing.",
+   "sources": [
+    {
+     "title": "Spokane River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/spokane-river-washington-hatch-chart"
+    },
+    {
+     "title": "Grande Ronde River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/grande-ronde-river-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Washington"
+   ]
+  },
+  {
+   "id": "wa-hopper",
+   "name": "Hoppers and terrestrials (Washington)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    8,
+    9
+   ],
+   "peak_months": [
+    8,
+    9
+   ],
+   "time_of_day": "Midday along grassy banks",
+   "water_temp_f": null,
+   "stages": "Adult grasshoppers",
+   "flies": [
+    {
+     "pattern": "Foam hopper, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Hoppers continue through mid-September on the Spokane and the Tucannon.",
+   "sources": [
+    {
+     "title": "Spokane River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/spokane-river-washington-hatch-chart"
+    },
+    {
+     "title": "Tucannon River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/tucannon-river-washington-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Washington"
+   ]
   }
  ],
  "lakes": [
