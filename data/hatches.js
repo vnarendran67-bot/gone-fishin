@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 9,
+ "version": 10,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -4473,7 +4473,7 @@ window.HATCH_DB = {
      "stocking": "Fingerlings stocked once a year in late fall"
     }
    ],
-   "fishing_season_note": "Usually April through October. Snow often closes the road in winter.",
+   "fishing_season_note": "Usually April through October, with the best fishing from late spring to early fall. Snow often closes the road in winter.",
    "insect_ids": [
     "chironomid",
     "callibaetis",
@@ -4482,10 +4482,12 @@ window.HATCH_DB = {
     "terrestrial"
    ],
    "notes": [
-    "Evening hatches are productive for fly anglers.",
-    "Early mornings and the last hour of light produce surface feeding in fall.",
-    "Fall fish at Rose Canyon respond to a size 16 Elk Hair Caddis, according to a recent fall report.",
-    "Lake insects here have not been surveyed in a published study. These entries are based on regional lake patterns, not Rose Canyon sampling."
+    "Seven acres at about 7,000 ft in ponderosa pine on the Coronado National Forest, roughly an hour from Tucson. The lake is small and stocked, so most of the food is what the lake itself produces.",
+    "Arizona Game and Fish stocks Rose Canyon with rainbow trout, and the 2024 plant dates on Sport Fishing Report fell in May, August, September and October. Brown trout are stocked as fingerlings once a year in late fall.",
+    "Crayfish live in the lake. Arizona Game and Fish biologists and AZPM both list them as part of the lake's population, so a crayfish-colored fly or a bead-head crawfish pattern fished near rocky banks is a reasonable bet.",
+    "The lake has a history of silting: a July 1999 storm washed sediment in, and officials at the time proposed draining the lake to restart it. Depth can differ a lot from older maps, so check for shallow bars and weed before a trip.",
+    "Mercury contamination has been a concern at Rose Canyon in past reporting. Check current Arizona fish consumption guidance before you eat what you catch.",
+    "Lake insects here have not been surveyed in a published study. The hatch list is based on regional lake patterns, not Rose Canyon sampling."
    ],
    "sources": [
     {
@@ -4508,6 +4510,69 @@ window.HATCH_DB = {
    "verified": false,
    "states": [
     "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Chironomid midges (larvae and pupae)",
+     "category": "insect",
+     "detail": "Year-round food for stocked trout. Fish take them in the surface film and in the shallow edges. Use small midge patterns in the evening.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Callibaetis mayfly nymphs and duns",
+     "category": "insect",
+     "detail": "Stillwater mayflies that hatch in weedy shallows. A late-morning or evening rise can draw fish to the surface.",
+     "basis": "regional",
+     "insect_id": "callibaetis"
+    },
+    {
+     "item": "Damselfly nymphs",
+     "category": "insect",
+     "detail": "Found in weed beds. Trout take them as they move up toward the surface to emerge.",
+     "basis": "regional",
+     "insect_id": "damselfly"
+    },
+    {
+     "item": "Caddis larvae and adults",
+     "category": "insect",
+     "detail": "Caddis pupae drift up to the surface in the evening. Fish are often caught on a caddis pattern fished near the banks.",
+     "basis": "regional",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Terrestrials (ants, beetles, hoppers)",
+     "category": "terrestrial",
+     "detail": "Pine-shaded banks drop insects onto the water in summer and early fall. This is a general pattern for mountain lakes, not documented here.",
+     "basis": "regional",
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Crayfish",
+     "category": "crustacean",
+     "detail": "Present in the lake and used as food by trout. Found along rocky banks and inlets.",
+     "basis": "sourced",
+     "source": {
+      "title": "Rose Canyon Lake (AZPM, Arizona Game and Fish)",
+      "url": "https://azpm.org/s/97503-rose-canyon-lake/"
+     }
+    },
+    {
+     "item": "Stocked trout feed (hatchery pellets)",
+     "category": "stocked feed",
+     "detail": "Hatchery trout learn to take pellets, so fresh stockings often feed near the ramp and shallows before they spread out. This pattern is general hatchery practice, not documented for this lake.",
+     "basis": "general"
+    },
+    {
+     "item": "Bullfrog tadpoles and small frogs",
+     "category": "other",
+     "detail": "Non-native bullfrogs live at the lake. Their tadpoles can be eaten by trout, but the lake has not been surveyed for this.",
+     "basis": "sourced",
+     "source": {
+      "title": "Rose Canyon Lake (AZPM)",
+      "url": "https://azpm.org/s/97503-rose-canyon-lake/"
+     }
+    }
    ]
   },
   {
@@ -4527,14 +4592,23 @@ window.HATCH_DB = {
    ],
    "fishing_season_note": "Ice-off in late April and early May is a known season. Fall fishing runs mid-August through late September.",
    "insect_ids": [
-    "ut-midge"
+    "ut-midge",
+    "damselfly",
+    "ut-terrestrial"
    ],
    "notes": [
-    "About 8,000 acres at 7,550 ft. Average depth 18 ft, maximum 52 ft.",
-    "Ice-off in late April and early May. As ice clears, fish spread through the reservoir following bug hatches and zooplankton.",
-    "Fall is a strong season: the Strawberry is known for fishing from mid-August through late September with few crowds.",
+    "About 8,000 acres at 7,550 ft. Average depth 18 ft, maximum 52 ft. Sources list the surface elevation between 7,550 and 7,612 ft.",
+    "Utah DWR poisoned the reservoir in 1990 to clear out Utah chubs, then restocked. Chubs are still present and holding their own, and cutthroat trout feed on them.",
+    "Utah chub and Utah sucker are the native fish that make up much of the forage base. A 2022 Utah State study found that American white pelicans at the reservoir eat mostly native suckers rather than sportfish.",
+    "Pelicans gather in shallow areas and tributary mouths each summer, with up to 800 counted. That shows where the fish are concentrated.",
+    "DWR biologist Alan Ward reported that 98 percent of the prey fish found in trout stomachs were 7 inches or smaller. Match the size of the baitfish you use to that range.",
+    "Crayfish are plentiful, according to the DWR fall gill-net survey, which has run each fall for about 25 years. Trout take them along the rocky shoreline.",
+    "Kokanee salmon are zooplankton feeders. They are caught by trolling flashers and brightly colored lures, not by fly fishing.",
+    "Scuds and damselfly nymphs along the edges of weed beds are the most consistent fly patterns, according to VisitUtah. Wooly buggers work on the sinking-line program.",
+    "Ice-off in late April and early May. As ice clears, fish spread throughout the reservoir following bug hatches and blooming zooplankton.",
+    "Fall is a strong season: the Strawberry is known for fishing from mid-August through late September with few crowds. Gill-net survey results suggest fish feed heavily before winter.",
     "Walleye were illegally introduced. The Utah DWR asks anglers to report any walleye they catch.",
-    "The Strawberry River below the reservoir has its own BWO and PMD hatches (see the Utah hatch entries)."
+    "Fly anglers can wade the shoreline in spring and fall. Most people fish from a boat."
    ],
    "sources": [
     {
@@ -4557,6 +4631,103 @@ window.HATCH_DB = {
    "verified": false,
    "states": [
     "Utah"
+   ],
+   "forage": [
+    {
+     "item": "Utah chub",
+     "category": "baitfish",
+     "detail": "A native cyprinid that was abundant before the 1990 poisoning and is still present. Cutthroat trout and pelicans both feed on chubs.",
+     "basis": "sourced",
+     "source": {
+      "title": "Utah chub (Google Knowledge)",
+      "url": "https://g.co/kg/m/0c5qgq"
+     }
+    },
+    {
+     "item": "Utah sucker",
+     "category": "baitfish",
+     "detail": "A native fish that pelicans eat as a staple. Suckers are abundant and feed near the bottom, so trout pick them up off the bottom in the shallows.",
+     "basis": "sourced",
+     "source": {
+      "title": "Locally sourced: pelicans prefer native fish (ScienceDaily, Utah State)",
+      "url": "https://www.sciencedaily.com/releases/2022/03/220307190655.htm"
+     }
+    },
+    {
+     "item": "Prey fish up to 7 inches",
+     "category": "baitfish",
+     "detail": "DWR found 98 percent of prey fish in trout stomachs were 7 inches or smaller. Keep streamer imitations in that range.",
+     "basis": "sourced",
+     "source": {
+      "title": "A big fish story at Strawberry (Deseret News)",
+      "url": "https://www.deseret.com/2010/6/16/20121866/a-big-fish-story-at-strawberry-new-stocking-technique-showing-tremendous-success"
+     }
+    },
+    {
+     "item": "Crayfish",
+     "category": "crustacean",
+     "detail": "Abundant, according to the DWR gill-net survey. Trout eat them, and the survey calls them a good fish food.",
+     "basis": "sourced",
+     "source": {
+      "title": "Annual gill net survey gives good results at Strawberry (KSL)",
+      "url": "https://www.ksl.com/article/32041595/annual-gill-net-survey-gives-good-results-at-strawberry-reservoir"
+     }
+    },
+    {
+     "item": "Scuds",
+     "category": "crustacean",
+     "detail": "Freshwater shrimp-like crustaceans that live in weed beds. Scud patterns are among the most reliable flies here.",
+     "basis": "sourced",
+     "source": {
+      "title": "Strawberry Reservoir: Ripe for All Kinds of Anglers (VisitUtah)",
+      "url": "https://www.visitutah.com/articles/strawberry-reservoir"
+     }
+    },
+    {
+     "item": "Zooplankton",
+     "category": "zooplankton",
+     "detail": "Blooms as the water warms in spring. Zooplankton draws fish out across the reservoir and feeds kokanee directly.",
+     "basis": "sourced",
+     "source": {
+      "title": "6 great spots for Utah fishing this spring (Utah DWR)",
+      "url": "https://wildlife.utah.gov/news/wildlife-blog/1853-six-great-fishing-spots-this-spring.html"
+     }
+    },
+    {
+     "item": "Kokanee salmon",
+     "category": "zooplankton",
+     "detail": "Kokanee feed on zooplankton, not on other fish. Use trolling flashers and bright lures to catch them.",
+     "basis": "sourced",
+     "source": {
+      "title": "6 great spots for Utah fishing this spring (Utah DWR)",
+      "url": "https://wildlife.utah.gov/news/wildlife-blog/1853-six-great-fishing-spots-this-spring.html"
+     }
+    },
+    {
+     "item": "Damselfly nymphs",
+     "category": "insect",
+     "detail": "Found in weed beds. They are worth fishing along the edges of weed beds.",
+     "basis": "sourced",
+     "source": {
+      "title": "Strawberry Reservoir (VisitUtah)",
+      "url": "https://www.visitutah.com/articles/strawberry-reservoir"
+     },
+     "insect_id": "damselfly"
+    },
+    {
+     "item": "Midge pupae and mayfly nymphs",
+     "category": "insect",
+     "detail": "Ice-off hatches and the insects that follow them. Use the Utah midge and BWO patterns in spring.",
+     "basis": "regional",
+     "insect_id": "ut-midge"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "terrestrial",
+     "detail": "Shoreline grasses and sagebrush drop insects onto the water in summer. This matters most near the edges of the reservoir.",
+     "basis": "regional",
+     "insect_id": "ut-terrestrial"
+    }
    ]
   }
  ]

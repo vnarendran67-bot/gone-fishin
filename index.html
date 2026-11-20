@@ -492,8 +492,13 @@ async function runPlan(){
   if (usgs.some(s => s.flow != null) && wx && wx.kind === 'forecast' && wx.a.rainChance > 30) regional.push('Rain forecast and a flowing gauge: check the flow reading again the morning of your trip.');
   if (habitat === 'stream') regional.push('Stream tip: fish the early and late hours when cloud cover is up.');
   if (habitat === 'stillwater') regional.push('Lake tip: check the shallow weedy edges for midge and Callibaetis activity.');
+  // What the fish eat here (insects, crayfish, baitfish, zooplankton, stocked feed)
+  const forage = lake && lake.forage ? lake.forage : [];
+  const forageHtml = forage.length ? `<h3>What the fish eat here</h3>
+    <ul class="tips">${forage.map(f => `<li><b>${esc(f.item)}</b> <span class="pill">${esc(f.category)}</span> <span class="pill">${f.basis === 'sourced' ? 'sourced' : (f.basis === 'regional' ? 'regional guide' : 'general')}</span><br>${esc(f.detail)}${f.source ? ` <a href="${esc(f.source.url)}" target="_blank" rel="noopener">${esc(f.source.title)}</a>` : ''}</li>`).join('')}</ul>` : '';
   $('tips').innerHTML = `<h2>Notes for ${esc(place.name)}</h2>
     <h3>About this water</h3><ul class="tips">${specific.map(t => `<li>${t}</li>`).join('')}</ul>
+    ${forageHtml}
     ${regional.length ? `<h3>Conditions and general tips</h3><ul class="tips">${regional.map(t => `<li>${t}</li>`).join('')}</ul>` : ''}`;
 
   // verdict
