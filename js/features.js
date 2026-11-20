@@ -17,16 +17,24 @@ const STATE_TILES = [
 let mapSel = null;
 
 // Hatch count per state for a month. Peak months count double.
+function waterStatus(l, month){
+  if ((l.best_months || []).includes(month)) return 'best';
+  if ((l.fish_months || []).includes(month)) return 'open';
+  return null;
+}
+// Tile score: hatches count 1 (2 in peak), a water in its best months 3, an open water 1.
 function stateScores(month){
   const out = {};
   DB.insects.forEach(ins => {
     if (!ins.months.includes(month)) return;
     (ins.states || []).forEach(s => { out[s] = (out[s] || 0) + 1 + (ins.peak_months.includes(month) ? 1 : 0); });
   });
+  DB.lakes.forEach(l => {
+    const st = waterStatus(l, month);
+    if (!st) return;
+    (l.states || []).forEach(s => { out[s] = (out[s] || 0) + (st === 'best' ? 3 : 1); });
+  });
   return out;
-}
-function hasAnyData(name){
-  return DB.insects.some(i => (i.states || []).includes(name)) || DB.lakes.some(l => (l.states || []).includes(name));
 }
 function levelFor(score, name){
   if (!hasAnyData(name)) return 'nodata';
@@ -57,25 +65,22 @@ window.showState = function(name, quiet){
   mapSel = name;
   const month = parseInt($('mapMonth').value);
   const mon = new Date(2026, month - 1, 1).toLocaleString(undefined, { month: 'long' });
+  const waters = DB.lakes.filter(l => (l.states || []).includes(name));
+  const best = waters.filter(l => waterStatus(l, month) === 'best');
+  const open = waters.filter(l => waterStatus(l, month) === 'open');
   const insects = DB.insects.filter(i => (i.states || []).includes(name) && i.months.includes(month));
-  const lakes = DB.lakes.filter(l => (l.states || []).includes(name));
+  const row = l => `<li><b>${esc(l.name.split(' (')[0])}</b> <span class="muted">${esc(l.type === 'stream' ? 'stream' : 'still water')}</span></li>`;
+  let waterHtml;
+  if (best.length) waterHtml = `<div><b>Fishing well in ${mon}</b></div><ul class="tips">${best.map(row).join('')}</ul>`;
+  else if (open.length) waterHtml = `<div><b>Open in ${mon}, not in the prime window</b></div><ul class="tips">${open.map(row).join('')}</ul>`;
+  else waterHtml = waters.length ? `<p class="muted">No saved water in this state is in its season in ${mon}.</p>` : '';
+  if (!waters.length) waterHtml = `<p class="muted">No water notes for this state yet.</p>`;
   $('mapDetail').innerHTML = `<b style="color:var(--ink)">${esc(name)} in ${mon}</b>
-    ${insects.length ? `<ul class="tips">${insects.map(i => `<li><b>${esc(i.name)}</b>${i.peak_months.includes(month) ? ' <span class="pill peak">peak</span>' : ''} <span class="muted">${esc(i.time_of_day)}</span></li>`).join('')}</ul>`
-      : `<p class="muted">${hasAnyData(name) ? 'No hatches are listed for this state in this month.' : 'No hatch data for this state yet.'}</p>`}
-    ${lakes.length ? `<div>Waters with notes: ${lakes.map(l => esc(l.name.split(' (')[0])).join(', ')}</div>` : ''}`;
+    ${waterHtml}
+    ${insects.length ? `<div style="margin-top:8px"><b>Hatches expected</b></div><ul class="tips">${insects.map(i => `<li><b>${esc(i.name)}</b>${i.peak_months.includes(month) ? ' <span class="pill peak">peak</span>' : ''} <span class="muted">${esc(i.time_of_day)}</span></li>`).join('')}</ul>`
+      : `<p class="muted">${hasAnyData(name) ? 'No hatches are listed for this state in this month.' : 'No hatch data for this state yet.'}</p>`}`;
   if (!quiet) renderMap();
 };
-
-/* ---------- wind alerts ---------- */
-function windBanner(wx){
-  if (!wx || !wx.a || wx.a.wind == null) return '';
-  const w = wx.a.wind;
-  if (w >= 24) return `<div class="alert strong"><b>Strong wind expected</b> (about ${fmtWind(w)}). Casting and drifting will be hard. Fish sheltered banks, or pick another day.</div>`;
-  if (w >= 16) return `<div class="alert breezy"><b>Breezy</b> (about ${fmtWind(w)}). Look for sheltered water and heavier flies or sinking lines.</div>`;
-  return '';
-}
-
-/* ---------- hatch count for a place and date ---------- */
 function hatchPeaks(lake, habitat, month, state){
   const list = activeHatches(month, habitat, null, lake ? lake.insect_ids : null, state);
   return { total: list.length, peaks: list.filter(h => h.peak).length };

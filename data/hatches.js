@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 14,
+ "version": 15,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -4635,7 +4635,23 @@ window.HATCH_DB = {
       "url": "https://utahfishreports.com/fish_reports/232516/rose-canyon-lake-report.php"
      }
     ]
-   }
+   },
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
   },
   {
    "id": "strawberry-reservoir",
@@ -4861,7 +4877,21 @@ window.HATCH_DB = {
       "url": "https://www.kpcw.org/state-regional/2026-05-12/anglers-get-out-and-fish-while-you-can-before-utahs-water-levels-dwindle"
      }
     ]
-   }
+   },
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    8,
+    9
+   ]
   },
   {
    "lat": null,
@@ -4998,6 +5028,28 @@ window.HATCH_DB = {
    ],
    "states": [
     "Colorado"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
    ]
   },
   {
@@ -5091,7 +5143,22 @@ window.HATCH_DB = {
    ],
    "states": [
     "Utah"
-   ]
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": []
   },
   {
    "lat": null,
@@ -5174,7 +5241,9 @@ window.HATCH_DB = {
    ],
    "states": [
     "California"
-   ]
+   ],
+   "fish_months": [],
+   "best_months": []
   },
   {
    "lat": null,
@@ -5289,7 +5358,22 @@ window.HATCH_DB = {
    ],
    "states": [
     "Montana"
-   ]
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": []
   },
   {
    "lat": null,
@@ -5385,7 +5469,22 @@ window.HATCH_DB = {
    ],
    "states": [
     "Utah"
-   ]
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": []
   },
   {
    "lat": null,
@@ -5474,7 +5573,22 @@ window.HATCH_DB = {
    ],
    "states": [
     "Colorado"
-   ]
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": []
   },
   {
    "lat": null,
@@ -5626,6 +5740,29 @@ window.HATCH_DB = {
     "bwo",
     "terrestrial",
     "damselfly"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
    ]
   },
   {
@@ -5749,7 +5886,22 @@ window.HATCH_DB = {
     "chironomid",
     "damselfly",
     "trico"
-   ]
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": []
   },
   {
    "lat": null,
@@ -5863,6 +6015,23 @@ window.HATCH_DB = {
     "damselfly",
     "callibaetis",
     "chironomid"
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
    ]
   },
   {
@@ -5990,6 +6159,25 @@ window.HATCH_DB = {
     "chironomid",
     "callibaetis",
     "damselfly"
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
    ]
   },
   {
@@ -6067,7 +6255,22 @@ window.HATCH_DB = {
     "caddis",
     "terrestrial",
     "bwo"
-   ]
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": []
   },
   {
    "lat": null,
@@ -6185,6 +6388,28 @@ window.HATCH_DB = {
    "insect_ids": [
     "terrestrial",
     "damselfly"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
    ]
   },
   {
@@ -6270,6 +6495,844 @@ window.HATCH_DB = {
     "bwo",
     "chironomid",
     "caddis",
+    "terrestrial"
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "id": "upper-sacramento-ca",
+   "name": "Upper Sacramento River (above Shasta Lake, CA)",
+   "type": "stream",
+   "states": [
+    "California"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [],
+   "fishing_season_note": "Walk-and-wade water open year round, according to a local guide. No prime months are sourced.",
+   "species": [
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Primarily wild, naturally reproducing"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present, occasional"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Lower end just above the reservoir"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "Primarily a wild rainbow fishery. Recovered from a 1991 metam sodium spill, with wild tributary trout repopulating the river under new regulations.",
+    "schedule": "No stocking schedule was found for the upper river.",
+    "recent_plants": [],
+    "wild_fish": "Wild rainbows, often above 15 inches and up to 25 inches, with an occasional brown.",
+    "sources": [
+     {
+      "title": "Upper Sacramento River above Shasta Lake (USFS)",
+      "url": "https://www.fs.usda.gov/r05/shasta-trinity/recreation/upper-sacramento-river-above-shasta-lake"
+     },
+     {
+      "title": "The Upper Sacramento: Where to Go (Cal Fly Fisher)",
+      "url": "https://calflyfisher.com/destinations/the-upper-sacramento-where-to-go-and-what-to-expect/"
+     },
+     {
+      "title": "Upper Sacramento Fly Fishing Guides",
+      "url": "https://offthehookfly.squarespace.com/upper-sacramento-river"
+     }
+    ]
+   },
+   "notes": [
+    "The Upper Sacramento runs cold and clear from springs near Mount Shasta down to Shasta Lake. Wild rainbows are the main fish, with an occasional brown.",
+    "The 1991 Cantara Loop spill of metam sodium nearly wiped out the fishery. Wild tributary trout repopulated the river, and new regulations made it essentially a wild-trout river.",
+    "Mayfly hatches and wild rainbows rising to them are the signature fishing here, according to The Fly Shop.",
+    "Walk-and-wade access is close to I-5 north of Redding. Fish nymphs and dries, and watch for rattlesnakes in summer.",
+    "Smallmouth bass are present at the lower end, just above Shasta Lake."
+   ],
+   "forage": [
+    {
+     "item": "Mayflies",
+     "category": "insect",
+     "detail": "Mayfly species emerge and wild rainbows rise to eat them. Hatch timing is not specified in the sources.",
+     "basis": "sourced",
+     "source": {
+      "title": "Top Five Places to Fly Fish Near Redding (The Fly Shop)",
+      "url": "https://www.theflyshop.com/flyfishing-news/top-5-trout-fisheries-norcal"
+     }
+    },
+    {
+     "item": "Insects and other foods",
+     "category": "insect",
+     "detail": "Prolific insect hatches and other foods that trout feed on heavily, per Cal Fly Fisher.",
+     "basis": "sourced",
+     "source": {
+      "title": "The Upper Sacramento (Cal Fly Fisher)",
+      "url": "https://calflyfisher.com/destinations/the-upper-sacramento-where-to-go-and-what-to-expect/"
+     }
+    }
+   ],
+   "insect_ids": [
+    "bwo",
+    "caddis"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "id": "hot-creek-ca",
+   "name": "Hot Creek (Mammoth Lakes, CA)",
+   "type": "stream",
+   "states": [
+    "California"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [],
+   "fishing_season_note": "Open all year. Artificial flies with barbless hooks only. Trout may not be kept (0 trout), per CDFW regulations effective March 2021.",
+   "species": [
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild, spring creek"
+    },
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild. Large browns cannot migrate up from the Owens River"
+    },
+    {
+     "name": "Brook trout",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "A wild trout spring creek. The nearby Hot Creek Hatchery supplies trout to other waters. The creek itself is not described as stocked in the sources.",
+    "schedule": "No stocking schedule applies to the creek in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Wild rainbows and browns. A 27-inch, 10-pound brown was described as wild, homegrown, because thermal springs block upstream migration.",
+    "sources": [
+     {
+      "title": "Hot Creek Trout Hatchery (CDFW)",
+      "url": "https://wildlife.ca.gov/Fishing/Hatcheries/Hot-Creek"
+     },
+     {
+      "title": "Monocounty fishing rules and regulations",
+      "url": "https://monocounty.org/things-to-do/fishing/fishing-rules-regulations"
+     },
+     {
+      "title": "Hot Creek, Eastern Sierra (Fly Fishing the Sierra)",
+      "url": "https://flyfishingthesierra.com/hotcreek.htm"
+     },
+     {
+      "title": "Hot Creek, the ideal spring creek year round",
+      "url": "https://flyfishingthesierra.com/?p=25188"
+     }
+    ]
+   },
+   "notes": [
+    "Hot Creek is a spring creek near Mammoth Lakes, widely described as one of the best fly fisheries in the country. It flows from Mammoth Creek.",
+    "Only artificial flies with barbless hooks may be used, and no trout may be kept, under CDFW regulations effective March 2021.",
+    "Match the hatch closely. Guides describe intermediate hatch stages that are often missed. Caddis hatch through the summer for good dry-fly fishing.",
+    "Flows and temperature at the thermal springs in Hot Creek Gorge change without warning. Check the USGS stream gauge near Mammoth Lakes before you go.",
+    "Terrestrials matter. Guides suggest parachute ant patterns in sizes 12 to 14, and perch-pattern streamers for larger fish."
+   ],
+   "forage": [
+    {
+     "item": "Caddis",
+     "category": "insect",
+     "detail": "Caddis hatch through the summer, offering good dry-fly fishing.",
+     "basis": "sourced",
+     "source": {
+      "title": "Hot Creek, Eastern Sierra (Fly Fishing the Sierra)",
+      "url": "https://flyfishingthesierra.com/hotcreek.htm"
+     },
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Hatch stages (nymphs and emergers)",
+     "category": "insect",
+     "detail": "Guides match intermediate hatch phases and microcurrents, per Fly Fisherman.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fly Fishing the Proving Grounds of Hot Creek (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/fly-fishing-californias-hot-creek/456796"
+     }
+    },
+    {
+     "item": "Terrestrials (ants)",
+     "category": "terrestrial",
+     "detail": "Parachute ant patterns are suggested for Hot Creek.",
+     "basis": "sourced",
+     "source": {
+      "title": "Hot Creek, the ideal spring creek year round",
+      "url": "https://flyfishingthesierra.com/?p=25188"
+     },
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Baitfish (perch-style streamers)",
+     "category": "baitfish",
+     "detail": "Perch-pattern streamers are recommended for bigger fish.",
+     "basis": "sourced",
+     "source": {
+      "title": "Hot Creek, Eastern Sierra (Fly Fishing the Sierra)",
+      "url": "https://flyfishingthesierra.com/hotcreek.htm"
+     }
+    }
+   ],
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "id": "eagle-lake-ca",
+   "name": "Eagle Lake (Susanville, CA)",
+   "type": "stillwater",
+   "states": [
+    "California"
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+   ],
+   "best_months": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Season runs from the last Saturday in May through the end of February. Two trout daily, four in possession. Shore fishing in fall and early winter is effective, per CDFW.",
+   "species": [
+    {
+     "name": "Eagle Lake rainbow trout",
+     "stocking": "Native only to Eagle Lake. CDFW hatcheries raise it for stocking across California"
+    },
+    {
+     "name": "Brook and brown trout",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "native strain, hatchery supported",
+    "summary": "Eagle Lake rainbows were nearly lost after commercial fishing and water diversion. CDFW now rears them in hatcheries and stocks them across California.",
+    "schedule": "Trout stocking dates were not found in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Eagle Lake rainbow is a native strain, and the lake's own population is self-sustaining in part. Native minnows and a sucker share the lake.",
+    "sources": [
+     {
+      "title": "Fishing for Eagle Lake Rainbow Trout (CDFW)",
+      "url": "https://wildlife.ca.gov/Fishing/Inland/Eagle-Lake-Rainbow-Trout"
+     },
+     {
+      "title": "Eagle Lake Recreation Area (BLM)",
+      "url": "https://www.blm.gov/visit/eagle-lake-recreation-area"
+     },
+     {
+      "title": "Eagle Lake season (Orvis)",
+      "url": "https://fishingreports.orvis.com/west/california/eagle-lake"
+     },
+     {
+      "title": "Eagle Lake, Best Fishing in America",
+      "url": "https://www.bestfishinginamerica.com/?p=10441"
+     },
+     {
+      "title": "Eagle Lake Rainbow Trout (CDFW science spotlight)",
+      "url": "https://wildlife.ca.gov/Science-Institute/News/tag/trout-fishing"
+     }
+    ]
+   },
+   "notes": [
+    "Eagle Lake is in Lassen County near Susanville. Its rainbows are a native strain found nowhere else. Fish grow fast and can reach large size.",
+    "The fishing season runs from Memorial Day weekend through the end of February, per Best Fishing in America and CDFW.",
+    "Trolling from a boat with spoons, Rapalas or dodgers works well. Adjust depth to the season. Bank fishing with PowerBait or worms is effective in accessible areas, per Sportfishing Report.",
+    "Shore fishing is very effective in fall and early winter, according to CDFW. Heavy winds often pick up late morning, so aim to launch at daybreak.",
+    "The Lahontan Water Board reported that the 2023 to 2024 season gave the best angler results in 20+ years, with the highest share of trout over 3, 4 and 5 pounds."
+   ],
+   "forage": [
+    {
+     "item": "Tui chub",
+     "category": "baitfish",
+     "detail": "A native minnow in the lake, and part of the forage base.",
+     "basis": "sourced",
+     "source": {
+      "title": "Eagle Lake Science Spotlight (CDFW)",
+      "url": "https://wildlife.ca.gov/Science-Institute/News/tag/trout-fishing"
+     }
+    },
+    {
+     "item": "Lahontan redside and speckled dace",
+     "category": "baitfish",
+     "detail": "Native minnows that share the lake with the trout.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing Conditions (CDFW Eagle Lake)",
+      "url": "https://wildlife.ca.gov/Fishing/Inland/Eagle-Lake-Rainbow-Trout"
+     }
+    },
+    {
+     "item": "Scuds and snails",
+     "category": "crustacean",
+     "detail": "Scud and snail patterns are effective, per CDFW.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing for Eagle Lake Rainbow Trout (CDFW)",
+      "url": "https://wildlife.ca.gov/Fishing/Inland/Eagle-Lake-Rainbow-Trout"
+     }
+    },
+    {
+     "item": "Leeches and baitfish imitations",
+     "category": "other",
+     "detail": "Leeches, woolly buggers and small baitfish patterns are effective.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing for Eagle Lake Rainbow Trout (CDFW)",
+      "url": "https://wildlife.ca.gov/Fishing/Inland/Eagle-Lake-Rainbow-Trout"
+     }
+    }
+   ],
+   "insect_ids": []
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "id": "metolius-river-or",
+   "name": "Metolius River (Camp Sherman, OR)",
+   "type": "stream",
+   "states": [
+    "Oregon"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6
+   ],
+   "fishing_season_note": "Open year round. Fly fishing only and catch and release for all trout, including bull trout. Hatches peak in spring, with BWOs in March and April and caddis in May.",
+   "species": [
+    {
+     "name": "Wild redband rainbow trout",
+     "stocking": "Wild and native. No hatchery fish are stocked"
+    },
+    {
+     "name": "Bull trout",
+     "stocking": "Wild. Strictly catch and release"
+    },
+    {
+     "name": "Brown and brook trout",
+     "stocking": "Introduced, not stocked"
+    },
+    {
+     "name": "Mountain whitefish",
+     "stocking": "Native"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "Oregon rules say no hatchery fish may be stocked in the Metolius River and tributaries. Its trout are wild.",
+    "schedule": "No stocking is permitted in the river.",
+    "recent_plants": [],
+    "wild_fish": "Wild redband rainbows average about 14 to 15 inches. Bull trout average 6 to 7 pounds. Restrictive regulations protect the bull trout population.",
+    "sources": [
+     {
+      "title": "OAR 635-500-1820 (Oregon Administrative Rules)",
+      "url": "https://oregon.public.law/rules/oar_635-500-1820"
+     },
+     {
+      "title": "Metolius River (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/rivers/286/metolius-river.php"
+     },
+     {
+      "title": "Metolius can be magic (Deschutes Partnership)",
+      "url": "https://www.deschutesriver.org/in-the-media/metolius-can-be-magic-for-anglers-even-in-the-winter"
+     },
+     {
+      "title": "Metolius River Oregon Hatch Chart",
+      "url": "https://theflyfishingplace.com/pages/metolius-river-oregon-hatch-chart"
+     }
+    ]
+   },
+   "notes": [
+    "The Metolius springs out of the ground near Camp Sherman in ponderosa pine country. It is a fly-fishing-only, catch-and-release river.",
+    "Blue-winged Olives hatch from March and become the signature spring hatch, and they keep going on overcast days through May.",
+    "Caddis hatch in May, with 14 to 16 evenings throughout the river, and are the workhorse evening dry-fly hatch through the season.",
+    "Bull trout are strictly catch and release. Release them immediately and keep them in the water.",
+    "Winter fishing is good for bull trout and dry-fly BWO hatches around noon to 3 p.m., per the Deschutes Partnership.",
+    "Fishing pressure is heavy over holidays, and the river is restricted to fly-fishing only upstream of Bridge 99, per 2022 reports."
+   ],
+   "forage": [
+    {
+     "item": "Blue-winged Olive mayflies",
+     "category": "insect",
+     "detail": "Spring and winter hatches. Dry fly and emerger patterns in sizes 16 to 20.",
+     "basis": "sourced",
+     "source": {
+      "title": "Metolius River Oregon Hatch Chart",
+      "url": "https://theflyfishingplace.com/pages/metolius-river-oregon-hatch-chart"
+     },
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Caddis",
+     "category": "insect",
+     "detail": "Evening caddis hatch in May and through the season.",
+     "basis": "sourced",
+     "source": {
+      "title": "Metolius River Oregon Hatch Chart",
+      "url": "https://theflyfishingplace.com/pages/metolius-river-oregon-hatch-chart"
+     },
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Streamers and baitfish",
+     "category": "baitfish",
+     "detail": "Streamers work year round for bull trout and large browns in deeper canyon runs.",
+     "basis": "sourced",
+     "source": {
+      "title": "Metolius River Oregon Hatch Chart",
+      "url": "https://theflyfishingplace.com/pages/metolius-river-oregon-hatch-chart"
+     }
+    },
+    {
+     "item": "Nymphs and whitefish",
+     "category": "other",
+     "detail": "Nymphs and streamers work for bull trout and whitefish. Whitefish compete with trout for the same bugs.",
+     "basis": "sourced",
+     "source": {
+      "title": "Metolius can be magic (Deschutes Partnership)",
+      "url": "https://www.deschutesriver.org/in-the-media/metolius-can-be-magic-for-anglers-even-in-the-winter"
+     }
+    }
+   ],
+   "insect_ids": [
+    "bwo",
+    "caddis"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "id": "lower-deschutes-or",
+   "name": "Lower Deschutes River (Maupin, OR)",
+   "type": "stream",
+   "states": [
+    "Oregon"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "fishing_season_note": "Open all year for trout in the lower river. Season begins April 22 below the dam to the Warm Springs boundary, per the Flyandfield shop. Wild steelhead must be released.",
+   "species": [
+    {
+     "name": "Wild redband rainbow trout",
+     "stocking": "Native, genetically pure, wild"
+    },
+    {
+     "name": "Summer steelhead",
+     "stocking": "Wild. Must be released"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present, non-native"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "A wild, native redband fishery below Pelton Dam. The river is a world-class steelhead and trout water.",
+    "schedule": "No stocking schedule applies in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Redbands average 12 to 20 inches. Peak stretches can hold 1,500 to 3,000 wild redbands per mile, per Bend Magazine.",
+    "sources": [
+     {
+      "title": "Lower Deschutes River (Fly and Field)",
+      "url": "https://flyandfield.com/location/lowerdeschutes/"
+     },
+     {
+      "title": "Deschutes River, Maupin (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/rivers/284/deschutes-river.php"
+     },
+     {
+      "title": "Salmonfly Hatch on the Deschutes (Bend Magazine, May 2026)",
+      "url": "https://bendmagazine.com/deschutes-river-salmonfly-hatch-guide/"
+     },
+     {
+      "title": "Deschutes River Oregon Hatch Chart",
+      "url": "https://theflyfishingplace.com/pages/deschutes-river-oregon-hatch-chart"
+     }
+    ]
+   },
+   "notes": [
+    "The lower Deschutes runs below Pelton Dam and is a Blue Ribbon fishery for native trout and wild steelhead. It is one of the best rainbow waters in the West.",
+    "The salmonfly hatch is the signature event in late spring. Bend Magazine says it moves upriver from the lower canyon, with mid-hatch activity at Maupin and late hatch near Trout Creek.",
+    "The trout are native redbands. Angling is restricted to artificial flies and lures, and catch and release is often required, per Sportfishing Report.",
+    "Caddis hatch in early summer, bringing more rainbows to the surface. Late summer and early fall bring the start of steelhead season.",
+    "Predictable low flows limit wade-fishing in the Redding area. Check flow before you go. This is a float-and-wade river in the canyon."
+   ],
+   "forage": [
+    {
+     "item": "Salmonflies (stoneflies)",
+     "category": "insect",
+     "detail": "The largest insect hatch. Anglers fishing it are rewarded with the largest, hottest trout of the season, per Deep Canyon Outfitters.",
+     "basis": "sourced",
+     "source": {
+      "title": "Deschutes River below Lake Billy Chinook (Orvis)",
+      "url": "https://fishingreports.orvis.com/west/oregon/deschutes-river-below-lake-billy-chinook-and-pelton-dam"
+     }
+    },
+    {
+     "item": "Caddis",
+     "category": "insect",
+     "detail": "Caddis hatch in early summer.",
+     "basis": "sourced",
+     "source": {
+      "title": "Chasing Rainbows on the Deschutes (Travel Oregon)",
+      "url": "https://traveloregon.com/plan-your-trip/guides-tours/guides-charters/chasing-rainbows-on-the-deschutes-river/"
+     },
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Blue-winged Olives and midges",
+     "category": "insect",
+     "detail": "Listed as hatches on the lower river, per Deep Canyon Outfitters.",
+     "basis": "sourced",
+     "source": {
+      "title": "Deschutes River below Lake Billy Chinook (Orvis)",
+      "url": "https://fishingreports.orvis.com/west/oregon/deschutes-river-below-lake-billy-chinook-and-pelton-dam"
+     },
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Golden stones",
+     "category": "insect",
+     "detail": "Golden stone hatches come before the salmonfly hatch and run from May into June, per Game and Fish.",
+     "basis": "sourced",
+     "source": {
+      "title": "Rafting adventure on the Deschutes (Game and Fish)",
+      "url": "https://www.gameandfishmag.com/editorial/rafting-adventure-deschutes-river-trout-fishing/194156"
+     }
+    }
+   ],
+   "insect_ids": [
+    "caddis",
+    "bwo"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "id": "yakima-river-wa",
+   "name": "Yakima River (Easton to Roza Dam, WA)",
+   "type": "stream",
+   "states": [
+    "Washington"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    4,
+    5,
+    9,
+    10
+   ],
+   "fishing_season_note": "Open year round. Catch and release with selective gear from Roza Dam to Easton Dam. Closed above Easton until the Saturday before Memorial Day, per WDFW.",
+   "species": [
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild. Washington's only blue ribbon trout stream"
+    },
+    {
+     "name": "Wild cutthroat trout",
+     "stocking": "Wild"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "The river is a wild rainbow and cutthroat fishery. WDFW stocks lakes nearby, not the river.",
+    "schedule": "No stocking schedule applies to the river.",
+    "recent_plants": [],
+    "wild_fish": "Wild rainbows and cutthroat. Rainbows and cutthroat feed on salmon fry, which give them plenty of attitude and muscle.",
+    "sources": [
+     {
+      "title": "Yakima River (Orvis)",
+      "url": "https://fishingreports.orvis.com/west/washington/yakima-river"
+     },
+     {
+      "title": "South Central, Region 3 (WDFW)",
+      "url": "https://www.dfw.wa.gov/places-to-go/weekender/south-central"
+     },
+     {
+      "title": "Learn the ins and outs of the Yakima (Game and Fish, 2010)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_wo_0510_01/190805"
+     }
+    ]
+   },
+   "notes": [
+    "The Yakima is Washington's only blue ribbon trout stream, flowing 78 miles from Easton to Roza Dam in the lower canyon, per Orvis.",
+    "Catch-and-release trout fishing is open year round from Roza Dam to Easton Dam under selective gear rules. Fishing above Easton waits until the Saturday before Memorial Day, per WDFW.",
+    "Salmon fry are a big part of the diet. The river's trout have a fly pattern built around them, according to Game and Fish.",
+    "The October caddis hatch is stronger in the upper river than in the canyon, per a local guide.",
+    "Spring nymph fishing is excellent in April and May, before dry fly fishing takes over, according to a WDFW report."
+   ],
+   "forage": [
+    {
+     "item": "Salmon fry (alevin and smolts)",
+     "category": "baitfish",
+     "detail": "Infant salmon are a major food source, and a fly pattern was built for it.",
+     "basis": "sourced",
+     "source": {
+      "title": "Learn the ins and outs of the Yakima (Game and Fish, 2010)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_wo_0510_01/190805"
+     }
+    },
+    {
+     "item": "October caddis",
+     "category": "insect",
+     "detail": "A fall hatch, stronger in the upper river.",
+     "basis": "sourced",
+     "source": {
+      "title": "Now is the time to catch Yakima River trout (Herald)",
+      "url": "https://www.heraldnet.com/sports/now-is-the-time-to-catch-yakima-river-trout"
+     },
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Skwala stoneflies",
+     "category": "insect",
+     "detail": "Skwalas start hatching in late spring, per the Spokesman-Review.",
+     "basis": "sourced",
+     "source": {
+      "title": "Hunting and fishing (Spokesman-Review)",
+      "url": "https://www.spokesman.com/stories/2009/apr/03/hunting-and-fishing"
+     }
+    }
+   ],
+   "insect_ids": [
+    "caddis"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "id": "methow-river-wa",
+   "name": "Methow River (Twisp to Winthrop, WA)",
+   "type": "stream",
+   "states": [
+    "Washington"
+   ],
+   "fish_months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "best_months": [
+    7,
+    8
+   ],
+   "fishing_season_note": "Trout season runs from early June to late September, per an outfitter. Summer is the best time for trout. Steelhead runs in fall and winter.",
+   "species": [
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Westslope cutthroat trout",
+     "stocking": "Native wild"
+    },
+    {
+     "name": "Bull trout",
+     "stocking": "Native. Protected"
+    },
+    {
+     "name": "Steelhead",
+     "stocking": "Wild and hatchery runs"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "The Methow supports wild cutthroat and rainbow. Earlier decades had stocked rainbows, but the river now relies on wild fish.",
+    "schedule": "No current stocking is described in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Wild westslope cutthroat, rainbows and bull trout. Fish run 10 to 16 inches, with more rainbows than cutthroat, and some cutthroat reach 24 inches.",
+    "sources": [
+     {
+      "title": "Fly Fishing Report, Methow River (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/?p=5596"
+     },
+     {
+      "title": "Fly Fishing Washington's Methow River (Outthere Outdoors)",
+      "url": "https://outthereoutdoors.com/?p=6844"
+     },
+     {
+      "title": "Area: Pacific Northwest (Trout Unlimited)",
+      "url": "https://tu.org/?p=3913"
+     }
+    ]
+   },
+   "notes": [
+    "The Methow is a freestone river in north-central Washington's Okanogan Country, about four hours northeast of Seattle. Its fish are wild.",
+    "Fly fishing starts below the Weeman Bridge, about 5 miles downriver from Mazama. That upper section is gin-clear alpine water. Fish run 10 to 16 inches, per Outthere Outdoors.",
+    "Summer is the best time for trout fishing. Spring is not a good time for fly fishing, according to one fly shop.",
+    "Trout season runs early June through late September. Steelhead return in the fall and winter.",
+    "Swinging and skating dry flies works well. Local guides say the swing and skate mimics bugs that struggle to dry their wings."
+   ],
+   "forage": [
+    {
+     "item": "Terrestrial hoppers",
+     "category": "terrestrial",
+     "detail": "Hopper fishing in September is a strong option, per a 2014 fishing report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Available Guide (Northwest Fishing Reports, 2014)",
+      "url": "https://www.northwestfishingreports.com/Reports/Details/49374"
+     },
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Mayflies (afternoon hatches)",
+     "category": "insect",
+     "detail": "Serious mayfly hatches start in the afternoon in late September, per a 2017 report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Methow River Fishing Report 9.28.2017 (North 40)",
+      "url": "https://north40.com/blog/methow-river-fishing-report-9-28-2017"
+     }
+    },
+    {
+     "item": "Whitefish and nymphs",
+     "category": "other",
+     "detail": "Whitefish are common, and bead-head nymphs attract them.",
+     "basis": "sourced",
+     "source": {
+      "title": "Methow River Fishing Report 9.28.2017 (North 40)",
+      "url": "https://north40.com/blog/methow-river-fishing-report-9-28-2017"
+     }
+    }
+   ],
+   "insect_ids": [
     "terrestrial"
    ]
   }

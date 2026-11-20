@@ -166,7 +166,7 @@ textarea{font:inherit}
     <label style="flex:0 1 200px">Month
       <select id="mapMonth" onchange="renderMap()"></select>
     </label>
-    <p class="muted" style="flex:2 1 300px;margin:0">Each tile shows how many hatches the regional data expects that month. Click a state for details. This is hatch richness, not a fishing forecast.</p>
+    <p class="muted" style="flex:2 1 300px;margin:0">Each tile scores the state for the chosen month: waters in their prime season count most, open waters count less, and expected hatches add to the score. Click a state to see which waters fish well and what hatches to expect. This is seasonal, not a live forecast.</p>
   </div>
   <div id="mapGrid" class="tilegrid"></div>
   <div class="legend muted"><span class="lg lv0"></span>none expected <span class="lg lv1"></span>few <span class="lg lv2"></span>some <span class="lg lv3"></span>many <span class="lg lv4"></span>very many <span class="lg nodata"></span>no data yet</div>
