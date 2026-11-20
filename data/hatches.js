@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 30,
+ "version": 31,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -18039,6 +18039,443 @@ window.HATCH_DB = {
     2,
     3,
     4
+   ]
+  },
+  {
+   "id": "gila-river-gila-box-az",
+   "name": "Gila River (Gila Box, Safford to Clifton, AZ)",
+   "type": "river",
+   "elevation_ft": null,
+   "lat": 32.9,
+   "lon": -109.7,
+   "coords_note": "Elevation not sourced. Coordinates are approximate for the Gila Box put-in area; check the BLM map before driving.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Gila trout (NM headwaters, reference only)",
+     "stocking": "Recovery stocking upstream in NM"
+    },
+    {
+     "name": "Rainbow and brown trout (upper reaches)",
+     "stocking": "Wild and recovery-managed"
+    },
+    {
+     "name": "Bullhead, yellow bullhead, catfish",
+     "stocking": "Wild"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked (Arizona reach)",
+    "summary": "BLM calls the Gila Box a riparian conservation area, and the San Francisco River and Bonita Creek feed the river. No AZGFD stocking program for the lower Gila was found.",
+    "schedule": "None.",
+    "recent_plants": [],
+    "wild_fish": "Bullhead and catfish on the lower river, per Sportfishing Report. Trout reaches are in New Mexico.",
+    "sources": [
+     {
+      "title": "Gila River Boat Put-In (BLM)",
+      "url": "https://www.blm.gov/visit/gila-river-boat-put-in"
+     },
+     {
+      "title": "Gila River - Safford (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/spots/967/gila-river.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Gila Box Riparian National Conservation Area, managed from the BLM Safford office. Water levels, parking and conditions are handled through the BLM. Floating and fishing are both allowed.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ],
+   "notes": [
+    "BLM says the Gila River Boat Put-In gives access to the Gila in the Gila Box Riparian National Conservation Area, for floating, water play and fishing.",
+    "BLM says favorable snowpack, plus water from the San Francisco River and Bonita Creek, feeds the river.",
+    "BLM says a limited number of permits are issued for commercial river guides through the Gila Box, and groups often plan multi-day trips with riverbank camping.",
+    "BLM says to call the Safford Field Office at 928-348-4400 for water levels, parking and river conditions.",
+    "A New Mexico Game and Fish report from January 2026 lists Gila River streamflow near Gila at 65.3 cfs and says Gila trout fishing was slow to fair with flies in the West Fork.",
+    "The Gila River recreation area near Winkelman and Globe offers fishing and small-craft floating, and a valid AZGFD license is required, per BLM.",
+    "Sportfishing Report lists bullhead and yellow bullhead as the species for the Safford-area Gila.",
+    "The Gila is on private and Arizona State Trust land in places, so BLM says to get a State Land Department permit for trust-land use."
+   ],
+   "sources": [
+    {
+     "title": "Gila River Boat Put-In (BLM)",
+     "url": "https://www.blm.gov/visit/gila-river-boat-put-in"
+    },
+    {
+     "title": "Gila River Recreation Area (BLM)",
+     "url": "https://www.blm.gov/visit/gila-river"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Baitfish and crayfish",
+     "category": "fish",
+     "detail": "Not sourced for this reach. Treat as general warm-river forage.",
+     "basis": "general"
+    },
+    {
+     "item": "Caddisflies and terrestrials",
+     "category": "insect",
+     "detail": "Fly reports from New Mexico's Gila trout water mention flies, but Arizona hatch data is not sourced.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "lake-havasu-shore-az",
+   "name": "Lake Havasu, Arizona shore (London Bridge, Mesquite Bay, Site Six)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": 34.4839,
+   "lon": -114.3225,
+   "coords_note": "Elevation not sourced. Coordinates are an approximate London Bridge area point; check a map for specific piers.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Striped bass",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Redear and bluegill sunfish",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Channel and flathead catfish",
+     "stocking": "Wild"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "AZGFD does not list a trout or bass stocking program for Lake Havasu in the sources found. The park's fish-habitat work (the fish condos) supports the food chain.",
+    "schedule": "None.",
+    "recent_plants": [],
+    "wild_fish": "Largemouth, smallmouth and striped bass, redear sunfish, channel and flathead catfish, crappie per Lake Havasu sources.",
+    "sources": [
+     {
+      "title": "World Class Fishing at Lake Havasu (AZ State Parks)",
+      "url": "https://azstateparks.com/lake-havasu/on-the-water/fishing"
+     },
+     {
+      "title": "Havasu NWR fishing (FWS)",
+      "url": "https://www.fws.gov/locations/havasu-national-wildlife-refuge/fishing"
+     },
+     {
+      "title": "Lake Havasu fishing (Go Lake Havasu)",
+      "url": "https://golakehavasu.com/activities/fishing/"
+     }
+    ]
+   },
+   "fishing_season_note": "Shore fishing is best at Mesquite Bay (two piers on London Bridge Road), Site Six on the island, and the free public docks named in local guides. Some coves are closed, so follow posted signs.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZ State Parks says Lake Havasu produces some giant striped bass and offers excellent striper fishing throughout the year.",
+    "AZ State Parks says striped bass are most active in the morning and evening, and October and November can offer good daytime fishing.",
+    "FWS says Mesquite Bay is inside Lake Havasu City limits on London Bridge Road and has two fishing piers and underwater fish habitat.",
+    "Go Lake Havasu says some coves are closed to fishing, and anglers should watch for posted signs on the water.",
+    "Go Lake Havasu says the lake offers smallmouth, largemouth and striped bass fishing, and calls it a top redear sunfish spot.",
+    "Local shore reports from Western Outdoor News in 2024 say redear slabs over 3 pounds were reported weekly, and shore anglers caught largemouth near London Bridge.",
+    "HookedAZ says shore camping is limited, and Site Six on the north end of the island is a common shore spot.",
+    "Lake Havasu is about 45 miles long with an average depth of about 30 feet, per Monster Bass."
+   ],
+   "sources": [
+    {
+     "title": "World Class Fishing at Lake Havasu (AZ State Parks)",
+     "url": "https://azstateparks.com/lake-havasu/on-the-water/fishing"
+    },
+    {
+     "title": "Havasu NWR fishing (FWS)",
+     "url": "https://www.fws.gov/locations/havasu-national-wildlife-refuge/fishing"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Crawfish",
+     "category": "other",
+     "detail": "Smallmouth on rock piles and points are associated with crawfish, per Rick Seaman's guide.",
+     "basis": "sourced",
+     "source": "aa-fishing.com Lake Havasu guide"
+    },
+    {
+     "item": "Baitfish (shad and minnows)",
+     "category": "fish",
+     "detail": "Live shad is a productive bait for stripers, per Fishing Booker reports on the lake's south end.",
+     "basis": "sourced",
+     "source": "Fishing Booker AZ reports"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "General lake forage, not sourced for Havasu.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "kennedy-lake-tucson-az",
+   "name": "Kennedy Lake (John F. Kennedy Park, Tucson, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 32.1281,
+   "lon": -110.9826,
+   "coords_note": "Elevation not sourced. Coordinates are an approximate Kennedy Park point; check the park map.",
+   "area_acres": 10,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked periodically in winter"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked several times in spring and fall"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD's Urban Fishing Program stocks Kennedy Lake, one of the Tucson-area lakes. In spring it gets channel catfish, and in winter rainbow trout.",
+    "schedule": "Stocked every two weeks from September to June per the Game and Fish Department. Catfish in spring and fall, trout periodically in winter.",
+    "recent_plants": [],
+    "wild_fish": "Not sourced.",
+    "sources": [
+     {
+      "title": "Kennedy Lake and Tucson urban waters (Tucson.com)",
+      "url": "https://tucson.com/news/local/foothills/article_349ad39e-022d-503c-bd92-78420b7bba90.html"
+     },
+     {
+      "title": "Kennedy Lake (Best Fishing in America)",
+      "url": "https://www.bestfishinginamerica.com/?p=19688"
+     },
+     {
+      "title": "Community Fishing Program (AZGFD)",
+      "url": "https://www.azgfd.com/?p=3091"
+     }
+    ]
+   },
+   "fishing_season_note": "Tucson urban lake in John F. Kennedy Park. Best right after each restock, per the Arizona Daily Star. Trout are typically stocked from December into winter, and stocking pauses in summer heat.",
+   "insect_ids": [
+    "chironomid",
+    "callibaetis"
+   ],
+   "notes": [
+    "Best Fishing in America says Kennedy Lake is a 10-acre lake in Tucson's John F. Kennedy Park stocked with trout and catfish.",
+    "Tucson.com says Kennedy Lake is one of three Tucson-area lakes and one in Sahuarita in AZGFD's Urban Fishing Program, which started in 1985.",
+    "Tucson.com says the best days to fish are the first five to seven days after a lake is restocked.",
+    "AZGFD says the Tucson lakes are stocked on a range of days from Monday to Saturday in the week listed, but not on fixed days.",
+    "Best Fishing in America says trout are often stocked from December into winter, and that the lake is typically stocked with catfish several times in spring and fall.",
+    "Best Fishing in America says the stocking of trout typically pauses for peak summer heat, but holdover trout can still be fished.",
+    "Best Fishing in America says the lake has modest fees for day and overnight use."
+   ],
+   "sources": [
+    {
+     "title": "Kennedy Lake (Tucson.com)",
+     "url": "https://tucson.com/news/local/foothills/article_349ad39e-022d-503c-bd92-78420b7bba90.html"
+    },
+    {
+     "title": "Kennedy Lake (Best Fishing in America)",
+     "url": "https://www.bestfishinginamerica.com/?p=19688"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and callibaetis",
+     "category": "insect",
+     "detail": "General lake forage; Kennedy-specific hatch data is not sourced.",
+     "basis": "general",
+     "insect_id": "callibaetis"
+    }
+   ],
+   "fish_months": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "best_months": [
+    12,
+    1,
+    2,
+    3,
+    4,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "fortuna-lake-yuma-az",
+   "name": "Fortuna Lake (Fortuna Hills, Yuma, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 32.8717,
+   "lon": -114.3286,
+   "coords_note": "Elevation not sourced. Coordinates are approximate for the Fortuna Hills area; check the BLM Yuma Field Office map.",
+   "area_acres": 9,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by AZGFD, November through January"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked in October and in spring and fall"
+    },
+    {
+     "name": "Largemouth bass, bluegill",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD stocks Fortuna Lake in its Community Fishing Program. Best Fishing in America says catfish go in during October, and trout from November through January.",
+    "schedule": "Catfish typically in spring and fall, with October catfish and November-January trout as one recent schedule. Trout are on the CFP stocking calendar in December.",
+    "recent_plants": [
+     {
+      "date": "November 2025",
+      "species": "Rainbow trout (Yuma area stocking on the AZGFD calendar)"
+     }
+    ],
+    "wild_fish": "Largemouth bass present per Yuma-area Fishbrain and regulation listings.",
+    "sources": [
+     {
+      "title": "Yuma Community Fishing (AZGFD)",
+      "url": "https://www.azgfd.com/?p=3204"
+     },
+     {
+      "title": "Fortuna Lake (Best Fishing in America)",
+      "url": "https://www.bestfishinginamerica.com/?p=24455"
+     },
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     }
+    ]
+   },
+   "fishing_season_note": "Nine-acre Community Fishing lake about 12 miles northwest of Yuma, in the Fortuna Hills area along the Gila River. BLM Yuma Field Office manages the site (928-317-3200).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD's Yuma Community Fishing page lists Fortuna Lake, and says more than 4 million Arizonans live within a 20-minute drive of a stocked Community Fishing water.",
+    "Best Fishing in America calls Fortuna a 9-acre lake about 12 miles northwest of Yuma, along the Gila River in the Fortuna Hills area.",
+    "Best Fishing in America says catfish are likely to be stocked a few times a year, typically in spring and fall.",
+    "Best Fishing in America says Fortuna is stocked with catfish in October and then with trout from November through January.",
+    "AZGFD's December 2025 stocking bulletin lists Fortuna Pond among Yuma-area Community Fishing waters getting rainbow trout.",
+    "AZGFD's Yuma page lists perimeter parking and large shade trees among park amenities.",
+    "Fortuna Pond has a campground nearby that Roadtrippers calls popular with locals, and the pond is stocked with a variety of fish by AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Yuma Community Fishing (AZGFD)",
+     "url": "https://www.azgfd.com/?p=3204"
+    },
+    {
+     "title": "Fortuna Lake (Best Fishing in America)",
+     "url": "https://www.bestfishinginamerica.com/?p=24455"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "General pond forage; not sourced for Fortuna.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    10
    ]
   }
  ]
