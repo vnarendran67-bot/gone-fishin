@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 20,
+ "version": 21,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -12307,6 +12307,1066 @@ window.HATCH_DB = {
     6,
     9,
     10
+   ]
+  },
+  {
+   "id": "goldwater-lake-az",
+   "name": "Goldwater Lake (Prescott, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 5400,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": 15,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked frequently spring through fall"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Present; anglers caught them in late 2025"
+    },
+    {
+     "name": "Brook trout",
+     "stocking": "Listed present"
+    },
+    {
+     "name": "Largemouth bass, channel catfish, black crappie, green sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Heavily stocked trout water with Gila trout. Lower lake is fly and lure only.",
+    "schedule": "Stocked frequently spring through fall. Mingus and Upper Goldwater stocked week of 5-11-2026 and later, per AZGFD.",
+    "recent_plants": [
+     {
+      "date": "Spring through fall 2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Gila trout present.",
+    "sources": [
+     {
+      "title": "Goldwater Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/1524/goldwater-lake.php"
+     },
+     {
+      "title": "Goldwater Lake Fish Report, 11-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/233369/the-trout-bite-has-definitely-picked-up-at-upper-goldwater-lake.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Stocked frequently spring through fall. Lower Goldwater is artificial fly and lure only. Trout bite picks up in cool fall weather.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Goldwater Lake is a 15-acre high-country reservoir minutes from downtown Prescott, managed by the City of Prescott with AZGFD, per Sportfishing Report.",
+    "Sportfishing Report says Goldwater is stocked frequently from spring through fall and gives dependable trout fishing. Its inflow and outflow is Bannon Creek.",
+    "The lake is split into Upper and Lower Goldwater. Lower Goldwater is artificial fly and lure only, per AZGFD.",
+    "In late 2025 AZGFD said the trout bite had picked up at Upper Goldwater, and anglers caught rainbows and Gila trout there.",
+    "AZGFD found the trout still plentiful in April and May 2026, and reported the trout bite still going strong in late May 2026.",
+    "Anglers did well with PowerBait, Power Eggs and small inline spinners. Panther Martins and Mepps worked on the lower lake, per AZGFD.",
+    "AZGFD listed Goldwater as a North Central Arizona stocking point in late 2025."
+   ],
+   "sources": [
+    {
+     "title": "Goldwater Lake (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/1524/goldwater-lake.php"
+    },
+    {
+     "title": "Goldwater Lake Fish Report, 11-30-2025 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/233369/the-trout-bite-has-definitely-picked-up-at-upper-goldwater-lake.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "PowerBait and Power Eggs",
+     "category": "other",
+     "detail": "Anglers do well with these for trout, per AZGFD in 2025.",
+     "basis": "sourced",
+     "source": {
+      "title": "Goldwater Lake Fish Report, 10-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/232505/the-trout-bite-should-be-picking-up-soon.php"
+     }
+    },
+    {
+     "item": "Inline spinners (Panther Martin, Mepps)",
+     "category": "other",
+     "detail": "Lower Goldwater trout bite on these in cooler weather, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "Goldwater Lake Fish Report, 10-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/232505/the-trout-bite-should-be-picking-up-soon.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Goldwater.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "watson-lake-az",
+   "name": "Watson Lake (Prescott, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 5100,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked; not stocked in March 2026"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Last stocked week of 3-16-2026"
+    },
+    {
+     "name": "Brown, brook and tiger trout",
+     "stocking": "Listed present"
+    },
+    {
+     "name": "Largemouth bass, channel catfish, black crappie, common carp, green sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with rainbows and Gila trout. Warmwater fishery.",
+    "schedule": "Gila trout stocked week of 3-16-2026. Rainbows stocked when water allows.",
+    "recent_plants": [
+     {
+      "date": "Week of 3-16-2026",
+      "species": "Gila trout"
+     }
+    ],
+    "wild_fish": "Brown, brook and tiger trout listed present.",
+    "sources": [
+     {
+      "title": "Watson Lake Fish Report, 4-23-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/237439/trout-fishing-has-been-good-at-watson.php"
+     },
+     {
+      "title": "Watson (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/watson/11057/"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout bite best in cold weather. Bass and catfish fish well in warm months. Check trout stocking before going.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Watson Lake is one of two reservoirs in the Granite Dells outside Prescott, formed in the early 1900s when a dam was built on Granite Creek, per Sportsman's Warehouse.",
+    "AZGFD said trout fishing was good at Watson in April 2026, though rainbows had not been stocked in March, so it may not have been as good as usual.",
+    "Gila trout were last stocked at Watson the week of March 16, 2026, per AZGFD.",
+    "AZGFD said in May 2026 that anglers were catching a variety of fish at Watson, and that channel catfish and largemouth were active.",
+    "Sportsman's Warehouse suggested top-water baits or weedless frogs for bass, nightcrawlers when other baits fail, and blood bait at night for catfish.",
+    "AZGFD said in late 2025 that the colder weather would bring trout bites back on Watson."
+   ],
+   "sources": [
+    {
+     "title": "Watson Lake Fish Report, 4-23-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/237439/trout-fishing-has-been-good-at-watson.php"
+    },
+    {
+     "title": "Watson (Sportsman's Warehouse)",
+     "url": "https://fishingreports.sportsmans.com/fishing-report/watson/11057/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Nightcrawlers",
+     "category": "other",
+     "detail": "Recommended when other baits fail, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Watson (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/watson/11057/"
+     }
+    },
+    {
+     "item": "Blood bait",
+     "category": "other",
+     "detail": "Recommended for catfish at night, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Watson (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/watson/11057/"
+     }
+    },
+    {
+     "item": "Weedless frogs and top-water baits",
+     "category": "other",
+     "detail": "Recommended for bass, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Watson (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/watson/11057/"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Watson.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "mingus-lake-az",
+   "name": "Mingus Lake (Clarkdale, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6900,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked periodically; last week of 5-11-2026"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Periodically stocked with rainbows. Good trout catches in 2026.",
+    "schedule": "Week of 5-11-2026, plus periodic stockings per USFS.",
+    "recent_plants": [
+     {
+      "date": "Week of 5-11-2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Mingus Lake Fish Report, 5-27-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/238330/rainbow-last-stocked-may-11!.php"
+     },
+     {
+      "title": "Mingus Lake Day Use (Prescott National Forest)",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/mingus-lake-day-use-fishing-site"
+     }
+    ]
+   },
+   "fishing_season_note": "Day-use fishing site on Mingus Mountain. Stocked periodically with rainbows. Trout bite in spring and fall.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Mingus Lake is a small lake in the pines of Mingus Mountain near Clarkdale. The Forest Service says it is periodically stocked with rainbows.",
+    "AZGFD said in 2026 that anglers were catching a decent number of trout there.",
+    "AZGFD stocked rainbows the week of May 11, 2026, and the trout were last planted then, per AZGFD.",
+    "AZGFD suggested PowerBait, inline spinners and small soft plastic tubes for trout at Mingus in late May 2026.",
+    "AZGFD said there were no special regulations at Mingus in 2026.",
+    "Trout bite was strong after cooler weather in late 2025, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Mingus Lake Fish Report, 5-27-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/238330/rainbow-last-stocked-may-11!.php"
+    },
+    {
+     "title": "Mingus Lake Day Use (Prescott National Forest)",
+     "url": "https://www.fs.usda.gov/r03/prescott/recreation/mingus-lake-day-use-fishing-site"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "PowerBait, inline spinners and small soft plastic tubes",
+     "category": "other",
+     "detail": "Suggested by AZGFD for trout in May 2026.",
+     "basis": "sourced",
+     "source": {
+      "title": "Mingus Lake Fish Report, 5-27-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/238330/rainbow-last-stocked-may-11!.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Mingus.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "yavapai-lakes-az",
+   "name": "Yavapai Lakes (Prescott, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 5400,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in Community Fishing Program fall 2025"
+    },
+    {
+     "name": "Largemouth bass, channel catfish, bluegill",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Trout stocked in fall 2025. Poor water quality reported in 2026.",
+    "schedule": "Stocked week of 11-17-2025. Other stockings not in sources.",
+    "recent_plants": [
+     {
+      "date": "Week of 11-17-2025",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Warmwater fish present.",
+    "sources": [
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     },
+     {
+      "title": "Yavapai Lake Fish Report, 4-23-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/237440/yavapi-lake-report.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing Program water. Trout stocked in fall. Water quality issues in 2026.",
+   "insect_ids": [],
+   "notes": [
+    "AZGFD lists the Yavapai Lakes as a Community Fishing Program water in the Prescott area.",
+    "AZGFD stocked rainbows in the Yavapai Lakes during the week of November 17 to 21, 2025.",
+    "The Yavapai Lakes have been suffering from poor water quality, per AZGFD in 2026.",
+    "Anglers caught largemouth bass, channel catfish and bluegill there in April 2026, per AZGFD.",
+    "Yavapai's trout catches were reported in April and May 2026, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    },
+    {
+     "title": "Yavapai Lake Fish Report, 4-23-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/237440/yavapi-lake-report.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Worms and PowerBait",
+     "category": "other",
+     "detail": "Common trout baits, per the Community Fishing Program. Not documented specifically for Yavapai.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "lake-pleasant-az",
+   "name": "Lake Pleasant (Peoria, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 1700,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": 10000,
+   "species": [
+    {
+     "name": "Striped bass",
+     "stocking": "Present; big stripers caught"
+    },
+    {
+     "name": "Largemouth bass, white bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel and flathead catfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Black and white crappie, sunfish, common carp, tilapia",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "No trout stocking. Striped bass and bass fishery.",
+    "schedule": "No trout schedule.",
+    "recent_plants": [],
+    "wild_fish": "Striped bass, largemouth, white bass.",
+    "sources": [
+     {
+      "title": "Lake Pleasant (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/lake-pleasant/30160/"
+     },
+     {
+      "title": "Arizona State Fish Records (AZGFD)",
+      "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+     }
+    ]
+   },
+   "fishing_season_note": "Striped bass in summer on shad and anchovy. Bass fishing good in spring and fall. Flathead catfish year-round.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Lake Pleasant is in the Northwest Valley, northwest of Phoenix. It is listed among the best lakes for fishing near metro Phoenix by AZGFD, per Yahoo News.",
+    "Anglers fish for largemouth, striped and white bass on Lake Pleasant, plus channel and flathead catfish, per Yahoo News.",
+    "The Arizona state record striped bass of 29 lb 13.76 oz came from Lake Pleasant in July 2010, per the state records list.",
+    "Lake Pleasant is a great flathead fishery. Live sunfish and small carp work best to catch flatheads, per Yahoo News.",
+    "Striped bass fed on shad and perch jerk baits, 8-inch spoons and anchovies in July 2025, per Sportsman's Warehouse.",
+    "Bass were chasing baitfish and poppers in August 2025, and topwater and crankbaits worked, per Sportsman's Warehouse.",
+    "AZGFD reported a 7-pound striper from Lake Pleasant in May 2026."
+   ],
+   "sources": [
+    {
+     "title": "Lake Pleasant (Sportsman's Warehouse)",
+     "url": "https://fishingreports.sportsmans.com/fishing-report/lake-pleasant/30160/"
+    },
+    {
+     "title": "Arizona State Fish Records (AZGFD)",
+     "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Shad",
+     "category": "baitfish",
+     "detail": "Striped bass feed on shad. Shad-pattern crankbaits and jerk baits worked in August 2025.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Pleasant (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/lake-pleasant/30160/"
+     }
+    },
+    {
+     "item": "Anchovies",
+     "category": "baitfish",
+     "detail": "Frozen anchovies worked for stripers in August 2025, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Pleasant (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/pleasant/59/"
+     }
+    },
+    {
+     "item": "Sunfish and small carp",
+     "category": "baitfish",
+     "detail": "Best live baits for flatheads, per Yahoo News.",
+     "basis": "sourced",
+     "source": {
+      "title": "5 best lakes for fishing near metro Phoenix (Yahoo News)",
+      "url": "https://www.yahoo.com/news/5-best-lakes-fishing-near-120125870.html"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Lake Pleasant.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "roosevelt-lake-az",
+   "name": "Roosevelt Lake (Tonto Basin, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 2100,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth and smallmouth bass",
+     "stocking": "Present; largemouth bass caught to 16.57 lb in a tournament"
+    },
+    {
+     "name": "Yellow bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Black crappie",
+     "stocking": "Stocked about 20,000 on March 11, 2026"
+    },
+    {
+     "name": "Flathead catfish",
+     "stocking": "Present; state record flathead from Roosevelt"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Bass and crappie fishery. Black crappie stocked in spring 2026.",
+    "schedule": "Black crappie stocked March 11, 2026.",
+    "recent_plants": [
+     {
+      "date": "3-11-2026",
+      "species": "Black crappie"
+     }
+    ],
+    "wild_fish": "Bass, yellow bass, flathead catfish.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     },
+     {
+      "title": "Arizona State Fish Records (AZGFD)",
+      "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+     }
+    ]
+   },
+   "fishing_season_note": "Bass fishery most active in spring. Yellow and smallmouth bass present. Black crappie stocked in spring.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD stocked roughly 20,000 black crappie in Roosevelt and Bartlett lakes on March 11, 2026. It was the sixth year in a row for those lakes.",
+    "Largemouth bass caught and released at 16.57 pounds came from Roosevelt during a local tournament, per AZGFD.",
+    "The state record flathead catfish, 53 inches, came from Roosevelt in 2006, per the state records list.",
+    "Smallmouth bass are present at Roosevelt, along with yellow bass, per AZGFD's bass challenge notes.",
+    "AZGFD said Roosevelt had been producing great numbers of fish in late 2025.",
+    "Anglers reported good fishing at Roosevelt in December 2024 with largemouth on crankbaits and dropshot rigs.",
+    "A 2026 windy.app profile calls bass most active in spring, and says the lake is a productive desert fishery."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    },
+    {
+     "title": "Arizona State Fish Records (AZGFD)",
+     "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Yellow bass feed",
+     "category": "baitfish",
+     "detail": "Not documented for Roosevelt. Yellow bass are common there.",
+     "basis": "general"
+    },
+    {
+     "item": "Shad",
+     "category": "baitfish",
+     "detail": "Shad are the typical forage for bass in Arizona reservoirs. Not documented for Roosevelt.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Roosevelt.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "bartlett-lake-az",
+   "name": "Bartlett Lake (Carefree, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 1800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Black crappie",
+     "stocking": "Stocked about 20,000 on March 11, 2026"
+    },
+    {
+     "name": "Channel and flathead catfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Sunfish, common carp",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Bass and crappie fishery. Black crappie stocked in spring 2026.",
+    "schedule": "Black crappie stocked March 11, 2026.",
+    "recent_plants": [
+     {
+      "date": "3-11-2026",
+      "species": "Black crappie"
+     }
+    ],
+    "wild_fish": "Bass, catfish.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     },
+     {
+      "title": "5 best lakes for fishing near metro Phoenix (Yahoo News)",
+      "url": "https://www.yahoo.com/news/5-best-lakes-fishing-near-120125870.html"
+     }
+    ]
+   },
+   "fishing_season_note": "Night fishing with baitfish-attracting lights has worked. Crankbait and dropshot bites in winter. Water level low in 2025.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Bartlett Lake is about 48 miles northeast of downtown Phoenix and 17 miles northeast of Carefree, per Yahoo News.",
+    "Anglers have had success at night using baitfish-attracting lights, per Yahoo News.",
+    "AZGFD stocked about 20,000 black crappie in Bartlett and Roosevelt on March 11, 2026.",
+    "Gary Senft has recent videos of Bartlett fishing, per AZGFD in May 2026.",
+    "Crankbaits were good in December 2024, and dropshot and Texas rigs also produced, per AZGFD.",
+    "Bass were being caught in the highest numbers in September 2025, though catfish were still around, per Sportsman's Warehouse.",
+    "The water level was on the low side in September 2025, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    },
+    {
+     "title": "5 best lakes for fishing near metro Phoenix (Yahoo News)",
+     "url": "https://www.yahoo.com/news/5-best-lakes-fishing-near-120125870.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Baitfish at night",
+     "category": "baitfish",
+     "detail": "Lights draw baitfish, and bass follow. Not named in sources.",
+     "basis": "sourced",
+     "source": {
+      "title": "5 best lakes for fishing near metro Phoenix (Yahoo News)",
+      "url": "https://www.yahoo.com/news/5-best-lakes-fishing-near-120125870.html"
+     }
+    },
+    {
+     "item": "Crankbaits, dropshot and Texas rigs",
+     "category": "other",
+     "detail": "Good in winter, per AZGFD, December 2024.",
+     "basis": "sourced",
+     "source": {
+      "title": "Nice catch at Roosevelt Lake (AZGFD, 12-30-2024)",
+      "url": "https://sportfishingreport.com/fish_reports/220306/nice-catch-at-roosevelt-lake.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Bartlett.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "patagonia-lake-az",
+   "name": "Patagonia Lake (Patagonia, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 3800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": 265,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present; state advisory against eating"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked seasonally, put-and-take, winter and early spring"
+    },
+    {
+     "name": "Channel and flathead catfish",
+     "stocking": "Present; flathead destination"
+    },
+    {
+     "name": "Crappie, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Put-and-take rainbow trout in winter and spring. Bass and catfish all year.",
+    "schedule": "Rainbows stocked week of 11-17-2025 and seasonally thereafter.",
+    "recent_plants": [
+     {
+      "date": "Week of 11-17-2025",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Largemouth bass, flathead catfish, crappie.",
+    "sources": [
+     {
+      "title": "Patagonia Lake (ADEQ advisory, Aug 2026)",
+      "url": "https://static.azdeq.gov/wqd/fish_advisory/patagonia_lake.pdf"
+     },
+     {
+      "title": "On the Water (Arizona State Parks)",
+      "url": "https://azstateparks.com/patagonia-lake/on-the-water"
+     }
+    ]
+   },
+   "fishing_season_note": "Largemouth bass best in spring and summer. Rainbows stocked in winter. Do not eat largemouth from the lake, per the 2026 state advisory.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "ADEQ issued a Do Not Consume advisory for largemouth bass from Patagonia Lake on August 20, 2026, citing elevated mercury in fish tissue.",
+    "A separate ADEQ green-light advisory covers green sunfish from Patagonia Lake, per the same August 2026 notice.",
+    "Patagonia Lake is a 265-acre southern Arizona lake holding largemouth, channel and flathead catfish, crappie and sunfish, per Arizona State Parks.",
+    "State Parks says spring and summer are the best months for largemouth bass.",
+    "Rainbow trout are stocked seasonally and managed as a put-and-take fishery. AZGFD stocked rainbows there in November 2025.",
+    "A black crappie of 17 inches was caught there in January 2026, per the state records list.",
+    "Patagonia is one of Arizona's go-to flathead catfish destinations, per State Parks."
+   ],
+   "sources": [
+    {
+     "title": "Patagonia Lake (ADEQ advisory, Aug 2026)",
+     "url": "https://static.azdeq.gov/wqd/fish_advisory/patagonia_lake.pdf"
+    },
+    {
+     "title": "On the Water (Arizona State Parks)",
+     "url": "https://azstateparks.com/patagonia-lake/on-the-water"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Large swimbaits that look like trout",
+     "category": "baitfish",
+     "detail": "State Parks says these work well for big bass in winter.",
+     "basis": "sourced",
+     "source": {
+      "title": "On the Water (Arizona State Parks)",
+      "url": "https://azstateparks.com/patagonia-lake/on-the-water"
+     }
+    },
+    {
+     "item": "Shad",
+     "category": "baitfish",
+     "detail": "Not documented for Patagonia.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Patagonia.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "parker-canyon-lake-az",
+   "name": "Parker Canyon Lake (Sierra Vista, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 5400,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Sportfishing Report. Coordinates not set.",
+   "area_acres": 130,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in late 2025"
+    },
+    {
+     "name": "Channel catfish, largemouth bass, green sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Winter and spring trout water. Year-round warmwater fishery.",
+    "schedule": "Rainbows stocked week of 11-17-2025 per AZGFD.",
+    "recent_plants": [
+     {
+      "date": "Week of 11-17-2025",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Largemouth bass and channel catfish.",
+    "sources": [
+     {
+      "title": "Parker Canyon Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/1514/parker-canyon-lake.php"
+     },
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout best November through April. Year-round fishing. Boats up to 10 hp only.",
+   "insect_ids": [],
+   "notes": [
+    "Parker Canyon Lake is a 130-acre reservoir in the Canelo Hills of southeastern Arizona at 5,400 feet, per Sportfishing Report.",
+    "Trout fishing is best from November through April, per Sportfishing Report.",
+    "Boats up to 10 horsepower are allowed, and the calm water suits kayaks and canoes, per Sportfishing Report.",
+    "AZGFD stocked rainbows at Parker Canyon in late 2025, per AZGFD.",
+    "Sportsman's Warehouse said top-water frogs, spinnerbaits and Senkos around brush worked for bass, and PowerBait and inline spinners for trout, in August 2025."
+   ],
+   "sources": [
+    {
+     "title": "Parker Canyon Lake (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/1514/parker-canyon-lake.php"
+    },
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Top-water frogs, spinnerbaits and Senkos",
+     "category": "other",
+     "detail": "Recommended for bass around brush, per Sportsman's Warehouse, August 2025.",
+     "basis": "sourced",
+     "source": {
+      "title": "Urban Lakes (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/urban-lakes-/32942/"
+     }
+    },
+    {
+     "item": "PowerBait and inline spinners",
+     "category": "other",
+     "detail": "Recommended for trout, per Sportsman's Warehouse, August 2025.",
+     "basis": "sourced",
+     "source": {
+      "title": "Urban Lakes (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/urban-lakes-/32942/"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Parker Canyon.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    9,
+    10
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
    ]
   }
  ]
