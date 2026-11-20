@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 7,
+ "version": 8,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -3818,6 +3818,457 @@ window.HATCH_DB = {
     "New Hampshire"
    ],
    "date_note": "Only one local source. Peak month is not stated."
+  },
+  {
+   "id": "va-spring-mayflies",
+   "name": "Early spring mayflies (Virginia mountain streams)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4
+   ],
+   "peak_months": [
+    4
+   ],
+   "time_of_day": "Mid-afternoon to dusk",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Mr. Rapidan Parachute, 14 (Murray's)",
+     "sizes": "14"
+    }
+   ],
+   "notes": "Mid-afternoon into dusk, many mayflies hatch into duns, and the hatch continues to mid-April. The author says April is the best month for Virginia's mountain streams.",
+   "sources": [
+    {
+     "title": "Mountain trout fishing (Murray's Fly Shop)",
+     "url": "https://www.murraysflyshop.com/pages/mountain-trout-fishing"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Virginia"
+   ],
+   "date_note": "The shop does not name the species in this excerpt. Verify locally."
+  },
+  {
+   "id": "va-stenonema",
+   "name": "Stenonema (Virginia mountain streams)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5
+   ],
+   "peak_months": [
+    4,
+    5
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Brown Drake, 14 (Murray's)",
+     "sizes": "14"
+    }
+   ],
+   "notes": "The Stenonema fuscum mayflies come after the spring hatches, and the hatch can last from late April until late May.",
+   "sources": [
+    {
+     "title": "Mountain trout fishing (Murray's Fly Shop)",
+     "url": "https://www.murraysflyshop.com/pages/mountain-trout-fishing"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Virginia"
+   ]
+  },
+  {
+   "id": "va-terrestrials",
+   "name": "Terrestrials (Virginia summer streams)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    7,
+    8
+   ],
+   "time_of_day": "Midday along grassy banks and in shade",
+   "water_temp_f": null,
+   "stages": "Adult grasshoppers, beetles, ants, inchworms",
+   "flies": [
+    {
+     "pattern": "Hopper, ant, or beetle, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Dry-fly fishing can be excellent in summer, provided you find cold water. Terrestrial insects, including grasshoppers, beetles, ants, and inchworms, reach peak activity.",
+   "sources": [
+    {
+     "title": "Summer trout fishing in the shadow of Mount Rogers (Virginia DWR)",
+     "url": "https://dwr.virginia.gov/blog/summer-trout-fishing-in-the-shadow-of-mount-rogers/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Virginia"
+   ]
+  },
+  {
+   "id": "nc-midge",
+   "name": "Midges (North Carolina)",
+   "order": "Diptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3
+   ],
+   "peak_months": [],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults",
+   "flies": [
+    {
+     "pattern": "Gray and Olive Midge, Griffith's Gnat, Renegade",
+     "sizes": "18-24"
+    }
+   ],
+   "notes": "The North Carolina chart lists midges from January through March, most active in the afternoon.",
+   "sources": [
+    {
+     "title": "North Carolina hatch chart (NC Wildlife Resources Commission)",
+     "url": "https://ncwildlife.org/media/3078/download"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "North Carolina"
+   ],
+   "date_note": "Peak months are not stated in the source."
+  },
+  {
+   "id": "nc-bwo",
+   "name": "Blue-winged olives (North Carolina)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ],
+   "peak_months": [
+    11,
+    12,
+    2
+   ],
+   "time_of_day": "Mid-day on warmer days",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "BWO, 16-20",
+     "sizes": "16-20"
+    }
+   ],
+   "notes": "Fall and winter are great for blue-winged olives and midges, especially on warmer days. The Smokies' blue-winged olive is one of the most consistent hatches in the region.",
+   "sources": [
+    {
+     "title": "North Carolina fly fishing guide (Diy Fly Fishing)",
+     "url": "https://diyflyfishing.com/north-carolina/"
+    },
+    {
+     "title": "A trout fly for every season (Carolina Sportsman)",
+     "url": "https://www.carolinasportsman.com/fishing/a-trout-fly-for-every-season/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "North Carolina"
+   ],
+   "date_note": "Peak months are inferred from the fall and winter note."
+  },
+  {
+   "id": "nc-march-brown",
+   "name": "March browns (North Carolina)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4
+   ],
+   "peak_months": [
+    3
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "March Brown, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "March browns and Hendricksons begin hatching toward the end of the winter months in the mountains.",
+   "sources": [
+    {
+     "title": "A trout fly for every season (Carolina Sportsman)",
+     "url": "https://www.carolinasportsman.com/fishing/a-trout-fly-for-every-season/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "North Carolina"
+   ]
+  },
+  {
+   "id": "nc-hendrickson",
+   "name": "Hendricksons (North Carolina)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4
+   ],
+   "peak_months": [
+    4
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Dun, nymph",
+   "flies": [
+    {
+     "pattern": "Hendrickson, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Hendricksons begin hatching toward the end of March. The Smokies' chart shows April as a major hatch month for matching the hatch.",
+   "sources": [
+    {
+     "title": "A trout fly for every season (Carolina Sportsman)",
+     "url": "https://www.carolinasportsman.com/fishing/a-trout-fly-for-every-season/"
+    },
+    {
+     "title": "North Carolina hatch chart (Norrik)",
+     "url": "https://norrik.com/?p=8918"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "North Carolina"
+   ],
+   "date_note": "The peak month is inferred from the April note."
+  },
+  {
+   "id": "nc-terrestrials",
+   "name": "Terrestrials and attractors (North Carolina)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    7,
+    8
+   ],
+   "time_of_day": "All day",
+   "water_temp_f": null,
+   "stages": "Adult",
+   "flies": [
+    {
+     "pattern": "Black Ant, Inchworm, Beetle, Cricket, Royal Wulff",
+     "sizes": "12-16, verify"
+    }
+   ],
+   "notes": "Terrestrial and attractor patterns work from June through September, all day.",
+   "sources": [
+    {
+     "title": "North Carolina hatch chart (Norrik)",
+     "url": "https://norrik.com/?p=8918"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "North Carolina"
+   ]
+  },
+  {
+   "id": "ga-march-brown",
+   "name": "March browns (north Georgia)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5
+   ],
+   "peak_months": [
+    4
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "March Brown, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Around the middle of April, March browns begin to hatch on the Chattahoochee in north Georgia.",
+   "sources": [
+    {
+     "title": "Fly fishing the Chattahoochee River, Georgia (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=3782"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Georgia"
+   ]
+  },
+  {
+   "id": "ga-march-caddis",
+   "name": "March caddis (north Georgia)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3
+   ],
+   "peak_months": [
+    3
+   ],
+   "time_of_day": "Afternoon and evening",
+   "water_temp_f": null,
+   "stages": "Adult",
+   "flies": [
+    {
+     "pattern": "Gray Elk Hair Caddis, 16",
+     "sizes": "16"
+    }
+   ],
+   "notes": "A size 16 gray Elk Hair Caddis imitates the March caddis hatch on the Chattahoochee below Buford Dam.",
+   "sources": [
+    {
+     "title": "Fishing forecast, Chattahoochee River (ArcGIS StoryMap)",
+     "url": "https://storymaps.arcgis.com/stories/c1aa2a8f226f4148bed6f9506267ddba"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Georgia"
+   ]
+  },
+  {
+   "id": "ga-bwo",
+   "name": "Blue-winged olives (north Georgia)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    2,
+    3,
+    4
+   ],
+   "peak_months": [
+    3
+   ],
+   "time_of_day": "Mid-day",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "Blue wing olive or Griffith's Gnat, 18-22",
+     "sizes": "18-22"
+    }
+   ],
+   "notes": "During a hatch, a small Blue Wing Olive or Griffith's Gnat in size 18 to 22 may be the better choice on the Chattahoochee. Stream insects are ready to hatch in the next month or two after March.",
+   "sources": [
+    {
+     "title": "Fishing forecast, Chattahoochee River (ArcGIS StoryMap)",
+     "url": "https://storymaps.arcgis.com/stories/c1aa2a8f226f4148bed6f9506267ddba"
+    },
+    {
+     "title": "Fishing with Pat's rubberlegs (Coastal Angler)",
+     "url": "https://issuu.com/coastalanglermagazine/docs/atl_223b41d7091ac7/s/19489508"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Georgia"
+   ],
+   "date_note": "The peak month is inferred. Sources say March is when stream insects are ready to hatch."
+  },
+  {
+   "id": "tn-bwo",
+   "name": "Blue-winged olives (Tennessee)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    10,
+    11,
+    12
+   ],
+   "peak_months": [
+    11
+   ],
+   "time_of_day": "Mid-day",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "BWO, Baetis, 16-20",
+     "sizes": "16-20"
+    }
+   ],
+   "notes": "Blue-winged olives (Baetis) hatch from October through December in Tennessee.",
+   "sources": [
+    {
+     "title": "Tennessee fly hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/?p=35861"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Tennessee"
+   ],
+   "date_note": "The source table is cut off after the BWO row. Peak month is inferred."
   }
  ],
  "lakes": [
