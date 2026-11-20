@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 29,
+ "version": 30,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -17685,6 +17685,360 @@ window.HATCH_DB = {
     9,
     10,
     11
+   ]
+  },
+  {
+   "id": "willow-beach-colorado-az",
+   "name": "Willow Beach and Colorado River below Hoover Dam (Black Canyon, AZ)",
+   "type": "river",
+   "elevation_ft": null,
+   "lat": 35.8734,
+   "lon": -114.6522,
+   "coords_note": "Elevation not sourced. Coordinates from The Dyrt's Willow Beach Campground listing (35.8734 N, 114.6522 W).",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked from the Willow Beach National Fish Hatchery into the river below Hoover Dam and Lake Mohave"
+    },
+    {
+     "name": "Striped bass",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Largemouth and smallmouth bass",
+     "stocking": "Wild"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "The Willow Beach National Fish Hatchery stocks rainbow trout in the Lower Colorado River below Hoover Dam and in Upper Lake Mohave, per the FWS. Hatchery fish were historically released from Lake Powell to Yuma.",
+    "schedule": "Trout are released most Friday mornings, per a LiveStrong article (undated; verify with the hatchery).",
+    "recent_plants": [],
+    "wild_fish": "Striped bass, largemouth and smallmouth bass, and the native endangered razorback sucker and bonytail are grown at the hatchery for recovery.",
+    "sources": [
+     {
+      "title": "Willow Beach National Fish Hatchery (FWS)",
+      "url": "https://fws.gov/fish-hatchery/willow-beach/about-us"
+     },
+     {
+      "title": "Willow Beach (NPS)",
+      "url": "https://www.nps.gov/places/willow-beach.htm"
+     },
+     {
+      "title": "Willow Beach National Fish Hatchery (Recreation.gov)",
+      "url": "https://www.recreation.gov/camping/poi/203815"
+     },
+     {
+      "title": "Willow Beach trout release (LiveStrong)",
+      "url": "https://www.livestrong.com/article/242477-tent-camping-on-the-colorado-river/"
+     }
+    ]
+   },
+   "fishing_season_note": "Willow Beach sits in Black Canyon between Lake Mead and Lake Mohave. Fishing is allowed year-round. The river runs cooler than Lake Mead, so many anglers fish at night in summer. An NPS pier is available.",
+   "insect_ids": [
+    "chironomid",
+    "terrestrial"
+   ],
+   "notes": [
+    "NPS says fishing at Willow Beach is a year-round activity in Lake Mohave, and there is an accessible fishing pier for anglers without a boat.",
+    "NPS says fishing is allowed 24 hours a day from watercraft, shores, or the piers at Willow Beach and Katherine Landing on Lake Mohave.",
+    "The FWS says the hatchery stocks trout in the Lower Colorado below Hoover Dam and in Upper Lake Mohave.",
+    "The hatchery is 11 miles below Hoover Dam and was established in 1959, per FWS.",
+    "The hatchery also grows razorback sucker and bonytail, which are endangered Colorado River natives, for recovery work, per Recreation.gov.",
+    "LiveStrong says the water at Willow Beach runs up to 20 degrees cooler than Lake Mead, and that trout are released most Friday mornings.",
+    "NPS lists fish-cleaning stations at Willow Beach, and says anglers must carry a valid Nevada or Arizona license to fish Lake Mead or Lake Mohave.",
+    "Nevada's Interstate Boundary Water License covers reciprocal waters including the Colorado River and Lake Mohave, per NPS."
+   ],
+   "sources": [
+    {
+     "title": "Willow Beach National Fish Hatchery (FWS)",
+     "url": "https://fws.gov/fish-hatchery/willow-beach/about-us"
+    },
+    {
+     "title": "Lake Mead NRA fishing (NPS)",
+     "url": "https://nps.gov/lake/planyourvisit/fishing.htm"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Hatchery-released trout as prey",
+     "category": "fish",
+     "detail": "Stocked trout feed on the river's natural forage.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and terrestrials",
+     "category": "insect",
+     "detail": "General. Hatch data for Willow Beach is not sourced.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "topock-marsh-havasu-az",
+   "name": "Topock Marsh and Topock Bay (Havasu NWR, AZ)",
+   "type": "marsh",
+   "elevation_ft": null,
+   "lat": 34.7265,
+   "lon": -114.4869,
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Topock Bay listing (34\u00b043\u203233\u2033N 114\u00b029\u20322\u2033W); the refuge boundary and access points are on the refuge map.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Striped bass",
+     "stocking": "Wild, from the Colorado River"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Channel catfish, common carp",
+     "stocking": "Wild"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "No AZGFD stocking program was found for Topock Marsh. Fish are wild and come from the Colorado River.",
+    "schedule": "None.",
+    "recent_plants": [],
+    "wild_fish": "Largemouth bass, striped bass, smallmouth bass, channel catfish and carp per Fishbrain. Largemouth bass are the marsh's most cited catch in local reports.",
+    "sources": [
+     {
+      "title": "Havasu NWR fishing (FWS)",
+      "url": "https://www.fws.gov/refuge/havasu/visit-us/activities/fishing"
+     },
+     {
+      "title": "Topock Bay (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/WXl94FGE/topock-bay"
+     },
+     {
+      "title": "Fishing in Topock (Fishbrain)",
+      "url": "https://fishbrain.com/cities/us/az/topock"
+     }
+    ]
+   },
+   "fishing_season_note": "Reach the marsh by the Levee Road access off Barrackman Road and Arizona 95, or hike or bike to the South Dike. There is no access from Topock Marsh into the lower Colorado River channel.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "FWS says many fishermen use the Levee Road access off Barrackman Road and Arizona Highway 95, which follows the Colorado River to a turnaround near Topock Marina and the I-40 bridge.",
+    "FWS says the South Dike is about a quarter-mile hike to a water control structure that returns Topock Marsh water to the Colorado River.",
+    "FWS says there is no fee to use the boat launches, but there is no access from Topock Marsh into the lower Colorado River channel.",
+    "Fishbrain logs about 1,377 largemouth bass, 797 striped bass, and 716 smallmouth bass catches in Topock, per its city page.",
+    "Fishbrain says Topock Bay is a swamp in Mohave County that is most popular for striped bass, carp and channel catfish.",
+    "Riviera Marina reports from 2018 and 2019 mention largemouth action in Topock Marsh, and a 4-pound largemouth caught in October 2019.",
+    "Arizona fishing regulations for the Colorado River below Davis Dam set a limit of 20 striped bass 20 inches or longer, with no limit on smaller fish, per Fishbrain's regulation excerpt."
+   ],
+   "sources": [
+    {
+     "title": "Havasu NWR fishing (FWS)",
+     "url": "https://www.fws.gov/refuge/havasu/visit-us/activities/fishing"
+    },
+    {
+     "title": "Topock Bay (Fishbrain)",
+     "url": "https://fishbrain.com/fishing-waters/WXl94FGE/topock-bay"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Baitfish and shad from the Colorado River",
+     "category": "fish",
+     "detail": "General river forage for the striper and bass in the marsh.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "General marsh forage. Hatch timing not sourced.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "dave-white-regional-park-pond-az",
+   "name": "Dave White Regional Park Pond (Casa Grande, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 32.9122,
+   "lon": -111.7755,
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Dave White Regional Park listing (32\u00b054\u203243.9\u2033N 111\u00b046\u203231.5\u2033W).",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked by AZGFD"
+    },
+    {
+     "name": "Bluegill",
+     "stocking": "Stocked by AZGFD"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by AZGFD in cooler seasons"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD stocks Dave White Pond through the Community Fishing Program with channel catfish, bluegill and rainbow trout in different seasons. The city holds an annual Catfish Rodeo, which has used about 500 pounds of catfish.",
+    "schedule": "Stocked during different seasons, per the city. No public monthly schedule found.",
+    "recent_plants": [
+     {
+      "date": "Annual Catfish Rodeo",
+      "species": "Channel catfish (about 500 lb)"
+     }
+    ],
+    "wild_fish": "Largemouth bass present per Fishbrain.",
+    "sources": [
+     {
+      "title": "Dave White Regional Park (City of Casa Grande)",
+      "url": "https://casagrandeaz.gov/500/Dave-White-Regional-Park"
+     },
+     {
+      "title": "Casa Grande Community Fishing (AZGFD)",
+      "url": "https://www.azgfd.com/?p=3221"
+     },
+     {
+      "title": "Catfish Rodeo 2024 (Active.com)",
+      "url": "https://www.active.com/casa-grande-az/classes/catfish-rodeo-2024"
+     },
+     {
+      "title": "Dave White Regional Park (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/jo4EPrZ8/dave-white-regional-park"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing Program pond at Dave White Regional Park, 2121 N Thornton Rd, Casa Grande. Ages 10 and up need an AZGFD license. The city's Catfish Rodeo is held here each April.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The City of Casa Grande says AZGFD stocks Dave White Pond with channel catfish, bluegill and rainbow trout during different seasons.",
+    "Anglers ages 10 and up need an AZGFD fishing license, per the city.",
+    "The annual Catfish Rodeo, held at Dave White Pond, is for youth 15 and under and gives free licenses to participating youth, per the city's 2023 calendar.",
+    "A 2024 Catfish Rodeo listing says the pond is stocked with 500 pounds of catfish for the event.",
+    "Dave White Pond has a 2-catfish bag limit, per a CFP regulation list. Bluegill and white amur have their own limits.",
+    "AZGFD lists a 5-sunfish limit and a 1-white-amur limit (30-inch minimum) at Dave White, with statewide limits for other species.",
+    "Fishbrain logs largemouth bass, channel catfish and bluegill as the most popular species here."
+   ],
+   "sources": [
+    {
+     "title": "Dave White Regional Park (City of Casa Grande)",
+     "url": "https://casagrandeaz.gov/500/Dave-White-Regional-Park"
+    },
+    {
+     "title": "Casa Grande Community Fishing (AZGFD)",
+     "url": "https://www.azgfd.com/?p=3221"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Bluegill and sunfish prey",
+     "category": "fish",
+     "detail": "Panfish are a stocked and wild species in this pond.",
+     "basis": "sourced",
+     "source": "AZGFD Casa Grande page"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "General pond forage. Hatch data for Dave White is not sourced.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
    ]
   }
  ]
