@@ -216,6 +216,38 @@ function daysFromToday(dateStr){
 }
 function lastYear(dateStr){ return (parseInt(dateStr.slice(0,4)) - 1) + dateStr.slice(4); }
 
+// National Weather Service (US only): 2.5 km grid forecast + nearest station observation
+async function nwsForecast(lat, lon, dateStr){
+  const H = { 'Accept': 'application/geo+json' };
+  const pr = await fetch(`https://api.weather.gov/points/${lat.toFixed(4)},${lon.toFixed(4)}`, { headers: H });
+  if (!pr.ok) throw new Error('points HTTP ' + pr.status);
+  const p = (await pr.json()).properties;
+  const hr = await fetch(p.forecastHourly, { headers: H });
+  if (!hr.ok) throw new Error('hourly HTTP ' + hr.status);
+  const periods = (await hr.json()).properties.periods;
+  const day = periods.filter(x => x.startTime.slice(0,10) === dateStr);
+  if (!day.length) throw new Error('no NWS hours for this date');
+  const tC = day.map(x => (x.temperature - 32) * 5 / 9);
+  const kmh = day.map(x => (parseFloat(x.windSpeed) || 0) / 0.621371);
+  const pops = day.map(x => x.probabilityOfPrecipitation?.value).filter(v => v != null);
+  let obs = null;
+  try {
+    const sr = await (await fetch(p.observationStations, { headers: H })).json();
+    const sid = sr.features?.[0]?.properties?.stationIdentifier;
+    if (sid) {
+      const o = (await (await fetch(`https://api.weather.gov/stations/${sid}/observations/latest`, { headers: H })).json()).properties;
+      obs = { temp: o.temperature?.value ?? null, wind: o.windSpeed?.value ?? null, station: sid };
+      if (obs.temp != null) obs.temp = obs.temp; // already °C
+      if (obs.wind != null) obs.wind = obs.wind; // already km/h
+    }
+  } catch(e) { obs = null; }
+  const mean = arr => arr.reduce((s,v) => s + v, 0) / arr.length;
+  return {
+    tempC: mean(tC), maxC: Math.max(...tC), minC: Math.min(...tC),
+    windKmh: mean(kmh), popMax: pops.length ? Math.max(...pops) : null,
+    obs, src: obs ? `station ${obs.station}, 2.5 km grid` : '2.5 km grid'
+  };
+}
 async function getForecast(lat, lon, dateStr){
   const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
     `&hourly=temperature_2m,wind_speed_10m,precipitation_probability,cloud_cover,pressure_msl` +
@@ -348,7 +380,18 @@ async function runPlan(){
     if (days >= 0 && days <= 15) {
       const f = await getForecast(place.lat, place.lon, dateStr);
       wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr), d: f.daily, elev: f.elevation, cur: f.current };
-      wxSource = 'Open-Meteo forecast';
+      wxSource = 'Open-Meteo forecast (global model, about 11 km grid)';
+      try {
+        const n = await nwsForecast(place.lat, place.lon, dateStr);
+        wx.a.temp = n.tempC; wx.a.wind = n.windKmh;
+        if (n.popMax != null) wx.a.rainChance = n.popMax;
+        wx.d = { temperature_2m_max: [n.maxC], temperature_2m_min: [n.minC] };
+        wx.cur = (n.obs && n.obs.temp != null) ? { temperature_2m: n.obs.temp, wind_speed_10m: n.obs.wind ?? 0 } : null;
+        wx.src = n.src;
+        wxSource = 'National Weather Service (' + n.src + ')';
+      } catch(e) {
+        wxSource += ' - NWS not available: ' + e.message;
+      }
     } else {
       const { data, date } = await getArchive(place.lat, place.lon, dateStr);
       const dl = data.daily;
@@ -386,7 +429,7 @@ async function runPlan(){
     $('conditions').innerHTML = `<h2>Conditions</h2>
       <div class="big">High ${fmtTemp(wx.d.temperature_2m_max[0])} · Low ${fmtTemp(wx.d.temperature_2m_min[0])}</div>
       <div class="muted">Fishing-hours average ${fmtTemp(a.temp)}</div>
-      ${days === 0 && wx.cur ? `<div class="muted">Right now (model): ${fmtTemp(wx.cur.temperature_2m)}, wind ${fmtWind(wx.cur.wind_speed_10m)}</div>` : ''}
+      ${days === 0 && wx.cur ? `<div class="muted">Right now (${wx.src ? 'nearest station' : 'model'}): ${fmtTemp(wx.cur.temperature_2m)}, wind ${fmtWind(wx.cur.wind_speed_10m)}</div>` : ''}
       <div class="muted">Wind ${fmtWind(a.wind)} · Cloud ${a.cloud.toFixed(0)}% · Rain chance ${a.rainChance}%</div>
       <div class="muted">Sunrise ${a.sunrise} · Sunset ${a.sunset}</div>
       <div class="muted">Forecast grid elevation ${wx.elev != null ? fmtElev(wx.elev) : '?'}${ELEV_M != null ? ` · adjusted to ${fmtElev(ELEV_M)}` : ' · set an elevation above to correct mountain sites'}</div>
