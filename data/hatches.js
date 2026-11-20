@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 16,
+ "version": 17,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -7704,7 +7704,7 @@ window.HATCH_DB = {
     11,
     12
    ],
-   "fishing_season_note": "Open year round. The Bighorn is a tailwater below Boysen Dam, and the best spring and fall dry-fly fishing comes in the warmer months, per Fly Fisherman.",
+   "fishing_season_note": "Open year round. Best spring and fall dry-fly fishing, per Fly Fisherman. Check current WGFD rules before you fish.",
    "species": [
     {
      "name": "Brown trout",
@@ -7753,8 +7753,7 @@ window.HATCH_DB = {
     "The Bighorn is a prolific midge fishery. The tiny insects hatch every month except August, and early spring and late fall have the most intense hatches, per Fly Fisherman.",
     "Trout rarely rise to midge adults here, but they take pupae when adults are on the surface. Disco Midge, Brassie, WD-40 and RS2 patterns work well.",
     "Streamers like the Tequeely, Orange Blossom and North Platte Special draw violent strikes from large browns and rainbows, per Fly Fisherman.",
-    "Roadside access is open with a Wind River Indian Reservation fishing permit, per Fly Fisherman. Check the permit rules before you fish.",
-    "Warm, dry spells can stress trout in the river, so check water temperature in summer. Trout rise well in cool, overcast weather."
+    "Roadside access is open with a Wind River Indian Reservation fishing permit, per Fly Fisherman. Check the permit rules before you fish."
    ],
    "forage": [
     {
@@ -7826,7 +7825,7 @@ window.HATCH_DB = {
     11,
     12
    ],
-   "fishing_season_note": "Open year round. High flows run March to June. Early summer and fall are the most productive, per Diy Fly Fishing. Fish dawn and early morning in summer.",
+   "fishing_season_note": "Open year round. High flows run March to June. Early summer and fall are the most productive, per Diy Fly Fishing.",
    "species": [
     {
      "name": "Wild brown trout",
@@ -7873,7 +7872,7 @@ window.HATCH_DB = {
    "notes": [
     "The Truckee runs about 120 miles from Lake Tahoe through downtown Reno into Pyramid Lake. Its upper section is steep and cold, and its eastern section is slower and warmer.",
     "The river's regulations were set in the early 1980s to sustain a healthy wild trout population, per Cal Fly Fisher.",
-    "Trout get active when the river reaches about 50 to 60 degrees. Fishing early in the morning, before the water warms, works well in summer.",
+    "Trout get active when the river reaches about 50 to 60 degrees. Anglers in summer fish early, before the water warms too much, per Visit Reno Tahoe.",
     "Fall and spring are the best seasons, according to Visit Reno Tahoe. The river runs high and muddy from March to June.",
     "Mayflies, caddis, stoneflies and midges are the main hatches, and dry flies and nymphs that match them work best, per Diy Fly Fishing."
    ],
@@ -7996,6 +7995,743 @@ window.HATCH_DB = {
      "source": {
       "title": "Nevada's Lake of the Mammoth Lahontan Cutthroat (Game and Fish)",
       "url": "https://www.gameandfishmag.com/editorial/lahontan-cutthroat-trout-fishing/518491"
+     }
+    }
+   ],
+   "insect_ids": []
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "id": "big-hole-mt",
+   "name": "Big Hole River (Dillon to Jefferson River, MT)",
+   "type": "stream",
+   "states": [
+    "Montana"
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "fishing_season_note": "Closed October 1 to March 31 to protect spawning browns. Some reaches open April 1 to September 30 and are catch and release only, per FWP and BHWC.",
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild. The river is known for big browns"
+    },
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Cutthroat, brook trout",
+     "stocking": "Wild and native"
+    },
+    {
+     "name": "Arctic grayling",
+     "stocking": "Native, catch and release only"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "A Blue Ribbon fishery and the state's second-longest free-flowing river. Trout numbers have dropped since 2011, so FWP put emergency rules in place in 2023.",
+    "schedule": "No stocking schedule applies to the river in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns, rainbows, cutthroat and brook trout, plus grayling. The 2026 drought plan lists the river as at or near historical lows.",
+    "sources": [
+     {
+      "title": "Where to Fish Big Hole River (FWP)",
+      "url": "https://myfwp.mt.gov/fishMT/waterbody/54658"
+     },
+     {
+      "title": "Emergency fishing restrictions, Big Hole (BHWC)",
+      "url": "https://bhwc.org/emergency-fishing-restrictions-adopted-for-big-hole-beaverhead-and-ruby-rivers/"
+     },
+     {
+      "title": "2026 DMP Quick Reference (BHWC)",
+      "url": "https://bhwc.org/montana/uploads/2026/05/2026-DMP-Quick-Reference.pdf"
+     },
+     {
+      "title": "Big Hole River hatches chart (Montana Angler)",
+      "url": "https://www.montanaangler.com/montana-fly-fishing-rivers/big-hole-river-hatches-chart"
+     }
+    ]
+   },
+   "notes": [
+    "The Big Hole is one of the most heavily used fishing streams in Montana, and it is a Blue Ribbon fishery. It stays free flowing for its whole length.",
+    "Fishing is closed October 1 through March 31 to protect spawning and rearing brown trout. Dickie Bridge to Brownes Bridge is open April 1 through September 30, catch and release, artificial lures only, per Montana Angler.",
+    "Trout numbers have declined since 2011 and are near historical lows. Fishing pressure has increased, so check the current emergency rules before you go.",
+    "BWOs hatch in early April, and most adults are size 8 or 10. Western March Browns come next, though their timing is unpredictable.",
+    "The salmonfly hatch starts summer angling and is timed to snowmelt runoff. Trico spinners follow in July and August, per Montana Angler and Intro to Fly Fishing."
+   ],
+   "forage": [
+    {
+     "item": "Blue-winged Olives",
+     "category": "insect",
+     "detail": "Hatch in early April. Dry flies in size 8 or 10 work best.",
+     "basis": "sourced",
+     "source": {
+      "title": "Big Hole River hatches chart (Montana Angler)",
+      "url": "https://www.montanaangler.com/montana-fly-fishing-rivers/big-hole-river-hatches-chart"
+     },
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Salmonflies",
+     "category": "insect",
+     "detail": "The summer opener. Timed to snowmelt runoff, so check conditions.",
+     "basis": "sourced",
+     "source": {
+      "title": "Big Hole River hatches chart (Montana Angler)",
+      "url": "https://www.montanaangler.com/montana-fly-fishing-rivers/big-hole-river-hatches-chart"
+     },
+     "insect_id": "salmonfly"
+    },
+    {
+     "item": "Skwala stoneflies and March Browns",
+     "category": "insect",
+     "detail": "Early season stonefly hatches, with March Browns less predictable.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fly Fishing the Big Hole River (Into Fly Fishing)",
+      "url": "https://intoflyfishing.com/?p=34687"
+     }
+    },
+    {
+     "item": "Trico spinners and nocturnal stoneflies",
+     "category": "insect",
+     "detail": "Tricos are for small-fly sight fishing in July. Nocturnal stoneflies are common.",
+     "basis": "sourced",
+     "source": {
+      "title": "July Fishing on the Big Hole River (Montana Angler)",
+      "url": "https://www.montanaangler.com/montana-fly-fishing-rivers/bighole-river-fishing-July"
+     },
+     "insect_id": "trico"
+    },
+    {
+     "item": "Caddis",
+     "category": "insect",
+     "detail": "Caddis adults stack up in foam lines and back eddies in May.",
+     "basis": "sourced",
+     "source": {
+      "title": "May Fishing on the Big Hole River (Montana Angler)",
+      "url": "https://www.montanaangler.com/montana-fly-fishing-rivers/bighole-river-fishing-May"
+     },
+     "insect_id": "caddis"
+    }
+   ],
+   "insect_ids": [
+    "bwo",
+    "salmonfly",
+    "trico",
+    "caddis"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    6,
+    7,
+    8
+   ],
+   "id": "rock-creek-mt",
+   "name": "Rock Creek (Clinton to Clark Fork, MT)",
+   "type": "stream",
+   "states": [
+    "Montana"
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "fishing_season_note": "Third Saturday in May through November 30. Closed to boat fishing July 1 to November 30. Three browns daily, catch and release for rainbow and cutthroat, per regulations and outfitters.",
+   "species": [
+    {
+     "name": "Westslope cutthroat trout",
+     "stocking": "Wild, native"
+    },
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild, most fish in the lower creek"
+    },
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Brook and bull trout",
+     "stocking": "Wild. Bull trout are protected"
+    },
+    {
+     "name": "Rocky Mountain whitefish",
+     "stocking": "Native"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "A wild trout stream in the Sapphire Mountains. The creek has a high fish population for the state, according to a local lodge.",
+    "schedule": "No stocking schedule applies in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Five trout species live in Rock Creek. Bull trout are endangered and illegal to target.",
+    "sources": [
+     {
+      "title": "Rock Creek Montana Hatch Chart (The Fly Fishing Place)",
+      "url": "https://theflyfishingplace.com/pages/rock-creek-montana-hatch-chart"
+     },
+     {
+      "title": "Rock Creek (Orvis Montana)",
+      "url": "https://cdn.orvis.com/files/5C1Amontana.pdf"
+     },
+     {
+      "title": "DIY Guide to Fly Fishing Rock Creek (DIY Fly Fishing)",
+      "url": "https://diyflyfishing.com/rock-creek-montana/"
+     },
+     {
+      "title": "Fly Fishing On The Rock Creek, Montana (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/?p=4155"
+     }
+    ]
+   },
+   "notes": [
+    "Rock Creek drains the Sapphire Mountains before joining the Clark Fork near Clinton, and it is one of Montana's most celebrated wild trout streams.",
+    "The creek's early season opens with the Skwala stonefly, which brings bigger browns to the surface, and BWOs continue alongside it.",
+    "The salmonfly hatch in June is one of the most reliable in the West. Golden Stones overlap with it in June, per The Fly Shop.",
+    "The upper half holds rainbow and brown trout, and the lower half is mainly brown trout, per DIY Fly Fishing. Each half has its own feel.",
+    "Rock Creek offers some of the most consistent nymph fishing in Montana. Fish a nymph rig when you're unsure.",
+    "Bull trout are endangered in Montana and illegal to target on Rock Creek, per Wildsam."
+   ],
+   "forage": [
+    {
+     "item": "Skwala stoneflies",
+     "category": "insect",
+     "detail": "Early season warmwater hatch that brings bigger browns up before other rivers.",
+     "basis": "sourced",
+     "source": {
+      "title": "Rock Creek Montana Hatch Chart (The Fly Fishing Place)",
+      "url": "https://theflyfishingplace.com/pages/rock-creek-montana-hatch-chart"
+     }
+    },
+    {
+     "item": "Blue-winged Olives",
+     "category": "insect",
+     "detail": "Continue alongside the Skwala hatch.",
+     "basis": "sourced",
+     "source": {
+      "title": "Rock Creek Montana Hatch Chart (The Fly Fishing Place)",
+      "url": "https://theflyfishingplace.com/pages/rock-creek-montana-hatch-chart"
+     },
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Salmonflies and Golden Stones",
+     "category": "insect",
+     "detail": "The main June hatches, which overlap and last about two weeks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Bitterroot River (The Fly Shop)",
+      "url": "https://www.theflyshop.com/?p=23416"
+     },
+     "insect_id": "salmonfly"
+    },
+    {
+     "item": "Sculpin and baitfish",
+     "category": "baitfish",
+     "detail": "Sculpin and baitfish are common. Streamers catch the larger trout, especially in stained or cloudy water.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fly Fishing On The Rock Creek in Southern Montana (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/your-streams/fly-fishing-rock-creek-in-southern-montana/"
+     }
+    }
+   ],
+   "insect_ids": [
+    "bwo",
+    "salmonfly"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "id": "frying-pan-co",
+   "name": "Frying Pan River (Ruedi Reservoir to Basalt, CO)",
+   "type": "stream",
+   "states": [
+    "Colorado"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Year round. The prime window runs June 1 to September 30, per Orvis. The tailwater runs at steady flows even when other rivers are high.",
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Naturally reproducing"
+    },
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Naturally reproducing"
+    },
+    {
+     "name": "Cutthroat trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Brook trout",
+     "stocking": "Wild, in feeder streams"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "Tailwater below Ruedi Reservoir, a Gold Medal section with naturally reproducing browns and rainbows.",
+    "schedule": "No stocking applies in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Trophy browns and rainbows. Catch and release sections below Ruedi can produce rainbows up to 10 pounds, per CPW.",
+    "sources": [
+     {
+      "title": "Fishing Season, Frying Pan (Orvis)",
+      "url": "https://fishingreports.orvis.com/west/colorado/fryingpan-river"
+     },
+     {
+      "title": "Northwest Colorado Hot Spots (CPW)",
+      "url": "https://cpw.state.co.us:443/Documents/Fishing/WhereToGo/HotSpots/NWColoradoHotSpots.pdf"
+     },
+     {
+      "title": "Top 4 Rivers in the Rockies (Sports Illustrated)",
+      "url": "https://www.si.com/onsi/fishing/destinations/top-4-rivers-in-the-rockies-for-fly-fishing"
+     },
+     {
+      "title": "Fryingpan River Colorado Hatch Chart (The Fly Fishing Place)",
+      "url": "https://theflyfishingplace.com/pages/fryingpan-river-colorado-hatch-chart"
+     }
+    ]
+   },
+   "notes": [
+    "The Frying Pan is a tailwater below Ruedi Reservoir, completed in 1968. The 14 miles below the dam get most of the attention from fly fishers.",
+    "Tailwater flows stay steady when snowmelt makes other rivers unfishable in spring, according to Sports Illustrated.",
+    "Green drakes come out in good numbers on the middle and lower river, especially between mileposts 2 and 8, per Summit Daily.",
+    "Winter releases are around 62 cfs, and the water is very clear, so use light tippets and a stealthy approach, per a 2026 fishing report.",
+    "Catch-and-release sections below Ruedi can produce rainbows up to 10 pounds, per CPW."
+   ],
+   "forage": [
+    {
+     "item": "Green drake mayflies",
+     "category": "insect",
+     "detail": "Good numbers in the middle and lower river.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing report, Blue drake hatch (Summit Daily)",
+      "url": "https://www.summitdaily.com/sports/fishing-report-on-the-blue-drake-hatch-hits-its-peak/"
+     }
+    },
+    {
+     "item": "Stoneflies",
+     "category": "insect",
+     "detail": "Size 6 stoneflies work well by the fly shop in Basalt.",
+     "basis": "sourced",
+     "source": {
+      "title": "Colorado's Top Spring Trout Streams (Game and Fish)",
+      "url": "https://www.gameandfishmag.com/editorial/colorados-top-spring-trout-streams/190613"
+     }
+    },
+    {
+     "item": "Midges and aquatic insects",
+     "category": "insect",
+     "detail": "Midge and general aquatic insect hatches are part of the tailwater's diet.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "insect_ids": [
+    "chironomid"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "id": "gunnison-river-co",
+   "name": "Gunnison River (Black Canyon and Gunnison Gorge, CO)",
+   "type": "stream",
+   "states": [
+    "Colorado"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Artificial flies and lures only in the Gold Medal and Black Canyon sections. Rainbows are catch and release. Brown limit is 4 daily and 8 in possession, per NPS. Check current CPW rules.",
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild stock in the region for over a century"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Introduced in the 1880s, stocked heavily in some reaches"
+    },
+    {
+     "name": "Kokanee salmon",
+     "stocking": "Present at Blue Mesa"
+    }
+   ],
+   "stocking": {
+    "status": "wild browns, stocked rainbows",
+    "summary": "Gold Medal water in the Black Canyon and Gunnison Gorge. CPW has stocked Colorado River rainbows in the Gunnison Gorge.",
+    "schedule": "CPW stocked 66,000 five-inch rainbows in the Gunnison Gorge in one year, per Game and Fish, 2010.",
+    "recent_plants": [],
+    "wild_fish": "Upper Gunnison browns and rainbows are wild. Gorge browns grow to 20 inches or more.",
+    "sources": [
+     {
+      "title": "Gunnison Gorge fly fishing guide (Ed's Fly Shop)",
+      "url": "https://edsflyshop.com/pages/gunnison-gorge-fly-fishing"
+     },
+     {
+      "title": "Black Canyon of the Gunnison fishing (NPS)",
+      "url": "https://www.nps.gov/blca/planyourvisit/fishing.htm"
+     },
+     {
+      "title": "Gunnison River survey (CPW)",
+      "url": "https://cpw.state.co.us/thingstodo/Fishery%2520Survey%2520Summaries/GunnisonRiveratGunnison.pdf"
+     },
+     {
+      "title": "Gunnison River Colorado Hatch Chart (The Fly Fishing Place)",
+      "url": "https://theflyfishingplace.com/pages/gunnison-river-colorado-hatch-chart"
+     }
+    ]
+   },
+   "notes": [
+    "The Gunnison starts near Almont and runs through the Black Canyon and Gunnison Gorge to Grand Junction. It is one of Colorado's most dramatic trout fisheries.",
+    "The Gunnison Gorge salmonfly hatch is the famous event, running from late May into June, per Ed's Fly Shop and Orvis.",
+    "The gorge is a 14-mile wilderness float with Gold Medal regulations. Rainbows must be released, and the browns run large.",
+    "The lower Gunnison below Crystal Dam is known for its salmonfly hatch and Gold Medal waters, per Gunnison Gorge Anglers.",
+    "A fall afternoon hatch of BWOs runs from about 1 to 3 p.m., then anglers switch back to nymphs and streamers, per Fly Fisherman."
+   ],
+   "forage": [
+    {
+     "item": "Salmonflies",
+     "category": "insect",
+     "detail": "Late May and June hatch in the gorge.",
+     "basis": "sourced",
+     "source": {
+      "title": "Gunnison Gorge Fly Fishing Guide (Ed's Fly Shop)",
+      "url": "https://edsflyshop.com/pages/gunnison-gorge-fly-fishing"
+     },
+     "insect_id": "salmonfly"
+    },
+    {
+     "item": "Baetis mayflies",
+     "category": "insect",
+     "detail": "Afternoon fall hatch from about 1 to 3 p.m.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fall Gunnison Baetis and Kokanee (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/fall-gunnison-baetis-kokanee/483077"
+     },
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Kokanee",
+     "category": "baitfish",
+     "detail": "Kokanee angling is popular in the fall migration.",
+     "basis": "sourced",
+     "source": {
+      "title": "Gunnison River survey (CPW)",
+      "url": "https://cpw.state.co.us/thingstodo/Fishery%2520Survey%2520Summaries/GunnisonRiveratGunnison.pdf"
+     }
+    }
+   ],
+   "insect_ids": [
+    "salmonfly",
+    "bwo"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "id": "pecos-river-nm",
+   "name": "Pecos River (Northern New Mexico)",
+   "type": "stream",
+   "states": [
+    "New Mexico"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Year round. Salmonflies start in early May and reach the Pecos Box by early June. Another large stonefly begins in July, per Game and Fish.",
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Stream-bred. Biggest draw"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked with some holdovers"
+    },
+    {
+     "name": "Rio Grande cutthroat trout",
+     "stocking": "Native. Being restored"
+    }
+   ],
+   "stocking": {
+    "status": "wild browns and stocked rainbows",
+    "summary": "Stocked rainbows and stream-bred wild browns. NM is removing non-natives to help the native Rio Grande cutthroat in the watershed.",
+    "schedule": "Stocking has been frequent, per local outfitters. NM stocks Northern NM most after winter stocking ends in spring.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns are stream-bred and bright. Rio Grande cutthroat are a native restoration species.",
+    "sources": [
+     {
+      "title": "Pecos River trout fishing (Game and Fish Magazine, 2010)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_aa054603a/194597"
+     },
+     {
+      "title": "Fly Fishing On The Pecos River (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/?p=7517"
+     },
+     {
+      "title": "Pecos NHP fishing (NPS)",
+      "url": "https://www.nps.gov/peco/planyourvisit/fishing.htm"
+     },
+     {
+      "title": "Weekly Fishing Report, April 2026 (Los Alamos Daily Post)",
+      "url": "https://ladailypost.com/weekly-fishing-report-april-6-2026/"
+     }
+    ]
+   },
+   "notes": [
+    "The Pecos starts on the western slopes of the Sangre de Cristo Mountains and flows into the Rio Grande. Just over 20 miles from the headwaters to Tererro are a National Wild and Scenic River.",
+    "Rainbows are abundant, but wild browns are the biggest draw. Most browns are stream-bred and bright.",
+    "The salmonfly hatch starts in early May in the lower sections and reaches the Pecos Box by the first week of June, per Game and Fish.",
+    "Tricos hatch in the slow sections, per Perfect Fly Store, and the river needs some hiking to reach the best water.",
+    "The Pecos is one of the most heavily fished rivers in northern New Mexico, and the stocking truck arrives often, per Pautzke.",
+    "NM advises that consumption guidance exists for many waters due to mercury and PCBs. Check advisories before eating your catch, per NPS."
+   ],
+   "forage": [
+    {
+     "item": "Salmonflies",
+     "category": "insect",
+     "detail": "Early May through early June, moving upstream.",
+     "basis": "sourced",
+     "source": {
+      "title": "Pecos River trout fishing (Game and Fish Magazine, 2010)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_aa054603a/194597"
+     },
+     "insect_id": "salmonfly"
+    },
+    {
+     "item": "Second large stonefly",
+     "category": "insect",
+     "detail": "Begins hatching in July.",
+     "basis": "sourced",
+     "source": {
+      "title": "Pecos River trout fishing (Game and Fish Magazine, 2010)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_aa054603a/194597"
+     }
+    },
+    {
+     "item": "Tricos",
+     "category": "insect",
+     "detail": "Hatch in the slow sections.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fly Fishing On The Pecos River (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/?p=7517"
+     },
+     "insect_id": "trico"
+    }
+   ],
+   "insect_ids": [
+    "salmonfly",
+    "trico"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "id": "green-river-ut",
+   "name": "Green River (below Flaming Gorge Dam, UT)",
+   "type": "stream",
+   "states": [
+    "Utah"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Year round. Section A from the dam to Little Hole is artificial-only and catch and release. Sections B and C allow spin fishing, per Sportfishing Report.",
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild, naturally reproducing. Grow quickly"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "About 25,000 stocked each spring, per DWR"
+    },
+    {
+     "name": "Cutthroat trout and hybrids",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "wild browns, stocked rainbows",
+    "summary": "Coldwater releases started in 1987 by agreement. Utah DWR stocks about 25,000 rainbows each spring.",
+    "schedule": "About 25,000 rainbows stocked each spring, per the Utah DWR project biologist.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns and rainbows in the upper section. Browns average 15 to 17 inches. The record was a 29-pound brown from 1996.",
+    "sources": [
+     {
+      "title": "Green River Fishing (Utah.com)",
+      "url": "https://www.utah.com/destinations/cities-towns/green-river/things-to-do/fishing/"
+     },
+     {
+      "title": "Field & Stream: Utah's Green River",
+      "url": "https://www.fieldandstream.com/articles/fishing/fly-fishing/where-fish/2005/03/john-merwin-fishes-americas-best-tailwater-utahs-gre"
+     },
+     {
+      "title": "Green River, UT (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/spots/808/green-river.php"
+     },
+     {
+      "title": "Anglers go Green (Spokesman-Review)",
+      "url": "https://www.spokesman.com/stories/2010/apr/18/anglers-go-green/"
+     }
+    ]
+   },
+   "notes": [
+    "The Green River below Flaming Gorge Dam is a 28-mile tailwater, per Orvis. Water temperatures stay between 40 and 60 degrees year round, per VisitUtah.",
+    "Section A from the dam to Little Hole is artificial-only and catch and release, and it holds the greatest concentration of trout, according to Sportfishing Report.",
+    "Sections B and C have larger browns with less pressure, and spin fishing with spoons, Rapalas and jigs works well, per Sportfishing Report.",
+    "No fishing from a boat with a motor is allowed. Kill any burbot, northern pike, smallmouth bass or walleye you catch, per the Flaming Gorge Recreation Area rules.",
+    "Dutch John is the base for guides and shuttles, and Little Hole has restrooms and campsites, per Sportfishing Report."
+   ],
+   "forage": [
+    {
+     "item": "Sculpin",
+     "category": "baitfish",
+     "detail": "Sculpin and articulated streamers are recommended for the Green River.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fly Fishing Report On The Green River In Utah (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/your-streams/fly-fishing-on-the-green-river-in-utah/"
+     }
+    },
+    {
+     "item": "Insects",
+     "category": "insect",
+     "detail": "Insect hatches are prolific on the Green, per Utah.com.",
+     "basis": "sourced",
+     "source": {
+      "title": "Green River Fishing (Utah.com)",
+      "url": "https://www.utah.com/destinations/cities-towns/green-river/things-to-do/fishing/"
      }
     }
    ],
