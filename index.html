@@ -477,13 +477,24 @@ async function runPlan(){
       </div>`).join('') : '<p class="muted">Nothing in the database for this month and water type.</p>'}`;
 
   // verdict + tips
-  const tips = [];
-  if (lake) tips.push(`${esc(lake.name.split(' (')[0])}: ${lake.species.map(s => esc(s.name)).join(', ')}. ${esc(lake.fishing_season_note)}`);
-  if (wx && wx.kind === 'forecast' && wx.a.rainChance > 30 && month >= 7 && month <= 9) tips.push('Monsoon season (July to September): storms can raise streams fast. Stay out of washes and creek beds.');
-  if (usgs.some(s => s.flow != null) && wx && wx.kind === 'forecast' && wx.a.rainChance > 30) tips.push('Rain forecast and a flowing gauge: check the flow reading again the morning of your trip.');
-  if (habitat === 'stream') tips.push('Stream tip: fish the early and late hours when cloud cover is up.');
-  if (habitat === 'stillwater') tips.push('Lake tip: check the shallow weedy edges for midge and Callibaetis activity.');
-  $('tips').innerHTML = `<h2>Notes for ${esc(place.name)}</h2><ul class="tips">${tips.map(t => `<li>${t}</li>`).join('')}</ul>`;
+  // Notes specific to the body of water searched
+  const specific = [];
+  if (lake) {
+    specific.push(`<b>${esc(lake.name.split(' (')[0])}</b>${lake.area_acres ? `, about ${lake.area_acres} acres` : ''}, ${fmtElev(lake.elevation_ft * 0.3048)} elevation.`);
+    specific.push(`Species: ${lake.species.map(s => `${esc(s.name)} (${esc(s.stocking)})`).join('; ')}.`);
+    specific.push(`Season: ${esc(lake.fishing_season_note)}`);
+    lake.notes.forEach(n => specific.push(esc(n)));
+  } else {
+    specific.push(`No body-of-water notes yet for <b>${esc(place.name)}</b>. The hatch list above uses regional data for ${place.state ? esc(place.state) : 'all states'}, not this water.`);
+  }
+  const regional = [];
+  if (wx && wx.kind === 'forecast' && wx.a.rainChance > 30 && month >= 7 && month <= 9) regional.push('Monsoon season (July to September): storms can raise streams fast. Stay out of washes and creek beds.');
+  if (usgs.some(s => s.flow != null) && wx && wx.kind === 'forecast' && wx.a.rainChance > 30) regional.push('Rain forecast and a flowing gauge: check the flow reading again the morning of your trip.');
+  if (habitat === 'stream') regional.push('Stream tip: fish the early and late hours when cloud cover is up.');
+  if (habitat === 'stillwater') regional.push('Lake tip: check the shallow weedy edges for midge and Callibaetis activity.');
+  $('tips').innerHTML = `<h2>Notes for ${esc(place.name)}</h2>
+    <h3>About this water</h3><ul class="tips">${specific.map(t => `<li>${t}</li>`).join('')}</ul>
+    ${regional.length ? `<h3>Conditions and general tips</h3><ul class="tips">${regional.map(t => `<li>${t}</li>`).join('')}</ul>` : ''}`;
 
   // verdict
   const bits = [];

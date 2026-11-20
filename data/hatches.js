@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 2,
+ "version": 3,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -862,6 +862,314 @@ window.HATCH_DB = {
    "states": [
     "Colorado"
    ]
+  },
+  {
+   "id": "ut-midge",
+   "name": "Midges (Utah)",
+   "order": "Diptera",
+   "habitat": [
+    "stillwater",
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "peak_months": [
+    3,
+    4,
+    5,
+    10,
+    11
+   ],
+   "time_of_day": "Mid-day on calm days; surface activity in winter and spring",
+   "water_temp_f": null,
+   "stages": "Larvae and pupae year-round; adults and emerging pupae on the surface",
+   "flies": [
+    {
+     "pattern": "Parachute Adams, Double Midge, or CDC Midge",
+     "sizes": "18-24"
+    }
+   ],
+   "notes": "Winter and spring midges are the main surface food in Utah. Rising browns and rainbows key on #18-24 and smaller midges.",
+   "sources": [
+    {
+     "title": "Utah spring midges and BWO (Fly Fisherman)",
+     "url": "https://www.flyfisherman.com/editorial/trout-fishing-in-utah/152921"
+    },
+    {
+     "title": "Strawberry River hatch chart: midges throughout winter",
+     "url": "https://theflyfishingplace.com/pages/strawberry-river-utah-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Utah"
+   ]
+  },
+  {
+   "id": "ut-bwo",
+   "name": "Blue-winged olives (Utah)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    2,
+    3,
+    4,
+    5,
+    9,
+    10,
+    11
+   ],
+   "peak_months": [
+    3,
+    4,
+    10
+   ],
+   "time_of_day": "Mid-day; overcast afternoons",
+   "water_temp_f": {
+    "min": 40,
+    "max": 60
+   },
+   "stages": "Nymph, emerger, dun, spinner",
+   "flies": [
+    {
+     "pattern": "Parachute BWO or thorax dun",
+     "sizes": "16-22"
+    }
+   ],
+   "notes": "Late February into March is the spring start; fall hatches return as temperatures cool. Strong on the Provo, Green, and Weber.",
+   "sources": [
+    {
+     "title": "Utah spring midges and BWO (Fly Fisherman)",
+     "url": "https://www.flyfisherman.com/editorial/trout-fishing-in-utah/152921"
+    },
+    {
+     "title": "Provo River hatch chart: BWO return in September",
+     "url": "https://theflyfishingplace.com/pages/provo-river-utah-hatch-chart"
+    },
+    {
+     "title": "Strawberry River hatch chart: BWO on overcast afternoons",
+     "url": "https://theflyfishingplace.com/pages/strawberry-river-utah-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Utah"
+   ],
+   "date_note": "Sources differ on the spring start. One source says late February; another puts the strongest fall hatches in September and October."
+  },
+  {
+   "id": "ut-pmd",
+   "name": "Pale morning duns (Utah)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5,
+    6,
+    7
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Mornings",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun, spinner",
+   "flies": [
+    {
+     "pattern": "PMD dun or emerger",
+     "sizes": "16-18"
+    }
+   ],
+   "notes": "Strawberry River canyon meadows have PMD mornings in May and June. Also listed on the Provo.",
+   "sources": [
+    {
+     "title": "Strawberry River hatch chart: PMD mornings in May and June",
+     "url": "https://theflyfishingplace.com/pages/strawberry-river-utah-hatch-chart"
+    },
+    {
+     "title": "Provo River and PMD listing (Norrik)",
+     "url": "https://norrik.com/?p=8978"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Utah"
+   ],
+   "date_note": "The Strawberry chart says PMDs start by late April. The Provo listing does not give a month. Verify locally."
+  },
+  {
+   "id": "ut-caddis",
+   "name": "Caddisflies (Utah)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    6,
+    7
+   ],
+   "time_of_day": "Evenings",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults; evening egg-laying flights",
+   "flies": [
+    {
+     "pattern": "Elk Hair Caddis or Emerging caddis pupa",
+     "sizes": "14-18"
+    }
+   ],
+   "notes": "Caddis evenings on the Strawberry are reliable through summer. Sedges start in spring on the Green's warmer sections.",
+   "sources": [
+    {
+     "title": "Strawberry River hatch chart: caddis evenings",
+     "url": "https://theflyfishingplace.com/pages/strawberry-river-utah-hatch-chart"
+    },
+    {
+     "title": "Green River hatch chart: caddis begin late March",
+     "url": "https://theflyfishingplace.com/pages/green-river-utah-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Utah"
+   ]
+  },
+  {
+   "id": "ut-salmonfly",
+   "name": "Salmonflies (Logan River)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph and adult",
+   "flies": [
+    {
+     "pattern": "Large stonefly adult dry; stonefly nymph below the hatch front",
+     "sizes": "2-6"
+    }
+   ],
+   "notes": "The Logan's salmonfly hatch is one of Utah's finest. Timing depends on the year: early May in dry hot years, late May into June in wet cold years.",
+   "sources": [
+    {
+     "title": "Logan River hatch chart: salmonflies sized 2-6",
+     "url": "https://theflyfishingplace.com/pages/logan-river-utah-hatch-chart"
+    },
+    {
+     "title": "Stonefly hatch timing in Utah (KSL)",
+     "url": "https://www.ksl.com/article/44468940/4-tips-for-using-stonefly-hatches-in-local-fly-fishing"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Utah"
+   ]
+  },
+  {
+   "id": "ut-green-drake",
+   "name": "Green drakes (northern Utah)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Nymph, dun, spinner",
+   "flies": [
+    {
+     "pattern": "Green drake dun",
+     "sizes": "10-12, verify"
+    }
+   ],
+   "notes": "Big dry-fly hatch on northern Utah rivers, with trout chasing large bugs.",
+   "sources": [
+    {
+     "title": "Green drake hatch in northern Utah (Jans Fishing Report)",
+     "url": "https://blog.jans.com/green-drake-hatch-in-northern-utah-jans-fishing-report/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Utah"
+   ],
+   "date_note": "Only one source, and the month range is inferred from it. Confirm locally."
+  },
+  {
+   "id": "ut-terrestrial",
+   "name": "Hoppers and terrestrials (Utah)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    7,
+    8
+   ],
+   "time_of_day": "Midday along grassy banks; wind-blown",
+   "water_temp_f": null,
+   "stages": "Adult grasshoppers on canyon margins",
+   "flies": [
+    {
+     "pattern": "Foam hopper",
+     "sizes": "8-12"
+    }
+   ],
+   "notes": "Hoppers begin along canyon margins by late June and run through mid-September on the Strawberry.",
+   "sources": [
+    {
+     "title": "Strawberry River hatch chart: hoppers from late June",
+     "url": "https://theflyfishingplace.com/pages/strawberry-river-utah-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Utah"
+   ]
   }
  ],
  "lakes": [
@@ -895,6 +1203,7 @@ window.HATCH_DB = {
    "notes": [
     "Evening hatches are productive for fly anglers.",
     "Early mornings and the last hour of light produce surface feeding in fall.",
+    "Fall fish at Rose Canyon respond to a size 16 Elk Hair Caddis, according to a recent fall report.",
     "Lake insects here have not been surveyed in a published study. These entries are based on regional lake patterns, not Rose Canyon sampling."
    ],
    "sources": [
@@ -918,6 +1227,55 @@ window.HATCH_DB = {
    "verified": false,
    "states": [
     "Arizona"
+   ]
+  },
+  {
+   "id": "strawberry-reservoir",
+   "name": "Strawberry Reservoir (Wasatch and Duchesne counties)",
+   "elevation_ft": 7550,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Not verified. Set by location search in the app.",
+   "type": "stillwater",
+   "area_acres": 8000,
+   "species": [
+    {
+     "name": "Cutthroat trout",
+     "stocking": "Stocking schedule not checked; see Utah DWR"
+    }
+   ],
+   "fishing_season_note": "Ice-off in late April and early May is a known season. Fall fishing runs mid-August through late September.",
+   "insect_ids": [
+    "ut-midge"
+   ],
+   "notes": [
+    "About 8,000 acres at 7,550 ft. Average depth 18 ft, maximum 52 ft.",
+    "Ice-off in late April and early May. As ice clears, fish spread through the reservoir following bug hatches and zooplankton.",
+    "Fall is a strong season: the Strawberry is known for fishing from mid-August through late September with few crowds.",
+    "Walleye were illegally introduced. The Utah DWR asks anglers to report any walleye they catch.",
+    "The Strawberry River below the reservoir has its own BWO and PMD hatches (see the Utah hatch entries)."
+   ],
+   "sources": [
+    {
+     "title": "Strawberry Reservoir basic data (core.ac.uk)",
+     "url": "https://core.ac.uk/works/19028964"
+    },
+    {
+     "title": "Unlocking fall fishing on Strawberry Reservoir (FishWest)",
+     "url": "https://blog.fishwest.com/unlocking-the-secrets-of-fall-fishing-on-strawberry-reservoir/amp/"
+    },
+    {
+     "title": "Ice-off and bug hatches at Strawberry (Utah DWR)",
+     "url": "https://wildlife.utah.gov/news/wildlife-blog/1853-six-great-fishing-spots-this-spring.html"
+    },
+    {
+     "title": "Walleye report at Strawberry (Utah DWR)",
+     "url": "https://wildlife.utah.gov/news/utah-wildlife-news/1891-anglers-should-continue-reporting-illegal-walleye-caught-at-strawberry-reservoir.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Utah"
    ]
   }
  ]
