@@ -18651,7 +18651,6 @@ window.HATCH_DB = {
     "Chandler says the General Fishing or Combination license is required but not sold on site.",
     "Veterans Oasis is one of the best birding spots in Chandler, with recharge basins and riparian habitat.",
     "The lake was built to recharge reclaimed water into the ground, per Chandler.",
-    "AZGFD's Chandler page lists Veterans Oasis among the Phoenix-metro lakes stocked with rainbow trout in fall and winter, per the city's stocking notices.",
     "Chandler: daily bag and possession limits are on pages 8 and 22 of the city's packet, and on the lake signs."
    ],
    "sources": [
@@ -18926,8 +18925,8 @@ window.HATCH_DB = {
      "stocking": "Stocked"
     },
     {
-     "name": "Sunfish, largemouth bass",
-     "stocking": "Present"
+     "name": "Sunfish",
+     "stocking": "Present, per AZBigMedia daily limit listing"
     }
    ],
    "stocking": {
@@ -18966,7 +18965,6 @@ window.HATCH_DB = {
     "Arizona Vacation describes Desert West as being in Desert West Park in southwest Phoenix, at 63rd Avenue between Virginia Avenue and Encanto Boulevard.",
     "Phoenix Parks says its stocked lakes get catfish in June, September and October, and trout in November and December.",
     "The Desert West Community Center hosted a November 2025 intro-to-fishing class nearby, per Active.com.",
-    "Fishbrain and the community-fishing lists treat Desert West as a catfish and trout water.",
     "The pond sits near the Desert West Community Center, per AZGFD's park notice.",
     "Desert West daily limits: 4 catfish, 4 trout, 2 bass (13-inch minimum), 10 sunfish, 1 white amur (30-inch minimum)."
    ],
