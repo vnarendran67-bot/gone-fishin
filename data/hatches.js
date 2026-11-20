@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 25,
+ "version": 26,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -16109,6 +16109,472 @@ window.HATCH_DB = {
     6,
     9,
     10
+   ]
+  },
+  {
+   "id": "lake-powell-wahweap-az",
+   "name": "Lake Powell (Wahweap, AZ side)",
+   "type": "reservoir",
+   "elevation_ft": 3524,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Wahweap Bay area. Elevation of the lake is about 3,524 ft per a July 2026 Utah biologist report. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Striped bass",
+     "stocking": "Present; 25 lb 8 oz (2020) listed record"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Present; 71 caught in 2026 non-native monitoring by mid-August"
+    },
+    {
+     "name": "Largemouth bass, black and white crappie, walleye, channel catfish, bluegill, sunfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Bonytail, June sucker (native, protected)",
+     "stocking": "Listed"
+    }
+   ],
+   "stocking": {
+    "status": "warmwater",
+    "summary": "Striped bass, smallmouth and walleye fishery. Trout present.",
+    "schedule": "No trout schedule.",
+    "recent_plants": [],
+    "wild_fish": "Striped, smallmouth, largemouth, walleye, crappie.",
+    "sources": [
+     {
+      "title": "Lake Powell AZ (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/268/lake-powell.php"
+     },
+     {
+      "title": "Lake Powell (National Park Service)",
+      "url": "https://home.nps.gov/glca/planyourvisit/fishing.htm"
+     }
+    ]
+   },
+   "fishing_season_note": "Year-round. Striped bass most active in spring and fall, smallmouth year-round. Launch and boat checks required. Mercury advisory on striped bass in the southern lake.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Lake Powell straddles the Utah and Arizona border, and one license works across the whole lake, per the National Park Service.",
+    "The Arizona side at Wahweap is the gateway to a striped bass fishery, with smallmouth, largemouth, walleye and crappie too, per Windy.",
+    "AZGFD recorded water at 73 to 78 F at Wahweap Bay on May 26, 2026, and 48 to 53 F on November 30, 2025.",
+    "A Wahweap smallmouth was caught on a shad-colored Ned rig in about 20 feet of water on March 25, per Sportsman's Warehouse.",
+    "Walleye fishing picks up in April after the spawn, per Sportsman's Warehouse.",
+    "A topwater bite was on in late June 2025 at a 78 F water temperature, per AZGFD.",
+    "A joint Utah and Arizona mercury advisory covers striped bass in the southern lake from mile 43 to the dam, per the National Park Service.",
+    "Dead striped bass may be used only as bait or chum in Lake Powell, per the National Park Service. Anchovies and sardines are allowed as bait where bait is permitted.",
+    "The National Park Service's 2026 review counted 71 smallmouth bass caught in non-native monitoring by mid-August.",
+    "Anglers in Lake Powell have been asked to keep harvesting striped bass, which a Utah biologist says matters for the rest of the fishery."
+   ],
+   "sources": [
+    {
+     "title": "Lake Powell AZ (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/268/lake-powell.php"
+    },
+    {
+     "title": "Lake Powell (National Park Service)",
+     "url": "https://home.nps.gov/glca/planyourvisit/fishing.htm"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Shad and Ned rigs",
+     "category": "baitfish",
+     "detail": "Shad-pattern Ned rig for smallmouth, March 2026, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Powell (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/lake-powell/19357/"
+     }
+    },
+    {
+     "item": "Anchovies and sardines",
+     "category": "baitfish",
+     "detail": "Allowed as bait, per the National Park Service.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Powell Fishing (National Park Service)",
+      "url": "https://home.nps.gov/glca/planyourvisit/fishing.htm"
+     }
+    },
+    {
+     "item": "Walleye",
+     "category": "baitfish",
+     "detail": "Walleye feed on the same fish in spring, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Powell (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/lake-powell/19357/"
+     }
+    },
+    {
+     "item": "Bass cover around brush and trees",
+     "category": "other",
+     "detail": "Largemouth in cover, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lake Powell (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/lake-powell/19357/"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional reservoir insects. Not documented for Powell.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "silver-creek-az",
+   "name": "Silver Creek (Show Low area, AZ)",
+   "type": "creek",
+   "elevation_ft": 6400,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked; average over 4 pounds"
+    },
+    {
+     "name": "Apache trout",
+     "stocking": "Present; average near 1.75 pounds"
+    },
+    {
+     "name": "Brown trout and other trout",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with large rainbows and Apache trout. Seasonal catch-and-release windows.",
+    "schedule": "Stocked; schedule varies.",
+    "recent_plants": [
+     {
+      "date": "Ongoing (year not stated)",
+      "species": "Rainbow trout averaging over 4 lb"
+     }
+    ],
+    "wild_fish": "Apache trout.",
+    "sources": [
+     {
+      "title": "Silver Creek catch-and-keep season (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/40e0493"
+     },
+     {
+      "title": "Silver Creek catch-and-release season (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3f38550"
+     }
+    ]
+   },
+   "fishing_season_note": "Catch and release, artificial flies and lures only, single barbless hooks, Oct. 1 through March 31. Catch and keep on standard regulations from April 1.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD said Silver Creek opens for catch and keep on April 1, with standard trout rules. The average rainbow is about 4.5 pounds and the average Apache trout nearly 1.75 pounds.",
+    "Silver Creek is catch and release with artificial lures and flies only, single barbless hooks, from October 1 through March 31, per AZGFD.",
+    "PowerBait and scented or salted rubber worms are illegal in Silver Creek, per AZGFD.",
+    "AZGFD said fishing was fair overall in March 2026. The upper section was slow, and the lower section was fair to good.",
+    "AZGFD recommended a quarter-ounce silver Kastmaster with a slow retrieve and short, erratic pauses for reaction strikes.",
+    "In winter AZGFD recommended silver Kastmasters, three- to four-inch jerkbaits and one-eighth-ounce black or white marabou jigs.",
+    "A 28.5-inch rainbow was recorded from Silver Creek in AZGFD's state records."
+   ],
+   "sources": [
+    {
+     "title": "Silver Creek catch-and-keep season (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/40e0493"
+    },
+    {
+     "title": "Silver Creek catch-and-release season (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3f38550"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Silver Kastmaster with slow retrieve",
+     "category": "other",
+     "detail": "AZGFD tactic, March 2026 and winter notes.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/4062c11"
+     }
+    },
+    {
+     "item": "Marabou jigs and jerkbaits",
+     "category": "other",
+     "detail": "AZGFD winter lures.",
+     "basis": "sourced",
+     "source": {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     }
+    },
+    {
+     "item": "Midges and mayflies",
+     "category": "insect",
+     "detail": "Typical for cold tailwater creeks. Not documented for Silver Creek.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "little-colorado-river-greer-az",
+   "name": "Little Colorado River (West Fork, Greer, AZ)",
+   "type": "river",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Apache trout",
+     "stocking": "Native; stocking reduced in 2026 at West Fork near Sheeps Crossing and Greer"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked; reduced in 2026"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Reduced 2026 stocking. Native Apache trout are the focus.",
+    "schedule": "Shortened 2026 season.",
+    "recent_plants": [],
+    "wild_fish": "Apache trout, brown trout.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD, 2026)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     },
+     {
+      "title": "Arizona Fishing Season and Limits 2026-2027 (StateOutdoors)",
+      "url": "https://stateoutdoors.org/fishing/season/Arizona-fishing-season/"
+     }
+    ]
+   },
+   "fishing_season_note": "Catch and release for trout Oct. 1 through April 30. General trout rules May 1 through Sept. 30. Apache trout are the target in the West Fork.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD said the West Fork Little Colorado at Greer and Sheeps Crossing would have shortened seasons and fewer stockings in 2026.",
+    "AZGFD named the West Fork Little Colorado for Apache trout as one of its favorite places to fish.",
+    "Trout on the Little Colorado near Greer are catch and release from October 1 through April 30, and general statewide rules apply from May 1 through September 30.",
+    "A Chase Newlon report in July 2026 described a beaver pond on the Little Colorado that tested anglers, and said some Arizona trout are tough to catch.",
+    "Fly fishing small pools on these creeks worked well, per AZGFD's fish biologist."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD, 2026)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    },
+    {
+     "title": "Arizona Fishing Season and Limits 2026-2027 (StateOutdoors)",
+     "url": "https://stateoutdoors.org/fishing/season/Arizona-fishing-season/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Apache trout feed (aquatic insects)",
+     "category": "insect",
+     "detail": "Common for mountain trout streams. Not documented for this section.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and mayflies",
+     "category": "insect",
+     "detail": "Typical for cold tailwater creeks. Not documented for this section.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "salt-river-az",
+   "name": "Salt River (Tonto National Forest, AZ)",
+   "type": "river",
+   "elevation_ft": 2000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked weekly through winter, Dec 2025"
+    },
+    {
+     "name": "Smallmouth, yellow and largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Weekly winter rainbow stockings in late 2025.",
+    "schedule": "Weekly stockings through December 2025.",
+    "recent_plants": [
+     {
+      "date": "Week of 12-8-2025",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Bass.",
+    "sources": [
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     },
+     {
+      "title": "Fishing tips and upcoming events (AZGFD, Dec 2025)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fdfb2c"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout stocked weekly in winter through the Central Arizona Community Fishing Program. Upper Salt River is catch and release for artificial flies and lures only. Water flows vary after storms.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD stocked rainbows in the Salt River in several weeks of late 2025, including the weeks of Nov. 10, Nov. 17, Dec. 1 and Dec. 8.",
+    "AZGFD said the Lower Salt River was still running high flows in November 2025 and would come down over following months.",
+    "AZGFD says trout move into deeper, slower pools in winter, and that slow lures fished along the bottom in those pools work best.",
+    "The Upper Salt River, from the Roosevelt Diversion Dam up to the reservation boundary, is catch and release for artificial flies and lures only, per the regulation summary.",
+    "AZGFD recommended a Tonto National Forest pass and an Arizona license to fish the Salt River."
+   ],
+   "sources": [
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    },
+    {
+     "title": "Fishing tips and upcoming events (AZGFD, Dec 2025)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fdfb2c"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Slow-fished lures in deep pools",
+     "category": "other",
+     "detail": "Winter trout tactic, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing tips and upcoming events (AZGFD, winter)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fdfb2c"
+     }
+    },
+    {
+     "item": "Midges and mayflies",
+     "category": "insect",
+     "detail": "Typical for cold tailwater creeks. Not documented for the Salt River.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3
    ]
   }
  ]
