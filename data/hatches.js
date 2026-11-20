@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 27,
+ "version": 28,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -14977,7 +14977,7 @@ window.HATCH_DB = {
   },
   {
    "id": "riggs-flat-lake-az",
-   "name": "Riggs Flat Lake (Pinaleño Mountains, AZ)",
+   "name": "Riggs Flat Lake (Pinale\u00f1o Mountains, AZ)",
    "type": "reservoir",
    "elevation_ft": null,
    "lat": null,
@@ -15029,8 +15029,8 @@ window.HATCH_DB = {
     "chironomid"
    ],
    "notes": [
-    "The Coronado National Forest says Riggs Flat Lake is about 11 acres, at the end of the Swift Trail on the Pinaleños, per the Forest Service.",
-    "The Forest Service says Riggs Flat, Frye Mesa, Rose Canyon, Peña Blanca and Parker Canyon lakes are all stocked by AZGFD.",
+    "The Coronado National Forest says Riggs Flat Lake is about 11 acres, at the end of the Swift Trail on the Pinale\u00f1os, per the Forest Service.",
+    "The Forest Service says Riggs Flat, Frye Mesa, Rose Canyon, Pe\u00f1a Blanca and Parker Canyon lakes are all stocked by AZGFD.",
     "When Riggs Flat is snowed in and iced over, anglers can fish Frye Mesa Reservoir instead, per the Forest Service.",
     "Recent AZGFD plants at Riggs Flat included rainbows in June, July, August and September 2023 and 2024, per Sportfishing Report.",
     "AZGFD reports from 2016 described the lake as open for summer and winding down by November."
@@ -15441,12 +15441,12 @@ window.HATCH_DB = {
   },
   {
    "id": "pena-blanca-lake-az",
-   "name": "Peña Blanca Lake (Nogales, AZ)",
+   "name": "Pe\u00f1a Blanca Lake (Nogales, AZ)",
    "type": "reservoir",
    "elevation_ft": null,
    "lat": null,
    "lon": null,
-   "coords_note": "Elevation not sourced. Coordinates not set. In Peña Blanca Canyon, 68 miles south of Tucson and 17 miles northwest of Nogales, per AZGFD.",
+   "coords_note": "Elevation not sourced. Coordinates not set. In Pe\u00f1a Blanca Canyon, 68 miles south of Tucson and 17 miles northwest of Nogales, per AZGFD.",
    "area_acres": 50,
    "species": [
     {
@@ -15485,13 +15485,13 @@ window.HATCH_DB = {
     "chironomid"
    ],
    "notes": [
-    "Peña Blanca Lake is in the Coronado National Forest, 68 miles south of Tucson and 17 miles northwest of Nogales, in Peña Blanca Canyon, per AZGFD.",
+    "Pe\u00f1a Blanca Lake is in the Coronado National Forest, 68 miles south of Tucson and 17 miles northwest of Nogales, in Pe\u00f1a Blanca Canyon, per AZGFD.",
     "The day-use fee is $8 per vehicle, or an accepted pass, per AZGFD.",
-    "AZGFD said Peña Blanca would receive monthly rainbow stockings starting the last week of January through March.",
-    "AZGFD said water quality had improved at Peña Blanca in February 2023, and rainbows were to be stocked through March.",
-    "AZGFD's 2016 report said mercury advisories against eating warmwater fish from Peña Blanca were in effect. These sources do not confirm the current status.",
+    "AZGFD said Pe\u00f1a Blanca would receive monthly rainbow stockings starting the last week of January through March.",
+    "AZGFD said water quality had improved at Pe\u00f1a Blanca in February 2023, and rainbows were to be stocked through March.",
+    "AZGFD's 2016 report said mercury advisories against eating warmwater fish from Pe\u00f1a Blanca were in effect. These sources do not confirm the current status.",
     "A habitat project added structure to the lake to build a stronger warmwater fishery, per AZGFD.",
-    "A family outdoor day was held at Peña Blanca in April 2026, with poles and bait provided, per AZGFD."
+    "A family outdoor day was held at Pe\u00f1a Blanca in April 2026, with poles and bait provided, per AZGFD."
    ],
    "sources": [
     {
@@ -15517,7 +15517,7 @@ window.HATCH_DB = {
     {
      "item": "Midges and damselflies",
      "category": "insect",
-     "detail": "Regional stillwater insects. Not documented for Peña Blanca.",
+     "detail": "Regional stillwater insects. Not documented for Pe\u00f1a Blanca.",
      "basis": "regional",
      "insect_id": "chironomid"
     }
@@ -15584,7 +15584,7 @@ window.HATCH_DB = {
     "chironomid"
    ],
    "notes": [
-    "The Coronado National Forest says Frye Mesa, Riggs Flat, Rose Canyon, Peña Blanca and Parker Canyon lakes are stocked by AZGFD.",
+    "The Coronado National Forest says Frye Mesa, Riggs Flat, Rose Canyon, Pe\u00f1a Blanca and Parker Canyon lakes are stocked by AZGFD.",
     "When high-elevation Riggs Flat is snowed in and iced over, trout anglers in the Safford District can still fish Frye Mesa Reservoir, per the Forest Service.",
     "Snoflo lists Frye Mesa's species as a set of five, though the source does not name them.",
     "Snoflo's tips suggest live bait and lures near submerged structure, with the depth varied until fish are found."
@@ -16568,6 +16568,479 @@ window.HATCH_DB = {
     2,
     3,
     4
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "horton-creek-az",
+   "name": "Horton Creek (Tonto National Forest, AZ)",
+   "type": "stream",
+   "elevation_ft": 6700,
+   "lat": 34.3401,
+   "lon": -111.0951,
+   "coords_note": "Elevation of the spring source (6,700 ft) from Wikipedia. Coordinates from Fishbrain's listing; verify on a map before driving.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocking not confirmed for Horton itself; sources say trout fish the creek"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Wild and naturally reproducing"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Reported by Fishbrain users"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Sources say trout fishing is popular on Horton and Tonto creeks. No Horton-specific stocking record was found.",
+    "schedule": "No published Horton-specific schedule found. AZGFD stocks the Tonto Creek drainage seasonally.",
+    "recent_plants": [],
+    "wild_fish": "Brown trout and wild rainbows (per Fishbrain and Forest Service listings).",
+    "sources": [
+     {
+      "title": "Horton - Tonto NF (USFS)",
+      "url": "https://fs.usda.gov/r03/tonto/recreation/horton"
+     },
+     {
+      "title": "Horton Creek - Discover Gila County",
+      "url": "https://discovergilacounty.com/horton-creek/"
+     },
+     {
+      "title": "Horton Creek (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Horton_Creek_(Arizona)"
+     },
+     {
+      "title": "Tonto Creek Fish Hatchery (AZGFD)",
+      "url": "https://www.azgfd.com/?p=5307"
+     }
+    ]
+   },
+   "fishing_season_note": "Day-use area only, 3 miles south of the AZGFD Tonto hatchery. Fish from the stream below the Horton Creek Trail 285 trailhead.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ],
+   "notes": [
+    "The Forest Service calls Horton a day-use site with six picnic units, three miles south of the AZGFD Tonto Hatchery.",
+    "Forest Service and Discover Gila County both say trout fishing is popular in Horton Creek and in Tonto Creek.",
+    "Discover Gila County lists flies and salmon eggs as recommended baits.",
+    "The Horton Creek Trail 285 starts in the Tonto Creek Campground area, per Discover Gila County and Forest Service trail notes.",
+    "Orvis notes that if you fish below the Horton confluence on Tonto Creek, bigger streamers can turn up a wild brown.",
+    "Arizona Highways reports the Horton Creek trail goes up to a spring that gushes from a hillside, a good place to stand knee-deep.",
+    "Wikipedia gives a spring elevation of 6,700 ft and says the closest town, Payson, is about 20 miles away.",
+    "AZGFD has posted a fly-fishing video for brown trout on Horton Creek (AZGFD bulletin)."
+   ],
+   "sources": [
+    {
+     "title": "Horton - Tonto NF (USFS)",
+     "url": "https://fs.usda.gov/r03/tonto/recreation/horton"
+    },
+    {
+     "title": "Horton Creek - Discover Gila County",
+     "url": "https://discovergilacounty.com/horton-creek/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Caddis imitations are recommended for Horton Creek's trout in the Orvis-reported fishery below the confluence.",
+     "basis": "sourced",
+     "source": "Orvis Phoenix reports (Tonto Creek)",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "other",
+     "detail": "Hoppers and beetles fall into the creek off the surrounding forest and riparian brush in summer.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "haigler-creek-az",
+   "name": "Haigler Creek (Tonto National Forest, AZ)",
+   "type": "stream",
+   "elevation_ft": 5800,
+   "lat": 34.2161,
+   "lon": -111.0932,
+   "coords_note": "Source elevation 5,800 ft and mouth elevation 4,000 ft from Wikipedia. Coordinates from Fishbrain; verify on a map.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocking has been halted on lower reaches due to warm water"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Wild and naturally reproducing"
+    },
+    {
+     "name": "Apache trout / Gila trout",
+     "stocking": "Native fish reintroduced by AZGFD since 2015 (per Discover Gila County)"
+    }
+   ],
+   "stocking": {
+    "status": "reduced",
+    "summary": "AZGFD stocking on Haigler has been halted when water is too warm. The sportfishing source says Haigler is not regularly stocked, relying on wild fish.",
+    "schedule": "Canyon, Haigler and Tonto creeks were scheduled to start in March in one AZGFD release, but summer stocking is often cancelled when water temperature is too high.",
+    "recent_plants": [],
+    "wild_fish": "Naturally reproducing rainbows and browns; AZGFD reintroduced native fish from 2015.",
+    "sources": [
+     {
+      "title": "Haigler Creek - Arizona Fish Report (9-30-2025)",
+      "url": "https://utahfishreports.com/fish_reports/231232/haigler-creek-fishing-report.php"
+     },
+     {
+      "title": "Haigler Creek - Sportfishing Report",
+      "url": "https://www.sportfishingreport.com/creeks/1026/haigler-creek.php"
+     },
+     {
+      "title": "AZGFD news release (Canyon, Haigler, Tonto)",
+      "url": "https://azgfd.com/?p=12860"
+     },
+     {
+      "title": "Haigler Creek (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Haigler_Creek"
+     }
+    ]
+   },
+   "fishing_season_note": "Cold, clear, forested creek. Access via Forest Roads 200 and 291; good stretches near Haigler Creek Campground and Ellison Creek. Best for experienced, backcountry anglers.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial",
+    "chironomid"
+   ],
+   "notes": [
+    "Sportfishing Report says Haigler is not regularly stocked and supports naturally reproducing fish, with fish mostly 8 to 14 inches and bigger browns in deeper pools.",
+    "AZGFD fish report dated September 30, 2025 says stocking stopped from Haigler Creek Campground down to Alderwood Campground because of warm water.",
+    "AZGFD said in 2021 that no stocking occurred on the East Verde or Haigler because water temperatures were above 76 degrees.",
+    "Discover Gila County says Haigler offers rainbows and browns all year, and that AZGFD reintroduced native Apache, Arizona and Gila trout starting in 2015.",
+    "Fly anglers on Haigler commonly use dry-dropper rigs, terrestrials, and small nymphs, per Sportfishing Report.",
+    "Hunter Creek, a tributary in the same conservation area, has longfin dace along with rainbows and green sunfish, per AZGFD's Wildlife Conservation Strategy.",
+    "Wikipedia gives a source elevation of 5,800 ft and a mouth elevation of 4,000 ft."
+   ],
+   "sources": [
+    {
+     "title": "Haigler Creek fish report (AZGFD, 9-30-2025)",
+     "url": "https://utahfishreports.com/fish_reports/231232/haigler-creek-fishing-report.php"
+    },
+    {
+     "title": "Haigler Creek - Sportfishing Report",
+     "url": "https://www.sportfishingreport.com/creeks/1026/haigler-creek.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Caddis patterns are standard in Rim streams like Haigler.",
+     "basis": "regional",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Terrestrials (hoppers, beetles, ants)",
+     "category": "other",
+     "detail": "Anglers use terrestrials, which AZGFD-linked fly reports cite on Haigler.",
+     "basis": "sourced",
+     "source": "Sportfishing Report, Haigler Creek",
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Small nymphs",
+     "category": "insect",
+     "detail": "Sportfishing Report says small nymphs are a common fly choice on Haigler.",
+     "basis": "sourced",
+     "source": "Sportfishing Report, Haigler Creek",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "webber-creek-az",
+   "name": "Webber Creek (Mogollon Rim, Gila County, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": 34.3147,
+   "lon": -111.3327,
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain and FishBox listings; verify on a map.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Gila trout",
+     "stocking": "Native fish; AZGFD has stocked and managed Gila trout in the region"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Wild and stocked upstream near Camp Geronimo"
+    },
+    {
+     "name": "Roundtail chub, Sonora sucker, desert sucker, speckled dace",
+     "stocking": "Native; roundtail chub stockings are planned by AZGFD"
+    }
+   ],
+   "stocking": {
+    "status": "partially stocked",
+    "summary": "AZGFD's Wildlife Conservation Strategy says the upper reach near Camp Geronimo supports a sport fishery for rainbows, and roundtail chub stockings are planned along the perennial reaches.",
+    "schedule": "No public stocking schedule found.",
+    "recent_plants": [
+     {
+      "date": "Planned",
+      "species": "Roundtail chub (AZGFD plan)"
+     }
+    ],
+    "wild_fish": "Wild rainbow trout; Sonora sucker, desert sucker and speckled dace documented by recent surveys.",
+    "sources": [
+     {
+      "title": "Webber Creek COA (AZGFD Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/webber-creek"
+     },
+     {
+      "title": "Webber Creek fish report (AZGFD, 2-6-2026)",
+      "url": "https://utahfishreports.com/fish_reports/235231/webber-creek-fishing-report.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Hard-to-reach wild rainbow fishery near the Highline Trail, and the Arizona Trail follows the route above it. Plan for rough access and limited road access.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ],
+   "notes": [
+    "AZGFD's Wildlife Conservation Strategy rates Webber Creek a high-priority management unit.",
+    "The most recent surveys documented Sonora sucker, desert sucker, speckled dace, and rainbow trout.",
+    "Upstream portions near Camp Geronimo are an important sport fishery for rainbow trout, according to AZGFD.",
+    "AZGFD plans roundtail chub stockings throughout perennial reaches and will evaluate them later.",
+    "AZGFD's February 2026 fish report calls Webber one of the harder-to-reach wild rainbow fisheries in the region.",
+    "The Webber Creek trailhead is the access point for the Highline Trail, which the Arizona Trail follows for just over half its length, per Komoot.",
+    "Gila trout appear in Fishbrain catch logs for Webber, but no AZGFD stocking record was found for it."
+   ],
+   "sources": [
+    {
+     "title": "Webber Creek COA (AZGFD)",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/webber-creek"
+    },
+    {
+     "title": "Webber Creek fish report (AZGFD, 2-6-2026)",
+     "url": "https://utahfishreports.com/fish_reports/235231/webber-creek-fishing-report.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Caddis patterns are standard on Rim streams. Webber-specific hatch data was not found.",
+     "basis": "regional",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Native minnows and suckers (speckled dace, Sonora sucker, desert sucker)",
+     "category": "other",
+     "detail": "Documented by AZGFD surveys and a prey base for trout.",
+     "basis": "sourced",
+     "source": "AZGFD Webber Creek COA"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "other",
+     "detail": "Summer terrestrials fall into the creek off the surrounding forest.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "verde-river-dead-horse-camp-verde-az",
+   "name": "Verde River (Dead Horse Ranch to Camp Verde, AZ)",
+   "type": "river",
+   "elevation_ft": null,
+   "lat": 34.4765,
+   "lon": -111.8007,
+   "coords_note": "Elevation not sourced. Coordinates from the USFS Beasley Flat picnic site page; verify on a map.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked from November through March at Dead Horse, Tuzigoot and Black Bridge"
+    },
+    {
+     "name": "Smallmouth bass, largemouth bass, redeye bass",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Channel and flathead catfish",
+     "stocking": "Wild and AZGFD-stocked catfish at Dead Horse lagoons"
+    },
+    {
+     "name": "Roundtail chub, bluegill, green sunfish",
+     "stocking": "Wild"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD stocks rainbow trout upstream at Dead Horse Ranch State Park and at Camp Verde's Black Bridge from November through March. State Parks says trout are also stocked at Tuzigoot Bridge and the 10th Street bridge.",
+    "schedule": "Stocked November through March (USFS). Winter releases come every week or two (AZGFD, 2011 article).",
+    "recent_plants": [
+     {
+      "date": "November through March",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Smallmouth, largemouth and redeye bass, channel and flathead catfish, bluegill, green sunfish, roundtail chub.",
+    "sources": [
+     {
+      "title": "Beasley Flat picnic site (USFS)",
+      "url": "https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site"
+     },
+     {
+      "title": "Verde River facility information (Arizona State Parks)",
+      "url": "https://azstateparks.com/verde-river/explore/facility-information"
+     },
+     {
+      "title": "Dead Horse on the water (Arizona State Parks)",
+      "url": "https://azstateparks.com/dead-horse/on-the-water"
+     },
+     {
+      "title": "Rockin' River Ranch fishing (Arizona State Parks)",
+      "url": "https://azstateparks.com/rockin-river/on-the-water/fishing"
+     }
+    ]
+   },
+   "fishing_season_note": "Fish the Verde between Dead Horse Ranch and Camp Verde. Winter is best for stocked trout, and bass and catfish are a year-round draw. There is no camping on this section, but Dead Horse is minutes away.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial",
+    "chironomid"
+   ],
+   "notes": [
+    "State Parks lists bass, catfish, and panfish, with occasional wayward trout, in the Rockin' River Ranch section near Camp Verde.",
+    "State Parks says this part of the Verde is one of central Arizona's most prolific river bass fisheries because of slow flows, cover, and baitfish.",
+    "USFS says rainbows are stocked upstream at Dead Horse and in Camp Verde at Black Bridge from November through March.",
+    "Verde River facility information says trout are stocked at Tuzigoot Bridge, the 10th Street bridge, and Dead Horse day use area in winter.",
+    "Dead Horse Ranch lagoons hold largemouth bass, rainbows, channel catfish, bluegill, green sunfish, and an occasional crappie.",
+    "AZGFD stocks channel catfish seasonally at Dead Horse, typically in warmer months.",
+    "AWCS describes the Beasley Flat to Horseshoe reach as high-priority habitat for native and sport fish, with roundtail chub and desert sucker persisting without management.",
+    "Razorback sucker and Colorado pikeminnow have been stocked in the reach with little success, according to AWCS."
+   ],
+   "sources": [
+    {
+     "title": "Beasley Flat picnic site (USFS)",
+     "url": "https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site"
+    },
+    {
+     "title": "Verde River facility information (AZ State Parks)",
+     "url": "https://azstateparks.com/verde-river/explore/facility-information"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Baitfish (shiners, dace, young suckers)",
+     "category": "fish",
+     "detail": "Ample baitfish are noted by State Parks as a reason the bass fishery is strong.",
+     "basis": "sourced",
+     "source": "AZ State Parks, Rockin' River Ranch"
+    },
+    {
+     "item": "Caddisflies and midges",
+     "category": "insect",
+     "detail": "Winter trout feed on midges and caddis in slow water. Hatch timing is not sourced for this reach.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
    ],
    "best_months": [
     11,
