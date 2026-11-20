@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 22,
+ "version": 23,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -13647,7 +13647,7 @@ window.HATCH_DB = {
    ],
    "stocking": {
     "status": "warmwater",
-    "summary": "Smallmouth and largemouth fishery. Smallmouth stocked in 2025-26 era.",
+    "summary": "Smallmouth and largemouth fishery. Smallmouth stocked July 2.",
     "schedule": "Smallmouth stocked July 2.",
     "recent_plants": [
      {
@@ -13789,7 +13789,7 @@ window.HATCH_DB = {
    "notes": [
     "Roper Lake State Park has produced largemouth bass over 10 pounds in recent years, and is home to many large bass that feed on stocked rainbows, per Arizona State Parks in March 2026.",
     "State Parks says largemouth at Roper can reach five to seven pounds, and that anglers catch bass in that range.",
-    "AZGFD stocked rainbows at Roper in December 2025 and in early December in an earlier year.",
+    "AZGFD stocked rainbows at Roper the week of Dec. 1 to 5, 2025.",
     "Inline spinners trolled slowly produce the most repeatable trout results at Roper, per State Parks.",
     "Roper holds schools of crappie, bluegill and channel catfish along with the largemouth.",
     "Trout fishing at Roper is best in winter and early spring, when most stockings occur."
@@ -14107,7 +14107,7 @@ window.HATCH_DB = {
     "chironomid"
    ],
    "notes": [
-    "Lake Havasu is on the Colorado River at Lake Havasu City. AZGFD lists striped bass, largemouth, smallmouth and channel catfish there.",
+    "Lake Havasu is on the Colorado River at Lake Havasu City. AZGFD lists striped and smallmouth bass there; charter reports add largemouth and channel catfish.",
     "A February 2026 charter report had water temperatures in the high 50s, rising to the low 60s in the afternoons in shallow back coves.",
     "The same February 2026 report found good striper action on the south end of the lake, mostly on live shad.",
     "Post-spawn largemouth and smallmouth set up around secondary points, rock transitions, submerged brush and offshore structure, per a February 2026 charter.",
@@ -14261,7 +14261,7 @@ window.HATCH_DB = {
     "Alamo sits in La Paz County and intersects Mohave County, per Fishbrain.",
     "AZGFD said bead fishing should pick up at Alamo in a May 2024 report.",
     "Alamo's state-park regulations give a two-bass limit with a minimum size, per Fishbrain.",
-    "Alamo is one of Arizona's main bass waters, and State Parks says large bass there likely feed on stocked trout."
+    "Alamo is a state park reservoir with a two-bass limit and no trout stocking documented in the sources."
    ],
    "sources": [
     {
@@ -14380,7 +14380,7 @@ window.HATCH_DB = {
     "Dead Horse Ranch State Park has three lagoons and fishable stretches of the Verde River, per Arizona State Parks.",
     "The lagoons and river are both stocked with rainbows in winter and early spring, per State Parks.",
     "AZGFD stocked over 2,000 pounds of channel catfish in the park lagoons in April 2023, per State Parks.",
-    "Sportsman's Warehouse-style reports list rainbow, largemouth, channel catfish and sunfish as the main species, per Sportfishing Report.",
+    "Sportfishing Report lists channel catfish, rainbow trout and largemouth bass at Dead Horse.",
     "A June 6, 2026 Free Fishing Fun Day was held at the park ponds, hosted by AZGFD, the park and Prescott National Forest.",
     "AZGFD reported in April 2026 that the trout fishery was still going strong.",
     "The lagoons' growth rates for bass were attributed to a diet of stocked rainbows, per State Parks."
