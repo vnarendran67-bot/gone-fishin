@@ -148,6 +148,15 @@ async function findBestDay(){
   } finally { ELEV_M = saved; btn.disabled = false; }
 }
 
+/* ---------- wind alert banner ---------- */
+function windBanner(wx){
+  if (!wx || !wx.a || wx.a.wind == null) return '';
+  const w = wx.a.wind;
+  if (w >= 24) return `<div class="alert strong"><b>Strong wind expected</b> (about ${fmtWind(w)}). Casting and drifting will be hard. Fish sheltered banks, or pick another day.</div>`;
+  if (w >= 16) return `<div class="alert breezy"><b>Breezy</b> (about ${fmtWind(w)}). Look for sheltered water and heavier flies or sinking lines.</div>`;
+  return '';
+}
+
 /* ---------- reminders (Google Calendar) ---------- */
 function reminderLink(dateStr){
   const prev = shiftDay(dateStr, -1).replace(/-/g, '');
