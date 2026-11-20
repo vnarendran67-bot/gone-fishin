@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 17,
+ "version": 18,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -6058,152 +6058,6 @@ window.HATCH_DB = {
   {
    "lat": null,
    "lon": null,
-   "coords_note": "Elevation from Wikipedia. Coordinates not set.",
-   "area_acres": 100,
-   "verified": false,
-   "states": [
-    "Arizona"
-   ],
-   "id": "show-low-lake-az",
-   "name": "Show Low Lake (White Mountains, AZ)",
-   "type": "stillwater",
-   "elevation_ft": 6500,
-   "species": [
-    {
-     "name": "Walleye",
-     "stocking": "Stocked by AZGFD, March through July"
-    },
-    {
-     "name": "Rainbow trout",
-     "stocking": "Established. Recorded in the AZGFD 2022 guide"
-    },
-    {
-     "name": "Largemouth and smallmouth bass",
-     "stocking": "Established warmwater species"
-    },
-    {
-     "name": "Channel catfish, bluegill and green sunfish",
-     "stocking": "Established warmwater species"
-    }
-   ],
-   "stocking": {
-    "status": "stocked, plus warmwater species",
-    "summary": "Stocked by AZGFD with rainbow trout. The lake also holds established walleye, bass and catfish. A 2022 AZGFD guide calls it the best place in Arizona for lunker walleye.",
-    "schedule": "AZGFD moved its Show Low-area stocking to March through July, from the traditional April through September. Stockings are expected to finish by July 4. Summer stocking was paused in 2020 to 2023 when the water got warm.",
-    "recent_plants": [
-     {
-      "date": "March through July (annual schedule)",
-      "species": "Rainbow trout (catchables)"
-     }
-    ],
-    "wild_fish": "Walleye, channel catfish, largemouth and smallmouth bass, and sunfish are present. An AZGFD bulletin lists smallmouth bass for Show Low Lake.",
-    "sources": [
-     {
-      "title": "Pinetop-Lakeside stocking schedule change (AZGFD news release)",
-      "url": "https://www.azgfd.com/?p=12838"
-     },
-     {
-      "title": "Show Low Lake (Wikipedia)",
-      "url": "https://en.wikipedia.org/wiki/Show_Low_Lake"
-     },
-     {
-      "title": "Pinetop Show Low Lakes fishing guide (AZGFD 2022)",
-      "url": "https://www.greerlodgeaz.com/wp-content/uploads/2023/04/Fishing-Guide-Pinetop-Show-Low-Lakes-Streams-AZGFD-2022.pdf"
-     },
-     {
-      "title": "AZGFD record fish list",
-      "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
-     }
-    ]
-   },
-   "fishing_season_note": "Trout stocking runs March through July. Best fishing is usually spring (April to June) and fall (September to November). Boat launches can be limited during drought.",
-   "notes": [
-    "Show Low Lake is 100 acres at about 6,500 ft in the White Mountains. Average depth is about 33 feet and the maximum is about 50 feet.",
-    "AZGFD stocks rainbow from March through July. Stocking finishes by July 4, according to AZGFD. Summer stocking was paused from 2020 to 2023 when the water got too warm.",
-    "Spring (April to June) and fall (September to November) are the best months, according to Torreon's regional guide.",
-    "AZGFD listed Show Low among waters to visit when boat launches are limited by drought. Check launch access before you plan a boat trip.",
-    "A 2022 AZGFD guide calls Show Low the best place in Arizona to catch lunker walleye. The state record walleye, 16 lb 1.76 oz, came from here in 2002.",
-    "Trout, walleye and northern pike move into shallows to hunt baitfish and crayfish, according to Journal AZ reporting on Arizona lakes.",
-    "Smallmouth and largemouth bass are both present, and anglers use worms, PowerBait and lures for trout and bass, per a regional guide.",
-    "The lake has good water quality year round, according to Wikipedia. Warm summer water has paused trout stocking here in past years."
-   ],
-   "forage": [
-    {
-     "item": "Rainbow trout (stocked)",
-     "category": "stocked feed",
-     "detail": "Hatchery-reared rainbows are typically fed pelleted feed and have no experience catching live fish when stocked, per USGS.",
-     "basis": "sourced",
-     "source": {
-      "title": "Hatchery Trout Predation Data, Arizona (USGS)",
-      "url": "https://www.usgs.gov/data/hatchery-trout-predation-data-arizona"
-     }
-    },
-    {
-     "item": "Baitfish (minnows and small fish)",
-     "category": "baitfish",
-     "detail": "Walleye and trout move into shallows to hunt baitfish, especially in cool shallow water.",
-     "basis": "sourced",
-     "source": {
-      "title": "Trout, walleye and northern pike move into shallows in search of baitfish and crayfish (Journal AZ)",
-      "url": "https://journalaz.com/2026/01/11/arizona-game-fish-recently-stocked-waterways/?amp=1"
-     }
-    },
-    {
-     "item": "Crayfish",
-     "category": "crustacean",
-     "detail": "Walleye and northern pike eat crayfish in shallow water, per Journal AZ reporting on Arizona lakes.",
-     "basis": "sourced",
-     "source": {
-      "title": "Journal AZ, Arizona Game and Fish stocked waterways",
-      "url": "https://journalaz.com/2026/01/11/arizona-game-fish-recently-stocked-waterways/?amp=1"
-     }
-    },
-    {
-     "item": "Bluegill and green sunfish",
-     "category": "baitfish",
-     "detail": "Sunfish are part of the warmwater mix. Bass and walleye eat them.",
-     "basis": "sourced",
-     "source": {
-      "title": "Pinetop Show Low Lakes fishing guide (AZGFD 2022)",
-      "url": "https://www.greerlodgeaz.com/wp-content/uploads/2023/04/Fishing-Guide-Pinetop-Show-Low-Lakes-Streams-AZGFD-2022.pdf"
-     }
-    },
-    {
-     "item": "Midges and aquatic insects",
-     "category": "insect",
-     "detail": "General lake insects support the trout and sunfish. Show Low-specific hatch data is not documented.",
-     "basis": "general",
-     "insect_id": "chironomid"
-    }
-   ],
-   "insect_ids": [
-    "chironomid",
-    "callibaetis",
-    "damselfly"
-   ],
-   "fish_months": [
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11
-   ],
-   "best_months": [
-    4,
-    5,
-    6,
-    9,
-    10,
-    11
-   ]
-  },
-  {
-   "lat": null,
-   "lon": null,
    "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
    "area_acres": null,
    "verified": false,
@@ -8812,6 +8666,1159 @@ window.HATCH_DB = {
     }
    ],
    "insect_ids": []
+  },
+  {
+   "id": "show-low-lake-az",
+   "name": "Show Low Lake (Show Low, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6500,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Wikipedia. Coordinates not set.",
+   "area_acres": 100,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked April through September"
+    },
+    {
+     "name": "Walleye",
+     "stocking": "Self-sustaining"
+    },
+    {
+     "name": "Bluegill and green sunfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Largemouth and smallmouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Occasionally stocked by AZGFD"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Put-and-take stocking, April through September historically. 2026 schedule moved to March through July.",
+    "schedule": "2026: March through July per AZGFD news release.",
+    "recent_plants": [],
+    "wild_fish": "Walleye. Bass and bluegill present.",
+    "sources": [
+     {
+      "title": "AZGFD news release: Show Low and Pinetop-Lakeside stocking changes",
+      "url": "https://www.azgfd.com/?p=12838"
+     }
+    ]
+   },
+   "fishing_season_note": "Rainbow trout are stocked April through September. Walleye are a self-sustaining population, best in spring and fall, per Sportfishing Report.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Show Low Lake covers 100 acres at about 6,500 feet in the White Mountains. Its average depth is 33 feet and its maximum is 50 feet, per Wikipedia.",
+    "AZGFD and the city of Show Low administer the lake, and it is a city park five miles south of downtown. Wikipedia says its water quality stays good year round.",
+    "Walleye are one of the few Arizona lakes with a self-sustaining population. Sportfishing Report recommends jigs or crankbaits near drop-offs in spring and fall.",
+    "AZGFD stocked the lake heavily with rainbows in fall 2016, and reports from that year say trout can be found at all depths once the lake fully mixes.",
+    "In 2026 AZGFD moved stocking in the Show Low and Pinetop-Lakeside area to March through July, from the old April to September schedule. Show Low, Fool Hollow, Rainbow and Woodland lakes are named.",
+    "Show Low Creek below the lake was listed for Community Fishing Program stocking in late 2025, per AZGFD. Bluegill and trout fishing was reported as great in May 2024."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD news release: Show Low and Pinetop-Lakeside stocking changes",
+     "url": "https://www.azgfd.com/?p=12838"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Walleye",
+     "category": "baitfish",
+     "detail": "Self-sustaining. Jigs and crankbaits near drop-offs in spring and fall.",
+     "basis": "sourced",
+     "source": {
+      "title": "Show Low Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/1842/show-low-lake.php"
+     }
+    },
+    {
+     "item": "Bluegill and green sunfish",
+     "category": "baitfish",
+     "detail": "Present in the lake. Sportfishing Report reports bluegill fishing as great in May 2024.",
+     "basis": "sourced",
+     "source": {
+      "title": "Show Low Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/1842/show-low-lake.php"
+     }
+    },
+    {
+     "item": "Rainbow trout (stocked)",
+     "category": "other",
+     "detail": "Stocked each spring through fall. Trout fishing was rated good to excellent in past AZGFD reports.",
+     "basis": "sourced",
+     "source": {
+      "title": "Show Low Lake Fishing Report, 11-4-2016 (AZGFD)",
+      "url": "https://www.sportfishingreport.com/fish_reports/117538/show-low-lake-fishing-report.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. No Show Low survey is in the sources.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "black-river-az",
+   "name": "Black River (White Mountains, AZ)",
+   "type": "stream",
+   "elevation_ft": 5000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Apache trout",
+     "stocking": "Native. Upper reaches"
+    },
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild throughout the system"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked at several sites; some wild"
+    },
+    {
+     "name": "Smallmouth bass (lower river)",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish, desert sucker, fathead minnow",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "mixed",
+    "summary": "Wild browns and rainbows. Apache trout on the Fort Apache side. Tribal and state rules differ.",
+    "schedule": "No schedule in sources.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns throughout. Apache trout in upper reaches.",
+    "sources": [
+     {
+      "title": "Fly Fishing On The Black River, Arizona (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/your-streams/fly-fishing-on-the-black-river-arizona/"
+     },
+     {
+      "title": "Black River (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/black-river-arizona/152905"
+     }
+    ]
+   },
+   "fishing_season_note": "Upper river has no winter access. The lower river is warmer. Orvis lists April through November for the upper river.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ],
+   "notes": [
+    "The Black River runs through the Apache-Sitgreaves National Forests and the San Carlos and Fort Apache reservations near Eagar, Alpine and Fort Apache, per Fly Fisherman.",
+    "The main stem is about 45 miles, and each fork is about 8 miles, per Perfect Fly Store. The upper forks hold native Apache trout with rainbows and browns.",
+    "Access is difficult, so pressure is low, per Fly Fisherman. Fly Fisherman says the river's shift between warm and cold water has a steroid-like effect on the brown trout.",
+    "The upper West Fork is strictly catch and release from Forest Service Road 116 upstream to the Fort Apache boundary, per Arizona Highways.",
+    "Discover Gila County lists 13 fish species in the river, including rainbow, brown and Apache trout, and smallmouth bass.",
+    "The north side of the river is Fort Apache land and the south side is San Carlos land. Permits and tribal regulations apply, per Discover Gila County. Check the tribe's rules before you fish."
+   ],
+   "sources": [
+    {
+     "title": "Fly Fishing On The Black River, Arizona (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/your-streams/fly-fishing-on-the-black-river-arizona/"
+    },
+    {
+     "title": "Black River (Fly Fisherman)",
+     "url": "https://www.flyfisherman.com/editorial/black-river-arizona/152905"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Crayfish, sculpins and small baitfish",
+     "category": "baitfish",
+     "detail": "Not documented in the sources reviewed. Assume general warmwater baitfish in the lower river.",
+     "basis": "general"
+    },
+    {
+     "item": "Caddis and mayflies",
+     "category": "insect",
+     "detail": "General mountain-stream insects. Hatch dates for the Black River are not in the sources.",
+     "basis": "regional",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "terrestrial",
+     "detail": "Dry flies and terrestrials are the popular choices on the canyon section, per Arizona Highways.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fly-fishing Hot Spots (Arizona Highways)",
+      "url": "https://www.arizonahighways.com/archive/issues/chapter/Doc.888.Chapter.6"
+     },
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "east-fork-black-river-az",
+   "name": "East Fork Black River (Alpine, AZ)",
+   "type": "stream",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild, wary"
+    },
+    {
+     "name": "Stocked rainbow trout",
+     "stocking": "Stocked at public access points in spring and summer"
+    },
+    {
+     "name": "Apache trout",
+     "stocking": "Occasional"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Wild browns and stocked rainbows. Stocking is spring and summer at public access points.",
+    "schedule": "Spring and summer, per Sportfishing Report.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns. Occasional Apache trout.",
+    "sources": [
+     {
+      "title": "East Fork of Black River (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/rivers/1845/east-fork-of-black-river.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round, with winter access limits. Rainbows are stocked at public sites in spring and summer.",
+   "insect_ids": [
+    "bwo",
+    "terrestrial"
+   ],
+   "notes": [
+    "Sportfishing Report calls the East Fork near Alpine one of the premier freestone trout streams in the state, offering wild browns and stocked rainbows.",
+    "Rainbows are stocked at several public access points in spring and summer, and they are readily caught on worms, spinners and PowerBait, per Sportfishing Report.",
+    "Browns are wild and wary. They hold in deeper pools and cut banks, and they are best targeted with streamers or terrestrials at low light, per Sportfishing Report. Browns grow over 16 inches.",
+    "Fly anglers have success with dry flies, nymphs and woolly buggers, per Sportfishing Report.",
+    "Arizona Highways describes the East Fork as a small-stream water with numerous riffles, runs and pools, suited to anglers after rainbows and browns."
+   ],
+   "sources": [
+    {
+     "title": "East Fork of Black River (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/rivers/1845/east-fork-of-black-river.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Terrestrials",
+     "category": "terrestrial",
+     "detail": "Recommended for browns at low light, per Sportfishing Report.",
+     "basis": "sourced",
+     "source": {
+      "title": "East Fork of Black River (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/rivers/1845/east-fork-of-black-river.php"
+     },
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Woolly buggers",
+     "category": "baitfish",
+     "detail": "Recommended for fly anglers on the East Fork, per Sportfishing Report.",
+     "basis": "sourced",
+     "source": {
+      "title": "East Fork of Black River (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/rivers/1845/east-fork-of-black-river.php"
+     }
+    },
+    {
+     "item": "Nymphs and mayflies",
+     "category": "insect",
+     "detail": "Nymphs work for fly anglers. Hatch dates are not in the sources.",
+     "basis": "sourced",
+     "source": {
+      "title": "East Fork of Black River (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/rivers/1845/east-fork-of-black-river.php"
+     },
+     "insect_id": "bwo"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "tonto-creek-az",
+   "name": "Tonto Creek (Payson, AZ)",
+   "type": "stream",
+   "elevation_ft": 5500,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked weekly by AZGFD, about 350 to 500 per week in 2021"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Wild and stocked"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked weekly from the Tonto Creek Hatchery. Recent AZGFD reports note stocking through October.",
+    "schedule": "Weekly. About 350 to 500 per week in 2021.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns in the creek. Some wild rainbows.",
+    "sources": [
+     {
+      "title": "High country trout stocking update (AZGFD, 7-16-2021)",
+      "url": "https://longrangesportfishing.net/reports/175414/high-country-trout-stocking-update.php"
+     },
+     {
+      "title": "Tonto Creek History (AZGFD)",
+      "url": "https://azgfd.com/?p=2071"
+     }
+    ]
+   },
+   "fishing_season_note": "Orvis lists year-round fishing. The hatchery sits at the headwaters.",
+   "insect_ids": [
+    "bwo"
+   ],
+   "notes": [
+    "Tonto Creek is one of several small streams on the Mogollon Rim northeast of Payson, and Orvis calls it one of the most accessible Rim creeks. A hatchery sits at its headwaters.",
+    "The AZGFD Tonto Creek Hatchery is near the headwaters in the Tonto National Forest, about 21 miles east of Payson off Highway 260.",
+    "In July 2021 AZGFD raised Tonto's stocking from 350 to 500 trout per week, because the creek's water quality stayed good when the East Verde and Haigler were too warm.",
+    "Orvis reports constant dry-fly bites on Tonto Creek and its tributaries on a day it was fishing.",
+    "AZGFD recommends Tonto Creek for rainbows and browns, per a June Free Fishing Day report. AZGFD says it was stocking through the end of October in a recent fall.",
+    "Utah Fish Report noted New Zealand mudsnails documented in Tonto Creek in October 2025. They are less common than in Canyon Creek, and anglers should disinfect gear."
+   ],
+   "sources": [
+    {
+     "title": "High country trout stocking update (AZGFD, 7-16-2021)",
+     "url": "https://longrangesportfishing.net/reports/175414/high-country-trout-stocking-update.php"
+    },
+    {
+     "title": "Tonto Creek History (AZGFD)",
+     "url": "https://azgfd.com/?p=2071"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "New Zealand mudsnails (invasive)",
+     "category": "other",
+     "detail": "Documented in the creek in 2025. Clean and disinfect gear to avoid moving them.",
+     "basis": "sourced",
+     "source": {
+      "title": "Tonto Creek Fish Report, 10-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/232511/tonto-creek-fishing-report.php"
+     }
+    },
+    {
+     "item": "Mayflies and terrestrial dry flies",
+     "category": "insect",
+     "detail": "Dry-fly bites were constant on one Orvis day. Hatch species are not named.",
+     "basis": "sourced",
+     "source": {
+      "title": "Tonto Creek (Orvis)",
+      "url": "https://fishingreports.orvis.com/southwest/arizona/tonto-creek"
+     },
+     "insect_id": "bwo"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "east-verde-river-az",
+   "name": "East Verde River (Payson, AZ)",
+   "type": "stream",
+   "elevation_ft": 4800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild in the upper river"
+    },
+    {
+     "name": "Stocked rainbow trout",
+     "stocking": "Supplemental stocking at recreation sites"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Native. One stocking in fall 2025"
+    },
+    {
+     "name": "Green sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Supplemental rainbow and one native Gila trout stocking in October 2025. Some reaches close to stocking in hot summers.",
+    "schedule": "Stocking through summer when water is cool enough, per AZGFD.",
+    "recent_plants": [],
+    "wild_fish": "Wild rainbows in the upper river. Gila trout are native.",
+    "sources": [
+     {
+      "title": "East Verde River Fish Report, 10-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/232509/east-verde-river-fishing-report.php"
+     },
+     {
+      "title": "High country trout stocking update (AZGFD, 7-16-2021)",
+      "url": "https://longrangesportfishing.net/reports/175414/high-country-trout-stocking-update.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Stocked through the year in some reaches. AZGFD stopped stocking in July 2021 when water was above 76 F.",
+   "insect_ids": [
+    "terrestrial"
+   ],
+   "notes": [
+    "AZGFD reported in October 2025 that the upper East Verde had been fishing well for wild rainbows, which are very opportunistic and still rising to dry flies.",
+    "Supplemental rainbow stockings and one native Gila trout stocking were made at recreation sites along the creek in October 2025, per AZGFD.",
+    "In July 2021 hatchery trucks found the East Verde and Haigler above 76 F, so no stocking happened there.",
+    "AZGFD's Arizona Wildlife Conservation Strategy calls the Mail Creek to Ash Creek reach a high-priority rainbow fishery, and it will keep stocking that intensively fished section.",
+    "Changes to how Salt River Project runs C.C. Cragin Reservoir could raise summer flow in the East Verde, which could improve trout habitat, per AZGFD.",
+    "The East Verde once supported narrow-headed gartersnakes, and the species was proposed as critical habitat in 2013. Its last recorded sighting in the East Verde was in 1992, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "East Verde River Fish Report, 10-30-2025 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/232509/east-verde-river-fishing-report.php"
+    },
+    {
+     "title": "High country trout stocking update (AZGFD, 7-16-2021)",
+     "url": "https://longrangesportfishing.net/reports/175414/high-country-trout-stocking-update.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Dry-fly insects and terrestrials",
+     "category": "insect",
+     "detail": "Wild rainbows took dry flies in October 2025, per AZGFD. Species are not named.",
+     "basis": "sourced",
+     "source": {
+      "title": "East Verde River Fish Report, 10-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/232509/east-verde-river-fishing-report.php"
+     },
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Green sunfish",
+     "category": "baitfish",
+     "detail": "Listed as a species the river is popular for, per Fishbrain.",
+     "basis": "sourced",
+     "source": {
+      "title": "East Verde River (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/K4vlrIni/east-verde-river"
+     }
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "christopher-creek-az",
+   "name": "Christopher Creek (Gila County, AZ)",
+   "type": "stream",
+   "elevation_ft": 5500,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked at See Canyon trailhead when water is cool"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Wild"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Native"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked only at the See Canyon trailhead when water is cool enough.",
+    "schedule": "Irregular. Depends on summer temperatures.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns and Gila trout. Some wild rainbows.",
+    "sources": [
+     {
+      "title": "High country trout stocking update (AZGFD, 7-16-2021)",
+      "url": "https://longrangesportfishing.net/reports/175414/high-country-trout-stocking-update.php"
+     },
+     {
+      "title": "Christopher Creek (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/2J4zyj-w/christopher-creek"
+     }
+    ]
+   },
+   "fishing_season_note": "Check the water temperature. In 2021 the campground section was too warm to stock, per AZGFD.",
+   "insect_ids": [
+    "terrestrial"
+   ],
+   "notes": [
+    "Christopher Creek is a stream in Gila County that Fishbrain lists for rainbow, brown and Gila trout.",
+    "In July 2021 AZGFD stocked only the See Canyon trailhead location because the campground water was too warm to stock.",
+    "In October 2025 AZGFD described Christopher Creek as one of the lowest and clearest creeks in Rim Country.",
+    "Fishbrain logs a wild brown of about 11 inches. Sources list little more about the creek.",
+    "Runoff is a spring issue on the Rim creeks, including Christopher Creek, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "High country trout stocking update (AZGFD, 7-16-2021)",
+     "url": "https://longrangesportfishing.net/reports/175414/high-country-trout-stocking-update.php"
+    },
+    {
+     "title": "Christopher Creek (Fishbrain)",
+     "url": "https://fishbrain.com/fishing-waters/2J4zyj-w/christopher-creek"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Mayflies and terrestrials",
+     "category": "insect",
+     "detail": "Not documented for Christopher Creek. Treat as general for Rim streams.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "wet-beaver-creek-az",
+   "name": "Wet Beaver Creek (Lake Montezuma, AZ)",
+   "type": "stream",
+   "elevation_ft": 3500,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in winter and spring"
+    },
+    {
+     "name": "Smallmouth and largemouth bass",
+     "stocking": "Present, unlimited harvest"
+    },
+    {
+     "name": "Roundtail chub and native sucker",
+     "stocking": "Native. Release unharmed"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with rainbows in winter and spring. Base flow is low in summer.",
+    "schedule": "Recent stockings noted in 2021 and 2026 AZGFD reports.",
+    "recent_plants": [
+     {
+      "date": "Week before 3-19-2026 report",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Bass and native suckers and chub. Wild trout reproduction is not documented.",
+    "sources": [
+     {
+      "title": "Wet Beaver Creek Fish Report, 3-19-2026 (AZGFD)",
+      "url": "https://www.utahfishreports.com/fish_reports/236519/stream-flow-is-at-base-flow-with-a-recent-reading-of-8.12-cfs.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round. Spring snowmelt can make it turbid, and base flow is low in summer. Check flow.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Arizona Game and Fish lists Wet Beaver and Beaver creeks as unlimited harvest for bass. Trout are limited to four per day.",
+    "Base flow is about 4 to 9 cfs, and AZGFD recorded a 2026 reading of 8.12 cfs at base flow in March.",
+    "In late 2025 storms pushed Wet Beaver Creek to a 2,130 cfs peak, and in February 2024 it reached 90.5 cfs. Flow changes fast, so check before you drive.",
+    "AZGFD says a native sucker or roundtail chub may be caught here and should be released unharmed.",
+    "Rainbow trout were stocked in March 2026, per AZGFD. An angler once hit the four-trout limit on salmon eggs after a stocking.",
+    "AZGFD described the creek as turbid during spring snowmelt in March 2023, which makes fishing difficult."
+   ],
+   "sources": [
+    {
+     "title": "Wet Beaver Creek Fish Report, 3-19-2026 (AZGFD)",
+     "url": "https://www.utahfishreports.com/fish_reports/236519/stream-flow-is-at-base-flow-with-a-recent-reading-of-8.12-cfs.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Salmon eggs and PowerBait",
+     "category": "other",
+     "detail": "Angler bait that took the limit after a stocking, per AZGFD (2021).",
+     "basis": "sourced",
+     "source": {
+      "title": "Wet Beaver Creek Report (AZGFD, 11-26-2021)",
+      "url": "https://longrangesportfishing.net/reports/181031/wet-beaver-creek-report.php"
+     }
+    },
+    {
+     "item": "Roundtail chub and native suckers",
+     "category": "baitfish",
+     "detail": "Native fish that AZGFD asks anglers to release.",
+     "basis": "sourced",
+     "source": {
+      "title": "Wet Beaver Creek Fish Report, 7-5-2023 (AZGFD)",
+      "url": "https://www.sportfishingreport.com/fish_reports/201687/bass-are-unlimited-harvest-in-wet-beaver-and-beaver-creeks.php"
+     }
+    },
+    {
+     "item": "Midges and caddis",
+     "category": "insect",
+     "detail": "General for Rim creeks. Not documented for Wet Beaver.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "west-clear-creek-az",
+   "name": "West Clear Creek (Camp Verde, AZ)",
+   "type": "stream",
+   "elevation_ft": 3800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Wild and stocked with holdovers"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Wild and stocked with holdovers"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Unlimited harvest"
+    },
+    {
+     "name": "Roundtail chub",
+     "stocking": "Native. Release unharmed"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Native, not currently present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Wild trout with stocked holdovers. Rainbows are stocked on a recurring basis.",
+    "schedule": "Recent stockings noted in October 2022 and December 2025.",
+    "recent_plants": [
+     {
+      "date": "Week before 12-15-2025 report",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Wild browns and rainbows. Gila trout are native but not present.",
+    "sources": [
+     {
+      "title": "West Clear Creek Fish Report, 12-15-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/234017/west-clear-creek-fishing-report.php"
+     },
+     {
+      "title": "West Clear Creek (AWCS)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/west-clear-creek-headwaters-to-waterfall"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round. Late spring and early summer are good. Late summer is too warm, per Perfect Fly Store. Early fall browns are excellent.",
+   "insect_ids": [],
+   "notes": [
+    "West Clear Creek is a freestone stream near Camp Verde, and Perfect Fly Store lists its species as rainbow and brown trout, both wild and stocked with holdovers.",
+    "Perfect Fly Store says late spring is good for fly fishing. Summer gets too warm, but early summer fishing is usually good. Early fall brown trout fishing is excellent.",
+    "Base flow runs about 15 to 17 cfs in spring, according to AZGFD. In March 2023 snowmelt made the creek turbid, which makes fishing harder.",
+    "Stream temperature reached 71.6 to 76.8 F in July 2023, per AZGFD. This is why late summer is hard on the creek.",
+    "AZGFD says smallmouth bass are unlimited harvest in West Clear Creek, and roundtail chub are often caught and must be released unharmed. The trout limit is four.",
+    "AZGFD's Arizona Wildlife Conservation Strategy says the only native species missing from the system is Gila trout. Removing non-natives without harming the native fish is not possible with current chemical methods.",
+    "AZGFD stocked rainbows in October 2022, and it stocked rainbows again in the week before the December 2025 report."
+   ],
+   "sources": [
+    {
+     "title": "West Clear Creek Fish Report, 12-15-2025 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/234017/west-clear-creek-fishing-report.php"
+    },
+    {
+     "title": "West Clear Creek (AWCS)",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/west-clear-creek-headwaters-to-waterfall"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Roundtail chub",
+     "category": "baitfish",
+     "detail": "Native fish that AZGFD says are often caught and should be released.",
+     "basis": "sourced",
+     "source": {
+      "title": "West Clear Creek Fish Report, 10-19-2022 (AZGFD)",
+      "url": "https://www.sportfishingreport.com/fish_reports/194051/roundtail-chub-are-often-caught-in-sections-of-west-clear-creek.php"
+     }
+    },
+    {
+     "item": "Smallmouth bass",
+     "category": "baitfish",
+     "detail": "Unlimited harvest. Less active in fall, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "West Clear Creek Fish Report, 2-3-2023 (AZGFD)",
+      "url": "https://www.norcalfishreports.com/fish_reports/196653/stream-temperature-has-been-increasing-this-week-and-was-43.16-f.php"
+     }
+    },
+    {
+     "item": "Stocked rainbow feed",
+     "category": "stocked feed",
+     "detail": "Not documented for West Clear Creek. Treat as general hatchery practice.",
+     "basis": "general"
+    },
+    {
+     "item": "Early fall brown trout",
+     "category": "other",
+     "detail": "Early fall is the strongest brown trout fishing, per Perfect Fly Store. The food itself is not named.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fly Fishing On The West Clear Creek, Arizona (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/?p=7445"
+     }
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "woods-canyon-lake-az",
+   "name": "Woods Canyon Lake (Payson, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7500,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Acreage from AA-Fishing.",
+   "area_acres": 52,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked regularly with catchable rainbows"
+    },
+    {
+     "name": "Tiger trout",
+     "stocking": "Sterile brown-brook hybrid. Stocked in May"
+    },
+    {
+     "name": "Brown trout holdovers",
+     "stocking": "No longer stocked. Large holdovers remain"
+    },
+    {
+     "name": "Crayfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Green sunfish",
+     "stocking": "Illegally introduced"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Regularly stocked with rainbows and tiger trout. Brown trout no longer stocked.",
+    "schedule": "Rainbows weekly through September. Tiger trout in May, per a 2019 AZGFD report.",
+    "recent_plants": [],
+    "wild_fish": "Brown trout holdovers. Crayfish are abundant.",
+    "sources": [
+     {
+      "title": "Woods Canyon Lake Fish Report, 9-16-2019 (AZGFD)",
+      "url": "https://sportfishingreport.com/fish_reports/153407/woods-canyon-lake-fishing-report.php"
+     },
+     {
+      "title": "Woods Canyon Lake (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Woods_Canyon_Lake"
+     }
+    ]
+   },
+   "fishing_season_note": "April through September for stocked trout. Snow covers the lake from about December to April, per Wikipedia.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Woods Canyon Lake sits on the Mogollon Rim about 30 miles east of Payson. Forest Service staff say it is regularly stocked with rainbows and tiger trout.",
+    "Wikipedia says the lake is stocked with rainbows and tiger trout from April through September. Snow covers it from December to April.",
+    "Tiger trout are a sterile brown-brook hybrid. AZGFD obtained the fingerlings from Utah and raised them at Tonto Creek Hatchery before stocking them, per the Western Bass report.",
+    "Recreation.gov says the daily limit is six trout and that tiger trout count toward it. Only electric motors are allowed.",
+    "Brown trout are no longer stocked, but holdovers from earlier stockings are often trophy size, per AA-Fishing.",
+    "The lake is loaded with crayfish, so crayfish imitations work for large trout. Illegally stocked green sunfish live along the rocky shore, per a 2019 AZGFD report.",
+    "AZGFD's 2026 bulletin did not list Woods Canyon among the lakes that would not be stocked in spring and summer 2026."
+   ],
+   "sources": [
+    {
+     "title": "Woods Canyon Lake Fish Report, 9-16-2019 (AZGFD)",
+     "url": "https://sportfishingreport.com/fish_reports/153407/woods-canyon-lake-fishing-report.php"
+    },
+    {
+     "title": "Woods Canyon Lake (Wikipedia)",
+     "url": "https://en.wikipedia.org/wiki/Woods_Canyon_Lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Crayfish",
+     "category": "crustacean",
+     "detail": "The lake is loaded with crayfish, per a 2019 AZGFD report. Use crayfish patterns for big trout.",
+     "basis": "sourced",
+     "source": {
+      "title": "Woods Canyon Lake Fish Report, 9-16-2019 (AZGFD)",
+      "url": "https://sportfishingreport.com/fish_reports/153407/woods-canyon-lake-fishing-report.php"
+     }
+    },
+    {
+     "item": "Green sunfish",
+     "category": "baitfish",
+     "detail": "Illegally stocked. AZGFD reports anglers fish them with nightcrawlers along the rocky shore.",
+     "basis": "sourced",
+     "source": {
+      "title": "Woods Canyon Lake Fish Report, 9-16-2019 (AZGFD)",
+      "url": "https://sportfishingreport.com/fish_reports/153407/woods-canyon-lake-fishing-report.php"
+     }
+    },
+    {
+     "item": "Leeches",
+     "category": "baitfish",
+     "detail": "Black-balanced leeches fished close to the structure have worked for AZGFD's fly anglers on the Rim.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fishing tips and upcoming events (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Woods Canyon.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "willow-springs-lake-az",
+   "name": "Willow Springs Lake (Mogollon Rim, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7513,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Sportsman's Warehouse. Acreage from USFS.",
+   "area_acres": 150,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked regularly from spring through fall"
+    },
+    {
+     "name": "Tiger trout",
+     "stocking": "Sterile brown-brook hybrid. Stocked in May and bonus stocking in September 2023"
+    },
+    {
+     "name": "Albino rainbows",
+     "stocking": "Stocked once in 2022"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Regularly stocked from spring through fall. Tiger trout are sterile. Albino rainbows stocked once in 2022.",
+    "schedule": "Regular spring through fall.",
+    "recent_plants": [],
+    "wild_fish": "No wild trout population documented.",
+    "sources": [
+     {
+      "title": "Willow Springs Lake (USFS)",
+      "url": "https://www.fs.usda.gov/r03/apache-sitgreaves/recreation/willow-springs-lake-fishing-and-boating-site"
+     },
+     {
+      "title": "Willow Springs Lake Fish Report, 6-3-2022 (AZGFD)",
+      "url": "https://www.sportfishingreport.com/fish_reports/187658/willow-springs-lake-stocked-with-albino-rainbow-trout.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Stocked from spring through fall, per USFS and Sportsman's.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Willow Springs Lake sits at about 7,513 feet on the Mogollon Rim, with 150 acres of surface area, per the USFS and Sportsman's Warehouse.",
+    "The lake is stocked with trout regularly from spring through fall, and boats with motors up to 10 horsepower are allowed. There is no fee for day use or launching, per USFS.",
+    "Stocking history: catchable rainbows weekly until mid-September and tiger trout stocked in May, per a 2019 AZGFD report. Tiger trout are sterile, brown-brook hybrids.",
+    "AZGFD stocked albino rainbows from the Canyon Creek Hatchery in late May 2022.",
+    "The Mogollon Sporting Association paid for an extra tiger trout stocking in September 2023, per AZGFD.",
+    "Sportsman's Warehouse says fly anglers should try brown or black woolly buggers and leeches. Spin anglers should try Rooster Tails, Mepps and Z-Rays."
+   ],
+   "sources": [
+    {
+     "title": "Willow Springs Lake (USFS)",
+     "url": "https://www.fs.usda.gov/r03/apache-sitgreaves/recreation/willow-springs-lake-fishing-and-boating-site"
+    },
+    {
+     "title": "Willow Springs Lake Fish Report, 6-3-2022 (AZGFD)",
+     "url": "https://www.sportfishingreport.com/fish_reports/187658/willow-springs-lake-stocked-with-albino-rainbow-trout.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Leeches",
+     "category": "baitfish",
+     "detail": "Brown or black leeches are recommended for fly anglers, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Willow Springs Lake (Sportsman's)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/willow-springs-lake-/12708/"
+     }
+    },
+    {
+     "item": "Woolly buggers",
+     "category": "baitfish",
+     "detail": "Brown or black woolies are recommended, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Willow Springs Lake (Sportsman's)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/willow-springs-lake-/12708/"
+     }
+    },
+    {
+     "item": "Worms and salmon eggs",
+     "category": "other",
+     "detail": "Angler baits for rainbows, per Sportsman's Warehouse.",
+     "basis": "sourced",
+     "source": {
+      "title": "Willow Spring (Sportsman's)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/willow-spring/67/"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Willow Springs.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9
+   ]
   }
  ]
 };
