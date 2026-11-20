@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 11,
+ "version": 12,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -4834,6 +4834,607 @@ window.HATCH_DB = {
      }
     ]
    }
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Approximate elevation. Coordinates not set.",
+   "type": "stream",
+   "area_acres": null,
+   "verified": false,
+   "id": "blue-river-co",
+   "name": "Blue River (Silverthorne tailwater, Summit County, CO)",
+   "elevation_ft": 8900,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, including brood cull fish of 14 inches or longer and fingerlings"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Wild and self-sustaining population"
+    },
+    {
+     "name": "Kokanee salmon",
+     "stocking": "Wild fall run from Green Mountain Reservoir"
+    }
+   ],
+   "stocking": {
+    "status": "stocked, with wild browns",
+    "summary": "The Silverthorne tailwater is stocked with rainbow. Browns are wild and self-sustaining. Private landowner stocking and pellet feeding upstream have been questioned in CPW reports.",
+    "schedule": "Stocked rainbow are fingerlings (3 to 4 inches) and brood fish (14 inches or longer). The exact schedule is in the CPW stocking report, and the 2018 CPW stocking records list plants in several months.",
+    "recent_plants": [
+     {
+      "date": "2018 stocking records",
+      "species": "Rainbow trout, fingerling and brood sizes (CPW record)"
+     }
+    ],
+    "wild_fish": "Brown trout are wild. CPW's fall 2018 survey found browns made up 98 percent of trout biomass. Spring surveys showed steep declines and more PIT-tagged rainbows from private stocking.",
+    "sources": [
+     {
+      "title": "Middle Blue River stocking history (Cutthroat Anglers)",
+      "url": "https://fishcolorado.com/blogs/cutthroat-anglers-blog/the-middle-blue-river-stocking-history-cutthroat-anglers"
+     },
+     {
+      "title": "CPW report confirms troubling trends on the Blue (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/cpw-report-troubling-colorado-blue/543147"
+     },
+     {
+      "title": "Blue River (CPW body of water)",
+      "url": "https://cpw.state.co.us/body-of-water/blue-river"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round. Prime is typically June 15 to November 30, according to Orvis.",
+   "notes": [
+    "The Gold Medal section runs from Dillon Dam to Hamilton Creek Road bridge. Below Dillon Dam to the north city limits of Silverthorne, it is catch-and-release with artificial flies or lures only.",
+    "Browns are wild and make up most of the trout biomass. Rainbows are stocked and can be a large share of catches in spring.",
+    "Kokanee run up from Green Mountain Reservoir in the fall, and CPW lists them as part of the river's fishery.",
+    "Mysis shrimp and midge hatches give a consistent food supply through winter. Water temperatures range from 34 to 38 degrees, according to Game and Fish.",
+    "North of Silverthorne, golden stonefly nymphs, midges, Baetis, smaller fish and leeches are the current food sources, per a fly shop report.",
+    "A CPW report found gill lice in rainbows and seasonal trout declines, which may be linked to pellet feeding and stocking upstream."
+   ],
+   "forage": [
+    {
+     "item": "Mysis shrimp",
+     "category": "crustacean",
+     "detail": "A year-round food source in the tailwater, according to Game and Fish.",
+     "basis": "sourced",
+     "source": {
+      "title": "Winter Trout on the Blue River (Game and Fish)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_aa014503a/194582"
+     }
+    },
+    {
+     "item": "Midge larvae and pupae",
+     "category": "insect",
+     "detail": "Midge hatches are consistent through the winter. Use small midge patterns.",
+     "basis": "sourced",
+     "source": {
+      "title": "Winter Trout on the Blue River (Game and Fish)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_aa014503a/194582"
+     },
+     "insect_id": "co-midge"
+    },
+    {
+     "item": "Golden stonefly nymphs",
+     "category": "insect",
+     "detail": "A current food source north of Silverthorne, per a fly shop report.",
+     "basis": "sourced",
+     "source": {
+      "title": "Blue River North of Silverthorne (Fishcolorado)",
+      "url": "https://fishcolorado.com/pages/blue-river-north-town"
+     },
+     "insect_id": "co-golden-stone"
+    },
+    {
+     "item": "Baetis mayflies",
+     "category": "insect",
+     "detail": "A current food source north of Silverthorne.",
+     "basis": "sourced",
+     "source": {
+      "title": "Blue River North of Silverthorne (Fishcolorado)",
+      "url": "https://fishcolorado.com/pages/blue-river-north-town"
+     },
+     "insect_id": "co-bwo"
+    },
+    {
+     "item": "Smaller fish and leeches",
+     "category": "baitfish",
+     "detail": "Listed as food for trout north of Silverthorne.",
+     "basis": "sourced",
+     "source": {
+      "title": "Blue River North of Silverthorne (Fishcolorado)",
+      "url": "https://fishcolorado.com/pages/blue-river-north-town"
+     }
+    },
+    {
+     "item": "Kokanee salmon",
+     "category": "baitfish",
+     "detail": "Fall run from Green Mountain Reservoir, eaten by trout.",
+     "basis": "sourced",
+     "source": {
+      "title": "Blue River (CPW)",
+      "url": "https://cpw.state.co.us/body-of-water/blue-river"
+     }
+    }
+   ],
+   "insect_ids": [
+    "co-midge",
+    "co-golden-stone",
+    "co-bwo"
+   ],
+   "states": [
+    "Colorado"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Approximate elevation. Coordinates not set.",
+   "type": "stream",
+   "area_acres": null,
+   "verified": false,
+   "id": "logan-river-ut",
+   "name": "Logan River (Cache County, UT)",
+   "elevation_ft": 4800,
+   "species": [
+    {
+     "name": "Bonneville cutthroat trout",
+     "stocking": "Native. Wild, with the largest remaining population in the upper river"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Introduced and wild. Predators of native sculpin"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by Utah DWR at the dams"
+    }
+   ],
+   "stocking": {
+    "status": "mixed, mostly wild",
+    "summary": "Above the impoundments the river is mostly wild. Browns and cutthroat both reproduce. Utah DWR has stocked rainbow at the dams.",
+    "schedule": "The only dated record found is a 2009 DWR list with rainbow planted in November at the Logan River 1st and 2nd dams. The 2026 schedule was not found.",
+    "recent_plants": [
+     {
+      "date": "November 2009",
+      "species": "Rainbow trout at the Logan River 1st and 2nd dams (about 1,000 each)"
+     }
+    ],
+    "wild_fish": "Browns and Bonneville cutthroat reproduce in the river. Cutthroat are dominant in the higher reaches. Utah State research found that brown trout eat native sculpin.",
+    "sources": [
+     {
+      "title": "Logan River fishing (Utah.com)",
+      "url": "https://www.utah.com/destinations/cities-towns/logan/things-to-do/logan-river-fishing/"
+     },
+     {
+      "title": "Predation on native sculpin by exotic brown trout (USGS)",
+      "url": "https://pubs.usgs.gov/publication/70074687"
+     },
+     {
+      "title": "Trout stocked 2009 (Utah DWR)",
+      "url": "https://wildlife.utah.gov/pdf/fes/pdf/trout_stocked_2009.pdf"
+     },
+     {
+      "title": "Cutthroat trout conservation success (Utah DWR)",
+      "url": "https://wildlife.utah.gov/news/wildlife-blog/1112-cutthroat-trout-conservation-success.html"
+     }
+    ]
+   },
+   "fishing_season_note": "Regular Utah trout regulations apply, with a limit of 4 fish from Card Canyon Bridge downstream to Cutler Marsh, including the 3 impoundments.",
+   "notes": [
+    "Blue-ribbon trout stream, one of the best in the Intermountain region. It comes out of a canyon northeast of Logan and is reached by US Highway 89.",
+    "Above the impoundments the river is primarily a wild trout stream. Browns and cutthroat both reproduce well in the crystal-clear water.",
+    "Bonneville cutthroat are Utah's state fish. The Logan has the largest remaining population anywhere, with over 1,200 fish per mile in the upper river.",
+    "Brown trout in the mainstem reaches eat native sculpin. About 81 percent of fish eaten by browns were sculpin, according to the USGS study.",
+    "DWR and partners have removed introduced browns from some tributaries to reintroduce Bonneville cutthroat, so check current regulations before keeping fish."
+   ],
+   "forage": [
+    {
+     "item": "Paiute sculpin",
+     "category": "baitfish",
+     "detail": "Native bottom-dwelling sculpin make up most of the diet of large brown trout in the mainstem. Use sculpin patterns along the bottom.",
+     "basis": "sourced",
+     "source": {
+      "title": "Predation on native sculpin by exotic brown trout (USGS)",
+      "url": "https://pubs.usgs.gov/publication/70074687"
+     }
+    },
+    {
+     "item": "Insect drift and invertebrates",
+     "category": "insect",
+     "detail": "Native cutthroat and browns compete for food and space in the upper river. Insect communities are not documented here.",
+     "basis": "general"
+    }
+   ],
+   "insect_ids": [
+    "ut-midge",
+    "ut-caddis",
+    "ut-bwo"
+   ],
+   "states": [
+    "Utah"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Approximate elevation. Coordinates not set.",
+   "type": "stream",
+   "area_acres": null,
+   "verified": false,
+   "id": "hat-creek-ca",
+   "name": "Hat Creek (Shasta County, CA)",
+   "elevation_ft": 3000,
+   "species": [
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild, not stocked. Lower Hat Creek has been managed as a self-reliant wild fishery since the late 1960s"
+    },
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild, not stocked"
+    },
+    {
+     "name": "Brook trout",
+     "stocking": "Wild, present in the upper sections"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "Hat Creek is California's first fishery managed only for wild rainbow and brown trout. Lower Hat Creek has been unstocked and self-reliant since the late 1960s.",
+    "schedule": "Not stocked. No stocking schedule applies.",
+    "recent_plants": [],
+    "wild_fish": "Everything in the creek is wild. From Cave Campground north to the community of Hat Creek, all fish are wild. Brook trout run to about 7 inches, rainbows 8 to 9 inches, and browns 8 to 10 inches.",
+    "sources": [
+     {
+      "title": "Hat Creek: All of It (Cal Fly Fisher)",
+      "url": "https://calflyfisher.com/?p=2717"
+     },
+     {
+      "title": "Hat Creek wild trout history (Issuu)",
+      "url": "https://issuu.com/zachmoosewong/docs/20200807_-_irideus_-_final/s/11945961"
+     },
+     {
+      "title": "CalTrout Gets its Feet Wet",
+      "url": "https://caltrout.org/?p=38808"
+     }
+    ]
+   },
+   "fishing_season_note": "Check current CDFW regulations before fishing. No season dates were found in the sources.",
+   "notes": [
+    "Pocket-water freestone stream. A wild-only fishery with no hatchery fish.",
+    "Hat Creek's wild trout population grew after restocking with wild Pit River rainbow and Trinity River browns. By the early 1970s, the creek was known across California for wild trout.",
+    "The weedbed and invertebrate communities once supported the wild rainbows. Restoring the aquatic vegetation is central to recovery, according to CalTrout.",
+    "Black or brown Bird's Nest nymphs in sizes 12 to 14, swung at the end of the drift, are productive in the pocket water.",
+    "The creek has had problems with habitat, so check current conditions and CDFW regulations before you go."
+   ],
+   "forage": [
+    {
+     "item": "Aquatic invertebrates in weedbeds",
+     "category": "insect",
+     "detail": "The creek's wild rainbows depended on aquatic weedbeds and invertebrate populations, according to CalTrout.",
+     "basis": "sourced",
+     "source": {
+      "title": "CalTrout (caltrout.org)",
+      "url": "https://caltrout.org/?p=2813"
+     }
+    },
+    {
+     "item": "Nymph-sized insects (size 12 to 14)",
+     "category": "insect",
+     "detail": "Bird's Nest nymphs in sizes 12 to 14 are productive in pocket water.",
+     "basis": "sourced",
+     "source": {
+      "title": "Hat Creek: All of It (Cal Fly Fisher)",
+      "url": "https://calflyfisher.com/?p=2717"
+     }
+    }
+   ],
+   "insect_ids": [
+    "ca-midge",
+    "ca-caddis"
+   ],
+   "states": [
+    "California"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Approximate elevation. Coordinates not set.",
+   "type": "stream",
+   "area_acres": null,
+   "verified": false,
+   "id": "madison-river-mt",
+   "name": "Madison River (Gallatin and Madison counties, MT)",
+   "elevation_ft": 4900,
+   "species": [
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild, self-sustaining"
+    },
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild, self-sustaining"
+    },
+    {
+     "name": "Westslope cutthroat trout",
+     "stocking": "Native, in the tributaries. Conservation program"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "One of Montana's premier wild trout rivers. Montana stopped stocking streams that could sustain wild trout in 1974. The Madison was the study site that showed this approach works.",
+    "schedule": "Not stocked. No stocking schedule applies.",
+    "recent_plants": [],
+    "wild_fish": "The river supports wild trout. Challenges include whirling disease, angling pressure and drought, according to Montana FWP.",
+    "sources": [
+     {
+      "title": "Where to Fish Madison River (Montana FWP)",
+      "url": "https://myfwp.mt.gov/fishMT/waterbody/53611"
+     },
+     {
+      "title": "Why Montana Went Wild (Montana Outdoors)",
+      "url": "https://static1.squarespace.com/static/581a91969f7456744441bb8a/t/5e4495745355bd67ffa7b905/1581553013309/Sidebar+11-+Why+Montana+Went+Wild+&+Video.pdf"
+     }
+    ]
+   },
+   "fishing_season_note": "Open year round outside Yellowstone National Park. Opening day in the park is May 30, according to a Montana angling guide.",
+   "notes": [
+    "The Madison flows from Ennis Reservoir through Bear Trap Canyon and the lower valley for its final 18 miles.",
+    "The Madison is where wild trout management was developed. A study in the early 1970s showed wild trout thrived where fish were not stocked.",
+    "When the river drops enough to let fish hold in soft water, large stonefly nymphs and sculpin patterns can be effective, according to a Montana guide.",
+    "Grasshoppers are a favorite food in July and August, when the river runs high and roily. The grasshopper imitation is a good bet in sizes 6 and 8 (historic guide).",
+    "Whirling disease, pressure and drought are the main threats to the wild trout."
+   ],
+   "forage": [
+    {
+     "item": "Large stonefly nymphs",
+     "category": "insect",
+     "detail": "Productive on the Madison when the river drops enough for fish to hold in soft water.",
+     "basis": "sourced",
+     "source": {
+      "title": "Madison River (Montana Angler)",
+      "url": "https://montanaangler.com/montana-fly-fishing-rivers/madison-river"
+     },
+     "insect_id": "mt-salmonfly"
+    },
+    {
+     "item": "Sculpin",
+     "category": "baitfish",
+     "detail": "Sculpin patterns work along with the stoneflies.",
+     "basis": "sourced",
+     "source": {
+      "title": "Madison River (Montana Angler)",
+      "url": "https://montanaangler.com/montana-fly-fishing-rivers/madison-river"
+     }
+    },
+    {
+     "item": "Mayflies, stoneflies and caddis",
+     "category": "insect",
+     "detail": "The Madison supports large populations of these insects, which makes the trout population large.",
+     "basis": "sourced",
+     "source": {
+      "title": "Madison River hatch chart (Montana Angler)",
+      "url": "https://www.montanaangler.com/montana-fly-fishing-rivers/madison-river-hatch-chart-fishing"
+     },
+     "insect_id": "mt-caddis"
+    },
+    {
+     "item": "Grasshoppers",
+     "category": "terrestrial",
+     "detail": "Grasshoppers are a favorite food in July and August, when the river runs high and roily.",
+     "basis": "sourced",
+     "source": {
+      "title": "100 Days on the Madison (Montana State)",
+      "url": "https://arc.lib.montana.edu/bud-lilly/objects/2528-07-26.pdf"
+     },
+     "insect_id": "mt-hopper"
+    },
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Midges hatch any day of the year on Montana rivers and lakes, and trout feed on them even in winter.",
+     "basis": "sourced",
+     "source": {
+      "title": "Miracle of midges (The Columbian)",
+      "url": "https://www.columbian.com/news/2015/mar/30/miracle-of-midges-tiny-bugs-play-big-role-in-trout/"
+     },
+     "insect_id": "mt-midge"
+    }
+   ],
+   "insect_ids": [
+    "mt-midge",
+    "mt-salmonfly",
+    "mt-caddis",
+    "mt-hopper"
+   ],
+   "states": [
+    "Montana"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Approximate elevation. Coordinates not set.",
+   "type": "stream",
+   "area_acres": null,
+   "verified": false,
+   "id": "provo-river-ut",
+   "name": "Provo River (Wasatch County and Utah County, UT)",
+   "elevation_ft": 5500,
+   "species": [
+    {
+     "name": "Brown trout",
+     "stocking": "Wild in the middle river, per VisitUtah"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked historically; wild and stocked in some reaches"
+    },
+    {
+     "name": "Cutthroat trout, brook trout and whitefish",
+     "stocking": "Present per a historic state record"
+    }
+   ],
+   "stocking": {
+    "status": "mixed",
+    "summary": "Brown and rainbow trout are in the river. The middle river is wild brown territory, according to VisitUtah. Utah DWR stocked catchable rainbow in the lower river in the past.",
+    "schedule": "Historically, DWR stocked about 4,000 rainbow catchables every March and April, and 20,000 more in the canyon later in the year. Current schedule not found.",
+    "recent_plants": [
+     {
+      "date": "March and April (historic)",
+      "species": "Rainbow catchables (about 4,000)"
+     }
+    ],
+    "wild_fish": "The middle river is wild brown territory. Popular areas near the dam hold nearly 3,000 fish per mile, with average browns around 12 inches, per VisitUtah.",
+    "sources": [
+     {
+      "title": "Provo River (VisitUtah)",
+      "url": "https://www.visitutah.com/things-to-do/Fishing/Provo-River"
+     },
+     {
+      "title": "Provo River fishing with DWR stocking (Utah Digital Newspapers)",
+      "url": "https://collections.lib.utah.edu/details?id=141515"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round. The middle river fishes all 12 months, according to VisitUtah.",
+   "notes": [
+    "A Blue Ribbon stream with more than 15 miles of angling access.",
+    "The middle river runs 12 miles from Jordanelle Reservoir through the Heber Valley. Fish over 18 inches are caught every day, according to VisitUtah.",
+    "Angling pressure is spread out below River Road, where the water holds larger trout and less pressure.",
+    "Trout feed on sow bugs and midge larvae all year, according to VisitUtah.",
+    "Stocking history shows that concentrated hatchery fish can push wild trout out of a stretch, so the wild middle river is a better bet than stocked reaches."
+   ],
+   "forage": [
+    {
+     "item": "Sow bugs (scuds)",
+     "category": "crustacean",
+     "detail": "Trout gorge on sow bugs year round in the Provo.",
+     "basis": "sourced",
+     "source": {
+      "title": "Provo River (VisitUtah)",
+      "url": "https://www.visitutah.com/things-to-do/fishing/provo-river"
+     }
+    },
+    {
+     "item": "Midge larvae",
+     "category": "insect",
+     "detail": "Trout feed on midge larvae year round.",
+     "basis": "sourced",
+     "source": {
+      "title": "Provo River (VisitUtah)",
+      "url": "https://www.visitutah.com/things-to-do/fishing/provo-river"
+     },
+     "insect_id": "ut-midge"
+    },
+    {
+     "item": "Rainbow catchables from stocking",
+     "category": "stocked feed",
+     "detail": "Stocked rainbow are part of the historic food base in the lower river.",
+     "basis": "sourced",
+     "source": {
+      "title": "Provo River fishing with DWR stocking (Utah Digital Newspapers)",
+      "url": "https://collections.lib.utah.edu/details?id=141515"
+     }
+    }
+   ],
+   "insect_ids": [
+    "ut-midge",
+    "ut-caddis",
+    "ut-bwo"
+   ],
+   "states": [
+    "Utah"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Approximate elevation near Taylor Park Reservoir. Coordinates not set.",
+   "type": "stream",
+   "area_acres": null,
+   "verified": false,
+   "id": "taylor-river-co",
+   "name": "Taylor River (Gunnison County, CO)",
+   "elevation_ft": 9000,
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild, above Taylor Park Reservoir"
+    },
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild below the reservoir"
+    },
+    {
+     "name": "Cutthroat trout",
+     "stocking": "Present, per Orvis"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Some stocked during the season, per Orvis"
+    }
+   ],
+   "stocking": {
+    "status": "mostly wild, some stocked rainbow",
+    "summary": "Dense wild trout population. Orvis says some rainbow are stocked during the season. CPW describes the upper river as wild brown territory.",
+    "schedule": "Some rainbow are stocked during the season. The CPW stocking report lists exact dates.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns, rainbows and cutthroat. The river above Taylor Park Reservoir has quality wild browns, per CPW.",
+    "sources": [
+     {
+      "title": "Taylor River (Orvis fishing report)",
+      "url": "https://fishingreports.orvis.com/west/colorado/taylor-river"
+     },
+     {
+      "title": "Taylor River (CPW body of water)",
+      "url": "https://cpw.state.co.us/body-of-water/taylor-river"
+     },
+     {
+      "title": "Gunnison, Taylor Rivers earn Gold Medal status (CPW)",
+      "url": "https://cpw.state.co.us/news/01182023/gunnison-taylor-rivers-earn-gold-medal-trout-fishery-status"
+     }
+    ]
+   },
+   "fishing_season_note": "Year round. Orvis lists the Taylor as year round.",
+   "notes": [
+    "Gold Medal status: 20 miles of the Taylor below Taylor Park Reservoir earned Gold Medal status in 2023, along with 12.5 miles of the Gunnison.",
+    "The catch-and-release section below the dam has the highest trout numbers, according to a regional guide. It is well known and heavily fished.",
+    "Bottom releases from Taylor Reservoir give steady flows and consistent hatches through the season, per Orvis.",
+    "Above the reservoir, a 12-mile segment holds quality wild browns, according to CPW.",
+    "The river has deep pools, pocket water, riffles and runs. The tailwater flows about 20 miles to Almont."
+   ],
+   "forage": [
+    {
+     "item": "Insect hatches",
+     "category": "insect",
+     "detail": "Consistent hatches through the season from the steady bottom releases.",
+     "basis": "sourced",
+     "source": {
+      "title": "Taylor River (Orvis fishing report)",
+      "url": "https://fishingreports.orvis.com/west/colorado/taylor-river"
+     },
+     "insect_id": "co-midge"
+    },
+    {
+     "item": "Insect drift from the reservoir",
+     "category": "insect",
+     "detail": "Specific Taylor insect species are not documented in these sources.",
+     "basis": "general"
+    }
+   ],
+   "insect_ids": [
+    "co-midge",
+    "co-caddis",
+    "co-pmd"
+   ],
+   "states": [
+    "Colorado"
+   ]
   }
  ]
 };
