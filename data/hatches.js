@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 8,
+ "version": 9,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -4269,6 +4269,188 @@ window.HATCH_DB = {
     "Tennessee"
    ],
    "date_note": "The source table is cut off after the BWO row. Peak month is inferred."
+  },
+  {
+   "id": "md-sulphur",
+   "name": "Sulphurs (Big Gunpowder Falls)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Dun, spinner",
+   "flies": [
+    {
+     "pattern": "Sulphur or pale mayfly dry, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The most notable hatch on the river is the late spring emergence the locals call sulphurs.",
+   "sources": [
+    {
+     "title": "Big Gunpowder Falls River (Orvis)",
+     "url": "https://fishingreports.orvis.com/northeast/maryland/big-gunpowder-falls-river"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Maryland"
+   ]
+  },
+  {
+   "id": "md-green-drake",
+   "name": "Green drakes (Savage River)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Green drake, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The Savage River's green drake hatch comes once flows return to normal after high water.",
+   "sources": [
+    {
+     "title": "Savage River (Orvis)",
+     "url": "https://fishingreports.orvis.com/northeast/maryland/savage-river"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Maryland"
+   ],
+   "date_note": "One late-May report; the date depends on flows."
+  },
+  {
+   "id": "ma-bwo",
+   "name": "Blue-winged olives (New England, Massachusetts)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    9
+   ],
+   "peak_months": [
+    9
+   ],
+   "time_of_day": "Mid-day",
+   "water_temp_f": null,
+   "stages": "Dun, spinner",
+   "flies": [
+    {
+     "pattern": "BWO, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "September in New England brings many BWOs, and the blog calls it one of the best dry-fly months of the year.",
+   "sources": [
+    {
+     "title": "Millers River fly fishing forum (September, 2022)",
+     "url": "https://millersriverflyfishingforum.blogspot.com/2022/09/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Massachusetts"
+   ]
+  },
+  {
+   "id": "ma-terrestrials",
+   "name": "Terrestrials (Massachusetts)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    8,
+    9
+   ],
+   "peak_months": [
+    9
+   ],
+   "time_of_day": "Midday on warm days",
+   "water_temp_f": null,
+   "stages": "Adult grasshoppers, crickets, ants",
+   "flies": [
+    {
+     "pattern": "Hopper, cricket, or ant, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "September is the best month for terrestrials in Massachusetts. Grasshoppers, crickets, and ants rule the month.",
+   "sources": [
+    {
+     "title": "Millers River fly fishing forum (September, 2022)",
+     "url": "https://millersriverflyfishingforum.blogspot.com/2022/09/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Massachusetts"
+   ]
+  },
+  {
+   "id": "ma-evening-dun",
+   "name": "Evening dry-fly hatches (Deerfield River)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Verify locally",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The Deerfield's slower flats provide excellent evening dry-fly fishing. Cold hydropower releases keep the water cool through September.",
+   "sources": [
+    {
+     "title": "Fly fishing the Deerfield River (Fly Fisherman)",
+     "url": "https://www.flyfisherman.com/editorial/the-deerfield-river/151807"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Massachusetts"
+   ],
+   "date_note": "The source does not name the insect or month range. The months are a rough guide. Verify locally."
   }
  ],
  "lakes": [
