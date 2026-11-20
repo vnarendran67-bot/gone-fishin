@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 15,
+ "version": 16,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -7335,6 +7335,671 @@ window.HATCH_DB = {
    "insect_ids": [
     "terrestrial"
    ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    6,
+    7
+   ],
+   "id": "henrys-fork-id",
+   "name": "Henry's Fork (Island Park to Ashton, ID)",
+   "type": "stream",
+   "states": [
+    "Idaho"
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "fishing_season_note": "Season is last of May to November, with the lower reach below Vernon Bridge open year round, per a fly shop. Harriman stretch is special. Check current IDFG limits for each reach.",
+   "species": [
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild. IDFG manages for wild rainbows as the top priority"
+    },
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild, below Mesa Falls"
+    },
+    {
+     "name": "Native fish",
+     "stocking": "Maintained in the headwaters, including Henry's Lake"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "IDFG manages the Henry's Fork for wild rainbows as its top priority. Native fish are kept in the headwaters.",
+    "schedule": "No stocking schedule was found for the river in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Wild rainbows that refuse a sloppy drift, and wild browns below Mesa Falls.",
+    "sources": [
+     {
+      "title": "Henry's Fork River Idaho Hatch Chart (The Fly Fishing Place)",
+      "url": "https://theflyfishingplace.com/pages/henrys-fork-river-idaho-hatch-chart"
+     },
+     {
+      "title": "IDFG Upper Snake newsletter",
+      "url": "https://idfg.idaho.gov/old-web/docs/fishReportsNewsletters/upperSnakeReport13.pdf"
+     },
+     {
+      "title": "Fly Fishing Henry's Fork River Idaho (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/?p=1875"
+     }
+    ]
+   },
+   "notes": [
+    "The Henry's Fork runs from Big Springs near Island Park down to the Snake near Rexburg. It is not one river: Box Canyon below Island Park Dam is fast tailwater.",
+    "The green drake hatch in late June, at the Harriman Ranch, defines the year for many dry-fly anglers. Guides say the best hatches come around midday on overcast days.",
+    "PMDs start in earnest in early June. The salmonfly hatch in the Box starts by the first week of June, and golden stones keep dry-fly fishing going to the end of July.",
+    "Above Big Springs to the Henry's Lake outlet is closed to fishing. Confirm the current IDFG limit for each reach.",
+    "Stream levels and flows change with irrigation season, so check USGS gauges before you go, per a 2025 fishing report."
+   ],
+   "forage": [
+    {
+     "item": "Green drake mayflies",
+     "category": "insect",
+     "detail": "Late June hatch at Harriman. Best on large patterns when it peaks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Henry's Fork River Idaho Hatch Chart (The Fly Fishing Place)",
+      "url": "https://theflyfishingplace.com/pages/henrys-fork-river-idaho-hatch-chart"
+     }
+    },
+    {
+     "item": "Salmonflies (stoneflies)",
+     "category": "insect",
+     "detail": "Start in the Box by the first week of June and bring the fish to the surface.",
+     "basis": "sourced",
+     "source": {
+      "title": "Henry's Fork (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/idahos-henrys-fork-rebound/152301"
+     }
+    },
+    {
+     "item": "Golden stoneflies",
+     "category": "insect",
+     "detail": "Keep dry-fly fishing going after the salmonflies until the end of July.",
+     "basis": "sourced",
+     "source": {
+      "title": "Henry's Fork (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/idahos-henrys-fork-rebound/152301"
+     }
+    },
+    {
+     "item": "Caddis",
+     "category": "insect",
+     "detail": "Caddisflies are abundant in summer, with terrestrial fishing popular in the afternoon.",
+     "basis": "sourced",
+     "source": {
+      "title": "Fly Fishing Henry's Fork River Idaho (Perfect Fly Store)",
+      "url": "https://perfectflystore.com/?p=1875"
+     },
+     "insect_id": "caddis"
+    }
+   ],
+   "insect_ids": [
+    "caddis"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "id": "south-fork-snake-id",
+   "name": "South Fork Snake River (Swan Valley, ID)",
+   "type": "stream",
+   "states": [
+    "Idaho"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Year round, with a prime window from May 15 to November 1, per Orvis. Trout limit is 6, with no harvest of cutthroat. Check current regulations.",
+   "species": [
+    {
+     "name": "Yellowstone cutthroat trout",
+     "stocking": "Native, wild. No harvest"
+    },
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild, not stocked since the 1980s"
+    },
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "Rainbows were stocked until the 1980s and now sustain wild populations. IDFG runs a harvest incentive to reduce rainbows and protect native cutthroat.",
+    "schedule": "No stocking. Rainbows are not stocked.",
+    "recent_plants": [],
+    "wild_fish": "Yellowstone cutthroat, rainbows and browns. IDFG reports more than 6,300 trout per mile.",
+    "sources": [
+     {
+      "title": "South Fork Snake River (IDFG Fish Planner)",
+      "url": "https://idfg.idaho.gov/ifwis/fishingplanner/water/1119497437575"
+     },
+     {
+      "title": "South Fork Snake River Rainbow Trout Harvest Incentive (IDFG)",
+      "url": "https://idfg.idaho.gov/fish/incentive/snake-south-fork"
+     },
+     {
+      "title": "South Fork of the Snake River (Orvis)",
+      "url": "https://fishingreports.orvis.com/west/idaho/south-fork-of-the-snake-river"
+     },
+     {
+      "title": "Idaho Fish and Game collaborate on trout video (IDFG)",
+      "url": "https://idfg.idaho.gov/press/idaho-fish-and-game-collaborate-new-trout-conservation-video-meateater"
+     }
+    ]
+   },
+   "notes": [
+    "The South Fork is home to the strongest remaining river population of native Yellowstone cutthroat in Idaho, according to IDFG. Cutthroat are not harvested.",
+    "IDFG encourages anglers to keep rainbows. Rainbows compete with native cutthroat and hybridize with them, so the incentive program pays for rainbow and hybrid heads.",
+    "Blue-winged Olive hatches on cloudy days open the spring, and the river has hatch after hatch through the season, per Hatch magazine.",
+    "A salmonfly hatch starts in July. Large stoneflies hatch by the thousands along the bank, bringing fish of all sizes to the surface, per Orvis.",
+    "The Canyon runs below Swan Valley Bridge to Byington, with three boat ramps and overnight camping, per Visit Idaho."
+   ],
+   "forage": [
+    {
+     "item": "Salmonflies",
+     "category": "insect",
+     "detail": "Large stoneflies that hatch by the thousands in July.",
+     "basis": "sourced",
+     "source": {
+      "title": "South Fork of the Snake River (Orvis)",
+      "url": "https://fishingreports.orvis.com/west/idaho/south-fork-of-the-snake-river"
+     }
+    },
+    {
+     "item": "Blue-winged Olives",
+     "category": "insect",
+     "detail": "Spring hatches on cloudy days.",
+     "basis": "sourced",
+     "source": {
+      "title": "The best dry fly river in America? (Hatch magazine)",
+      "url": "https://hatchmag.com/node/5450"
+     },
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Rainbow trout (wild)",
+     "category": "other",
+     "detail": "Wild rainbows feed alongside cutthroat and compete with them, per IDFG.",
+     "basis": "sourced",
+     "source": {
+      "title": "South Fork Snake River fishery (IDFG)",
+      "url": "https://idfg.idaho.gov/conservation-fishing-fly-fishing/south-fork-snake-river-fishery"
+     }
+    }
+   ],
+   "insect_ids": [
+    "bwo"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "id": "snake-river-grand-teton-wy",
+   "name": "Snake River (Grand Teton National Park, WY)",
+   "type": "stream",
+   "states": [
+    "Wyoming"
+   ],
+   "fish_months": [
+    8,
+    9,
+    10,
+    11,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "fishing_season_note": "Most park waters are closed December 1 to July 31, but the Snake River in Teton County is excluded from that closure, per the 2017 park rules. Snake River cutthroat must be released. Wyoming state permits are required.",
+   "species": [
+    {
+     "name": "Snake River fine-spotted cutthroat",
+     "stocking": "Native. Must be released"
+    },
+    {
+     "name": "Lake trout",
+     "stocking": "Present in Jackson Lake"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Mountain whitefish",
+     "stocking": "Native"
+    }
+   ],
+   "stocking": {
+    "status": "native cutthroat, wild",
+    "summary": "Cutthroat are native to the Snake River in the park, and the river is managed for them. Restoration stocking happens elsewhere in the Tetons.",
+    "schedule": "No stocking schedule applies to the Snake River in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Snake River fine-spotted cutthroat are the only native trout in the park. Brown and lake trout are non-native.",
+    "sources": [
+     {
+      "title": "Grand Teton National Park fishing rules (NPS 2017)",
+      "url": "https://www.nps.gov/grte/planyourvisit/upload/fishing17-access.pdf"
+     },
+     {
+      "title": "Snake River cutthroat (NPS)",
+      "url": "https://www.nps.gov/grte/learn/nature/fish.htm"
+     },
+     {
+      "title": "Wyoming's Snake River is Cutthroat Nirvana (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/wyomings-snake-river-is-cutthroat-nirvana/152262"
+     }
+    ]
+   },
+   "notes": [
+    "The Snake River in Grand Teton National Park is considered a cutthroat fishery, and the NPS says it is one of the few native cutthroat populations left in the Rockies.",
+    "Snake River cutthroat must be released. The NPS 2017 rules allow the Snake River in Teton County to stay open when other park waters close.",
+    "Floating and wading the Snake gets anglers to cutthroat and mountain whitefish, per Wyoming Game and Fish.",
+    "A levee system channelizes the Snake at the south end of the park, cutting it off from its floodplain for 26 miles, per Fly Fisherman.",
+    "Wyoming state fishing and boating permits are required in the Parkway and the park, per NPS."
+   ],
+   "forage": [
+    {
+     "item": "Mountain whitefish",
+     "category": "other",
+     "detail": "Native whitefish are caught alongside cutthroat and are a food base in the river.",
+     "basis": "sourced",
+     "source": {
+      "title": "Snake River and the Tetons (Wyoming Game and Fish)",
+      "url": "https://wgfd.wyo.gov/media/27081/download"
+     }
+    },
+    {
+     "item": "Insects",
+     "category": "insect",
+     "detail": "Insect hatches feed the cutthroat. Specific hatch timing is not documented here.",
+     "basis": "general"
+    }
+   ],
+   "insect_ids": []
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    4,
+    5,
+    9,
+    10,
+    11
+   ],
+   "id": "bighorn-river-wy",
+   "name": "Bighorn River (Wedding of the Waters, Thermopolis, WY)",
+   "type": "stream",
+   "states": [
+    "Wyoming"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Open year round. The Bighorn is a tailwater below Boysen Dam, and the best spring and fall dry-fly fishing comes in the warmer months, per Fly Fisherman.",
+   "species": [
+    {
+     "name": "Brown trout",
+     "stocking": "Wild spawners. Supplemental stocking also used"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Hatchery stocking supplements the wild fish"
+    },
+    {
+     "name": "Snake River cutthroat",
+     "stocking": "Present"
+    },
+    {
+     "name": "Sauger, catfish, sturgeon, smallmouth bass",
+     "stocking": "Warmwater species present"
+    }
+   ],
+   "stocking": {
+    "status": "wild with supplemental stocking",
+    "summary": "Managed with supplemental stocking of hatchery fish and annual flushing flows from Reclamation to improve spawning for wild fish, per Wyoming Game and Fish.",
+    "schedule": "Stocking happens through the year. Wyoming Game and Fish stocked a rainbow in June that grew well by October.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns spawn in the fall, and high water scours silt from the gravel, per a 2019 report. Rainbows and cutthroat are also wild.",
+    "sources": [
+     {
+      "title": "Bighorn River, Wedding of the Waters (WGFD)",
+      "url": "https://wgfd.wyo.gov/bighorn-river-wedding-water"
+     },
+     {
+      "title": "Trends of the Bighorn River trout fishery (WGFD)",
+      "url": "https://wgfd.wyo.gov/es/node/6189"
+     },
+     {
+      "title": "The Bighorn River you don't know (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/the-bighorn-river-you-dont-know/152354"
+     },
+     {
+      "title": "Brown trout, sauger thriving in Bighorn (Casper Star-Tribune via CDA Press)",
+      "url": "https://cdapress.com/news/2019/apr/25/brown-trout-sauger-thriving-together-in-5/"
+     }
+    ]
+   },
+   "notes": [
+    "The Bighorn at Thermopolis is known as a trophy fishery for brown trout, rainbow trout and Snake River cutthroat, per Wyoming Game and Fish. It is open year round.",
+    "The Bighorn is a prolific midge fishery. The tiny insects hatch every month except August, and early spring and late fall have the most intense hatches, per Fly Fisherman.",
+    "Trout rarely rise to midge adults here, but they take pupae when adults are on the surface. Disco Midge, Brassie, WD-40 and RS2 patterns work well.",
+    "Streamers like the Tequeely, Orange Blossom and North Platte Special draw violent strikes from large browns and rainbows, per Fly Fisherman.",
+    "Roadside access is open with a Wind River Indian Reservation fishing permit, per Fly Fisherman. Check the permit rules before you fish.",
+    "Warm, dry spells can stress trout in the river, so check water temperature in summer. Trout rise well in cool, overcast weather."
+   ],
+   "forage": [
+    {
+     "item": "Midges (larvae and pupae)",
+     "category": "insect",
+     "detail": "The main hatch, every month except August.",
+     "basis": "sourced",
+     "source": {
+      "title": "The Bighorn River you don't know (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/the-bighorn-river-you-dont-know/152354"
+     },
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Baitfish (streamers)",
+     "category": "baitfish",
+     "detail": "Large trout respond to streamer patterns.",
+     "basis": "sourced",
+     "source": {
+      "title": "The Bighorn River you don't know (Fly Fisherman)",
+      "url": "https://www.flyfisherman.com/editorial/the-bighorn-river-you-dont-know/152354"
+     }
+    },
+    {
+     "item": "Sauger and minnows",
+     "category": "baitfish",
+     "detail": "Sauger share the river with the trout and are part of the forage base.",
+     "basis": "sourced",
+     "source": {
+      "title": "Brown trout, sauger thriving together (CDA Press)",
+      "url": "https://cdapress.com/news/2019/apr/25/brown-trout-sauger-thriving-together-in-5/"
+     }
+    }
+   ],
+   "insect_ids": [
+    "chironomid"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ],
+   "id": "truckee-river-nv",
+   "name": "Truckee River (Reno to Pyramid Lake, NV)",
+   "type": "stream",
+   "states": [
+    "Nevada"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Open year round. High flows run March to June. Early summer and fall are the most productive, per Diy Fly Fishing. Fish dawn and early morning in summer.",
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild and trophy-sized"
+    },
+    {
+     "name": "Wild rainbow trout",
+     "stocking": "Wild and stocked"
+    },
+    {
+     "name": "Cutthroat trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Whitefish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "wild and stocked",
+    "summary": "The Truckee is managed for a wild, self-perpetuating trout population under special regulations set in the early 1980s. NDOW stocks sterile rainbows between March and September.",
+    "schedule": "Stocking runs March through September, around 50,000 10-inch sterile rainbows, per Diy Fly Fishing.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns and rainbows reach trophy size. Fish up to 24 inches are caught, per Visit Reno Tahoe.",
+    "sources": [
+     {
+      "title": "Truckee River Primer (Cal Fly Fisher)",
+      "url": "https://calflyfisher.com/destinations/truckee-river-primer/"
+     },
+     {
+      "title": "Nevada fly fishing (Diy Fly Fishing)",
+      "url": "https://diyflyfishing.com/nevada/"
+     },
+     {
+      "title": "Casting in the Reno Tahoe Wilderness (Visit Reno Tahoe)",
+      "url": "https://www.visitrenotahoe.com/articles/casting-in-the-reno-tahoe-wilderness"
+     },
+     {
+      "title": "Travel Nevada Pro Tip",
+      "url": "https://travelnevada.com/?p=23581"
+     }
+    ]
+   },
+   "notes": [
+    "The Truckee runs about 120 miles from Lake Tahoe through downtown Reno into Pyramid Lake. Its upper section is steep and cold, and its eastern section is slower and warmer.",
+    "The river's regulations were set in the early 1980s to sustain a healthy wild trout population, per Cal Fly Fisher.",
+    "Trout get active when the river reaches about 50 to 60 degrees. Fishing early in the morning, before the water warms, works well in summer.",
+    "Fall and spring are the best seasons, according to Visit Reno Tahoe. The river runs high and muddy from March to June.",
+    "Mayflies, caddis, stoneflies and midges are the main hatches, and dry flies and nymphs that match them work best, per Diy Fly Fishing."
+   ],
+   "forage": [
+    {
+     "item": "Mayflies, caddis, stoneflies and midges",
+     "category": "insect",
+     "detail": "The main hatches on Nevada trout streams.",
+     "basis": "sourced",
+     "source": {
+      "title": "Nevada fly fishing (Diy Fly Fishing)",
+      "url": "https://diyflyfishing.com/nevada/"
+     },
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Pyramid Lake fish runs",
+     "category": "baitfish",
+     "detail": "Trout run up from Pyramid Lake. Lake food is covered under Pyramid Lake.",
+     "basis": "general"
+    }
+   ],
+   "insect_ids": [
+    "bwo"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not set. Elevation not sourced.",
+   "area_acres": null,
+   "verified": false,
+   "elevation_ft": null,
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "id": "pyramid-lake-nv",
+   "name": "Pyramid Lake (Nevada, Paiute Reservation)",
+   "type": "stillwater",
+   "states": [
+    "Nevada"
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "fishing_season_note": "Tribal permit required. The west side has about 23 miles of open shoreline. The north, east and south sides are closed to shore fishing, per a Calflyfisher guide. Check tribal rules before you fish.",
+   "species": [
+    {
+     "name": "Pilot Peak Lahontan cutthroat trout",
+     "stocking": "Stocked by the Lahontan hatchery. Population depends almost entirely on stocking"
+    },
+    {
+     "name": "Endangered cui-ui and Tahoe sucker",
+     "stocking": "Native. Not targeted"
+    }
+   ],
+   "stocking": {
+    "status": "stocked lake form",
+    "summary": "The Lahontan National Fish Hatchery stocks about 500,000 Pilot Peak Lahontan cutthroat a year into conservation waters, including Pyramid Lake, in partnership with the Pyramid Lake Paiute Tribe.",
+    "schedule": "Stocking is annual. Summit strain was reduced in favor of Pilot Peak, per Calflyfisher.",
+    "recent_plants": [],
+    "wild_fish": "The lake population depends almost entirely on stocking, per USGS.",
+    "sources": [
+     {
+      "title": "Pyramid Lake (Calflyfisher)",
+      "url": "https://calflyfisher.com/destinations/pyramid-lake-nevada/"
+     },
+     {
+      "title": "Lahontan National Fish Hatchery (USFWS)",
+      "url": "https://www.fws.gov/lahontannfhc/"
+     },
+     {
+      "title": "Adaptive management of Pyramid Lake (USGS)",
+      "url": "https://www.usgs.gov/media/images/adaptive-management-and-monitoring-pyramid-lake-nevada-ut"
+     },
+     {
+      "title": "Nevada's Lake of the Mammoth Lahontan Cutthroat (Game and Fish)",
+      "url": "https://www.gameandfishmag.com/editorial/lahontan-cutthroat-trout-fishing/518491"
+     }
+    ]
+   },
+   "notes": [
+    "Pyramid Lake is one of the Pilot Peak Lahontan cutthroat's last strongholds. Pyramid is the ancestral home of the Lahontan cutthroat that once migrated up to Lake Tahoe.",
+    "A tribal permit from the Pyramid Lake Paiute Tribe is required for fishing and other recreation. Buy it online before you go.",
+    "Shore fishing is limited to the west side. The beaches are famous for ladder and chair fishing, where anglers cast into deeper water.",
+    "The Summit strain has been reduced in favor of Pilot Peak, so fewer fish are caught but more trophy fish are in the mix, per Calflyfisher.",
+    "Pyramid also holds the endangered cui-ui and Tahoe sucker, which Game and Fish describes as high-value food items for the trout."
+   ],
+   "forage": [
+    {
+     "item": "Tahoe sucker",
+     "category": "baitfish",
+     "detail": "A high-value food item for the trout, per Game and Fish.",
+     "basis": "sourced",
+     "source": {
+      "title": "Nevada's Lake of the Mammoth Lahontan Cutthroat (Game and Fish)",
+      "url": "https://www.gameandfishmag.com/editorial/lahontan-cutthroat-trout-fishing/518491"
+     }
+    },
+    {
+     "item": "Cui-ui sucker (endangered)",
+     "category": "baitfish",
+     "detail": "Present in the lake. It is endangered, so it is not a target.",
+     "basis": "sourced",
+     "source": {
+      "title": "Nevada's Lake of the Mammoth Lahontan Cutthroat (Game and Fish)",
+      "url": "https://www.gameandfishmag.com/editorial/lahontan-cutthroat-trout-fishing/518491"
+     }
+    }
+   ],
+   "insect_ids": []
   }
  ]
 };
