@@ -171,7 +171,7 @@ async function searchPlace(){
 }
 function pickResult(i){
   const h = window._hits[i];
-  $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name; window._state = h.admin1 || '';
+  $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name; window._state = h.admin1 || ''; window._country = h.country || '';
   $('results').innerHTML = '';
   $('placeMsg').textContent = `Set to ${h.name}. Check the water type, then press "Get the plan".`;
   // set water type from what the search says it is
@@ -539,8 +539,17 @@ async function copyShare(){
   try { await navigator.clipboard.writeText(t); $('shareMsg').textContent = 'Link copied.'; }
   catch(e) { $('shareMsg').textContent = t; }
 }
+// Official wildlife agency pages for states we know; everything else gets a specific search
+const WILDLIFE_AGENCY = {
+  'Arizona': 'https://www.azgfd.gov',
+  'Colorado': 'https://cpw.state.co.us',
+  'California': 'https://wildlife.ca.gov',
+  'Utah': 'https://wildlife.utah.gov'
+};
 function regsLink(){
-  const q = ((window._state || '') + ' fishing license and regulations').trim();
+  const state = window._state || '';
+  if (WILDLIFE_AGENCY[state]) return WILDLIFE_AGENCY[state];
+  const q = [place.name, state, window._country || '', 'fishing license and regulations'].filter(Boolean).join(' ');
   return 'https://www.google.com/search?q=' + encodeURIComponent(q);
 }
 
