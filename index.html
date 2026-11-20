@@ -196,7 +196,7 @@ textarea{font:inherit}
 
 </main>
 
-<script src="data/hatches.js?v=12"></script>
+<script src="data/hatches.js?v=14"></script>
 <script>
 const DB = window.HATCH_DB;
 const $ = id => document.getElementById(id);
@@ -276,7 +276,7 @@ async function searchPlace(){
     // One result per name + state: the geocoder often returns the same water body several times with slightly different points. Keep the top-ranked hit.
     const seen = new Set();
     const uniq = hits.filter(h => {
-      const k = (h.name || '').toLowerCase().replace(/[^a-z0-9]/g, '') + '|' + (h.admin1 || '').toLowerCase();
+      const k = (h.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
       if (seen.has(k)) return false;
       seen.add(k); return true;
     });
@@ -572,15 +572,27 @@ function fmtFly(flies){ return flies.map(f => `${esc(f.pattern)} <span class="mu
 // A short typed name only matches a longer water name when it has two or more words, so "creek" or
 // "lake" alone don't grab the first water that contains them.
 function findLake(p){
-  const sameState = l => !p.state || !(l.states || []).length || l.states.includes(p.state);
-  if (p.lakeId) { const byId = DB.lakes.find(l => l.id === p.lakeId); if (byId && sameState(byId)) return byId; }
-  const n = (p.name || '').toLowerCase().trim();
+  const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
+  // The place's own state only. (A fallback to window._state, the last search result's state,
+  // could exclude the right water for a saved place from another state.)
+  const st = norm(p.state || '');
+  const hasState = l => st && (l.states || []).some(s => norm(s) === st);
+  // When the state is known, waters listed only in other states are out, not just ranked lower:
+  // otherwise Black River in Wisconsin, with no Wisconsin match, got Arizona's Black River.
+  const allowed = l => !st || !(l.states || []).length || hasState(l);
+  if (p.lakeId) { const byId = DB.lakes.find(l => l.id === p.lakeId); if (byId && allowed(byId)) return byId; }
+  const n = norm(p.name);
   if (n.length < 4) return null;
-  return DB.lakes.find(l => {
-    if (!sameState(l)) return false;
-    const k = l.name.split(' (')[0].toLowerCase();
-    return n.includes(k) || (k.includes(n) && n.split(/\s+/).length >= 2);
-  }) || null;
+  const multiWord = n.includes(' ');
+  // Candidates: the water's base name equals, or is contained in, the place name (whole words only).
+  // The reverse (the place name inside a longer water name) needs two or more words, so "creek" or
+  // "lake" alone don't match "Oak Creek" or "Big Lake".
+  const cands = DB.lakes.filter(allowed).map(l => ({ l, k: norm(l.name.split(' (')[0]) }))
+    .filter(c => c.k && (n === c.k || (' ' + n + ' ').includes(' ' + c.k + ' ') || (multiWord && (' ' + c.k + ' ').includes(' ' + n + ' '))));
+  if (!cands.length) return null;
+  // Best: exact name first, then the state match, then the longest name.
+  cands.sort((a, b) => (b.k === n) - (a.k === n) || hasState(b.l) - hasState(a.l) || b.k.length - a.k.length);
+  return cands[0].l;
 }
 // Sectioned waters (big rivers, multi-part lakes) list their parts in the section picker.
 // applySection merges the chosen part's own notes, coordinates and species over the parent water.
@@ -901,6 +913,6 @@ if (sp.get('lat') && sp.get('lon')) {
   runPlan();
 }
 </script>
-<script src="js/features.js?v=12"></script>
+<script src="js/features.js?v=14"></script>
 </body>
 </html>
