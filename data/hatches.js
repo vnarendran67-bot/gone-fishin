@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 5,
+ "version": 6,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -2816,6 +2816,563 @@ window.HATCH_DB = {
    "verified": false,
    "states": [
     "Washington"
+   ]
+  },
+  {
+   "id": "mi-hendrickson",
+   "name": "Hendricksons (Michigan)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5
+   ],
+   "peak_months": [
+    5
+   ],
+   "time_of_day": "Afternoon into evening",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "Hendrickson, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "One of the earlier and most abundant mayfly hatches in Michigan. Mid-state rivers run about one to two weeks earlier than the northern rivers.",
+   "sources": [
+    {
+     "title": "Michigan trout hatch chart (Norrik)",
+     "url": "https://norrik.com/?p=9440"
+    },
+    {
+     "title": "Midwest Hendricksons (North 40)",
+     "url": "https://north40.com/blog/hatch-guide-midwest-hendricksons"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Michigan"
+   ],
+   "date_note": "Sources give late April at the southern end and May in the north. Winter severity shifts the timing."
+  },
+  {
+   "id": "mn-hendrickson",
+   "name": "Hendricksons (southeast Minnesota)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5
+   ],
+   "peak_months": [
+    4,
+    5
+   ],
+   "time_of_day": "Afternoon, often later in the day",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "Hendrickson, #12-14",
+     "sizes": "12-14"
+    }
+   ],
+   "notes": "A large fly by southeast Minnesota standards. Trout feed on it with reckless abandon. The hatch is strongest in April and May on Trout Run and other Driftless streams.",
+   "sources": [
+    {
+     "title": "Spring fly patterns for stream trout (Midwest Outdoors)",
+     "url": "https://midwestoutdoors.com/fishing/spring-fly-patterns-stream-trout/"
+    },
+    {
+     "title": "Fly fishing Trout Run Creek (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=4805"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Minnesota"
+   ]
+  },
+  {
+   "id": "mn-blue-quill",
+   "name": "Blue quills (southeast Minnesota)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5
+   ],
+   "peak_months": [
+    4
+   ],
+   "time_of_day": "Moderate and fast water",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "Blue quill, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Blue quills hatch in moderate to fast water on the Driftless streams from about mid-April.",
+   "sources": [
+    {
+     "title": "Fly fishing Trout Run Creek (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=4805"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Minnesota"
+   ],
+   "date_note": "The source excerpt is cut off, so the end month is not confirmed."
+  },
+  {
+   "id": "mn-ephoron",
+   "name": "Ephoron leukon (white mayfly)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    9
+   ],
+   "peak_months": [
+    9
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Dun and spinner",
+   "flies": [
+    {
+     "pattern": "Ephoron, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The white mayfly hatch is a September event in southeast Minnesota. It is weaker in summer-flood years, and cooler weather makes it stronger.",
+   "sources": [
+    {
+     "title": "Southeast Minnesota September hatch (Star Tribune)",
+     "url": "https://www.startribune.com/it-s-getting-to-the-end/61790862/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Minnesota"
+   ]
+  },
+  {
+   "id": "mn-green-sulphur",
+   "name": "Green sulphur mayflies (Minnesota)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Sulphur, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Late May and early June is the time for abundant insect hatches on local trout streams.",
+   "sources": [
+    {
+     "title": "Hatch Bonanza (Star Tribune)",
+     "url": "https://www.startribune.com/hatch-bonanza/95480994/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Minnesota"
+   ],
+   "date_note": "The source is general about the hatch. Peak months are inferred from the late May to early June window."
+  },
+  {
+   "id": "pa-little-black-stonefly",
+   "name": "Little black early stoneflies (Pennsylvania)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3
+   ],
+   "peak_months": [
+    3
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph",
+   "flies": [
+    {
+     "pattern": "Verify locally",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The first hatches of the year on Slate Run are the Little Black Early Stoneflies, which hatch in March for about a month.",
+   "sources": [
+    {
+     "title": "Fly fishing on Slate Run Creek (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=577"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ]
+  },
+  {
+   "id": "pa-blue-wing-olive",
+   "name": "Blue-winged olives (Pennsylvania limestone)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4
+   ],
+   "peak_months": [
+    4
+   ],
+   "time_of_day": "Mid-day",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "Little BWO, 16-20",
+     "sizes": "16-20"
+    }
+   ],
+   "notes": "On the Letort Spring Run, the first hatch is the blue-winged olive around the first of April, and it lasts about the whole month.",
+   "sources": [
+    {
+     "title": "Fly fishing Letort Spring Run (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=617"
+    },
+    {
+     "title": "Pennsylvania fly hatch chart (Pa Fly Fish)",
+     "url": "https://www.paflyfish.com/threads/pennsylvania-hatch-chart.75536"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ],
+   "date_note": "Sources differ. One chart puts the start in mid-March, the Letort report says early April."
+  },
+  {
+   "id": "pa-quill-gordon",
+   "name": "Quill Gordons (Pennsylvania)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4
+   ],
+   "peak_months": [
+    4
+   ],
+   "time_of_day": "Mid-afternoon to evening",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "Quill Gordon, 14",
+     "sizes": "14"
+    }
+   ],
+   "notes": "Quill Gordons hatch from early to late April on First Fork, Pine Creek, Slate Run, and Fishing Creek.",
+   "sources": [
+    {
+     "title": "Pennsylvania hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/?p=10500"
+    },
+    {
+     "title": "Fly fishing Slate Run Creek (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=577"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ]
+  },
+  {
+   "id": "pa-blue-quill",
+   "name": "Blue quills (Pennsylvania)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5,
+    6
+   ],
+   "peak_months": [
+    4,
+    5
+   ],
+   "time_of_day": "Mid-afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "Blue Quill, 16-18",
+     "sizes": "16-18"
+    }
+   ],
+   "notes": "Blue quills start in mid-April on Falling Springs Creek and hatch for about a month. On Slate Run they can continue for up to two months.",
+   "sources": [
+    {
+     "title": "Pennsylvania hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/?p=10500"
+    },
+    {
+     "title": "Fly fishing Falling Springs Branch (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=609"
+    },
+    {
+     "title": "Fly fishing Slate Run Creek (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=577"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ],
+   "date_note": "Duration differs by stream: about a month on Falling Springs and up to two months on Slate Run."
+  },
+  {
+   "id": "pa-grannom",
+   "name": "Grannom caddis (Pennsylvania)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4
+   ],
+   "peak_months": [
+    4
+   ],
+   "time_of_day": "Mid-morning to late afternoon",
+   "water_temp_f": null,
+   "stages": "Adult",
+   "flies": [
+    {
+     "pattern": "Grannom, 12-14",
+     "sizes": "12-14"
+    }
+   ],
+   "notes": "The grannom caddis hatches from mid to late April on Fishing Creek, Penns Creek, and the Little Juniata.",
+   "sources": [
+    {
+     "title": "Pennsylvania hatch chart (Fishmasters)",
+     "url": "https://fishmasters.com/?p=10500"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ]
+  },
+  {
+   "id": "pa-little-black-caddis",
+   "name": "Little black caddis (Penns Creek)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    4,
+    5
+   ],
+   "peak_months": [
+    4,
+    5
+   ],
+   "time_of_day": "Afternoon and evening",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults",
+   "flies": [
+    {
+     "pattern": "Little Black Caddis, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "For about a month, from mid-April to mid-May, Little Black Caddis take the stage on Penns Creek.",
+   "sources": [
+    {
+     "title": "Penns Creek hatch chart (Norrik)",
+     "url": "https://norrik.com/?p=10971"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ]
+  },
+  {
+   "id": "pa-chocolate-dun",
+   "name": "Chocolate duns (Penns Creek)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5
+   ],
+   "peak_months": [
+    5
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Chocolate dun, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The chocolate dun is usually in full swing throughout May on Penns Creek.",
+   "sources": [
+    {
+     "title": "Penns Creek hatch chart (Norrik)",
+     "url": "https://norrik.com/?p=10971"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ]
+  },
+  {
+   "id": "pa-green-drake",
+   "name": "Green drakes (Spring Creek, Pennsylvania)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Dun and spinner",
+   "flies": [
+    {
+     "pattern": "Green drake, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The legendary green drake hatch appears on Spring Creek in late May. Spring Creek is fished May 15 to June 10 for hatches.",
+   "sources": [
+    {
+     "title": "Spring Creek overview (TCO Fly Shop)",
+     "url": "https://www.tcoflyfishing.com/pages/spring-creek-overview"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ]
+  },
+  {
+   "id": "pa-light-cahill",
+   "name": "Light Cahills (Falling Springs)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    5
+   ],
+   "time_of_day": "Afternoon and evening",
+   "water_temp_f": null,
+   "stages": "Dun",
+   "flies": [
+    {
+     "pattern": "Light Cahill, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Light Cahills start around the first of May, hatch in limited numbers, and last about a month. A few hatch in June.",
+   "sources": [
+    {
+     "title": "Fly fishing Falling Springs Branch (Perfect Fly Store)",
+     "url": "https://perfectflystore.com/?p=609"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
+   ]
+  },
+  {
+   "id": "pa-terrestrial",
+   "name": "Terrestrials (Letort Spring Run)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    7,
+    8
+   ],
+   "time_of_day": "Midday along grassy banks",
+   "water_temp_f": null,
+   "stages": "Adult terrestrials",
+   "flies": [
+    {
+     "pattern": "Hopper and ant patterns, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Terrestrial fishing becomes the norm over the summer months on the Letort, a legendary limestone creek.",
+   "sources": [
+    {
+     "title": "Letort Spring Run overview (TCO Fly Shop)",
+     "url": "https://tcoflyfishing.com/pages/letort-spring-run-overview"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Pennsylvania"
    ]
   }
  ],
