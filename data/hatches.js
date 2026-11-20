@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 13,
+ "version": 14,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -5474,6 +5474,803 @@ window.HATCH_DB = {
    ],
    "states": [
     "Colorado"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": null,
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "id": "oak-creek-az",
+   "name": "Oak Creek (Sedona and Oak Creek Canyon, AZ)",
+   "type": "stream",
+   "elevation_ft": 4500,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by AZGFD from Page Springs Hatchery, about 26,000 a year"
+    },
+    {
+     "name": "Wild brown trout",
+     "stocking": "Wild population in Oak Creek Canyon, not stocked"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Native, in the West Fork. Stocking is a conservation action"
+    },
+    {
+     "name": "Roundtail chub",
+     "stocking": "Native fish in the lower creek. Catch and release only"
+    }
+   ],
+   "stocking": {
+    "status": "stocked, with wild browns",
+    "summary": "Healthy wild brown and rainbow populations are seasonally supplemented with AZGFD stocked trout. Wild browns are the main draw for larger fish.",
+    "schedule": "AZGFD stocks Oak Creek from March through November, typically every other week, per its 2019 fishing guide. Check the statewide schedule for the current week.",
+    "recent_plants": [
+     {
+      "date": "Late August 2022",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "Early July 2023",
+      "species": "Rainbow trout (announced as stocked that week)"
+     },
+     {
+      "date": "Late November 2023",
+      "species": "Rainbow trout (announced for that week)"
+     }
+    ],
+    "wild_fish": "Wild browns in the canyon, especially above Grasshopper Point. Native Roundtail chub in the lower reaches are catch and release. Gila trout are in the West Fork, a high-priority water for native trout.",
+    "sources": [
+     {
+      "title": "Oak Creek fishing (Arizona State Parks, Slide Rock)",
+      "url": "https://azstateparks.com/slide-rock/oak-creek/fishing"
+     },
+     {
+      "title": "Oak Creek Fishing Guide (AZGFD, 2019)",
+      "url": "https://s3-us-west-2.amazonaws.com/azgfd-portal-wordpress-pantheon/wp-content/uploads/archive/Oak-Creek-Fishing-Guide_2-28-19.pdf"
+     },
+     {
+      "title": "Oak Creek Fish Report, 7-1-2023 (AZGFD)",
+      "url": "https://www.sportfishingreport.com/fish_reports/201684/oak-creek-fishing-report.php"
+     },
+     {
+      "title": "Oak Creek Fish Report, 11-24-2023 (AZGFD)",
+      "url": "https://sportfishingreport.com/fish_reports/206754/rainbow-trout-will-be-stocked-this-week.php"
+     },
+     {
+      "title": "West Fork Oak Creek (AZ Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/west-fork-oak-creek"
+     }
+    ]
+   },
+   "fishing_season_note": "Open all year. Stocking season runs March to November. The best trout water is above Grasshopper Point, where the water stays cold enough year round.",
+   "notes": [
+    "Oak Creek runs through the red rock country outside Sedona. Above Grasshopper Point, the water stays cold enough for trout all year, according to AZGFD.",
+    "The 2019 AZGFD guide says Page Springs Hatchery stocks about 26,000 rainbows in Oak Creek each year. Stocking runs March through November, typically every other week.",
+    "Wild browns in Oak Creek Canyon are the main draw. Most of the big fish are caught on flies, according to Arizona State Parks.",
+    "A 2022 AZGFD report says the trout section is catch and release, artificial fly and lure only, with barbless hooks. Check current rules before you fish.",
+    "The 2014 Slide Fire burned 21,000 acres in the Oak Creek and West Fork watersheds. Runoff from the fire is still changing the stream habitat, according to AZ Wildlife Conservation Strategy.",
+    "AZGFD fish reports recommended hellgrammite, zebra midge, elk hair caddis, hopper and mayfly patterns in July. Two Prince Nymphs under an indicator worked in one 2023 report.",
+    "Winter can bring big browns. A January 2024 AZGFD report said slow sections near the top of Oak Creek Canyon can ice over early in the morning.",
+    "Native roundtail chub live in the lower creek and are catch and release only, per the AZGFD 2019 guide."
+   ],
+   "forage": [
+    {
+     "item": "Hellgrammite (dobsonfly larvae)",
+     "category": "insect",
+     "detail": "Recommended by AZGFD for summer fishing in July. Fish it on the bottom in riffles.",
+     "basis": "sourced",
+     "source": {
+      "title": "Oak Creek Fish Report, 7-1-2023",
+      "url": "https://www.sportfishingreport.com/fish_reports/201684/oak-creek-fishing-report.php"
+     }
+    },
+    {
+     "item": "Zebra midge and caddis",
+     "category": "insect",
+     "detail": "Zebra midge and elk hair caddis patterns are listed for summer. Caddis adults are a surface food for trout in the evening.",
+     "basis": "sourced",
+     "source": {
+      "title": "Oak Creek Fish Report, 7-1-2023",
+      "url": "https://www.sportfishingreport.com/fish_reports/201684/oak-creek-fishing-report.php"
+     },
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Mayflies and Blue-winged Olives",
+     "category": "insect",
+     "detail": "Mayfly hatches are a regular food source. Blue-winged Olives are the most common hatch at the nearby Canyon Creek. Oak Creek's hatch timing is not documented.",
+     "basis": "regional",
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Terrestrials (hoppers and ants)",
+     "category": "terrestrial",
+     "detail": "AZGFD lists hopper patterns for summer. The source does not say how terrestrials reach the water.",
+     "basis": "sourced",
+     "source": {
+      "title": "Oak Creek Fish Report, 7-1-2023",
+      "url": "https://www.sportfishingreport.com/fish_reports/201684/oak-creek-fishing-report.php"
+     },
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Leeches",
+     "category": "other",
+     "detail": "Nymphs and leeches work well in Oak Creek, according to Arizona State Parks.",
+     "basis": "sourced",
+     "source": {
+      "title": "Oak Creek fishing (Arizona State Parks)",
+      "url": "https://azstateparks.com/slide-rock/oak-creek/fishing"
+     }
+    },
+    {
+     "item": "Crayfish and minnows",
+     "category": "crustacean",
+     "detail": "Larger trout feed on crayfish and minnows. Woolly bugger and crayfish imitations are a common choice for big fish in deep pools.",
+     "basis": "sourced",
+     "source": {
+      "title": "Sedona Fishing: Complete Guide 2025 (Fishing Booker)",
+      "url": "https://fishingbooker.com/blog/?p=72472"
+     }
+    }
+   ],
+   "insect_ids": [
+    "caddis",
+    "bwo",
+    "terrestrial",
+    "damselfly"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": null,
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "id": "lees-ferry-az",
+   "name": "Lees Ferry (Colorado River tailwater, Glen Canyon, AZ)",
+   "type": "stream",
+   "elevation_ft": 3100,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Non-native. Stocked since 1964"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Non-native, reproducing. Spawn in November and December"
+    }
+   ],
+   "stocking": {
+    "status": "wild and stocked rainbow and brown",
+    "summary": "A rainbow trout fishery since the first stocking in 1964. Most fish live in the roughly 15 miles from Glen Canyon Dam to Lees Ferry. Brown trout have grown fast since 1991, according to the National Park Service.",
+    "schedule": "No annual stocking schedule was found in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Reproducing rainbow and brown trout. Browns spawn in November and December. The National Park Service has a harvest incentive to remove browns.",
+    "sources": [
+     {
+      "title": "Status and trends of the rainbow trout population, Lees Ferry (USGS)",
+      "url": "https://www.usgs.gov/publications/status-and-trends-rainbow-trout-population-lees-ferry-reach-colorado-river-downstream"
+     },
+     {
+      "title": "Brown Trout Incentivized Harvest (National Park Service)",
+      "url": "https://home.nps.gov/glca/planyourvisit/brown-trout-harvest.htm"
+     },
+     {
+      "title": "Brown trout update, Lees Ferry (Bureau of Reclamation)",
+      "url": "https://www.usbr.gov/uc/progact/amp/twg/2016-02-26-twg-meeting/Attach_06.pdf"
+     }
+    ]
+   },
+   "fishing_season_note": "Open all year. Water is cold and steady year round because of Glen Canyon Dam releases.",
+   "notes": [
+    "The Lees Ferry reach is about 15 miles of tailwater from Glen Canyon Dam to Lees Ferry. AZGFD designated it a Blue Ribbon Rainbow Trout Fishery in 1981.",
+    "Trout fishing here is technical. Orvis describes midges, worms and scuds fished under an indicator with long, dragfree drifts.",
+    "Midges are the year-round food. Intensive sampling in one August weekend showed an 865 percent increase in midges between the dam and Lees Ferry after a bug-flow experiment.",
+    "Scuds are a main food source, but they declined when aquatic vegetation was lost, according to Game and Fish. Scud patterns are still productive.",
+    "Browns have risen since 1991. The National Park Service runs an incentive program to remove browns, paying at least $25 for each one over 6 inches from Glen Canyon Dam to the Paria River.",
+    "Flows here are set by Glen Canyon Dam, so the water is cold year round. Check the dam release schedule before you go."
+   ],
+   "forage": [
+    {
+     "item": "Midge larvae and pupae",
+     "category": "insect",
+     "detail": "The main year-round food for trout in the tailwater. Fish them under an indicator.",
+     "basis": "sourced",
+     "source": {
+      "title": "Lees Ferry (Orvis fishing report)",
+      "url": "https://fishingreports.orvis.com/southwest/arizona/colorado-river-az"
+     },
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Scuds",
+     "category": "crustacean",
+     "detail": "A main food source, but the population fell when aquatic vegetation was lost. Scud patterns with weight are still effective.",
+     "basis": "sourced",
+     "source": {
+      "title": "Arizona's Lees Ferry (Game and Fish magazine)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_0510_02/194477"
+     }
+    },
+    {
+     "item": "Aquatic insects, mayflies and damselflies",
+     "category": "insect",
+     "detail": "Stocked into the river at the start, and still present. Bug flows have increased midges and other insects.",
+     "basis": "sourced",
+     "source": {
+      "title": "Arizona's Lees Ferry (Game and Fish magazine)",
+      "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_0510_02/194477"
+     },
+     "insect_id": "damselfly"
+    },
+    {
+     "item": "Snails and cladophora algae",
+     "category": "other",
+     "detail": "Snails and algae were added to the river in the restoration of the tailwater. Their importance to trout is general.",
+     "basis": "sourced",
+     "source": {
+      "title": "Bugs Unlimited (Trout Unlimited)",
+      "url": "https://www.tu.org/?p=28428"
+     }
+    },
+    {
+     "item": "Crayfish",
+     "category": "crustacean",
+     "detail": "Crayfish were put into the river as part of the restoration. The source does not describe how often trout eat them.",
+     "basis": "sourced",
+     "source": {
+      "title": "Bugs Unlimited (Trout Unlimited)",
+      "url": "https://www.tu.org/?p=28428"
+     }
+    },
+    {
+     "item": "Drifting invertebrates",
+     "category": "insect",
+     "detail": "Rainbow trout feed mainly on invertebrates that drift in the current, according to USGS diet studies.",
+     "basis": "sourced",
+     "source": {
+      "title": "Rainbow trout diet and invertebrate drift data (USGS)",
+      "url": "https://usgs.gov/data/rainbow-trout-diet-and-invertebrate-drift-data-2012-2015-colorado-river-grand-canyon-arizona"
+     }
+    }
+   ],
+   "insect_ids": [
+    "chironomid",
+    "damselfly",
+    "trico"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": null,
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "id": "lake-mary-az",
+   "name": "Lower Lake Mary and Upper Lake Mary (Flagstaff, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6900,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by AZGFD in spring, mainly in Lower Lake Mary"
+    },
+    {
+     "name": "Northern pike",
+     "stocking": "Established in Upper Lake Mary"
+    },
+    {
+     "name": "Walleye, channel catfish, crappie, bass",
+     "stocking": "Warmwater species in the system"
+    }
+   ],
+   "stocking": {
+    "status": "stocked, plus warmwater species",
+    "summary": "Lower Lake Mary is a stocked trout water. Upper Lake Mary is best known for northern pike. Lower Lake Mary tends to dry up in long dry spells.",
+    "schedule": "AZGFD stocks trout in early spring and stops in late May or early June when water warms. A 2023 release says more than 67,000 rainbows of 3 to 18 inches were stocked into Lower Lake Mary in early April.",
+    "recent_plants": [
+     {
+      "date": "Early April 2023",
+      "species": "Rainbow trout (more than 67,000, 3 to 18 inches)"
+     }
+    ],
+    "wild_fish": "Northern pike, walleye, channel catfish and crappie live in Upper Lake Mary. Trout are stocked, not wild.",
+    "sources": [
+     {
+      "title": "2023 should be boom year for Lake Mary (AZGFD)",
+      "url": "https://westernbass.com/article/2023-should-boom-year-lake-mary"
+     },
+     {
+      "title": "Spring Fishing Has Arrived in Northern Arizona (AZGFD, 2014)",
+      "url": "https://www.outdoorhub.com/?p=370089"
+     },
+     {
+      "title": "Upper & Lower Lake Mary (Arizona Game & Fish fish reports)",
+      "url": "https://www.norcalfishreports.com/lakes/991/upper-lake-mary-az.php"
+     },
+     {
+      "title": "Lake Mary Recreation Corridor (Recreation.gov)",
+      "url": "https://www.recreation.gov/camping/poi/264781"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout season is spring into early summer. Pike and warmwater fish are active from late spring through fall. Upper Lake Mary is often ice covered in winter.",
+   "notes": [
+    "Lower and Upper Lake Mary are two reservoirs near Flagstaff. They offer different fishing. Lower Lake Mary is the trout water, and Upper Lake Mary is a pike water.",
+    "AZGFD stocked more than 67,000 rainbows into Lower Lake Mary in early April 2023. Stocking stops in late May or early June, when water quality drops, according to AZGFD.",
+    "Lower Lake Mary is the smaller lake and can dry up. Check water level before you go. Upper Lake Mary's main launches opened in March 2026, but the Narrows launch stayed closed.",
+    "Once flooded, the lake bed releases earthworms, a quick food source for newly stocked trout. Midges, caddis, damselflies, dragonflies and duck leeches become established as vegetation grows.",
+    "Upper Lake Mary is known for big northern pike. Pike wait on the deep edge of the weeds to ambush prey. A 2023 fish report recommended fishing the weed line edge.",
+    "Northern pike became active by late April 2026, according to the AZGFD report from that date.",
+    "Upper Lake Mary had a gill net survey in December 2023 to track its fish population. Only boats with a 10 hp motor or electric motor are allowed on Lower Lake Mary.",
+    "Summer is best for bass, pike and crappie, while spring is best for trout, according to a 2013 AZGFD release."
+   ],
+   "forage": [
+    {
+     "item": "Earthworms",
+     "category": "other",
+     "detail": "Earthworms come out of the newly flooded lake bed and are an early food source for stocked trout.",
+     "basis": "sourced",
+     "source": {
+      "title": "2023 should be boom year for Lake Mary (AZGFD)",
+      "url": "https://westernbass.com/article/2023-should-boom-year-lake-mary"
+     }
+    },
+    {
+     "item": "Midges, caddis, damselfly and dragonfly nymphs",
+     "category": "insect",
+     "detail": "Established as vegetation grows in the lake. Aquatic vegetation provides food and habitat for these insects, which trout eat.",
+     "basis": "sourced",
+     "source": {
+      "title": "2023 should be boom year for Lake Mary (AZGFD)",
+      "url": "https://westernbass.com/article/2023-should-boom-year-lake-mary"
+     },
+     "insect_id": "damselfly"
+    },
+    {
+     "item": "Duck leeches",
+     "category": "other",
+     "detail": "Leeches become established as waterfowl use the lake. They are a fast-growing trout food, according to AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "2023 should be boom year for Lake Mary (AZGFD)",
+      "url": "https://westernbass.com/article/2023-should-boom-year-lake-mary"
+     }
+    },
+    {
+     "item": "Callibaetis mayflies",
+     "category": "insect",
+     "detail": "Stillwater mayflies that hatch in weedy shallows. Callibaetis is a regional stillwater pattern, not a documented Lake Mary hatch.",
+     "basis": "regional",
+     "insect_id": "callibaetis"
+    }
+   ],
+   "insect_ids": [
+    "damselfly",
+    "callibaetis",
+    "chironomid"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Wikipedia. Coordinates not set.",
+   "area_acres": 100,
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "id": "show-low-lake-az",
+   "name": "Show Low Lake (White Mountains, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6500,
+   "species": [
+    {
+     "name": "Walleye",
+     "stocking": "Stocked by AZGFD, March through July"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Established. Recorded in the AZGFD 2022 guide"
+    },
+    {
+     "name": "Largemouth and smallmouth bass",
+     "stocking": "Established warmwater species"
+    },
+    {
+     "name": "Channel catfish, bluegill and green sunfish",
+     "stocking": "Established warmwater species"
+    }
+   ],
+   "stocking": {
+    "status": "stocked, plus warmwater species",
+    "summary": "Stocked by AZGFD with rainbow trout. The lake also holds established walleye, bass and catfish. A 2022 AZGFD guide calls it the best place in Arizona for lunker walleye.",
+    "schedule": "AZGFD moved its Show Low-area stocking to March through July, from the traditional April through September. Stockings are expected to finish by July 4. Summer stocking was paused in 2020 to 2023 when the water got warm.",
+    "recent_plants": [
+     {
+      "date": "March through July (annual schedule)",
+      "species": "Rainbow trout (catchables)"
+     }
+    ],
+    "wild_fish": "Walleye, channel catfish, largemouth and smallmouth bass, and sunfish are present. An AZGFD bulletin lists smallmouth bass for Show Low Lake.",
+    "sources": [
+     {
+      "title": "Pinetop-Lakeside stocking schedule change (AZGFD news release)",
+      "url": "https://www.azgfd.com/?p=12838"
+     },
+     {
+      "title": "Show Low Lake (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Show_Low_Lake"
+     },
+     {
+      "title": "Pinetop Show Low Lakes fishing guide (AZGFD 2022)",
+      "url": "https://www.greerlodgeaz.com/wp-content/uploads/2023/04/Fishing-Guide-Pinetop-Show-Low-Lakes-Streams-AZGFD-2022.pdf"
+     },
+     {
+      "title": "AZGFD record fish list",
+      "url": "https://www.azgfd.com/fishing-2/arizona-state-fish-records/"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout stocking runs March through July. Best fishing is usually spring (April to June) and fall (September to November). Boat launches can be limited during drought.",
+   "notes": [
+    "Show Low Lake is 100 acres at about 6,500 ft in the White Mountains. Average depth is about 33 feet and the maximum is about 50 feet.",
+    "AZGFD stocks rainbow from March through July. Stocking finishes by July 4, according to AZGFD. Summer stocking was paused from 2020 to 2023 when the water got too warm.",
+    "Spring (April to June) and fall (September to November) are the best months, according to Torreon's regional guide.",
+    "AZGFD listed Show Low among waters to visit when boat launches are limited by drought. Check launch access before you plan a boat trip.",
+    "A 2022 AZGFD guide calls Show Low the best place in Arizona to catch lunker walleye. The state record walleye, 16 lb 1.76 oz, came from here in 2002.",
+    "Trout, walleye and northern pike move into shallows to hunt baitfish and crayfish, according to Journal AZ reporting on Arizona lakes.",
+    "Smallmouth and largemouth bass are both present, and anglers use worms, PowerBait and lures for trout and bass, per a regional guide.",
+    "The lake has good water quality year round, according to Wikipedia. Warm summer water has paused trout stocking here in past years."
+   ],
+   "forage": [
+    {
+     "item": "Rainbow trout (stocked)",
+     "category": "stocked feed",
+     "detail": "Hatchery-reared rainbows are typically fed pelleted feed and have no experience catching live fish when stocked, per USGS.",
+     "basis": "sourced",
+     "source": {
+      "title": "Hatchery Trout Predation Data, Arizona (USGS)",
+      "url": "https://www.usgs.gov/data/hatchery-trout-predation-data-arizona"
+     }
+    },
+    {
+     "item": "Baitfish (minnows and small fish)",
+     "category": "baitfish",
+     "detail": "Walleye and trout move into shallows to hunt baitfish, especially in cool shallow water.",
+     "basis": "sourced",
+     "source": {
+      "title": "Trout, walleye and northern pike move into shallows in search of baitfish and crayfish (Journal AZ)",
+      "url": "https://journalaz.com/2026/01/11/arizona-game-fish-recently-stocked-waterways/?amp=1"
+     }
+    },
+    {
+     "item": "Crayfish",
+     "category": "crustacean",
+     "detail": "Walleye and northern pike eat crayfish in shallow water, per Journal AZ reporting on Arizona lakes.",
+     "basis": "sourced",
+     "source": {
+      "title": "Journal AZ, Arizona Game and Fish stocked waterways",
+      "url": "https://journalaz.com/2026/01/11/arizona-game-fish-recently-stocked-waterways/?amp=1"
+     }
+    },
+    {
+     "item": "Bluegill and green sunfish",
+     "category": "baitfish",
+     "detail": "Sunfish are part of the warmwater mix. Bass and walleye eat them.",
+     "basis": "sourced",
+     "source": {
+      "title": "Pinetop Show Low Lakes fishing guide (AZGFD 2022)",
+      "url": "https://www.greerlodgeaz.com/wp-content/uploads/2023/04/Fishing-Guide-Pinetop-Show-Low-Lakes-Streams-AZGFD-2022.pdf"
+     }
+    },
+    {
+     "item": "Midges and aquatic insects",
+     "category": "insect",
+     "detail": "General lake insects support the trout and sunfish. Show Low-specific hatch data is not documented.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "insect_ids": [
+    "chironomid",
+    "callibaetis",
+    "damselfly"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": null,
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "id": "chevelon-canyon-lake-az",
+   "name": "Chevelon Canyon Lake (Mogollon Rim, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6400,
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Self-sustaining in the lake and upstream Chevelon Creek. Blue Ribbon trophy water"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked as needed by AZGFD"
+    }
+   ],
+   "stocking": {
+    "status": "mostly wild browns, some stocked rainbow",
+    "summary": "Managed as a Blue Ribbon trophy trout lake. A wild, self-sustaining brown trout population lives in the lake and upstream in Chevelon Creek. Rainbows are stocked as needed.",
+    "schedule": "Rainbow stocking is as needed. No dated plant record was found in the sources.",
+    "recent_plants": [],
+    "wild_fish": "Wild browns in the lake and in Chevelon Creek above it. Downstream, native roundtail chub, Little Colorado sucker, bluehead sucker, Little Colorado spinedace and speckled dace are managed for self-sustaining populations.",
+    "sources": [
+     {
+      "title": "Chevelon Canyon Lake (AZ Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/chevelon-canyon-lake"
+     },
+     {
+      "title": "Chevelon Canyon, Lake to Woods and Willow Springs Canyon (AZ Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/chevelon-canyon-chevelon-canyon-lake-to-the-confluence-of-woods-canyon-and-willow-springs-canyon"
+     },
+     {
+      "title": "Chevelon Canyon Creek below the lake (AZ Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/chevelon-canyon-chevelon-crossing-upstream-to-chevelon-canyon-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Open all year. The creek above the lake has special rules: two trout daily, artificial fly and lure only.",
+   "notes": [
+    "Chevelon Canyon Lake is managed as a Blue Ribbon trophy trout lake, per AZ Wildlife Conservation Strategy.",
+    "A wild, self-sustaining brown trout population lives in the lake and upstream in Chevelon Creek. Rainbows are stocked as needed.",
+    "Upstream of the lake, Chevelon Canyon Creek has special rules: two trout daily, artificial fly and lure only, to sustain the wild brown trout. Non-native warmwater fish are removed whenever found.",
+    "Below the lake, the creek is managed for native fish: roundtail chub, Little Colorado sucker, bluehead sucker, spinedace and speckled dace. It's also a wild coldwater fishery.",
+    "Chevelon is in the Mogollon Rim country. Check the conservation strategy and AZGFD rules before fishing the creek."
+   ],
+   "forage": [
+    {
+     "item": "Native minnows and suckers below the lake",
+     "category": "baitfish",
+     "detail": "Roundtail chub, speckled dace and native suckers live below the lake. They are a food base for the wild trout downstream.",
+     "basis": "sourced",
+     "source": {
+      "title": "Chevelon Canyon below the lake (AZ Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/chevelon-canyon-chevelon-crossing-upstream-to-chevelon-canyon-lake"
+     }
+    },
+    {
+     "item": "Aquatic and terrestrial insects",
+     "category": "insect",
+     "detail": "General food base for wild browns in a Rim stream. Hatch details for Chevelon are not documented.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "insect_ids": [
+    "caddis",
+    "terrestrial",
+    "bwo"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": null,
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "id": "verde-river-az",
+   "name": "Verde River (Beasley Flat and Dead Horse, AZ)",
+   "type": "stream",
+   "elevation_ft": 3300,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked by AZGFD, put and take, fall through spring"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Established warmwater species"
+    },
+    {
+     "name": "Roundtail chub, desert sucker, Sonora sucker",
+     "stocking": "Native fish that persist without management"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Native. AZGFD expects to stock Gila trout again in the fall, per Friends of the Verde River. Not confirmed for a specific stretch"
+    }
+   ],
+   "stocking": {
+    "status": "stocked (put and take)",
+    "summary": "AZGFD stocks trout on a put-and-take basis. The river from TAPCO diversion to Beasley Flat is intensively stocked, per AZ Wildlife Conservation Strategy.",
+    "schedule": "Rainbows are stocked at Dead Horse and at Camp Verde's Black Bridge from November through March. Gila trout restocking may happen in the fall, per Friends of the Verde River.",
+    "recent_plants": [
+     {
+      "date": "Week of November 17 to 21, 2025",
+      "species": "Rainbow trout (middle Verde)"
+     }
+    ],
+    "wild_fish": "Roundtail chub, desert sucker and Sonora sucker persist in the river without management. Smallmouth bass are present, including above Horseshoe Reservoir. Razorback suckers and Colorado pikeminnow have been stocked with little success.",
+    "sources": [
+     {
+      "title": "Verde River (USDA Forest Service)",
+      "url": "https://www.fs.usda.gov/r03/coconino/recreation/groups/verde-river"
+     },
+     {
+      "title": "Dead Horse Ranch State Park fishing (Arizona State Parks)",
+      "url": "https://azstateparks.com/dead-horse/on-the-water/fishing"
+     },
+     {
+      "title": "Verde River Beasley Flat to Horseshoe Reservoir (AZ Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/verde-river-beasley-flat-to-full-pool-horseshoe-reservoir"
+     },
+     {
+      "title": "Verde River TAPCO to Beasley Flat (AZ Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/verde-river-tapco-diversion-to-beasley-flat"
+     },
+     {
+      "title": "Fishing tips and upcoming events (AZGFD bulletin, 2025)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     },
+     {
+      "title": "Bass fishing is picking up (AZGFD bulletin, 2026)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/40e0493"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout stocking is in fall, winter and spring. Warm months are bass and catfish season. Check flow before you go, since the river drops after storms.",
+   "notes": [
+    "The Verde is the only river in Arizona with Wild and Scenic designation. Beasley Flat is where that protected stretch begins, according to the Forest Service.",
+    "AZGFD stocks the Verde on a put-and-take basis. Rainbows are stocked at Dead Horse Ranch and at Camp Verde's Black Bridge from November through March.",
+    "The lagoons at Dead Horse Ranch are stocked through winter and spring. Channel catfish are stocked in warmer months, according to Arizona State Parks.",
+    "Native roundtail chub, desert sucker and Sonora sucker live in the river and are not stocked.",
+    "Gila trout, Arizona's native trout, may be restocked in the fall, per Friends of the Verde River. That is not confirmed for a specific stretch.",
+    "Smallmouth bass are present in the Verde, including above Horseshoe Reservoir. AZGFD lists them there, and anglers target them with jigs and spinnerbaits."
+   ],
+   "forage": [
+    {
+     "item": "Smallmouth bass and other warmwater fish",
+     "category": "baitfish",
+     "detail": "Bass and sunfish feed on small fish and crayfish.",
+     "basis": "general"
+    },
+    {
+     "item": "Roundtail chub and native suckers",
+     "category": "baitfish",
+     "detail": "Native roundtail chub, desert sucker and Sonora sucker live in the river. They are a native food base for large trout and bass.",
+     "basis": "sourced",
+     "source": {
+      "title": "Verde River Beasley Flat to Horseshoe Reservoir (AZ Wildlife Conservation Strategy)",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/verde-river-beasley-flat-to-full-pool-horseshoe-reservoir"
+     }
+    },
+    {
+     "item": "Stocked rainbow feed",
+     "category": "stocked feed",
+     "detail": "Hatchery rainbows are typically fed pelleted feed and have no experience catching live fish when stocked, per USGS.",
+     "basis": "sourced",
+     "source": {
+      "title": "Hatchery Trout Predation Data, Arizona (USGS)",
+      "url": "https://www.usgs.gov/data/hatchery-trout-predation-data-arizona"
+     }
+    },
+    {
+     "item": "Terrestrials and warm-water insects",
+     "category": "terrestrial",
+     "detail": "Terrestrials and hatches are general for the lower Verde. Hatch data for the river is not documented here.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "insect_ids": [
+    "terrestrial",
+    "damselfly"
+   ]
+  },
+  {
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source. Coordinates not set.",
+   "area_acres": null,
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "id": "canyon-creek-az",
+   "name": "Canyon Creek (Mogollon Rim, Gila County, AZ)",
+   "type": "stream",
+   "elevation_ft": 5700,
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Stream-bred, not stocked"
+    }
+   ],
+   "stocking": {
+    "status": "wild only",
+    "summary": "Canyon Creek supports a good population of wild, stream-bred brown trout. The creek has recovered fully from past problems, per a local guide. Canyon Creek Hatchery is nearby.",
+    "schedule": "No stocking schedule applies to the creek, per the local guide. The nearby Canyon Creek Hatchery raises Gila trout broodstock and rainbows for other Rim waters.",
+    "recent_plants": [],
+    "wild_fish": "Wild, stream-bred brown trout. The hatchery produces Gila trout broodstock for stocking elsewhere on the Rim.",
+    "sources": [
+     {
+      "title": "Canyon Creek (Discover Gila County)",
+      "url": "https://discovergilacounty.com/?p=1250"
+     },
+     {
+      "title": "Canyon Creek History (AZGFD)",
+      "url": "https://azgfd.com/?p=2029"
+     },
+     {
+      "title": "Gila trout broodstock at Canyon Creek Hatchery (Western Bass)",
+      "url": "https://www.westernbass.com/article/gila-trout-fry-canyon-creek-hatchery"
+     }
+    ]
+   },
+   "fishing_season_note": "Season and rules were not verified. Expect freezing temperatures and ice in late October, according to a local guide.",
+   "notes": [
+    "Canyon Creek is one of Arizona's best trout streams, on the Mogollon Rim. Local reporting says it has recovered fully and holds a good population of wild, stream-bred browns.",
+    "Mayfly hatches start in May, and Blue-winged Olives are the most prolific. Midge larvae and pupae are good all year, per the Discover Gila County guide.",
+    "Watch for falling tree snags and loose footing on the creek. Hang your food bag away from camp.",
+    "The Canyon Creek hatchery is nearby and open to visitors. It is where AZGFD raises Gila trout broodstock.",
+    "Late October can bring freezing temperatures and ice on the water. One local guide said a 32-degree sleeping bag was barely enough. Pack warm layers."
+   ],
+   "forage": [
+    {
+     "item": "Blue-winged Olive mayflies",
+     "category": "insect",
+     "detail": "The most prolific mayfly hatch, starting in May, per the Discover Gila County guide.",
+     "basis": "sourced",
+     "source": {
+      "title": "Canyon Creek (Discover Gila County)",
+      "url": "https://discovergilacounty.com/?p=1250"
+     },
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Midge larvae and pupae",
+     "category": "insect",
+     "detail": "Good all year, per the same guide. A reliable food source in cold months.",
+     "basis": "sourced",
+     "source": {
+      "title": "Canyon Creek (Discover Gila County)",
+      "url": "https://discovergilacounty.com/?p=1250"
+     },
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Other mayflies, caddis and terrestrials",
+     "category": "insect",
+     "detail": "Other mayfly and caddis hatches are general for Rim streams. Summer terrestrials matter in the canyon.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "insect_ids": [
+    "bwo",
+    "chironomid",
+    "caddis",
+    "terrestrial"
    ]
   }
  ]

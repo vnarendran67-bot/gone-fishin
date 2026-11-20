@@ -83,10 +83,32 @@ function hatchPeaks(lake, habitat, month, state){
 
 /* ---------- best day finder ---------- */
 let lastPlan = null;
+async function nwsHourly(lat, lon){
+  const H = { 'Accept': 'application/geo+json' };
+  try {
+    const pr = await fetch(`https://api.weather.gov/points/${lat.toFixed(4)},${lon.toFixed(4)}`, { headers: H });
+    if (!pr.ok) return null;
+    const hr = await fetch((await pr.json()).properties.forecastHourly, { headers: H });
+    if (!hr.ok) return null;
+    return (await hr.json()).properties.periods;
+  } catch(e) { return null; }
+}
+// NWS hours for one date, same window rules as the main plan. Null if NWS has no hours for it.
+function nwsDayFrom(periods, dateStr, win){
+  if (!periods) return null;
+  const inWin = hr => win === 'am' ? hr <= 12 : win === 'pm' ? hr >= 12 : (hr >= 6 && hr <= 20);
+  const day = periods.filter(x => x.startTime.slice(0,10) === dateStr && inWin(parseInt(x.startTime.slice(11,13))));
+  if (!day.length) return null;
+  const mean = arr => arr.reduce((s,v) => s + v, 0) / arr.length;
+  const tC = day.map(x => (x.temperature - 32) * 5 / 9);
+  const kmh = day.map(x => (parseFloat(x.windSpeed) || 0) / 0.621371);
+  const pops = day.map(x => x.probabilityOfPrecipitation?.value).filter(v => v != null);
+  return { temp: mean(tC), wind: mean(kmh), rainChance: pops.length ? Math.max(...pops) : null };
+}
 async function findBestDay(){
   const btn = $('bdBtn'); const out = $('bdOut');
   if (!place) return;
-  btn.disabled = true; out.innerHTML = '<p class="muted">Checking the next 10 days…</p>';
+  btn.disabled = true; out.innerHTML = '<p class="muted">Checking the next 10 days (National Weather Service first)…</p>';
   const lake = findLake(place);
   const saved = ELEV_M;
   ELEV_M = lake ? Math.round(lake.elevation_ft * 0.3048) : null;
@@ -94,14 +116,17 @@ async function findBestDay(){
   const dates = [...Array(10).keys()].map(i => shiftDay(today, i));
   const win = $('when').value;
   try {
+    const usa = await nwsHourly(place.lat, place.lon);
     const rows = await Promise.all(dates.map(async d => {
       try {
+        // Open-Meteo supplies cloud cover and the fallback for days NWS doesn't cover
         const f = await getForecast(place.lat, place.lon, d);
-        const a = hourlyDayAverages(f, d, win);
+        const om = hourlyDayAverages(f, d, win);
+        const n = nwsDayFrom(usa, d, win);
+        const a = n ? { ...om, temp: n.temp, wind: n.wind, rainChance: n.rainChance != null ? n.rainChance : om.rainChance } : om;
         const sc = scoreDay(a);
-        const month = parseInt(d.slice(5, 7));
-        const hp = hatchPeaks(lake, place.habitat, month, place.state);
-        return { d, a, sc, hp, ok: true };
+        const hp = hatchPeaks(lake, place.habitat, parseInt(d.slice(5, 7)), place.state);
+        return { d, a, sc, hp, src: n ? 'NWS' : 'Open-Meteo', ok: true };
       } catch(e) { return { d, ok: false, err: e.message }; }
     }));
     const good = rows.filter(r => r.ok);
@@ -109,12 +134,12 @@ async function findBestDay(){
     good.sort((x, y) => (y.sc.s + Math.min(y.hp.peaks, 4)) - (x.sc.s + Math.min(x.hp.peaks, 4)));
     const top = good[0];
     out.innerHTML = `<p><b>Best day: ${new Date(top.d + 'T12:00:00').toLocaleDateString(undefined, { weekday: 'long', month: 'short', day: 'numeric' })}</b>, ${top.sc.label.toLowerCase()} (score ${top.sc.s}). ${fmtWind(top.a.wind)} wind, air ${fmtTemp(top.a.temp)}, ${top.hp.peaks} hatch${top.hp.peaks === 1 ? '' : 'es'} at peak.</p>
-      <table class="bd"><tr><th>Day</th><th>Score</th><th>Wind</th><th>Air</th><th>Rain</th><th>Peak hatches</th></tr>` +
+      <table class="bd"><tr><th>Day</th><th>Score</th><th>Wind</th><th>Air</th><th>Rain</th><th>Peak hatches</th><th>Source</th></tr>` +
       good.map(r => `<tr><td>${new Date(r.d + 'T12:00:00').toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })}</td>
         <td>${r.sc.s} ${esc(r.sc.label)}</td>
         <td>${fmtWind(r.a.wind)}${r.a.wind >= 24 ? ' ⚠' : ''}</td><td>${fmtTemp(r.a.temp)}</td>
-        <td>${Math.round(r.a.rainChance)}%</td><td>${r.hp.peaks}</td></tr>`).join('') +
-      `</table><p class="muted">Based on the Open-Meteo forecast. ${rows.length - good.length ? (rows.length - good.length) + ' day(s) had no forecast.' : ''}</p>`;
+        <td>${r.a.rainChance != null ? Math.round(r.a.rainChance) + '%' : '—'}</td><td>${r.hp.peaks}</td><td class="muted">${r.src}</td></tr>`).join('') +
+      `</table><p class="muted">NWS covers about the next 7 days. Later days use Open-Meteo. ${rows.length - good.length ? (rows.length - good.length) + ' day(s) had no forecast.' : ''}</p>`;
   } finally { ELEV_M = saved; btn.disabled = false; }
 }
 
