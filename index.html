@@ -47,6 +47,7 @@ ul.tips li{margin-bottom:4px}
 <header>
   <h1>🎣 Gone Fishin'</h1>
   <p>Pick a place and a date. See the weather, water, and what should be hatching.</p>
+  <button id="unitBtn" onclick="toggleUnits()" style="margin-top:8px;background:transparent;color:#fff;border:1px solid #ffffff90;border-radius:8px;padding:6px 10px;font:inherit;font-size:13px;cursor:pointer"></button>
 </header>
 <main>
 
@@ -66,7 +67,7 @@ ul.tips li{margin-bottom:4px}
       <label>Latitude<input id="lat" type="number" step="any"></label>
       <label>Longitude<input id="lon" type="number" step="any"></label>
       <label>Name<input id="pname" placeholder="My spot"></label>
-      <label>Elevation (ft, optional)<input id="elev" type="number" placeholder="e.g. 7000 for Rose Canyon"></label>
+      <label><span id="elevLabel">Elevation (ft, optional)</span><input id="elev" type="number" placeholder="e.g. 7000 for Rose Canyon"></label>
     </div>
   </details>
   <div class="row" style="margin-top:4px">
@@ -123,6 +124,25 @@ const SAVE_KEY = 'gone-fishin-places-v2';
 let place = null;   // {name, lat, lon, habitat, lakeId}
 let ELEV_M = null;  // elevation in metres sent to Open-Meteo, if known
 const cF = c => (c * 9 / 5 + 32).toFixed(0);
+const LOCALE_REGION = (() => { try { return new Intl.Locale(navigator.language).region || ''; } catch(e) { return ''; } })();
+let UNITS = localStorage.getItem('gone-fishin-units') || (['US','LR','MM'].includes(LOCALE_REGION) ? 'imperial' : 'metric');
+const isImperial = () => UNITS === 'imperial';
+const fmtTemp = c => isImperial() ? `${(c*9/5+32).toFixed(0)} °F` : `${c.toFixed(0)} °C`;      // input °C
+const fmtTempF = f => isImperial() ? `${f.toFixed(0)} °F` : `${((f-32)*5/9).toFixed(0)} °C`;     // input °F
+const fmtWind = kmh => isImperial() ? `${(kmh*0.621371).toFixed(0)} mph` : `${kmh.toFixed(0)} km/h`;
+const fmtRain = mm => isImperial() ? `${(mm/25.4).toFixed(2)} in` : `${mm.toFixed(1)} mm`;
+const fmtElev = m => isImperial() ? `${Math.round(m*3.28084)} ft` : `${Math.round(m)} m`;   // input m
+const fmtFlow = cfs => isImperial() ? `${cfs} cfs` : `${(cfs*0.0283168).toFixed(2)} m³/s`;
+function toggleUnits(){
+  UNITS = isImperial() ? 'metric' : 'imperial';
+  try { localStorage.setItem('gone-fishin-units', UNITS); } catch(e) {}
+  updateUnitUI();
+  if (place) runPlan();
+}
+function updateUnitUI(){
+  $('unitBtn').textContent = isImperial() ? 'Switch to km / °C' : 'Switch to miles / °F';
+  $('elevLabel').textContent = isImperial() ? 'Elevation (ft, optional)' : 'Elevation (m, optional)';
+}
 const shiftDay = (s, n) => { const [y,m,d] = s.split('-').map(Number); return iso(new Date(y, m-1, d+n)); };
 
 function loadSaved(){ try { return JSON.parse(localStorage.getItem(SAVE_KEY)) || []; } catch(e){ return []; } }
@@ -269,8 +289,8 @@ function hourlyDayAverages(f, dateStr){
 }
 function scoreDay(a){
   let s = 60; const why = [];
-  if (a.wind > 20) { s -= 25; why.push(`Wind averaging ${a.wind.toFixed(0)} km/h. Casting is hard; fish sheltered banks.`); }
-  else if (a.wind > 12) { s -= 10; why.push(`Breezy (${a.wind.toFixed(0)} km/h). Look for sheltered water.`); }
+  if (a.wind > 20) { s -= 25; why.push(`Wind averaging ${fmtWind(a.wind)}. Casting is hard; fish sheltered banks.`); }
+  else if (a.wind > 12) { s -= 10; why.push(`Breezy (${fmtWind(a.wind)}). Look for sheltered water.`); }
   else if (a.wind <= 6) { s += 5; why.push('Calm; rises are easier to see.'); }
   if (a.rainChance > 60) { s -= 15; why.push(`Rain chance up to ${a.rainChance}%. Watch for rising water.`); }
   else if (a.rainChance > 30) { s -= 5; why.push(`Some rain possible (${a.rainChance}%).`); }
@@ -289,8 +309,8 @@ function activeHatches(month, habitat, waterF, insectIds){
   return list.map(ins => {
     let tempNote = null, gate = true;
     if (ins.water_temp_f) {
-      if (waterF == null) tempNote = `Needs water temp (usually ${ins.water_temp_f.min}–${ins.water_temp_f.max} °F)`;
-      else if (waterF < ins.water_temp_f.min || waterF > ins.water_temp_f.max) { gate = false; tempNote = `Water ${waterF.toFixed(0)} °F is outside the usual ${ins.water_temp_f.min}–${ins.water_temp_f.max} °F`; }
+      if (waterF == null) tempNote = `Needs water temp (usually ${fmtTempF(ins.water_temp_f.min)} to ${fmtTempF(ins.water_temp_f.max)})`;
+      else if (waterF < ins.water_temp_f.min || waterF > ins.water_temp_f.max) { gate = false; tempNote = `Water ${fmtTempF(waterF)} is outside the usual ${fmtTempF(ins.water_temp_f.min)} to ${fmtTempF(ins.water_temp_f.max)}`; }
     }
     const lakeBoost = insectIds && insectIds.includes(ins.id);
     return { ins, gate, tempNote, peak: ins.peak_months.includes(month), lakeBoost };
@@ -306,7 +326,8 @@ async function runPlan(){
     place = { name: $('pname').value.trim() || 'My spot', lat, lon, habitat: $('habitat').value, lakeId: null };
   }
   const lakeE = place.lakeId ? DB.lakes.find(l => l.id === place.lakeId) : null;
-  const elevFt = parseFloat($('elev').value) || (lakeE ? lakeE.elevation_ft : null);
+  const elevIn = parseFloat($('elev').value);
+  const elevFt = (!isNaN(elevIn) && elevIn > 0) ? (isImperial() ? elevIn : elevIn / 0.3048) : (lakeE ? lakeE.elevation_ft : null);
   ELEV_M = elevFt ? Math.round(elevFt * 0.3048) : null;
   const dateStr = $('date').value || iso(new Date());
   $('date').value = dateStr;
@@ -357,26 +378,26 @@ async function runPlan(){
   const measuredF = usgs.find(s => s.temp)?.temp?.f ?? null;
   const waterF = measuredF ?? estF;
   const waterSrc = (measuredF != null ? 'USGS gauge'
-    : (estF != null ? 'ESTIMATE from the last 3 weeks of air temperature (rough, about ±5 °F)' : 'none'));
+    : (estF != null ? 'ESTIMATE from the last 3 weeks of air temperature (rough, about ' + (isImperial() ? '±5 °F' : '±3 °C') + ')' : 'none'));
 
   // conditions card
   if (wx && wx.kind === 'forecast') {
     const a = wx.a, sc = scoreDay(a);
     $('conditions').innerHTML = `<h2>Conditions</h2>
-      <div class="big">High ${cF(wx.d.temperature_2m_max[0])} °F · Low ${cF(wx.d.temperature_2m_min[0])} °F</div>
-      <div class="muted">Fishing-hours average ${cF(a.temp)} °F</div>
-      ${days === 0 && wx.cur ? `<div class="muted">Right now (model): ${cF(wx.cur.temperature_2m)} °F, wind ${wx.cur.wind_speed_10m} km/h</div>` : ''}
-      <div class="muted">Wind ${a.wind.toFixed(0)} km/h · Cloud ${a.cloud.toFixed(0)}% · Rain chance ${a.rainChance}%</div>
+      <div class="big">High ${fmtTemp(wx.d.temperature_2m_max[0])} · Low ${fmtTemp(wx.d.temperature_2m_min[0])}</div>
+      <div class="muted">Fishing-hours average ${fmtTemp(a.temp)}</div>
+      ${days === 0 && wx.cur ? `<div class="muted">Right now (model): ${fmtTemp(wx.cur.temperature_2m)}, wind ${fmtWind(wx.cur.wind_speed_10m)}</div>` : ''}
+      <div class="muted">Wind ${fmtWind(a.wind)} · Cloud ${a.cloud.toFixed(0)}% · Rain chance ${a.rainChance}%</div>
       <div class="muted">Sunrise ${a.sunrise} · Sunset ${a.sunset}</div>
-      <div class="muted">Forecast grid elevation ${wx.elev != null ? Math.round(wx.elev * 3.281) : '?'} ft${ELEV_M != null ? ` · adjusted to ${Math.round(ELEV_M / 0.3048)} ft` : ' · set an elevation above to correct mountain sites'}</div>
+      <div class="muted">Forecast grid elevation ${wx.elev != null ? fmtElev(wx.elev) : '?'}${ELEV_M != null ? ` · adjusted to ${fmtElev(ELEV_M)}` : ' · set an elevation above to correct mountain sites'}</div>
       <div style="margin-top:10px"><span class="score">${sc.s}</span> <b>${sc.label}</b></div>
       <ul class="tips">${sc.why.map(w => `<li>${esc(w)}</li>`).join('')}</ul>
       <div class="muted">Daytime averages shown.</div>`;
     window._score = sc;
   } else if (wx) {
     $('conditions').innerHTML = `<h2>Typical conditions</h2>
-      <div class="big">${wx.tmin.toFixed(0)}–${wx.tmax.toFixed(0)} °C</div>
-      <div class="muted">Rain last year on this day: ${wx.precip} mm</div>
+      <div class="big">${fmtTemp(wx.tmin)} to ${fmtTemp(wx.tmax)}</div>
+      <div class="muted">Rain last year on this day: ${fmtRain(wx.precip)}</div>
       <div class="muted">Sunrise ${wx.sunrise} · Sunset ${wx.sunset}</div>
       <p class="muted">${esc(wxNote)}</p>`;
     window._score = null;
@@ -388,8 +409,8 @@ async function runPlan(){
   // water card
   const gauge = usgs.find(s => s.temp) || usgs[0];
   $('water').innerHTML = `<h2>Water</h2>
-    ${waterF != null ? `<div class="big">${waterF.toFixed(0)} °F</div><div class="muted">Source: ${esc(waterSrc)}</div>` : '<div class="muted">No water temperature yet.</div>'}
-    ${gauge ? `<div style="margin-top:8px"><b>${esc(gauge.name)}</b><div class="muted">${gauge.flow != null ? `Flow ${gauge.flow} cfs` : 'No flow reading'} · last ${esc(gauge.time?.slice(0,16).replace('T',' '))}</div></div>` : ''}
+    ${waterF != null ? `<div class="big">${fmtTempF(waterF)}</div><div class="muted">Source: ${esc(waterSrc)}</div>` : '<div class="muted">No water temperature yet.</div>'}
+    ${gauge ? `<div style="margin-top:8px"><b>${esc(gauge.name)}</b><div class="muted">${gauge.flow != null ? `Flow ${fmtFlow(gauge.flow)}` : 'No flow reading'} · last ${esc(gauge.time?.slice(0,16).replace('T',' '))}</div></div>` : ''}
     <p class="muted">${esc(usgsNote)}</p>
     ${habitat === 'stillwater' ? '<p class="muted">Lakes usually have no USGS gauge, so the water temperature is estimated from recent air temperatures.</p>' : ''}`;
 
@@ -422,7 +443,7 @@ async function runPlan(){
   // verdict
   const bits = [];
   if (window._score) bits.push(`Conditions: <b>${window._score.label}</b> (${window._score.s}/100)`);
-  if (waterF != null) bits.push(`Water ${waterF.toFixed(0)} °F`);
+  if (waterF != null) bits.push(`Water ${fmtTempF(waterF)}`);
   bits.push(`${hatches.length} possible hatches`);
   $('verdict').innerHTML = `<h2>Summary</h2><div>${bits.join(' · ')}</div>`;
 
@@ -432,6 +453,7 @@ async function runPlan(){
 
 /* ---------- init ---------- */
 $('date').value = iso(new Date());
+updateUnitUI();
 renderSaved();
 </script>
 </body>
