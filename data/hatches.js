@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 32,
+ "version": 40,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -14977,7 +14977,7 @@ window.HATCH_DB = {
   },
   {
    "id": "riggs-flat-lake-az",
-   "name": "Riggs Flat Lake (Pinale\u00f1o Mountains, AZ)",
+   "name": "Riggs Flat Lake (Pinaleño Mountains, AZ)",
    "type": "reservoir",
    "elevation_ft": null,
    "lat": null,
@@ -15029,8 +15029,8 @@ window.HATCH_DB = {
     "chironomid"
    ],
    "notes": [
-    "The Coronado National Forest says Riggs Flat Lake is about 11 acres, at the end of the Swift Trail on the Pinale\u00f1os, per the Forest Service.",
-    "The Forest Service says Riggs Flat, Frye Mesa, Rose Canyon, Pe\u00f1a Blanca and Parker Canyon lakes are all stocked by AZGFD.",
+    "The Coronado National Forest says Riggs Flat Lake is about 11 acres, at the end of the Swift Trail on the Pinaleños, per the Forest Service.",
+    "The Forest Service says Riggs Flat, Frye Mesa, Rose Canyon, Peña Blanca and Parker Canyon lakes are all stocked by AZGFD.",
     "When Riggs Flat is snowed in and iced over, anglers can fish Frye Mesa Reservoir instead, per the Forest Service.",
     "Recent AZGFD plants at Riggs Flat included rainbows in June, July, August and September 2023 and 2024, per Sportfishing Report.",
     "AZGFD reports from 2016 described the lake as open for summer and winding down by November."
@@ -15441,12 +15441,12 @@ window.HATCH_DB = {
   },
   {
    "id": "pena-blanca-lake-az",
-   "name": "Pe\u00f1a Blanca Lake (Nogales, AZ)",
+   "name": "Peña Blanca Lake (Nogales, AZ)",
    "type": "reservoir",
    "elevation_ft": null,
    "lat": null,
    "lon": null,
-   "coords_note": "Elevation not sourced. Coordinates not set. In Pe\u00f1a Blanca Canyon, 68 miles south of Tucson and 17 miles northwest of Nogales, per AZGFD.",
+   "coords_note": "Elevation not sourced. Coordinates not set. In Peña Blanca Canyon, 68 miles south of Tucson and 17 miles northwest of Nogales, per AZGFD.",
    "area_acres": 50,
    "species": [
     {
@@ -15485,13 +15485,13 @@ window.HATCH_DB = {
     "chironomid"
    ],
    "notes": [
-    "Pe\u00f1a Blanca Lake is in the Coronado National Forest, 68 miles south of Tucson and 17 miles northwest of Nogales, in Pe\u00f1a Blanca Canyon, per AZGFD.",
+    "Peña Blanca Lake is in the Coronado National Forest, 68 miles south of Tucson and 17 miles northwest of Nogales, in Peña Blanca Canyon, per AZGFD.",
     "The day-use fee is $8 per vehicle, or an accepted pass, per AZGFD.",
-    "AZGFD said Pe\u00f1a Blanca would receive monthly rainbow stockings starting the last week of January through March.",
-    "AZGFD said water quality had improved at Pe\u00f1a Blanca in February 2023, and rainbows were to be stocked through March.",
-    "AZGFD's 2016 report said mercury advisories against eating warmwater fish from Pe\u00f1a Blanca were in effect. These sources do not confirm the current status.",
+    "AZGFD said Peña Blanca would receive monthly rainbow stockings starting the last week of January through March.",
+    "AZGFD said water quality had improved at Peña Blanca in February 2023, and rainbows were to be stocked through March.",
+    "AZGFD's 2016 report said mercury advisories against eating warmwater fish from Peña Blanca were in effect. These sources do not confirm the current status.",
     "A habitat project added structure to the lake to build a stronger warmwater fishery, per AZGFD.",
-    "A family outdoor day was held at Pe\u00f1a Blanca in April 2026, with poles and bait provided, per AZGFD."
+    "A family outdoor day was held at Peña Blanca in April 2026, with poles and bait provided, per AZGFD."
    ],
    "sources": [
     {
@@ -15517,7 +15517,7 @@ window.HATCH_DB = {
     {
      "item": "Midges and damselflies",
      "category": "insect",
-     "detail": "Regional stillwater insects. Not documented for Pe\u00f1a Blanca.",
+     "detail": "Regional stillwater insects. Not documented for Peña Blanca.",
      "basis": "regional",
      "insect_id": "chironomid"
     }
@@ -15584,7 +15584,7 @@ window.HATCH_DB = {
     "chironomid"
    ],
    "notes": [
-    "The Coronado National Forest says Frye Mesa, Riggs Flat, Rose Canyon, Pe\u00f1a Blanca and Parker Canyon lakes are stocked by AZGFD.",
+    "The Coronado National Forest says Frye Mesa, Riggs Flat, Rose Canyon, Peña Blanca and Parker Canyon lakes are stocked by AZGFD.",
     "When high-elevation Riggs Flat is snowed in and iced over, trout anglers in the Safford District can still fish Frye Mesa Reservoir, per the Forest Service.",
     "Snoflo lists Frye Mesa's species as a set of five, though the source does not name them.",
     "Snoflo's tips suggest live bait and lures near submerged structure, with the depth varied until fish are found."
@@ -17462,7 +17462,7 @@ window.HATCH_DB = {
    "elevation_ft": null,
    "lat": 33.5083,
    "lon": -111.9071,
-   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Chapparal Lake listing (33\u00b030'47.5\"N 111\u00b054'25.2\"W).",
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Chapparal Lake listing (33°30'47.5\"N 111°54'25.2\"W).",
    "area_acres": null,
    "species": [
     {
@@ -17471,7 +17471,7 @@ window.HATCH_DB = {
     },
     {
      "name": "Channel catfish",
-     "stocking": "Stocked by AZGFD about every two weeks in April\u2013May and mid-September\u2013October"
+     "stocking": "Stocked by AZGFD about every two weeks in April–May and mid-September–October"
     },
     {
      "name": "Largemouth bass",
@@ -17481,14 +17481,14 @@ window.HATCH_DB = {
    "stocking": {
     "status": "stocked",
     "summary": "AZGFD stocks Chaparral Lake year-round as a Community Fishing water. Scottsdale says trout are stocked twice a month from October to March, and catfish in the spring and fall windows.",
-    "schedule": "Rainbow trout about every two weeks December through February (Scottsdale). Trout twice a month October\u2013March (Scottsdale). Channel catfish about every two weeks April\u2013May and mid-September\u2013October. Stocking stops in summer heat.",
+    "schedule": "Rainbow trout about every two weeks December through February (Scottsdale). Trout twice a month October–March (Scottsdale). Channel catfish about every two weeks April–May and mid-September–October. Stocking stops in summer heat.",
     "recent_plants": [
      {
       "date": "October through March",
       "species": "Rainbow trout (twice monthly)"
      },
      {
-      "date": "April\u2013May and mid-September\u2013October",
+      "date": "April–May and mid-September–October",
       "species": "Channel catfish (about every two weeks)"
      }
     ],
@@ -17630,7 +17630,7 @@ window.HATCH_DB = {
     "FWS says Cibola Lake is open to fishing March 15 through September 30 and closed to entry October 1 through March 14.",
     "FWS says Cibola Lake is a no-wake zone, and only electric trolling motors or manually powered boats are allowed there.",
     "FWS says fishing and boating are allowed year-round on the main Colorado River channel, except that fishing from the east shore south of the tie-back levee is restricted.",
-    "FWS lists Pretty Water (limited hours during waterfowl season, October\u2013February), Cibola Lake (6,500 acres), and 1,080 acres of the Colorado River and Old River channel as available fishing water.",
+    "FWS lists Pretty Water (limited hours during waterfowl season, October–February), Cibola Lake (6,500 acres), and 1,080 acres of the Colorado River and Old River channel as available fishing water.",
     "The Old River Channel is a no-wake zone, and fishing and boating are allowed there year-round, per FWS.",
     "Fishbrain logs largemouth and smallmouth bass, channel and flathead catfish, bluegill, and a few rainbow trout caught on the Colorado River.",
     "The refuge was established in 1964 as mitigation for Colorado River channelization and dam construction, per FWS."
@@ -17809,7 +17809,7 @@ window.HATCH_DB = {
    "elevation_ft": null,
    "lat": 34.7265,
    "lon": -114.4869,
-   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Topock Bay listing (34\u00b043\u203233\u2033N 114\u00b029\u20322\u2033W); the refuge boundary and access points are on the refuge map.",
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Topock Bay listing (34°43′33″N 114°29′2″W); the refuge boundary and access points are on the refuge map.",
    "area_acres": null,
    "species": [
     {
@@ -17923,7 +17923,7 @@ window.HATCH_DB = {
    "elevation_ft": null,
    "lat": 32.9122,
    "lon": -111.7755,
-   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Dave White Regional Park listing (32\u00b054\u203243.9\u2033N 111\u00b046\u203231.5\u2033W).",
+   "coords_note": "Elevation not sourced. Coordinates from Fishbrain's Dave White Regional Park listing (32°54′43.9″N 111°46′31.5″W).",
    "area_acres": null,
    "species": [
     {
@@ -18485,7 +18485,7 @@ window.HATCH_DB = {
    "elevation_ft": null,
    "lat": 33.3633,
    "lon": -111.7361,
-   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33\u00b021'47.75\"N 111\u00b044'09.80\"W).",
+   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33°21'47.75\"N 111°44'09.80\"W).",
    "area_acres": 5,
    "species": [
     {
@@ -18913,7 +18913,7 @@ window.HATCH_DB = {
    "elevation_ft": null,
    "lat": 33.4751,
    "lon": -112.1966,
-   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33\u00b028'30.19\"N 112\u00b011'47.71\"W).",
+   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33°28'30.19\"N 112°11'47.71\"W).",
    "area_acres": 5,
    "species": [
     {
@@ -19019,7 +19019,7 @@ window.HATCH_DB = {
    "elevation_ft": null,
    "lat": 33.3739,
    "lon": -111.939,
-   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33\u00b022'26.06\"N 111\u00b056'20.44\"W).",
+   "coords_note": "Elevation not sourced. Coordinates from Wikipedia (33°22'26.06\"N 111°56'20.44\"W).",
    "area_acres": 13,
    "species": [
     {
@@ -19111,6 +19111,4428 @@ window.HATCH_DB = {
     6
    ],
    "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "alamar-park-pond-avondale-az",
+   "name": "Alamar Park Pond (Alamar Park, Avondale, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced; the park is on the south end of Avondale.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present; stocking not confirmed for this pond"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD lists Alamar Park Pond among the Avondale waters stocked with rainbow trout in the fall and winter.",
+    "schedule": "Rainbow trout in the fall and winter stocking weeks (AZGFD via Best Fishing in America). Check the AZGFD weekly schedule for exact dates.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "Best Fishing in America: Phoenix-area community lakes",
+      "url": "https://www.bestfishinginamerica.com/?p=18541"
+     },
+     {
+      "title": "AZGFD 35 Phoenix-area lakes stocked with rainbow trout",
+      "url": "https://www.bestfishinginamerica.com/news-arizona-35-phoenix-area-lakes-stocked-with-rainbow-trout-this-year.html"
+     },
+     {
+      "title": "Fishbrain: Alamar Park Pond",
+      "url": "https://fishbrain.com/fishing-waters/N1OcNx3X/alamar-park-pond"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15). Trout come in the cooler months.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Best Fishing in America describes Alamar Park Lake as one of the newest fishing holes in greater Phoenix, built as part of a new city park on the south end of Avondale.",
+    "AZGFD's 35-lake Phoenix-area stocking list places Alamar Park Pond in Avondale with the rainbow trout waters.",
+    "Fishbrain says the pond is most popular for channel catfish, largemouth bass and rainbow trout.",
+    "The pond is a Community Fishing water, so the Community Fishing signs carry the license and bag rules. Read them on arrival.",
+    "1 bass, 13-inch minimum (Fishbrain list of Maricopa-area waters with that limit). Statewide limits otherwise."
+   ],
+   "sources": [
+    {
+     "title": "Best Fishing in America: Phoenix-area community lakes",
+     "url": "https://www.bestfishinginamerica.com/?p=18541"
+    },
+    {
+     "title": "AZGFD 35 Phoenix-area lakes stocked with rainbow trout",
+     "url": "https://www.bestfishinginamerica.com/news-arizona-35-phoenix-area-lakes-stocked-with-rainbow-trout-this-year.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges of urban ponds. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    },
+    {
+     "item": "Stocked trout feed",
+     "category": "stocked feed",
+     "detail": "Freshly stocked trout learn to take pellets near the bank.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "bonsall-pond-glendale-az",
+   "name": "Bonsall Pond (Bonsall Park, Glendale, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Address: 5840 W. Bethany Home Road (AZGFD). Coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Largemouth bass, bluegill",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD lists Bonsall Pond among the Glendale waters stocked with rainbow trout in the fall and winter, and it has also received channel catfish.",
+    "schedule": "Rainbow trout in fall and winter weeks; catfish in the warm months. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "AZGFD Glendale Community Fishing: Bonsall Park",
+      "url": "https://azgfd.com/?p=3278"
+     },
+     {
+      "title": "Western Bass: first Community Fishing stockings",
+      "url": "https://www.westernbass.com/forum/topic87850.html"
+     },
+     {
+      "title": "Yourvalley: 7,200 extra catfish to West Valley waters",
+      "url": "https://yourvalley.net/stories/gone-fishin-more-than-7200-extra-fish-delivered-to-west-valley-bodies-of-water,2141"
+     },
+     {
+      "title": "Fishbrain: Bonsall Park South",
+      "url": "https://fishbrain.com/fishing-waters/VjiVBj1B/bonsall-park-south"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD's Glendale Community Fishing page gives Bonsall Park at 5840 W. Bethany Home Road.",
+    "Bonsall Pond got its first Community Fishing Program stockings in a single February week, alongside other Phoenix-area ponds (Western Bass).",
+    "AZGFD and the City of Glendale planned a free youth fishing clinic at Bonsall Pond for a Saturday in April, with free licenses for the first 1,000 youths aged 10 to 17 (Western Outdoor Times).",
+    "Fishbrain lists channel catfish, largemouth bass and bluegill as the top species at Bonsall Park South, a separate listing for the same park.",
+    "A Yourvalley report says AZGFD's Community Fishing Program added more than 7,200 extra catfish to Bonsall Pond, Pioneer Lake and Rio Vista, among other West Valley waters.",
+    "Glendale's Bonsall Park is at the corner of Bethany Home Road and 59th Avenue, per KTAR's note on Heroes Park.",
+    "Statewide limits apply. Glendale's Community Fishing signs post the bag rules."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Glendale Community Fishing: Bonsall Park",
+     "url": "https://azgfd.com/?p=3278"
+    },
+    {
+     "title": "Western Bass: first Community Fishing stockings",
+     "url": "https://www.westernbass.com/forum/topic87850.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    },
+    {
+     "item": "Catfish and sunfish forage",
+     "category": "other",
+     "detail": "The pond is stocked with catfish, so bait fishing with worms or stink bait draws the most action.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    6,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "festival-fields-pond-avondale-az",
+   "name": "Festival Fields Pond (Festival Fields Park, Avondale, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Address: 101 E. Lower Buckeye Road, Avondale (Phoenix New Times). Coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD lists Festival Fields Pond among the Avondale waters stocked with rainbow trout in the fall and winter.",
+    "schedule": "Rainbow trout in fall and winter weeks. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "Phoenix New Times: where to fish in metro Phoenix",
+      "url": "https://www.phoenixnewtimes.com/?p=40587711"
+     },
+     {
+      "title": "AZGFD 35 Phoenix-area lakes stocked with rainbow trout",
+      "url": "https://www.bestfishinginamerica.com/news-arizona-35-phoenix-area-lakes-stocked-with-rainbow-trout-this-year.html"
+     },
+     {
+      "title": "Fishbrain: Festival Fields Park Pond",
+      "url": "https://fishbrain.com/fishing-waters/rt6eLOc-/festival-fields-park-pond"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Phoenix New Times lists Festival Fields Pond at 101 E. Lower Buckeye Road in Avondale, as one of the metro's fishing spots.",
+    "AZGFD's 35-lake stocking list puts Festival Fields Pond among the Avondale rainbow trout waters.",
+    "Fishbrain says the pond is most popular for channel catfish, rainbow trout and largemouth bass.",
+    "The one-bass, 13-inch minimum rule applies, so keep a bass only if it is 13 inches or longer and you have not already kept one.",
+    "1 bass, 13-inch minimum (Fishbrain list of Maricopa-area waters with that limit)."
+   ],
+   "sources": [
+    {
+     "title": "Phoenix New Times: where to fish in metro Phoenix",
+     "url": "https://www.phoenixnewtimes.com/?p=40587711"
+    },
+    {
+     "title": "AZGFD 35 Phoenix-area lakes stocked with rainbow trout",
+     "url": "https://www.bestfishinginamerica.com/news-arizona-35-phoenix-area-lakes-stocked-with-rainbow-trout-this-year.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "friendship-pond-avondale-az",
+   "name": "Friendship Pond (Friendship Park, Avondale, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.4621,
+   "lon": -112.322,
+   "coords_note": "Coordinates from Fishbrain (33°27′43.7″N 112°19′19.1″W). Address: 12325 W. McDowell Road, Avondale (AZGFD).",
+   "area_acres": 1,
+   "species": [
+    {
+     "name": "Bluegill",
+     "stocking": "Stocked (about 300 lb at opening)"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD's Avondale Community Fishing page lists Friendship Pond. AZGFD stocked it with about 300 pounds of bluegill when it opened, and it is on the rainbow trout list for fall and winter.",
+    "schedule": "Bluegill when it opened; rainbow trout in fall and winter weeks. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "AZGFD Avondale Community Fishing: Friendship Pond",
+      "url": "https://azgfd.com/?p=3314"
+     },
+     {
+      "title": "Western Outdoor Times: Friendship Pond opens",
+      "url": "https://westernoutdoortimes.com/story/2015/04/15/fishing/close-to-home/1854.html"
+     },
+     {
+      "title": "Fishbrain: Friendship Park Pond",
+      "url": "https://fishbrain.com/fishing-waters/57EB7s17/friendship-park-pond"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD's Avondale Community Fishing page gives Friendship Pond at 12325 W. McDowell Road.",
+    "AZGFD called Friendship Pond its newest Community Fishing water when it opened, and stocked it with nearly 300 pounds of sunfish to start a fishery in the West Valley (Western Outdoor Times).",
+    "The lake is slightly under one acre, and the park has restrooms, ball fields, courts, parking and playgrounds (Western Outdoor Times).",
+    "Fishbrain lists channel catfish, bluegill and rainbow trout as the top species.",
+    "Fishbrain's listing shows about 56 catches, so it sees light use. A sub-acre pond fishes differently from a lake, so plan a short, targeted session.",
+    "1 bass, 13-inch minimum (Fishbrain list of Maricopa-area waters with that limit). Statewide limits otherwise."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Avondale Community Fishing: Friendship Pond",
+     "url": "https://azgfd.com/?p=3314"
+    },
+    {
+     "title": "Western Outdoor Times: Friendship Pond opens",
+     "url": "https://westernoutdoortimes.com/story/2015/04/15/fishing/close-to-home/1854.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Bluegill forage",
+     "category": "other",
+     "detail": "Bluegill were the first fish stocked here, so small minnows and insect larvae are the natural forage. Not sourced beyond the stocking.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "id": "mansel-carter-oasis-lake-queen-creek-az",
+   "name": "Mansel Carter Oasis Lake (Mansel Carter Oasis Park, Queen Creek, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.2557,
+   "lon": -111.6592,
+   "coords_note": "Coordinates from FishAngler (33.255748, -111.659197). Address: 19535 E. Appleby Road, Queen Creek (Town of Queen Creek).",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Bluegill, largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD's Community Fishing program stocks Mansel Carter Oasis Lake. Catfish stockings were in the fall of 2021, and the lake is on the fall and winter rainbow trout list.",
+    "schedule": "Catfish in the warm months; rainbow trout in fall and winter. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "AZGFD Phoenix Community Fishing: Mansel Carter Oasis Lake",
+      "url": "https://azgfd.com/?p=3404"
+     },
+     {
+      "title": "Town of Queen Creek: Lake at Mansel Carter Oasis Park",
+      "url": "https://queencreekaz.gov/community/parks-recreation/queen-creek-parks/mansel-carter-oasis-park/lake-at-mansel-carter-oasis-park"
+     },
+     {
+      "title": "Fishbrain: Mansel Carter Oasis Park Lake",
+      "url": "https://fishbrain.com/fishing-waters/FSFJ-u78/mansel-carter-oasis-park-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD's Community Fishing page gives the lake's location as Mansel Carter Oasis Park in Queen Creek.",
+    "Queen Creek says the park and lake are open 7 a.m. to 10 p.m.",
+    "The Town says the lake's water comes from a well at the park that pulls recovered (recharged effluent) water, not drinking water, and that it is used for landscape irrigation.",
+    "Fishbrain says the lake is most popular for channel catfish, bluegill and largemouth bass, and lists about 757 catches, so it gets heavy use.",
+    "FishAngler's listing shows a February 2025 channel catfish catch.",
+    "Statewide limits apply. Queen Creek's signs post the Community Fishing bag rules."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Phoenix Community Fishing: Mansel Carter Oasis Lake",
+     "url": "https://azgfd.com/?p=3404"
+    },
+    {
+     "title": "Town of Queen Creek: Lake at Mansel Carter Oasis Park",
+     "url": "https://queencreekaz.gov/community/parks-recreation/queen-creek-parks/mansel-carter-oasis-park/lake-at-mansel-carter-oasis-park"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy shoreline. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "desert-breeze-lake-chandler-az",
+   "name": "Desert Breeze Lake (Desert Breeze Park, Chandler, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced; the park is in east Chandler.",
+   "area_acres": 4,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked every two weeks, mid-Sept to June"
+    },
+    {
+     "name": "Bluegill, redear sunfish, hybrid sunfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Chandler's Community Fishing Program stocks Desert Breeze Lake with AZGFD fish every two weeks from mid-September through June. Species include rainbow trout, bluegill, redear sunfish, hybrid sunfish and largemouth bass.",
+    "schedule": "Every two weeks, mid-September through June (Chandler).",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "Chandler Community Fishing Program",
+      "url": "https://www.chandleraz.gov/explore/chandler-parks/programs/community-fishing-program"
+     },
+     {
+      "title": "Visit Chandler: Urban fishing in Chandler",
+      "url": "https://www.visitchandler.com/things-to-do/outdoor-recreation/urban-fishing-in-chandler-az/"
+     },
+     {
+      "title": "Chandler National Go Fishing Day",
+      "url": "https://www.chandleraz.gov/blog/national-go-fishing-day-cast-line-chandler-city-parks"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Chandler calls Desert Breeze Lake its first fishing lake, and says it is a good choice for a family trip.",
+    "Visit Chandler says the lake is four acres, averages eight feet deep and reaches 12 feet at its deepest.",
+    "Chandler says anglers fish from the bank at Desert Breeze, and a valid Arizona fishing license is required.",
+    "The city says the lakes are stocked with fish every two weeks from mid-September through June.",
+    "Statewide limits apply. Check the posted Community Fishing signs for bag rules."
+   ],
+   "sources": [
+    {
+     "title": "Chandler Community Fishing Program",
+     "url": "https://www.chandleraz.gov/explore/chandler-parks/programs/community-fishing-program"
+    },
+    {
+     "title": "Visit Chandler: Urban fishing in Chandler",
+     "url": "https://www.visitchandler.com/things-to-do/outdoor-recreation/urban-fishing-in-chandler-az/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy shoreline. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "best_months": [
+    9,
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ]
+  },
+  {
+   "id": "heroes-regional-park-pond-glendale-az",
+   "name": "Heroes Regional Park Pond (Heroes Regional Park, Glendale, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced.",
+   "area_acres": 4,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Other species",
+     "stocking": "Not sourced"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Glendale's Heroes Park lake opened as the city's second urban fishing lake, after Bonsall Park. AZGFD lists it among the Glendale rainbow trout waters for fall and winter.",
+    "schedule": "Rainbow trout in fall and winter weeks. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "KTAR: new 4-acre lake at Heroes Regional Park",
+      "url": "https://ktar.com/arizona-news/new-4-acre-lake-at-heroes-regional-park-in-glendale-now-open"
+     },
+     {
+      "title": "AZGFD 35 Phoenix-area lakes stocked with rainbow trout",
+      "url": "https://www.bestfishinginamerica.com/news-arizona-35-phoenix-area-lakes-stocked-with-rainbow-trout-this-year.html"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "KTAR reports that the new 4-acre lake at Heroes Regional Park in Glendale opened on a Thursday, and that it is the city's second urban fishing lake.",
+    "The lake is listed by name in AZGFD's Glendale stocking list with the rainbow trout waters.",
+    "Because the lake is new, its species mix and stocking history are still thin in the sources used. Verify the posted rules on site.",
+    "Statewide limits apply."
+   ],
+   "sources": [
+    {
+     "title": "KTAR: new 4-acre lake at Heroes Regional Park",
+     "url": "https://ktar.com/arizona-news/new-4-acre-lake-at-heroes-regional-park-in-glendale-now-open"
+    },
+    {
+     "title": "AZGFD 35 Phoenix-area lakes stocked with rainbow trout",
+     "url": "https://www.bestfishinginamerica.com/news-arizona-35-phoenix-area-lakes-stocked-with-rainbow-trout-this-year.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "steele-indian-school-pond-phoenix-az",
+   "name": "Steele Indian School Pond (Steele Indian School Park, Phoenix, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. Contact: Phoenix Parks and Recreation, 602-495-0739.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked (Phoenix Parks partner lakes; this pond's schedule not confirmed)"
+    },
+    {
+     "name": "Bass, sunfish, white amur",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD lists Steele Indian School Pond as a Phoenix Community Fishing water. Phoenix Parks and AZGFD stock the city-park lakes, and the Phoenix program lists the rules for this pond.",
+    "schedule": "Phoenix Parks says its partnered lakes are generally stocked with catfish in June, September and October, and with trout in November and December.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "AZGFD Phoenix Community Fishing: Steele Indian School Pond",
+      "url": "https://www.azgfd.com/fishing-2/where-to-fish/community-fishing/phoenix-area-fishing-waters/steele-indian-school-pond/"
+     },
+     {
+      "title": "Phoenix Parks: fishing in city parks",
+      "url": "https://phoenix.gov/parks/trails/things-to-do/fishing-in-phoenix-parks"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD's Phoenix Community Fishing page lists this pond with its park amenities: group ramadas, a playground, and a dog park on the north side of the park.",
+    "Phoenix Parks says its partner lakes are stocked with catfish in June, September and October, and with trout in November and December.",
+    "The park has historic buildings, which AZGFD's page also lists as park amenities.",
+    "2 trout, 1 bass (13-inch minimum), 5 sunfish, 1 white amur (30-inch minimum). Statewide limits apply to all other species (AZGFD)."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Phoenix Community Fishing: Steele Indian School Pond",
+     "url": "https://www.azgfd.com/fishing-2/where-to-fish/community-fishing/phoenix-area-fishing-waters/steele-indian-school-pond/"
+    },
+    {
+     "title": "Phoenix Parks: fishing in city parks",
+     "url": "https://phoenix.gov/parks/trails/things-to-do/fishing-in-phoenix-parks"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    6,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "roadrunner-pond-phoenix-az",
+   "name": "Roadrunner Pond (Roadrunner Park, Phoenix, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Address: 3502 E. Cactus Road, Phoenix (AZGFD). Coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Channel catfish, bass, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Roadrunner Pond is one of the first Community Fishing Program ponds in Phoenix, and AZGFD's fall and winter stocking list includes it with the Phoenix metro waters.",
+    "schedule": "Rainbow trout in fall and winter weeks. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "AZGFD Phoenix Community Fishing: Roadrunner Pond",
+      "url": "https://azgfd.com/?p=3396"
+     },
+     {
+      "title": "Western Bass: first Community Fishing stockings",
+      "url": "https://www.westernbass.com/forum/topic87850.html"
+     },
+     {
+      "title": "AZGFD fishing bulletin: Phoenix metro stocking list",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fdfb2c"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD gives Roadrunner Park at 3502 E. Cactus Road, with the Northeast Phoenix Division of Parks and Recreation as the contact.",
+    "Western Bass lists Roadrunner Pond among the first Community Fishing Program stockings, along with Granada and Eldorado ponds.",
+    "AZGFD's Phoenix metro list in its late-2025 stocking bulletin includes Roadrunner Pond.",
+    "Phoenix's own page says partner lakes stock catfish in June, September and October, and trout in November and December.",
+    "1 bass (13-inch minimum), 5 sunfish, 1 white amur (30-inch minimum). Statewide limits apply to all other species (AZGFD)."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Phoenix Community Fishing: Roadrunner Pond",
+     "url": "https://azgfd.com/?p=3396"
+    },
+    {
+     "title": "Western Bass: first Community Fishing stockings",
+     "url": "https://www.westernbass.com/forum/topic87850.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "cortez-lake-phoenix-az",
+   "name": "Cortez Lake (Cortez Park, Phoenix, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Address: 3434 W. Dunlap Avenue, Phoenix (Phoenix New Times). Coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Other species",
+     "stocking": "Not sourced"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD's Phoenix list includes Cortez Lake among the waters stocked with rainbow trout in fall and winter. Phoenix's District 1 office has hosted free fishing events at Cortez Park Lake with AZGFD.",
+    "schedule": "Rainbow trout in fall and winter weeks. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "Phoenix New Times: free fishing day locations",
+      "url": "https://phoenixnewtimes.com/arts/phoenix-free-fishing-day-19107127"
+     },
+     {
+      "title": "Phoenix District 1 newsroom: Cortez Park Lake fishing event",
+      "url": "https://phoenix.gov:443/newsroom/district-1/359"
+     },
+     {
+      "title": "ABC15: 30 places to fish in metro Phoenix",
+      "url": "https://www.abc15.com/entertainment/events/30-places-to-go-fishing-in-the-phoenix-area"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Phoenix New Times lists Cortez Park at 3434 W. Dunlap Avenue as a free fishing day location.",
+    "Phoenix's District 1 newsroom says AZGFD, the Phoenix Police Cadets and Parks and Recreation hosted a free fishing event at Cortez Park Lake one Saturday in April, 8 a.m. to noon.",
+    "The AZGFD 35-lake stocking list names the lake (as Cortex Lake) among the Phoenix trout waters.",
+    "ABC15 lists Cortez Lake in its Phoenix fishing roundup.",
+    "Statewide limits apply."
+   ],
+   "sources": [
+    {
+     "title": "Phoenix New Times: free fishing day locations",
+     "url": "https://phoenixnewtimes.com/arts/phoenix-free-fishing-day-19107127"
+    },
+    {
+     "title": "Phoenix District 1 newsroom: Cortez Park Lake fishing event",
+     "url": "https://phoenix.gov:443/newsroom/district-1/359"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "alvord-lake-phoenix-az",
+   "name": "Alvord Lake (Cesar Chavez Park, Phoenix, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Address: 7858 S. 35th Avenue, Phoenix (Phoenix New Times). Coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Other species",
+     "stocking": "Not sourced"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD's Phoenix list includes Alvord Lake among the waters stocked with rainbow trout in fall and winter. AZGFD's Community Fishing page has a separate Alvord Lake Park entry.",
+    "schedule": "Rainbow trout in fall and winter weeks. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "Phoenix New Times: free fishing day locations",
+      "url": "https://phoenixnewtimes.com/arts/phoenix-free-fishing-day-19107127"
+     },
+     {
+      "title": "AZGFD Phoenix Community Fishing",
+      "url": "https://azgfd.com/?p=3273"
+     },
+     {
+      "title": "ABC15: 30 places to fish in metro Phoenix",
+      "url": "https://www.abc15.com/entertainment/events/30-places-to-go-fishing-in-the-phoenix-area"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Phoenix New Times lists Cesar Chavez Park at 7858 S. 35th Avenue as a free fishing day location.",
+    "AZGFD's Community Fishing page has an Alvord Lake Park entry.",
+    "The AZGFD 35-lake stocking list names Alvord Lake among the Phoenix trout waters.",
+    "ABC15 lists Alvord Lake (Cesar Chavez Park) in its Phoenix fishing roundup.",
+    "Statewide limits apply."
+   ],
+   "sources": [
+    {
+     "title": "Phoenix New Times: free fishing day locations",
+     "url": "https://phoenixnewtimes.com/arts/phoenix-free-fishing-day-19107127"
+    },
+    {
+     "title": "AZGFD Phoenix Community Fishing",
+     "url": "https://azgfd.com/?p=3273"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "papago-ponds-phoenix-az",
+   "name": "Papago Ponds (Papago Park, Phoenix, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Largemouth bass, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Papago Ponds is one of the Phoenix Community Fishing ponds. AZGFD stocked it in the early program and lists it on the Phoenix trout waters.",
+    "schedule": "Rainbow trout in fall and winter weeks; catfish in warm months. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "ABC15: 30 places to fish in metro Phoenix",
+      "url": "https://www.abc15.com/entertainment/events/30-places-to-go-fishing-in-the-phoenix-area"
+     },
+     {
+      "title": "AZGFD 2007 Urban Fishing Program (archived)",
+      "url": "https://webarchive.library.unt.edu/web/20090116085234/http://www.azgfd.gov/pdfs/h_f/regulations/07UrbanFishingProgam.pdf"
+     },
+     {
+      "title": "Fishbrain: Citrus Park area list",
+      "url": "https://fishbrain.com/cities/us/az/citrus-park"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "ABC15 lists Papago Ponds (Papago Park) in its Phoenix fishing roundup.",
+    "AZGFD's 2007 Urban Fishing Program regulations include a Papago Ponds entry under the City of Phoenix.",
+    "AZGFD's Phoenix Community Fishing list includes Papago Ponds with the Phoenix waters stocked in the fall.",
+    "Fishbrain's Citrus Park list includes Papago Park Ponds among the Maricopa-area waters with a one-bass, 13-inch-minimum rule.",
+    "1 bass, 13-inch minimum (Fishbrain list of Maricopa-area waters with that limit). Statewide limits otherwise."
+   ],
+   "sources": [
+    {
+     "title": "ABC15: 30 places to fish in metro Phoenix",
+     "url": "https://www.abc15.com/entertainment/events/30-places-to-go-fishing-in-the-phoenix-area"
+    },
+    {
+     "title": "AZGFD 2007 Urban Fishing Program (archived)",
+     "url": "https://webarchive.library.unt.edu/web/20090116085234/http://www.azgfd.gov/pdfs/h_f/regulations/07UrbanFishingProgam.pdf"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    6,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "rio-vista-pond-peoria-az",
+   "name": "Rio Vista Pond (Rio Vista Community Park, Peoria, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Address: 8866 W. Thunderbird Road, Peoria (Phoenix New Times). Coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked (extra catfish added in the West Valley program)"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD lists Rio Vista Pond among the Peoria Community Fishing waters. It also received extra catfish during a stocking program in the West Valley.",
+    "schedule": "Rainbow trout in fall and winter weeks; catfish in the warm months. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "Phoenix New Times: free fishing day locations",
+      "url": "https://phoenixnewtimes.com/arts/phoenix-free-fishing-day-19107127"
+     },
+     {
+      "title": "Yourvalley: 7,200 extra catfish",
+      "url": "https://yourvalley.net/stories/gone-fishin-more-than-7200-extra-fish-delivered-to-west-valley-bodies-of-water,2141"
+     },
+     {
+      "title": "ABC15: 30 places to fish in metro Phoenix",
+      "url": "https://www.abc15.com/entertainment/events/30-places-to-go-fishing-in-the-phoenix-area"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Phoenix New Times gives Rio Vista Pond at 8866 W. Thunderbird Road in Peoria.",
+    "ABC15 lists Rio Vista Pond at Rio Vista Community Park in its metro roundup.",
+    "The Yourvalley report says AZGFD added more than 7,200 extra catfish to Bonsall Pond, Pioneer Lake and Rio Vista, among other West Valley waters.",
+    "Fishbrain's Citrus Park list includes Rio Vista Park Pond among the Maricopa-area waters with a one-bass rule.",
+    "1 bass, 13-inch minimum (Fishbrain list of Maricopa-area waters with that limit). Statewide limits otherwise."
+   ],
+   "sources": [
+    {
+     "title": "Phoenix New Times: free fishing day locations",
+     "url": "https://phoenixnewtimes.com/arts/phoenix-free-fishing-day-19107127"
+    },
+    {
+     "title": "Yourvalley: 7,200 extra catfish",
+     "url": "https://yourvalley.net/stories/gone-fishin-more-than-7200-extra-fish-delivered-to-west-valley-bodies-of-water,2141"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    6,
+    9,
+    10,
+    11,
+    12,
+    1,
+    2
+   ]
+  },
+  {
+   "id": "paloma-park-lake-peoria-az",
+   "name": "Paloma Park Lake (Paloma Park, Peoria, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Address: 29799 N. Lake Pleasant Parkway, Peoria (Phoenix New Times). Coordinates not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked, fall and winter"
+    },
+    {
+     "name": "Other species",
+     "stocking": "Not sourced"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD's Peoria list includes Paloma Park among the waters stocked with rainbow trout in fall and winter.",
+    "schedule": "Rainbow trout in fall and winter weeks. Check the AZGFD weekly schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. These are stocked community waters.",
+    "sources": [
+     {
+      "title": "Phoenix New Times: free fishing day locations",
+      "url": "https://phoenixnewtimes.com/arts/phoenix-free-fishing-day-19107127"
+     },
+     {
+      "title": "AZGFD 35 Phoenix-area lakes stocked with rainbow trout",
+      "url": "https://www.bestfishinginamerica.com/news-arizona-35-phoenix-area-lakes-stocked-with-rainbow-trout-this-year.html"
+     }
+    ]
+   },
+   "fishing_season_note": "Community Fishing water. AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Phoenix New Times gives Paloma Park at 29799 N. Lake Pleasant Parkway in Peoria, as a free fishing day location.",
+    "AZGFD's 35-lake stocking list names Paloma Park among the Peoria trout waters.",
+    "Its own species and stocking history are not sourced beyond the stocking list.",
+    "Statewide limits apply."
+   ],
+   "sources": [
+    {
+     "title": "Phoenix New Times: free fishing day locations",
+     "url": "https://phoenixnewtimes.com/arts/phoenix-free-fishing-day-19107127"
+    },
+    {
+     "title": "AZGFD 35 Phoenix-area lakes stocked with rainbow trout",
+     "url": "https://www.bestfishinginamerica.com/news-arizona-35-phoenix-area-lakes-stocked-with-rainbow-trout-this-year.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "red-mountain-lake-mesa-az",
+   "name": "Red Mountain Lake (Red Mountain Park, Mesa, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.4333,
+   "lon": -111.6692,
+   "coords_note": "Coordinates from Wikipedia (33°26′0″N 111°40′9″W). Address: 7745 E. Brown Road, Mesa (AZGFD).",
+   "area_acres": 8,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in season"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked in season"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present; Fishbrain lists it among the top species"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Red Mountain Lake is a Mesa Community Fishing water. Best Fishing in America says it gets regular stockings of hatchery rainbow trout or channel catfish, depending on the season.",
+    "schedule": "Stocked through the year under the city or AZGFD program. Check the AZGFD schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. Treat as a stocked community water.",
+    "sources": [
+     {
+      "title": "AZGFD Mesa Community Fishing: Red Mountain Lake",
+      "url": "https://www.azgfd.com/fishing-2/where-to-fish/community-fishing/phoenix-area-fishing-waters/red-mountain-lake/"
+     },
+     {
+      "title": "Wikipedia: Red Mountain Lake",
+      "url": "https://en.wikipedia.org/wiki/Red_Mountain_Lake"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly",
+    "callibaetis"
+   ],
+   "notes": [
+    "AZGFD's Mesa Community Fishing page gives the location as Red Mountain Park, 7745 E. Brown Road.",
+    "Wikipedia gives 8 acres, average depth 12 feet and maximum depth 17 feet.",
+    "HookedAZ gives the hours as sunrise to 10 p.m., and places the lake at the southeast corner of Brown Road and Sunvalley Boulevard.",
+    "Mesa Parks, AZGFD and Councilmember David Luna ran a free family fishing day here on Feb. 1, 2020, 8 a.m. to noon, with AZGFD loaner rods and bait.",
+    "A HookedAZ event note says the lake was stocked with 420 pounds of trout before a family fishing day.",
+    "Fishbrain lists channel catfish, largemouth bass and rainbow trout as the most popular species.",
+    "Bag limits not verified for this lake. Check the posted Community Fishing signs."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Mesa Community Fishing: Red Mountain Lake",
+     "url": "https://www.azgfd.com/fishing-2/where-to-fish/community-fishing/phoenix-area-fishing-waters/red-mountain-lake/"
+    },
+    {
+     "title": "Wikipedia: Red Mountain Lake",
+     "url": "https://en.wikipedia.org/wiki/Red_Mountain_Lake"
+    },
+    {
+     "title": "Best Fishing in America: Mesa-area fishing",
+     "url": "https://www.bestfishinginamerica.com/?p=20632"
+    },
+    {
+     "title": "MesaNow: Family fishing at Red Mountain Lake",
+     "url": "https://www.mesanow.org/news/public/article/2461"
+    },
+    {
+     "title": "HookedAZ: Red Mountain Lake",
+     "url": "https://www.hookedaz.com/showcase/comment/325"
+    },
+    {
+     "title": "Fishbrain: Red Mountain Lake",
+     "url": "https://fishbrain.com/fishing-waters/vPgHA7jM/red-mountain-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Callibaetis mayflies",
+     "category": "insect",
+     "detail": "Stillwater mayflies in weedy shallows. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "callibaetis"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "riverview-lake-mesa-az",
+   "name": "Riverview Lake (Riverview Park, Mesa, AZ)",
+   "type": "lake",
+   "elevation_ft": 1100,
+   "lat": 33.4304,
+   "lon": -111.8755,
+   "coords_note": "Coordinates from Wikipedia (33°25′50″N 111°52′31″W). Address: 2100 W. 8th Street per AZGFD; the City of Mesa uses 2100 W. Rio Salado Parkway.",
+   "area_acres": 3,
+   "species": [
+    {
+     "name": "Channel catfish, sunfish",
+     "stocking": "Stocked (2007 AZGFD history)"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in season"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Riverview Lake is a Mesa Community Fishing water. A 2007 AZGFD history records it stocked with sunfish and catfish.",
+    "schedule": "Stocked through the year under the city or AZGFD program. Check the AZGFD schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. Treat as a stocked community water.",
+    "sources": [
+     {
+      "title": "AZGFD Mesa Community Fishing: Riverview Lake",
+      "url": "https://www.azgfd.com/?p=3364"
+     },
+     {
+      "title": "Wikipedia: Riverview Lake",
+      "url": "https://en.wikipedia.org/wiki/Riverview_Lake"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD gives the location as Riverview Park, 2100 W. 8th Street, with park hours from sunrise to 10 p.m.",
+    "AZGFD lists the lake at 3 acres with a maximum depth of 16 feet.",
+    "Mesa Parks, Recreation and Commercial Facilities can be reached at 480-644-2352.",
+    "The City of Mesa and the Mesa Park Rangers ran free fishing clinics at the Riverview Park lake ramada on Sept. 28, 2024 and Jan. 25, 2025, with poles and bait provided.",
+    "Riverview Park is on the Rio Salado Pathway, which connects the park to Tempe Town Lake.",
+    "HookedAZ says swimming, wading, glass containers and littering are not allowed at the lake under the Urban Fishing Program rules.",
+    "1 white amur, 30-inch minimum (AZGFD). Statewide limits apply to all other species."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Mesa Community Fishing: Riverview Lake",
+     "url": "https://www.azgfd.com/?p=3364"
+    },
+    {
+     "title": "Wikipedia: Riverview Lake",
+     "url": "https://en.wikipedia.org/wiki/Riverview_Lake"
+    },
+    {
+     "title": "City of Mesa: Riverview Park",
+     "url": "https://www.mesaaz.gov/Activities-Culture/Parks-Recreation-and-Community-Facilities/Parks-Facilities/Riverview-Park"
+    },
+    {
+     "title": "Active.com: Mesa park ranger fishing clinic 2024",
+     "url": "https://origin-a3.active.com/mesa-az/classes/park-ranger-fishing-clinic-read-description-2024-100904549"
+    },
+    {
+     "title": "HookedAZ: Riverview Lake",
+     "url": "https://www.hookedaz.com/showcase/comment/173"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "greenfield-park-pond-mesa-az",
+   "name": "Greenfield Park Pond (Greenfield Park, Mesa, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.4013,
+   "lon": -111.741,
+   "coords_note": "Coordinates from FishAngler (33.401279, -111.740974). Address: 4105 E. Diamond Avenue, Mesa (MesaNow).",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Bluegill, largemouth bass, fathead minnows",
+     "stocking": "Stocked or present (Topdogparks)"
+    },
+    {
+     "name": "Common carp, grass carp, blue tilapia",
+     "stocking": "Present (Fishbrain catch records)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Greenfield Park's irrigation pond was rebuilt as an AZGFD Community Fishing Pond when the park reopened in November 2017. The city says it is stocked throughout the year.",
+    "schedule": "Stocked through the year under the city or AZGFD program. Check the AZGFD schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. Treat as a stocked community water.",
+    "sources": [
+     {
+      "title": "MesaNow: New Greenfield Park opens with fishing lake",
+      "url": "https://mesanow.org/news/public/article/1977"
+     },
+     {
+      "title": "KJZZ: Greenfield Park reopens in Mesa",
+      "url": "https://www.kjzz.org/2017-11-06/content-561824-greenfield-park-re-opens-mesa"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "MesaNow says the park reopened in November 2017 after nine months of construction, and the pond now includes an ADA-compliant fishing pier.",
+    "The city says the lake will continue to serve as the park's irrigation source.",
+    "Best Fishing in America says shore access is very good, with paved trails and grass banks, and some trees for shade.",
+    "Fishbrain lists common carp, channel catfish and largemouth bass as the most popular species.",
+    "A MapQuest review from June 2023 reports pollution and dead fish after construction, and no bites after two hours. Check the pond before you plan a trip.",
+    "1 bass, 13-inch minimum (Fishbrain's Maricopa list). Statewide limits otherwise."
+   ],
+   "sources": [
+    {
+     "title": "MesaNow: New Greenfield Park opens with fishing lake",
+     "url": "https://mesanow.org/news/public/article/1977"
+    },
+    {
+     "title": "KJZZ: Greenfield Park reopens in Mesa",
+     "url": "https://www.kjzz.org/2017-11-06/content-561824-greenfield-park-re-opens-mesa"
+    },
+    {
+     "title": "Best Fishing in America: Mesa fishing",
+     "url": "https://www.bestfishinginamerica.com/arizona-fishing-near-mesa.html"
+    },
+    {
+     "title": "Topdogparks: Greenfield Park fishing",
+     "url": "https://topdogparks.com/?p=11343"
+    },
+    {
+     "title": "Fishbrain: Greenfield Park Pond",
+     "url": "https://fishbrain.com/fishing-waters/4CTISybW/greenfield-park-pond"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "eastmark-great-park-pond-mesa-az",
+   "name": "Eastmark Great Park Pond (Eastmark Great Park, Mesa, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.3292,
+   "lon": -111.6229,
+   "coords_note": "Coordinates from Fishbrain (33°19′45.2″N 111°37′22.6″W). The park is in the southwest corner of Mesa.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present; Fishbrain logs a 19-inch bass"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Not verified"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Eastmark Great Park's pond is a newer addition to the Community Fishing program, per Best Fishing in America. Stocking species and schedule are not verified for this pond.",
+    "schedule": "Stocking schedule not verified for this pond. Check the AZGFD schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. Treat as a stocked community water.",
+    "sources": [
+     {
+      "title": "Best Fishing in America: Mesa fishing",
+      "url": "https://www.bestfishinginamerica.com/arizona-fishing-near-mesa.html"
+     },
+     {
+      "title": "Fishbrain: Fishing Pond at Eastmark Great Park",
+      "url": "https://fishbrain.com/fishing-waters/qgxIBAC4/fishing-pond-at-eastmark-great-park"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Best Fishing in America says the Eastmark pond is a newer Community Fishing water in the southwest corner of the city, with shore access that is very good.",
+    "Fishbrain logs a 19-inch largemouth bass from the Eastmark pond, with about 211 catches listed.",
+    "Fishbrain rates the pond 4.5 out of 5 from 8 ratings, which is a small sample.",
+    "2 catfish daily (Fishbrain's bag-limit list for Eastmark Park Pond). Statewide limits otherwise."
+   ],
+   "sources": [
+    {
+     "title": "Best Fishing in America: Mesa fishing",
+     "url": "https://www.bestfishinginamerica.com/arizona-fishing-near-mesa.html"
+    },
+    {
+     "title": "Fishbrain: Fishing Pond at Eastmark Great Park",
+     "url": "https://fishbrain.com/fishing-waters/qgxIBAC4/fishing-pond-at-eastmark-great-park"
+    },
+    {
+     "title": "Fishbrain: Queen Creek fishing reports",
+     "url": "https://fishbrain.com/cities/us/az/queen-creek"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "mcqueen-pond-gilbert-az",
+   "name": "McQueen Pond (McQueen Park, Gilbert, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.3576,
+   "lon": -111.8194,
+   "coords_note": "Coordinates from FishAngler (33.357599, -111.819409). Address: 510 N. Horne Street, Gilbert (Town of Gilbert).",
+   "area_acres": 2,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked (AZGFD Gilbert list)"
+    },
+    {
+     "name": "Largemouth bass, bluegill",
+     "stocking": "Present (Fishbrain)"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Reported (FishAngler catch record)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "McQueen Park's lake is a 2-acre Gilbert Community Fishing water that uses reclaimed water. AZGFD lists McQueen Pond among the Gilbert waters.",
+    "schedule": "Stocked through the year under the city or AZGFD program. Check the AZGFD schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. Treat as a stocked community water.",
+    "sources": [
+     {
+      "title": "Town of Gilbert: McQueen Park",
+      "url": "https://gilbertaz.gov/departments/parks-and-recreation/parks-information/parks/mcqueen-park"
+     },
+     {
+      "title": "AZGFD Community Fishing Program",
+      "url": "https://azgfd.com/?p=3266"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Gilbert says the park lake is 2 acres and uses reclaimed water, and the park has 12 reservable ramadas and three restroom facilities.",
+    "Park hours are 5:30 a.m. to 10 p.m. daily, according to the Town.",
+    "Gilbert Parks and Recreation has run a beginner fishing clinic at McQueen Park and its Activity Center.",
+    "Fishbrain says the pond is most popular for largemouth bass, channel catfish and bluegill, with about 320 members who fish it.",
+    "The town's reclaimed-water note matters for planning: the pond is for fishing, but treat the water as reclaimed.",
+    "1 bass, 13-inch minimum (Fishbrain's Maricopa list). Statewide limits otherwise."
+   ],
+   "sources": [
+    {
+     "title": "Town of Gilbert: McQueen Park",
+     "url": "https://gilbertaz.gov/departments/parks-and-recreation/parks-information/parks/mcqueen-park"
+    },
+    {
+     "title": "AZGFD Community Fishing Program",
+     "url": "https://azgfd.com/?p=3266"
+    },
+    {
+     "title": "Fishbrain: McQueen Park",
+     "url": "https://fishbrain.com/fishing-waters/L6UfTZnn/mcqueen-park"
+    },
+    {
+     "title": "FishAngler: McQueen Park Pond",
+     "url": "https://prod-web-eus-webapp-002.azurewebsites.net/fishing-waters/us/arizona/mcqueen-park-pond/35159737"
+    },
+    {
+     "title": "Yourvalley: Gilbert fishing clinic",
+     "url": "https://www.yourvalley.net/gilbert-independent/stories/gilbert-to-put-on-fishing-clinic,595231"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "discovery-ponds-gilbert-az",
+   "name": "Discovery Ponds (Discovery District Park, Gilbert, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.2945,
+   "lon": -111.7411,
+   "coords_note": "Coordinates from Fishbrain for Lower Discovery Park Lake (33°17′40.1″N 111°44′28″W), which may not be the exact park pond. Address: 2214 E. Pecos Road, Gilbert (Town of Gilbert).",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked (Gilbert)"
+    },
+    {
+     "name": "Largemouth bass, rainbow trout",
+     "stocking": "Present (Fishbrain, lower lake)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Gilbert says two ponds at Discovery District Park are stocked through the Community Fishing program.",
+    "schedule": "Stocked through the year under the city or AZGFD program. Check the AZGFD schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. Treat as a stocked community water.",
+    "sources": [
+     {
+      "title": "Town of Gilbert: Discovery District Park",
+      "url": "https://gilbertaz.gov/discovery-district-park"
+     },
+     {
+      "title": "Discover Gilbert: Discovery District Park",
+      "url": "https://www.discovergilbert.com/?p=1137"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Gilbert's Discovery District Park page says the park has two ponds stocked as part of the Community Fishing program.",
+    "The park is 48 acres, with five multi-use fields, basketball courts, sand volleyball pits, a playground, trails and eight picnic ramadas, according to the Town and Discover Gilbert.",
+    "Fishbrain logs about 1,084 catches for the lower lake, with channel catfish, largemouth bass and rainbow trout listed as the most popular species.",
+    "Visitor reviews on Wanderlog mention two ponds for fishing, with sunsets and a clean, family-friendly setting.",
+    "1 bass, 13-inch minimum (Fishbrain's Maricopa list). Fishbrain lists 2 catfish for the Discovery Park Ponds."
+   ],
+   "sources": [
+    {
+     "title": "Town of Gilbert: Discovery District Park",
+     "url": "https://gilbertaz.gov/discovery-district-park"
+    },
+    {
+     "title": "Discover Gilbert: Discovery District Park",
+     "url": "https://www.discovergilbert.com/?p=1137"
+    },
+    {
+     "title": "Wanderlog: Discovery District Park",
+     "url": "https://wanderlog.com/place/details/284382"
+    },
+    {
+     "title": "Fishbrain: Lower Discovery Park Lake",
+     "url": "https://fishbrain.com/fishing-waters/XlwsYI2v/lower-discovery-park-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for these ponds.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy shoreline. Not sourced for these ponds.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "freestone-pond-gilbert-az",
+   "name": "Freestone Pond (Freestone Park, Gilbert, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.3589,
+   "lon": -111.7683,
+   "coords_note": "Coordinates from Fishbrain (33°21′32.1″N 111°46′6″W). Address: 1045 E. Juniper Road, Gilbert (Town of Gilbert).",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked (AZGFD trout bag limit listed for this water)"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Bluegill, common carp, gizzard shad",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Freestone Park's lakes are part of the Community Fishing program. The city says they are stocked beginning in September or October.",
+    "schedule": "Stocking begins in September or October, per the city. Check the AZGFD schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. Treat as a stocked community water.",
+    "sources": [
+     {
+      "title": "AZGFD Gilbert Community Fishing: Freestone Pond",
+      "url": "https://azgfd.com/?p=3332"
+     },
+     {
+      "title": "Town of Gilbert: Freestone Park",
+      "url": "https://gilbertaz.gov/freestone-park"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD's Gilbert page lists the contact as Gilbert Parks and Recreation, 480-503-6200.",
+    "Freestone Park opened in June 1988 with 65 acres, and Wanderlog gives 88 acres for the district park.",
+    "The park hours are 5:30 a.m. to 10 p.m. daily, according to the Town.",
+    "Fishbrain lists about 649 catches, with channel catfish (100 members), bluegill (37) and common carp (15) as the most-reported species.",
+    "Komoot describes the pond as man-made, with small falls connecting its two sections.",
+    "2 trout, 1 bass (13-inch minimum), 5 sunfish, 1 white amur (30-inch minimum), per AZGFD Gilbert Community Fishing. Statewide limits apply to all other species."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Gilbert Community Fishing: Freestone Pond",
+     "url": "https://azgfd.com/?p=3332"
+    },
+    {
+     "title": "Town of Gilbert: Freestone Park",
+     "url": "https://gilbertaz.gov/freestone-park"
+    },
+    {
+     "title": "City Moms: Freestone Park listing",
+     "url": "https://eastvalley.citymomsblog.com/directory/listing/freestone-park"
+    },
+    {
+     "title": "Fishbrain: Freestone Pond",
+     "url": "https://fishbrain.com/fishing-waters/yWeHDpG0/freestone-park"
+    },
+    {
+     "title": "Komoot: Freestone Pond",
+     "url": "https://www.komoot.com/highlight/6396298"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "gilbert-regional-park-pond-az",
+   "name": "Gilbert Regional Park Pond (Gilbert Regional Park, Gilbert, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. Gilbert Regional Park is in Gilbert; Fishbrain lists it under Maricopa County.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish, rainbow trout, largemouth bass",
+     "stocking": "Listed for the park by Fishbrain; not verified for this pond"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "AZGFD's Community Fishing list includes Gilbert Regional Park Pond as number 27 among the Gilbert waters. Its species and stocking details are not verified.",
+    "schedule": "Stocking schedule not verified. Check the AZGFD schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used. Treat as a stocked community water.",
+    "sources": [
+     {
+      "title": "AZGFD Community Fishing Program",
+      "url": "https://azgfd.com/?p=3266"
+     },
+     {
+      "title": "Fishbrain: Gilbert Regional Park",
+      "url": "https://fishbrain.com/fishing-waters/oKpv0mLn/gilbert-regional-park"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Fishbrain says Gilbert Regional Park is most popular for channel catfish, largemouth bass and rainbow trout.",
+    "The park address, amenities and rules are not verified beyond the AZGFD listing. Check the posted signs on arrival.",
+    "1 bass, 13-inch minimum (Fishbrain's Maricopa list). Statewide limits otherwise."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Community Fishing Program",
+     "url": "https://azgfd.com/?p=3266"
+    },
+    {
+     "title": "Fishbrain: Gilbert Regional Park",
+     "url": "https://fishbrain.com/fishing-waters/oKpv0mLn/gilbert-regional-park"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "pacana-pond-maricopa-az",
+   "name": "Pacana Pond (Pacana Park, Maricopa, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 33.0533,
+   "lon": -112.0145,
+   "coords_note": "Coordinates from Fishbrain (33°03′11.7″N 112°00′52.1″W), which lists the lake under Pinal County. Address: 19000 N. Porter Road, Maricopa.",
+   "area_acres": 28,
+   "species": [
+    {
+     "name": "Rainbow trout, channel catfish, largemouth bass, sunfish, white amur",
+     "stocking": "Stocked per InMaricopa (later article)"
+    },
+    {
+     "name": "Bluegill",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "conflicting",
+    "summary": "Sources disagree on Pacana's status. A 2021 city guide describes a diversely stocked pond, while an older InMaricopa article says it was a city-run catch-and-release lake outside the program. A later InMaricopa article says AZGFD stocks it with rainbow trout, channel catfish, largemouth bass, sunfish and white amur.",
+    "schedule": "Stocking schedule not verified for this pond. Check AZGFD and the City of Maricopa before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "City of Maricopa: Local Parks",
+      "url": "https://www.maricopa-az.gov/I-Want-To/Visit/Local-Parks"
+     },
+     {
+      "title": "InMaricopa: 2021 Resident & Visitor Guide",
+      "url": "https://magazines.inmaricopa.com/view/361534248/74-75"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The city says Pacana Park is about 28 acres and includes a fishing lake, a walking path, a dog park, ball fields and a fitness court.",
+    "The 2021 visitor guide says anglers can fish from sunrise to 11 p.m., and gives a maximum depth of 11 feet.",
+    "A city-run Family Fishing Derby is held at Pacana Park during Stagecoach Days; the derby was set for Saturday, October 17.",
+    "The city says it works with AZGFD to monitor use of the Copper Sky and Pacana Park lakes.",
+    "Rules not verified. Check the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "City of Maricopa: Local Parks",
+     "url": "https://www.maricopa-az.gov/I-Want-To/Visit/Local-Parks"
+    },
+    {
+     "title": "InMaricopa: 2021 Resident & Visitor Guide",
+     "url": "https://magazines.inmaricopa.com/view/361534248/74-75"
+    },
+    {
+     "title": "InMaricopa: Copper Sky and Pacana rules",
+     "url": "https://inmaricopa.com/the-reel-truth-when-you-need-to-throw-that-bass-back/"
+    },
+    {
+     "title": "InMaricopa: Copper Sky lake irrigation and community fishing",
+     "url": "https://inmaricopa.com/copper-sky-lake-irrigate-irrigation-community-fishing/"
+    },
+    {
+     "title": "Fishbrain: Pacana Park Lake",
+     "url": "https://fishbrain.com/fishing-waters/K5iqvn1V/pacana-park-lake"
+    },
+    {
+     "title": "City of Maricopa: Stagecoach Days Family Fishing Derby",
+     "url": "https://www.maricopa-az.gov/City-Calendar/Stagecoach-Days-Family-Fishing-Derby"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "copper-sky-lake-maricopa-az",
+   "name": "Copper Sky Lake (Copper Sky Regional Park, Maricopa, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.042,
+   "lon": -112.041,
+   "coords_note": "Coordinates from Fishbrain (33°02′31″N 112°02′27.6″W). Address: 45345 W. Martin Luther King Blvd., Maricopa. Fishbrain lists it under Pinal County.",
+   "area_acres": 5,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked (freshly stocked for the city's January Family Fishing Day)"
+    },
+    {
+     "name": "Channel catfish, largemouth bass, sunfish, white amur",
+     "stocking": "Stocked per InMaricopa"
+    },
+    {
+     "name": "Bluegill, channel catfish",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Copper Sky Lake is an AZGFD Community Fishing lake and Maricopa's first catch-and-keep fishing location. The city says AZGFD stocks it with rainbow trout, channel catfish, largemouth bass, sunfish and white amur.",
+    "schedule": "Stocked through the season under AZGFD and the city. Check the AZGFD schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "City of Maricopa: Copper Sky Regional Park (2021 guide)",
+      "url": "https://magazines.inmaricopa.com/view/361534248/74-75"
+     },
+     {
+      "title": "AZGFD Maricopa Community Fishing: Copper Sky Lake",
+      "url": "https://www.azgfd.com/?p=3287"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The city's Copper Sky Regional Park page gives a 5-acre lake and posts hours of 5 a.m. to 9 p.m. Monday through Friday, 8 a.m. to 8 p.m. Saturday, and 11 a.m. to 5 p.m. Sunday.",
+    "City park rules prohibit boating, swimming or wading at the lake. Glass containers and alcoholic beverages are also prohibited.",
+    "The city holds a free Family Fishing Day each January. Participants fish without a license and can use loaner rods and bait; AZGFD provides clinics.",
+    "AZGFD's Maricopa page lists the city's Community Services contact as 520-316-6960.",
+    "Fishbrain logs about 649 catches for Copper Sky Regional Park Lake, with bluegill as the most-reported species in its recent catches.",
+    "2 bass, 13-inch minimum (Fishbrain's list for Copper Sky Lake). Statewide limits apply to other species. Check the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "City of Maricopa: Copper Sky Regional Park (2021 guide)",
+     "url": "https://magazines.inmaricopa.com/view/361534248/74-75"
+    },
+    {
+     "title": "AZGFD Maricopa Community Fishing: Copper Sky Lake",
+     "url": "https://www.azgfd.com/?p=3287"
+    },
+    {
+     "title": "InMaricopa: Family Fishing Day at Copper Sky",
+     "url": "https://www.inmaricopa.com/?p=828727"
+    },
+    {
+     "title": "InMaricopa: Copper Sky lake community fishing",
+     "url": "https://inmaricopa.com/copper-sky-lake-irrigate-irrigation-community-fishing/"
+    },
+    {
+     "title": "Fishbrain: Copper Sky Regional Park Lake",
+     "url": "https://fishbrain.com/fishing-waters/kir7o9Ul/copper-sky-park-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "surprise-lake-surprise-az",
+   "name": "Surprise Lake (Surprise Community Park, Surprise, AZ)",
+   "type": "lake",
+   "elevation_ft": 1100,
+   "lat": 33.6411,
+   "lon": -112.3756,
+   "coords_note": "Coordinates from Wikipedia (33°38′27.83″N 112°22′31.98″W). Address: 15930 N. Bullard Avenue, Surprise (City of Surprise via YourValley). Surprise Lake sits on the Surprise Recreation Campus between Bell Road and Greenway, east of Bullard Avenue.",
+   "area_acres": 5,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked (AZGFD bag limit lists trout)"
+    },
+    {
+     "name": "Channel catfish, largemouth bass",
+     "stocking": "Present (Fishbrain)"
+    },
+    {
+     "name": "Sunfish",
+     "stocking": "Listed on AZGFD bag limit"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Surprise Lake is an AZGFD Community Fishing water inside Surprise Community Park. A 2007 AZGFD history lists it among Phoenix-area urban fisheries.",
+    "schedule": "Check AZGFD's Surprise page for current stocking. Stocking is paused June 25 to September 15 for heat.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD Surprise Community Fishing: Surprise Lake",
+      "url": "https://azgfd.com/?p=3415"
+     },
+     {
+      "title": "Wikipedia: Surprise Lake (Arizona)",
+      "url": "https://en.wikipedia.org/wiki/Surprise_Lake_(Arizona)"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The city says the lake is about 5 acres and is an urban fishing lake, which Komoot also describes.",
+    "Fishing is open from sunrise to 10 p.m. Swimming, wading, glass containers and littering are prohibited, and boating is not allowed.",
+    "The city and AZGFD have held an adaptive family fishing derby at the park on April 13, from 9 to 11 a.m., with help from the Sun City Grand Fishing Club.",
+    "Surprise Community Park sits in the City Center near Surprise Stadium, the library and City Hall, with a playground, pickleball and a dog park.",
+    "AZGFD's Surprise page gives the contact as Surprise Community and Recreation Services, 623-222-2000.",
+    "4 trout, 2 bass (13-inch minimum), 10 sunfish, 1 white amur (30-inch minimum), per AZGFD. Statewide limits apply to other species."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Surprise Community Fishing: Surprise Lake",
+     "url": "https://azgfd.com/?p=3415"
+    },
+    {
+     "title": "Wikipedia: Surprise Lake (Arizona)",
+     "url": "https://en.wikipedia.org/wiki/Surprise_Lake_(Arizona)"
+    },
+    {
+     "title": "HookedAZ: Surprise Lake",
+     "url": "https://www.hookedaz.com/showcase/comment/120"
+    },
+    {
+     "title": "YourValley: Adaptive fishing derby set for Surprise Lake",
+     "url": "https://yourvalley.net/surprise-independent/stories/adaptive-fishing-derby-set-for-surprise-lake,488967"
+    },
+    {
+     "title": "Komoot: Surprise Lake and Community Park",
+     "url": "https://www.komoot.com/highlight/6288749"
+    },
+    {
+     "title": "Fishbrain: Surprise Lake",
+     "url": "https://fishbrain.com/fishing-waters/F-sn4HH5/surprise-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "sundance-park-lake-buckeye-az",
+   "name": "Sundance Park Lake (Sundance Park, Buckeye, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.4192,
+   "lon": -112.5443,
+   "coords_note": "Coordinates from Fishbrain (33°25′9.1″N 112°32′39.4″W). Address: 22865 W. Lower Buckeye Road, Buckeye.",
+   "area_acres": 3.2,
+   "species": [
+    {
+     "name": "Channel catfish, bluegill, largemouth bass, rainbow trout",
+     "stocking": "Stocked per the city (KTAR, Sept 2023 Phase II opening)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked by city",
+    "summary": "Sundance Park's 3.2-acre lake is Buckeye's first public fishing lake, completed with Phase II in September 2023. The city says it is stocked with catfish, bluegill, bass and rainbow trout.",
+    "schedule": "Stocking schedule not verified. Check the City of Buckeye and AZGFD before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "KTAR: Sundance Park Phase II completed",
+      "url": "https://ktar.com/arizona-news/expansion-of-sundance-park-in-buckeye-completed-celebrated-with-3-days-of-events"
+     },
+     {
+      "title": "InBusiness PHX: Sundance Park Phase II opens",
+      "url": "https://inbusinessphx.com/commercial-real-estate/sundance-park-phase-ii-opens-in-buckeye"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The Phase II expansion opened September 15 to 17, 2023, and the lake is 14 feet deep, according to InBusiness PHX.",
+    "The Buckeye Buzz describes the lake as the centerpiece of the 68-acre park, which opened in 2012.",
+    "Rental of the Sundance Park Lake Pavilion is $50 for residents and $100 for non-residents for a four-hour block, per the city.",
+    "Fishbrain lists channel catfish, bluegill and largemouth bass as the most popular species, with about 266 catches logged.",
+    "The park includes a grand pavilion, splash pad, four multi-use fields, lighted basketball courts and upgraded restrooms.",
+    "Bag limits not verified for this lake. Check the posted signs and AZGFD rules."
+   ],
+   "sources": [
+    {
+     "title": "KTAR: Sundance Park Phase II completed",
+     "url": "https://ktar.com/arizona-news/expansion-of-sundance-park-in-buckeye-completed-celebrated-with-3-days-of-events"
+    },
+    {
+     "title": "InBusiness PHX: Sundance Park Phase II opens",
+     "url": "https://inbusinessphx.com/commercial-real-estate/sundance-park-phase-ii-opens-in-buckeye"
+    },
+    {
+     "title": "Buckeye Buzz: Sundance Park",
+     "url": "https://thebuckeyebuzz.beehiiv.com/p/go-explore-sundance-park"
+    },
+    {
+     "title": "City of Buckeye: rentals and rules",
+     "url": "https://buckeyeaz.gov/community/residents/parks-recreation/rentals-special-events-and-rules"
+    },
+    {
+     "title": "Fishbrain: Sundance Park",
+     "url": "https://fishbrain.com/fishing-waters/1CcLxhqM/sundance-park"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "tempe-town-lake-tempe-az",
+   "name": "Tempe Town Lake (Tempe Town Beach Park, Tempe, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 33.4334,
+   "lon": -111.9405,
+   "coords_note": "Coordinates from Fishbrain (33°26′0.3″N 111°56′25.7″W). Tempe Town Lake sits on the Salt River (Rio Salado) at Tempe.",
+   "area_acres": 224,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in winter (AZGFD)"
+    },
+    {
+     "name": "Channel catfish, largemouth bass, common carp",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Tempe Town Lake is an AZGFD Community Fishing water covering 224 acres, with a maximum depth of 18 feet. AZGFD's winter trout stocking has been held here, though the city's annual trout event was canceled during a dam replacement project.",
+    "schedule": "Winter trout stocking when scheduled. Check the AZGFD schedule; the city's annual trout event was canceled during the dam work.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD Tempe Community Fishing: Tempe Town Lake",
+      "url": "https://www.azgfd.com/fishing-2/where-to-fish/community-fishing/phoenix-area-fishing-waters/tempe-town-lake/"
+     },
+     {
+      "title": "City of Tempe: Fishing guide",
+      "url": "https://tempe.gov/Home/ShowDocument?id=20727"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15). Tempe's rules for this lake are set by the city and AZGFD, so check both before you go.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD gives the park hours as 5 a.m. to midnight.",
+    "Swimming, wading, glass containers and littering are prohibited. Alcoholic beverage permits are required, and a City of Tempe annual boating permit is required (480-350-5200).",
+    "Tempe's guide says a Class U (Urban Fishing) license is not valid here. Anglers need a general fishing license, and a trout stamp for trout, per the city's older guide.",
+    "Tempe's recreation office is at 480-350-8625. Tempe's current page says the license rule applies to Tempe Town Lake, Kiwanis Lake and Evelyn Hallman Pond.",
+    "A 2016 Western Outdoor Times update says the department had not lifted all fishing regulations at Tempe Town Lake, despite a report that it had.",
+    "Tempe requires a valid Arizona fishing license for everyone age 10 and older. Bag limits not verified for this lake. Check the posted rules."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Tempe Community Fishing: Tempe Town Lake",
+     "url": "https://www.azgfd.com/fishing-2/where-to-fish/community-fishing/phoenix-area-fishing-waters/tempe-town-lake/"
+    },
+    {
+     "title": "City of Tempe: Fishing guide",
+     "url": "https://tempe.gov/Home/ShowDocument?id=20727"
+    },
+    {
+     "title": "City of Tempe: Fishing",
+     "url": "https://tempe.gov/government/community-services/parks/fishing"
+    },
+    {
+     "title": "Western Outdoor Times: Tempe Town Lake project update",
+     "url": "https://www.westernoutdoortimes.com/story/2016/01/01/fishing/tempe-town-lake-project-update/2519.html"
+    },
+    {
+     "title": "Western Bass: Arizona trout stocking",
+     "url": "https://www.westernbass.com/article/arizona-trout-stocking-begins-week-of-nov-16"
+    },
+    {
+     "title": "Fishbrain: Tempe Town Lake (Salt River)",
+     "url": "https://www.fishbrain.com/fishing-waters/wvTSguz1/tempe-town-lake-salt-river"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "lakeside-lake-tucson-az",
+   "name": "Lakeside Lake (Chuck Ford-Lakeside Park, Tucson, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 32.1872,
+   "lon": -110.8188,
+   "coords_note": "Coordinates from Waymarking (N 32° 11.230 W 110° 49.125). Address: Chuck Ford-Lakeside Park, northwest corner of Stella Road and Sarnoff Drive, east Tucson.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout, channel catfish, sunfish",
+     "stocking": "Stocked (Waymarking; the Urban Fishing Program stocks 20 to 24 times a year)"
+    },
+    {
+     "name": "Largemouth bass, bluegill, channel catfish",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Lakeside Lake is a Community Fishing water that Tucson manages jointly with AZGFD. It is one of 21 Urban Fishing Program lakes, which Waymarking says are stocked 20 to 24 times a year with trout, catfish and sunfish.",
+    "schedule": "Stocked 20 to 24 times a year under the Urban Fishing Program (Waymarking). Check the AZGFD schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "City of Tucson: Boating and Fishing",
+      "url": "https://www.tucsonaz.gov/Departments/Parks-and-Recreation/Parks/Boating-and-Fishing"
+     },
+     {
+      "title": "AZGFD Tucson Community Fishing: Lakeside Lake",
+      "url": "https://azgfd.com/?p=3178"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Tucson's parks page says fishing is permitted at Silverbell, Kennedy and Lakeside Lakes under the Community Fishing Program.",
+    "The city says anglers must follow AZGFD regulations, there is no swimming or wading, live baitfish are prohibited, and no campfires are allowed.",
+    "A Tucson visitor review says the lake has grills and good sunsets, and that it is closer than Rose Canyon Lake.",
+    "Best Fishing in America says small boats without gas motors are allowed at the Tucson community lakes.",
+    "2 bass, 13-inch minimum (AZGFD list for Lakeside Lake). Live baitfish are prohibited. Statewide limits apply to other species."
+   ],
+   "sources": [
+    {
+     "title": "City of Tucson: Boating and Fishing",
+     "url": "https://www.tucsonaz.gov/Departments/Parks-and-Recreation/Parks/Boating-and-Fishing"
+    },
+    {
+     "title": "AZGFD Tucson Community Fishing: Lakeside Lake",
+     "url": "https://azgfd.com/?p=3178"
+    },
+    {
+     "title": "Waymarking: Lakeside Urban Fishing Lake",
+     "url": "https://waymarking.com/waymarks/wmJ6X6_Lakeside_Urban_Fishing_Lake_Tucson_AZ"
+    },
+    {
+     "title": "Wanderlog: Lakeside Lake",
+     "url": "https://wanderlog.com/place/details/4007902/lakeside-lake"
+    },
+    {
+     "title": "Best Fishing in America: Fishing near Tucson",
+     "url": "https://www.bestfishinginamerica.com/?p=19688"
+    },
+    {
+     "title": "Fishbrain: Lakeside Park Lake",
+     "url": "https://fishbrain.com/fishing-waters/8bYuEV0s/lakeside-park"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "silverbell-lake-tucson-az",
+   "name": "Silverbell Lake (Danny Lopez Park, Tucson, AZ)",
+   "type": "lake",
+   "elevation_ft": 2000,
+   "lat": 32.2843,
+   "lon": -111.0318,
+   "coords_note": "Coordinates from Fishbrain (32°17′3.5″N 111°01′54.6″W). Address: 4600 N. Silverbell Road, Tucson (City of Tucson). Wikipedia gives the same park at 32.285, -111.034.",
+   "area_acres": 13,
+   "species": [
+    {
+     "name": "Largemouth bass, channel catfish, bluegill",
+     "stocking": "Present (Fishbrain)"
+    },
+    {
+     "name": "Rainbow trout, catfish",
+     "stocking": "Listed by visitors and in a 2007 AZGFD history; current stocking not verified"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Silverbell Lake is one of three Tucson lakes managed jointly with AZGFD under the Community Fishing Program. The city's parks page says it is 13 acres, and AZGFD's Tucson page lists the Christopher Columbus Park location.",
+    "schedule": "Check the AZGFD or city schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "City of Tucson: Boating and Fishing",
+      "url": "https://www.tucsonaz.gov/Departments/Parks-and-Recreation/Parks/Boating-and-Fishing"
+     },
+     {
+      "title": "AZGFD Tucson Community Fishing",
+      "url": "https://azgfd.com/?p=3093"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The city gives the lake a 13-acre surface and a maximum depth of 7 feet.",
+    "Park hours are 6 a.m. to 10:30 p.m. A flat trail circles the lake, according to Santa Cruz Heritage.",
+    "The city says there is no swimming or wading, no campfires, and no feeding of waterfowl.",
+    "A sign at the lake, quoted by the Arizona Daily Star, requires a valid Arizona community fishing, general fishing or combo hunt/fish license.",
+    "Fishbrain logs about 2,458 catches for Silverbell, with largemouth bass and channel catfish the most-reported species.",
+    "The city says fishing is not permitted at the Reid Park irrigation reservoir, which is a separate water.",
+    "Bag limits not verified. A Community Fishing license is required, and live baitfish are prohibited."
+   ],
+   "sources": [
+    {
+     "title": "City of Tucson: Boating and Fishing",
+     "url": "https://www.tucsonaz.gov/Departments/Parks-and-Recreation/Parks/Boating-and-Fishing"
+    },
+    {
+     "title": "AZGFD Tucson Community Fishing",
+     "url": "https://azgfd.com/?p=3093"
+    },
+    {
+     "title": "Wikipedia: Silverbell Lake",
+     "url": "https://en.wikipedia.org/wiki/Silverbell_Lake"
+    },
+    {
+     "title": "Arizona Daily Star: Silverbell Lake",
+     "url": "https://tucson.com/news/local/article_e944d380-3a6c-5119-8bf0-d5fffd0cbe78.html"
+    },
+    {
+     "title": "Fishbrain: Silverbell Lake",
+     "url": "https://fishbrain.com/fishing-waters/pYio34a5/silverbell-lake"
+    },
+    {
+     "title": "Santa Cruz Heritage: Danny Lopez Park",
+     "url": "https://santacruzheritage.org/danny-lopez-park/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "sahuarita-lake-sahuarita-az",
+   "name": "Sahuarita Lake (Sahuarita Lake Park, Sahuarita, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": 31.9721,
+   "lon": -110.9671,
+   "coords_note": "Coordinates from Fishbrain (31°58′19.6″N 110°58′1.5″W). Address: 15466 S. Rancho Sahuarita Boulevard, Sahuarita. Wikipedia gives 31.975, -110.968.",
+   "area_acres": 10,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in cooler months (AZGFD and Best Fishing in America)"
+    },
+    {
+     "name": "Largemouth bass, bluegill, sunfish, channel catfish, white amur",
+     "stocking": "Stocked or present (town and Sportsman's Guide reports)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Sahuarita Lake is a 10-acre artificial lake in Sahuarita Lake Park, opened in 2001. AZGFD stocks rainbow trout in the cooler months, and the town says the lake holds catfish, bass and sunfish.",
+    "schedule": "Trout stocked in cooler months per AZGFD. Check the AZGFD Tucson schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "Wikipedia: Sahuarita Lake",
+      "url": "https://en.wikipedia.org/wiki/Sahuarita_Lake"
+     },
+     {
+      "title": "Fishbrain: Sahuarita Lake",
+      "url": "https://fishbrain.com/fishing-waters/O2IshBE4/sahuarita-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The lake was created in 2000 and opened in 2001. It is about 10 acres with a maximum depth of 12 feet.",
+    "The Arizona Daily Star says the lake's blue color comes from a non-toxic dye that controls weed and algae growth.",
+    "The Arizona Daily Star says an Arizona general fishing, community fishing or combo hunt/fish license is required.",
+    "A 2016 Town of Sahuarita fishing festival at the amphitheater, held with AZGFD, offered family fishing and entertainment.",
+    "A Wanderlog listing describes a 1-mile paved walkway with exercise stations and about 242 shade trees around the lake.",
+    "Fishbrain logs about 2,148 catches, with largemouth bass and channel catfish the most-reported species.",
+    "Community Fishing license required. Daily bag limit for catfish is four (town figure from an older report). Confirm current limits on posted signs."
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia: Sahuarita Lake",
+     "url": "https://en.wikipedia.org/wiki/Sahuarita_Lake"
+    },
+    {
+     "title": "Fishbrain: Sahuarita Lake",
+     "url": "https://fishbrain.com/fishing-waters/O2IshBE4/sahuarita-lake"
+    },
+    {
+     "title": "Arizona Daily Star: Sahuarita Lake",
+     "url": "https://tucson.com/news/local/article_f75e124d-d961-58ef-8e54-bc23c8df427a.html"
+    },
+    {
+     "title": "Sportsman's Guide: Sahuarita Lake report",
+     "url": "https://fishingreports.sportsmans.com/fishing-report/sahuarita-lake/32346/"
+    },
+    {
+     "title": "Best Fishing in America: Tucson-area fishing",
+     "url": "https://www.bestfishinginamerica.com/?p=19688"
+    },
+    {
+     "title": "Rancho Sahuarita: Fishing Festival 2016",
+     "url": "https://ranchosahuarita.com/?p=17376"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "west-wetlands-pond-yuma-az",
+   "name": "West Wetlands Pond (West Wetlands Park, Yuma, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not verified. Address: 282 N. 12th Avenue, Yuma (Best Fishing in America). The lake is at the east end of the park, with parking along Water Street.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish, bluegill, largemouth bass",
+     "stocking": "Stocked; Fishbrain lists these as the most popular species"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "West Wetlands Pond is an AZGFD Community Fishing water in Yuma's 110-acre West Wetlands Park. The city says it is regularly stocked with a variety of game fish by AZGFD and its partners.",
+    "schedule": "Regularly stocked by AZGFD and partners. Check the AZGFD Yuma schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "City of Yuma: West Wetlands Park",
+      "url": "https://www.yumaaz.gov/Home/Components/FacilityDirectory/FacilityDirectory/72/236?npage=3"
+     },
+     {
+      "title": "Best Fishing in America: Yuma County fishing",
+      "url": "https://www.bestfishinginamerica.com/?p=24455"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The city says the pond is 15 feet deep at its center and is regularly stocked by AZGFD. A fishing license is required.",
+    "The 110-acre park sits on the northwest edge of Yuma along the Colorado River, and a trail encircles the fishing pond.",
+    "AZGFD ran a Fishing in the Moonlight event at West Wetlands Pond on Oct. 4 from 5 to 9 p.m.",
+    "A 2016 AZGFD report says the pond was stocked with catfish about a month before the season's final stocking.",
+    "Komoot calls the pond a very popular fishing spot where anglers are regularly seen.",
+    "Special daily limits for the pond (city notice). Limits not itemized in the sources used. Check the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "City of Yuma: West Wetlands Park",
+     "url": "https://www.yumaaz.gov/Home/Components/FacilityDirectory/FacilityDirectory/72/236?npage=3"
+    },
+    {
+     "title": "Best Fishing in America: Yuma County fishing",
+     "url": "https://www.bestfishinginamerica.com/?p=24455"
+    },
+    {
+     "title": "AZGFD Yuma Community Fishing",
+     "url": "https://www.azgfd.com/?p=3201"
+    },
+    {
+     "title": "Fishbrain: West Wetlands Park Pond",
+     "url": "https://fishbrain.com/fishing-waters/gQNRvffz/west-wetlands-park-pond"
+    },
+    {
+     "title": "Komoot: West Wetlands Pond",
+     "url": "https://www.komoot.com/highlight/6728871"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "redondo-lake-yuma-az",
+   "name": "Redondo Lake (West Wetlands Park area, Yuma, AZ)",
+   "type": "lake",
+   "elevation_ft": 190,
+   "lat": 32.7425,
+   "lon": -114.4846,
+   "coords_note": "Sources disagree on location. FishAngler gives 32.74246, -114.484623 and a Yuma-area address. Wikipedia and mdwiki put Redondo Reservoir 12 miles north of Yuma at 32.735, -114.667. Verify the site before you go.",
+   "area_acres": 4,
+   "species": [
+    {
+     "name": "Channel catfish, rainbow trout, redear sunfish",
+     "stocking": "Stocked (sportfishing site: consistent stocking)"
+    },
+    {
+     "name": "Largemouth bass, smallmouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Redondo Lake is a 4-acre AZGFD Community Fishing pond in Yuma, and AZGFD lists it as one of the Yuma waters. A sportfishing site says it sits within West Wetlands Park.",
+    "schedule": "Consistent stocking per sportfishing site. Check the AZGFD Yuma schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "Sportfishing report: Redondo Lake",
+      "url": "https://www.sportfishingreport.com/lakes/2577/redondo-lake.php"
+     },
+     {
+      "title": "Sportsman's Guide: Redondo Pond report",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/redondo-pond/17369/"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "Redondo Lake has paved trails, accessible fishing platforms and shade structures, according to a sportfishing site.",
+    "A June 2026 sportsman's report rates the pond good and says bank fishing from the dock can be hit or miss, while a kayak or boat around the pond tends to be more productive.",
+    "The same report recommends dropshot, wacky and Ned rigs, or Texas-rigged soft plastics for bass, and says to try the shorelines when the middle is quiet.",
+    "The mdwiki reference gives an average depth of 5 feet and an elevation of 190 feet, which conflicts with the other sources' location, so verify it.",
+    "Bag limits not verified for this pond. Check the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "Sportfishing report: Redondo Lake",
+     "url": "https://www.sportfishingreport.com/lakes/2577/redondo-lake.php"
+    },
+    {
+     "title": "Sportsman's Guide: Redondo Pond report",
+     "url": "https://fishingreports.sportsmans.com/fishing-report/redondo-pond/17369/"
+    },
+    {
+     "title": "Wikipedia: Redondo Reservoir",
+     "url": "https://en.wikipedia.org/wiki/Redondo_Reservoir"
+    },
+    {
+     "title": "FishAngler: Redondo Lake",
+     "url": "https://prod-web-eus-webapp-002.azurewebsites.net/fishing-waters/us/arizona/redondo-lake/1672277"
+    },
+    {
+     "title": "AZGFD Yuma Community Fishing",
+     "url": "https://www.azgfd.com/?p=3100"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "pacific-avenue-athletic-complex-pond-yuma-az",
+   "name": "Pacific Avenue Athletic Complex Pond (PAAC, Yuma, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": 32.7139,
+   "lon": -114.604,
+   "coords_note": "Coordinates from Fishbrain for 'Pacific Pond' (32°42′50.1″N 114°36′14.3″W). Address: 1700 E. 8th Street, Yuma (City of Yuma).",
+   "area_acres": 1.5,
+   "species": [
+    {
+     "name": "Rainbow trout, channel catfish",
+     "stocking": "Seasonally stocked (Best Fishing in America)"
+    },
+    {
+     "name": "Largemouth bass, sunfish",
+     "stocking": "In the planting mix (Best Fishing in America)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "The Pacific Avenue Athletic Complex pond opened to urban fishing in 2018, after Yuma worked with AZGFD to stock it. AZGFD lists the pond as one of its Yuma Community Fishing waters.",
+    "schedule": "Seasonally stocked. Check the AZGFD Yuma schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD Yuma Community Fishing: PAAC Pond",
+      "url": "https://azgfd.com/?p=3211"
+     },
+     {
+      "title": "Yuma Sun: PAAC pond fishing opens",
+      "url": "https://www.pressreader.com/usa/yuma-sun/20180928/281569471659418"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD gives the location as east 0.4 miles from I-8 and Hwy 95 to Pacific Avenue, north 1 mile to 8th Street, then west 0.2 miles to the park entrance.",
+    "AZGFD gives park hours of sunrise to 11 p.m., 1.5 acres, and a maximum depth of 8 feet.",
+    "The Yuma Sun reported a ribbon-cutting in September 2018 to open the pond to urban fishing, with the city working with AZGFD to stock it.",
+    "A Komoot rider page describes a large athletic center with a big fishing pond and running trails that connect to the levee.",
+    "1 bass, 13-inch minimum (Fishbrain's Yuma list). Other limits posted at the pond."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Yuma Community Fishing: PAAC Pond",
+     "url": "https://azgfd.com/?p=3211"
+    },
+    {
+     "title": "Yuma Sun: PAAC pond fishing opens",
+     "url": "https://www.pressreader.com/usa/yuma-sun/20180928/281569471659418"
+    },
+    {
+     "title": "Best Fishing in America: Yuma County fishing",
+     "url": "https://www.bestfishinginamerica.com/?p=24455"
+    },
+    {
+     "title": "Fishbrain: Pacific Pond",
+     "url": "https://fishbrain.com/fishing-waters/cG7UuFV4/pacific-pond"
+    },
+    {
+     "title": "City of Yuma: PAAC",
+     "url": "https://www.yumaaz.gov/government/parks-recreation/paac-pacific-avenue-athletic-complex"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "council-avenue-pond-somerton-az",
+   "name": "Council Avenue Pond (Council Avenue Park, Somerton, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not verified. Located in a city park in Somerton, about 20 minutes southwest of Yuma (Best Fishing in America).",
+   "area_acres": 1,
+   "species": [
+    {
+     "name": "Rainbow trout, channel catfish",
+     "stocking": "Regularly stocked (Best Fishing in America)"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Council Avenue Pond is an AZGFD Community Fishing pond in a Somerton city park, about 20 minutes southwest of Yuma. Best Fishing in America says it is regularly stocked with trout and catfish.",
+    "schedule": "Regularly stocked per Best Fishing in America. Check the AZGFD Yuma schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD Yuma Community Fishing: Council Avenue Pond",
+      "url": "https://www.azgfd.com/fishing-2/where-to-fish/community-fishing/yuma-fishing-waters/council-avenue-pond/"
+     },
+     {
+      "title": "Best Fishing in America: Yuma County fishing",
+      "url": "https://www.bestfishinginamerica.com/?p=24455"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The 1-acre pond sits in a city park, and AZGFD's Yuma page gives the location as Council Avenue Park.",
+    "A 2018 Yuma Sun item says more fish were being planted at Council Avenue Pond that September.",
+    "Fishbrain's Yuma listing includes Council Avenue Pond among the 13-inch bass waters.",
+    "2 catfish (Fishbrain's Pacific Pond bag-limit list). 1 bass, 13-inch minimum (Fishbrain's Yuma list)."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Yuma Community Fishing: Council Avenue Pond",
+     "url": "https://www.azgfd.com/fishing-2/where-to-fish/community-fishing/yuma-fishing-waters/council-avenue-pond/"
+    },
+    {
+     "title": "Best Fishing in America: Yuma County fishing",
+     "url": "https://www.bestfishinginamerica.com/?p=24455"
+    },
+    {
+     "title": "Yuma Sun: Good fishing in Yuma",
+     "url": "https://www.pressreader.com/usa/yuma-sun/20180923/282432760074543"
+    },
+    {
+     "title": "Fishbrain: Pacific Pond bag limits",
+     "url": "https://fishbrain.com/fishing-waters/cG7UuFV4/pacific-pond"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "green-valley-park-lakes-payson-az",
+   "name": "Green Valley Park Lakes (Green Valley Park, Payson, AZ)",
+   "type": "lake",
+   "elevation_ft": 4840,
+   "lat": 34.2316,
+   "lon": -111.3452,
+   "coords_note": "Coordinates from Fishbrain (34°13′53.9″N 111°20′42.3″W). Wikipedia gives 34.234, -111.366 for Green Valley Lake. Address: Green Valley Park, Payson.",
+   "area_acres": 13.1,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Regularly stocked (sportfishing site and Komoot)"
+    },
+    {
+     "name": "Largemouth bass, bluegill, sunfish, channel catfish",
+     "stocking": "Present; warm months (sportfishing site and visitarizona)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Green Valley Park Lakes are three connected Community Fishing lakes in Payson's park. AZGFD lists them with Payson's community waters, and sportfishing sites describe regular trout stocking.",
+    "schedule": "Regularly stocked with trout by AZGFD. Check the AZGFD Payson schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD Payson Community Fishing: Green Valley Lakes",
+      "url": "https://www.azgfd.com/?p=3245"
+     },
+     {
+      "title": "Discover Gila County: Green Valley Lakes",
+      "url": "https://discovergilacounty.com/?p=1190"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15). At 4,840 feet, Payson's lakes run cooler than the Valley, so the summer heat window matters less here.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly",
+    "callibaetis"
+   ],
+   "notes": [
+    "The park provides three lakes with a combined surface of 13.1 acres, plus 3.8 miles of walking paths and boating and fishing facilities, according to Discover Gila County.",
+    "The three lakes were built from 1993 to 1996 for groundwater recharge, per Wikipedia.",
+    "Visit Arizona says the lakes are populated with trout, bass and sunfish, and the park has a playground and walking paths.",
+    "Fishbrain logs about 547 catches, with rainbow trout, bluegill and largemouth bass the most popular species.",
+    "A valid Arizona fishing license is required for anglers 10 and older (Komoot). Bag limits not verified; check the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Payson Community Fishing: Green Valley Lakes",
+     "url": "https://www.azgfd.com/?p=3245"
+    },
+    {
+     "title": "Discover Gila County: Green Valley Lakes",
+     "url": "https://discovergilacounty.com/?p=1190"
+    },
+    {
+     "title": "Wikipedia: Green Valley Lake (Arizona)",
+     "url": "https://en.wikipedia.org/wiki/Green_Valley_Lake_(Arizona)"
+    },
+    {
+     "title": "Sportfishing Report: Green Valley Lake",
+     "url": "https://www.sportfishingreport.com/lakes/994/green-valley-lake-az.php"
+    },
+    {
+     "title": "Komoot: Green Valley Park",
+     "url": "https://blog.komoot.de/highlight/4134139"
+    },
+    {
+     "title": "Visit Arizona: Payson",
+     "url": "https://www.visitarizona.com/places/cities/payson"
+    },
+    {
+     "title": "Fishbrain: Green Valley Park Lakes",
+     "url": "https://fishbrain.com/fishing-waters/jPXK2yi8/green-valley-park-lakes"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for these lakes.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Callibaetis mayflies",
+     "category": "insect",
+     "detail": "Stillwater mayflies in weedy shallows. Not sourced for these lakes.",
+     "basis": "general",
+     "insect_id": "callibaetis"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for these lakes.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "patterson-ponds-st-johns-az",
+   "name": "Patterson Ponds (St. Johns, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. The ponds are in St. Johns, Apache County, in the upper-elevation Community Fishing group.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout, channel catfish",
+     "stocking": "Stocked (upper-elevation waters, summer included per AZGFD bulletin)"
+    },
+    {
+     "name": "Largemouth bass, bluegill",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Patterson Ponds are an AZGFD Community Fishing water in St. Johns. AZGFD's 2026 bulletin says the upper-elevation waters, including St. Johns, keep getting stocked through the summer while the lower waters are on hiatus.",
+    "schedule": "Upper-elevation waters are stocked through the summer months per AZGFD. Check the AZGFD schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD St. Johns Community Fishing: Patterson Ponds",
+      "url": "https://azgfd.com/?p=3253"
+     },
+     {
+      "title": "AZGFD bulletin: catfish stockings, upper-elevation waters",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d75d7a"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD gives the contact as St. Johns Parks and Recreation, 928-337-4517, ext. 221.",
+    "Fishbrain lists Patterson Ponds among the community ponds in St. Johns and in the Snowflake-area fishing list.",
+    "Lyman Lake State Park is a separate water near St. Johns, at 11 U.S. 180.",
+    "1 bass, 13-inch minimum (Fishbrain's Yuma/Phoenix bass list). Statewide limits apply to other species. Check the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD St. Johns Community Fishing: Patterson Ponds",
+     "url": "https://azgfd.com/?p=3253"
+    },
+    {
+     "title": "AZGFD bulletin: catfish stockings, upper-elevation waters",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d75d7a"
+    },
+    {
+     "title": "AZGFD bulletin: summer stockings in upper-elevation waters",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/4204253)"
+    },
+    {
+     "title": "Fishbrain: Snowflake fishing",
+     "url": "https://fishbrain.com/cities/us/az/snowflake"
+    },
+    {
+     "title": "Lake-Link: lakes near St. Johns",
+     "url": "https://www.lake-link.com/arizona-lakes/near-st-johns-arizona/8156/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for these ponds.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for these ponds.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "show-low-creek-meadow-show-low-az",
+   "name": "Show Low Creek (Meadow Trail, Show Low, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": 34.2989,
+   "lon": -110.0931,
+   "coords_note": "Coordinates from Fishbrain (34°17′56″N 110°05′35″W), for Show Low Creek. The Meadow Trailhead is about a mile south of the SR 260 and White Mountain Road junction.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked (city and AZGFD partnership)"
+    },
+    {
+     "name": "Largemouth bass, bluegill, green sunfish",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Show Low Creek is an AZGFD Community Fishing stream in Show Low. A partnership with AZGFD stocks trout in the creek at several spots near the Meadow Trail during certain seasons.",
+    "schedule": "Upper-elevation waters are stocked through the summer per AZGFD. Check the AZGFD schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "City of Show Low: Trails",
+      "url": "https://showlowaz.gov/page/trails"
+     },
+     {
+      "title": "AZGFD Show Low Community Fishing",
+      "url": "https://azgfd.com/?p=3450"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15). Show Low is at higher elevation, so its trout stocking runs later into the summer than the Valley waters.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "The city says the Meadow Trail is about 1.5 miles long and paved, and it will eventually loop back along the east side of the creek.",
+    "The city says restrooms are at the Meadow Trailhead.",
+    "A Torreon guide describes the creek as less than a mile long and known for catfish and trout.",
+    "Show Low Creek flows into Fool Hollow Lake, according to Arizona State Parks.",
+    "A 2016 AZGFD report says the stream was stocked and rated fair to good in October and November.",
+    "Fishbrain logs about 369 catches, with rainbow trout the most-reported species.",
+    "Community Fishing rules apply. Bag limits not verified for this stream. Check the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "City of Show Low: Trails",
+     "url": "https://showlowaz.gov/page/trails"
+    },
+    {
+     "title": "AZGFD Show Low Community Fishing",
+     "url": "https://azgfd.com/?p=3450"
+    },
+    {
+     "title": "Fishbrain: Show Low Creek",
+     "url": "https://fishbrain.com/fishing-waters/ayeF1GNW/show-low-creek"
+    },
+    {
+     "title": "Torreon: Top fishing spots in northeastern Arizona",
+     "url": "https://torreon.com/top-times-and-spots-to-fish-in-northeastern-arizona/"
+    },
+    {
+     "title": "Arizona State Parks: Fool Hollow fishing",
+     "url": "https://azstateparks.com/fool-hollow/on-the-water"
+    },
+    {
+     "title": "Sportfishing Report: Show Low Creek",
+     "url": "https://sportfishingreport.com/creeks/1846/show-low-creek.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Stream midges. Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "stone-dam-lake-ash-fork-az",
+   "name": "Stone Dam Lake (Ash Fork, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": 35.2249,
+   "lon": -112.4057,
+   "coords_note": "Coordinates from TheDyrt (35.2249, -112.4057), which points to the dispersed-camping area at the dam.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked in spring and fall (AZGFD)"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in the winter (AZGFD); stocked in the cooler upper-elevation season"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stone Dam Lake is an AZGFD Community Fishing water in Ash Fork. AZGFD's Ash Fork page lists it with a daily bag limit of four catfish, six trout and two bass.",
+    "schedule": "Upper-elevation waters are stocked from late May to mid-September per AZGFD. Check the schedule before you go.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD Ash Fork Community Fishing: Stone Dam Lake",
+      "url": "https://www.azgfd.com/?p=3249"
+     },
+     {
+      "title": "TheDyrt: Ash Fork Stone Dam",
+      "url": "https://thedyrt.com/camping/arizona/ash-fork-stone-dam"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "The Stone and Steel dams are connected by a trail of about 0.35 miles, according to the Kaibab National Forest.",
+    "AZGFD gives the contact as the Ash Fork Development Association, 518 Lewis Avenue, 928-637-2774.",
+    "The park amenities listed by AZGFD are wildlife watching and hiking trails.",
+    "A HikeArizona visit describes the water about eight feet below the dam brink and somewhat murky on that visit.",
+    "Daily bag limits: 4 catfish, 6 trout, 2 bass (13-inch minimum), per AZGFD. Statewide limits apply to other species."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Ash Fork Community Fishing: Stone Dam Lake",
+     "url": "https://www.azgfd.com/?p=3249"
+    },
+    {
+     "title": "TheDyrt: Ash Fork Stone Dam",
+     "url": "https://thedyrt.com/camping/arizona/ash-fork-stone-dam"
+    },
+    {
+     "title": "Kaibab National Forest: Stone and Steel dam trail",
+     "url": "https://www.fs.usda.gov/r03/kaibab/projects/34040"
+    },
+    {
+     "title": "HikeArizona: Stone to Steel Trail",
+     "url": "https://www.hikearizona.com/decoder.php?ZTN=19485"
+    },
+    {
+     "title": "AZGFD bulletin: catfish stockings",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d75d7a"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this lake.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "graham-county-fairgrounds-pond-safford-az",
+   "name": "Graham County Fairgrounds Pond (Safford, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. AZGFD lists it as the upper pond of Graham County's fairgrounds. Park hours are 8 a.m. to 5 p.m., Monday through Friday.",
+   "area_acres": 2.5,
+   "species": [
+    {
+     "name": "Channel catfish, largemouth bass, common carp",
+     "stocking": "Present (Fishbrain)"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked; Fishbrain logs trout"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Graham County Fairgrounds Pond is an AZGFD Community Fishing water in Safford. AZGFD lists the upper pond at 2.5 acres, and says the rules are still under development.",
+    "schedule": "Lower-elevation Safford waters are stocked through May per AZGFD. Check the AZGFD schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD Safford Community Fishing: Graham County Fairground Pond",
+      "url": "https://azgfd.com/?p=3302"
+     },
+     {
+      "title": "Fishbrain: Safford fishing",
+      "url": "https://fishbrain.com/cities/us/az/safford"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD's Safford page gives the contact as Graham County Parks and Fair.",
+    "Fishbrain logs a 19-inch, 2-pound channel catfish from the fairgrounds pond.",
+    "Safford's lower-elevation Community Fishing waters are stocked through May, per the AZGFD catfish bulletin.",
+    "Daily bag limits: 2 catfish, 2 trout, 1 bass (13-inch minimum), per AZGFD. AZGFD notes the rules are under development, so check the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Safford Community Fishing: Graham County Fairground Pond",
+     "url": "https://azgfd.com/?p=3302"
+    },
+    {
+     "title": "Fishbrain: Safford fishing",
+     "url": "https://fishbrain.com/cities/us/az/safford"
+    },
+    {
+     "title": "Fishbrain: Graham County Fairground Pond",
+     "url": "https://fishbrain.com/fishing-waters/AUFuvQjx/graham-county-fairground-pond"
+    },
+    {
+     "title": "AZGFD bulletin: catfish stockings",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d75d7a"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ]
+  },
+  {
+   "id": "eldorado-park-pond-scottsdale-az",
+   "name": "Eldorado Park Pond (Eldorado Park, Scottsdale, AZ)",
+   "type": "pond",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. Eldorado Park is at 2311 N. Miller Road, Scottsdale. The park is 60-plus acres and sits along the Indian Bend Wash.",
+   "area_acres": 60,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked in the cooler months (Scottsdale; north lake)"
+    },
+    {
+     "name": "Channel catfish, sunfish",
+     "stocking": "Present (Fishbrain and AZGFD)"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Eldorado Park Pond is an AZGFD Community Fishing pond in Scottsdale's Eldorado Park. AZGFD stocks Eldorado's north lake with trout in the cooler months, and Scottsdale's rehabilitation of the park's ponds was underway around 2024.",
+    "schedule": "Scottsdale says the north lake is stocked in the cooler months. Check the AZGFD schedule.",
+    "recent_plants": [],
+    "wild_fish": "Not documented in the sources used.",
+    "sources": [
+     {
+      "title": "AZGFD Scottsdale Community Fishing: Eldorado Pond",
+      "url": "https://www.azgfd.com/?p=3410"
+     },
+     {
+      "title": "City of Scottsdale: Fishing",
+      "url": "https://ww2.scottsdaleaz.gov/sports/fishing"
+     }
+    ]
+   },
+   "fishing_season_note": "AZGFD does not stock community lakes and ponds from June 25 to September 15 because of extreme heat (ABC15).",
+   "insect_ids": [
+    "chironomid",
+    "damselfly"
+   ],
+   "notes": [
+    "AZGFD gives the contact as Eldorado Park and Community Center, 480-312-2483.",
+    "Scottsdale says the park is open sunrise to 10:30 p.m.",
+    "A Scottsdale notice says the north lake and ballfields had restricted access until early fall 2024 during the Indian Bend Wash construction, so check current access.",
+    "Fishbrain's list puts Eldorado Park Pond on a catch-and-release-only regulation list, which conflicts with AZGFD's bag limits. Verify before you go.",
+    "Wanderlog describes the park as 60 acres with fishing lakes, playgrounds, lighted courts and trails connected to other Indian Bend Wash parks.",
+    "AZGFD's Scottsdale page lists 2 trout, 1 bass (13-inch minimum), 5 sunfish and 1 white amur (30-inch minimum). Scottsdale's own page gives a four-fish trout limit for the north lake. Confirm the posted rule before you go."
+   ],
+   "sources": [
+    {
+     "title": "AZGFD Scottsdale Community Fishing: Eldorado Pond",
+     "url": "https://www.azgfd.com/?p=3410"
+    },
+    {
+     "title": "City of Scottsdale: Fishing",
+     "url": "https://ww2.scottsdaleaz.gov/sports/fishing"
+    },
+    {
+     "title": "City of Scottsdale: Fishing & Boating",
+     "url": "https://scottsdaleaz.gov/outdoor-activities/fishing-boating"
+    },
+    {
+     "title": "City of Scottsdale: Eldorado Park",
+     "url": "https://www.scottsdaleaz.gov/parks/eldorado-park"
+    },
+    {
+     "title": "City of Scottsdale: Indian Bend Wash repair",
+     "url": "https://www.scottsdaleaz.gov/construction/project-list/indian-bend-wash-repair-lakes-irrigation"
+    },
+    {
+     "title": "Wanderlog: Eldorado Park",
+     "url": "https://wanderlog.com/place/details/163864/eldorado-park"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Still-water forage. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Weedy edges. Not sourced for this pond.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
     11,
     12,
     1,
