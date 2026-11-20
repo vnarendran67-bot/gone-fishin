@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 19,
+ "version": 20,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -11090,6 +11090,1219 @@ window.HATCH_DB = {
     10
    ],
    "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "cataract-lake-az",
+   "name": "Cataract Lake (Williams, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Wikipedia. Coordinates not set.",
+   "area_acres": 35,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked regularly spring through May 2026"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Tiger trout",
+     "stocking": "Present; caught in spring 2026"
+    },
+    {
+     "name": "Channel catfish, largemouth bass, black crappie, green sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with rainbows in spring 2026. Tiger trout present.",
+    "schedule": "Stocked 3-30, 4-06, 4-28, 5-12 and 5-19-2026, per Sportfishing Report.",
+    "recent_plants": [
+     {
+      "date": "3-30-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "4-06-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "4-28-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "5-12-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "5-19-2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Tiger trout present.",
+    "sources": [
+     {
+      "title": "Cataract Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/2085/cataract-lake.php"
+     },
+     {
+      "title": "Cataract Lake (Kaibab National Forest)",
+      "url": "https://www.fs.usda.gov/r03/kaibab/recreation/cataract-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Day use only, no overnight camping, per the Kaibab National Forest. Stocked rainbows regularly in spring and summer 2026.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Cataract Lake is a 35-acre reservoir on the outskirts of Williams near historic Route 66, per Sportfishing Report. It sits at about 6,800 feet, per Wikipedia.",
+    "The Kaibab National Forest says Cataract is open seasonally for day use only, and camping is not available.",
+    "AZGFD stocked rainbows at Cataract in March, April and May 2026, per Sportfishing Report.",
+    "Anglers caught tiger trout on worms, lures and flies in spring 2026, per AZGFD.",
+    "Anglers said smaller streamers and olive sculpin-style patterns imitated crayfish well in July 2025. Dragging a streamer worked better than a steady strip, per Sportsman's Warehouse.",
+    "Warmwater fishing for channel catfish, bluegill, black crappie and largemouth bass was good in July 2025, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Cataract Lake (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/2085/cataract-lake.php"
+    },
+    {
+     "title": "Cataract Lake (Kaibab National Forest)",
+     "url": "https://www.fs.usda.gov/r03/kaibab/recreation/cataract-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Crayfish",
+     "category": "crustacean",
+     "detail": "Smaller streamers and olive patterns imitate crayfish, per a July 2025 Sportsman's Warehouse angler.",
+     "basis": "sourced",
+     "source": {
+      "title": "Cataract Lake (Williams) (Sportsman's Warehouse)",
+      "url": "https://fishingreports.sportsmans.com/fishing-report/cataract-lake-williams/29458/"
+     }
+    },
+    {
+     "item": "Bluegill and black crappie",
+     "category": "baitfish",
+     "detail": "Warmwater fishing was good in July 2025, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "Kaibab Lake Fish Report, 7-24-2025 (AZGFD)",
+      "url": "https://www.utahfishreports.com/fish_reports/228188/kaibab-lake-report.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Cataract.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "kaibab-lake-az",
+   "name": "Kaibab Lake (Williams, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 6900,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from Sportfishing Report. Coordinates not set.",
+   "area_acres": 45,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked regularly in spring 2026"
+    },
+    {
+     "name": "Channel catfish, bluegill, black crappie, largemouth bass",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with rainbows in 2026. Low water limits boat access.",
+    "schedule": "Stocked 3-16, 4-06, 4-20 and 5-04-2026, per Sportfishing Report.",
+    "recent_plants": [
+     {
+      "date": "3-16-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "4-06-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "4-20-2026",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "5-04-2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Kaibab Lake (Sportfishing Report)",
+      "url": "https://www.sportfishingreport.com/lakes/2087/kaibab-lake.php"
+     },
+     {
+      "title": "Utah Fish Report (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/237421/the-lake-is-very-low-and-launching-a-boat-is-challenging.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Campgrounds close in winter. Low water in 2025 and 2026 made launching hard; check the ramp before going.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Kaibab Lake is a popular 45-acre recreational fishery near Williams at 6,900 feet, per Sportfishing Report.",
+    "Sportfishing Report says Kaibab doesn't offer trophy fish but gives reliable action in a beautiful setting, and it is easy to reach from Williams.",
+    "AZGFD stocked Kaibab with rainbows on March 16, April 6, April 20 and May 4 in 2026, per Sportfishing Report.",
+    "The lake was very low in April and July 2025, and in April and May 2026, which made boat launching challenging, per AZGFD.",
+    "The 2026 day-use area, boat launch and campgrounds reopened in late May 2026, with a 4-trout limit, per AZGFD.",
+    "Warmwater fishing for channel catfish, bluegill and black crappie is good in summer, per AZGFD.",
+    "Rainbows of 5 and 3 pounds were recorded there in June and October 2019, per Sportfishing Report."
+   ],
+   "sources": [
+    {
+     "title": "Kaibab Lake (Sportfishing Report)",
+     "url": "https://www.sportfishingreport.com/lakes/2087/kaibab-lake.php"
+    },
+    {
+     "title": "Utah Fish Report (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/237421/the-lake-is-very-low-and-launching-a-boat-is-challenging.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Crayfish, bluegill and minnows",
+     "category": "baitfish",
+     "detail": "Not documented for Kaibab. The warmwater panfish are present.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Kaibab.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "dogtown-lake-az",
+   "name": "Dogtown Lake (Williams, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6800,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked regularly"
+    },
+    {
+     "name": "Brown trout",
+     "stocking": "Present; caught in fall 2024"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish, black crappie",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with rainbows. Trout bite best with bottom baits in summer.",
+    "schedule": "Rainbows stocked week of April 1, 2024 and late September 2024, per AZGFD.",
+    "recent_plants": [
+     {
+      "date": "Week of 4-1-2024",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "Week of 9-23-2024",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Brown trout present.",
+    "sources": [
+     {
+      "title": "Try Arizona's Dogtown Reservoir Before Dog Days of Summer (Western Bass)",
+      "url": "https://westernbass.com/article/try-arizonas-dogtown-reservoir-before-dog-days-of-summer"
+     },
+     {
+      "title": "Dogtown Lake Fish Report, 5-27-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/238308/dogtown-lake-campground-now-open!.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Electric motors only. Stocked with rainbows, and warmwater species do well in summer, per AZGFD.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Dogtown Lake, south of Williams, is one of Arizona's trout hot spots, according to AZGFD's regional aquatics manager, per Western Bass.",
+    "In 2026 Dogtown was one of the Flagstaff-Williams waters AZGFD recommended for good high-country fishing.",
+    "Only boats with a single electric motor are allowed. Gas motors are banned, per AZGFD.",
+    "Special regulations allow two bass at least 13 inches and four trout, per AZGFD and Western Bass.",
+    "PowerBait and worms fished off the bottom have worked for trout, per AZGFD reports in 2023 and 2024.",
+    "In May 2026 Dogtown's campground reopened, and rainbows were to be stocked that week. Runoff made the water turbid in April 2026."
+   ],
+   "sources": [
+    {
+     "title": "Try Arizona's Dogtown Reservoir Before Dog Days of Summer (Western Bass)",
+     "url": "https://westernbass.com/article/try-arizonas-dogtown-reservoir-before-dog-days-of-summer"
+    },
+    {
+     "title": "Dogtown Lake Fish Report, 5-27-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/238308/dogtown-lake-campground-now-open!.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "PowerBait and worms fished on the bottom",
+     "category": "other",
+     "detail": "Produced trout in 2023 and 2024 reports, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "Dogtown Lake Fish Report, 9-1-2023 (AZGFD)",
+      "url": "https://longrangesportfishing.net/reports/204006/dogtown-lake-fishing-report.php"
+     }
+    },
+    {
+     "item": "Brown and rainbow trout feed",
+     "category": "other",
+     "detail": "Anglers caught rainbow and brown trout in late 2024, per AZGFD. Feed not named.",
+     "basis": "sourced",
+     "source": {
+      "title": "Ashurst Lake Fish Report, 11-28-2024 (AZGFD)",
+      "url": "https://sportfishingreport.com/fish_reports/219499/this-is-a-good-time-to-target-the-large-hold-over-trout-that-resid.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Dogtown.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "ashurst-lake-az",
+   "name": "Ashurst Lake (Flagstaff, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7100,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation from NorCal Fish Reports. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked regularly; stocked week before 5-27-2026 report"
+    },
+    {
+     "name": "Northern pike",
+     "stocking": "Present; state record for pike not from Ashurst"
+    },
+    {
+     "name": "Large holdover trout",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked regularly with rainbows. Reliable water levels.",
+    "schedule": "Stocked week before 5-27-2026, per AZGFD. Stocked 8-04-2025, per NorCal.",
+    "recent_plants": [
+     {
+      "date": "8-04-2025",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "Week before 5-27-2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Holdover trout and pike.",
+    "sources": [
+     {
+      "title": "Ashurst Lake (NorCal Fish Reports)",
+      "url": "https://www.norcalfishreports.com/lakes/992/ashurst-lake.php"
+     },
+     {
+      "title": "Ashurst Lake Fish Report, 5-27-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/238316/rainbow-trout-were-stocked-last-week.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout fishing is best in spring and early summer. Stocked regularly. Access closes at the first heavy snow, per AZGFD.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Ashurst Lake sits at 7,100 feet southeast of Flagstaff, and NorCal Fish Reports calls it one of northern Arizona's most consistent and accessible trout fisheries.",
+    "Its reliable water levels and frequent trout stocking make it one of the top fishing destinations in northern Arizona, per NorCal Fish Reports.",
+    "AZGFD recommended Ashurst in 2026 as one of the Flagstaff-Williams waters likely to give the best high-country fishing.",
+    "AZGFD said in November 2024 that large holdover trout were resident and a good target in late fall.",
+    "Forked Pine Campground sits on the shore, and the Forest Service says the lake has ample fishing and watersports.",
+    "Northern pike reached 6 pounds 8 ounces in September 2024, per NorCal Fish Reports."
+   ],
+   "sources": [
+    {
+     "title": "Ashurst Lake (NorCal Fish Reports)",
+     "url": "https://www.norcalfishreports.com/lakes/992/ashurst-lake.php"
+    },
+    {
+     "title": "Ashurst Lake Fish Report, 5-27-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/238316/rainbow-trout-were-stocked-last-week.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Northern pike",
+     "category": "baitfish",
+     "detail": "Pike recorded to 6 lb 8 oz in 2024, per NorCal Fish Reports.",
+     "basis": "sourced",
+     "source": {
+      "title": "Ashurst Lake (NorCal Fish Reports)",
+      "url": "https://www.norcalfishreports.com/lakes/992/ashurst-lake.php"
+     }
+    },
+    {
+     "item": "Large holdover trout feed",
+     "category": "other",
+     "detail": "Holdover trout are a late-fall target, per AZGFD. Feed not named.",
+     "basis": "sourced",
+     "source": {
+      "title": "Ashurst Lake Fish Report, 11-28-2024 (AZGFD)",
+      "url": "https://sportfishingreport.com/fish_reports/219499/this-is-a-good-time-to-target-the-large-hold-over-trout-that-resid.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Ashurst.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "frances-short-pond-az",
+   "name": "Frances Short Pond (Flagstaff, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked each spring; stocked week before 4-23-2026 report"
+    },
+    {
+     "name": "Largemouth bass",
+     "stocking": "Stocked in 2024-25"
+    },
+    {
+     "name": "Channel catfish, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked each spring. Low oxygen fish kill in 2025.",
+    "schedule": "Stocked spring 2024 and week before 4-23-2026, per AZGFD.",
+    "recent_plants": [
+     {
+      "date": "Week before 4-23-2026",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Frances Short Pond Fish Report, 4-23-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/237429/rainbow-trout-were-stocked-last-week.php"
+     },
+     {
+      "title": "Frances Short Report, 5-26-2024 (AZGFD)",
+      "url": "https://longrangesportfishing.net/reports/212232/frances-short-report.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Four trout daily. Fish kill in July 2025 from low oxygen. Stocked regularly in spring.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Frances Short Pond in Flagstaff is a city-owned pond that the City refilled in 2024 and fitted with new aeration, per AZGFD.",
+    "AZGFD stocked rainbows from its Page Springs and Canyon Creek hatcheries in spring 2024 and rated fishing great, per AZGFD.",
+    "A low dissolved-oxygen fish kill hit the pond on July 16, 2025, per AZGFD.",
+    "Anglers reported success with rainbows in May 2026 after stocking, per AZGFD.",
+    "The limit is four trout, two bass at least 13 inches, four channel catfish and five sunfish, per AZGFD.",
+    "Sportsman's Warehouse rated Frances Short Pond good in July 2025. The water was dirty, and it recommended dark and bright colors."
+   ],
+   "sources": [
+    {
+     "title": "Frances Short Pond Fish Report, 4-23-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/237429/rainbow-trout-were-stocked-last-week.php"
+    },
+    {
+     "title": "Frances Short Report, 5-26-2024 (AZGFD)",
+     "url": "https://longrangesportfishing.net/reports/212232/frances-short-report.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Worms, inline spinners and flies",
+     "category": "other",
+     "detail": "Anglers caught rainbows on these in November 2025, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "Ashurst Lake Fish Report, 11-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/233361/the-lake-is-low-and-the-boat-launch-is-challenging.php"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Frances Short Pond.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "marshall-lake-az",
+   "name": "Marshall Lake (Flagstaff, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Brook trout",
+     "stocking": "Stocked in years with enough water"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with brook trout in years with enough water. Very weedy in 2025.",
+    "schedule": "No schedule in sources.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Marshall Lake (Sportfishing Report)",
+      "url": "https://sportfishingreport.com/lakes/90903/marshall-lake.php"
+     },
+     {
+      "title": "Marshall Lake (Aztec Arizona)",
+      "url": "https://www.aztecnm.com/fourcorners/arizona/water/MarshallLake.html"
+     }
+    ]
+   },
+   "fishing_season_note": "Forest Road 128 opened to Marshall Lake in late May 2026. Stocked with brook trout, per Sportfishing Report.",
+   "insect_ids": [],
+   "notes": [
+    "Marshall Lake is a small marshy lake about 15 miles southeast of Flagstaff, full of coots and waterfowl, per the USFS and Aztec Arizona.",
+    "The lake has enough water to be stocked with trout by AZGFD in most years, per Aztec Arizona.",
+    "Sportfishing Report lists brook trout as the species there. Forest Road 128 opened to Marshall in late May 2026, per AZGFD.",
+    "AZGFD found the lake very weedy in 2025, which made fishing hard, per AZGFD.",
+    "Few sources describe the fishing. Check current conditions before going."
+   ],
+   "sources": [
+    {
+     "title": "Marshall Lake (Sportfishing Report)",
+     "url": "https://sportfishingreport.com/lakes/90903/marshall-lake.php"
+    },
+    {
+     "title": "Marshall Lake (Aztec Arizona)",
+     "url": "https://www.aztecnm.com/fourcorners/arizona/water/MarshallLake.html"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Waterfowl and invertebrates",
+     "category": "other",
+     "detail": "General marsh food. Not documented for Marshall Lake.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "kinnikinick-lake-az",
+   "name": "Kinnikinick Lake (Flagstaff, AZ)",
+   "type": "stillwater",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Brown trout",
+     "stocking": "Stocked in fall 2025"
+    },
+    {
+     "name": "Tiger trout",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Brown trout stocked in fall 2025. Tiger trout present.",
+    "schedule": "Week of 11/10 to 11/14/2025, per AZGFD.",
+    "recent_plants": [
+     {
+      "date": "Week of 11-10-2025",
+      "species": "Brown trout"
+     }
+    ],
+    "wild_fish": "Tiger trout present.",
+    "sources": [
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     },
+     {
+      "title": "Ashurst Lake Fish Report, 11-30-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/233361/the-lake-is-low-and-the-boat-launch-is-challenging.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Fall is good for brown and tiger trout, per AZGFD. Forest Road 125 reopened in spring 2026.",
+   "insect_ids": [],
+   "notes": [
+    "AZGFD stocked brown trout in Kinnikinick Lake in November 2025, per AZGFD's weekly stocking list.",
+    "AZGFD says fall is a good time of year to target brown and tiger trout at Kinnikinick.",
+    "Forest Road 125 to Kinnikinick reopened in spring 2026, per AZGFD.",
+    "AZGFD said the lake was full and turbid in 2025, and that water levels were good in 2024.",
+    "Few sources describe the hatches or the food base. Check current conditions before going."
+   ],
+   "sources": [
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    },
+    {
+     "title": "Ashurst Lake Fish Report, 11-30-2025 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/233361/the-lake-is-low-and-the-boat-launch-is-challenging.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Tiger and brown trout feed",
+     "category": "other",
+     "detail": "Not documented for Kinnikinick.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "city-reservoir-az",
+   "name": "City Reservoir (Flagstaff, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6900,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Stocked, most recently spring 2026"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked"
+    },
+    {
+     "name": "Largemouth bass, black crappie",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked catfish and rainbows. Recommended for 2026.",
+    "schedule": "Catfish stocked May 2026. Rainbow stocking in season.",
+    "recent_plants": [
+     {
+      "date": "Week before 5-27-2026",
+      "species": "Channel catfish"
+     }
+    ],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Fishing should be excellent this week (AZGFD, 5-27-2026)",
+      "url": "https://www.utahfishreports.com/fish_reports/238304/fishing-should-be-excellent-this-week!.php"
+     },
+     {
+      "title": "Fishing report (AZGFD, 4-23-2026)",
+      "url": "https://utahfishreports.com/fish_reports/237421/the-lake-is-very-low-and-launching-a-boat-is-challenging.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Access through Buckskinner Park. Channel catfish stocked in spring 2026. Closed for a time in 2025 due to wildfire concerns.",
+   "insect_ids": [],
+   "notes": [
+    "City Reservoir near Flagstaff was closed for a time in 2025 due to wildfire concerns, per AZGFD.",
+    "AZGFD said Buckskinner Park and reservoir access were open in April 2026.",
+    "AZGFD stocked channel catfish there in May 2026, and rainbows are stocked in the Flagstaff-Williams waters.",
+    "AZGFD recommended City Reservoir in 2026 as a high-country water likely to give good fishing.",
+    "Surface temperature was 69 F in late September 2025, per AZGFD.",
+    "AZGFD's regional report says the reservoir was full in late 2024."
+   ],
+   "sources": [
+    {
+     "title": "Fishing should be excellent this week (AZGFD, 5-27-2026)",
+     "url": "https://www.utahfishreports.com/fish_reports/238304/fishing-should-be-excellent-this-week!.php"
+    },
+    {
+     "title": "Fishing report (AZGFD, 4-23-2026)",
+     "url": "https://utahfishreports.com/fish_reports/237421/the-lake-is-very-low-and-launching-a-boat-is-challenging.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Channel catfish feed",
+     "category": "other",
+     "detail": "Stocked catfish eat prepared baits. Not documented in the sources.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "santa-fe-reservoir-az",
+   "name": "Santa Fe Reservoir (Flagstaff, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6900,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked; anglers catching trout in May 2026"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present; biting worms in fall 2025"
+    },
+    {
+     "name": "Largemouth bass and sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Trout and channel catfish present. Full in 2026.",
+    "schedule": "Stocked; schedule not in sources.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Santa Fe Reservoir (AZGFD, 4-23-2026)",
+      "url": "https://utahfishreports.com/fish_reports/237429/rainbow-trout-were-stocked-last-week.php"
+     },
+     {
+      "title": "Trout stockings return to desert CFP waters (AZGFD)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+     }
+    ]
+   },
+   "fishing_season_note": "Only boats with a single electric motor allowed. Full in spring 2026.",
+   "insect_ids": [],
+   "notes": [
+    "Santa Fe Reservoir is full in spring 2026, per AZGFD.",
+    "Only boats with a single electric motor are allowed on Santa Fe, per AZGFD.",
+    "Anglers caught trout there in May 2026, per AZGFD.",
+    "Channel catfish bit worms in September 2025, per AZGFD.",
+    "AZGFD recommended Santa Fe in 2026 as a high-country water likely to give good fishing."
+   ],
+   "sources": [
+    {
+     "title": "Santa Fe Reservoir (AZGFD, 4-23-2026)",
+     "url": "https://utahfishreports.com/fish_reports/237429/rainbow-trout-were-stocked-last-week.php"
+    },
+    {
+     "title": "Trout stockings return to desert CFP waters (AZGFD)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Worms",
+     "category": "other",
+     "detail": "Channel catfish bit worms in September 2025, per AZGFD.",
+     "basis": "sourced",
+     "source": {
+      "title": "Santa Fe Lake (AZGFD, 9-30-2025)",
+      "url": "https://utahfishreports.com/fish_reports/231213/frances-short-report.php"
+     }
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "jd-dam-lake-az",
+   "name": "J.D. Dam Lake (Williams, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6900,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Catch and release only"
+    },
+    {
+     "name": "Weeds and warmwater species",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "catch and release",
+    "summary": "Catch and release trout water with artificial lures and flies only.",
+    "schedule": "Stocking not documented in sources.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "J.D. Dam Fishing Report, 12-15-2025 (AZGFD)",
+      "url": "https://www.utahfishreports.com/fish_reports/234007/jd-dam-fishing-report.php"
+     },
+     {
+      "title": "J. D. Dam Lake (AZGFD, 4-23-2026)",
+      "url": "https://utahfishreports.com/fish_reports/237426/jd-is-full-from-recent-storms.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Catch and release only for trout. Artificial flies and lures only, single barbless hooks. Only single electric motors allowed.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "J.D. Dam Lake is catch and release only for trout. No trout may be kept, and only artificial flies and lures with single barbless hooks are allowed, per AZGFD.",
+    "Only boats with a single electric motor are permitted, and gas-powered motors are not allowed, per AZGFD.",
+    "The lake was very low and weedy in December 2025, per AZGFD. It was full after storms in April 2026.",
+    "AZGFD said JD Dam was full again in May 2026.",
+    "AZGFD's regulation summaries are the only source for J.D. Dam's current rules."
+   ],
+   "sources": [
+    {
+     "title": "J.D. Dam Fishing Report, 12-15-2025 (AZGFD)",
+     "url": "https://www.utahfishreports.com/fish_reports/234007/jd-dam-fishing-report.php"
+    },
+    {
+     "title": "J. D. Dam Lake (AZGFD, 4-23-2026)",
+     "url": "https://utahfishreports.com/fish_reports/237426/jd-is-full-from-recent-storms.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Weeds and small insects",
+     "category": "insect",
+     "detail": "Weedy shallows were noted in 2025. Insect species are not documented.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "whitehorse-lake-az",
+   "name": "Whitehorse Lake (Williams, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 6900,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Present"
+    },
+    {
+     "name": "Channel catfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "No stocking documented. Warmwater species present.",
+    "schedule": "No schedule in sources.",
+    "recent_plants": [],
+    "wild_fish": "Largemouth bass and warmwater fish.",
+    "sources": [
+     {
+      "title": "Whitehorse Lake Fish Report, 4-23-2026 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/237427/nice-largemouth-at-whitehorse-lake.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Campground and day use open in spring 2026. Largemouth bass present. Low water at times.",
+   "insect_ids": [],
+   "notes": [
+    "Whitehorse Lake near Williams had a nice largemouth caught there in April 2026, per AZGFD.",
+    "The campground and day use area were open in spring 2026, per AZGFD.",
+    "The lake was very low in late 2025, and it was just barely on the boat launch in April 2026, per AZGFD.",
+    "Fish were still being caught in cold weather in fall 2025, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Whitehorse Lake Fish Report, 4-23-2026 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/237427/nice-largemouth-at-whitehorse-lake.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Largemouth bass feed",
+     "category": "baitfish",
+     "detail": "Not documented for Whitehorse.",
+     "basis": "general"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "russel-tank-az",
+   "name": "Russel Tank (White Mountains area, AZ)",
+   "type": "reservoir",
+   "elevation_ft": 7000,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation is approximate and not from a source.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Trout",
+     "stocking": "Not stocked in late 2025"
+    }
+   ],
+   "stocking": {
+    "status": "not stocked",
+    "summary": "Not stocked late 2025. Low water and water-quality problems.",
+    "schedule": "Not stocked in late 2025.",
+    "recent_plants": [],
+    "wild_fish": "None documented.",
+    "sources": [
+     {
+      "title": "Fish Report for 12-15-2025 (AZGFD)",
+      "url": "https://utahfishreports.com/fish_reports/234010/lower-lake-mary-fishing-report.php"
+     },
+     {
+      "title": "Long Range Fish Report (AZGFD, June 2024)",
+      "url": "https://longrangesportfishing.net/reports/213694/frances-short-pond-has-been-refilled.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Not stocked in late 2025 due to low water and water-quality issues, per AZGFD.",
+   "insect_ids": [],
+   "notes": [
+    "AZGFD said Russel Tank would not be stocked in late 2025 because water was low and water quality had problems.",
+    "Access to Russel Tank was open in May 2024, per AZGFD.",
+    "Sources give little on the fish or hatches at Russel Tank. Check current conditions before going."
+   ],
+   "sources": [
+    {
+     "title": "Fish Report for 12-15-2025 (AZGFD)",
+     "url": "https://utahfishreports.com/fish_reports/234010/lower-lake-mary-fishing-report.php"
+    },
+    {
+     "title": "Long Range Fish Report (AZGFD, June 2024)",
+     "url": "https://longrangesportfishing.net/reports/213694/frances-short-pond-has-been-refilled.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
     5,
     6,
     9,
