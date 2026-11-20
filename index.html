@@ -83,6 +83,29 @@ a{color:var(--accent)}
 .src a:hover{background:var(--accent2);color:#fff}
 #unitBtn{background:rgba(255,255,255,.14)!important;border:1px solid rgba(255,255,255,.4)!important;border-radius:99px!important;padding:5px 12px!important}
 #unitBtn:hover{background:rgba(255,255,255,.26)!important}
+.tilegrid{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;margin-top:6px}
+.tile{aspect-ratio:1/1;border-radius:7px;border:0;font:inherit;font-size:11px;font-weight:700;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:transform .12s ease}
+.tile:hover{transform:scale(1.08);z-index:1}
+.tile.sel{outline:3px solid var(--gold);outline-offset:1px}
+.tile.lv0{background:#c9d8d1;color:#355046}
+.tile.lv1{background:#8fd0b2;color:#0f3d2e}
+.tile.lv2{background:#4fb08a}
+.tile.lv3{background:#1f8a64}
+.tile.lv4{background:#0f5c45}
+.tile.nodata{background:repeating-linear-gradient(45deg,#e8efec,#e8efec 4px,#dbe5e0 4px,#dbe5e0 8px);color:#5f7369}
+@media (prefers-color-scheme:dark){.tile.lv0{background:#2a3b34;color:#9fb5aa}.tile.nodata{background:repeating-linear-gradient(45deg,#15211c,#15211c 4px,#1c2b25 4px,#1c2b25 8px);color:#6d8278}}
+.legend{margin-top:10px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px}
+.lg{display:inline-block;width:14px;height:14px;border-radius:4px;margin-left:6px}
+.lg.lv0{background:#c9d8d1}.lg.lv1{background:#8fd0b2}.lg.lv2{background:#4fb08a}.lg.lv3{background:#1f8a64}.lg.lv4{background:#0f5c45}.lg.nodata{background:repeating-linear-gradient(45deg,#e8efec,#e8efec 3px,#dbe5e0 3px,#dbe5e0 6px)}
+.alert{border-radius:12px;padding:12px 14px;margin-bottom:14px;font-size:14px;border:1px solid}
+.alert.strong{background:rgba(181,71,58,.10);border-color:rgba(181,71,58,.35)}
+.alert.breezy{background:rgba(240,180,74,.14);border-color:rgba(240,180,74,.45)}
+table.cmp,table.bd{width:100%;border-collapse:collapse;font-size:14px}
+table.cmp th,table.cmp td,table.bd th,table.bd td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left}
+table.cmp td.win{color:var(--accent);font-weight:700}
+.jentry{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-bottom:8px}
+.jentry button{float:right}
+textarea{font:inherit}
 </style>
 </head>
 <body>
@@ -137,17 +160,58 @@ a{color:var(--accent)}
   <div id="saved" style="margin-top:10px"></div>
 </section>
 
+<section class="card" id="mapCard">
+  <h2>Fishing map by state</h2>
+  <div class="row" style="align-items:center">
+    <label style="flex:0 1 200px">Month
+      <select id="mapMonth" onchange="renderMap()"></select>
+    </label>
+    <p class="muted" style="flex:2 1 300px;margin:0">Each tile shows how many hatches the regional data expects that month. Click a state for details. This is hatch richness, not a fishing forecast.</p>
+  </div>
+  <div id="mapGrid" class="tilegrid"></div>
+  <div class="legend muted"><span class="lg lv0"></span>none expected <span class="lg lv1"></span>few <span class="lg lv2"></span>some <span class="lg lv3"></span>many <span class="lg lv4"></span>very many <span class="lg nodata"></span>no data yet</div>
+  <div id="mapDetail" class="muted" style="margin-top:10px"></div>
+</section>
+
 <div id="output" class="hidden">
+  <div id="windAlert"></div>
   <div class="grid2">
     <section class="card" id="conditions"></section>
     <section class="card" id="water"></section>
   </div>
   <section class="card" id="verdict"></section>
+  <section class="card" id="extras"></section>
   <section class="card" id="outlook"></section>
   <section class="card" id="hatches"></section>
   <section class="card" id="tips"></section>
   <section class="card src" id="sources"></section>
 </div>
+
+<section class="card" id="compareCard">
+  <h2>Compare two places</h2>
+  <p class="muted">Compares the forecast for the date above. Works up to 15 days ahead.</p>
+  <div class="row">
+    <label>Place A<select id="cmpA"></select></label>
+    <label>Place B<select id="cmpB"></select></label>
+    <button class="btn" onclick="runCompare()">Compare</button>
+  </div>
+  <div id="cmpOut" style="margin-top:10px"></div>
+</section>
+
+<section class="card" id="journalCard">
+  <h2>Fishing journal</h2>
+  <div class="grid2">
+    <label>Date<input id="jDate" type="date"></label>
+    <label>Water<input id="jWater" placeholder="e.g. Rose Canyon Lake"></label>
+    <label>Fish caught<input id="jCount" type="number" min="0" value="0"></label>
+    <label>Species<input id="jSpecies" placeholder="e.g. rainbow, brown"></label>
+    <label>Flies or lures<input id="jFlies" placeholder="e.g. size 16 Elk Hair Caddis"></label>
+    <label>Conditions<input id="jCond" placeholder="weather, water, hatch seen"></label>
+  </div>
+  <label style="margin-top:8px">Notes<textarea id="jNotes" rows="2" style="width:100%;padding:9px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit"></textarea></label>
+  <div class="row" style="margin-top:8px"><button class="btn" onclick="addJournal()">Save entry</button><button class="ghost" onclick="exportJournal()">Export CSV</button><span id="jMsg" class="muted"></span></div>
+  <div id="jList" style="margin-top:12px"></div>
+</section>
 
 </main>
 
@@ -597,6 +661,7 @@ async function runPlan(){
   // sources
   renderOutlook(place.lat, place.lon);
   $('sources').innerHTML = `Weather: ${esc(wxSource || 'unavailable')}. Water: USGS Water Services. Hatch data: regional guide pages and a 1986 Sonoran Desert study; see each entry. <b>Verify locally before a trip.</b>`;
+  if (window.afterPlan) window.afterPlan({ wx, lake, dateStr, win, habitat });
 }
 
 /* ---------- extras ---------- */
@@ -674,5 +739,6 @@ if (sp.get('lat') && sp.get('lon')) {
   runPlan();
 }
 </script>
+<script src="js/features.js"></script>
 </body>
 </html>
