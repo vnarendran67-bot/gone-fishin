@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 42,
+ "version": 43,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -6201,7 +6201,7 @@ window.HATCH_DB = {
     "Arizona"
    ],
    "id": "verde-river-az",
-   "name": "Verde River (Beasley Flat and Dead Horse, AZ)",
+   "name": "Verde River (Arizona)",
    "type": "stream",
    "elevation_ft": 3300,
    "species": [
@@ -6340,6 +6340,253 @@ window.HATCH_DB = {
     2,
     3,
     4
+   ],
+   "sections": [
+    {
+     "id": "tapco-beasley-flat",
+     "name": "TAPCO diversion to Beasley Flat",
+     "lat": null,
+     "lon": null,
+     "coords_note": "Coordinates not set for this section.",
+     "notes": [
+      "The Verde is the only river in Arizona with a Wild and Scenic designation. Congress designated 40.5 miles in 1984, and Beasley Flat marks the start of the protected stretch, per the Forest Service.",
+      "Childs to Horseshoe Reservoir is a 35-mile reach with a season listed as October through April, per the Arizona river guidebook. It is accessed by dirt road and runs through a wild river area.",
+      "AZGFD stocks the river weekly from Clarkdale to Camp Verde, per Arizona Fly Shop. Rockin' River Ranch on the lower river says nearby spots are stocked regularly from October through March.",
+      "Warmwater fishing dominates the lower river around Cottonwood. Sportfishing Report lists channel catfish, largemouth and smallmouth bass, carp, green sunfish, tui chub, flathead catfish and yellow perch.",
+      "The main flow comes from the Big Chino Aquifer and the East Fork Verde River, which runs from the Mogollon Rim. Hooked AZ says the upper reaches hold excellent smallmouth fishing.",
+      "Rockin' River Ranch says most rainbows caught there are wayward fish from upstream stocking at White Bridge or Tuzigoot. Most are caught while fishing for redeye and smallmouth bass.",
+      "Verde flows are seasonal, and the river can run high after storms. Check the flow and the stocking report before you fish."
+     ],
+     "sources": [
+      {
+       "title": "Verde River (USDA Forest Service)",
+       "url": "https://www.fs.usda.gov/r03/coconino/recreation/groups/verde-river"
+      },
+      {
+       "title": "Dead Horse Ranch State Park fishing (Arizona State Parks)",
+       "url": "https://azstateparks.com/dead-horse/on-the-water/fishing"
+      },
+      {
+       "title": "Verde River Beasley Flat to Horseshoe Reservoir (AZ Wildlife Conservation Strategy)",
+       "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/verde-river-beasley-flat-to-full-pool-horseshoe-reservoir"
+      },
+      {
+       "title": "Verde River TAPCO to Beasley Flat (AZ Wildlife Conservation Strategy)",
+       "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/verde-river-tapco-diversion-to-beasley-flat"
+      },
+      {
+       "title": "Fishing tips and upcoming events (AZGFD bulletin, 2025)",
+       "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+      },
+      {
+       "title": "Bass fishing is picking up (AZGFD bulletin, 2026)",
+       "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/40e0493"
+      }
+     ],
+     "species": [
+      {
+       "name": "Rainbow trout",
+       "stocking": "Stocked by AZGFD, put and take, fall through spring"
+      },
+      {
+       "name": "Smallmouth bass",
+       "stocking": "Established warmwater species"
+      },
+      {
+       "name": "Roundtail chub, desert sucker, Sonora sucker",
+       "stocking": "Native fish that persist without management"
+      },
+      {
+       "name": "Gila trout",
+       "stocking": "Native. AZGFD expects to stock Gila trout again in the fall, per Friends of the Verde River. Not confirmed for a specific stretch"
+      }
+     ],
+     "stocking": {
+      "status": "stocked (put and take)",
+      "summary": "AZGFD stocks trout on a put-and-take basis. The river from TAPCO diversion to Beasley Flat is intensively stocked, per AZ Wildlife Conservation Strategy.",
+      "schedule": "Rainbows are stocked at Dead Horse and at Camp Verde's Black Bridge from November through March. Gila trout restocking may happen in the fall, per Friends of the Verde River.",
+      "recent_plants": [
+       {
+        "date": "Week of November 17 to 21, 2025",
+        "species": "Rainbow trout (middle Verde)"
+       }
+      ],
+      "wild_fish": "Roundtail chub, desert sucker and Sonora sucker persist in the river without management. Smallmouth bass are present, including above Horseshoe Reservoir. Razorback suckers and Colorado pikeminnow have been stocked with little success.",
+      "sources": [
+       {
+        "title": "Verde River (USDA Forest Service)",
+        "url": "https://www.fs.usda.gov/r03/coconino/recreation/groups/verde-river"
+       },
+       {
+        "title": "Dead Horse Ranch State Park fishing (Arizona State Parks)",
+        "url": "https://azstateparks.com/dead-horse/on-the-water/fishing"
+       },
+       {
+        "title": "Verde River Beasley Flat to Horseshoe Reservoir (AZ Wildlife Conservation Strategy)",
+        "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/verde-river-beasley-flat-to-full-pool-horseshoe-reservoir"
+       },
+       {
+        "title": "Verde River TAPCO to Beasley Flat (AZ Wildlife Conservation Strategy)",
+        "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/verde-river-tapco-diversion-to-beasley-flat"
+       },
+       {
+        "title": "Fishing tips and upcoming events (AZGFD bulletin, 2025)",
+        "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3fc5fd7"
+       },
+       {
+        "title": "Bass fishing is picking up (AZGFD bulletin, 2026)",
+        "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/40e0493"
+       }
+      ]
+     },
+     "fishing_season_note": "The lower river fishes warmwater all year. Rockin' River Ranch stocking runs October through March, and Childs to Horseshoe Reservoir is listed for October to April.",
+     "insect_ids": [],
+     "forage": [
+      {
+       "item": "Smallmouth and largemouth bass",
+       "category": "baitfish",
+       "detail": "Warmwater predators in the river. Bass fishing is the main warm-season option.",
+       "basis": "sourced",
+       "source": {
+        "title": "Verde River, Cottonwood (Sportfishing Report)",
+        "url": "https://www.sportfishingreport.com/rivers/1522/verde-river.php"
+       }
+      },
+      {
+       "item": "Green sunfish and bluegill",
+       "category": "baitfish",
+       "detail": "Panfish that are part of the warmwater fishery.",
+       "basis": "sourced",
+       "source": {
+        "title": "Rockin' River Ranch fishing (Arizona State Parks)",
+        "url": "https://azstateparks.com/rockin-river/on-the-water/fishing"
+       }
+      },
+      {
+       "item": "Tui chub",
+       "category": "baitfish",
+       "detail": "Listed as a fish species in the river around Cottonwood.",
+       "basis": "sourced",
+       "source": {
+        "title": "Verde River, Cottonwood (Sportfishing Report)",
+        "url": "https://www.sportfishingreport.com/rivers/1522/verde-river.php"
+       }
+      },
+      {
+       "item": "Channel and flathead catfish",
+       "category": "other",
+       "detail": "Present in the lower river. Predators on small fish.",
+       "basis": "sourced",
+       "source": {
+        "title": "Rockin' River Ranch fishing (Arizona State Parks)",
+        "url": "https://azstateparks.com/rockin-river/on-the-water/fishing"
+       }
+      },
+      {
+       "item": "Hatch data",
+       "category": "insect",
+       "detail": "No Verde hatch chart is in the sources. Leave hatches blank until a source is found.",
+       "basis": "general"
+      }
+     ]
+    },
+    {
+     "id": "dead-horse-camp-verde",
+     "name": "Dead Horse Ranch to Camp Verde",
+     "lat": 34.4765,
+     "lon": -111.8007,
+     "coords_note": "Elevation not sourced. Coordinates from the USFS Beasley Flat picnic site page; verify on a map.",
+     "notes": [
+      "State Parks lists bass, catfish, and panfish, with occasional wayward trout, in the Rockin' River Ranch section near Camp Verde.",
+      "State Parks says this part of the Verde is one of central Arizona's most prolific river bass fisheries because of slow flows, cover, and baitfish.",
+      "USFS says rainbows are stocked upstream at Dead Horse and in Camp Verde at Black Bridge from November through March.",
+      "Verde River facility information says trout are stocked at Tuzigoot Bridge, the 10th Street bridge, and Dead Horse day use area in winter.",
+      "Dead Horse Ranch lagoons hold largemouth bass, rainbows, channel catfish, bluegill, green sunfish, and an occasional crappie.",
+      "AZGFD stocks channel catfish seasonally at Dead Horse, typically in warmer months.",
+      "AWCS describes the Beasley Flat to Horseshoe reach as high-priority habitat for native and sport fish, with roundtail chub and desert sucker persisting without management.",
+      "Razorback sucker and Colorado pikeminnow have been stocked in the reach with little success, according to AWCS."
+     ],
+     "sources": [
+      {
+       "title": "Beasley Flat picnic site (USFS)",
+       "url": "https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site"
+      },
+      {
+       "title": "Verde River facility information (AZ State Parks)",
+       "url": "https://azstateparks.com/verde-river/explore/facility-information"
+      }
+     ],
+     "species": [
+      {
+       "name": "Rainbow trout",
+       "stocking": "Stocked from November through March at Dead Horse, Tuzigoot and Black Bridge"
+      },
+      {
+       "name": "Smallmouth bass, largemouth bass, redeye bass",
+       "stocking": "Wild"
+      },
+      {
+       "name": "Channel and flathead catfish",
+       "stocking": "Wild and AZGFD-stocked catfish at Dead Horse lagoons"
+      },
+      {
+       "name": "Roundtail chub, bluegill, green sunfish",
+       "stocking": "Wild"
+      }
+     ],
+     "stocking": {
+      "status": "stocked",
+      "summary": "AZGFD stocks rainbow trout upstream at Dead Horse Ranch State Park and at Camp Verde's Black Bridge from November through March. State Parks says trout are also stocked at Tuzigoot Bridge and the 10th Street bridge.",
+      "schedule": "Stocked November through March (USFS). Winter releases come every week or two (AZGFD, 2011 article).",
+      "recent_plants": [
+       {
+        "date": "November through March",
+        "species": "Rainbow trout"
+       }
+      ],
+      "wild_fish": "Smallmouth, largemouth and redeye bass, channel and flathead catfish, bluegill, green sunfish, roundtail chub.",
+      "sources": [
+       {
+        "title": "Beasley Flat picnic site (USFS)",
+        "url": "https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site"
+       },
+       {
+        "title": "Verde River facility information (Arizona State Parks)",
+        "url": "https://azstateparks.com/verde-river/explore/facility-information"
+       },
+       {
+        "title": "Dead Horse on the water (Arizona State Parks)",
+        "url": "https://azstateparks.com/dead-horse/on-the-water"
+       },
+       {
+        "title": "Rockin' River Ranch fishing (Arizona State Parks)",
+        "url": "https://azstateparks.com/rockin-river/on-the-water/fishing"
+       }
+      ]
+     },
+     "fishing_season_note": "Fish the Verde between Dead Horse Ranch and Camp Verde. Winter is best for stocked trout, and bass and catfish are a year-round draw. There is no camping on this section, but Dead Horse is minutes away.",
+     "insect_ids": [
+      "caddis",
+      "terrestrial",
+      "chironomid"
+     ],
+     "forage": [
+      {
+       "item": "Baitfish (shiners, dace, young suckers)",
+       "category": "fish",
+       "detail": "Ample baitfish are noted by State Parks as a reason the bass fishery is strong.",
+       "basis": "sourced",
+       "source": "AZ State Parks, Rockin' River Ranch"
+      },
+      {
+       "item": "Caddisflies and midges",
+       "category": "insect",
+       "detail": "Winter trout feed on midges and caddis in slow water. Hatch timing is not sourced for this reach.",
+       "basis": "general",
+       "insect_id": "caddis"
+      }
+     ]
+    }
    ]
   },
   {
@@ -16926,131 +17173,6 @@ window.HATCH_DB = {
    ]
   },
   {
-   "id": "verde-river-dead-horse-camp-verde-az",
-   "name": "Verde River (Dead Horse Ranch to Camp Verde, AZ)",
-   "type": "river",
-   "elevation_ft": null,
-   "lat": 34.4765,
-   "lon": -111.8007,
-   "coords_note": "Elevation not sourced. Coordinates from the USFS Beasley Flat picnic site page; verify on a map.",
-   "area_acres": null,
-   "species": [
-    {
-     "name": "Rainbow trout",
-     "stocking": "Stocked from November through March at Dead Horse, Tuzigoot and Black Bridge"
-    },
-    {
-     "name": "Smallmouth bass, largemouth bass, redeye bass",
-     "stocking": "Wild"
-    },
-    {
-     "name": "Channel and flathead catfish",
-     "stocking": "Wild and AZGFD-stocked catfish at Dead Horse lagoons"
-    },
-    {
-     "name": "Roundtail chub, bluegill, green sunfish",
-     "stocking": "Wild"
-    }
-   ],
-   "stocking": {
-    "status": "stocked",
-    "summary": "AZGFD stocks rainbow trout upstream at Dead Horse Ranch State Park and at Camp Verde's Black Bridge from November through March. State Parks says trout are also stocked at Tuzigoot Bridge and the 10th Street bridge.",
-    "schedule": "Stocked November through March (USFS). Winter releases come every week or two (AZGFD, 2011 article).",
-    "recent_plants": [
-     {
-      "date": "November through March",
-      "species": "Rainbow trout"
-     }
-    ],
-    "wild_fish": "Smallmouth, largemouth and redeye bass, channel and flathead catfish, bluegill, green sunfish, roundtail chub.",
-    "sources": [
-     {
-      "title": "Beasley Flat picnic site (USFS)",
-      "url": "https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site"
-     },
-     {
-      "title": "Verde River facility information (Arizona State Parks)",
-      "url": "https://azstateparks.com/verde-river/explore/facility-information"
-     },
-     {
-      "title": "Dead Horse on the water (Arizona State Parks)",
-      "url": "https://azstateparks.com/dead-horse/on-the-water"
-     },
-     {
-      "title": "Rockin' River Ranch fishing (Arizona State Parks)",
-      "url": "https://azstateparks.com/rockin-river/on-the-water/fishing"
-     }
-    ]
-   },
-   "fishing_season_note": "Fish the Verde between Dead Horse Ranch and Camp Verde. Winter is best for stocked trout, and bass and catfish are a year-round draw. There is no camping on this section, but Dead Horse is minutes away.",
-   "insect_ids": [
-    "caddis",
-    "terrestrial",
-    "chironomid"
-   ],
-   "notes": [
-    "State Parks lists bass, catfish, and panfish, with occasional wayward trout, in the Rockin' River Ranch section near Camp Verde.",
-    "State Parks says this part of the Verde is one of central Arizona's most prolific river bass fisheries because of slow flows, cover, and baitfish.",
-    "USFS says rainbows are stocked upstream at Dead Horse and in Camp Verde at Black Bridge from November through March.",
-    "Verde River facility information says trout are stocked at Tuzigoot Bridge, the 10th Street bridge, and Dead Horse day use area in winter.",
-    "Dead Horse Ranch lagoons hold largemouth bass, rainbows, channel catfish, bluegill, green sunfish, and an occasional crappie.",
-    "AZGFD stocks channel catfish seasonally at Dead Horse, typically in warmer months.",
-    "AWCS describes the Beasley Flat to Horseshoe reach as high-priority habitat for native and sport fish, with roundtail chub and desert sucker persisting without management.",
-    "Razorback sucker and Colorado pikeminnow have been stocked in the reach with little success, according to AWCS."
-   ],
-   "sources": [
-    {
-     "title": "Beasley Flat picnic site (USFS)",
-     "url": "https://www.fs.usda.gov/r03/prescott/recreation/beasley-flat-picnic-site"
-    },
-    {
-     "title": "Verde River facility information (AZ State Parks)",
-     "url": "https://azstateparks.com/verde-river/explore/facility-information"
-    }
-   ],
-   "verified": false,
-   "states": [
-    "Arizona"
-   ],
-   "forage": [
-    {
-     "item": "Baitfish (shiners, dace, young suckers)",
-     "category": "fish",
-     "detail": "Ample baitfish are noted by State Parks as a reason the bass fishery is strong.",
-     "basis": "sourced",
-     "source": "AZ State Parks, Rockin' River Ranch"
-    },
-    {
-     "item": "Caddisflies and midges",
-     "category": "insect",
-     "detail": "Winter trout feed on midges and caddis in slow water. Hatch timing is not sourced for this reach.",
-     "basis": "general",
-     "insect_id": "caddis"
-    }
-   ],
-   "fish_months": [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12
-   ],
-   "best_months": [
-    11,
-    12,
-    1,
-    2,
-    3
-   ]
-  },
-  {
    "id": "sycamore-creek-az",
    "name": "Sycamore Creek (Verde River tributary, AZ)",
    "type": "stream",
@@ -24139,6 +24261,637 @@ window.HATCH_DB = {
     4,
     5,
     10
+   ]
+  },
+  {
+   "id": "santa-cruz-river-az",
+   "name": "Santa Cruz River (Tucson area, Pima County, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": 31.9338,
+   "lon": -110.9648,
+   "coords_note": "Coordinates from Fishbrain (31°56′1.8″N 110°57′53.1″W), placed in the Tucson-area reach. Elevation not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Channel catfish",
+     "stocking": "Present (Fishbrain)"
+    },
+    {
+     "name": "Common carp",
+     "stocking": "Present (Fishbrain)"
+    },
+    {
+     "name": "Green sunfish, bluegill",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "mixed",
+    "summary": "Mostly native and warm-water species. Fish depend on water being added to the river.",
+    "schedule": "Not stocked per the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "Fishbrain: Santa Cruz River",
+      "url": "https://fishbrain.com/fishing-waters/yuP0D295/santa-cruz-river"
+     },
+     {
+      "title": "KJZZ: fish thriving in the Santa Cruz River",
+      "url": "https://www.kjzz.org/2017-01-06/content-416380-fish-thriving-santa-cruz-river-near-tucson"
+     }
+    ]
+   },
+   "fishing_season_note": "Warm-water river. Flows depend on reclaimed water discharge near Tucson, so check conditions before you go.",
+   "insect_ids": [
+    "terrestrial",
+    "caddis",
+    "damselfly"
+   ],
+   "notes": [
+    "Fishbrain lists channel catfish, common carp and green sunfish as the most common catches on the Santa Cruz in Pima County.",
+    "KJZZ reports fish populations were recovering in the river near Tucson, with surveyors optimistic they would keep growing as long as water is added.",
+    "Tucson Water began discharging reclaimed water into the Santa Cruz in June 2019, per the Pima County library. Flow near Tucson now depends largely on that discharge.",
+    "Fishbrain shows the Santa Cruz as a popular catfish and carp water near South Tucson and Sahuarita.",
+    "Flow depends on reclaimed water discharge. Check Tucson Water and AZGFD before going."
+   ],
+   "sources": [
+    {
+     "title": "Fishbrain: Santa Cruz River",
+     "url": "https://fishbrain.com/fishing-waters/yuP0D295/santa-cruz-river"
+    },
+    {
+     "title": "KJZZ: fish thriving in the Santa Cruz River",
+     "url": "https://www.kjzz.org/2017-01-06/content-416380-fish-thriving-santa-cruz-river-near-tucson"
+    },
+    {
+     "title": "Pima County Library: Santa Cruz River",
+     "url": "https://www.library.pima.gov/content/santa-cruz-river/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Hoppers and beetles along the banks in summer. Not sourced for this river.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Riffles where there is flow. Not sourced for this river.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    3,
+    4,
+    5,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "agua-fria-river-az",
+   "name": "Agua Fria River (Maricopa and Yavapai counties, AZ)",
+   "type": "stream",
+   "elevation_ft": 2150,
+   "lat": 34.013,
+   "lon": -112.1645,
+   "coords_note": "Coordinates from Fishbrain (34°00′46.7″N 112°09′52.3″W). Elevation 2,150 feet along the canyon per BLM.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Present (Fishbrain)"
+    },
+    {
+     "name": "Channel catfish, bluegill",
+     "stocking": "Present (Fishbrain)"
+    },
+    {
+     "name": "White bass",
+     "stocking": "Present in the river just upstream of Lake Pleasant (AZGFD)"
+    },
+    {
+     "name": "Native fish",
+     "stocking": "Present in the river and its tributaries (BLM)"
+    }
+   ],
+   "stocking": {
+    "status": "mixed",
+    "summary": "Intermittent river. Mostly dry near Phoenix, with flow in the canyon and above Lake Pleasant.",
+    "schedule": "Not stocked per the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "Wikipedia (mirror): Agua Fria River",
+      "url": "https://en.wikipedia-on-ipfs.org/wiki/Agua_Fria_River"
+     },
+     {
+      "title": "EDF: River of the Month, Agua Fria",
+      "url": "https://www.edf.org/sites/default/files/Agua%20Fria_FINAL_121412_1.pdf"
+     }
+    ]
+   },
+   "fishing_season_note": "Flow is seasonal and often absent near Phoenix. Check the river before you go. Lake Pleasant is the best-known bass and white bass water nearby.",
+   "insect_ids": [
+    "caddis",
+    "damselfly",
+    "terrestrial"
+   ],
+   "notes": [
+    "The Agua Fria is an intermittent stream of about 120 miles that flows generally south from east-northeast of Prescott.",
+    "Most of it is usually dry where it reaches the Phoenix area, according to the Environmental Defense Fund.",
+    "The river runs through Agua Fria National Monument, which covers about 71,000 acres. BLM says native fish live in the river and its tributaries.",
+    "AZGFD lists white bass in Lake Pleasant and in the Agua Fria just upstream of the lake. Fishbrain lists largemouth bass, channel catfish and bluegill as the most popular catches.",
+    "The river's canyon is called Black Canyon before it flows into Lake Pleasant, per Natural Atlas.",
+    "Intermittent flow. Check AZGFD and BLM for access before going."
+   ],
+   "sources": [
+    {
+     "title": "Wikipedia (mirror): Agua Fria River",
+     "url": "https://en.wikipedia-on-ipfs.org/wiki/Agua_Fria_River"
+    },
+    {
+     "title": "EDF: River of the Month, Agua Fria",
+     "url": "https://www.edf.org/sites/default/files/Agua%20Fria_FINAL_121412_1.pdf"
+    },
+    {
+     "title": "BLM: Agua Fria River, Agua Fria National Monument",
+     "url": "https://www.blm.gov/node/100599"
+    },
+    {
+     "title": "AZGFD: illegal fish movement bulletin",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/3d57a31"
+    },
+    {
+     "title": "Fishbrain: Agua Fria River",
+     "url": "https://fishbrain.com/fishing-waters/HtpXDiaV/agua-fria-river"
+    },
+    {
+     "title": "Natural Atlas: Agua Fria River",
+     "url": "https://naturalatlas.com/rivers/agua-fria-827463"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Riffles where there is flow. Not sourced for this river.",
+     "basis": "general",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Along the banks in summer.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "id": "big-bonito-creek-az",
+   "name": "Big Bonito Creek (Apache County, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": 33.7304,
+   "lon": -109.7182,
+   "coords_note": "Coordinates from Fishbrain (33°43′49.2″N 109°43′5.5″W). Not the same stream as Bonita Creek near Safford. Elevation not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Stream-bred trout",
+     "stocking": "Wild per Perfect Fly Store; not confirmed by AZGFD for this creek"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "Trout stream on the White Mountain Apache lands. A special tribal permit is required.",
+    "schedule": "Not stocked per the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "Perfect Fly Store: Big Bonito Creek",
+      "url": "https://perfectflystore.com/?p=7479"
+     },
+     {
+      "title": "Fishbrain: Big Bonito Creek",
+      "url": "https://fishbrain.com/fishing-waters/GzwbhCTC/big-bonito-creek"
+     }
+    ]
+   },
+   "fishing_season_note": "High-elevation stream. Best in late spring through early fall. Hard access; plan for hiking.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial",
+    "bwo"
+   ],
+   "notes": [
+    "Perfect Fly Store describes Big Bonito Creek as a relatively high-elevation trout stream with cold, clear water and plenty of stream-bred trout, flowing through the Big Bonito Prairie.",
+    "Perfect Fly Store says a special permit from the Apache Tribe is required to fish it, and that the creek is hard to reach and needs hiking.",
+    "Big Bonito flows into the Big Black River. Its tributaries include Little Bonito Creek, which is catch-and-release only.",
+    "The Fish and Wildlife Service received a grant to replace a barrier on Big Bonito Creek to support Apache trout recovery.",
+    "Fishbrain lists the creek in Apache County and reports it as a brown trout water.",
+    "A special permit from the Apache Tribe is required. Check the permit before you go."
+   ],
+   "sources": [
+    {
+     "title": "Perfect Fly Store: Big Bonito Creek",
+     "url": "https://perfectflystore.com/?p=7479"
+    },
+    {
+     "title": "Fishbrain: Big Bonito Creek",
+     "url": "https://fishbrain.com/fishing-waters/GzwbhCTC/big-bonito-creek"
+    },
+    {
+     "title": "Fishbrain: Little Bonito Creek",
+     "url": "https://fishbrain.com/fishing-waters/PwPAns7m/little-bonito-creek"
+    },
+    {
+     "title": "NFWF grant: Big Bonito Creek barrier",
+     "url": "https://nfwf.org/grants/grants-library/profile?egid=66316"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Hoppers and beetles on the banks in summer.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "bonita-creek-safford-az",
+   "name": "Bonita Creek (near Safford, Graham County, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. Flows south into the Gila River northeast of Safford.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Native fishes (Gila topminnow, roundtail chub, longfin dace, speckled dace, desert sucker)",
+     "stocking": "Native; managed for native fish"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "Native-fish stream and Gila River tributary. Not a sport trout fishery in the sources used.",
+    "schedule": "Not stocked. Green sunfish were removed from closed systems in southern Arizona (BLM 2023).",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "USBR: Bonita Creek renovation report",
+      "url": "https://www.usbr.gov/lc/phoenix/biology/azfish/pdf/BonitaCreekRenovationReport.pdf"
+     },
+     {
+      "title": "AZGFD AWCS: Bonita Creek",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/bonita-creek-bonita-creek"
+     }
+    ]
+   },
+   "fishing_season_note": "Native-fish water. Fishing rules are the statewide ones. Check AZGFD for current rules.",
+   "insect_ids": [
+    "terrestrial",
+    "caddis"
+   ],
+   "notes": [
+    "Bonita Creek is a south-flowing tributary of the Gila River northeast of Safford.",
+    "AZGFD describes Bonita Creek as a large system that supports populations of Gila topminnow, roundtail chub and other native fishes.",
+    "BLM lists federally endangered Gila chub and Gila topminnow among its native fish.",
+    "Upstream of Safford, the Gila and Bonita are both in the Gila Box Riparian area, which BLM manages.",
+    "Native fish are protected. Check AZGFD for species rules before you go."
+   ],
+   "sources": [
+    {
+     "title": "USBR: Bonita Creek renovation report",
+     "url": "https://www.usbr.gov/lc/phoenix/biology/azfish/pdf/BonitaCreekRenovationReport.pdf"
+    },
+    {
+     "title": "AZGFD AWCS: Bonita Creek",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/bonita-creek-bonita-creek"
+    },
+    {
+     "title": "BLM: Bonita Creek fish removal",
+     "url": "https://blm.gov/blog/2023-05-23/successful-mechanical-removal-green-sunfish-closed-systems-southern-arizona"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    },
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "lake-havasu-topock-az",
+   "name": "Lake Havasu and Topock Marsh (Colorado River, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. Topock Marsh sits along I-40 at Topock; Lake Havasu lies on the Colorado River border.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass",
+     "stocking": "Found across Lake Havasu and Topock Marsh"
+    },
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Lake Havasu, per AZ State Parks"
+    },
+    {
+     "name": "Striped bass",
+     "stocking": "Lake Havasu, per Fishbrain"
+    },
+    {
+     "name": "Channel and flathead catfish",
+     "stocking": "Lake Havasu, per AZ State Parks"
+    },
+    {
+     "name": "Crappie, carp, bluegill",
+     "stocking": "Topock Marsh"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Colorado River impoundment with a marsh section at Topock. Warm-water fishing all year.",
+    "schedule": "Colorado River trout are managed as an intensive rainbow fishery (AZGFD).",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "AZ State Parks: Lake Havasu fishing",
+      "url": "https://azstateparks.com/lake-havasu/on-the-water/fishing"
+     },
+     {
+      "title": "AZ State Parks: fishing in Arizona",
+      "url": "https://azstateparks.com/fishing-in-arizona"
+     }
+    ]
+   },
+   "fishing_season_note": "Lake Havasu is open all year. Topock Marsh fishes best in the cooler months. An Arizona license is required.",
+   "insect_ids": [
+    "damselfly",
+    "chironomid",
+    "caddis"
+   ],
+   "notes": [
+    "Lake Havasu is a Colorado River impoundment over 19,000 acres, according to AZ State Parks, and is loaded with bass and catfish.",
+    "AZ State Parks calls Lake Havasu arguably the best smallmouth bass fishing in Arizona, with rocky shorelines and submerged rockpiles.",
+    "AZ State Parks says the smallmouth bite can heat up in winter, with windswept banks near swift drop-offs.",
+    "AZ State Parks says the relatively unrestricted shoreline makes shore fishing for largemouth bass the best in Arizona.",
+    "Fish and Wildlife Service says Topock Marsh has modest amounts of bass, crappie, catfish and carp. Three free boat launches serve the marsh: North Dike, Five Mile Landing and Catfish Paradise.",
+    "The refuge boat launches do not provide access to the Colorado River channel. Levee Road from Barrackman Road is the common shore access.",
+    "AZGFD plans for the Colorado River from Davis Dam to Lake Havasu to be managed for an intensive rainbow trout fishery, smallmouth bass and striped bass.",
+    "Arizona license required for anglers 10 and older. Some coves are closed; watch the posted signs."
+   ],
+   "sources": [
+    {
+     "title": "AZ State Parks: Lake Havasu fishing",
+     "url": "https://azstateparks.com/lake-havasu/on-the-water/fishing"
+    },
+    {
+     "title": "AZ State Parks: fishing in Arizona",
+     "url": "https://azstateparks.com/fishing-in-arizona"
+    },
+    {
+     "title": "FWS: Havasu Refuge fishing",
+     "url": "https://www.fws.gov/locations/havasu-national-wildlife-refuge/fishing"
+    },
+    {
+     "title": "FWS: Havasu Refuge activities",
+     "url": "https://www.fws.gov/refuge/havasu/visit-us/activities"
+    },
+    {
+     "title": "AZGFD AWCS: Davis Dam to Lake Havasu",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/colorado-river-and-associated-backwaters-davis-dam-to-lake-havasu"
+    },
+    {
+     "title": "Fishbrain: Topock",
+     "url": "https://fishbrain.com/cities/us/az/topock"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Along weedy shorelines. Not sourced for this water.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    },
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Slow, warm backwaters. Not sourced for this water.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "best_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4
+   ],
+   "sections": [
+    {
+     "id": "topock-marsh",
+     "name": "Topock Marsh",
+     "lat": null,
+     "lon": null,
+     "coords_note": "Coordinates not sourced. Access via North Dike, Five Mile Landing, Catfish Paradise or Levee Road.",
+     "notes": [
+      "Topock Marsh has modest amounts of bass, crappie, catfish and carp, according to Fish and Wildlife Service.",
+      "Three free boat launches serve the marsh: North Dike, Five Mile Landing and Catfish Paradise.",
+      "North Dike is also a shoreline fishing spot and the point where water diverted from the Colorado enters the marsh.",
+      "South Dike is about a quarter-mile hike into a water control structure, per the Fish and Wildlife Service.",
+      "Levee Road follows the Colorado River to a turnaround near Topock Marina and the I-40 bridge."
+     ],
+     "sources": [
+      {
+       "title": "FWS: Havasu Refuge fishing",
+       "url": "https://www.fws.gov/locations/havasu-national-wildlife-refuge/fishing"
+      },
+      {
+       "title": "FWS: Havasu Refuge activities",
+       "url": "https://www.fws.gov/refuge/havasu/visit-us/activities"
+      }
+     ],
+     "species": [
+      {
+       "name": "Largemouth bass, crappie, catfish, carp",
+       "stocking": "Present (FWS)"
+      }
+     ],
+     "insect_ids": [
+      "damselfly",
+      "chironomid"
+     ],
+     "forage": [],
+     "fishing_season_note": "Cooler months are best. The marsh is less productive in summer heat."
+    },
+    {
+     "id": "lake-havasu",
+     "name": "Lake Havasu",
+     "lat": null,
+     "lon": null,
+     "coords_note": "Coordinates not sourced.",
+     "notes": [
+      "AZ State Parks calls Lake Havasu arguably the best smallmouth bass fishing in Arizona.",
+      "AZ State Parks says the smallmouth can be most active in winter, around windswept banks near swift drop-offs.",
+      "AZ State Parks says the shore fishing for largemouth bass is the best in Arizona.",
+      "Channel and flathead catfish live in the lake, according to AZ State Parks."
+     ],
+     "sources": [
+      {
+       "title": "AZ State Parks: Lake Havasu fishing",
+       "url": "https://azstateparks.com/lake-havasu/on-the-water/fishing"
+      },
+      {
+       "title": "AZ State Parks: fishing in Arizona",
+       "url": "https://azstateparks.com/fishing-in-arizona"
+      }
+     ],
+     "species": [
+      {
+       "name": "Smallmouth, largemouth and striped bass; channel and flathead catfish",
+       "stocking": "Present"
+      }
+     ],
+     "insect_ids": [
+      "damselfly",
+      "chironomid",
+      "caddis"
+     ],
+     "forage": [],
+     "fishing_season_note": "Open all year. Smallmouth winter fishing is strong on windswept banks."
+    }
    ]
   }
  ]

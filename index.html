@@ -126,6 +126,7 @@ textarea{font:inherit}
     <button class="btn" onclick="searchPlace()">Search</button>
   </div>
   <p class="muted" id="placeMsg"></p>
+  <label id="sectionWrap" class="hidden">Section of this water<select id="section"></select></label>
   <ul id="results" class="results"></ul>
   <details style="margin-top:8px">
     <summary class="muted">Enter coordinates instead</summary>
@@ -190,7 +191,7 @@ textarea{font:inherit}
 
 </main>
 
-<script src="data/hatches.js?v=9"></script>
+<script src="data/hatches.js?v=10"></script>
 <script>
 const DB = window.HATCH_DB;
 const $ = id => document.getElementById(id);
@@ -270,6 +271,7 @@ function pickResult(i){
   // match a known lake by name
   const match = DB.lakes.find(l => h.name.toLowerCase().includes(l.name.split(' (')[0].toLowerCase().split(' lake')[0]));
   if (match) { $('habitat').value = 'stillwater'; $('placeMsg').textContent += ` Matched known lake: ${match.name.split(' (')[0]}.`; }
+  fillSections(findLake({ name: h.name }));
 }
 // Find the US state for a lat/lon (saved places and hand-typed coordinates have none)
 const STATE_CACHE = {};
@@ -475,6 +477,21 @@ function findLake(p){
   if (n.length < 4) return null;
   return DB.lakes.find(l => { const k = l.name.split(' (')[0].toLowerCase(); return n.includes(k) || k.includes(n); }) || null;
 }
+// Sectioned waters (big rivers, multi-part lakes) list their parts in the section picker.
+// applySection merges the chosen part's own notes, coordinates and species over the parent water.
+function fillSections(l){
+  const wrap = $('sectionWrap'), sel = $('section');
+  if (!wrap || !sel) return;
+  if (!l || !l.sections || !l.sections.length) { wrap.classList.add('hidden'); sel.innerHTML = ''; return; }
+  sel.innerHTML = '<option value="">Whole water</option>' + l.sections.map(s => `<option value="${esc(s.id)}">${esc(s.name)}</option>`).join('');
+  wrap.classList.remove('hidden');
+}
+function applySection(l, sid){
+  if (!l || !l.sections || !sid) return l;
+  const s = l.sections.find(x => x.id === sid);
+  if (!s) return l;
+  return { ...l, ...s, id: l.id, name: l.name.split(' (')[0] + ' · ' + s.name, sections: l.sections, sectionId: s.id };
+}
 async function runPlan(){
   if (!place) {
     const lat = parseFloat($('lat').value), lon = parseFloat($('lon').value);
@@ -497,7 +514,7 @@ async function runPlan(){
 
   const [mm, dd] = [parseInt(dateStr.slice(5,7)), parseInt(dateStr.slice(8,10))];
   const month = parseInt(dateStr.slice(5,7));
-  const lake = findLake(place);
+  const lake = applySection(findLake(place), $('section') ? $('section').value : '');
   const habitat = place.habitat;
 
   // weather
@@ -727,6 +744,6 @@ if (sp.get('lat') && sp.get('lon')) {
   runPlan();
 }
 </script>
-<script src="js/features.js?v=9"></script>
+<script src="js/features.js?v=10"></script>
 </body>
 </html>
