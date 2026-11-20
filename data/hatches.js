@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 12,
+ "version": 13,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -4649,15 +4649,19 @@ window.HATCH_DB = {
    "species": [
     {
      "name": "Cutthroat trout",
-     "stocking": "Stocked by Utah DWR. Schedule not confirmed for 2026. Sources name two cutthroat strains (Colorado River and Bear Lake), so the strain is not settled."
+     "stocking": "Stocked by Utah DWR. Several strains are listed, including Bonneville, Colorado River and Bear Lake cutthroat, so the strain is not settled."
     },
     {
      "name": "Rainbow trout",
-     "stocking": "Stocked by Utah DWR in spring, along with kokanee"
+     "stocking": "Stocked by Utah DWR, mostly in fall"
     },
     {
      "name": "Kokanee salmon",
-     "stocking": "Stocked by Utah DWR in spring. Kokanee were first introduced in 1937 and have been restocked since."
+     "stocking": "Stocked by Utah DWR in spring. First introduced in 1937."
+    },
+    {
+     "name": "Tiger trout and brook trout",
+     "stocking": "Listed on a regional angler site. Not confirmed in DWR stocking records."
     }
    ],
    "fishing_season_note": "Ice-off in late April and early May is a known season. Fall fishing runs mid-August through late September.",
@@ -4803,8 +4807,24 @@ window.HATCH_DB = {
    "stocking": {
     "status": "stocked, with native fish",
     "summary": "Mostly stocked. Cutthroat, rainbow and kokanee are all stocked by Utah DWR. Native Utah chub and Utah sucker are wild, and walleye were illegally introduced. Natural reproduction of the stocked trout is not documented for this reservoir.",
-    "schedule": "Stocking is in spring. In 2025, about 400,000 kokanee and rainbow trout went in between March 4 and June 4. Earlier, in 2013, DWR planted 400,000 eight-inch rainbow, 600,000 eight-inch cutthroat and 400,000 kokanee. No month-by-month 2026 schedule was found.",
+    "schedule": "Kokanee are planted in April, and rainbow in the fall, according to the dated plant list. In 2025, about 400,000 kokanee and rainbow went in between March 4 and June 4. In 2026, KPCW reported Strawberry took extra fish from other drought-affected lakes.",
     "recent_plants": [
+     {
+      "date": "4-29-2026",
+      "species": "Kokanee salmon"
+     },
+     {
+      "date": "4-16-2026",
+      "species": "Kokanee salmon"
+     },
+     {
+      "date": "10-21-2025",
+      "species": "Rainbow trout"
+     },
+     {
+      "date": "10-08-2025",
+      "species": "Rainbow trout (two plants)"
+     },
      {
       "date": "March 4 to June 4, 2025",
       "species": "Kokanee and rainbow trout (about 400,000)"
@@ -4814,7 +4834,7 @@ window.HATCH_DB = {
       "species": "Rainbow trout (400,000), cutthroat (600,000), kokanee (400,000)"
      }
     ],
-    "wild_fish": "Utah chub and Utah sucker are native and present in the reservoir. Walleye were illegally introduced, and DWR asks anglers to report any walleye they catch.",
+    "wild_fish": "Utah chub and Utah sucker are native and present. Walleye were illegally introduced, and DWR asks anglers to report any walleye they catch. Wild fish are not separately documented for the stocked trout.",
     "sources": [
      {
       "title": "Utah County lakes and rivers stocked with fish for the summer (Herald Extra)",
@@ -4831,6 +4851,14 @@ window.HATCH_DB = {
      {
       "title": "Want to catch a big fish? 3 Utah lakes (Utah DWR)",
       "url": "https://wildlife.utah.gov/wildlife-news/118-big-game/658-deer-unit-boundaries.html"
+     },
+     {
+      "title": "Strawberry Reservoir plant table (NorCal Fish Reports)",
+      "url": "https://www.norcalfishreports.com/lakes/922/strawberry-reservoir.php"
+     },
+     {
+      "title": "Anglers, get out and fish while you can, before Utah's water levels dwindle (KPCW)",
+      "url": "https://www.kpcw.org/state-regional/2026-05-12/anglers-get-out-and-fish-while-you-can-before-utahs-water-levels-dwindle"
      }
     ]
    }
@@ -4861,15 +4889,15 @@ window.HATCH_DB = {
    ],
    "stocking": {
     "status": "stocked, with wild browns",
-    "summary": "The Silverthorne tailwater is stocked with rainbow. Browns are wild and self-sustaining. Private landowner stocking and pellet feeding upstream have been questioned in CPW reports.",
-    "schedule": "Stocked rainbow are fingerlings (3 to 4 inches) and brood fish (14 inches or longer). The exact schedule is in the CPW stocking report, and the 2018 CPW stocking records list plants in several months.",
+    "summary": "The Silverthorne tailwater is stocked with rainbow. Browns are wild and self-sustaining. Private landowner stocking and pellet feeding upstream have been questioned in CPW reports. CPW's 2025 report links private stocking and pellet feeding to gill-lice infestation in the lower river.",
+    "schedule": "Stocked rainbow are fingerlings (3 to 4 inches) and brood fish (14 inches or longer). The exact schedule is in the CPW stocking report, and the 2018 CPW stocking records list plants in several months. The CPW 2018 Blue River report lists tailwater plants by date, but the excerpt is too garbled to transcribe. Use the CPW stocking report for current dates.",
     "recent_plants": [
      {
       "date": "2018 stocking records",
       "species": "Rainbow trout, fingerling and brood sizes (CPW record)"
      }
     ],
-    "wild_fish": "Brown trout are wild. CPW's fall 2018 survey found browns made up 98 percent of trout biomass. Spring surveys showed steep declines and more PIT-tagged rainbows from private stocking.",
+    "wild_fish": "Brown trout are wild. CPW's fall 2018 survey found browns made up 98 percent of trout biomass. Spring surveys showed steep declines and more PIT-tagged rainbows from private stocking. CPW's survey also documented the first confirmed presence of mountain whitefish in the Blue River.",
     "sources": [
      {
       "title": "Middle Blue River stocking history (Cutthroat Anglers)",
@@ -4882,6 +4910,10 @@ window.HATCH_DB = {
      {
       "title": "Blue River (CPW body of water)",
       "url": "https://cpw.state.co.us/body-of-water/blue-river"
+     },
+     {
+      "title": "CPW confirms severe gill lice infestation in lower Blue River (Mid-Current)",
+      "url": "https://midcurrent.com/2026/01/12/cpw-confirms-severe-gill-lice-infestation-in-lower-blue-river-linked-to-private-stocking/"
      }
     ]
    },
@@ -4995,7 +5027,7 @@ window.HATCH_DB = {
    "stocking": {
     "status": "mixed, mostly wild",
     "summary": "Above the impoundments the river is mostly wild. Browns and cutthroat both reproduce. Utah DWR has stocked rainbow at the dams.",
-    "schedule": "The only dated record found is a 2009 DWR list with rainbow planted in November at the Logan River 1st and 2nd dams. The 2026 schedule was not found.",
+    "schedule": "No 2026 plant record for the Logan River was found. The Logan Hatchery is approved to produce Bear Lake cutthroat and rainbow trout (2026 fish health list). The 2009 DWR list shows November plants at the Logan River dams.",
     "recent_plants": [
      {
       "date": "November 2009",
@@ -5019,6 +5051,10 @@ window.HATCH_DB = {
      {
       "title": "Cutthroat trout conservation success (Utah DWR)",
       "url": "https://wildlife.utah.gov/news/wildlife-blog/1112-cutthroat-trout-conservation-success.html"
+     },
+     {
+      "title": "Trout numbers have stayed stable this year (Logan River, Sportfishing Report)",
+      "url": "https://sportfishingreport.com/fish_reports/236364/trout-numbers-have-stayed-stable-this-year.php"
      }
     ]
    },
@@ -5282,7 +5318,7 @@ window.HATCH_DB = {
    "stocking": {
     "status": "mixed",
     "summary": "Brown and rainbow trout are in the river. The middle river is wild brown territory, according to VisitUtah. Utah DWR stocked catchable rainbow in the lower river in the past.",
-    "schedule": "Historically, DWR stocked about 4,000 rainbow catchables every March and April, and 20,000 more in the canyon later in the year. Current schedule not found.",
+    "schedule": "No current Provo River plant record was found. The historic schedule was about 4,000 rainbow in March and April, with 20,000 more in the canyon later in the year. A 2025 DWR report lists special regulations on the Lower Provo (2004) and Middle Provo (2006) sections.",
     "recent_plants": [
      {
       "date": "March and April (historic)",
@@ -5382,7 +5418,7 @@ window.HATCH_DB = {
    "stocking": {
     "status": "mostly wild, some stocked rainbow",
     "summary": "Dense wild trout population. Orvis says some rainbow are stocked during the season. CPW describes the upper river as wild brown territory.",
-    "schedule": "Some rainbow are stocked during the season. The CPW stocking report lists exact dates.",
+    "schedule": "No dated Taylor River stocking record was found. The reservoir above it is stocked: CPW's 2022 survey lists 82,800 catchable rainbow and 277,000 fingerling kokanee at Taylor Park Reservoir.",
     "recent_plants": [],
     "wild_fish": "Wild browns, rainbows and cutthroat. The river above Taylor Park Reservoir has quality wild browns, per CPW.",
     "sources": [
@@ -5397,6 +5433,10 @@ window.HATCH_DB = {
      {
       "title": "Gunnison, Taylor Rivers earn Gold Medal status (CPW)",
       "url": "https://cpw.state.co.us/news/01182023/gunnison-taylor-rivers-earn-gold-medal-trout-fishery-status"
+     },
+     {
+      "title": "Taylor Park Reservoir fishery summary (CPW)",
+      "url": "https://cpw.state.co.us/thingstodo/Fishery%20Survey%20Summaries/TaylorParkReservoir.pdf"
      }
     ]
    },
