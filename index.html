@@ -76,9 +76,6 @@ ul.tips li{margin-bottom:4px}
         <option value="stillwater">Lake / pond / reservoir</option>
       </select>
     </label>
-    <label>Water temp (°F), if you know it
-      <input id="manualTemp" type="number" step="0.1" placeholder="from a thermometer or lake reading">
-    </label>
   </div>
   <div class="row" style="margin-top:8px"><button class="btn" onclick="usePlace()">Plan this place</button></div>
   <div id="saved" style="margin-top:10px"></div>
@@ -202,6 +199,7 @@ function lastYear(dateStr){ return (parseInt(dateStr.slice(0,4)) - 1) + dateStr.
 async function getForecast(lat, lon, dateStr){
   const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}` +
     `&hourly=temperature_2m,wind_speed_10m,precipitation_probability,cloud_cover,pressure_msl` +
+    `&current=temperature_2m,wind_speed_10m,cloud_cover` +
     `&daily=sunrise,sunset,temperature_2m_max,temperature_2m_min,precipitation_probability_max` +
     `&timezone=auto&start_date=${dateStr}&end_date=${dateStr}` + (ELEV_M != null ? `&elevation=${ELEV_M}` : '');
   const r = await fetch(url); if (!r.ok) throw new Error('forecast HTTP ' + r.status);
@@ -328,7 +326,7 @@ async function runPlan(){
   try {
     if (days >= 0 && days <= 15) {
       const f = await getForecast(place.lat, place.lon, dateStr);
-      wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr), d: f.daily, elev: f.elevation };
+      wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr), d: f.daily, elev: f.elevation, cur: f.current };
       wxSource = 'Open-Meteo forecast';
     } else {
       const { data, date } = await getArchive(place.lat, place.lon, dateStr);
@@ -349,7 +347,6 @@ async function runPlan(){
   } catch(e) {
     usgsNote = `USGS data unavailable (${e.message}).`;
   }
-  const manual = parseFloat($('manualTemp').value);
   // no measurement? estimate from the three weeks of air temperature before the date
   const anchor = days > 15 ? lastYear(dateStr) : dateStr;
   let estF = null;
@@ -358,9 +355,8 @@ async function runPlan(){
     estF = estimateWaterF(hist, place.habitat);
   } catch(e) { estF = null; }
   const measuredF = usgs.find(s => s.temp)?.temp?.f ?? null;
-  const waterF = !isNaN(manual) ? manual : (measuredF ?? estF);
-  const waterSrc = !isNaN(manual) ? 'your reading'
-    : (measuredF != null ? 'USGS gauge'
+  const waterF = measuredF ?? estF;
+  const waterSrc = (measuredF != null ? 'USGS gauge'
     : (estF != null ? 'ESTIMATE from the last 3 weeks of air temperature (rough, about ±5 °F)' : 'none'));
 
   // conditions card
@@ -369,6 +365,7 @@ async function runPlan(){
     $('conditions').innerHTML = `<h2>Conditions</h2>
       <div class="big">High ${cF(wx.d.temperature_2m_max[0])} °F · Low ${cF(wx.d.temperature_2m_min[0])} °F</div>
       <div class="muted">Fishing-hours average ${cF(a.temp)} °F</div>
+      ${days === 0 && wx.cur ? `<div class="muted">Right now (model): ${cF(wx.cur.temperature_2m)} °F, wind ${wx.cur.wind_speed_10m} km/h</div>` : ''}
       <div class="muted">Wind ${a.wind.toFixed(0)} km/h · Cloud ${a.cloud.toFixed(0)}% · Rain chance ${a.rainChance}%</div>
       <div class="muted">Sunrise ${a.sunrise} · Sunset ${a.sunset}</div>
       <div class="muted">Forecast grid elevation ${wx.elev != null ? Math.round(wx.elev * 3.281) : '?'} ft${ELEV_M != null ? ` · adjusted to ${Math.round(ELEV_M / 0.3048)} ft` : ' · set an elevation above to correct mountain sites'}</div>
@@ -394,7 +391,7 @@ async function runPlan(){
     ${waterF != null ? `<div class="big">${waterF.toFixed(0)} °F</div><div class="muted">Source: ${esc(waterSrc)}</div>` : '<div class="muted">No water temperature yet.</div>'}
     ${gauge ? `<div style="margin-top:8px"><b>${esc(gauge.name)}</b><div class="muted">${gauge.flow != null ? `Flow ${gauge.flow} cfs` : 'No flow reading'} · last ${esc(gauge.time?.slice(0,16).replace('T',' '))}</div></div>` : ''}
     <p class="muted">${esc(usgsNote)}</p>
-    ${habitat === 'stillwater' ? '<p class="muted">Lakes usually have no USGS gauge. Type in a water temperature above for better hatch matching.</p>' : ''}`;
+    ${habitat === 'stillwater' ? '<p class="muted">Lakes usually have no USGS gauge, so the water temperature is estimated from recent air temperatures.</p>' : ''}`;
 
   // hatches
   const hatches = activeHatches(month, habitat, waterF, lake ? lake.insect_ids : null);
