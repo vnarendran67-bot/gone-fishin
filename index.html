@@ -343,7 +343,7 @@ async function runPlan(){
   let usgs = [], usgsNote = '';
   try {
     usgs = await getUSGS(place.lat, place.lon);
-    if (!usgs.length) usgsNote = 'No active USGS gauge within about 15 miles. Use a manual water temperature if you have one.';
+    if (!usgs.length) usgsNote = 'No active USGS gauge within about 15 miles. The water temperature is estimated instead.';
   } catch(e) {
     usgsNote = `USGS data unavailable (${e.message}).`;
   }
