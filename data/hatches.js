@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 43,
+ "version": 44,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -24892,6 +24892,242 @@ window.HATCH_DB = {
      "forage": [],
      "fishing_season_note": "Open all year. Smallmouth winter fishing is strong on windswept banks."
     }
+   ]
+  },
+  {
+   "id": "ash-creek-pinalenos-az",
+   "name": "Ash Creek (Pinaleño Mountains, Graham County, AZ)",
+   "type": "stream",
+   "elevation_ft": 9440,
+   "lat": 32.8058,
+   "lon": -109.8628,
+   "coords_note": "Coordinates from the Wikipedia mirror for Ash Creek near Safford (32°48′21″N 109°51′46″W). Not the Ash Creek in Gila County. Elevation 4,200 to 9,440 feet per Wikipedia.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Apache trout (native)",
+     "stocking": "Wild in the middle reaches (USFS); the native trout are small but wild"
+    },
+    {
+     "name": "Gila trout",
+     "stocking": "Restoration stocking after the 2010 project (USFS); recovery streams were burned in 2017"
+    },
+    {
+     "name": "Green sunfish",
+     "stocking": "Present (AZGFD AWCS)"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "Mount Graham stream. Native Apache trout and Gila trout restoration. Gila trout streams have been closed to fishing during recovery.",
+    "schedule": "Restoration stocking of Gila trout planned for when habitat recovers (AZGFD).",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "USFS: Ash Creek trail 307A",
+      "url": "https://fs.usda.gov/r03/coronado/recreation/trails/ash-creek-detour-trail-307a"
+     },
+     {
+      "title": "USFS: Ash Creek detour trail",
+      "url": "https://fs.usda.gov/r03/coronado/recreation/ash-creek-detour-307a"
+     }
+    ]
+   },
+   "fishing_season_note": "Mount Graham stream. Summer and fall are best when the trail is open. Check the Coronado National Forest before going; some reaches are closed while Gila trout recover.",
+   "insect_ids": [
+    "caddis",
+    "bwo",
+    "terrestrial"
+   ],
+   "notes": [
+    "Ash Creek is a stream on Mount Graham in the Pinaleño Mountains, part of the Coronado National Forest. Safford is about 7 miles away.",
+    "The Forest Service says pools in the middle reaches of Ash Creek hold native Apache trout. The stream is small, so the fish are small but wild.",
+    "HookedAZ says Ash Creek has about five fishable miles.",
+    "A 2010 Forest Service project treated Ash and Marijilda creeks and then stocked them with native Gila trout.",
+    "The 2017 Frye Fire scorched 50,000 acres on Mount Graham and wiped out much of the Gila trout fishery on Ash and Frye creeks.",
+    "AZGFD says Ash Creek and George Wise Spring are occupied by non-native green sunfish.",
+    "AZGFD plans to manage the Pinaleño streams for native Gila trout once habitat recovers from the fires, and to stock them then.",
+    "Gila trout streams may be closed. Check Coronado National Forest and AZGFD for current rules before going. Hard hiking access."
+   ],
+   "sources": [
+    {
+     "title": "USFS: Ash Creek trail 307A",
+     "url": "https://fs.usda.gov/r03/coronado/recreation/trails/ash-creek-detour-trail-307a"
+    },
+    {
+     "title": "USFS: Ash Creek detour trail",
+     "url": "https://fs.usda.gov/r03/coronado/recreation/ash-creek-detour-307a"
+    },
+    {
+     "title": "HookedAZ: Ash Creek",
+     "url": "https://www.hookedaz.com/showcase/ash-creek.325/"
+    },
+    {
+     "title": "USFS: Gila trout in Pinaleno streams",
+     "url": "https://www.fs.usda.gov/r03/coronado/projects/archive/27142"
+    },
+    {
+     "title": "Tu.org: Gila trout recovery after the Frye Fire",
+     "url": "https://www.tu.org/?p=46481"
+    },
+    {
+     "title": "AZGFD AWCS: Ash Creek and George Wise Spring",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/ash-creek-george-wise-spring-headwaters-to-azgfd-property"
+    },
+    {
+     "title": "AZGFD AWCS: Pinaleño Mountains streams",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/pinaleno-mountains-streams-cottonwood-wash-and-stockton-wash-gila-river"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Riffles and pools. Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Blue-winged olives",
+     "category": "insect",
+     "detail": "Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Hoppers and beetles on the banks in summer. Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    6,
+    7,
+    8,
+    9
+   ]
+  },
+  {
+   "id": "upper-salt-river-az",
+   "name": "Upper Salt River (White Mountains to Roosevelt Lake, AZ)",
+   "type": "river",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. Gauge: USGS 09498500 near Roosevelt, just above the point where the river enters the lake.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Mostly native and warm-water fish",
+     "stocking": "Not documented in the sources used"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "Upper Salt flows from the White Mountains to Roosevelt Lake. The legal run begins at US 60. Access above Gleason Flat crosses Apache land and needs a permit.",
+    "schedule": "No stocking documented for the upper river in the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "Discover Gila County: upper Salt River",
+      "url": "https://www.discovergilacounty.com/upper-salt-river"
+     },
+     {
+      "title": "American Whitewater: Salt River, US 60 to Hwy 288",
+      "url": "https://www.americanwhitewater.org/content/River/view/river-detail/123/main"
+     }
+    ]
+   },
+   "fishing_season_note": "Flow is snowmelt and rain, so spring runoff and the monsoon can change conditions quickly. Check the USGS gauge near Roosevelt before going. A permit is needed for the Apache section.",
+   "insect_ids": [
+    "caddis",
+    "bwo",
+    "terrestrial"
+   ],
+   "notes": [
+    "The upper Salt is generally the section from the headwaters down to Roosevelt Lake in the Sierra Ancha Mountains.",
+    "Discover Gila County says the legal section begins at the US Highway 60 crossing in Gila County and runs to Roosevelt Lake.",
+    "Access points above Gleason Flat run along Road 1 on the White Mountain Apache Reservation and need a permit from the Apache Nation for access or camping.",
+    "American Whitewater lists the US 60 to Highway 288 stretch above Roosevelt Reservoir as Class III-IV, about 58 miles long, with a river permit lottery from March 1 to May 15.",
+    "The USGS gauge near Roosevelt sits below the Salt River Canyon and drains about 4,306 square miles of the White Mountains. Flow there is natural runoff, not dam release.",
+    "Fishbrain lists largemouth bass, rainbow trout, bluegill and channel catfish as the most common catches in the Roosevelt area.",
+    "Apache land permit required above Gleason Flat. Check the USGS gauge and the Apache Nation before going."
+   ],
+   "sources": [
+    {
+     "title": "Discover Gila County: upper Salt River",
+     "url": "https://www.discovergilacounty.com/upper-salt-river"
+    },
+    {
+     "title": "American Whitewater: Salt River, US 60 to Hwy 288",
+     "url": "https://www.americanwhitewater.org/content/River/view/river-detail/123/main"
+    },
+    {
+     "title": "Legion Report: Upper Salt River conditions",
+     "url": "https://legionreport.com/upper-salt-river-fishing-conditions/"
+    },
+    {
+     "title": "Fishbrain: Roosevelt area",
+     "url": "https://fishbrain.com/cities/us/az/roosevelt"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Riffles where there is flow. Not sourced for this river.",
+     "basis": "general",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Blue-winged olives",
+     "category": "insect",
+     "detail": "Not sourced for this river.",
+     "basis": "general",
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Along the banks in summer.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
    ]
   }
  ]
