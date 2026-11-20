@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 24,
+ "version": 25,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -15437,6 +15437,678 @@ window.HATCH_DB = {
     9,
     10,
     11
+   ]
+  },
+  {
+   "id": "pena-blanca-lake-az",
+   "name": "Peña Blanca Lake (Nogales, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set. In Peña Blanca Canyon, 68 miles south of Tucson and 17 miles northwest of Nogales, per AZGFD.",
+   "area_acres": 50,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Monthly stockings late January through March"
+    },
+    {
+     "name": "Largemouth bass, channel catfish, sunfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Monthly winter-spring rainbow stockings. Warmwater habitat work done. Check mercury advisory status.",
+    "schedule": "Monthly, late January through March.",
+    "recent_plants": [
+     {
+      "date": "Late January through March",
+      "species": "Rainbow trout"
+     }
+    ],
+    "wild_fish": "Largemouth bass, catfish, sunfish.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD, 2026)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     },
+     {
+      "title": "Water quality has improved (AZGFD, 2-3-2023)",
+      "url": "https://www.norcalfishreports.com/fish_reports/196659/water-quality-has-improved.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Day-use fee of $8 per vehicle, or a pass. Monthly rainbow stockings late January through March. Mercury advisory on warmwater fish is noted in older reports. Confirm before eating any fish.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Peña Blanca Lake is in the Coronado National Forest, 68 miles south of Tucson and 17 miles northwest of Nogales, in Peña Blanca Canyon, per AZGFD.",
+    "The day-use fee is $8 per vehicle, or an accepted pass, per AZGFD.",
+    "AZGFD said Peña Blanca would receive monthly rainbow stockings starting the last week of January through March.",
+    "AZGFD said water quality had improved at Peña Blanca in February 2023, and rainbows were to be stocked through March.",
+    "AZGFD's 2016 report said mercury advisories against eating warmwater fish from Peña Blanca were in effect. These sources do not confirm the current status.",
+    "A habitat project added structure to the lake to build a stronger warmwater fishery, per AZGFD.",
+    "A family outdoor day was held at Peña Blanca in April 2026, with poles and bait provided, per AZGFD."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD, 2026)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    },
+    {
+     "title": "Water quality has improved (AZGFD, 2-3-2023)",
+     "url": "https://www.norcalfishreports.com/fish_reports/196659/water-quality-has-improved.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Bait for stocked trout",
+     "category": "other",
+     "detail": "Common for stocked rainbows. Not specified in the sources.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Peña Blanca.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    1,
+    2,
+    3,
+    4,
+    10,
+    11,
+    12
+   ]
+  },
+  {
+   "id": "frye-mesa-reservoir-az",
+   "name": "Frye Mesa Reservoir (Safford District, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set. Upper Gila watershed, per Snoflo.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Trout",
+     "stocking": "Stocked by AZGFD (Coronado National Forest)"
+    },
+    {
+     "name": "Five species listed in Snoflo, including bass and catfish",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Trout stocked by AZGFD. Winter alternative to Riggs Flat.",
+    "schedule": "No schedule in sources.",
+    "recent_plants": [],
+    "wild_fish": "Five species listed; names not given.",
+    "sources": [
+     {
+      "title": "Fishing (Coronado National Forest)",
+      "url": "https://fs.usda.gov/r03/coronado/recreation/opportunities/fishing"
+     },
+     {
+      "title": "Frye Mesa Reservoir Lakes (Snoflo)",
+      "url": "https://snoflo.org/fishing/arizona/frye-mesa-reservoir-lakes"
+     }
+    ]
+   },
+   "fishing_season_note": "Trout fishing option when Riggs Flat is snowed in and iced over. Check access in winter.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "The Coronado National Forest says Frye Mesa, Riggs Flat, Rose Canyon, Peña Blanca and Parker Canyon lakes are stocked by AZGFD.",
+    "When high-elevation Riggs Flat is snowed in and iced over, trout anglers in the Safford District can still fish Frye Mesa Reservoir, per the Forest Service.",
+    "Snoflo lists Frye Mesa's species as a set of five, though the source does not name them.",
+    "Snoflo's tips suggest live bait and lures near submerged structure, with the depth varied until fish are found."
+   ],
+   "sources": [
+    {
+     "title": "Fishing (Coronado National Forest)",
+     "url": "https://fs.usda.gov/r03/coronado/recreation/opportunities/fishing"
+    },
+    {
+     "title": "Frye Mesa Reservoir Lakes (Snoflo)",
+     "url": "https://snoflo.org/fishing/arizona/frye-mesa-reservoir-lakes"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Live bait and lures near submerged structure",
+     "category": "other",
+     "detail": "Snoflo tips for Frye Mesa.",
+     "basis": "general"
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional reservoir insects. Not documented for Frye Mesa.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "hulsey-lake-az",
+   "name": "Hulsey Lake (Greer area, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Shortened 2026 season with fewer fish"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Shortened 2026 stocking season.",
+    "schedule": "Fewer stockings in 2026.",
+    "recent_plants": [],
+    "wild_fish": "Not documented.",
+    "sources": [
+     {
+      "title": "Fishing tips and upcoming events (AZGFD, 2026)",
+      "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+     }
+    ]
+   },
+   "fishing_season_note": "Shortened stocking season and fewer stockings in 2026, per AZGFD. Check before going.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD said Hulsey Lake would have a shortened stocking season and fewer stockings than usual in 2026.",
+    "AZGFD lists Hulsey among White Mountains waters with low-water and stocking limits in 2026.",
+    "Sources give almost no detail on Hulsey's fish, depth or hatches. Verify before going."
+   ],
+   "sources": [
+    {
+     "title": "Fishing tips and upcoming events (AZGFD, 2026)",
+     "url": "https://content.govdelivery.com/accounts/AZGFD/bulletins/412d327"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "High-elevation lake insects. Not documented for Hulsey.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "crescent-lake-az",
+   "name": "Crescent Lake (White Mountains, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Trout",
+     "stocking": "Not documented in recent sources"
+    }
+   ],
+   "stocking": {
+    "status": "unknown",
+    "summary": "Thin data. Fall recommendation from 2019.",
+    "schedule": "Not documented.",
+    "recent_plants": [],
+    "wild_fish": "Not documented.",
+    "sources": [
+     {
+      "title": "Fall Fishing Forecast: White Mountains & Mogollon Rim (AZGFD, 9-16-2019)",
+      "url": "https://www.socalfishreports.com/fish_reports/153408/fall-fishing-forecast:-white-mountains-and-mogollon-rim.php"
+     }
+    ]
+   },
+   "fishing_season_note": "Recommended in fall when other nearby lakes are overfished. Limited recent data.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "AZGFD's 2019 fall forecast suggested Crescent when nearby lakes were overfished and water quality improved as the weather cooled.",
+    "Summer algae blooms and low water had reduced fishing success in nearby lakes in 2019.",
+    "Sources do not document Crescent's fish, stocking or hatches in recent years."
+   ],
+   "sources": [
+    {
+     "title": "Fall Fishing Forecast: White Mountains & Mogollon Rim (AZGFD, 9-16-2019)",
+     "url": "https://www.socalfishreports.com/fish_reports/153408/fall-fishing-forecast:-white-mountains-and-mogollon-rim.php"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "High-elevation lake insects. Not documented for Crescent.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    9,
+    10,
+    11
+   ]
+  },
+  {
+   "id": "rainbow-lake-az",
+   "name": "Rainbow Lake (White Mountains, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked 12-inch-plus fish, older AZGFD report"
+    },
+    {
+     "name": "Bullheads",
+     "stocking": "Present"
+    }
+   ],
+   "stocking": {
+    "status": "stocked",
+    "summary": "Stocked with 12-inch-plus rainbows. Bullheads present.",
+    "schedule": "Stocking finishes by early fall in some years.",
+    "recent_plants": [],
+    "wild_fish": "Bullheads.",
+    "sources": [
+     {
+      "title": "AZ Fishing Report (azbw, older)",
+      "url": "https://www.azbw.com/?p=2110"
+     }
+    ]
+   },
+   "fishing_season_note": "Stocking is finished for the year by early fall, per an older AZGFD report. Weeds not heavy in early season. Bullheads bite nightcrawlers on the bottom.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "An older AZGFD report said Rainbow Lake was good for stocked rainbows of 12 inches or more.",
+    "The same report said stocking was finished for the year, but the fishing was still good.",
+    "If trout were not biting, the report suggested nightcrawlers on the bottom for bullheads.",
+    "The lake was full and the weeds were not yet heavy when that report was written."
+   ],
+   "sources": [
+    {
+     "title": "AZ Fishing Report (azbw, older)",
+     "url": "https://www.azbw.com/?p=2110"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Nightcrawlers on the bottom",
+     "category": "other",
+     "detail": "Bullheads bite, per an older AZGFD report.",
+     "basis": "sourced",
+     "source": {
+      "title": "AZ Fishing Report (azbw, older)",
+      "url": "https://www.azbw.com/?p=2110"
+     }
+    },
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "High-elevation lake insects. Not documented for Rainbow Lake.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "concho-lake-az",
+   "name": "Concho Lake (Little Colorado watershed, AZ)",
+   "type": "lake",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates about 34.443 N, 109.629 W, per Snoflo. Elevation not sourced.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Listed by Snoflo; stocking not documented"
+    }
+   ],
+   "stocking": {
+    "status": "unknown",
+    "summary": "Rainbow trout listed. Thin data.",
+    "schedule": "Not documented.",
+    "recent_plants": [],
+    "wild_fish": "Not documented.",
+    "sources": [
+     {
+      "title": "Concho Lake Fishing (Snoflo)",
+      "url": "https://snoflo.org/fishing/arizona/concho-lake"
+     }
+    ]
+   },
+   "fishing_season_note": "Snoflo lists rainbow trout. The nearest gauge showed no flow in October 2026. Check conditions before going.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Concho Lake is in the Little Colorado River watershed in eastern Arizona, per Snoflo.",
+    "Snoflo lists rainbow trout as the commonly reported species at Concho.",
+    "The nearest USGS gauge reported no flow in late October 2026, per Snoflo.",
+    "Sources do not describe Concho's stocking, hatches or regulations."
+   ],
+   "sources": [
+    {
+     "title": "Concho Lake Fishing (Snoflo)",
+     "url": "https://snoflo.org/fishing/arizona/concho-lake"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional stillwater insects. Not documented for Concho.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "willow-creek-reservoir-az",
+   "name": "Willow Creek Reservoir (Yavapai County, AZ)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Largemouth bass, channel catfish, rainbow trout",
+     "stocking": "Listed by Fishbrain; stocking not documented"
+    }
+   ],
+   "stocking": {
+    "status": "unknown",
+    "summary": "Species listed; stocking not documented.",
+    "schedule": "Not documented.",
+    "recent_plants": [],
+    "wild_fish": "Largemouth, channel catfish, rainbows.",
+    "sources": [
+     {
+      "title": "Willow Creek Reservoir (Fishbrain)",
+      "url": "https://fishbrain.com/fishing-waters/kD3lQ1t7/willow-creek-reservoir"
+     },
+     {
+      "title": "Fisheries Lake Management Plans (AZGFD)",
+      "url": "https://azgfd.com/?p=2743"
+     }
+    ]
+   },
+   "fishing_season_note": "Limited data. Fishbrain lists largemouth bass, channel catfish and rainbow trout.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Willow Creek Reservoir is in Yavapai County, per Fishbrain.",
+    "Fishbrain lists largemouth bass, channel catfish and rainbow trout as the most common species there.",
+    "AZGFD's fisheries lake plans include Willow Creek Reservoir, though its plan contents are not in these sources."
+   ],
+   "sources": [
+    {
+     "title": "Willow Creek Reservoir (Fishbrain)",
+     "url": "https://fishbrain.com/fishing-waters/kD3lQ1t7/willow-creek-reservoir"
+    },
+    {
+     "title": "Fisheries Lake Management Plans (AZGFD)",
+     "url": "https://azgfd.com/?p=2743"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Regional reservoir insects. Not documented for Willow Creek.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "clear-creek-reservoir-az",
+   "name": "Clear Creek Reservoir (Arizona)",
+   "type": "reservoir",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Elevation not sourced. Coordinates not set.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Not documented",
+     "stocking": "Not documented"
+    }
+   ],
+   "stocking": {
+    "status": "unknown",
+    "summary": "No recent fishing data in sources.",
+    "schedule": "Not documented.",
+    "recent_plants": [],
+    "wild_fish": "Not documented.",
+    "sources": [
+     {
+      "title": "Fisheries Lake Management Plans (AZGFD)",
+      "url": "https://azgfd.com/?p=2743"
+     }
+    ]
+   },
+   "fishing_season_note": "Listed in AZGFD lake plans and past reports. No recent fishing data in these sources.",
+   "insect_ids": [
+    "chironomid"
+   ],
+   "notes": [
+    "Clear Creek Reservoir appears in AZGFD's lake-plan index and older AZGFD fishing report lists.",
+    "These sources do not describe the fish, stocking or access at Clear Creek.",
+    "Check AZGFD's current fishing report before going."
+   ],
+   "sources": [
+    {
+     "title": "Fisheries Lake Management Plans (AZGFD)",
+     "url": "https://azgfd.com/?p=2743"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges and damselflies",
+     "category": "insect",
+     "detail": "Not documented for Clear Creek.",
+     "basis": "regional",
+     "insect_id": "chironomid"
+    }
+   ],
+   "fish_months": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    6,
+    9,
+    10
    ]
   }
  ]
