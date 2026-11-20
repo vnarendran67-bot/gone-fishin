@@ -8099,7 +8099,7 @@ window.HATCH_DB = {
       "title": "Big Hole River hatches chart (Montana Angler)",
       "url": "https://www.montanaangler.com/montana-fly-fishing-rivers/big-hole-river-hatches-chart"
      },
-     "insect_id": "salmonfly"
+     "insect_id": "mt-salmonfly"
     },
     {
      "item": "Skwala stoneflies and March Browns",
@@ -8136,7 +8136,7 @@ window.HATCH_DB = {
    ],
    "insect_ids": [
     "bwo",
-    "salmonfly",
+    "mt-salmonfly",
     "trico",
     "caddis"
    ]
@@ -8255,7 +8255,7 @@ window.HATCH_DB = {
       "title": "Bitterroot River (The Fly Shop)",
       "url": "https://www.theflyshop.com/?p=23416"
      },
-     "insect_id": "salmonfly"
+     "insect_id": "mt-salmonfly"
     },
     {
      "item": "Sculpin and baitfish",
@@ -8270,7 +8270,7 @@ window.HATCH_DB = {
    ],
    "insect_ids": [
     "bwo",
-    "salmonfly"
+    "mt-salmonfly"
    ]
   },
   {
@@ -8481,7 +8481,7 @@ window.HATCH_DB = {
       "title": "Gunnison Gorge Fly Fishing Guide (Ed's Fly Shop)",
       "url": "https://edsflyshop.com/pages/gunnison-gorge-fly-fishing"
      },
-     "insect_id": "salmonfly"
+     "insect_id": "co-salmonfly"
     },
     {
      "item": "Baetis mayflies",
@@ -8506,7 +8506,7 @@ window.HATCH_DB = {
     }
    ],
    "insect_ids": [
-    "salmonfly",
+    "co-salmonfly",
     "bwo"
    ]
   },
@@ -8602,7 +8602,7 @@ window.HATCH_DB = {
       "title": "Pecos River trout fishing (Game and Fish Magazine, 2010)",
       "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_aa054603a/194597"
      },
-     "insect_id": "salmonfly"
+     "insect_id": "nm-pecos-hatch"
     },
     {
      "item": "Second large stonefly",
@@ -8627,7 +8627,7 @@ window.HATCH_DB = {
     }
    ],
    "insect_ids": [
-    "salmonfly",
+    "nm-pecos-hatch",
     "trico"
    ]
   },
