@@ -101,6 +101,7 @@ ul.tips li{margin-bottom:4px}
     <section class="card" id="water"></section>
   </div>
   <section class="card" id="verdict"></section>
+  <section class="card" id="outlook"></section>
   <section class="card" id="hatches"></section>
   <section class="card" id="tips"></section>
   <section class="card src" id="sources"></section>
@@ -170,7 +171,7 @@ async function searchPlace(){
 }
 function pickResult(i){
   const h = window._hits[i];
-  $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name;
+  $('lat').value = h.latitude; $('lon').value = h.longitude; $('pname').value = h.name; window._state = h.admin1 || '';
   $('results').innerHTML = '';
   $('placeMsg').textContent = `Set to ${h.name}. Check the water type, then press "Get the plan".`;
   // set water type from what the search says it is
@@ -212,7 +213,7 @@ function daysFromToday(dateStr){
 function lastYear(dateStr){ return (parseInt(dateStr.slice(0,4)) - 1) + dateStr.slice(4); }
 
 // National Weather Service (US only): 2.5 km grid forecast + nearest station observation
-async function nwsForecast(lat, lon, dateStr){
+async function nwsForecast(lat, lon, dateStr, win = 'day'){
   const H = { 'Accept': 'application/geo+json' };
   const pr = await fetch(`https://api.weather.gov/points/${lat.toFixed(4)},${lon.toFixed(4)}`, { headers: H });
   if (!pr.ok) throw new Error('points HTTP ' + pr.status);
@@ -220,7 +221,8 @@ async function nwsForecast(lat, lon, dateStr){
   const hr = await fetch(p.forecastHourly, { headers: H });
   if (!hr.ok) throw new Error('hourly HTTP ' + hr.status);
   const periods = (await hr.json()).properties.periods;
-  const day = periods.filter(x => x.startTime.slice(0,10) === dateStr);
+  const inWin = hr => win === 'am' ? hr <= 12 : win === 'pm' ? hr >= 12 : (hr >= 6 && hr <= 20);
+  const day = periods.filter(x => x.startTime.slice(0,10) === dateStr && inWin(parseInt(x.startTime.slice(11,13))));
   if (!day.length) throw new Error('no NWS hours for this date');
   const tC = day.map(x => (x.temperature - 32) * 5 / 9);
   const kmh = day.map(x => (parseFloat(x.windSpeed) || 0) / 0.621371);
@@ -297,12 +299,13 @@ async function getUSGS(lat, lon){
 }
 
 /* ---------- scoring ---------- */
-function hourlyDayAverages(f, dateStr){
+function hourlyDayAverages(f, dateStr, win = 'day'){
   const h = f.hourly, idx = [];
   h.time.forEach((t,i) => { if (t.startsWith(dateStr)) idx.push(i); });
   const pick = (k, arr) => arr.reduce((s,i) => s + h[k][i], 0) / arr.length;
   const sr = parseInt(f.daily.sunrise[0].slice(11,13)), ss = parseInt(f.daily.sunset[0].slice(11,13));
-  const fishing = idx.filter(i => { const hr = parseInt(h.time[i].slice(11,13)); return hr >= sr-1 && hr <= ss; });
+  const inWin = hr => win === 'am' ? (hr >= sr-1 && hr <= 12) : win === 'pm' ? (hr >= 12 && hr <= ss) : (hr >= sr-1 && hr <= ss);
+  const fishing = idx.filter(i => inWin(parseInt(h.time[i].slice(11,13))));
   const use = fishing.length ? fishing : idx;
   return {
     temp: pick('temperature_2m', use),
@@ -357,6 +360,8 @@ async function runPlan(){
   const elevFt = (!isNaN(elevIn) && elevIn > 0) ? (isImperial() ? elevIn : elevIn / 0.3048) : (lakeE ? lakeE.elevation_ft : null);
   ELEV_M = elevFt ? Math.round(elevFt * 0.3048) : null;
   const dateStr = $('date').value || iso(new Date());
+  const win = $('when').value;
+  const winName = {day:'Fishing-hours', am:'Morning', pm:'Afternoon'}[win];
   $('date').value = dateStr;
   $('output').classList.remove('hidden');
   const days = daysFromToday(dateStr);
@@ -374,10 +379,10 @@ async function runPlan(){
   try {
     if (days >= 0 && days <= 15) {
       const f = await getForecast(place.lat, place.lon, dateStr);
-      wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr), d: f.daily, elev: f.elevation, cur: f.current };
+      wx = { kind: 'forecast', a: hourlyDayAverages(f, dateStr, win), d: f.daily, elev: f.elevation, cur: f.current };
       wxSource = 'Open-Meteo forecast (global model, about 11 km grid)';
       try {
-        const n = await nwsForecast(place.lat, place.lon, dateStr);
+        const n = await nwsForecast(place.lat, place.lon, dateStr, win);
         wx.a.temp = n.tempC; wx.a.wind = n.windKmh;
         if (n.popMax != null) wx.a.rainChance = n.popMax;
         wx.d = { temperature_2m_max: [n.maxC], temperature_2m_min: [n.minC] };
@@ -423,7 +428,7 @@ async function runPlan(){
     const a = wx.a, sc = scoreDay(a);
     $('conditions').innerHTML = `<h2>Conditions</h2>
       <div class="big">High ${fmtTemp(wx.d.temperature_2m_max[0])} · Low ${fmtTemp(wx.d.temperature_2m_min[0])}</div>
-      <div class="muted">Fishing-hours average ${fmtTemp(a.temp)}</div>
+      <div class="muted">${winName} average ${fmtTemp(a.temp)}</div>
       ${days === 0 && wx.cur ? `<div class="muted">Right now (${wx.src ? 'nearest station' : 'model'}): ${fmtTemp(wx.cur.temperature_2m)}, wind ${fmtWind(wx.cur.wind_speed_10m)}</div>` : ''}
       <div class="muted">Wind ${fmtWind(a.wind)} · Cloud ${a.cloud.toFixed(0)}% · Rain chance ${a.rainChance}%</div>
       <div class="muted">Sunrise ${a.sunrise} · Sunset ${a.sunset}</div>
@@ -483,16 +488,78 @@ async function runPlan(){
   if (window._score) bits.push(`Conditions: <b>${window._score.label}</b> (${window._score.s}/100)`);
   if (waterF != null) bits.push(`Water ${fmtTempF(waterF)}`);
   bits.push(`${hatches.length} possible hatches`);
-  $('verdict').innerHTML = `<h2>Summary</h2><div>${bits.join(' · ')}</div>`;
+  $('verdict').innerHTML = `<h2>Summary</h2><div>${bits.join(' · ')}</div>
+    <div style="margin-top:10px;display:flex;gap:14px;flex-wrap:wrap;align-items:center"><a class="link" target="_blank" rel="noopener" href="${calLink()}">Add to Google Calendar →</a><button class="ghost" onclick="copyShare()">Copy share link</button><span id="shareMsg" class="muted"></span><a class="link" target="_blank" rel="noopener" href="${regsLink()}">License &amp; regulations →</a></div>`;
 
   // sources
+  renderOutlook(place.lat, place.lon);
   $('sources').innerHTML = `Weather: ${esc(wxSource || 'unavailable')}. Water: USGS Water Services. Hatch data: regional guide pages and a 1986 Sonoran Desert study; see each entry. <b>Verify locally before a trip.</b>`;
+}
+
+/* ---------- extras ---------- */
+async function renderOutlook(lat, lon){
+  const H = { 'Accept': 'application/geo+json' };
+  try {
+    const p = (await (await fetch(`https://api.weather.gov/points/${lat.toFixed(4)},${lon.toFixed(4)}`, { headers: H })).json()).properties;
+    const periods = (await (await fetch(p.forecastHourly, { headers: H })).json()).properties.periods;
+    const byDay = {};
+    for (const x of periods) { const d = x.startTime.slice(0,10); (byDay[d] = byDay[d] || []).push(x); }
+    const rows = Object.keys(byDay).slice(0,7).map(d => {
+      const hs = byDay[d];
+      const t = hs.map(x => x.temperature);
+      const pops = hs.map(x => x.probabilityOfPrecipitation?.value).filter(v => v != null);
+      const wind = hs.map(x => parseFloat(x.windSpeed) || 0);
+      const mid = hs[Math.floor(hs.length / 2)];
+      return { d, hi: Math.max(...t), lo: Math.min(...t), pop: pops.length ? Math.max(...pops) : null, wind: Math.max(...wind), desc: mid.shortForecast };
+    });
+    $('outlook').innerHTML = `<h2>7-day outlook (National Weather Service)</h2>
+      <table><tr><th>Day</th><th>High / low</th><th>Rain chance</th><th>Max wind</th><th>Sky</th></tr>` +
+      rows.map(r => `<tr><td>${new Date(r.d + 'T12:00:00').toLocaleDateString(undefined, {weekday:'short', month:'short', day:'numeric'})}</td>
+        <td>${fmtTempF(r.hi)} / ${fmtTempF(r.lo)}</td><td>${r.pop != null ? r.pop + '%' : '—'}</td>
+        <td>${fmtWind(r.wind / 0.621371)}</td><td>${esc(r.desc)}</td></tr>`).join('') +
+      `</table>`;
+  } catch(e) {
+    $('outlook').innerHTML = `<h2>7-day outlook</h2><p class="muted">Not available here (${esc(e.message)}). The National Weather Service covers the US only.</p>`;
+  }
+}
+function shareLink(){
+  const q = new URLSearchParams({ name: place.name, lat: place.lat, lon: place.lon, habitat: place.habitat,
+    date: $('date').value, when: $('when').value, elev: $('elev').value || '' });
+  return location.origin + location.pathname + '?' + q.toString();
+}
+function calLink(){
+  const d = $('date').value.replace(/-/g, '');
+  const next = shiftDay($('date').value, 1).replace(/-/g, '');
+  const text = `Fishing: ${place.name}`;
+  const details = `Planned with Gone Fishin'\n${shareLink()}`;
+  return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(text)}&dates=${d}/${next}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(place.name)}`;
+}
+async function copyShare(){
+  const t = shareLink();
+  try { await navigator.clipboard.writeText(t); $('shareMsg').textContent = 'Link copied.'; }
+  catch(e) { $('shareMsg').textContent = t; }
+}
+function regsLink(){
+  const q = ((window._state || '') + ' fishing license and regulations').trim();
+  return 'https://www.google.com/search?q=' + encodeURIComponent(q);
 }
 
 /* ---------- init ---------- */
 $('date').value = iso(new Date());
 updateUnitUI();
 renderSaved();
+const sp = new URLSearchParams(location.search);
+if (sp.get('lat') && sp.get('lon')) {
+  const nm = sp.get('name') || 'Shared place';
+  const lk = DB.lakes.find(l => nm.toLowerCase().includes(l.name.split(' (')[0].toLowerCase().split(' lake')[0]));
+  $('lat').value = sp.get('lat'); $('lon').value = sp.get('lon'); $('pname').value = nm;
+  $('habitat').value = sp.get('habitat') || 'stream';
+  if (sp.get('date')) $('date').value = sp.get('date');
+  if (sp.get('when')) $('when').value = sp.get('when');
+  if (sp.get('elev')) $('elev').value = sp.get('elev');
+  place = { name: nm, lat: parseFloat(sp.get('lat')), lon: parseFloat(sp.get('lon')), habitat: sp.get('habitat') || 'stream', lakeId: lk ? lk.id : null };
+  runPlan();
+}
 </script>
 </body>
 </html>
