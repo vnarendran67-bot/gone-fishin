@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 26,
+ "version": 27,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -16264,9 +16264,9 @@ window.HATCH_DB = {
   },
   {
    "id": "silver-creek-az",
-   "name": "Silver Creek (Show Low area, AZ)",
+   "name": "Silver Creek (White Mountains, AZ)",
    "type": "creek",
-   "elevation_ft": 6400,
+   "elevation_ft": null,
    "lat": null,
    "lon": null,
    "coords_note": "Elevation not sourced. Coordinates not set.",
@@ -16318,7 +16318,7 @@ window.HATCH_DB = {
     "AZGFD said fishing was fair overall in March 2026. The upper section was slow, and the lower section was fair to good.",
     "AZGFD recommended a quarter-ounce silver Kastmaster with a slow retrieve and short, erratic pauses for reaction strikes.",
     "In winter AZGFD recommended silver Kastmasters, three- to four-inch jerkbaits and one-eighth-ounce black or white marabou jigs.",
-    "A 28.5-inch rainbow was recorded from Silver Creek in AZGFD's state records."
+    "AZGFD's 2020 big-fish listing includes a 28.5-inch rainbow from Silver Creek."
    ],
    "sources": [
     {
@@ -16384,7 +16384,7 @@ window.HATCH_DB = {
    "id": "little-colorado-river-greer-az",
    "name": "Little Colorado River (West Fork, Greer, AZ)",
    "type": "river",
-   "elevation_ft": 7000,
+   "elevation_ft": null,
    "lat": null,
    "lon": null,
    "coords_note": "Elevation not sourced. Coordinates not set.",
@@ -16480,7 +16480,7 @@ window.HATCH_DB = {
    "id": "salt-river-az",
    "name": "Salt River (Tonto National Forest, AZ)",
    "type": "river",
-   "elevation_ft": 2000,
+   "elevation_ft": null,
    "lat": null,
    "lon": null,
    "coords_note": "Elevation not sourced. Coordinates not set.",
@@ -16491,7 +16491,7 @@ window.HATCH_DB = {
      "stocking": "Stocked weekly through winter, Dec 2025"
     },
     {
-     "name": "Smallmouth, yellow and largemouth bass",
+     "name": "Bass (species not named in sources)",
      "stocking": "Present"
     }
    ],
