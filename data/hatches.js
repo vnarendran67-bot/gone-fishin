@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 40,
+ "version": 42,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -23539,6 +23539,606 @@ window.HATCH_DB = {
     2,
     3,
     4
+   ]
+  },
+  {
+   "id": "chevelon-creek-az",
+   "name": "Chevelon Creek (below and above Chevelon Canyon Lake, Mogollon Rim, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": 34.4325,
+   "lon": -110.8435,
+   "coords_note": "Coordinates from HookedAZ GPS (34°25′57.15″N 110°50′36.48″W), placed near the upper creek north of Woods Canyon Lake and south of Chevelon Canyon Lake. Elevation not sourced for this reach.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Wild brown trout",
+     "stocking": "Self-sustaining; the upper creek is a Blue Ribbon trophy wild brown fishery (AZGFD)"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Move up from the lake to spawn in spring (Discover Gila County); not stocked in the creek per the sources"
+    },
+    {
+     "name": "Largemouth bass, channel catfish, yellow bullhead",
+     "stocking": "Present (Fishbrain) lower down"
+    }
+   ],
+   "stocking": {
+    "status": "wild",
+    "summary": "The upper creek is a self-sustaining wild brown trout fishery. Rainbows move up from the lake to spawn in spring.",
+    "schedule": "Not stocked per the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "AZ Wildlife Conservation Strategy: Chevelon Canyon, Chevelon Crossing to the lake",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/chevelon-canyon-chevelon-crossing-upstream-to-chevelon-canyon-lake"
+     },
+     {
+      "title": "AZ Wildlife Conservation Strategy: Chevelon Canyon Lake to Woods and Willow Springs Canyon",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/chevelon-canyon-chevelon-canyon-lake-to-the-confluence-of-woods-canyon-and-willow-springs-canyon"
+     }
+    ]
+   },
+   "fishing_season_note": "April through November, with no winter access. Fish summer and fall; spring is high water after snowmelt (Orvis, Discover Gila County).",
+   "insect_ids": [
+    "caddis",
+    "bwo",
+    "pmd",
+    "terrestrial",
+    "damselfly",
+    "chironomid"
+   ],
+   "notes": [
+    "Chevelon Creek is the stream below and above Chevelon Canyon Lake. The upper section is managed by AZGFD as a Blue Ribbon trophy coldwater fishery for brown and rainbow trout, and the lower section is managed for native fish.",
+    "Discover Gila County calls Chevelon Creek a very rough, hard-to-reach canyon that runs more than ten miles below the lake, and says it may be Arizona's best brown trout stream.",
+    "The canyon is reached by steep hikes down to the water. Discover Gila County says fly fishing is best just after snowmelt makes the access roads passable.",
+    "HookedAZ says Chevelon Creek is not good for rafting. Only the first 13 miles above the lake hold permanent flow, and that stretch lies in a deep remote canyon.",
+    "HookedAZ recommends keeping Woods Canyon Lake or Chevelon Canyon Lake as a backup, since the creek access can be difficult.",
+    "NorCal Fish Reports says the creek upstream and downstream of the lake to Chevelon Crossing follows the lake's rules: artificial flies and lures only, with a 2-trout daily bag limit.",
+    "Regulations: artificial flies and lures only, with a 2-trout daily bag limit (per NorCal Fish Reports). Check current AZGFD rules before you go."
+   ],
+   "sources": [
+    {
+     "title": "AZ Wildlife Conservation Strategy: Chevelon Canyon, Chevelon Crossing to the lake",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/chevelon-canyon-chevelon-crossing-upstream-to-chevelon-canyon-lake"
+    },
+    {
+     "title": "AZ Wildlife Conservation Strategy: Chevelon Canyon Lake to Woods and Willow Springs Canyon",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/chevelon-canyon-chevelon-canyon-lake-to-the-confluence-of-woods-canyon-and-willow-springs-canyon"
+    },
+    {
+     "title": "Discover Gila County: Chevelon Creek",
+     "url": "https://discovergilacounty.com/chevelon-creek/"
+    },
+    {
+     "title": "HookedAZ: Chevelon Creek",
+     "url": "https://www.hookedaz.com/showcase/comment/123"
+    },
+    {
+     "title": "NorCal Fish Reports: Chevelon Canyon Lake regulations",
+     "url": "https://www.norcalfishreports.com/fish_reports/118731/chevelon-canyon-lake-fishing-report.php"
+    },
+    {
+     "title": "Fishbrain: Chevelon Creek",
+     "url": "https://fishbrain.com/fishing-waters/-qWhhIaX/chevelon-creek"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Caddis are a core food for wild browns in this kind of canyon stream. Not sourced for this creek specifically.",
+     "basis": "general",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Blue-winged olives",
+     "category": "insect",
+     "detail": "Mayflies in the early season and during cool periods. Not sourced for this creek specifically.",
+     "basis": "general",
+     "insect_id": "bwo"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Hoppers and beetles along the banks in summer. Not sourced for this creek specifically.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    5,
+    6,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "blue-river-az",
+   "name": "Blue River (Apache-Sitgreaves National Forest, Greenlee County, AZ)",
+   "type": "stream",
+   "elevation_ft": 5400,
+   "lat": 33.4652,
+   "lon": -109.1839,
+   "coords_note": "Coordinates from Fishbrain (33°27′54.6″N 109°11′2.2″W), placed on the middle reach. The river runs about 51 miles from near Alpine to the San Francisco River near Clifton. Elevation 6,400 to 4,000 feet per Wikipedia.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Brown trout",
+     "stocking": "Wild; low densities in the upper river (AZ Wildlife Conservation Strategy)"
+    },
+    {
+     "name": "Rainbow trout",
+     "stocking": "Stocked and wild (perfectflystore); hybrids with Apache trout"
+    },
+    {
+     "name": "Apache trout, hybrid Apache-rainbow",
+     "stocking": "Present (HookedAZ reports)"
+    },
+    {
+     "name": "Brook trout",
+     "stocking": "Possible (HookedAZ)"
+    }
+   ],
+   "stocking": {
+    "status": "mixed",
+    "summary": "The upper river is managed mainly for native fish, with brown trout present at low densities and Gila trout a secondary target. Rainbow trout are stocked in parts of the river.",
+    "schedule": "Not stocked per the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "AZ Wildlife Conservation Strategy: Blue River Upper",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/blue-river-upper-reach-upper-blue-river"
+     },
+     {
+      "title": "AZ Wildlife Conservation Strategy: Coleman Creek",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/coleman-creek-upper-upper-blue-river"
+     }
+    ]
+   },
+   "fishing_season_note": "Best fly fishing is May through July. March and April are runoff. Summer is good but late summer is less productive (Perfect Fly Store).",
+   "insect_ids": [
+    "caddis",
+    "bwo",
+    "pmd",
+    "march_brown",
+    "terrestrial",
+    "trico"
+   ],
+   "notes": [
+    "The Blue River runs through the Apache-Sitgreaves National Forest, about 51 miles from near Alpine down to the San Francisco River near Clifton. Part of it passes through New Mexico.",
+    "HookedAZ says the river holds brown, Apache, hybrid Apache-rainbow and rainbow trout, and that you might catch a brook trout too. It is the most popular fly river in Arizona, according to the same source.",
+    "The upper Blue is managed mainly for native fish, with Gila trout as the secondary sport fishery. AZGFD is evaluating whether to stock Gila trout near the two upper campgrounds.",
+    "The upper Coleman Creek drainage above the falls is managed for self-sustaining Gila trout, per AZGFD.",
+    "Perfectflystore gives May through July as the best fly-fishing window. March and April are runoff, and late summer is less productive.",
+    "HookedAZ says a valid Arizona fishing license with a trout stamp is required, and that anglers crossing into New Mexico need a New Mexico license.",
+    "HookedAZ warns that much of the river runs through private homes and ranches, so read the posted keep-out signs before you cross.",
+    "The river has a Class III run from Blue Crossing to Juan Miller Crossing, according to American Whitewater, so it is not a fishing float for beginners.",
+    "Trout stamp and a valid Arizona license required. Check AZGFD for current rules before you go."
+   ],
+   "sources": [
+    {
+     "title": "AZ Wildlife Conservation Strategy: Blue River Upper",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/blue-river-upper-reach-upper-blue-river"
+    },
+    {
+     "title": "AZ Wildlife Conservation Strategy: Coleman Creek",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/coleman-creek-upper-upper-blue-river"
+    },
+    {
+     "title": "Perfectflystore: Blue River",
+     "url": "https://perfectflystore.com/?p=7491"
+    },
+    {
+     "title": "HookedAZ: Blue River",
+     "url": "https://www.hookedaz.com/showcase/comment/281"
+    },
+    {
+     "title": "American Whitewater: Blue River",
+     "url": "https://www.americanwhitewater.org/content/River/detail/id/112"
+    },
+    {
+     "title": "Fishbrain: Blue River",
+     "url": "https://fishbrain.com/fishing-waters/E9lJbrE-/blue-river"
+    },
+    {
+     "title": "Wikipedia: Blue River (Arizona)",
+     "url": "https://en.wikipedia.org/wiki/Blue_River_(Arizona)"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Caddis hatch in the riffles. Not sourced for this river specifically.",
+     "basis": "general",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Blue-winged olives",
+     "category": "insect",
+     "detail": "Spring and fall hatches. Not sourced for this river specifically.",
+     "basis": "general",
+     "insect_id": "bwo"
+    },
+    {
+     "item": "March browns",
+     "category": "insect",
+     "detail": "Spring hatch for the larger browns. Not sourced for this river specifically.",
+     "basis": "general",
+     "insect_id": "march_brown"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Hoppers and beetles on the banks in summer.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "best_months": [
+    5,
+    6,
+    7
+   ]
+  },
+  {
+   "id": "eagle-creek-greenlee-az",
+   "name": "Eagle Creek (Graham and Greenlee counties, AZ)",
+   "type": "stream",
+   "elevation_ft": 3000,
+   "lat": 33.2271,
+   "lon": -109.5235,
+   "coords_note": "Coordinates from Fishbrain (33°13′37.6″N 109°31′24.5″W), placed on the middle creek near Clifton and Morenci. Wikipedia lists the spring source at about 3,000 feet elevation near the base of the White Mountains.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Smallmouth bass",
+     "stocking": "Present (Fishbrain, Surf Wiki)"
+    },
+    {
+     "name": "Channel catfish, flathead catfish",
+     "stocking": "Present (Fishbrain, Surf Wiki)"
+    },
+    {
+     "name": "Bluegill",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "mixed",
+    "summary": "The lower and middle creek is a warm-water fishery for bass and catfish, with limited sport fishing near Clifton and Morenci. Non-native fish are not stocked there. The upper creek is managed for native fish.",
+    "schedule": "Not stocked per the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "AZ Wildlife Conservation Strategy: Eagle Creek Middle Reach",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/eagle-creek-middle-reach-lower-eagle-creek"
+     },
+     {
+      "title": "AZ Wildlife Conservation Strategy: Eagle Creek Upper Reach",
+      "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/eagle-creek-upper-reach-and-tributaries-upper-eagle-creek"
+     }
+    ]
+   },
+   "fishing_season_note": "Warm-water creek. Best in spring and fall. Summer heat and monsoon floods are the main limits.",
+   "insect_ids": [
+    "caddis",
+    "bwo",
+    "terrestrial",
+    "damselfly"
+   ],
+   "notes": [
+    "Eagle Creek runs about 58 miles from the White Mountains to the Gila River, and is a tributary of the Gila. It crosses Graham and Greenlee counties.",
+    "AZGFD manages the lowest and uppermost sections of the middle creek for limited sport fishing near Clifton and Morenci, and does not plan to stock non-native sport fish there.",
+    "The upper creek and its tributaries are managed mainly for self-sustaining native fish, according to AZGFD.",
+    "A 2014 Native Fish Lab survey found the Wallow Fire in 2011 nearly wiped out fish in the sampled part of the creek.",
+    "A 2025 federal agreement with Freeport Minerals gives a 50-year conservation benefit for four listed fish species in the upper creek. A fish barrier to keep out non-native fish has been proposed.",
+    "Fishbrain lists channel catfish, smallmouth bass and bluegill as the most popular species on the creek.",
+    "Honeymoon Campground next to the creek is a Forest Service site with shade and fishing access.",
+    "No stocking planned for the middle creek. Check AZGFD and the landowner's access rules before you go."
+   ],
+   "sources": [
+    {
+     "title": "AZ Wildlife Conservation Strategy: Eagle Creek Middle Reach",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/eagle-creek-middle-reach-lower-eagle-creek"
+    },
+    {
+     "title": "AZ Wildlife Conservation Strategy: Eagle Creek Upper Reach",
+     "url": "https://awcs.azgfd.com/conservation-opportunity-areas/aquatic/eagle-creek-upper-reach-and-tributaries-upper-eagle-creek"
+    },
+    {
+     "title": "Native Fish Lab: Eagle Creek trip report 2014",
+     "url": "https://nativefishlab.net/publications/Kesner%20et%20al.%202014%20Eagle%20Creek.pdf"
+    },
+    {
+     "title": "US Fish and Wildlife Service: Eagle Creek conservation agreement",
+     "url": "https://www.fws.gov/press-release/2025-08/service-approves-conservation-agreement-four-listed-species-southeastern"
+    },
+    {
+     "title": "Fishbrain: Eagle Creek",
+     "url": "https://fishbrain.com/fishing-waters/OpGzDYhV/eagle-creek"
+    },
+    {
+     "title": "Surf Wiki: Eagle Creek",
+     "url": "https://www.doc.surf/wiki/eagle-creek-arizona"
+    },
+    {
+     "title": "USFS: Honeymoon Campground",
+     "url": "https://www.fs.usda.gov/r03/apache-sitgreaves/recreation/honeymoon-campground"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Warm-water stream caddis. Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Damselflies",
+     "category": "insect",
+     "detail": "Along the bank edges. Not sourced for this creek.",
+     "basis": "general",
+     "insect_id": "damselfly"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Hoppers and beetles along the banks in summer.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    9,
+    10,
+    11
+   ],
+   "best_months": [
+    4,
+    5,
+    9,
+    10
+   ]
+  },
+  {
+   "id": "hassayampa-river-az",
+   "name": "Hassayampa River (Wickenburg, Yavapai and Maricopa counties, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": 34.11,
+   "lon": -112.601,
+   "coords_note": "Coordinates from BLM for the Hassayampa River Canyon Wilderness (34.110048, -112.601025). The river is mostly underground, so the surface water is at specific reaches. Elevation not sourced for this reach.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Rainbow trout",
+     "stocking": "Not verified for this river (Fishbrain lists it)"
+    },
+    {
+     "name": "Largemouth bass, channel catfish",
+     "stocking": "Present (Fishbrain)"
+    }
+   ],
+   "stocking": {
+    "status": "mixed",
+    "summary": "Surface water is limited. Fishbrain lists bass and catfish, and trout are reported but not confirmed in the sources.",
+    "schedule": "Not stocked per the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "Natural Atlas: Hassayampa River",
+      "url": "https://naturalatlas.com/rivers/hassayampa-827398"
+     },
+     {
+      "title": "BLM: Hassayampa River Canyon Wilderness",
+      "url": "https://www.blm.gov/visit/hassayampa-river-canyon-wilderness"
+     }
+    ]
+   },
+   "fishing_season_note": "Surface flow is limited and seasonal. Check the river at the Preserve or Canyon Wilderness before you go, since most of the channel is dry.",
+   "insect_ids": [
+    "chironomid",
+    "damselfly",
+    "caddis"
+   ],
+   "notes": [
+    "The Hassayampa is an intermittent river. Its headwaters are just south of Prescott, and it flows south toward Wickenburg. Most of its 100-mile course runs underground, so it is often dry.",
+    "Surface water is most dependable inside the Hassayampa River Canyon Wilderness, about eight miles northeast of Wickenburg, and at the Nature Conservancy's Hassayampa River Preserve.",
+    "Komoot says fishing off the bridge in Wickenburg is not allowed.",
+    "The BLM wilderness is managed by the Hassayampa Field Office in Phoenix and has no fee information in the sources used.",
+    "Fishbrain lists largemouth bass, rainbow trout and channel catfish as the most popular species, but the sources do not confirm regular trout stocking in the river.",
+    "Fishing off the Wickenburg bridge is not allowed. Verify flow and access before you go."
+   ],
+   "sources": [
+    {
+     "title": "Natural Atlas: Hassayampa River",
+     "url": "https://naturalatlas.com/rivers/hassayampa-827398"
+    },
+    {
+     "title": "BLM: Hassayampa River Canyon Wilderness",
+     "url": "https://www.blm.gov/visit/hassayampa-river-canyon-wilderness"
+    },
+    {
+     "title": "Komoot: Hassayampa River",
+     "url": "https://www.komoot.com/highlight/6299079"
+    },
+    {
+     "title": "Visit Arizona: Hassayampa River Preserve",
+     "url": "https://www.visitarizona.com/business/hassayampa-river-preserve"
+    },
+    {
+     "title": "Fishbrain: Hassayampa River",
+     "url": "https://fishbrain.com/fishing-waters/2PCakJFI/hassayampa-river"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Midges",
+     "category": "insect",
+     "detail": "Pools and slow water. Not sourced for this river.",
+     "basis": "general",
+     "insect_id": "chironomid"
+    },
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Riffles where there is flow. Not sourced for this river.",
+     "basis": "general",
+     "insect_id": "caddis"
+    }
+   ],
+   "fish_months": [
+    10,
+    11,
+    12,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "best_months": [
+    11,
+    12,
+    1,
+    2,
+    3
+   ]
+  },
+  {
+   "id": "big-chino-wash-paulden-az",
+   "name": "Big Chino Wash (Paulden, Yavapai County, AZ)",
+   "type": "stream",
+   "elevation_ft": null,
+   "lat": null,
+   "lon": null,
+   "coords_note": "Coordinates not sourced. USGS monitors Big Chino Wash at Paulden; the Verde River's headwaters are nearby.",
+   "area_acres": null,
+   "species": [
+    {
+     "name": "Not documented",
+     "stocking": "No fishing or stocking records found in the sources"
+    }
+   ],
+   "stocking": {
+    "status": "unknown",
+    "summary": "No stocking or fishing record found in the sources used.",
+    "schedule": "Not stocked per the sources used.",
+    "recent_plants": [],
+    "wild_fish": "See notes.",
+    "sources": [
+     {
+      "title": "USGS: Big Chino Wash at Paulden",
+      "url": "https://waterdata.usgs.gov/monitoring-location/USGS-09502830"
+     },
+     {
+      "title": "AZGFD: Verde River watershed",
+      "url": "https://azgfd.com/?p=4409"
+     }
+    ]
+   },
+   "fishing_season_note": "Not established. The wash is mostly dry; confirm flow and access with AZGFD.",
+   "insect_ids": [
+    "caddis",
+    "terrestrial"
+   ],
+   "notes": [
+    "Big Chino Wash is a USGS-monitored wash at Paulden. The sources used do not describe it as a fishing stream.",
+    "AZGFD calls the Paulden area the headwaters of the Verde River, which runs 193 miles to the Salt River near Phoenix.",
+    "The Outbound lists Paulden fishing near Watson Lake in Prescott and Oak Creek, not on the Chino itself.",
+    "Treat this entry as a placeholder. Fishing use of Big Chino Wash is not established in the sources, so confirm with AZGFD before you go.",
+    "Unverified. Check AZGFD and Yavapai County access rules before going."
+   ],
+   "sources": [
+    {
+     "title": "USGS: Big Chino Wash at Paulden",
+     "url": "https://waterdata.usgs.gov/monitoring-location/USGS-09502830"
+    },
+    {
+     "title": "AZGFD: Verde River watershed",
+     "url": "https://azgfd.com/?p=4409"
+    },
+    {
+     "title": "The Outbound: Paulden fishing",
+     "url": "https://www.theoutbound.com/united-states/arizona/paulden/fishing"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Arizona"
+   ],
+   "forage": [
+    {
+     "item": "Caddisflies",
+     "category": "insect",
+     "detail": "Not sourced for this wash.",
+     "basis": "general",
+     "insect_id": "caddis"
+    },
+    {
+     "item": "Terrestrials",
+     "category": "insect",
+     "detail": "Not sourced for this wash.",
+     "basis": "general",
+     "insect_id": "terrestrial"
+    }
+   ],
+   "fish_months": [
+    4,
+    5,
+    6,
+    9,
+    10
+   ],
+   "best_months": [
+    4,
+    5,
+    10
    ]
   }
  ]
