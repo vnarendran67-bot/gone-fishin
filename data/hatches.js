@@ -1,5 +1,5 @@
 window.HATCH_DB = {
- "version": 3,
+ "version": 4,
  "region": "Southern and central Arizona: Tucson, Santa Catalina Mountains (Mt. Lemmon / Rose Canyon Lake), Mogollon Rim, White Mountains, Oak Creek, Salt River, Lees Ferry",
  "status_note": "Each entry lists its states. Dates come from published charts and guide pages. Entries marked 'Sources differ' have conflicting dates between sources. Verify locally before a trip.",
  "habitats": [
@@ -1170,6 +1170,829 @@ window.HATCH_DB = {
    "states": [
     "Utah"
    ]
+  },
+  {
+   "id": "mt-midge",
+   "name": "Midges (Montana)",
+   "order": "Diptera",
+   "habitat": [
+    "stillwater",
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "peak_months": [
+    12,
+    1,
+    2
+   ],
+   "time_of_day": "Mid-day on warm winter days",
+   "water_temp_f": null,
+   "stages": "Larvae and pupae; black midge adults on the surface in winter",
+   "flies": [
+    {
+     "pattern": "Hi-Vis Parachute Midge, Griffith's Gnat, Slick Midge Adult",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Midges are the main food during the coldest months. Dry-fly fishing on warm winter days can be exceptional.",
+   "sources": [
+    {
+     "title": "Montana hatch chart (Grizzly Hackle)",
+     "url": "https://grizzlyhackle.com/blogs/fly-fishing/montana-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Montana"
+   ]
+  },
+  {
+   "id": "mt-early-stones",
+   "name": "Early stoneflies: Capnia, Nemoura, Skwala",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    2,
+    3,
+    4
+   ],
+   "peak_months": [
+    3,
+    4
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph and adult",
+   "flies": [
+    {
+     "pattern": "Skwala and early stonefly dry flies, verify size",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "These are the first real dry-fly hatches of the year in western Montana.",
+   "sources": [
+    {
+     "title": "Montana hatch chart (Grizzly Hackle)",
+     "url": "https://grizzlyhackle.com/blogs/fly-fishing/montana-hatch-chart"
+    },
+    {
+     "title": "Skwala on the Bitterroot and Clark Fork (Glacier to Yellowstone)",
+     "url": "https://www.glaciertoyellowstone.com/node/1167"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Montana"
+   ],
+   "date_note": "Sources give different start months. Verify locally."
+  },
+  {
+   "id": "mt-march-brown",
+   "name": "March browns",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4,
+    5
+   ],
+   "peak_months": [
+    4
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "March Brown, 14-16 verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Spring hatch on rivers near Missoula and Bozeman and on the central Missouri. Scattered pockets in May.",
+   "sources": [
+    {
+     "title": "Montana fly fishing hatches (Yellow Dog)",
+     "url": "https://yellowdogflyfishing.com/blog/montana-fly-fishing-hatches"
+    },
+    {
+     "title": "Guide to Montana fishing in May (Montana Angler)",
+     "url": "https://www.montanaangler.com/montana-fly-fishing-blog/a-guide-to-montana-fishing-in-may"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Montana"
+   ],
+   "date_note": "Sources give March and May. Peak month is inferred."
+  },
+  {
+   "id": "mt-salmonfly",
+   "name": "Salmonflies (Montana)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6,
+    7
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph and adult",
+   "flies": [
+    {
+     "pattern": "Foam salmonfly dry, large sizes, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The Blackfoot's signature hatch. Rock Creek gets about two weeks of it in June.",
+   "sources": [
+    {
+     "title": "Blackfoot River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/blackfoot-river-montana-hatch-chart"
+    },
+    {
+     "title": "Rock Creek salmonfly (The Fly Shop)",
+     "url": "https://www.theflyshop.com/lower48/missoula-river-lodge.html"
+    },
+    {
+     "title": "Montana fishing timing (Glacier to Yellowstone)",
+     "url": "https://www.glaciertoyellowstone.com/node/1167"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Montana"
+   ],
+   "date_note": "Sources differ on the start. One says salmonflys begin by mid-April on the freestones; Rock Creek's shop says June."
+  },
+  {
+   "id": "mt-bwo",
+   "name": "Blue-winged olives (Montana)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    3,
+    4,
+    9,
+    10,
+    11
+   ],
+   "peak_months": [
+    4,
+    10
+   ],
+   "time_of_day": "Mid-morning on overcast days",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun, spinner",
+   "flies": [
+    {
+     "pattern": "Parachute BWO, 16-20 (Bighorn)",
+     "sizes": "16-20"
+    }
+   ],
+   "notes": "Strengthens through March on the Missouri and gives morning hatches on the Bighorn in April. Fall hatches on the Bitterroot, Clark Fork, and Yellowstone.",
+   "sources": [
+    {
+     "title": "Bighorn River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/bighorn-river-montana-hatch-chart"
+    },
+    {
+     "title": "Missouri River hatch chart (Holter Dam to Craig)",
+     "url": "https://theflyfishingplace.com/pages/missouri-river-montana-hatch-chart-holter-dam-to-craig"
+    },
+    {
+     "title": "Montana fall hatches (Glacier to Yellowstone)",
+     "url": "https://www.glaciertoyellowstone.com/node/1167"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Montana"
+   ]
+  },
+  {
+   "id": "mt-pmd",
+   "name": "Pale morning duns (Montana)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Mornings and mid-day",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "PMD dun or emerger, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The Bighorn's PMD hatch is one of the most reliable and dense in Montana. Riffles are the usual spot.",
+   "sources": [
+    {
+     "title": "Bighorn River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/bighorn-river-montana-hatch-chart"
+    },
+    {
+     "title": "Montana fly fishing hatches (Yellow Dog)",
+     "url": "https://yellowdogflyfishing.com/blog/montana-fly-fishing-hatches"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Montana"
+   ]
+  },
+  {
+   "id": "mt-caddis",
+   "name": "Caddisflies (Montana)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Evenings",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults",
+   "flies": [
+    {
+     "pattern": "Elk Hair Caddis, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The Mother's Day Caddis starts early May on the Lower Madison. Caddis evenings on the Bighorn are excellent in June.",
+   "sources": [
+    {
+     "title": "Guide to Montana fishing in May (Montana Angler)",
+     "url": "https://www.montanaangler.com/montana-fly-fishing-blog/a-guide-to-montana-fishing-in-may"
+    },
+    {
+     "title": "Bighorn River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/bighorn-river-montana-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Montana"
+   ]
+  },
+  {
+   "id": "mt-hopper",
+   "name": "Hoppers and terrestrials (Montana)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "peak_months": [
+    8
+   ],
+   "time_of_day": "Midday along grassy banks",
+   "water_temp_f": null,
+   "stages": "Adult grasshoppers",
+   "flies": [
+    {
+     "pattern": "Foam hopper, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The summer hopper fishing in the broad valley sections of the Blackfoot is outstanding in August. Terrestrials also work on sunny October days.",
+   "sources": [
+    {
+     "title": "Blackfoot River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/blackfoot-river-montana-hatch-chart"
+    },
+    {
+     "title": "Best time to fly fish Montana (Grizzly Hackle)",
+     "url": "https://grizzlyhackle.com/?p=86293"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Montana"
+   ]
+  },
+  {
+   "id": "wy-caddis",
+   "name": "Caddisflies (Wyoming)",
+   "order": "Trichoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "peak_months": [
+    5,
+    6
+   ],
+   "time_of_day": "Evenings",
+   "water_temp_f": null,
+   "stages": "Larvae, pupae, adults",
+   "flies": [
+    {
+     "pattern": "Caddis, 14-16 evenings (Green River)",
+     "sizes": "14-16"
+    }
+   ],
+   "notes": "Caddis hatches peak on the North Platte in May. On the Green, caddis evenings run through July and August.",
+   "sources": [
+    {
+     "title": "North Platte River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/north-platte-river-wyoming-hatch-chart"
+    },
+    {
+     "title": "Green River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/green-river-wyoming-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Wyoming"
+   ]
+  },
+  {
+   "id": "wy-pmd",
+   "name": "Pale morning duns (Wyoming)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6,
+    7
+   ],
+   "peak_months": [
+    6,
+    7
+   ],
+   "time_of_day": "Mornings",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "PMD, 16-18 mornings (Green River)",
+     "sizes": "16-18"
+    }
+   ],
+   "notes": "On the North Platte the Grey Reef flats get a June PMD hatch with large fish rising. On the Green, PMDs come in July mornings.",
+   "sources": [
+    {
+     "title": "North Platte River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/north-platte-river-wyoming-hatch-chart"
+    },
+    {
+     "title": "Green River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/green-river-wyoming-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Wyoming"
+   ]
+  },
+  {
+   "id": "wy-salmonfly",
+   "name": "Salmonflies (Wyoming)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph and adult",
+   "flies": [
+    {
+     "pattern": "Large foam stonefly, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The opening dry-fly event on the Greys River. The upper Wind's canyon sections above Dubois have excellent salmonfly fishing.",
+   "sources": [
+    {
+     "title": "Greys River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/greys-river-wyoming-hatch-chart"
+    },
+    {
+     "title": "Wind River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/wind-river-upper-bighorn-river-wyoming-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Wyoming"
+   ],
+   "date_note": "The Greys chart gives late May into June. Verify the start locally."
+  },
+  {
+   "id": "wy-bwo",
+   "name": "Blue-winged olives (Wyoming)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    9,
+    10
+   ],
+   "peak_months": [
+    9
+   ],
+   "time_of_day": "Afternoon on cool days",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "Parachute BWO, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "BWO return strongly in September with cooler temperatures. The fall olive hatches on the Green's big meadow water are outstanding.",
+   "sources": [
+    {
+     "title": "Green River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/green-river-wyoming-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Wyoming"
+   ]
+  },
+  {
+   "id": "wy-hopper",
+   "name": "Hoppers and terrestrials (Wyoming)",
+   "order": "Orthoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    7,
+    8,
+    9
+   ],
+   "peak_months": [
+    8
+   ],
+   "time_of_day": "Midday along grassy banks",
+   "water_temp_f": null,
+   "stages": "Adult grasshoppers",
+   "flies": [
+    {
+     "pattern": "Foam hopper, 8-12 (North Platte)",
+     "sizes": "8-12"
+    }
+   ],
+   "notes": "Hoppers stay tight to the grassy banks. August is the best single month on the Wyoming Green, and hoppers run through mid-September.",
+   "sources": [
+    {
+     "title": "Green River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/green-river-wyoming-hatch-chart"
+    },
+    {
+     "title": "Greys River hatch chart",
+     "url": "https://theflyfishingplace.com/pages/greys-river-wyoming-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Wyoming"
+   ]
+  },
+  {
+   "id": "id-salmonfly",
+   "name": "Salmonflies (Idaho)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph and adult",
+   "flies": [
+    {
+     "pattern": "Salmon Fly, 2-6",
+     "sizes": "2-6"
+    }
+   ],
+   "notes": "The Henry's Fork Box Canyon gets it in June. On the Big Wood it moves through the canyon in mid-to-late June.",
+   "sources": [
+    {
+     "title": "Henry's Fork hatch chart",
+     "url": "https://theflyfishingplace.com/pages/henrys-fork-river-idaho-hatch-chart"
+    },
+    {
+     "title": "Big Wood and Little Wood hatch chart",
+     "url": "https://theflyfishingplace.com/pages/big-wood-little-wood-rivers-idaho-hatch-chart"
+    },
+    {
+     "title": "Henry's Fork hatch chart with availability dates (FlyAnglersOnline)",
+     "url": "https://www.flyanglersonline.com/t/henrys-fork-faol-archive/8299"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Idaho"
+   ],
+   "date_note": "Sources differ on the start. One chart says May 15 to June 25; the Henry's Fork guide says mid-to-late June in Box Canyon."
+  },
+  {
+   "id": "id-golden-stone",
+   "name": "Golden stoneflies (Idaho)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7
+   ],
+   "peak_months": [
+    6,
+    7
+   ],
+   "time_of_day": "Early morning and dusk",
+   "water_temp_f": null,
+   "stages": "Nymph and adult",
+   "flies": [
+    {
+     "pattern": "Golden Stone, 4-8",
+     "sizes": "4-8"
+    }
+   ],
+   "notes": "Golden stones follow the salmonfly on the Henry's Fork.",
+   "sources": [
+    {
+     "title": "Henry's Fork hatch chart",
+     "url": "https://theflyfishingplace.com/pages/henrys-fork-river-idaho-hatch-chart"
+    },
+    {
+     "title": "Henry's Fork hatch chart with availability dates (FlyAnglersOnline)",
+     "url": "https://www.flyanglersonline.com/t/henrys-fork-faol-archive/8299"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Idaho"
+   ],
+   "date_note": "Availability dates run June 10 to July 31 on one chart."
+  },
+  {
+   "id": "id-green-drake",
+   "name": "Green drakes (Henry's Fork)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Evening",
+   "water_temp_f": null,
+   "stages": "Nymph, dun, spinner",
+   "flies": [
+    {
+     "pattern": "Green drake dun, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The Harriman Ranch green drake hatch is the defining event of the Henry's Fork year. It arrives in the last week of June.",
+   "sources": [
+    {
+     "title": "Henry's Fork hatch chart",
+     "url": "https://theflyfishingplace.com/pages/henrys-fork-river-idaho-hatch-chart"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Idaho"
+   ]
+  },
+  {
+   "id": "id-pmd",
+   "name": "Pale morning duns (Idaho)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    6,
+    7,
+    8
+   ],
+   "peak_months": [
+    6,
+    7
+   ],
+   "time_of_day": "Mornings",
+   "water_temp_f": null,
+   "stages": "Nymph, emerger, dun",
+   "flies": [
+    {
+     "pattern": "PMD, 16-18 mornings",
+     "sizes": "16-18"
+    }
+   ],
+   "notes": "PMDs arrive early June on the Henry's Fork. On the Big Wood, July's PMD hatch is dominant, and the St. Joe has them from June through August.",
+   "sources": [
+    {
+     "title": "Henry's Fork hatch chart",
+     "url": "https://theflyfishingplace.com/pages/henrys-fork-river-idaho-hatch-chart"
+    },
+    {
+     "title": "Big Wood and Little Wood hatch chart",
+     "url": "https://theflyfishingplace.com/pages/big-wood-little-wood-rivers-idaho-hatch-chart"
+    },
+    {
+     "title": "St. Joe River hatch chart (Norrik)",
+     "url": "https://norrik.com/?p=11536"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Idaho"
+   ]
+  },
+  {
+   "id": "id-mahogany-dun",
+   "name": "Mahogany duns (Big Wood)",
+   "order": "Ephemeroptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    9
+   ],
+   "peak_months": [
+    9
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph, dun",
+   "flies": [
+    {
+     "pattern": "Mahogany dun, verify",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "Mahogany duns start in early September and are one of the last major hatches of the season on the Big Wood.",
+   "sources": [
+    {
+     "title": "Big Wood River hatch chart (Norrik)",
+     "url": "https://norrik.com/?p=10212"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Idaho"
+   ]
+  },
+  {
+   "id": "id-midge",
+   "name": "Midges (Idaho)",
+   "order": "Diptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+   ],
+   "peak_months": [],
+   "time_of_day": "Mid-day",
+   "water_temp_f": null,
+   "stages": "Larvae and pupae; adults on the surface",
+   "flies": [
+    {
+     "pattern": "Midge, 18-22 (Clearwater)",
+     "sizes": "18-22"
+    }
+   ],
+   "notes": "The Clearwater's North Fork has midges from January through November. Peak months are not stated in the source.",
+   "sources": [
+    {
+     "title": "Clearwater River North Fork hatch chart (Norrik)",
+     "url": "https://norrik.com/fly-hatches/clearwater-river-north-fork-hatch-chart/"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "Idaho"
+   ]
+  },
+  {
+   "id": "nm-pecos-hatch",
+   "name": "Early-season stonefly hatch (Pecos River)",
+   "order": "Plecoptera",
+   "habitat": [
+    "stream"
+   ],
+   "months": [
+    5,
+    6,
+    7
+   ],
+   "peak_months": [
+    6
+   ],
+   "time_of_day": "Afternoon",
+   "water_temp_f": null,
+   "stages": "Nymph and adult",
+   "flies": [
+    {
+     "pattern": "Verify locally",
+     "sizes": "verify locally"
+    }
+   ],
+   "notes": "The hatch starts on the lower sections in early May and moves upstream, reaching the Pecos Box by the first week of June. By July a second large stonefly begins to hatch.",
+   "sources": [
+    {
+     "title": "Pecos River fishing (Game & Fish Magazine, 2010)",
+     "url": "https://www.gameandfishmag.com/editorial/fishing_trout-fishing_rm_aa054603a/194597"
+    }
+   ],
+   "verified": false,
+   "states": [
+    "New Mexico"
+   ],
+   "date_note": "The source does not name the insect in this excerpt, and the article is from 2010. Verify with local shops."
   }
  ],
  "lakes": [
